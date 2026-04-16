@@ -1,31 +1,31 @@
 {
   "id": 6,
-  "made_at": "2026-04-16T18:45:44.828683",
+  "made_at": "2026-04-16T19:13:11.323630",
   "asset": {
-    "symbol": "AIXA.DE",
-    "name": "Aixtron SE",
-    "class": "us_stock"
+    "symbol": "DXY",
+    "name": "美元指数",
+    "class": "fx"
   },
   "direction": "up",
-  "magnitude_pct": 5.0,
-  "horizon_days": 3,
-  "expire_at": "2026-04-19T18:45:44.828683",
-  "baseline_price": 40.90999984741211,
+  "magnitude_pct": 1.5,
+  "horizon_days": 7,
+  "expire_at": "2026-04-23T19:13:11.323630",
+  "baseline_price": null,
   "status": "pending",
   "hit": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "reasoning": "Aixtron raising its 2026 sales outlook is a direct positive guidance revision. Upward guidance revisions from mid-cap semiconductor equipment suppliers typically trigger a sharp short-term rally as analysts revise estimates and momentum traders pile in. The news text confirms shares are already jumping.",
+  "reasoning": "与链95（财政危机压制美元）不同，战争场景下美元通常因避险属性走强而非走弱，叠加油价飙升打压欧元/英镑等能源进口货币，DXY倾向上行。属于新模式：战争驱动的美元避险买盘。",
   "event": {
-    "id": 2,
-    "summary": "Aixtron raises its 2026 sales outlook, causing shares to jump significantly.",
-    "category": "earnings"
+    "id": 16,
+    "summary": "美国与以色列联合对伊朗开战，地缘政治冲突爆发，推高避险与能源资产",
+    "category": "geopolitics"
   },
   "news": {
-    "title": "Chip systems supplier Aixtron lifts 2026 sales outlook, shares jump",
-    "source": "yahoo_finance",
+    "title": "UK economy grew faster than expected in February ahead of Iran war",
+    "source": "bbc",
     "lang": "en",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/chip-systems-supplier-aixtron-lifts-080250402.html",
-    "published_at": "2026-04-15T08:02:50"
+    "url": "https://www.bbc.com/news/articles/cz0e23r0993o?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-04-16T10:22:48"
   }
 }

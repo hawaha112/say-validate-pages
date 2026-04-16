@@ -1,0 +1,31 @@
+{
+  "id": 35,
+  "made_at": "2026-04-16T19:17:27.295639",
+  "asset": {
+    "symbol": "KO",
+    "name": "可口可乐",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.2,
+  "horizon_days": 3,
+  "expire_at": "2026-04-19T19:17:27.295639",
+  "baseline_price": 75.125,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "百事业绩回暖和消费者回流的信号会外溢至同业龙头可口可乐，市场会预期整个软饮板块需求企稳；但可口可乐本身未直接受益，幅度弱于百事。该因果关系未在检索链中，故标记为新模式。",
+  "event": {
+    "id": 5,
+    "summary": "伊朗战争对百事可乐业务影响有限，地缘风险暂未冲击消费品供应链",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
+    "source": "marketwatch",
+    "lang": "en",
+    "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
+    "published_at": "2026-04-16T17:19:00"
+  }
+}

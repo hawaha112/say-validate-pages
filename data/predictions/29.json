@@ -1,0 +1,31 @@
+{
+  "id": 29,
+  "made_at": "2026-04-16T19:16:42.564583",
+  "asset": {
+    "symbol": "XLE",
+    "name": "能源板块ETF",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.0,
+  "horizon_days": 7,
+  "expire_at": "2026-04-23T19:16:42.564583",
+  "baseline_price": 56.584999084472656,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "油价隐性成本(馏分油裂解价差)创历史新高意味着炼厂与综合油气公司下游毛利显著扩张，直接利好能源板块业绩预期。市场在关注地缘和平而低估该结构性利多，修复时会推高XLE。属新模式，未匹配到现有因果链。",
+  "event": {
+    "id": 7,
+    "summary": "油价隐性成本创历史新高，或推高居民电费",
+    "category": "energy"
+  },
+  "news": {
+    "title": "This ‘hidden’ price of oil is at record highs — and it’ll hit your electric bill next",
+    "source": "marketwatch",
+    "lang": "en",
+    "url": "https://www.marketwatch.com/story/this-hidden-oil-price-is-ripping-the-hull-out-of-the-global-economy-89ff8e54?mod=mw_rss_topstories",
+    "published_at": "2026-04-16T18:17:00"
+  }
+}

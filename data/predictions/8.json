@@ -1,31 +1,31 @@
 {
   "id": 8,
-  "made_at": "2026-04-16T18:45:46.795598",
+  "made_at": "2026-04-16T19:13:32.630233",
   "asset": {
-    "symbol": "ASML",
-    "name": "ASML Holding N.V.",
-    "class": "us_stock"
+    "symbol": "^FTSE",
+    "name": "英国富时100指数",
+    "class": "index"
   },
   "direction": "up",
-  "magnitude_pct": 1.5,
-  "horizon_days": 3,
-  "expire_at": "2026-04-19T18:45:46.795598",
-  "baseline_price": 1417.6199951171875,
+  "magnitude_pct": 1.0,
+  "horizon_days": 7,
+  "expire_at": "2026-04-23T19:13:32.630233",
+  "baseline_price": 10589.990234375,
   "status": "pending",
   "hit": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "reasoning": "ASML is the bellwether European semi-equipment peer to Aixtron. Aixtron's stronger outlook signals resilient demand for deposition/MOCVD tools in compound semis and power/RF applications, which is read-through positive for the broader European WFE complex including ASML.",
+  "reasoning": "GDP超预期显示内需与服务业韧性，利好英国本土周期股与银行股盈利预期，富时100短期风险偏好上行。但由于新闻提及随后爆发美伊战争的外部冲击，涨幅受限，因此给出较温和幅度。该传导未在检索结果中覆盖，属新模式。",
   "event": {
-    "id": 2,
-    "summary": "Aixtron raises its 2026 sales outlook, causing shares to jump significantly.",
-    "category": "earnings"
+    "id": 15,
+    "summary": "英国2月GDP增速超预期，创两年多来最大单月涨幅",
+    "category": "macro"
   },
   "news": {
-    "title": "Chip systems supplier Aixtron lifts 2026 sales outlook, shares jump",
-    "source": "yahoo_finance",
+    "title": "UK economy grew faster than expected in February ahead of Iran war",
+    "source": "bbc",
     "lang": "en",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/chip-systems-supplier-aixtron-lifts-080250402.html",
-    "published_at": "2026-04-15T08:02:50"
+    "url": "https://www.bbc.com/news/articles/cz0e23r0993o?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-04-16T10:22:48"
   }
 }

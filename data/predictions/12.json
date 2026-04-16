@@ -1,0 +1,31 @@
+{
+  "id": 12,
+  "made_at": "2026-04-16T19:13:57.379961",
+  "asset": {
+    "symbol": "GBPUSD=X",
+    "name": "英镑兑美元",
+    "class": "fx"
+  },
+  "direction": "down",
+  "magnitude_pct": 1.2,
+  "horizon_days": 7,
+  "expire_at": "2026-04-23T19:13:57.379961",
+  "baseline_price": 1.3532696962356567,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "英国面临粮食进口短缺风险将推高输入型通胀预期，同时财政需为战略储备与补贴增加支出，市场会担忧英国经贸与财政双重承压而抛售英镑。美元在全球避险与能源计价双重逻辑下相对走强，因此英镑兑美元在一周内承压下行。该场景不在检索到的因果链内，标记为新模式。",
+  "event": {
+    "id": 14,
+    "summary": "英国政府官员制定最坏情景预案，预计夏季可能面临粮食短缺，背景为伊朗战争持续",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "UK prepares for food shortages in worst case scenario as Iran war continues",
+    "source": "bbc",
+    "lang": "en",
+    "url": "https://www.bbc.com/news/articles/cpvxp4xnrwdo?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-04-16T16:04:42"
+  }
+}

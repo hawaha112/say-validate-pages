@@ -1,0 +1,31 @@
+{
+  "id": 13,
+  "made_at": "2026-04-16T19:14:24.425517",
+  "asset": {
+    "symbol": "PEP",
+    "name": "百事可乐",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.0,
+  "horizon_days": 14,
+  "expire_at": "2026-04-30T19:14:24.425517",
+  "baseline_price": 157.2949981689453,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "百事通过降价最高15%成功挽回流失的零食消费者，销量回升信号直接缓解此前市场对其量价双杀的担忧。虽然短期毛利率承压，但销量恢复和市场份额企稳通常会被市场视为拐点信号，超级碗旺季验证需求回暖。检索到的因果链均与本新闻主题无关，属于新模式。",
+  "event": {
+    "id": 13,
+    "summary": "百事公司通过下调零食价格最高15%赢回消费者，销量回升",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "Cheaper Doritos and Lays helps PepsiCo win back struggling snackers",
+    "source": "bbc",
+    "lang": "en",
+    "url": "https://www.bbc.com/news/articles/c625dqzpm7qo?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-04-16T16:26:58"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": 36,
+  "made_at": "2026-04-16T19:17:28.013118",
+  "asset": {
+    "symbol": "XLP",
+    "name": "美国消费必需品ETF",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 0.8,
+  "horizon_days": 3,
+  "expire_at": "2026-04-19T19:17:28.013118",
+  "baseline_price": 81.38999938964844,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "百事作为 XLP 前十大权重股，其股价大涨及对地缘风险的乐观表态会直接拉动 ETF 净值，同时改善市场对必需消费板块整体盈利韧性的评估。短期 3 天内板块情绪外溢有限，涨幅约 0.8%。",
+  "event": {
+    "id": 5,
+    "summary": "伊朗战争对百事可乐业务影响有限，地缘风险暂未冲击消费品供应链",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
+    "source": "marketwatch",
+    "lang": "en",
+    "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
+    "published_at": "2026-04-16T17:19:00"
+  }
+}

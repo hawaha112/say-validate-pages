@@ -1,0 +1,31 @@
+{
+  "id": 26,
+  "made_at": "2026-04-16T19:16:16.298668",
+  "asset": {
+    "symbol": "BMNR",
+    "name": "BitMine Immersion Technologies",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 7.0,
+  "horizon_days": 3,
+  "expire_at": "2026-04-19T19:16:16.298668",
+  "baseline_price": 22.065000534057617,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "作为亏损主体，38.2亿美元的季度亏损直接重创公司财报与净资产，市场会立刻对其ETH敞口与偿付能力重新定价，股价大概率跳空下跌并在数日内继续承压。检索结果无对应模式，属新模式。",
+  "event": {
+    "id": 8,
+    "summary": "BitMine公司因以太坊押注巨亏，单季度亏损38.2亿美元",
+    "category": "crypto"
+  },
+  "news": {
+    "title": "BitMine Reports $3.82 Billion Quarterly Loss as Ethereum Bet Weighs Heavy",
+    "source": "yahoo_finance",
+    "lang": "en",
+    "url": "https://finance.yahoo.com/markets/crypto/articles/bitmine-reports-3-82-billion-090629115.html",
+    "published_at": "2026-04-15T09:06:29"
+  }
+}

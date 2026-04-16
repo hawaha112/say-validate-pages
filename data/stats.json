@@ -1,11 +1,14 @@
 {
-  "generated_at": "2026-04-16T18:48:10.590453",
-  "total": 11,
+  "generated_at": "2026-04-16T19:19:12.159871",
+  "total": 44,
   "verified": 0,
-  "pending": 11,
+  "pending": 44,
   "hit_rate": null,
   "by_class": {
-    "fx": 1,
-    "us_stock": 10
+    "us_stock": 31,
+    "commodity": 6,
+    "crypto": 2,
+    "fx": 3,
+    "index": 2
   }
 }

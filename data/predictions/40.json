@@ -1,0 +1,31 @@
+{
+  "id": 40,
+  "made_at": "2026-04-16T19:18:30.632084",
+  "asset": {
+    "symbol": "AMD",
+    "name": "超微半导体",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 4.5,
+  "horizon_days": 7,
+  "expire_at": "2026-04-23T19:18:30.632084",
+  "baseline_price": 274.9100036621094,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "新闻直接利好AMD，服务器CPU业务重获投资者青睐，市场情绪推动股价创近二十年最佳走势。检索到的因果链均为中国A股相关，与本则新闻无关，故作为新模式处理。数据中心CPU是AMD高毛利业务，投资者重新定价将在1-2周内持续发酵。",
+  "event": {
+    "id": 2,
+    "summary": "AMD服务器CPU业务重获投资者青睐，股票表现迎来近二十年最佳走势",
+    "category": "tech"
+  },
+  "news": {
+    "title": "AMD has ‘indispensable assets’ — powering the stock toward its best run in two decades",
+    "source": "marketwatch",
+    "lang": "en",
+    "url": "https://www.marketwatch.com/story/amd-has-indispensable-assets-powering-the-stock-toward-its-best-run-in-two-decades-aa44c469?mod=mw_rss_topstories",
+    "published_at": "2026-04-16T17:01:00"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": 44,
+  "made_at": "2026-04-16T19:18:49.232472",
+  "asset": {
+    "symbol": "REX",
+    "name": "REX美国资源公司",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.5,
+  "horizon_days": 14,
+  "expire_at": "2026-04-30T19:18:49.232472",
+  "baseline_price": 43.43000030517578,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "财报超预期的利好效应通常具备持续性，分析师上调盈利预测与机构加仓会在2-3周内推动股价继续走高，即所谓的盈余公告后漂移（PEAD）效应。此模式未在检索结果中出现，故标记为新模式。",
+  "event": {
+    "id": 1,
+    "summary": "REX美国资源公司2025财年第四季度业绩大幅超预期",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "REX: Monster Earnings Beat to End Fiscal 2025 – Quarterly Update Report",
+    "source": "yahoo_finance",
+    "lang": "en",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/rex-monster-earnings-beat-end-083051662.html",
+    "published_at": "2026-04-15T08:30:51"
+  }
+}

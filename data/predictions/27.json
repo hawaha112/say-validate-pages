@@ -1,0 +1,31 @@
+{
+  "id": 27,
+  "made_at": "2026-04-16T19:16:16.904487",
+  "asset": {
+    "symbol": "BTC-USD",
+    "name": "比特币",
+    "class": "crypto"
+  },
+  "direction": "down",
+  "magnitude_pct": 1.5,
+  "horizon_days": 3,
+  "expire_at": "2026-04-19T19:16:16.904487",
+  "baseline_price": 74824.09375,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "尽管亏损主要来自ETH押注，但加密财库公司巨亏会引发对整个机构加密储备模式的质疑，风险偏好回落传导至BTC，短期内BTC跟随加密板块情绪小幅回调。检索链(id 78/12)反映的是利好情形，与本次利空相反，属新模式。",
+  "event": {
+    "id": 8,
+    "summary": "BitMine公司因以太坊押注巨亏，单季度亏损38.2亿美元",
+    "category": "crypto"
+  },
+  "news": {
+    "title": "BitMine Reports $3.82 Billion Quarterly Loss as Ethereum Bet Weighs Heavy",
+    "source": "yahoo_finance",
+    "lang": "en",
+    "url": "https://finance.yahoo.com/markets/crypto/articles/bitmine-reports-3-82-billion-090629115.html",
+    "published_at": "2026-04-15T09:06:29"
+  }
+}

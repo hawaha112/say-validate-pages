@@ -1,31 +1,31 @@
 {
   "id": 7,
-  "made_at": "2026-04-16T18:45:46.127199",
+  "made_at": "2026-04-16T19:13:31.736600",
   "asset": {
-    "symbol": "SOX",
-    "name": "SOX",
-    "class": "us_stock"
+    "symbol": "GBPUSD=X",
+    "name": "英镑兑美元",
+    "class": "fx"
   },
   "direction": "up",
-  "magnitude_pct": 0.8,
-  "horizon_days": 1,
-  "expire_at": "2026-04-17T18:45:46.127199",
-  "baseline_price": null,
+  "magnitude_pct": 0.6,
+  "horizon_days": 3,
+  "expire_at": "2026-04-19T19:13:31.736600",
+  "baseline_price": 1.3532696962356567,
   "status": "pending",
   "hit": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "reasoning": "Positive guidance from a chip-equipment supplier like Aixtron is typically read as a leading indicator of healthy capex from foundries/IDMs, giving a modest same-day/next-day lift to the broader semiconductor index as sentiment spills over to peers (AMAT, LRCX, ASML).",
+  "reasoning": "英国2月GDP创两年多来最大单月涨幅，经济超预期强劲将削弱英国央行短期降息预期，推升英镑相对美元的利率优势。检索到的因果链主要覆盖中国与美国宏观数据，未直接覆盖英国GDP对英镑的传导，因此标记为新模式。",
   "event": {
-    "id": 2,
-    "summary": "Aixtron raises its 2026 sales outlook, causing shares to jump significantly.",
-    "category": "earnings"
+    "id": 15,
+    "summary": "英国2月GDP增速超预期，创两年多来最大单月涨幅",
+    "category": "macro"
   },
   "news": {
-    "title": "Chip systems supplier Aixtron lifts 2026 sales outlook, shares jump",
-    "source": "yahoo_finance",
+    "title": "UK economy grew faster than expected in February ahead of Iran war",
+    "source": "bbc",
     "lang": "en",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/chip-systems-supplier-aixtron-lifts-080250402.html",
-    "published_at": "2026-04-15T08:02:50"
+    "url": "https://www.bbc.com/news/articles/cz0e23r0993o?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-04-16T10:22:48"
   }
 }

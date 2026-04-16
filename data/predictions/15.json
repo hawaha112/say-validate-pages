@@ -1,0 +1,31 @@
+{
+  "id": 15,
+  "made_at": "2026-04-16T19:14:26.356498",
+  "asset": {
+    "symbol": "XLP",
+    "name": "美国消费必需品ETF",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 0.8,
+  "horizon_days": 7,
+  "expire_at": "2026-04-23T19:14:26.356498",
+  "baseline_price": 81.33499908447266,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "百事降价信号表明过去两年靠涨价驱动业绩的美国消费必需品板块进入定价能力衰退阶段，后续各大消费品公司可能被迫跟进促销，压制板块整体盈利预期与估值倍数。检索到的因果链不涵盖此类消费降级/定价权逆转主题，为新模式。",
+  "event": {
+    "id": 13,
+    "summary": "百事公司通过下调零食价格最高15%赢回消费者，销量回升",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "Cheaper Doritos and Lays helps PepsiCo win back struggling snackers",
+    "source": "bbc",
+    "lang": "en",
+    "url": "https://www.bbc.com/news/articles/c625dqzpm7qo?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-04-16T16:26:58"
+  }
+}

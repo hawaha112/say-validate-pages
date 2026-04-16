@@ -1,31 +1,31 @@
 {
   "id": 10,
-  "made_at": "2026-04-16T18:46:15.690903",
+  "made_at": "2026-04-16T19:13:55.845723",
   "asset": {
-    "symbol": "TAN",
-    "name": "Invesco Solar ETF",
-    "class": "us_stock"
+    "symbol": "ZW=F",
+    "name": "小麦期货",
+    "class": "commodity"
   },
-  "direction": "down",
-  "magnitude_pct": 2.5,
-  "horizon_days": 7,
-  "expire_at": "2026-04-23T18:46:15.690903",
-  "baseline_price": 54.04999923706055,
+  "direction": "up",
+  "magnitude_pct": 4.5,
+  "horizon_days": 14,
+  "expire_at": "2026-04-30T19:13:55.845723",
+  "baseline_price": 608.25,
   "status": "pending",
   "hit": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "reasoning": "TAN holds a mix of US solar installers/developers and global module makers. Restrictions on Chinese solar manufacturing equipment raise capex and delay US domestic capacity ramp for many holdings, pressuring the broader solar ETF despite pockets of relative winners.",
+  "reasoning": "英国政府制定最坏情景预案预警夏季粮食短缺，叠加伊朗战争持续扰乱中东物流与黑海-红海运输通道，市场会提前定价全球粮食供应紧张预期。小麦作为英国主要进口主粮品种，对此类地缘+供应冲击最为敏感，期货价格通常在政府层面公开预警后两周内快速反应。检索到的因果链未覆盖战争叠加粮食安全的模式，故标记为新模式。",
   "event": {
-    "id": 1,
-    "summary": "China is considering restrictions on exports of solar manufacturing equipment to the United States, escalating trade tensions in the clean energy sector.",
+    "id": 14,
+    "summary": "英国政府官员制定最坏情景预案，预计夏季可能面临粮食短缺，背景为伊朗战争持续",
     "category": "geopolitics"
   },
   "news": {
-    "title": "Exclusive-China weighs curbs on exports of solar manufacturing equipment to US",
-    "source": "yahoo_finance",
+    "title": "UK prepares for food shortages in worst case scenario as Iran war continues",
+    "source": "bbc",
     "lang": "en",
-    "url": "https://finance.yahoo.com/sectors/energy/articles/exclusive-china-weighs-curbs-exports-074947904.html",
-    "published_at": "2026-04-15T07:49:47"
+    "url": "https://www.bbc.com/news/articles/cpvxp4xnrwdo?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-04-16T16:04:42"
   }
 }

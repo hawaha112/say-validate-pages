@@ -1,639 +1,1231 @@
 {
-  "generated_at": "2026-04-16T18:48:10.601756",
+  "generated_at": "2026-04-16T19:19:12.178513",
   "stats": {
-    "generated_at": "2026-04-16T18:48:10.590453",
-    "total": 11,
+    "generated_at": "2026-04-16T19:19:12.159871",
+    "total": 44,
     "verified": 0,
-    "pending": 11,
+    "pending": 44,
     "hit_rate": null,
     "by_class": {
-      "fx": 1,
-      "us_stock": 10
+      "us_stock": 31,
+      "commodity": 6,
+      "crypto": 2,
+      "fx": 3,
+      "index": 2
     }
   },
   "recent_predictions": [
     {
-      "id": 11,
-      "made_at": "2026-04-16T18:46:17.535861",
+      "id": 44,
+      "made_at": "2026-04-16T19:18:49.232472",
       "asset": {
-        "symbol": "USDCNY=X",
-        "name": "USD/CNY",
-        "class": "fx"
-      },
-      "direction": "up",
-      "magnitude_pct": 0.3,
-      "horizon_days": 7,
-      "expire_at": "2026-04-23T18:46:17.535861",
-      "baseline_price": 6.820300102233887,
-      "status": "pending",
-      "hit": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "reasoning": "Escalation in US-China trade frictions in the clean-energy supply chain tends to weaken CNY via risk-off flows and expectations of retaliatory measures. Prior link on trade-friction dynamics (id 24) supports a mild USDCNY upside even when China is the initiator.",
-      "event": {
-        "id": 1,
-        "summary": "China is considering restrictions on exports of solar manufacturing equipment to the United States, escalating trade tensions in the clean energy sector.",
-        "category": "geopolitics"
-      },
-      "news": {
-        "title": "Exclusive-China weighs curbs on exports of solar manufacturing equipment to US",
-        "source": "yahoo_finance",
-        "lang": "en",
-        "url": "https://finance.yahoo.com/sectors/energy/articles/exclusive-china-weighs-curbs-exports-074947904.html",
-        "published_at": "2026-04-15T07:49:47"
-      }
-    },
-    {
-      "id": 10,
-      "made_at": "2026-04-16T18:46:15.690903",
-      "asset": {
-        "symbol": "TAN",
-        "name": "Invesco Solar ETF",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 2.5,
-      "horizon_days": 7,
-      "expire_at": "2026-04-23T18:46:15.690903",
-      "baseline_price": 54.04999923706055,
-      "status": "pending",
-      "hit": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "reasoning": "TAN holds a mix of US solar installers/developers and global module makers. Restrictions on Chinese solar manufacturing equipment raise capex and delay US domestic capacity ramp for many holdings, pressuring the broader solar ETF despite pockets of relative winners.",
-      "event": {
-        "id": 1,
-        "summary": "China is considering restrictions on exports of solar manufacturing equipment to the United States, escalating trade tensions in the clean energy sector.",
-        "category": "geopolitics"
-      },
-      "news": {
-        "title": "Exclusive-China weighs curbs on exports of solar manufacturing equipment to US",
-        "source": "yahoo_finance",
-        "lang": "en",
-        "url": "https://finance.yahoo.com/sectors/energy/articles/exclusive-china-weighs-curbs-exports-074947904.html",
-        "published_at": "2026-04-15T07:49:47"
-      }
-    },
-    {
-      "id": 9,
-      "made_at": "2026-04-16T18:46:13.319949",
-      "asset": {
-        "symbol": "FSLR",
-        "name": "First Solar Inc.",
+        "symbol": "REX",
+        "name": "REX美国资源公司",
         "class": "us_stock"
       },
       "direction": "up",
-      "magnitude_pct": 4.0,
-      "horizon_days": 7,
-      "expire_at": "2026-04-23T18:46:13.319949",
-      "baseline_price": 190.4499969482422,
+      "magnitude_pct": 3.5,
+      "horizon_days": 14,
+      "expire_at": "2026-04-30T19:18:49.232472",
+      "baseline_price": 43.43000030517578,
       "status": "pending",
       "hit": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "reasoning": "First Solar is the largest US-based solar panel manufacturer with minimal reliance on Chinese manufacturing equipment. Curbs on Chinese solar equipment exports to the US constrain competitors' ability to build new US capacity, reinforcing FSLR's domestic moat and pricing power.",
+      "reasoning": "财报超预期的利好效应通常具备持续性，分析师上调盈利预测与机构加仓会在2-3周内推动股价继续走高，即所谓的盈余公告后漂移（PEAD）效应。此模式未在检索结果中出现，故标记为新模式。",
       "event": {
         "id": 1,
-        "summary": "China is considering restrictions on exports of solar manufacturing equipment to the United States, escalating trade tensions in the clean energy sector.",
-        "category": "geopolitics"
+        "summary": "REX美国资源公司2025财年第四季度业绩大幅超预期",
+        "category": "earnings"
       },
       "news": {
-        "title": "Exclusive-China weighs curbs on exports of solar manufacturing equipment to US",
+        "title": "REX: Monster Earnings Beat to End Fiscal 2025 – Quarterly Update Report",
         "source": "yahoo_finance",
         "lang": "en",
-        "url": "https://finance.yahoo.com/sectors/energy/articles/exclusive-china-weighs-curbs-exports-074947904.html",
-        "published_at": "2026-04-15T07:49:47"
+        "url": "https://finance.yahoo.com/markets/stocks/articles/rex-monster-earnings-beat-end-083051662.html",
+        "published_at": "2026-04-15T08:30:51"
       }
     },
     {
-      "id": 8,
-      "made_at": "2026-04-16T18:45:46.795598",
+      "id": 43,
+      "made_at": "2026-04-16T19:18:48.580429",
       "asset": {
-        "symbol": "ASML",
-        "name": "ASML Holding N.V.",
+        "symbol": "REX",
+        "name": "REX美国资源公司",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 6.0,
+      "horizon_days": 3,
+      "expire_at": "2026-04-19T19:18:48.580429",
+      "baseline_price": 43.43000030517578,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "REX公布2025财年第四季度业绩大幅超预期，属于典型的业绩超预期利好个股事件。小盘股在财报大超预期后通常在短期内出现显著跳涨，市场会快速重新定价盈利能力。检索到的因果链均不涉及个股业绩超预期模式，故标记为新模式。",
+      "event": {
+        "id": 1,
+        "summary": "REX美国资源公司2025财年第四季度业绩大幅超预期",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "REX: Monster Earnings Beat to End Fiscal 2025 – Quarterly Update Report",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/rex-monster-earnings-beat-end-083051662.html",
+        "published_at": "2026-04-15T08:30:51"
+      }
+    },
+    {
+      "id": 42,
+      "made_at": "2026-04-16T19:18:32.469783",
+      "asset": {
+        "symbol": "SMH",
+        "name": "半导体ETF",
         "class": "us_stock"
       },
       "direction": "up",
       "magnitude_pct": 1.5,
       "horizon_days": 3,
-      "expire_at": "2026-04-19T18:45:46.795598",
-      "baseline_price": 1417.6199951171875,
+      "expire_at": "2026-04-19T19:18:32.469783",
+      "baseline_price": 454.25,
       "status": "pending",
       "hit": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "reasoning": "ASML is the bellwether European semi-equipment peer to Aixtron. Aixtron's stronger outlook signals resilient demand for deposition/MOCVD tools in compound semis and power/RF applications, which is read-through positive for the broader European WFE complex including ASML.",
+      "reasoning": "AMD作为半导体权重股走强会外溢至整个半导体板块，强化AI与数据中心景气主线。检索到的因果链均聚焦A股，未覆盖美股半导体板块联动，故记为新模式。",
       "event": {
         "id": 2,
-        "summary": "Aixtron raises its 2026 sales outlook, causing shares to jump significantly.",
-        "category": "earnings"
+        "summary": "AMD服务器CPU业务重获投资者青睐，股票表现迎来近二十年最佳走势",
+        "category": "tech"
       },
       "news": {
-        "title": "Chip systems supplier Aixtron lifts 2026 sales outlook, shares jump",
-        "source": "yahoo_finance",
+        "title": "AMD has ‘indispensable assets’ — powering the stock toward its best run in two decades",
+        "source": "marketwatch",
         "lang": "en",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/chip-systems-supplier-aixtron-lifts-080250402.html",
-        "published_at": "2026-04-15T08:02:50"
+        "url": "https://www.marketwatch.com/story/amd-has-indispensable-assets-powering-the-stock-toward-its-best-run-in-two-decades-aa44c469?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:01:00"
       }
     },
     {
-      "id": 7,
-      "made_at": "2026-04-16T18:45:46.127199",
+      "id": 41,
+      "made_at": "2026-04-16T19:18:31.617860",
       "asset": {
-        "symbol": "SOX",
-        "name": "SOX",
+        "symbol": "INTC",
+        "name": "英特尔",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.5,
+      "horizon_days": 7,
+      "expire_at": "2026-04-23T19:18:31.617860",
+      "baseline_price": 68.32980346679688,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "AMD服务器CPU业务强势意味着继续抢占Intel在数据中心的市场份额，是零和竞争。AMD的估值修复往往伴随Intel相对承压。检索因果链不涉及半导体竞争格局，故标注为新模式。",
+      "event": {
+        "id": 2,
+        "summary": "AMD服务器CPU业务重获投资者青睐，股票表现迎来近二十年最佳走势",
+        "category": "tech"
+      },
+      "news": {
+        "title": "AMD has ‘indispensable assets’ — powering the stock toward its best run in two decades",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/amd-has-indispensable-assets-powering-the-stock-toward-its-best-run-in-two-decades-aa44c469?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:01:00"
+      }
+    },
+    {
+      "id": 40,
+      "made_at": "2026-04-16T19:18:30.632084",
+      "asset": {
+        "symbol": "AMD",
+        "name": "超微半导体",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 4.5,
+      "horizon_days": 7,
+      "expire_at": "2026-04-23T19:18:30.632084",
+      "baseline_price": 274.9100036621094,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "新闻直接利好AMD，服务器CPU业务重获投资者青睐，市场情绪推动股价创近二十年最佳走势。检索到的因果链均为中国A股相关，与本则新闻无关，故作为新模式处理。数据中心CPU是AMD高毛利业务，投资者重新定价将在1-2周内持续发酵。",
+      "event": {
+        "id": 2,
+        "summary": "AMD服务器CPU业务重获投资者青睐，股票表现迎来近二十年最佳走势",
+        "category": "tech"
+      },
+      "news": {
+        "title": "AMD has ‘indispensable assets’ — powering the stock toward its best run in two decades",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/amd-has-indispensable-assets-powering-the-stock-toward-its-best-run-in-two-decades-aa44c469?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:01:00"
+      }
+    },
+    {
+      "id": 39,
+      "made_at": "2026-04-16T19:17:52.349190",
+      "asset": {
+        "symbol": "XLP",
+        "name": "美国消费必需品ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.0,
+      "horizon_days": 7,
+      "expire_at": "2026-04-23T19:17:52.349190",
+      "baseline_price": 81.375,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "PEP 是 XLP 的核心权重股，其股价大涨及对消费需求回暖的表态会改善整个必需消费板块的盈利预期，带动 ETF 温和上行。检索结果中没有必需消费板块层面的因果链，标记为新模式。",
+      "event": {
+        "id": 4,
+        "summary": "百事可乐表示降价及健康产品推动消费者回流，股价大涨",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:19:00"
+      }
+    },
+    {
+      "id": 38,
+      "made_at": "2026-04-16T19:17:51.723728",
+      "asset": {
+        "symbol": "KO",
+        "name": "可口可乐",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.5,
+      "horizon_days": 3,
+      "expire_at": "2026-04-19T19:17:51.723728",
+      "baseline_price": 75.125,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "百事作为饮料行业风向标释放需求回暖信号，可口可乐作为最直接同业会受益于板块情绪联动，市场会把'消费者回流'外推到整个软饮龙头。属于新模式，因为检索的因果链没有覆盖消费行业同业联动。",
+      "event": {
+        "id": 4,
+        "summary": "百事可乐表示降价及健康产品推动消费者回流，股价大涨",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:19:00"
+      }
+    },
+    {
+      "id": 37,
+      "made_at": "2026-04-16T19:17:50.994054",
+      "asset": {
+        "symbol": "PEP",
+        "name": "百事可乐",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.5,
+      "horizon_days": 3,
+      "expire_at": "2026-04-19T19:17:50.994054",
+      "baseline_price": 157.7899932861328,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "百事公布降价及健康化产品策略成功拉回消费者，且管理层表示伊朗战争冲击有限，短期利空被证伪叠加基本面改善，直接利好股价。检索结果中没有消费品龙头正面业绩指引的对应 pattern，属于新模式。",
+      "event": {
+        "id": 4,
+        "summary": "百事可乐表示降价及健康产品推动消费者回流，股价大涨",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:19:00"
+      }
+    },
+    {
+      "id": 36,
+      "made_at": "2026-04-16T19:17:28.013118",
+      "asset": {
+        "symbol": "XLP",
+        "name": "美国消费必需品ETF",
         "class": "us_stock"
       },
       "direction": "up",
       "magnitude_pct": 0.8,
-      "horizon_days": 1,
-      "expire_at": "2026-04-17T18:45:46.127199",
-      "baseline_price": null,
+      "horizon_days": 3,
+      "expire_at": "2026-04-19T19:17:28.013118",
+      "baseline_price": 81.38999938964844,
       "status": "pending",
       "hit": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "reasoning": "Positive guidance from a chip-equipment supplier like Aixtron is typically read as a leading indicator of healthy capex from foundries/IDMs, giving a modest same-day/next-day lift to the broader semiconductor index as sentiment spills over to peers (AMAT, LRCX, ASML).",
+      "reasoning": "百事作为 XLP 前十大权重股，其股价大涨及对地缘风险的乐观表态会直接拉动 ETF 净值，同时改善市场对必需消费板块整体盈利韧性的评估。短期 3 天内板块情绪外溢有限，涨幅约 0.8%。",
       "event": {
-        "id": 2,
-        "summary": "Aixtron raises its 2026 sales outlook, causing shares to jump significantly.",
-        "category": "earnings"
+        "id": 5,
+        "summary": "伊朗战争对百事可乐业务影响有限，地缘风险暂未冲击消费品供应链",
+        "category": "geopolitics"
       },
       "news": {
-        "title": "Chip systems supplier Aixtron lifts 2026 sales outlook, shares jump",
-        "source": "yahoo_finance",
+        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
+        "source": "marketwatch",
         "lang": "en",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/chip-systems-supplier-aixtron-lifts-080250402.html",
-        "published_at": "2026-04-15T08:02:50"
+        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:19:00"
       }
     },
     {
-      "id": 6,
-      "made_at": "2026-04-16T18:45:44.828683",
+      "id": 35,
+      "made_at": "2026-04-16T19:17:27.295639",
       "asset": {
-        "symbol": "AIXA.DE",
-        "name": "Aixtron SE",
+        "symbol": "KO",
+        "name": "可口可乐",
         "class": "us_stock"
       },
       "direction": "up",
-      "magnitude_pct": 5.0,
+      "magnitude_pct": 1.2,
       "horizon_days": 3,
-      "expire_at": "2026-04-19T18:45:44.828683",
-      "baseline_price": 40.90999984741211,
+      "expire_at": "2026-04-19T19:17:27.295639",
+      "baseline_price": 75.125,
       "status": "pending",
       "hit": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "reasoning": "Aixtron raising its 2026 sales outlook is a direct positive guidance revision. Upward guidance revisions from mid-cap semiconductor equipment suppliers typically trigger a sharp short-term rally as analysts revise estimates and momentum traders pile in. The news text confirms shares are already jumping.",
+      "reasoning": "百事业绩回暖和消费者回流的信号会外溢至同业龙头可口可乐，市场会预期整个软饮板块需求企稳；但可口可乐本身未直接受益，幅度弱于百事。该因果关系未在检索链中，故标记为新模式。",
       "event": {
-        "id": 2,
-        "summary": "Aixtron raises its 2026 sales outlook, causing shares to jump significantly.",
-        "category": "earnings"
+        "id": 5,
+        "summary": "伊朗战争对百事可乐业务影响有限，地缘风险暂未冲击消费品供应链",
+        "category": "geopolitics"
       },
       "news": {
-        "title": "Chip systems supplier Aixtron lifts 2026 sales outlook, shares jump",
-        "source": "yahoo_finance",
+        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
+        "source": "marketwatch",
         "lang": "en",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/chip-systems-supplier-aixtron-lifts-080250402.html",
-        "published_at": "2026-04-15T08:02:50"
+        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:19:00"
       }
     },
     {
-      "id": 5,
-      "made_at": "2026-04-16T18:45:25.220696",
+      "id": 34,
+      "made_at": "2026-04-16T19:17:26.161443",
       "asset": {
-        "symbol": "REX",
-        "name": "REX Energy / REX Shares",
+        "symbol": "PEP",
+        "name": "百事可乐",
         "class": "us_stock"
       },
       "direction": "up",
       "magnitude_pct": 3.0,
-      "horizon_days": 14,
-      "expire_at": "2026-04-30T18:45:25.220696",
-      "baseline_price": 43.48139953613281,
-      "status": "pending",
-      "hit": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "reasoning": "Post-earnings-announcement drift: stocks with strong positive earnings surprises tend to continue outperforming over the following 2-4 weeks as analyst estimates are revised upward and institutional inflows build. Novel pattern not covered by retrieved links.",
-      "event": {
-        "id": 3,
-        "summary": "REX Energy (or REX Shares) reported a significant earnings beat for fiscal Q4/full-year 2025.",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "REX: Monster Earnings Beat to End Fiscal 2025 – Quarterly Update Report",
-        "source": "yahoo_finance",
-        "lang": "en",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/rex-monster-earnings-beat-end-083051662.html",
-        "published_at": "2026-04-15T08:30:51"
-      }
-    },
-    {
-      "id": 4,
-      "made_at": "2026-04-16T18:45:24.390748",
-      "asset": {
-        "symbol": "REX",
-        "name": "REX Energy / REX Shares",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 5.0,
       "horizon_days": 3,
-      "expire_at": "2026-04-19T18:45:24.390748",
-      "baseline_price": 43.48139953613281,
+      "expire_at": "2026-04-19T19:17:26.161443",
+      "baseline_price": 157.7949981689453,
       "status": "pending",
       "hit": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "reasoning": "Significant earnings beat for Q4/FY2025 typically triggers short-term positive price reaction as the market reprices forward expectations and short positions cover. No retrieved link fits this event pattern, so this is a novel inference based on the standard earnings-surprise→stock-up relationship.",
+      "reasoning": "百事通过降价和健康化新品重新吸引了观望的消费者，同时管理层披露伊朗战争尚未对业务造成实质冲击，双重利好驱动股价当日大涨。短期内盘后情绪和分析师上修预期会延续推动，3 天窗口内有望维持 3% 左右涨幅。",
       "event": {
-        "id": 3,
-        "summary": "REX Energy (or REX Shares) reported a significant earnings beat for fiscal Q4/full-year 2025.",
-        "category": "earnings"
+        "id": 5,
+        "summary": "伊朗战争对百事可乐业务影响有限，地缘风险暂未冲击消费品供应链",
+        "category": "geopolitics"
       },
       "news": {
-        "title": "REX: Monster Earnings Beat to End Fiscal 2025 – Quarterly Update Report",
-        "source": "yahoo_finance",
+        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
+        "source": "marketwatch",
         "lang": "en",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/rex-monster-earnings-beat-end-083051662.html",
-        "published_at": "2026-04-15T08:30:51"
+        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:19:00"
       }
     },
     {
-      "id": 3,
-      "made_at": "2026-04-16T18:45:04.333980",
+      "id": 33,
+      "made_at": "2026-04-16T19:17:07.084215",
       "asset": {
-        "symbol": "NVDA",
-        "name": "NVIDIA",
+        "symbol": "IPO",
+        "name": "Renaissance IPO ETF",
         "class": "us_stock"
       },
       "direction": "up",
       "magnitude_pct": 2.5,
-      "horizon_days": 3,
-      "expire_at": "2026-04-19T18:45:04.333980",
-      "baseline_price": 198.24000549316406,
+      "horizon_days": 14,
+      "expire_at": "2026-04-30T19:17:07.084215",
+      "baseline_price": 48.0098991394043,
       "status": "pending",
       "hit": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "reasoning": "ASML explicitly attributes the upgraded forecast to AI-driven demand, reinforcing the AI capex narrative. NVDA, as the primary beneficiary of AI accelerator demand, typically rallies on upstream confirmations of sustained AI investment.",
+      "reasoning": "本年度最大IPO成功定价并首日大涨，验证了一级市场承接能力恢复，将刺激后续IPO排队加速发行并提升已上市次新股估值，Renaissance IPO ETF作为新股组合直接受益于IPO窗口重启的情绪与资金流入。检索结果无对应因果模式，属新模式。",
       "event": {
-        "id": 4,
-        "summary": "ASML raises its 2026 sales forecast, citing strong AI-driven demand for semiconductor lithography equipment.",
-        "category": "earnings"
+        "id": 6,
+        "summary": "Madison Air完成22亿美元IPO，成为2026年最大规模IPO及1999年以来工业板块最大IPO",
+        "category": "other"
       },
       "news": {
-        "title": "ASML lifts 2026 sales forecast as AI demand drives profit growth",
-        "source": "yahoo_finance",
+        "title": "With the largest industrial IPO since 1999, this air-quality giant’s stock opened with a bang",
+        "source": "marketwatch",
         "lang": "en",
-        "url": "https://finance.yahoo.com/sectors/technology/articles/asml-lifts-2026-sales-forecast-084100217.html",
-        "published_at": "2026-04-15T08:41:00"
+        "url": "https://www.marketwatch.com/story/with-the-largest-industrial-ipo-since-1999-this-air-quality-giant-is-going-public-08a50184?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:21:00"
       }
     },
     {
-      "id": 2,
-      "made_at": "2026-04-16T18:44:56.122797",
+      "id": 32,
+      "made_at": "2026-04-16T19:17:06.542473",
       "asset": {
-        "symbol": "SOXX",
-        "name": "iShares Semiconductor ETF",
+        "symbol": "XLI",
+        "name": "工业板块ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.5,
+      "horizon_days": 1,
+      "expire_at": "2026-04-17T19:17:06.542473",
+      "baseline_price": 170.52999877929688,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "1999年以来最大工业IPO首日爆发，短线将点燃工业板块情绪，同业估值比价效应迅速传导至XLI成分股，尤其是HVAC/空气质量/暖通相关龙头。属新模式，无现成因果链匹配。",
+      "event": {
+        "id": 6,
+        "summary": "Madison Air完成22亿美元IPO，成为2026年最大规模IPO及1999年以来工业板块最大IPO",
+        "category": "other"
+      },
+      "news": {
+        "title": "With the largest industrial IPO since 1999, this air-quality giant’s stock opened with a bang",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/with-the-largest-industrial-ipo-since-1999-this-air-quality-giant-is-going-public-08a50184?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:21:00"
+      }
+    },
+    {
+      "id": 31,
+      "made_at": "2026-04-16T19:17:05.934056",
+      "asset": {
+        "symbol": "XLI",
+        "name": "工业板块ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.2,
+      "horizon_days": 7,
+      "expire_at": "2026-04-23T19:17:05.934056",
+      "baseline_price": 170.52999877929688,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "Madison Air作为1999年以来最大工业板块IPO募资22亿美元且首日大涨，显示机构对工业板块配置意愿强烈，将提升整个工业板块的估值中枢和资金关注度，XLI作为工业板块代表ETF将受到资金轮动带动。检索到的因果链未覆盖大型工业IPO对板块的情绪传导模式，属新模式。",
+      "event": {
+        "id": 6,
+        "summary": "Madison Air完成22亿美元IPO，成为2026年最大规模IPO及1999年以来工业板块最大IPO",
+        "category": "other"
+      },
+      "news": {
+        "title": "With the largest industrial IPO since 1999, this air-quality giant’s stock opened with a bang",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/with-the-largest-industrial-ipo-since-1999-this-air-quality-giant-is-going-public-08a50184?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:21:00"
+      }
+    },
+    {
+      "id": 30,
+      "made_at": "2026-04-16T19:16:43.385336",
+      "asset": {
+        "symbol": "NG=F",
+        "name": "天然气期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 4.0,
+      "horizon_days": 30,
+      "expire_at": "2026-05-16T19:16:43.385336",
+      "baseline_price": 2.6630001068115234,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "馏分油/柴油价格居高不下会促使发电厂在边际上更多使用天然气替代燃油发电，叠加居民电费上行预期，天然气需求面受到提振。与检索到的贸易/政治类因果链无关，属新模式。",
+      "event": {
+        "id": 7,
+        "summary": "油价隐性成本创历史新高，或推高居民电费",
+        "category": "energy"
+      },
+      "news": {
+        "title": "This ‘hidden’ price of oil is at record highs — and it’ll hit your electric bill next",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/this-hidden-oil-price-is-ripping-the-hull-out-of-the-global-economy-89ff8e54?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T18:17:00"
+      }
+    },
+    {
+      "id": 29,
+      "made_at": "2026-04-16T19:16:42.564583",
+      "asset": {
+        "symbol": "XLE",
+        "name": "能源板块ETF",
         "class": "us_stock"
       },
       "direction": "up",
       "magnitude_pct": 2.0,
       "horizon_days": 7,
-      "expire_at": "2026-04-23T18:44:56.122797",
-      "baseline_price": 404.6199951171875,
+      "expire_at": "2026-04-23T19:16:42.564583",
+      "baseline_price": 56.584999084472656,
       "status": "pending",
       "hit": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "reasoning": "ASML is a bellwether for the semiconductor capital-equipment cycle. A guidance raise citing AI demand validates continued capex from TSMC/Samsung/Intel and lifts the broader semi/semi-equipment complex (SOXX holds ASML, AMAT, LRCX, KLAC).",
+      "reasoning": "油价隐性成本(馏分油裂解价差)创历史新高意味着炼厂与综合油气公司下游毛利显著扩张，直接利好能源板块业绩预期。市场在关注地缘和平而低估该结构性利多，修复时会推高XLE。属新模式，未匹配到现有因果链。",
       "event": {
-        "id": 4,
-        "summary": "ASML raises its 2026 sales forecast, citing strong AI-driven demand for semiconductor lithography equipment.",
-        "category": "earnings"
+        "id": 7,
+        "summary": "油价隐性成本创历史新高，或推高居民电费",
+        "category": "energy"
       },
       "news": {
-        "title": "ASML lifts 2026 sales forecast as AI demand drives profit growth",
-        "source": "yahoo_finance",
+        "title": "This ‘hidden’ price of oil is at record highs — and it’ll hit your electric bill next",
+        "source": "marketwatch",
         "lang": "en",
-        "url": "https://finance.yahoo.com/sectors/technology/articles/asml-lifts-2026-sales-forecast-084100217.html",
-        "published_at": "2026-04-15T08:41:00"
+        "url": "https://www.marketwatch.com/story/this-hidden-oil-price-is-ripping-the-hull-out-of-the-global-economy-89ff8e54?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T18:17:00"
       }
     },
     {
-      "id": 1,
-      "made_at": "2026-04-16T18:44:50.095420",
+      "id": 28,
+      "made_at": "2026-04-16T19:16:41.612172",
       "asset": {
-        "symbol": "ASML",
-        "name": "ASML Holding N.V.",
+        "symbol": "XLU",
+        "name": "公用事业行业ETF",
         "class": "us_stock"
       },
-      "direction": "up",
-      "magnitude_pct": 4.0,
-      "horizon_days": 3,
-      "expire_at": "2026-04-19T18:44:50.095420",
-      "baseline_price": 1416.7550048828125,
+      "direction": "down",
+      "magnitude_pct": 1.5,
+      "horizon_days": 14,
+      "expire_at": "2026-04-30T19:16:41.612172",
+      "baseline_price": 46.165000915527344,
       "status": "pending",
       "hit": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "reasoning": "ASML raising its 2026 sales forecast on strong AI-driven lithography demand is a direct positive earnings catalyst for the company itself. Guidance raises typically drive a 3-6% re-rating in mega-cap semiconductor equipment names within days.",
+      "reasoning": "新闻指出油价的隐性成本(如柴油/馏分油裂解价差、运输与发电燃料成本)创历史新高，将传导至居民电费。公用事业公司短期内受限于费率审批，难以立刻转嫁燃料成本，利润率受挤压，股价承压。检索到的因果链均不涉及能源-电力传导链，属新模式。",
       "event": {
-        "id": 4,
-        "summary": "ASML raises its 2026 sales forecast, citing strong AI-driven demand for semiconductor lithography equipment.",
+        "id": 7,
+        "summary": "油价隐性成本创历史新高，或推高居民电费",
+        "category": "energy"
+      },
+      "news": {
+        "title": "This ‘hidden’ price of oil is at record highs — and it’ll hit your electric bill next",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/this-hidden-oil-price-is-ripping-the-hull-out-of-the-global-economy-89ff8e54?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T18:17:00"
+      }
+    },
+    {
+      "id": 27,
+      "made_at": "2026-04-16T19:16:16.904487",
+      "asset": {
+        "symbol": "BTC-USD",
+        "name": "比特币",
+        "class": "crypto"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.5,
+      "horizon_days": 3,
+      "expire_at": "2026-04-19T19:16:16.904487",
+      "baseline_price": 74824.09375,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "尽管亏损主要来自ETH押注，但加密财库公司巨亏会引发对整个机构加密储备模式的质疑，风险偏好回落传导至BTC，短期内BTC跟随加密板块情绪小幅回调。检索链(id 78/12)反映的是利好情形，与本次利空相反，属新模式。",
+      "event": {
+        "id": 8,
+        "summary": "BitMine公司因以太坊押注巨亏，单季度亏损38.2亿美元",
+        "category": "crypto"
+      },
+      "news": {
+        "title": "BitMine Reports $3.82 Billion Quarterly Loss as Ethereum Bet Weighs Heavy",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/crypto/articles/bitmine-reports-3-82-billion-090629115.html",
+        "published_at": "2026-04-15T09:06:29"
+      }
+    },
+    {
+      "id": 26,
+      "made_at": "2026-04-16T19:16:16.298668",
+      "asset": {
+        "symbol": "BMNR",
+        "name": "BitMine Immersion Technologies",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 7.0,
+      "horizon_days": 3,
+      "expire_at": "2026-04-19T19:16:16.298668",
+      "baseline_price": 22.065000534057617,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "作为亏损主体，38.2亿美元的季度亏损直接重创公司财报与净资产，市场会立刻对其ETH敞口与偿付能力重新定价，股价大概率跳空下跌并在数日内继续承压。检索结果无对应模式，属新模式。",
+      "event": {
+        "id": 8,
+        "summary": "BitMine公司因以太坊押注巨亏，单季度亏损38.2亿美元",
+        "category": "crypto"
+      },
+      "news": {
+        "title": "BitMine Reports $3.82 Billion Quarterly Loss as Ethereum Bet Weighs Heavy",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/crypto/articles/bitmine-reports-3-82-billion-090629115.html",
+        "published_at": "2026-04-15T09:06:29"
+      }
+    },
+    {
+      "id": 25,
+      "made_at": "2026-04-16T19:16:15.369836",
+      "asset": {
+        "symbol": "ETH-USD",
+        "name": "以太坊",
+        "class": "crypto"
+      },
+      "direction": "down",
+      "magnitude_pct": 3.5,
+      "horizon_days": 3,
+      "expire_at": "2026-04-19T19:16:15.369836",
+      "baseline_price": 2337.27001953125,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "BitMine作为大型以太坊财库公司单季巨亏38.2亿美元，引发市场对企业级ETH持仓被迫减仓/止损的担忧，且会打击其他机构继续增持ETH作为储备资产的信心。检索到的因果链均未覆盖'加密财库公司巨亏'情景，属新模式。短期情绪面承压，3日内ETH承压下行。",
+      "event": {
+        "id": 8,
+        "summary": "BitMine公司因以太坊押注巨亏，单季度亏损38.2亿美元",
+        "category": "crypto"
+      },
+      "news": {
+        "title": "BitMine Reports $3.82 Billion Quarterly Loss as Ethereum Bet Weighs Heavy",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/crypto/articles/bitmine-reports-3-82-billion-090629115.html",
+        "published_at": "2026-04-15T09:06:29"
+      }
+    },
+    {
+      "id": 24,
+      "made_at": "2026-04-16T19:15:48.905726",
+      "asset": {
+        "symbol": "PINS",
+        "name": "Pinterest",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.0,
+      "horizon_days": 3,
+      "expire_at": "2026-04-19T19:15:48.905726",
+      "baseline_price": 20.03499984741211,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "Snap大规模裁员暗示中小型社交广告平台面临用户增长放缓与竞争加剧的压力，作为与Snap定位接近的中型广告平台，Pinterest易被市场一并下调预期。检索结果未覆盖该同业传导模式，属于新模式。",
+      "event": {
+        "id": 9,
+        "summary": "Snap宣布裁员1000人，受激进投资者施压并押注AI提效",
+        "category": "tech"
+      },
+      "news": {
+        "title": "Snap to cut 1,000 jobs after activist pressure, bets on AI efficiency",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/snap-lay-off-16-staff-101450564.html",
+        "published_at": "2026-04-15T10:14:50"
+      }
+    },
+    {
+      "id": 23,
+      "made_at": "2026-04-16T19:15:48.090840",
+      "asset": {
+        "symbol": "META",
+        "name": "Meta平台",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.5,
+      "horizon_days": 7,
+      "expire_at": "2026-04-23T19:15:48.090840",
+      "baseline_price": 673.4298706054688,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "Snap裁员并押注AI提效会强化市场对广告类科技公司走'效率年'路线的预期，作为社交广告同业且AI投入更深的Meta容易获得情绪外溢和估值抬升。此关系不在检索到的因果链中，属于新模式。",
+      "event": {
+        "id": 9,
+        "summary": "Snap宣布裁员1000人，受激进投资者施压并押注AI提效",
+        "category": "tech"
+      },
+      "news": {
+        "title": "Snap to cut 1,000 jobs after activist pressure, bets on AI efficiency",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/snap-lay-off-16-staff-101450564.html",
+        "published_at": "2026-04-15T10:14:50"
+      }
+    },
+    {
+      "id": 22,
+      "made_at": "2026-04-16T19:15:47.188177",
+      "asset": {
+        "symbol": "SNAP",
+        "name": "Snap公司",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 4.5,
+      "horizon_days": 3,
+      "expire_at": "2026-04-19T19:15:47.188177",
+      "baseline_price": 6.079999923706055,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "公司宣布裁员1000人以应对激进投资者压力并押注AI提效，短期内市场通常将大规模裁员解读为成本削减和利润率改善的积极信号，加上激进投资者介入常推动股价上行。检索到的因果链未覆盖该模式，属于新模式。",
+      "event": {
+        "id": 9,
+        "summary": "Snap宣布裁员1000人，受激进投资者施压并押注AI提效",
+        "category": "tech"
+      },
+      "news": {
+        "title": "Snap to cut 1,000 jobs after activist pressure, bets on AI efficiency",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/snap-lay-off-16-staff-101450564.html",
+        "published_at": "2026-04-15T10:14:50"
+      }
+    },
+    {
+      "id": 21,
+      "made_at": "2026-04-16T19:15:27.633059",
+      "asset": {
+        "symbol": "BYND",
+        "name": "超越肉类",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 3.5,
+      "horizon_days": 3,
+      "expire_at": "2026-04-19T19:15:27.633059",
+      "baseline_price": 0.7986999750137329,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "短期内负面舆情发酵（CEO甩锅消费者引发公关危机）将触发散户与机构的恐慌性抛售，股价在3日窗口延续跌势。属于舆情驱动短期崩跌的新模式，检索结果中无对应因果链。",
+      "event": {
+        "id": 10,
+        "summary": "Beyond Meat股价从200美元暴跌至仙股水平，CEO薪酬却获上调，并将公司崩溃归咎于美国消费者",
         "category": "earnings"
       },
       "news": {
-        "title": "ASML lifts 2026 sales forecast as AI demand drives profit growth",
+        "title": "Beyond Meat crashed from $200 to penny-stock territory. The CEO got a raise — and blames Americans for the collapse",
         "source": "yahoo_finance",
         "lang": "en",
-        "url": "https://finance.yahoo.com/sectors/technology/articles/asml-lifts-2026-sales-forecast-084100217.html",
-        "published_at": "2026-04-15T08:41:00"
+        "url": "https://finance.yahoo.com/markets/stocks/articles/beyond-meat-crashed-200-penny-091500999.html",
+        "published_at": "2026-04-15T09:15:00"
+      }
+    },
+    {
+      "id": 20,
+      "made_at": "2026-04-16T19:15:27.095054",
+      "asset": {
+        "symbol": "TSN",
+        "name": "泰森食品",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.8,
+      "horizon_days": 7,
+      "expire_at": "2026-04-23T19:15:27.095054",
+      "baseline_price": 63.540000915527344,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "Beyond Meat的崩盘进一步印证植物肉赛道需求疲软，传统动物蛋白龙头泰森食品作为替代品受益者，市场份额预期改善。此为行业替代效应的新模式，检索到的因果链未覆盖该消费替代主题。",
+      "event": {
+        "id": 10,
+        "summary": "Beyond Meat股价从200美元暴跌至仙股水平，CEO薪酬却获上调，并将公司崩溃归咎于美国消费者",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Beyond Meat crashed from $200 to penny-stock territory. The CEO got a raise — and blames Americans for the collapse",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/beyond-meat-crashed-200-penny-091500999.html",
+        "published_at": "2026-04-15T09:15:00"
+      }
+    },
+    {
+      "id": 19,
+      "made_at": "2026-04-16T19:15:26.136335",
+      "asset": {
+        "symbol": "BYND",
+        "name": "超越肉类",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 6.0,
+      "horizon_days": 7,
+      "expire_at": "2026-04-23T19:15:26.136335",
+      "baseline_price": 0.7986999750137329,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "新闻直接揭示公司基本面恶化（股价从200美元跌至仙股区间）且管理层治理存在争议——CEO在公司崩溃之际反获加薪并将责任推给消费者，这种治理与公关双重利空将加剧投资者抛售和做空压力。检索到的因果链均不涉及此类『公司治理争议叠加基本面崩塌』模式，故判定为新模式。",
+      "event": {
+        "id": 10,
+        "summary": "Beyond Meat股价从200美元暴跌至仙股水平，CEO薪酬却获上调，并将公司崩溃归咎于美国消费者",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Beyond Meat crashed from $200 to penny-stock territory. The CEO got a raise — and blames Americans for the collapse",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/beyond-meat-crashed-200-penny-091500999.html",
+        "published_at": "2026-04-15T09:15:00"
+      }
+    },
+    {
+      "id": 18,
+      "made_at": "2026-04-16T19:14:49.221808",
+      "asset": {
+        "symbol": "CHGG",
+        "name": "Chegg",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.0,
+      "horizon_days": 14,
+      "expire_at": "2026-04-30T19:14:49.221808",
+      "baseline_price": 1.149999976158142,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "作为在线学习平台代表，Chegg 受'教育回归纸质'叙事影响更直接：若公共政策开始质疑屏幕学习效果，投资者会下修 EdTech 板块终局规模预期。属于检索结果未覆盖的新因果模式。",
+      "event": {
+        "id": 12,
+        "summary": "瑞典学校削减数字化教学，课堂重返纸质书本与纸笔",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "Back to books - Sweden's schools cutting back on digital learning",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/cly0vk77vdko?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-15T23:06:43"
+      }
+    },
+    {
+      "id": 17,
+      "made_at": "2026-04-16T19:14:48.404582",
+      "asset": {
+        "symbol": "LOGI",
+        "name": "罗技",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.5,
+      "horizon_days": 14,
+      "expire_at": "2026-04-30T19:14:48.404582",
+      "baseline_price": 99.16000366210938,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "罗技教育市场的键鼠、摄像头、平板配件销售对学校 IT 采购敏感。瑞典削减课堂电子设备的政策若被其他北欧国家效仿，将压低教育细分渠道出货预期。此属于'教育去数字化'这一新模式，现有因果链未覆盖。",
+      "event": {
+        "id": 12,
+        "summary": "瑞典学校削减数字化教学，课堂重返纸质书本与纸笔",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "Back to books - Sweden's schools cutting back on digital learning",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/cly0vk77vdko?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-15T23:06:43"
+      }
+    },
+    {
+      "id": 16,
+      "made_at": "2026-04-16T19:14:47.464715",
+      "asset": {
+        "symbol": "GOOGL",
+        "name": "谷歌",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 0.5,
+      "horizon_days": 7,
+      "expire_at": "2026-04-23T19:14:47.464715",
+      "baseline_price": 335.0199890136719,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "瑞典学校削减数字化教学、重回纸笔，对教育科技（Chromebook、Google Classroom 等）构成负面信号。若此趋势在欧洲扩散，将削弱谷歌教育硬件与服务渗透率的长期叙事，短期情绪面小幅承压。检索到的因果链均与 AI 芯片、反垄断或中美贸易相关，未覆盖'教育数字化回潮'这一新模式。",
+      "event": {
+        "id": 12,
+        "summary": "瑞典学校削减数字化教学，课堂重返纸质书本与纸笔",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "Back to books - Sweden's schools cutting back on digital learning",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/cly0vk77vdko?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-15T23:06:43"
+      }
+    },
+    {
+      "id": 15,
+      "made_at": "2026-04-16T19:14:26.356498",
+      "asset": {
+        "symbol": "XLP",
+        "name": "美国消费必需品ETF",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 0.8,
+      "horizon_days": 7,
+      "expire_at": "2026-04-23T19:14:26.356498",
+      "baseline_price": 81.33499908447266,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "百事降价信号表明过去两年靠涨价驱动业绩的美国消费必需品板块进入定价能力衰退阶段，后续各大消费品公司可能被迫跟进促销，压制板块整体盈利预期与估值倍数。检索到的因果链不涵盖此类消费降级/定价权逆转主题，为新模式。",
+      "event": {
+        "id": 13,
+        "summary": "百事公司通过下调零食价格最高15%赢回消费者，销量回升",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Cheaper Doritos and Lays helps PepsiCo win back struggling snackers",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/c625dqzpm7qo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T16:26:58"
       }
     }
   ],
   "top_kb": [
     {
-      "id": 1,
-      "pattern": "美联储加息 25bp",
+      "id": 3,
+      "pattern": "美联储加息幅度超预期（50bp 或连续意外加息）",
       "asset_symbol": "DXY",
       "asset_class": "fx",
       "direction": "up",
-      "magnitude_pct": 0.5,
-      "horizon_days": 5,
-      "confidence": 0.65,
-      "support_count": 0,
-      "refute_count": 0,
-      "source": "seed",
-      "rationale": "加息抬升美元实际利率，利空无息资产（黄金、加密），风险股估值承压"
-    },
-    {
-      "id": 2,
-      "pattern": "美联储加息 25bp",
-      "asset_symbol": "GC=F",
-      "asset_class": "commodity",
-      "direction": "down",
-      "magnitude_pct": 1.5,
-      "horizon_days": 5,
-      "confidence": 0.65,
-      "support_count": 0,
-      "refute_count": 0,
-      "source": "seed",
-      "rationale": "加息抬升美元实际利率，利空无息资产（黄金、加密），风险股估值承压"
-    },
-    {
-      "id": 3,
-      "pattern": "美联储加息 25bp",
-      "asset_symbol": "SPY",
-      "asset_class": "us_stock",
-      "direction": "down",
-      "magnitude_pct": 0.8,
+      "magnitude_pct": 1.2,
       "horizon_days": 3,
-      "confidence": 0.65,
+      "confidence": 0.75,
       "support_count": 0,
       "refute_count": 0,
       "source": "seed",
-      "rationale": "加息抬升美元实际利率，利空无息资产（黄金、加密），风险股估值承压"
+      "rationale": "鹰派意外是 FOMC 最强信号之一，长久期科技股、黄金、加密资产当周普跌；美元大幅走强"
     },
     {
       "id": 4,
-      "pattern": "美联储加息 25bp",
-      "asset_symbol": "BTC-USD",
-      "asset_class": "crypto",
-      "direction": "down",
-      "magnitude_pct": 3.0,
-      "horizon_days": 5,
-      "confidence": 0.65,
-      "support_count": 0,
-      "refute_count": 0,
-      "source": "seed",
-      "rationale": "加息抬升美元实际利率，利空无息资产（黄金、加密），风险股估值承压"
-    },
-    {
-      "id": 5,
-      "pattern": "美联储降息 25bp",
-      "asset_symbol": "DXY",
-      "asset_class": "fx",
-      "direction": "down",
-      "magnitude_pct": 0.5,
-      "horizon_days": 5,
-      "confidence": 0.65,
-      "support_count": 0,
-      "refute_count": 0,
-      "source": "seed",
-      "rationale": "降息压低美元实际利率，利多风险资产与黄金"
-    },
-    {
-      "id": 6,
-      "pattern": "美联储降息 25bp",
-      "asset_symbol": "GC=F",
-      "asset_class": "commodity",
-      "direction": "up",
-      "magnitude_pct": 1.5,
-      "horizon_days": 5,
-      "confidence": 0.65,
-      "support_count": 0,
-      "refute_count": 0,
-      "source": "seed",
-      "rationale": "降息压低美元实际利率，利多风险资产与黄金"
-    },
-    {
-      "id": 7,
-      "pattern": "美联储降息 25bp",
-      "asset_symbol": "SPY",
-      "asset_class": "us_stock",
-      "direction": "up",
-      "magnitude_pct": 0.8,
-      "horizon_days": 5,
-      "confidence": 0.65,
-      "support_count": 0,
-      "refute_count": 0,
-      "source": "seed",
-      "rationale": "降息压低美元实际利率，利多风险资产与黄金"
-    },
-    {
-      "id": 8,
-      "pattern": "美联储降息 25bp",
-      "asset_symbol": "BTC-USD",
-      "asset_class": "crypto",
-      "direction": "up",
-      "magnitude_pct": 3.5,
-      "horizon_days": 7,
-      "confidence": 0.65,
-      "support_count": 0,
-      "refute_count": 0,
-      "source": "seed",
-      "rationale": "降息压低美元实际利率，利多风险资产与黄金"
-    },
-    {
-      "id": 11,
-      "pattern": "美国 CPI 同比超预期上行 >0.2%",
-      "asset_symbol": "DXY",
-      "asset_class": "fx",
-      "direction": "up",
-      "magnitude_pct": 0.4,
-      "horizon_days": 3,
-      "confidence": 0.6,
-      "support_count": 0,
-      "refute_count": 0,
-      "source": "seed",
-      "rationale": "CPI 超预期强化紧缩预期，利多美元、利空长久期资产"
-    },
-    {
-      "id": 12,
-      "pattern": "美国 CPI 同比超预期上行 >0.2%",
+      "pattern": "美联储加息幅度超预期（50bp 或连续意外加息）",
       "asset_symbol": "QQQ",
       "asset_class": "us_stock",
       "direction": "down",
-      "magnitude_pct": 1.2,
+      "magnitude_pct": 2.5,
       "horizon_days": 3,
-      "confidence": 0.6,
+      "confidence": 0.75,
       "support_count": 0,
       "refute_count": 0,
       "source": "seed",
-      "rationale": "CPI 超预期强化紧缩预期，利多美元、利空长久期资产"
+      "rationale": "鹰派意外是 FOMC 最强信号之一，长久期科技股、黄金、加密资产当周普跌；美元大幅走强"
     },
     {
-      "id": 13,
-      "pattern": "美国 CPI 同比超预期上行 >0.2%",
+      "id": 5,
+      "pattern": "美联储加息幅度超预期（50bp 或连续意外加息）",
       "asset_symbol": "GC=F",
       "asset_class": "commodity",
       "direction": "down",
-      "magnitude_pct": 1.0,
+      "magnitude_pct": 2.0,
       "horizon_days": 3,
-      "confidence": 0.6,
+      "confidence": 0.75,
       "support_count": 0,
       "refute_count": 0,
       "source": "seed",
-      "rationale": "CPI 超预期强化紧缩预期，利多美元、利空长久期资产"
+      "rationale": "鹰派意外是 FOMC 最强信号之一，长久期科技股、黄金、加密资产当周普跌；美元大幅走强"
     },
     {
-      "id": 16,
-      "pattern": "OPEC+ 宣布减产",
-      "asset_symbol": "CL=F",
+      "id": 6,
+      "pattern": "美联储加息幅度超预期（50bp 或连续意外加息）",
+      "asset_symbol": "BTC-USD",
+      "asset_class": "crypto",
+      "direction": "down",
+      "magnitude_pct": 5.0,
+      "horizon_days": 5,
+      "confidence": 0.75,
+      "support_count": 0,
+      "refute_count": 0,
+      "source": "seed",
+      "rationale": "鹰派意外是 FOMC 最强信号之一，长久期科技股、黄金、加密资产当周普跌；美元大幅走强"
+    },
+    {
+      "id": 7,
+      "pattern": "美联储加息幅度超预期（50bp 或连续意外加息）",
+      "asset_symbol": "TLT",
+      "asset_class": "us_stock",
+      "direction": "down",
+      "magnitude_pct": 2.5,
+      "horizon_days": 3,
+      "confidence": 0.75,
+      "support_count": 0,
+      "refute_count": 0,
+      "source": "seed",
+      "rationale": "鹰派意外是 FOMC 最强信号之一，长久期科技股、黄金、加密资产当周普跌；美元大幅走强"
+    },
+    {
+      "id": 13,
+      "pattern": "美联储紧急降息（非例会场合，>=50bp）",
+      "asset_symbol": "GC=F",
       "asset_class": "commodity",
       "direction": "up",
       "magnitude_pct": 3.0,
-      "horizon_days": 5,
-      "confidence": 0.6,
+      "horizon_days": 14,
+      "confidence": 0.7,
       "support_count": 0,
       "refute_count": 0,
       "source": "seed",
-      "rationale": "供给收紧推升原油价格，带动能源股"
+      "rationale": "紧急降息信号经济压力大，短期股市反弹但中期避险资产更占优（参考 2020-03）"
+    },
+    {
+      "id": 14,
+      "pattern": "美联储紧急降息（非例会场合，>=50bp）",
+      "asset_symbol": "TLT",
+      "asset_class": "us_stock",
+      "direction": "up",
+      "magnitude_pct": 3.0,
+      "horizon_days": 14,
+      "confidence": 0.7,
+      "support_count": 0,
+      "refute_count": 0,
+      "source": "seed",
+      "rationale": "紧急降息信号经济压力大，短期股市反弹但中期避险资产更占优（参考 2020-03）"
+    },
+    {
+      "id": 15,
+      "pattern": "美联储紧急降息（非例会场合，>=50bp）",
+      "asset_symbol": "DXY",
+      "asset_class": "fx",
+      "direction": "down",
+      "magnitude_pct": 1.5,
+      "horizon_days": 7,
+      "confidence": 0.7,
+      "support_count": 0,
+      "refute_count": 0,
+      "source": "seed",
+      "rationale": "紧急降息信号经济压力大，短期股市反弹但中期避险资产更占优（参考 2020-03）"
+    },
+    {
+      "id": 16,
+      "pattern": "FOMC 点阵图意外鹰派（上移未来利率路径）",
+      "asset_symbol": "QQQ",
+      "asset_class": "us_stock",
+      "direction": "down",
+      "magnitude_pct": 1.5,
+      "horizon_days": 3,
+      "confidence": 0.7,
+      "support_count": 0,
+      "refute_count": 0,
+      "source": "seed",
+      "rationale": "点阵图是市场预期锚，上移将快速重定价前端利率，科技股与加密回调"
     },
     {
       "id": 17,
-      "pattern": "OPEC+ 宣布减产",
-      "asset_symbol": "XLE",
+      "pattern": "FOMC 点阵图意外鹰派（上移未来利率路径）",
+      "asset_symbol": "DXY",
+      "asset_class": "fx",
+      "direction": "up",
+      "magnitude_pct": 0.6,
+      "horizon_days": 3,
+      "confidence": 0.7,
+      "support_count": 0,
+      "refute_count": 0,
+      "source": "seed",
+      "rationale": "点阵图是市场预期锚，上移将快速重定价前端利率，科技股与加密回调"
+    },
+    {
+      "id": 18,
+      "pattern": "FOMC 点阵图意外鹰派（上移未来利率路径）",
+      "asset_symbol": "BTC-USD",
+      "asset_class": "crypto",
+      "direction": "down",
+      "magnitude_pct": 3.5,
+      "horizon_days": 5,
+      "confidence": 0.7,
+      "support_count": 0,
+      "refute_count": 0,
+      "source": "seed",
+      "rationale": "点阵图是市场预期锚，上移将快速重定价前端利率，科技股与加密回调"
+    },
+    {
+      "id": 19,
+      "pattern": "FOMC 点阵图意外鸽派（下移未来利率路径）",
+      "asset_symbol": "QQQ",
       "asset_class": "us_stock",
       "direction": "up",
       "magnitude_pct": 1.5,
-      "horizon_days": 5,
-      "confidence": 0.6,
+      "horizon_days": 3,
+      "confidence": 0.7,
       "support_count": 0,
       "refute_count": 0,
       "source": "seed",
-      "rationale": "供给收紧推升原油价格，带动能源股"
+      "rationale": "鸽派点阵图释放宽松预期，风险资产共振上涨"
     },
     {
-      "id": 26,
-      "pattern": "SEC 批准现货加密 ETF",
-      "asset_symbol": "BTC-USD",
-      "asset_class": "crypto",
+      "id": 20,
+      "pattern": "FOMC 点阵图意外鸽派（下移未来利率路径）",
+      "asset_symbol": "DXY",
+      "asset_class": "fx",
+      "direction": "down",
+      "magnitude_pct": 0.6,
+      "horizon_days": 3,
+      "confidence": 0.7,
+      "support_count": 0,
+      "refute_count": 0,
+      "source": "seed",
+      "rationale": "鸽派点阵图释放宽松预期，风险资产共振上涨"
+    },
+    {
+      "id": 21,
+      "pattern": "FOMC 点阵图意外鸽派（下移未来利率路径）",
+      "asset_symbol": "GC=F",
+      "asset_class": "commodity",
       "direction": "up",
-      "magnitude_pct": 5.0,
-      "horizon_days": 7,
-      "confidence": 0.6,
+      "magnitude_pct": 1.8,
+      "horizon_days": 5,
+      "confidence": 0.7,
       "support_count": 0,
       "refute_count": 0,
       "source": "seed",
-      "rationale": "机构入场门槛下降，资金流入推高相关币种"
+      "rationale": "鸽派点阵图释放宽松预期，风险资产共振上涨"
     },
     {
-      "id": 27,
-      "pattern": "SEC 批准现货加密 ETF",
-      "asset_symbol": "ETH-USD",
+      "id": 22,
+      "pattern": "FOMC 点阵图意外鸽派（下移未来利率路径）",
+      "asset_symbol": "BTC-USD",
       "asset_class": "crypto",
       "direction": "up",
       "magnitude_pct": 4.0,
       "horizon_days": 7,
-      "confidence": 0.6,
+      "confidence": 0.7,
       "support_count": 0,
       "refute_count": 0,
       "source": "seed",
-      "rationale": "机构入场门槛下降，资金流入推高相关币种"
+      "rationale": "鸽派点阵图释放宽松预期，风险资产共振上涨"
     },
     {
-      "id": 28,
-      "pattern": "大型加密交易所或稳定币出现严重偿付/脱锚事件",
+      "id": 44,
+      "pattern": "OPEC+ 宣布意外减产（超市场预期）",
+      "asset_symbol": "CL=F",
+      "asset_class": "commodity",
+      "direction": "up",
+      "magnitude_pct": 4.0,
+      "horizon_days": 3,
+      "confidence": 0.7,
+      "support_count": 0,
+      "refute_count": 0,
+      "source": "seed",
+      "rationale": "意外减产直接收紧供给，原油短期显著上行，能源股跟涨"
+    },
+    {
+      "id": 45,
+      "pattern": "OPEC+ 宣布意外减产（超市场预期）",
+      "asset_symbol": "XLE",
+      "asset_class": "us_stock",
+      "direction": "up",
+      "magnitude_pct": 2.5,
+      "horizon_days": 5,
+      "confidence": 0.7,
+      "support_count": 0,
+      "refute_count": 0,
+      "source": "seed",
+      "rationale": "意外减产直接收紧供给，原油短期显著上行，能源股跟涨"
+    },
+    {
+      "id": 46,
+      "pattern": "OPEC+ 宣布意外减产（超市场预期）",
+      "asset_symbol": "XOM",
+      "asset_class": "us_stock",
+      "direction": "up",
+      "magnitude_pct": 2.0,
+      "horizon_days": 5,
+      "confidence": 0.7,
+      "support_count": 0,
+      "refute_count": 0,
+      "source": "seed",
+      "rationale": "意外减产直接收紧供给，原油短期显著上行，能源股跟涨"
+    },
+    {
+      "id": 73,
+      "pattern": "SEC 批准现货加密 ETF（BTC/ETH 等）",
       "asset_symbol": "BTC-USD",
       "asset_class": "crypto",
-      "direction": "down",
-      "magnitude_pct": 6.0,
-      "horizon_days": 3,
-      "confidence": 0.6,
+      "direction": "up",
+      "magnitude_pct": 8.0,
+      "horizon_days": 14,
+      "confidence": 0.7,
       "support_count": 0,
       "refute_count": 0,
       "source": "seed",
-      "rationale": "信任危机引发流动性收缩，加密资产普跌"
+      "rationale": "机构通道打开吸引 ETF 资金流入，参考 2024 年 1 月现货 BTC ETF 通过后 60 日涨幅"
     },
     {
-      "id": 29,
-      "pattern": "大型加密交易所或稳定币出现严重偿付/脱锚事件",
+      "id": 74,
+      "pattern": "SEC 批准现货加密 ETF（BTC/ETH 等）",
       "asset_symbol": "ETH-USD",
       "asset_class": "crypto",
-      "direction": "down",
-      "magnitude_pct": 8.0,
-      "horizon_days": 3,
-      "confidence": 0.6,
-      "support_count": 0,
-      "refute_count": 0,
-      "source": "seed",
-      "rationale": "信任危机引发流动性收缩，加密资产普跌"
-    },
-    {
-      "id": 9,
-      "pattern": "中国 LPR 下调",
-      "asset_symbol": "510300.SS",
-      "asset_class": "a_stock",
       "direction": "up",
-      "magnitude_pct": 0.8,
-      "horizon_days": 3,
-      "confidence": 0.55,
+      "magnitude_pct": 6.0,
+      "horizon_days": 14,
+      "confidence": 0.7,
       "support_count": 0,
       "refute_count": 0,
       "source": "seed",
-      "rationale": "LPR 下调释放宽松信号，利多 A 股地产金融板块与风险偏好"
-    },
-    {
-      "id": 10,
-      "pattern": "中国 LPR 下调",
-      "asset_symbol": "USDCNY=X",
-      "asset_class": "fx",
-      "direction": "up",
-      "magnitude_pct": 0.2,
-      "horizon_days": 5,
-      "confidence": 0.55,
-      "support_count": 0,
-      "refute_count": 0,
-      "source": "seed",
-      "rationale": "LPR 下调释放宽松信号，利多 A 股地产金融板块与风险偏好"
-    },
-    {
-      "id": 14,
-      "pattern": "美国非农就业数据大幅不及预期",
-      "asset_symbol": "DXY",
-      "asset_class": "fx",
-      "direction": "down",
-      "magnitude_pct": 0.3,
-      "horizon_days": 3,
-      "confidence": 0.55,
-      "support_count": 0,
-      "refute_count": 0,
-      "source": "seed",
-      "rationale": "就业疲软强化降息预期，风险资产初期受利好"
+      "rationale": "机构通道打开吸引 ETF 资金流入，参考 2024 年 1 月现货 BTC ETF 通过后 60 日涨幅"
     }
   ]
 }

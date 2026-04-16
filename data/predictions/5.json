@@ -1,31 +1,31 @@
 {
   "id": 5,
-  "made_at": "2026-04-16T18:45:25.220696",
+  "made_at": "2026-04-16T19:13:10.815375",
   "asset": {
-    "symbol": "REX",
-    "name": "REX Energy / REX Shares",
-    "class": "us_stock"
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
   },
   "direction": "up",
-  "magnitude_pct": 3.0,
-  "horizon_days": 14,
-  "expire_at": "2026-04-30T18:45:25.220696",
-  "baseline_price": 43.48139953613281,
+  "magnitude_pct": 3.5,
+  "horizon_days": 7,
+  "expire_at": "2026-04-23T19:13:10.815375",
+  "baseline_price": 4814.60009765625,
   "status": "pending",
   "hit": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "reasoning": "Post-earnings-announcement drift: stocks with strong positive earnings surprises tend to continue outperforming over the following 2-4 weeks as analyst estimates are revised upward and institutional inflows build. Novel pattern not covered by retrieved links.",
+  "reasoning": "美以对伊朗开战引发剧烈避险情绪，黄金作为终极避险资产将获资金流入，逻辑与链94（停摆/债务违约推升黄金避险需求）一致，但战争冲击力度更强，因此幅度略高于停摆场景。",
   "event": {
-    "id": 3,
-    "summary": "REX Energy (or REX Shares) reported a significant earnings beat for fiscal Q4/full-year 2025.",
-    "category": "earnings"
+    "id": 16,
+    "summary": "美国与以色列联合对伊朗开战，地缘政治冲突爆发，推高避险与能源资产",
+    "category": "geopolitics"
   },
   "news": {
-    "title": "REX: Monster Earnings Beat to End Fiscal 2025 – Quarterly Update Report",
-    "source": "yahoo_finance",
+    "title": "UK economy grew faster than expected in February ahead of Iran war",
+    "source": "bbc",
     "lang": "en",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/rex-monster-earnings-beat-end-083051662.html",
-    "published_at": "2026-04-15T08:30:51"
+    "url": "https://www.bbc.com/news/articles/cz0e23r0993o?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-04-16T10:22:48"
   }
 }

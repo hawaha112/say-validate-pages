@@ -1,31 +1,31 @@
 {
   "id": 9,
-  "made_at": "2026-04-16T18:46:13.319949",
+  "made_at": "2026-04-16T19:13:33.525085",
   "asset": {
-    "symbol": "FSLR",
-    "name": "First Solar Inc.",
-    "class": "us_stock"
+    "symbol": "IGLT.L",
+    "name": "英国国债ETF",
+    "class": "index"
   },
-  "direction": "up",
-  "magnitude_pct": 4.0,
-  "horizon_days": 7,
-  "expire_at": "2026-04-23T18:46:13.319949",
-  "baseline_price": 190.4499969482422,
+  "direction": "down",
+  "magnitude_pct": 0.5,
+  "horizon_days": 3,
+  "expire_at": "2026-04-19T19:13:33.525085",
+  "baseline_price": 9.800000190734863,
   "status": "pending",
   "hit": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "reasoning": "First Solar is the largest US-based solar panel manufacturer with minimal reliance on Chinese manufacturing equipment. Curbs on Chinese solar equipment exports to the US constrain competitors' ability to build new US capacity, reinforcing FSLR's domestic moat and pricing power.",
+  "reasoning": "经济数据强于预期会推迟英国央行降息节奏，长端Gilt收益率上行、价格下跌。该因果链与检索到的非农→TLT传导逻辑类似（id 40/42），但标的为英国国债，故作为新模式记录。",
   "event": {
-    "id": 1,
-    "summary": "China is considering restrictions on exports of solar manufacturing equipment to the United States, escalating trade tensions in the clean energy sector.",
-    "category": "geopolitics"
+    "id": 15,
+    "summary": "英国2月GDP增速超预期，创两年多来最大单月涨幅",
+    "category": "macro"
   },
   "news": {
-    "title": "Exclusive-China weighs curbs on exports of solar manufacturing equipment to US",
-    "source": "yahoo_finance",
+    "title": "UK economy grew faster than expected in February ahead of Iran war",
+    "source": "bbc",
     "lang": "en",
-    "url": "https://finance.yahoo.com/sectors/energy/articles/exclusive-china-weighs-curbs-exports-074947904.html",
-    "published_at": "2026-04-15T07:49:47"
+    "url": "https://www.bbc.com/news/articles/cz0e23r0993o?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-04-16T10:22:48"
   }
 }

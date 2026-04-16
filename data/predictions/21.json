@@ -1,0 +1,31 @@
+{
+  "id": 21,
+  "made_at": "2026-04-16T19:15:27.633059",
+  "asset": {
+    "symbol": "BYND",
+    "name": "超越肉类",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 3.5,
+  "horizon_days": 3,
+  "expire_at": "2026-04-19T19:15:27.633059",
+  "baseline_price": 0.7986999750137329,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "短期内负面舆情发酵（CEO甩锅消费者引发公关危机）将触发散户与机构的恐慌性抛售，股价在3日窗口延续跌势。属于舆情驱动短期崩跌的新模式，检索结果中无对应因果链。",
+  "event": {
+    "id": 10,
+    "summary": "Beyond Meat股价从200美元暴跌至仙股水平，CEO薪酬却获上调，并将公司崩溃归咎于美国消费者",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "Beyond Meat crashed from $200 to penny-stock territory. The CEO got a raise — and blames Americans for the collapse",
+    "source": "yahoo_finance",
+    "lang": "en",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/beyond-meat-crashed-200-penny-091500999.html",
+    "published_at": "2026-04-15T09:15:00"
+  }
+}

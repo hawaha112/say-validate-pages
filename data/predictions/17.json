@@ -1,0 +1,31 @@
+{
+  "id": 17,
+  "made_at": "2026-04-16T19:14:48.404582",
+  "asset": {
+    "symbol": "LOGI",
+    "name": "罗技",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 1.5,
+  "horizon_days": 14,
+  "expire_at": "2026-04-30T19:14:48.404582",
+  "baseline_price": 99.16000366210938,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "罗技教育市场的键鼠、摄像头、平板配件销售对学校 IT 采购敏感。瑞典削减课堂电子设备的政策若被其他北欧国家效仿，将压低教育细分渠道出货预期。此属于'教育去数字化'这一新模式，现有因果链未覆盖。",
+  "event": {
+    "id": 12,
+    "summary": "瑞典学校削减数字化教学，课堂重返纸质书本与纸笔",
+    "category": "regulation"
+  },
+  "news": {
+    "title": "Back to books - Sweden's schools cutting back on digital learning",
+    "source": "bbc",
+    "lang": "en",
+    "url": "https://www.bbc.com/news/articles/cly0vk77vdko?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-04-15T23:06:43"
+  }
+}

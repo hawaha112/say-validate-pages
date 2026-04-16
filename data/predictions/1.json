@@ -1,31 +1,31 @@
 {
   "id": 1,
-  "made_at": "2026-04-16T18:44:50.095420",
+  "made_at": "2026-04-16T19:12:48.535064",
   "asset": {
-    "symbol": "ASML",
-    "name": "ASML Holding N.V.",
-    "class": "us_stock"
+    "symbol": "CL=F",
+    "name": "WTI原油期货",
+    "class": "commodity"
   },
   "direction": "up",
-  "magnitude_pct": 4.0,
-  "horizon_days": 3,
-  "expire_at": "2026-04-19T18:44:50.095420",
-  "baseline_price": 1416.7550048828125,
+  "magnitude_pct": 2.5,
+  "horizon_days": 7,
+  "expire_at": "2026-04-23T19:12:48.535064",
+  "baseline_price": 90.31999969482422,
   "status": "pending",
   "hit": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "reasoning": "ASML raising its 2026 sales forecast on strong AI-driven lithography demand is a direct positive earnings catalyst for the company itself. Guidance raises typically drive a 3-6% re-rating in mega-cap semiconductor equipment names within days.",
+  "reasoning": "海湾地区供应中断导致欧洲航空煤油库存仅剩六周，精炼产品紧张将向上游原油传导，提振原油价格。虽然新闻不是飓风导致的炼油中断（#53），但供给端冲击的传导逻辑相似，可参考该模式；鉴于地缘风险溢价更具持续性，按中等幅度估计。",
   "event": {
-    "id": 4,
-    "summary": "ASML raises its 2026 sales forecast, citing strong AI-driven demand for semiconductor lithography equipment.",
-    "category": "earnings"
+    "id": 17,
+    "summary": "国际能源署警告欧洲航空燃料库存仅剩约六周，若来自海湾地区的供应持续中断，航班或将被取消",
+    "category": "energy"
   },
   "news": {
-    "title": "ASML lifts 2026 sales forecast as AI demand drives profit growth",
-    "source": "yahoo_finance",
+    "title": "Europe has 'maybe six weeks of jet fuel left', energy boss warns",
+    "source": "bbc",
     "lang": "en",
-    "url": "https://finance.yahoo.com/sectors/technology/articles/asml-lifts-2026-sales-forecast-084100217.html",
-    "published_at": "2026-04-15T08:41:00"
+    "url": "https://www.bbc.com/news/articles/czjw2kz0l22o?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-04-16T15:34:39"
   }
 }

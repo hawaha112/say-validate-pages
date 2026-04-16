@@ -1,0 +1,31 @@
+{
+  "id": 41,
+  "made_at": "2026-04-16T19:18:31.617860",
+  "asset": {
+    "symbol": "INTC",
+    "name": "英特尔",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 2.5,
+  "horizon_days": 7,
+  "expire_at": "2026-04-23T19:18:31.617860",
+  "baseline_price": 68.32980346679688,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "AMD服务器CPU业务强势意味着继续抢占Intel在数据中心的市场份额，是零和竞争。AMD的估值修复往往伴随Intel相对承压。检索因果链不涉及半导体竞争格局，故标注为新模式。",
+  "event": {
+    "id": 2,
+    "summary": "AMD服务器CPU业务重获投资者青睐，股票表现迎来近二十年最佳走势",
+    "category": "tech"
+  },
+  "news": {
+    "title": "AMD has ‘indispensable assets’ — powering the stock toward its best run in two decades",
+    "source": "marketwatch",
+    "lang": "en",
+    "url": "https://www.marketwatch.com/story/amd-has-indispensable-assets-powering-the-stock-toward-its-best-run-in-two-decades-aa44c469?mod=mw_rss_topstories",
+    "published_at": "2026-04-16T17:01:00"
+  }
+}

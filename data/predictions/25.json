@@ -1,0 +1,31 @@
+{
+  "id": 25,
+  "made_at": "2026-04-16T19:16:15.369836",
+  "asset": {
+    "symbol": "ETH-USD",
+    "name": "以太坊",
+    "class": "crypto"
+  },
+  "direction": "down",
+  "magnitude_pct": 3.5,
+  "horizon_days": 3,
+  "expire_at": "2026-04-19T19:16:15.369836",
+  "baseline_price": 2337.27001953125,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "BitMine作为大型以太坊财库公司单季巨亏38.2亿美元，引发市场对企业级ETH持仓被迫减仓/止损的担忧，且会打击其他机构继续增持ETH作为储备资产的信心。检索到的因果链均未覆盖'加密财库公司巨亏'情景，属新模式。短期情绪面承压，3日内ETH承压下行。",
+  "event": {
+    "id": 8,
+    "summary": "BitMine公司因以太坊押注巨亏，单季度亏损38.2亿美元",
+    "category": "crypto"
+  },
+  "news": {
+    "title": "BitMine Reports $3.82 Billion Quarterly Loss as Ethereum Bet Weighs Heavy",
+    "source": "yahoo_finance",
+    "lang": "en",
+    "url": "https://finance.yahoo.com/markets/crypto/articles/bitmine-reports-3-82-billion-090629115.html",
+    "published_at": "2026-04-15T09:06:29"
+  }
+}

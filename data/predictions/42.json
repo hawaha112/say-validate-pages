@@ -1,0 +1,31 @@
+{
+  "id": 42,
+  "made_at": "2026-04-16T19:18:32.469783",
+  "asset": {
+    "symbol": "SMH",
+    "name": "半导体ETF",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.5,
+  "horizon_days": 3,
+  "expire_at": "2026-04-19T19:18:32.469783",
+  "baseline_price": 454.25,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "AMD作为半导体权重股走强会外溢至整个半导体板块，强化AI与数据中心景气主线。检索到的因果链均聚焦A股，未覆盖美股半导体板块联动，故记为新模式。",
+  "event": {
+    "id": 2,
+    "summary": "AMD服务器CPU业务重获投资者青睐，股票表现迎来近二十年最佳走势",
+    "category": "tech"
+  },
+  "news": {
+    "title": "AMD has ‘indispensable assets’ — powering the stock toward its best run in two decades",
+    "source": "marketwatch",
+    "lang": "en",
+    "url": "https://www.marketwatch.com/story/amd-has-indispensable-assets-powering-the-stock-toward-its-best-run-in-two-decades-aa44c469?mod=mw_rss_topstories",
+    "published_at": "2026-04-16T17:01:00"
+  }
+}

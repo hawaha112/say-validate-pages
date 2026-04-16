@@ -1,0 +1,31 @@
+{
+  "id": 34,
+  "made_at": "2026-04-16T19:17:26.161443",
+  "asset": {
+    "symbol": "PEP",
+    "name": "百事可乐",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.0,
+  "horizon_days": 3,
+  "expire_at": "2026-04-19T19:17:26.161443",
+  "baseline_price": 157.7949981689453,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "百事通过降价和健康化新品重新吸引了观望的消费者，同时管理层披露伊朗战争尚未对业务造成实质冲击，双重利好驱动股价当日大涨。短期内盘后情绪和分析师上修预期会延续推动，3 天窗口内有望维持 3% 左右涨幅。",
+  "event": {
+    "id": 5,
+    "summary": "伊朗战争对百事可乐业务影响有限，地缘风险暂未冲击消费品供应链",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
+    "source": "marketwatch",
+    "lang": "en",
+    "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
+    "published_at": "2026-04-16T17:19:00"
+  }
+}

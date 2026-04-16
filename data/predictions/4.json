@@ -1,31 +1,31 @@
 {
   "id": 4,
-  "made_at": "2026-04-16T18:45:24.390748",
+  "made_at": "2026-04-16T19:13:09.915878",
   "asset": {
-    "symbol": "REX",
-    "name": "REX Energy / REX Shares",
-    "class": "us_stock"
+    "symbol": "CL=F",
+    "name": "WTI原油期货",
+    "class": "commodity"
   },
   "direction": "up",
-  "magnitude_pct": 5.0,
-  "horizon_days": 3,
-  "expire_at": "2026-04-19T18:45:24.390748",
-  "baseline_price": 43.48139953613281,
+  "magnitude_pct": 6.0,
+  "horizon_days": 7,
+  "expire_at": "2026-04-23T19:13:09.915878",
+  "baseline_price": 90.38999938964844,
   "status": "pending",
   "hit": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "reasoning": "Significant earnings beat for Q4/FY2025 typically triggers short-term positive price reaction as the market reprices forward expectations and short positions cover. No retrieved link fits this event pattern, so this is a novel inference based on the standard earnings-surprise→stock-up relationship.",
+  "reasoning": "美国与以色列对伊朗开战将直接威胁霍尔木兹海峡原油运输通道，伊朗作为OPEC重要产油国供应面临中断风险，地缘溢价快速计入油价。检索到的因果链未覆盖中东战争场景，属于新模式。",
   "event": {
-    "id": 3,
-    "summary": "REX Energy (or REX Shares) reported a significant earnings beat for fiscal Q4/full-year 2025.",
-    "category": "earnings"
+    "id": 16,
+    "summary": "美国与以色列联合对伊朗开战，地缘政治冲突爆发，推高避险与能源资产",
+    "category": "geopolitics"
   },
   "news": {
-    "title": "REX: Monster Earnings Beat to End Fiscal 2025 – Quarterly Update Report",
-    "source": "yahoo_finance",
+    "title": "UK economy grew faster than expected in February ahead of Iran war",
+    "source": "bbc",
     "lang": "en",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/rex-monster-earnings-beat-end-083051662.html",
-    "published_at": "2026-04-15T08:30:51"
+    "url": "https://www.bbc.com/news/articles/cz0e23r0993o?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-04-16T10:22:48"
   }
 }

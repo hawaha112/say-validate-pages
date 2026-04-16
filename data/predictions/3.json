@@ -1,0 +1,31 @@
+{
+  "id": 3,
+  "made_at": "2026-04-16T18:45:04.333980",
+  "asset": {
+    "symbol": "NVDA",
+    "name": "NVIDIA",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.5,
+  "horizon_days": 3,
+  "expire_at": "2026-04-19T18:45:04.333980",
+  "baseline_price": 198.24000549316406,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "ASML explicitly attributes the upgraded forecast to AI-driven demand, reinforcing the AI capex narrative. NVDA, as the primary beneficiary of AI accelerator demand, typically rallies on upstream confirmations of sustained AI investment.",
+  "event": {
+    "id": 4,
+    "summary": "ASML raises its 2026 sales forecast, citing strong AI-driven demand for semiconductor lithography equipment.",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "ASML lifts 2026 sales forecast as AI demand drives profit growth",
+    "source": "yahoo_finance",
+    "lang": "en",
+    "url": "https://finance.yahoo.com/sectors/technology/articles/asml-lifts-2026-sales-forecast-084100217.html",
+    "published_at": "2026-04-15T08:41:00"
+  }
+}

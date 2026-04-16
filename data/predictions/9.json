@@ -1,0 +1,31 @@
+{
+  "id": 9,
+  "made_at": "2026-04-16T18:46:13.319949",
+  "asset": {
+    "symbol": "FSLR",
+    "name": "First Solar Inc.",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 4.0,
+  "horizon_days": 7,
+  "expire_at": "2026-04-23T18:46:13.319949",
+  "baseline_price": 190.4499969482422,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "First Solar is the largest US-based solar panel manufacturer with minimal reliance on Chinese manufacturing equipment. Curbs on Chinese solar equipment exports to the US constrain competitors' ability to build new US capacity, reinforcing FSLR's domestic moat and pricing power.",
+  "event": {
+    "id": 1,
+    "summary": "China is considering restrictions on exports of solar manufacturing equipment to the United States, escalating trade tensions in the clean energy sector.",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "Exclusive-China weighs curbs on exports of solar manufacturing equipment to US",
+    "source": "yahoo_finance",
+    "lang": "en",
+    "url": "https://finance.yahoo.com/sectors/energy/articles/exclusive-china-weighs-curbs-exports-074947904.html",
+    "published_at": "2026-04-15T07:49:47"
+  }
+}

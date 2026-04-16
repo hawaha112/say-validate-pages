@@ -1,0 +1,31 @@
+{
+  "id": 5,
+  "made_at": "2026-04-16T18:45:25.220696",
+  "asset": {
+    "symbol": "REX",
+    "name": "REX Energy / REX Shares",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.0,
+  "horizon_days": 14,
+  "expire_at": "2026-04-30T18:45:25.220696",
+  "baseline_price": 43.48139953613281,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "Post-earnings-announcement drift: stocks with strong positive earnings surprises tend to continue outperforming over the following 2-4 weeks as analyst estimates are revised upward and institutional inflows build. Novel pattern not covered by retrieved links.",
+  "event": {
+    "id": 3,
+    "summary": "REX Energy (or REX Shares) reported a significant earnings beat for fiscal Q4/full-year 2025.",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "REX: Monster Earnings Beat to End Fiscal 2025 – Quarterly Update Report",
+    "source": "yahoo_finance",
+    "lang": "en",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/rex-monster-earnings-beat-end-083051662.html",
+    "published_at": "2026-04-15T08:30:51"
+  }
+}

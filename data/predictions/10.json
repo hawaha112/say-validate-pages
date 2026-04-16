@@ -1,0 +1,31 @@
+{
+  "id": 10,
+  "made_at": "2026-04-16T18:46:15.690903",
+  "asset": {
+    "symbol": "TAN",
+    "name": "Invesco Solar ETF",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 2.5,
+  "horizon_days": 7,
+  "expire_at": "2026-04-23T18:46:15.690903",
+  "baseline_price": 54.04999923706055,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "TAN holds a mix of US solar installers/developers and global module makers. Restrictions on Chinese solar manufacturing equipment raise capex and delay US domestic capacity ramp for many holdings, pressuring the broader solar ETF despite pockets of relative winners.",
+  "event": {
+    "id": 1,
+    "summary": "China is considering restrictions on exports of solar manufacturing equipment to the United States, escalating trade tensions in the clean energy sector.",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "Exclusive-China weighs curbs on exports of solar manufacturing equipment to US",
+    "source": "yahoo_finance",
+    "lang": "en",
+    "url": "https://finance.yahoo.com/sectors/energy/articles/exclusive-china-weighs-curbs-exports-074947904.html",
+    "published_at": "2026-04-15T07:49:47"
+  }
+}

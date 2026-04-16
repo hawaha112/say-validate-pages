@@ -1,0 +1,346 @@
+{
+  "count": 11,
+  "items": [
+    {
+      "id": 11,
+      "made_at": "2026-04-16T18:46:17.535861",
+      "asset": {
+        "symbol": "USDCNY=X",
+        "name": "USD/CNY",
+        "class": "fx"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.3,
+      "horizon_days": 7,
+      "expire_at": "2026-04-23T18:46:17.535861",
+      "baseline_price": 6.820300102233887,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "Escalation in US-China trade frictions in the clean-energy supply chain tends to weaken CNY via risk-off flows and expectations of retaliatory measures. Prior link on trade-friction dynamics (id 24) supports a mild USDCNY upside even when China is the initiator.",
+      "event": {
+        "id": 1,
+        "summary": "China is considering restrictions on exports of solar manufacturing equipment to the United States, escalating trade tensions in the clean energy sector.",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "Exclusive-China weighs curbs on exports of solar manufacturing equipment to US",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/sectors/energy/articles/exclusive-china-weighs-curbs-exports-074947904.html",
+        "published_at": "2026-04-15T07:49:47"
+      }
+    },
+    {
+      "id": 10,
+      "made_at": "2026-04-16T18:46:15.690903",
+      "asset": {
+        "symbol": "TAN",
+        "name": "Invesco Solar ETF",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.5,
+      "horizon_days": 7,
+      "expire_at": "2026-04-23T18:46:15.690903",
+      "baseline_price": 54.04999923706055,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "TAN holds a mix of US solar installers/developers and global module makers. Restrictions on Chinese solar manufacturing equipment raise capex and delay US domestic capacity ramp for many holdings, pressuring the broader solar ETF despite pockets of relative winners.",
+      "event": {
+        "id": 1,
+        "summary": "China is considering restrictions on exports of solar manufacturing equipment to the United States, escalating trade tensions in the clean energy sector.",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "Exclusive-China weighs curbs on exports of solar manufacturing equipment to US",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/sectors/energy/articles/exclusive-china-weighs-curbs-exports-074947904.html",
+        "published_at": "2026-04-15T07:49:47"
+      }
+    },
+    {
+      "id": 9,
+      "made_at": "2026-04-16T18:46:13.319949",
+      "asset": {
+        "symbol": "FSLR",
+        "name": "First Solar Inc.",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 4.0,
+      "horizon_days": 7,
+      "expire_at": "2026-04-23T18:46:13.319949",
+      "baseline_price": 190.4499969482422,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "First Solar is the largest US-based solar panel manufacturer with minimal reliance on Chinese manufacturing equipment. Curbs on Chinese solar equipment exports to the US constrain competitors' ability to build new US capacity, reinforcing FSLR's domestic moat and pricing power.",
+      "event": {
+        "id": 1,
+        "summary": "China is considering restrictions on exports of solar manufacturing equipment to the United States, escalating trade tensions in the clean energy sector.",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "Exclusive-China weighs curbs on exports of solar manufacturing equipment to US",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/sectors/energy/articles/exclusive-china-weighs-curbs-exports-074947904.html",
+        "published_at": "2026-04-15T07:49:47"
+      }
+    },
+    {
+      "id": 8,
+      "made_at": "2026-04-16T18:45:46.795598",
+      "asset": {
+        "symbol": "ASML",
+        "name": "ASML Holding N.V.",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.5,
+      "horizon_days": 3,
+      "expire_at": "2026-04-19T18:45:46.795598",
+      "baseline_price": 1417.6199951171875,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "ASML is the bellwether European semi-equipment peer to Aixtron. Aixtron's stronger outlook signals resilient demand for deposition/MOCVD tools in compound semis and power/RF applications, which is read-through positive for the broader European WFE complex including ASML.",
+      "event": {
+        "id": 2,
+        "summary": "Aixtron raises its 2026 sales outlook, causing shares to jump significantly.",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Chip systems supplier Aixtron lifts 2026 sales outlook, shares jump",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/chip-systems-supplier-aixtron-lifts-080250402.html",
+        "published_at": "2026-04-15T08:02:50"
+      }
+    },
+    {
+      "id": 7,
+      "made_at": "2026-04-16T18:45:46.127199",
+      "asset": {
+        "symbol": "SOX",
+        "name": "SOX",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.8,
+      "horizon_days": 1,
+      "expire_at": "2026-04-17T18:45:46.127199",
+      "baseline_price": null,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "Positive guidance from a chip-equipment supplier like Aixtron is typically read as a leading indicator of healthy capex from foundries/IDMs, giving a modest same-day/next-day lift to the broader semiconductor index as sentiment spills over to peers (AMAT, LRCX, ASML).",
+      "event": {
+        "id": 2,
+        "summary": "Aixtron raises its 2026 sales outlook, causing shares to jump significantly.",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Chip systems supplier Aixtron lifts 2026 sales outlook, shares jump",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/chip-systems-supplier-aixtron-lifts-080250402.html",
+        "published_at": "2026-04-15T08:02:50"
+      }
+    },
+    {
+      "id": 6,
+      "made_at": "2026-04-16T18:45:44.828683",
+      "asset": {
+        "symbol": "AIXA.DE",
+        "name": "Aixtron SE",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 5.0,
+      "horizon_days": 3,
+      "expire_at": "2026-04-19T18:45:44.828683",
+      "baseline_price": 40.90999984741211,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "Aixtron raising its 2026 sales outlook is a direct positive guidance revision. Upward guidance revisions from mid-cap semiconductor equipment suppliers typically trigger a sharp short-term rally as analysts revise estimates and momentum traders pile in. The news text confirms shares are already jumping.",
+      "event": {
+        "id": 2,
+        "summary": "Aixtron raises its 2026 sales outlook, causing shares to jump significantly.",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Chip systems supplier Aixtron lifts 2026 sales outlook, shares jump",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/chip-systems-supplier-aixtron-lifts-080250402.html",
+        "published_at": "2026-04-15T08:02:50"
+      }
+    },
+    {
+      "id": 5,
+      "made_at": "2026-04-16T18:45:25.220696",
+      "asset": {
+        "symbol": "REX",
+        "name": "REX Energy / REX Shares",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.0,
+      "horizon_days": 14,
+      "expire_at": "2026-04-30T18:45:25.220696",
+      "baseline_price": 43.48139953613281,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "Post-earnings-announcement drift: stocks with strong positive earnings surprises tend to continue outperforming over the following 2-4 weeks as analyst estimates are revised upward and institutional inflows build. Novel pattern not covered by retrieved links.",
+      "event": {
+        "id": 3,
+        "summary": "REX Energy (or REX Shares) reported a significant earnings beat for fiscal Q4/full-year 2025.",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "REX: Monster Earnings Beat to End Fiscal 2025 – Quarterly Update Report",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/rex-monster-earnings-beat-end-083051662.html",
+        "published_at": "2026-04-15T08:30:51"
+      }
+    },
+    {
+      "id": 4,
+      "made_at": "2026-04-16T18:45:24.390748",
+      "asset": {
+        "symbol": "REX",
+        "name": "REX Energy / REX Shares",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 5.0,
+      "horizon_days": 3,
+      "expire_at": "2026-04-19T18:45:24.390748",
+      "baseline_price": 43.48139953613281,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "Significant earnings beat for Q4/FY2025 typically triggers short-term positive price reaction as the market reprices forward expectations and short positions cover. No retrieved link fits this event pattern, so this is a novel inference based on the standard earnings-surprise→stock-up relationship.",
+      "event": {
+        "id": 3,
+        "summary": "REX Energy (or REX Shares) reported a significant earnings beat for fiscal Q4/full-year 2025.",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "REX: Monster Earnings Beat to End Fiscal 2025 – Quarterly Update Report",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/rex-monster-earnings-beat-end-083051662.html",
+        "published_at": "2026-04-15T08:30:51"
+      }
+    },
+    {
+      "id": 3,
+      "made_at": "2026-04-16T18:45:04.333980",
+      "asset": {
+        "symbol": "NVDA",
+        "name": "NVIDIA",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.5,
+      "horizon_days": 3,
+      "expire_at": "2026-04-19T18:45:04.333980",
+      "baseline_price": 198.24000549316406,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "ASML explicitly attributes the upgraded forecast to AI-driven demand, reinforcing the AI capex narrative. NVDA, as the primary beneficiary of AI accelerator demand, typically rallies on upstream confirmations of sustained AI investment.",
+      "event": {
+        "id": 4,
+        "summary": "ASML raises its 2026 sales forecast, citing strong AI-driven demand for semiconductor lithography equipment.",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "ASML lifts 2026 sales forecast as AI demand drives profit growth",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/sectors/technology/articles/asml-lifts-2026-sales-forecast-084100217.html",
+        "published_at": "2026-04-15T08:41:00"
+      }
+    },
+    {
+      "id": 2,
+      "made_at": "2026-04-16T18:44:56.122797",
+      "asset": {
+        "symbol": "SOXX",
+        "name": "iShares Semiconductor ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.0,
+      "horizon_days": 7,
+      "expire_at": "2026-04-23T18:44:56.122797",
+      "baseline_price": 404.6199951171875,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "ASML is a bellwether for the semiconductor capital-equipment cycle. A guidance raise citing AI demand validates continued capex from TSMC/Samsung/Intel and lifts the broader semi/semi-equipment complex (SOXX holds ASML, AMAT, LRCX, KLAC).",
+      "event": {
+        "id": 4,
+        "summary": "ASML raises its 2026 sales forecast, citing strong AI-driven demand for semiconductor lithography equipment.",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "ASML lifts 2026 sales forecast as AI demand drives profit growth",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/sectors/technology/articles/asml-lifts-2026-sales-forecast-084100217.html",
+        "published_at": "2026-04-15T08:41:00"
+      }
+    },
+    {
+      "id": 1,
+      "made_at": "2026-04-16T18:44:50.095420",
+      "asset": {
+        "symbol": "ASML",
+        "name": "ASML Holding N.V.",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 4.0,
+      "horizon_days": 3,
+      "expire_at": "2026-04-19T18:44:50.095420",
+      "baseline_price": 1416.7550048828125,
+      "status": "pending",
+      "hit": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "ASML raising its 2026 sales forecast on strong AI-driven lithography demand is a direct positive earnings catalyst for the company itself. Guidance raises typically drive a 3-6% re-rating in mega-cap semiconductor equipment names within days.",
+      "event": {
+        "id": 4,
+        "summary": "ASML raises its 2026 sales forecast, citing strong AI-driven demand for semiconductor lithography equipment.",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "ASML lifts 2026 sales forecast as AI demand drives profit growth",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/sectors/technology/articles/asml-lifts-2026-sales-forecast-084100217.html",
+        "published_at": "2026-04-15T08:41:00"
+      }
+    }
+  ]
+}

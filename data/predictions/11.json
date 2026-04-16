@@ -1,0 +1,31 @@
+{
+  "id": 11,
+  "made_at": "2026-04-16T18:46:17.535861",
+  "asset": {
+    "symbol": "USDCNY=X",
+    "name": "USD/CNY",
+    "class": "fx"
+  },
+  "direction": "up",
+  "magnitude_pct": 0.3,
+  "horizon_days": 7,
+  "expire_at": "2026-04-23T18:46:17.535861",
+  "baseline_price": 6.820300102233887,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "Escalation in US-China trade frictions in the clean-energy supply chain tends to weaken CNY via risk-off flows and expectations of retaliatory measures. Prior link on trade-friction dynamics (id 24) supports a mild USDCNY upside even when China is the initiator.",
+  "event": {
+    "id": 1,
+    "summary": "China is considering restrictions on exports of solar manufacturing equipment to the United States, escalating trade tensions in the clean energy sector.",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "Exclusive-China weighs curbs on exports of solar manufacturing equipment to US",
+    "source": "yahoo_finance",
+    "lang": "en",
+    "url": "https://finance.yahoo.com/sectors/energy/articles/exclusive-china-weighs-curbs-exports-074947904.html",
+    "published_at": "2026-04-15T07:49:47"
+  }
+}

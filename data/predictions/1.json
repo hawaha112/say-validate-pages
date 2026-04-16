@@ -1,0 +1,31 @@
+{
+  "id": 1,
+  "made_at": "2026-04-16T18:44:50.095420",
+  "asset": {
+    "symbol": "ASML",
+    "name": "ASML Holding N.V.",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 4.0,
+  "horizon_days": 3,
+  "expire_at": "2026-04-19T18:44:50.095420",
+  "baseline_price": 1416.7550048828125,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "ASML raising its 2026 sales forecast on strong AI-driven lithography demand is a direct positive earnings catalyst for the company itself. Guidance raises typically drive a 3-6% re-rating in mega-cap semiconductor equipment names within days.",
+  "event": {
+    "id": 4,
+    "summary": "ASML raises its 2026 sales forecast, citing strong AI-driven demand for semiconductor lithography equipment.",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "ASML lifts 2026 sales forecast as AI demand drives profit growth",
+    "source": "yahoo_finance",
+    "lang": "en",
+    "url": "https://finance.yahoo.com/sectors/technology/articles/asml-lifts-2026-sales-forecast-084100217.html",
+    "published_at": "2026-04-15T08:41:00"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": 2,
+  "made_at": "2026-04-16T18:44:56.122797",
+  "asset": {
+    "symbol": "SOXX",
+    "name": "iShares Semiconductor ETF",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.0,
+  "horizon_days": 7,
+  "expire_at": "2026-04-23T18:44:56.122797",
+  "baseline_price": 404.6199951171875,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "ASML is a bellwether for the semiconductor capital-equipment cycle. A guidance raise citing AI demand validates continued capex from TSMC/Samsung/Intel and lifts the broader semi/semi-equipment complex (SOXX holds ASML, AMAT, LRCX, KLAC).",
+  "event": {
+    "id": 4,
+    "summary": "ASML raises its 2026 sales forecast, citing strong AI-driven demand for semiconductor lithography equipment.",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "ASML lifts 2026 sales forecast as AI demand drives profit growth",
+    "source": "yahoo_finance",
+    "lang": "en",
+    "url": "https://finance.yahoo.com/sectors/technology/articles/asml-lifts-2026-sales-forecast-084100217.html",
+    "published_at": "2026-04-15T08:41:00"
+  }
+}

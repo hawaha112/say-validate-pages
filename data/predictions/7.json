@@ -1,0 +1,31 @@
+{
+  "id": 7,
+  "made_at": "2026-04-16T18:45:46.127199",
+  "asset": {
+    "symbol": "SOX",
+    "name": "SOX",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 0.8,
+  "horizon_days": 1,
+  "expire_at": "2026-04-17T18:45:46.127199",
+  "baseline_price": null,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "Positive guidance from a chip-equipment supplier like Aixtron is typically read as a leading indicator of healthy capex from foundries/IDMs, giving a modest same-day/next-day lift to the broader semiconductor index as sentiment spills over to peers (AMAT, LRCX, ASML).",
+  "event": {
+    "id": 2,
+    "summary": "Aixtron raises its 2026 sales outlook, causing shares to jump significantly.",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "Chip systems supplier Aixtron lifts 2026 sales outlook, shares jump",
+    "source": "yahoo_finance",
+    "lang": "en",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/chip-systems-supplier-aixtron-lifts-080250402.html",
+    "published_at": "2026-04-15T08:02:50"
+  }
+}

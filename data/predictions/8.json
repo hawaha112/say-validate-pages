@@ -1,0 +1,31 @@
+{
+  "id": 8,
+  "made_at": "2026-04-16T18:45:46.795598",
+  "asset": {
+    "symbol": "ASML",
+    "name": "ASML Holding N.V.",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.5,
+  "horizon_days": 3,
+  "expire_at": "2026-04-19T18:45:46.795598",
+  "baseline_price": 1417.6199951171875,
+  "status": "pending",
+  "hit": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "ASML is the bellwether European semi-equipment peer to Aixtron. Aixtron's stronger outlook signals resilient demand for deposition/MOCVD tools in compound semis and power/RF applications, which is read-through positive for the broader European WFE complex including ASML.",
+  "event": {
+    "id": 2,
+    "summary": "Aixtron raises its 2026 sales outlook, causing shares to jump significantly.",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "Chip systems supplier Aixtron lifts 2026 sales outlook, shares jump",
+    "source": "yahoo_finance",
+    "lang": "en",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/chip-systems-supplier-aixtron-lifts-080250402.html",
+    "published_at": "2026-04-15T08:02:50"
+  }
+}

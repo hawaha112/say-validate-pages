@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-17T17:42:10.624353",
+  "generated_at": "2026-04-17T17:55:04.675762",
   "stats": {
-    "generated_at": "2026-04-17T17:42:10.596835",
+    "generated_at": "2026-04-17T17:55:04.643296",
     "total": 49,
     "verified": 0,
     "pending": 49,
@@ -1097,20 +1097,6 @@
       "rationale": "鹰派意外是 FOMC 最强信号之一，长久期科技股、黄金、加密资产当周普跌；美元大幅走强"
     },
     {
-      "id": 171,
-      "pattern": "美国 CPI 同比低于预期 ≥0.2pp",
-      "asset_symbol": "SPY",
-      "asset_class": "us_stock",
-      "direction": "up",
-      "magnitude_pct": 1.5,
-      "horizon_days": 1,
-      "confidence": 0.7142857142857143,
-      "support_count": 4,
-      "refute_count": 1,
-      "source": "researched",
-      "rationale": "CPI 明显低于共识推动降息预期升温，美债走强、股市和风险资产普涨，美元走弱。"
-    },
-    {
       "id": 297,
       "pattern": "欧元区主权债务危机爆发",
       "asset_symbol": "TLT",
@@ -1305,6 +1291,20 @@
       "refute_count": 0,
       "source": "seed",
       "rationale": "意外减产直接收紧供给，原油短期显著上行，能源股跟涨"
+    },
+    {
+      "id": 73,
+      "pattern": "SEC 批准现货加密 ETF（BTC/ETH 等）",
+      "asset_symbol": "BTC-USD",
+      "asset_class": "crypto",
+      "direction": "up",
+      "magnitude_pct": 8.0,
+      "horizon_days": 14,
+      "confidence": 0.7,
+      "support_count": 0,
+      "refute_count": 0,
+      "source": "seed",
+      "rationale": "机构通道打开吸引 ETF 资金流入，参考 2024 年 1 月现货 BTC ETF 通过后 60 日涨幅"
     }
   ]
 }

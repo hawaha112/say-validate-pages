@@ -1,14 +1,33 @@
 {
-  "generated_at": "2026-04-17T00:21:41.976428",
-  "total": 44,
+  "generated_at": "2026-04-17T16:23:51.868866",
+  "total": 49,
   "verified": 0,
-  "pending": 44,
+  "pending": 49,
   "hit_rate": null,
+  "hit_breakdown_summary": {
+    "n": 0,
+    "dir_hit_rate": null,
+    "mag_hit_rate": null,
+    "strict_hit_rate": null,
+    "mag_err_bucket_counts": {}
+  },
+  "hit_rate_vs_random": {
+    "lookback_days": 30,
+    "n_verified": 0,
+    "actual_dir_hit_rate": null,
+    "random_dir_hit_rate": null,
+    "actual_strict_hit_rate": null,
+    "random_strict_hit_rate": null
+  },
   "by_class": {
-    "us_stock": 31,
+    "us_stock": 36,
     "commodity": 6,
     "crypto": 2,
     "fx": 3,
     "index": 2
+  },
+  "baseline_source_distribution": {
+    "event_time": 5,
+    "unknown": 44
   }
 }

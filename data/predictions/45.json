@@ -1,0 +1,33 @@
+{
+  "id": 45,
+  "made_at": "2026-04-17T16:20:41.822025",
+  "asset": {
+    "symbol": "BIRD",
+    "name": "Allbirds股票",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 25.0,
+  "horizon_days": 7,
+  "expire_at": "2026-04-24T16:20:41.822025",
+  "baseline_price": 10.90999984741211,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "单日暴涨580%主要由meme式投机和转型AI的炒作驱动，而非基本面支撑。公司剥离核心鞋类业务、尚未验证AI基础设施能力，短期内获利回吐和情绪降温会带来明显回调。检索到的因果链均针对宏观事件，无直接匹配模式，故作为新模式处理。",
+  "event": {
+    "id": 11,
+    "summary": "Allbirds宣布放弃鞋类品牌转型AI技术基础设施，股价单日暴涨580%",
+    "category": "tech"
+  },
+  "news": {
+    "title": "Allbirds shares soar 580% after pivot from shoes to AI",
+    "source": "bbc",
+    "lang": "en",
+    "url": "https://www.bbc.com/news/articles/c98mrepzgj7o?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-04-16T01:58:56"
+  }
+}

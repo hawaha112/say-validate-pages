@@ -1,0 +1,33 @@
+{
+  "id": 49,
+  "made_at": "2026-04-17T16:20:59.884091",
+  "asset": {
+    "symbol": "HYG",
+    "name": "iShares高收益公司债ETF",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 0.5,
+  "horizon_days": 7,
+  "expire_at": "2026-04-24T16:20:59.884091",
+  "baseline_price": 80.75499725341797,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "大型AI债券发行扩容并被超额认购，反映高收益债市场风险偏好旺盛、利差收窄，HYG作为高收益债代表ETF将小幅受益。检索结果未涉及该因果链，属新模式。",
+  "event": {
+    "id": 3,
+    "summary": "CoreWeave将高收益债券发行规模扩大至27.5亿美元，超额认购显示AI基础设施债务受市场追捧",
+    "category": "tech"
+  },
+  "news": {
+    "title": "CoreWeave upsizes bond deal for an additional $1 billion. AI debt is in vogue.",
+    "source": "marketwatch",
+    "lang": "en",
+    "url": "https://www.marketwatch.com/story/coreweave-upsizes-bond-deal-for-additional-1-billion-ai-debt-is-in-vogue-c4bafa5c?mod=mw_rss_topstories",
+    "published_at": "2026-04-16T17:04:00"
+  }
+}

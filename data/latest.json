@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-18T13:52:06.837984",
+  "generated_at": "2026-04-18T14:07:38.876269",
   "stats": {
-    "generated_at": "2026-04-18T13:52:06.342540",
+    "generated_at": "2026-04-18T14:07:38.114049",
     "kb_summary": {
       "n_links_active": 335,
       "n_strong": 175,
@@ -1280,7 +1280,10 @@
             "time_to_peak_impact_days": 6,
             "narrative": "事件后 3 天累计 +2.46%，峰值出现在事件后第 6 天 (+2.98%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-09-24",
@@ -1443,7 +1446,10 @@
             "time_to_peak_impact_days": 13,
             "narrative": "事件后 3 天累计 +9.58%，峰值出现在事件后第 13 天 (+42.10%)，第 10 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-07-22",
@@ -1602,7 +1608,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 3 天累计 -2.57%，峰值出现在事件后第 37 天 (-4.14%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-08-15",
@@ -1761,7 +1770,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 3 天累计 -1.39%，峰值出现在事件后第 37 天 (-3.88%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-06-13",
@@ -1916,7 +1928,10 @@
             "time_to_peak_impact_days": 3,
             "narrative": "事件后 3 天累计 +3.06%，峰值出现在事件后第 3 天 (+3.06%)，第 3 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-08-15",
@@ -2071,7 +2086,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 3 天累计 -0.13%，峰值出现在事件后第 37 天 (-10.55%)，第 3 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-01-17",
@@ -2222,7 +2240,10 @@
             "time_to_peak_impact_days": 28,
             "narrative": "事件后 3 天累计 +0.90%，峰值出现在事件后第 28 天 (-5.41%)，第 4 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-03-30",
@@ -2377,7 +2398,10 @@
             "time_to_peak_impact_days": 30,
             "narrative": "事件后 3 天累计 +0.84%，峰值出现在事件后第 30 天 (+4.85%)，第 3 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-02-03",
@@ -2532,7 +2556,10 @@
             "time_to_peak_impact_days": 31,
             "narrative": "事件后 3 天累计 +5.45%，峰值出现在事件后第 31 天 (+15.66%)，第 17 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -2763,7 +2790,10 @@
             "time_to_peak_impact_days": 34,
             "narrative": "事件后 30 天累计 +5.89%，峰值出现在事件后第 34 天 (+6.89%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-09-24",
@@ -2926,7 +2956,10 @@
             "time_to_peak_impact_days": 13,
             "narrative": "事件后 30 天累计 +4.38%，峰值出现在事件后第 13 天 (+20.69%)，第 10 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-07-22",
@@ -3085,7 +3118,10 @@
             "time_to_peak_impact_days": 15,
             "narrative": "事件后 30 天累计 -0.34%，峰值出现在事件后第 15 天 (-5.99%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-08-15",
@@ -3244,7 +3280,10 @@
             "time_to_peak_impact_days": 7,
             "narrative": "事件后 30 天累计 +0.33%，峰值出现在事件后第 7 天 (-3.93%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-06-13",
@@ -3399,7 +3438,10 @@
             "time_to_peak_impact_days": 23,
             "narrative": "事件后 30 天累计 +2.60%，峰值出现在事件后第 23 天 (-5.24%)，第 3 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-08-15",
@@ -3554,7 +3596,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 30 天累计 -5.15%，峰值出现在事件后第 37 天 (-9.81%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-01-17",
@@ -3705,7 +3750,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 30 天累计 +1.06%，峰值出现在事件后第 37 天 (-6.34%)，第 4 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-03-30",
@@ -3860,7 +3908,10 @@
             "time_to_peak_impact_days": 30,
             "narrative": "事件后 30 天累计 +5.96%，峰值出现在事件后第 30 天 (+5.96%)，第 3 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-02-03",
@@ -4021,7 +4072,10 @@
             "time_to_peak_impact_days": 9,
             "narrative": "事件后 30 天累计 +2.82%，峰值出现在事件后第 9 天 (+6.83%)，第 10 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -4260,7 +4314,10 @@
             "time_to_peak_impact_days": 30,
             "narrative": "事件后 3 天累计 +0.28%，峰值出现在事件后第 30 天 (-0.57%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-09-24",
@@ -4423,7 +4480,10 @@
             "time_to_peak_impact_days": 36,
             "narrative": "事件后 3 天累计 -0.60%，峰值出现在事件后第 36 天 (+1.12%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-01-24",
@@ -4586,7 +4646,10 @@
             "time_to_peak_impact_days": 35,
             "narrative": "事件后 3 天累计 +0.13%，峰值出现在事件后第 35 天 (+1.69%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-03-17",
@@ -4747,7 +4810,10 @@
             "time_to_peak_impact_days": 7,
             "narrative": "事件后 3 天累计 -0.17%，峰值出现在事件后第 7 天 (-1.15%)，第 10 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-11-25",
@@ -4902,7 +4968,10 @@
             "time_to_peak_impact_days": 19,
             "narrative": "事件后 3 天累计 +0.28%，峰值出现在事件后第 19 天 (-2.89%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-04-15",
@@ -5057,7 +5126,10 @@
             "time_to_peak_impact_days": 31,
             "narrative": "事件后 3 天累计 -0.11%，峰值出现在事件后第 31 天 (+6.44%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2021-12-06",
@@ -5216,7 +5288,10 @@
             "time_to_peak_impact_days": 3,
             "narrative": "事件后 3 天累计 -0.50%，峰值出现在事件后第 3 天 (-0.50%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2021-07-09",
@@ -5371,7 +5446,10 @@
             "time_to_peak_impact_days": 21,
             "narrative": "事件后 3 天累计 -0.17%，峰值出现在事件后第 21 天 (-0.52%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-03-13",
@@ -5526,7 +5604,10 @@
             "time_to_peak_impact_days": 13,
             "narrative": "事件后 3 天累计 -0.30%，峰值出现在事件后第 13 天 (+1.21%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -5761,7 +5842,10 @@
             "time_to_peak_impact_days": 29,
             "narrative": "事件后 1 天累计 +0.00%，峰值出现在事件后第 29 天 (-0.69%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-09-24",
@@ -5924,7 +6008,10 @@
             "time_to_peak_impact_days": 36,
             "narrative": "事件后 1 天累计 -0.30%，峰值出现在事件后第 36 天 (+1.12%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-07-22",
@@ -6083,7 +6170,10 @@
             "time_to_peak_impact_days": 36,
             "narrative": "事件后 1 天累计 +0.05%，峰值出现在事件后第 36 天 (-2.08%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-08-15",
@@ -6246,7 +6336,10 @@
             "time_to_peak_impact_days": 20,
             "narrative": "事件后 1 天累计 +0.33%，峰值出现在事件后第 20 天 (-1.61%)，第 3 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-06-13",
@@ -6415,7 +6508,10 @@
             "time_to_peak_impact_days": 17,
             "narrative": "事件后 1 天累计 +0.31%，峰值出现在事件后第 17 天 (+1.50%)，第 20 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-08-15",
@@ -6574,7 +6670,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 1 天累计 +0.45%，峰值出现在事件后第 37 天 (+4.08%)，第 24 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-01-17",
@@ -6733,7 +6832,10 @@
             "time_to_peak_impact_days": 10,
             "narrative": "事件后 1 天累计 -0.08%，峰值出现在事件后第 10 天 (-0.50%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-03-30",
@@ -6892,7 +6994,10 @@
             "time_to_peak_impact_days": 14,
             "narrative": "事件后 1 天累计 +0.05%，峰值出现在事件后第 14 天 (-0.85%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-02-03",
@@ -7051,7 +7156,10 @@
             "time_to_peak_impact_days": 24,
             "narrative": "事件后 1 天累计 +1.22%，峰值出现在事件后第 24 天 (+1.50%)，第 8 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -7279,7 +7387,10 @@
             "time_to_peak_impact_days": 7,
             "narrative": "事件后 3 天累计 +3.51%，峰值出现在事件后第 7 天 (+4.05%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-09-24",
@@ -7442,7 +7553,10 @@
             "time_to_peak_impact_days": 13,
             "narrative": "事件后 3 天累计 +9.58%，峰值出现在事件后第 13 天 (+42.10%)，第 10 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-01-24",
@@ -7601,7 +7715,10 @@
             "time_to_peak_impact_days": 9,
             "narrative": "事件后 3 天累计 -1.86%，峰值出现在事件后第 9 天 (-6.61%)，第 9 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-03-17",
@@ -7752,7 +7869,10 @@
             "time_to_peak_impact_days": 32,
             "narrative": "事件后 3 天累计 +0.73%，峰值出现在事件后第 32 天 (+5.66%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-11-25",
@@ -7899,7 +8019,10 @@
             "time_to_peak_impact_days": 13,
             "narrative": "事件后 3 天累计 -1.17%，峰值出现在事件后第 13 天 (+9.21%)，第 12 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-04-15",
@@ -8050,7 +8173,10 @@
             "time_to_peak_impact_days": 11,
             "narrative": "事件后 3 天累计 +0.00%，峰值出现在事件后第 11 天 (-12.77%)，第 11 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2021-12-06",
@@ -8205,7 +8331,10 @@
             "time_to_peak_impact_days": 31,
             "narrative": "事件后 3 天累计 +2.85%，峰值出现在事件后第 31 天 (-3.38%)，第 4 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2021-07-09",
@@ -8356,7 +8485,10 @@
             "time_to_peak_impact_days": 18,
             "narrative": "事件后 3 天累计 +0.35%，峰值出现在事件后第 18 天 (-9.05%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-03-13",
@@ -8507,7 +8639,10 @@
             "time_to_peak_impact_days": 7,
             "narrative": "事件后 3 天累计 -11.01%，峰值出现在事件后第 7 天 (-13.87%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -8742,7 +8877,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 1 天累计 +0.24%，峰值出现在事件后第 37 天 (+2.13%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-07-22",
@@ -8901,7 +9039,10 @@
             "time_to_peak_impact_days": 36,
             "narrative": "事件后 1 天累计 +0.05%，峰值出现在事件后第 36 天 (-2.08%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-08-21",
@@ -9060,7 +9201,10 @@
             "time_to_peak_impact_days": 14,
             "narrative": "事件后 1 天累计 -1.14%，峰值出现在事件后第 14 天 (-1.93%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-06-20",
@@ -9229,7 +9373,10 @@
             "time_to_peak_impact_days": 10,
             "narrative": "事件后 1 天累计 +0.28%，峰值出现在事件后第 10 天 (+1.28%)，第 13 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-08-22",
@@ -9388,7 +9535,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 1 天累计 +0.47%，峰值出现在事件后第 37 天 (+5.30%)，第 17 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-01-20",
@@ -9547,7 +9697,10 @@
             "time_to_peak_impact_days": 35,
             "narrative": "事件后 1 天累计 -0.06%，峰值出现在事件后第 35 天 (-0.49%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2021-12-20",
@@ -9706,7 +9859,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 1 天累计 +0.01%，峰值出现在事件后第 37 天 (-0.75%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-04-20",
@@ -9865,7 +10021,10 @@
             "time_to_peak_impact_days": 36,
             "narrative": "事件后 1 天累计 +0.00%，峰值出现在事件后第 36 天 (+0.90%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-02-20",
@@ -10024,7 +10183,10 @@
             "time_to_peak_impact_days": 35,
             "narrative": "事件后 1 天累计 +0.36%，峰值出现在事件后第 35 天 (+1.66%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -10266,7 +10428,10 @@
             "time_to_peak_impact_days": 17,
             "narrative": "事件后 1 天累计 +1.38%，峰值出现在事件后第 17 天 (+7.61%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-07-22",
@@ -10425,7 +10590,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 1 天累计 -2.11%，峰值出现在事件后第 37 天 (-4.14%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-02-20",
@@ -10584,7 +10752,10 @@
             "time_to_peak_impact_days": 20,
             "narrative": "事件后 1 天累计 +1.24%，峰值出现在事件后第 20 天 (+6.19%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-08-22",
@@ -10739,7 +10910,10 @@
             "time_to_peak_impact_days": 35,
             "narrative": "事件后 1 天累计 +0.58%，峰值出现在事件后第 35 天 (-11.89%)，第 15 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-05-20",
@@ -10886,7 +11060,10 @@
             "time_to_peak_impact_days": 35,
             "narrative": "事件后 1 天累计 +0.16%，峰值出现在事件后第 35 天 (+9.38%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-01-20",
@@ -11037,7 +11214,10 @@
             "time_to_peak_impact_days": 25,
             "narrative": "事件后 1 天累计 -1.49%，峰值出现在事件后第 25 天 (-6.25%)，第 11 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-04-20",
@@ -11192,7 +11372,10 @@
             "time_to_peak_impact_days": 18,
             "narrative": "事件后 1 天累计 -1.60%，峰值出现在事件后第 18 天 (+4.01%)，第 8 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-02-20",
@@ -11347,7 +11530,10 @@
             "time_to_peak_impact_days": 29,
             "narrative": "事件后 1 天累计 +1.34%，峰值出现在事件后第 29 天 (-15.06%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -11526,7 +11712,10 @@
             "time_to_peak_impact_days": 36,
             "narrative": "事件后 14 天累计 +0.41%，峰值出现在事件后第 36 天 (-6.99%)，第 8 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-07-22",
@@ -11685,7 +11874,10 @@
             "time_to_peak_impact_days": 15,
             "narrative": "事件后 14 天累计 -5.05%，峰值出现在事件后第 15 天 (-5.99%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-02-20",
@@ -11844,7 +12036,10 @@
             "time_to_peak_impact_days": 22,
             "narrative": "事件后 14 天累计 +0.48%，峰值出现在事件后第 22 天 (+7.50%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-08-22",
@@ -11999,7 +12194,10 @@
             "time_to_peak_impact_days": 36,
             "narrative": "事件后 14 天累计 -2.45%，峰值出现在事件后第 36 天 (-9.76%)，第 4 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-05-20",
@@ -12146,7 +12344,10 @@
             "time_to_peak_impact_days": 19,
             "narrative": "事件后 14 天累计 +4.77%，峰值出现在事件后第 19 天 (+12.29%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-01-20",
@@ -12297,7 +12498,10 @@
             "time_to_peak_impact_days": 35,
             "narrative": "事件后 14 天累计 -3.59%，峰值出现在事件后第 35 天 (-10.20%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-04-20",
@@ -12452,7 +12656,10 @@
             "time_to_peak_impact_days": 9,
             "narrative": "事件后 14 天累计 -1.23%，峰值出现在事件后第 9 天 (+4.04%)，第 3 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-02-20",
@@ -12607,7 +12814,10 @@
             "time_to_peak_impact_days": 25,
             "narrative": "事件后 14 天累计 -2.24%，峰值出现在事件后第 25 天 (-19.30%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -12846,7 +13056,10 @@
             "time_to_peak_impact_days": 35,
             "narrative": "事件后 3 天累计 -0.28%，峰值出现在事件后第 35 天 (+1.42%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-07-22",
@@ -13005,7 +13218,10 @@
             "time_to_peak_impact_days": 36,
             "narrative": "事件后 3 天累计 -0.11%，峰值出现在事件后第 36 天 (-2.08%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-08-15",
@@ -13168,7 +13384,10 @@
             "time_to_peak_impact_days": 20,
             "narrative": "事件后 3 天累计 +0.32%，峰值出现在事件后第 20 天 (-1.61%)，第 3 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-06-15",
@@ -13327,7 +13546,10 @@
             "time_to_peak_impact_days": 15,
             "narrative": "事件后 3 天累计 -0.52%，峰值出现在事件后第 15 天 (+1.25%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-08-15",
@@ -13486,7 +13708,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 3 天累计 +0.57%，峰值出现在事件后第 37 天 (+4.08%)，第 24 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-01-17",
@@ -13645,7 +13870,10 @@
             "time_to_peak_impact_days": 10,
             "narrative": "事件后 3 天累计 -0.13%，峰值出现在事件后第 10 天 (-0.50%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-04-15",
@@ -13808,7 +14036,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 3 天累计 +0.34%，峰值出现在事件后第 37 天 (+0.94%)，第 14 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-02-17",
@@ -13967,7 +14198,10 @@
             "time_to_peak_impact_days": 32,
             "narrative": "事件后 3 天累计 +0.16%，峰值出现在事件后第 32 天 (+1.74%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -14195,7 +14429,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 7 天累计 +0.27%，峰值出现在事件后第 37 天 (+2.13%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-07-22",
@@ -14354,7 +14591,10 @@
             "time_to_peak_impact_days": 36,
             "narrative": "事件后 7 天累计 -0.26%，峰值出现在事件后第 36 天 (-2.08%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-02-20",
@@ -14517,7 +14757,10 @@
             "time_to_peak_impact_days": 34,
             "narrative": "事件后 7 天累计 -0.01%，峰值出现在事件后第 34 天 (+0.43%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-08-22",
@@ -14676,7 +14919,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 7 天累计 +0.81%，峰值出现在事件后第 37 天 (+5.30%)，第 17 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-05-20",
@@ -14837,7 +15083,10 @@
             "time_to_peak_impact_days": 4,
             "narrative": "事件后 7 天累计 +0.38%，峰值出现在事件后第 4 天 (-0.93%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-01-20",
@@ -14996,7 +15245,10 @@
             "time_to_peak_impact_days": 35,
             "narrative": "事件后 7 天累计 -0.38%，峰值出现在事件后第 35 天 (-0.49%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-04-20",
@@ -15155,7 +15407,10 @@
             "time_to_peak_impact_days": 36,
             "narrative": "事件后 7 天累计 +0.12%，峰值出现在事件后第 36 天 (+0.90%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-02-20",
@@ -15314,7 +15569,10 @@
             "time_to_peak_impact_days": 35,
             "narrative": "事件后 7 天累计 +0.61%，峰值出现在事件后第 35 天 (+1.66%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -15553,7 +15811,10 @@
             "time_to_peak_impact_days": 12,
             "narrative": "事件后 1 天累计 +8.08%，峰值出现在事件后第 12 天 (+43.95%)，第 9 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2024-07-22",
@@ -15712,7 +15973,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 1 天累计 -2.11%，峰值出现在事件后第 37 天 (-4.14%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-08-15",
@@ -15871,7 +16135,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 1 天累计 -1.02%，峰值出现在事件后第 37 天 (-3.88%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-06-15",
@@ -16028,7 +16295,10 @@
             "time_to_peak_impact_days": 11,
             "narrative": "事件后 1 天累计 +0.07%，峰值出现在事件后第 11 天 (-4.98%)，第 14 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-08-15",
@@ -16183,7 +16453,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 1 天累计 +0.10%，峰值出现在事件后第 37 天 (-10.55%)，第 3 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-01-17",
@@ -16334,7 +16607,10 @@
             "time_to_peak_impact_days": 28,
             "narrative": "事件后 1 天累计 +0.00%，峰值出现在事件后第 28 天 (-5.41%)，第 4 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-04-15",
@@ -16493,7 +16769,10 @@
             "time_to_peak_impact_days": 23,
             "narrative": "事件后 1 天累计 +0.45%，峰值出现在事件后第 23 天 (+5.70%)，第 13 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-02-17",
@@ -16648,7 +16927,10 @@
             "time_to_peak_impact_days": 32,
             "narrative": "事件后 1 天累计 +0.00%，峰值出现在事件后第 32 天 (-14.14%)，第 4 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -16880,7 +17162,10 @@
             "time_to_peak_impact_days": 26,
             "narrative": "事件后 3 天累计 -1.20%，峰值出现在事件后第 26 天 (-8.64%)，第 9 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-05-03",
@@ -17039,7 +17324,10 @@
             "time_to_peak_impact_days": 22,
             "narrative": "事件后 3 天累计 -2.70%，峰值出现在事件后第 22 天 (-5.65%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-03-22",
@@ -17198,7 +17486,10 @@
             "time_to_peak_impact_days": 26,
             "narrative": "事件后 3 天累计 -1.94%，峰值出现在事件后第 26 天 (-2.42%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-02-01",
@@ -17357,7 +17648,10 @@
             "time_to_peak_impact_days": 29,
             "narrative": "事件后 3 天累计 -2.10%，峰值出现在事件后第 29 天 (-8.04%)，第 21 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-03-16",
@@ -17516,7 +17810,10 @@
             "time_to_peak_impact_days": 34,
             "narrative": "事件后 3 天累计 -1.86%，峰值出现在事件后第 34 天 (-10.22%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2018-09-26",
@@ -17679,7 +17976,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 3 天累计 -1.15%，峰值出现在事件后第 37 天 (-4.68%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2017-03-15",
@@ -17838,7 +18138,10 @@
             "time_to_peak_impact_days": 34,
             "narrative": "事件后 3 天累计 +0.55%，峰值出现在事件后第 34 天 (+5.23%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -18077,7 +18380,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 30 天累计 +3.16%，峰值出现在事件后第 37 天 (+3.32%)，第 8 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-05-03",
@@ -18236,7 +18542,10 @@
             "time_to_peak_impact_days": 28,
             "narrative": "事件后 30 天累计 +2.64%，峰值出现在事件后第 28 天 (+2.94%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-03-22",
@@ -18395,7 +18704,10 @@
             "time_to_peak_impact_days": 22,
             "narrative": "事件后 30 天累计 -0.52%，峰值出现在事件后第 22 天 (-1.31%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-02-01",
@@ -18554,7 +18866,10 @@
             "time_to_peak_impact_days": 35,
             "narrative": "事件后 30 天累计 +3.26%，峰值出现在事件后第 35 天 (+4.39%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-03-16",
@@ -18713,7 +19028,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 30 天累计 +2.44%，峰值出现在事件后第 37 天 (+2.89%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2018-09-26",
@@ -18876,7 +19194,10 @@
             "time_to_peak_impact_days": 35,
             "narrative": "事件后 30 天累计 +2.30%，峰值出现在事件后第 35 天 (+3.12%)，第 13 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2017-03-15",
@@ -19035,7 +19356,10 @@
             "time_to_peak_impact_days": 12,
             "narrative": "事件后 30 天累计 -0.44%，峰值出现在事件后第 12 天 (-1.56%)，第 12 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -19262,7 +19586,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 3 天累计 -0.92%，峰值出现在事件后第 37 天 (+5.34%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-06-14",
@@ -19417,7 +19744,10 @@
             "time_to_peak_impact_days": 22,
             "narrative": "事件后 3 天累计 -1.01%，峰值出现在事件后第 22 天 (-2.38%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-12-14",
@@ -19568,7 +19898,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 3 天累计 -1.10%，峰值出现在事件后第 37 天 (+6.58%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-09-21",
@@ -19731,7 +20064,10 @@
             "time_to_peak_impact_days": 13,
             "narrative": "事件后 3 天累计 -2.48%，峰值出现在事件后第 13 天 (+3.39%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-06-15",
@@ -19886,7 +20222,10 @@
             "time_to_peak_impact_days": 35,
             "narrative": "事件后 3 天累计 +1.06%，峰值出现在事件后第 35 天 (-6.38%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2018-12-19",
@@ -20037,7 +20376,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 3 天累计 +1.23%，峰值出现在事件后第 37 天 (+3.62%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -20278,7 +20620,10 @@
             "time_to_peak_impact_days": 2,
             "narrative": "事件后 7 天累计 -0.57%，峰值出现在事件后第 2 天 (-4.17%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-04-06",
@@ -20437,7 +20782,10 @@
             "time_to_peak_impact_days": 30,
             "narrative": "事件后 7 天累计 -3.32%，峰值出现在事件后第 30 天 (-10.81%)，第 12 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2018-12-19",
@@ -20588,7 +20936,10 @@
             "time_to_peak_impact_days": 15,
             "narrative": "事件后 7 天累计 -0.96%，峰值出现在事件后第 15 天 (+1.95%)，第 8 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2017-09-20",
@@ -20751,7 +21102,10 @@
             "time_to_peak_impact_days": 36,
             "narrative": "事件后 7 天累计 -0.84%，峰值出现在事件后第 36 天 (-2.76%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2013-06-19",
@@ -20910,7 +21264,10 @@
             "time_to_peak_impact_days": 16,
             "narrative": "事件后 7 天累计 -3.15%，峰值出现在事件后第 16 天 (-5.22%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2013-05-22",
@@ -21069,7 +21426,10 @@
             "time_to_peak_impact_days": 34,
             "narrative": "事件后 7 天累计 -0.84%，峰值出现在事件后第 34 天 (-7.07%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -21306,7 +21666,10 @@
             "time_to_peak_impact_days": 3,
             "narrative": "事件后 30 天累计 -6.01%，峰值出现在事件后第 3 天 (-12.98%)，第 4 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-03-20",
@@ -21461,7 +21824,10 @@
             "time_to_peak_impact_days": 36,
             "narrative": "事件后 30 天累计 +1.72%，峰值出现在事件后第 36 天 (-6.08%)，第 3 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-03-13",
@@ -21616,7 +21982,10 @@
             "time_to_peak_impact_days": 23,
             "narrative": "事件后 30 天累计 -4.39%，峰值出现在事件后第 23 天 (-5.49%)，第 3 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-03-10",
@@ -21767,7 +22136,10 @@
             "time_to_peak_impact_days": 26,
             "narrative": "事件后 30 天累计 -15.47%，峰值出现在事件后第 26 天 (-17.12%)，第 13 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2008-09-15",
@@ -21926,7 +22298,10 @@
             "time_to_peak_impact_days": 24,
             "narrative": "事件后 30 天累计 -11.43%，峰值出现在事件后第 24 天 (-22.74%)，第 4 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2008-03-17",
@@ -22081,7 +22456,10 @@
             "time_to_peak_impact_days": 8,
             "narrative": "事件后 30 天累计 +2.04%，峰值出现在事件后第 8 天 (+10.09%)，第 8 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -22318,7 +22696,10 @@
             "time_to_peak_impact_days": 3,
             "narrative": "事件后 14 天累计 -7.15%，峰值出现在事件后第 3 天 (-10.94%)，第 4 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-03-20",
@@ -22473,7 +22854,10 @@
             "time_to_peak_impact_days": 1,
             "narrative": "事件后 14 天累计 +1.88%，峰值出现在事件后第 1 天 (+5.27%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-03-13",
@@ -22628,7 +23012,10 @@
             "time_to_peak_impact_days": 10,
             "narrative": "事件后 14 天累计 -0.30%，峰值出现在事件后第 10 天 (-4.59%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-03-10",
@@ -22779,7 +23166,10 @@
             "time_to_peak_impact_days": 13,
             "narrative": "事件后 14 天累计 -12.16%，峰值出现在事件后第 13 天 (-14.09%)，第 10 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2008-09-15",
@@ -22938,7 +23328,10 @@
             "time_to_peak_impact_days": 24,
             "narrative": "事件后 14 天累计 -4.91%，峰值出现在事件后第 24 天 (-23.75%)，第 3 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2008-03-17",
@@ -23093,7 +23486,10 @@
             "time_to_peak_impact_days": 7,
             "narrative": "事件后 14 天累计 +3.02%，峰值出现在事件后第 7 天 (+13.34%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -23324,7 +23720,10 @@
             "time_to_peak_impact_days": 3,
             "narrative": "事件后 14 天累计 -2.78%，峰值出现在事件后第 3 天 (-4.63%)，第 3 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-03-20",
@@ -23479,7 +23878,10 @@
             "time_to_peak_impact_days": 30,
             "narrative": "事件后 14 天累计 +3.34%，峰值出现在事件后第 30 天 (+7.28%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-03-13",
@@ -23634,7 +24036,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 14 天累计 -0.66%，峰值出现在事件后第 37 天 (+5.72%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-03-10",
@@ -23791,7 +24196,10 @@
             "time_to_peak_impact_days": 7,
             "narrative": "事件后 14 天累计 -5.89%，峰值出现在事件后第 7 天 (-5.92%)，第 10 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2008-09-15",
@@ -23950,7 +24358,10 @@
             "time_to_peak_impact_days": 24,
             "narrative": "事件后 14 天累计 -2.72%，峰值出现在事件后第 24 天 (-28.29%)，第 3 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2008-03-17",
@@ -24105,7 +24516,10 @@
             "time_to_peak_impact_days": 17,
             "narrative": "事件后 14 天累计 +6.06%，峰值出现在事件后第 17 天 (+13.94%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -24328,7 +24742,10 @@
             "time_to_peak_impact_days": 19,
             "narrative": "事件后 7 天累计 +0.24%，峰值出现在事件后第 19 天 (-3.05%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2023-01-06",
@@ -24475,7 +24892,10 @@
             "time_to_peak_impact_days": 12,
             "narrative": "事件后 7 天累计 +1.49%，峰值出现在事件后第 12 天 (+3.28%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2022-07-08",
@@ -24626,7 +25046,10 @@
             "time_to_peak_impact_days": 24,
             "narrative": "事件后 7 天累计 +3.24%，峰值出现在事件后第 24 天 (+6.70%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2021-10-08",
@@ -24781,7 +25204,10 @@
             "time_to_peak_impact_days": 32,
             "narrative": "事件后 7 天累计 +2.22%，峰值出现在事件后第 32 天 (+6.40%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2021-07-02",
@@ -24932,7 +25358,10 @@
             "time_to_peak_impact_days": 17,
             "narrative": "事件后 7 天累计 +1.03%，峰值出现在事件后第 17 天 (+4.43%)，第 6 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-06-05",
@@ -25083,7 +25512,10 @@
             "time_to_peak_impact_days": 34,
             "narrative": "事件后 7 天累计 +3.97%，峰值出现在事件后第 34 天 (+7.08%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     },
@@ -25310,7 +25742,10 @@
             "time_to_peak_impact_days": 30,
             "narrative": "事件后 3 天累计 -0.58%，峰值出现在事件后第 30 天 (+18.22%)，第 4 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2020-03-03",
@@ -25473,7 +25908,10 @@
             "time_to_peak_impact_days": 15,
             "narrative": "事件后 3 天累计 +1.75%，峰值出现在事件后第 15 天 (-10.04%)，第 3 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2008-10-08",
@@ -25636,7 +26074,10 @@
             "time_to_peak_impact_days": 36,
             "narrative": "事件后 3 天累计 -7.11%，峰值出现在事件后第 36 天 (-21.95%)，第 15 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2008-01-22",
@@ -25791,7 +26232,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 3 天累计 +2.35%，峰值出现在事件后第 37 天 (+8.42%)，第 7 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2001-04-18",
@@ -25950,7 +26394,10 @@
             "time_to_peak_impact_days": 30,
             "narrative": "事件后 3 天累计 +0.92%，峰值出现在事件后第 30 天 (+9.99%)，第 5 天起回吐。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         },
         {
           "event_date": "2001-01-03",
@@ -26105,7 +26552,10 @@
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 3 天累计 +0.00%，峰值出现在事件后第 37 天 (-3.02%)。",
             "method": "heuristic"
-          }
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
         }
       ]
     }

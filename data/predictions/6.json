@@ -1,11 +1,7 @@
 {
   "id": 6,
   "made_at": "2026-04-16T19:13:11.323630",
-  "asset": {
-    "symbol": "DXY",
-    "name": "美元指数",
-    "class": "fx"
-  },
+  "asset": null,
   "direction": "up",
   "magnitude_pct": 1.5,
   "horizon_days": 7,

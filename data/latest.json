@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-18T07:07:29.069185",
+  "generated_at": "2026-04-18T09:19:00.568093",
   "stats": {
-    "generated_at": "2026-04-18T07:07:28.726854",
+    "generated_at": "2026-04-18T09:19:00.173885",
     "total": 49,
     "verified": 0,
     "pending": 49,
@@ -1239,7 +1239,19 @@
               "close": 35.48
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2024-10-02",
+                "type": "peak",
+                "description": "事件后第 8 天录得相对基准 +16.71%，为窗口内最大升幅；印证预测方向。",
+                "days_after_event": 8
+              }
+            ],
+            "time_to_peak_impact_days": 8,
+            "narrative": "事件后 3 天累计 +5.82%，峰值出现在事件后第 8 天 (+16.71%)。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2024-07-22",
@@ -1540,7 +1552,19 @@
               "close": 29.35
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2022-08-19",
+                "type": "trough",
+                "description": "事件后第 4 天录得相对基准 -2.99%，为窗口内最大降幅；与预测方向相反。",
+                "days_after_event": 4
+              }
+            ],
+            "time_to_peak_impact_days": 4,
+            "narrative": "事件后 3 天累计 -2.43%，峰值出现在事件后第 4 天 (-2.99%)。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2022-01-17",
@@ -2395,7 +2419,19 @@
               "close": 37.68
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2021-12-09",
+                "type": "peak",
+                "description": "事件后第 3 天录得相对基准 +1.81%，为窗口内最大升幅；印证预测方向。",
+                "days_after_event": 3
+              }
+            ],
+            "time_to_peak_impact_days": 3,
+            "narrative": "事件后 3 天累计 +1.81%，峰值出现在事件后第 3 天 (+1.81%)，第 3 天起回吐。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2021-07-09",
@@ -2852,7 +2888,19 @@
               "close": 23.32
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2024-07-30",
+                "type": "trough",
+                "description": "事件后第 8 天录得相对基准 -3.44%，为窗口内最大降幅；与预测方向相反。",
+                "days_after_event": 8
+              }
+            ],
+            "time_to_peak_impact_days": 8,
+            "narrative": "事件后 3 天累计 -2.57%，峰值出现在事件后第 8 天 (-3.44%)。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2023-08-15",
@@ -3231,7 +3279,25 @@
               "close": 26.46
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2020-04-01",
+                "type": "trough",
+                "description": "事件后第 2 天录得相对基准 -2.79%，为窗口内最大降幅；与预测方向相反。",
+                "days_after_event": 2
+              },
+              {
+                "date": "2020-04-02",
+                "type": "reversion",
+                "description": "事件后第 3 天 3 日滚动收益方向翻转，价格开始回吐前期涨跌。",
+                "days_after_event": 3
+              }
+            ],
+            "time_to_peak_impact_days": 2,
+            "narrative": "事件后 3 天累计 +0.84%，峰值出现在事件后第 2 天 (-2.79%)，第 3 天起回吐。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2020-02-03",
@@ -3448,7 +3514,19 @@
               "close": 54.57
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2025-05-14",
+                "type": "peak",
+                "description": "事件后第 7 天录得相对基准 +5.52%，为窗口内最大升幅；印证预测方向。",
+                "days_after_event": 7
+              }
+            ],
+            "time_to_peak_impact_days": 7,
+            "narrative": "事件后 3 天累计 +1.06%，峰值出现在事件后第 7 天 (+5.52%)，第 6 天起回吐。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2024-09-24",
@@ -5931,7 +6009,19 @@
               "close": 32.04
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2024-10-28",
+                "type": "peak",
+                "description": "事件后第 7 天录得相对基准 +1.67%，为窗口内最大升幅；印证预测方向。",
+                "days_after_event": 7
+              }
+            ],
+            "time_to_peak_impact_days": 7,
+            "narrative": "事件后 3 天累计 -0.03%，峰值出现在事件后第 7 天 (+1.67%)。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2024-07-22",
@@ -6150,7 +6240,19 @@
               "close": 27.37
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2023-06-23",
+                "type": "trough",
+                "description": "事件后第 3 天录得相对基准 -2.89%，为窗口内最大降幅；与预测方向相反。",
+                "days_after_event": 3
+              }
+            ],
+            "time_to_peak_impact_days": 3,
+            "narrative": "事件后 3 天累计 -2.89%，峰值出现在事件后第 3 天 (-2.89%)，第 3 天起回吐。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2022-08-22",
@@ -6765,7 +6867,19 @@
               "close": 26.07
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2024-07-30",
+                "type": "trough",
+                "description": "事件后第 8 天录得相对基准 -5.47%，为窗口内最大降幅；与预测方向相反。",
+                "days_after_event": 8
+              }
+            ],
+            "time_to_peak_impact_days": 8,
+            "narrative": "事件后 3 天累计 -4.71%，峰值出现在事件后第 8 天 (-5.47%)。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2023-08-21",
@@ -7862,7 +7976,19 @@
               "close": 31.18
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2024-10-02",
+                "type": "peak",
+                "description": "事件后第 7 天录得相对基准 +28.35%，为窗口内最大升幅；印证预测方向。",
+                "days_after_event": 7
+              }
+            ],
+            "time_to_peak_impact_days": 7,
+            "narrative": "事件后 3 天累计 +11.01%，峰值出现在事件后第 7 天 (+28.35%)。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2024-07-22",
@@ -7921,7 +8047,19 @@
               "close": 23.32
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2024-07-30",
+                "type": "trough",
+                "description": "事件后第 8 天录得相对基准 -3.44%，为窗口内最大降幅；与预测方向相反。",
+                "days_after_event": 8
+              }
+            ],
+            "time_to_peak_impact_days": 8,
+            "narrative": "事件后 3 天累计 -2.57%，峰值出现在事件后第 8 天 (-3.44%)。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2023-08-15",
@@ -8140,7 +8278,19 @@
               "close": 31.05
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2022-08-19",
+                "type": "trough",
+                "description": "事件后第 4 天录得相对基准 -1.69%，为窗口内最大降幅；与预测方向相反。",
+                "days_after_event": 4
+              }
+            ],
+            "time_to_peak_impact_days": 4,
+            "narrative": "事件后 3 天累计 -0.13%，峰值出现在事件后第 4 天 (-1.69%)，第 3 天起回吐。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2022-01-17",
@@ -8515,7 +8665,19 @@
               "close": 34.5
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2024-10-02",
+                "type": "peak",
+                "description": "事件后第 7 天录得相对基准 +20.03%，为窗口内最大升幅；印证预测方向。",
+                "days_after_event": 7
+              }
+            ],
+            "time_to_peak_impact_days": 7,
+            "narrative": "事件后 3 天累计 +8.83%，峰值出现在事件后第 7 天 (+20.03%)。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2024-07-22",
@@ -8734,7 +8896,19 @@
               "close": 26.87
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2023-06-23",
+                "type": "trough",
+                "description": "事件后第 8 天录得相对基准 -7.60%，为窗口内最大降幅；与预测方向相反。",
+                "days_after_event": 8
+              }
+            ],
+            "time_to_peak_impact_days": 8,
+            "narrative": "事件后 3 天累计 -0.58%，峰值出现在事件后第 8 天 (-7.60%)。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2022-08-15",
@@ -8793,7 +8967,19 @@
               "close": 29.35
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2022-08-19",
+                "type": "trough",
+                "description": "事件后第 4 天录得相对基准 -2.99%，为窗口内最大降幅；与预测方向相反。",
+                "days_after_event": 4
+              }
+            ],
+            "time_to_peak_impact_days": 4,
+            "narrative": "事件后 3 天累计 -2.43%，峰值出现在事件后第 4 天 (-2.99%)。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2022-01-17",
@@ -8920,7 +9106,25 @@
               "close": 37.81
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2020-04-17",
+                "type": "peak",
+                "description": "事件后第 2 天录得相对基准 +2.13%，为窗口内最大升幅；印证预测方向。",
+                "days_after_event": 2
+              },
+              {
+                "date": "2020-04-20",
+                "type": "reversion",
+                "description": "事件后第 5 天 3 日滚动收益方向翻转，价格开始回吐前期涨跌。",
+                "days_after_event": 5
+              }
+            ],
+            "time_to_peak_impact_days": 2,
+            "narrative": "事件后 3 天累计 +2.13%，峰值出现在事件后第 2 天 (+2.13%)，第 5 天起回吐。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2020-02-17",
@@ -9222,7 +9426,19 @@
               "close": 23.32
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2024-07-30",
+                "type": "trough",
+                "description": "事件后第 8 天录得相对基准 -3.44%，为窗口内最大降幅；与预测方向相反。",
+                "days_after_event": 8
+              }
+            ],
+            "time_to_peak_impact_days": 8,
+            "narrative": "事件后 3 天累计 -2.57%，峰值出现在事件后第 8 天 (-3.44%)。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2024-02-20",
@@ -9777,7 +9993,19 @@
               "close": 32.04
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2024-10-28",
+                "type": "peak",
+                "description": "事件后第 7 天录得相对基准 +1.67%，为窗口内最大升幅；印证预测方向。",
+                "days_after_event": 7
+              }
+            ],
+            "time_to_peak_impact_days": 7,
+            "narrative": "事件后 3 天累计 -0.03%，峰值出现在事件后第 7 天 (+1.67%)。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2024-07-22",
@@ -9914,7 +10142,19 @@
               "close": 23.46
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2024-02-27",
+                "type": "peak",
+                "description": "事件后第 7 天录得相对基准 +6.11%，为窗口内最大升幅；印证预测方向。",
+                "days_after_event": 7
+              }
+            ],
+            "time_to_peak_impact_days": 7,
+            "narrative": "事件后 3 天累计 +5.24%，峰值出现在事件后第 7 天 (+6.11%)，第 6 天起回吐。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2022-08-22",
@@ -9973,7 +10213,25 @@
               "close": 29.6
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2022-08-25",
+                "type": "peak",
+                "description": "事件后第 3 天录得相对基准 +5.31%，为窗口内最大升幅；印证预测方向。",
+                "days_after_event": 3
+              },
+              {
+                "date": "2022-08-26",
+                "type": "reversion",
+                "description": "事件后第 4 天 3 日滚动收益方向翻转，价格开始回吐前期涨跌。",
+                "days_after_event": 4
+              }
+            ],
+            "time_to_peak_impact_days": 3,
+            "narrative": "事件后 3 天累计 +5.31%，峰值出现在事件后第 3 天 (+5.31%)，第 4 天起回吐。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2022-05-20",
@@ -10424,7 +10682,19 @@
               "close": 50.07
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2024-10-28",
+                "type": "peak",
+                "description": "事件后第 7 天录得相对基准 +1.32%，为窗口内最大升幅；印证预测方向。",
+                "days_after_event": 7
+              }
+            ],
+            "time_to_peak_impact_days": 7,
+            "narrative": "事件后 3 天累计 -0.36%，峰值出现在事件后第 7 天 (+1.32%)。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2024-07-22",
@@ -10887,7 +11157,25 @@
               "close": 60.32
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2020-04-21",
+                "type": "trough",
+                "description": "事件后第 1 天录得相对基准 -2.36%，为窗口内最大降幅；与预测方向相反。",
+                "days_after_event": 1
+              },
+              {
+                "date": "2020-04-23",
+                "type": "reversion",
+                "description": "事件后第 3 天 3 日滚动收益方向翻转，价格开始回吐前期涨跌。",
+                "days_after_event": 3
+              }
+            ],
+            "time_to_peak_impact_days": 1,
+            "narrative": "事件后 3 天累计 -0.95%，峰值出现在事件后第 1 天 (-2.36%)，第 3 天起回吐。",
+            "method": "heuristic"
+          }
         },
         {
           "event_date": "2020-02-20",
@@ -10942,7 +11230,25 @@
               "close": 62.13
             }
           ],
-          "turning_points": null
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2020-02-25",
+                "type": "trough",
+                "description": "事件后第 5 天录得相对基准 -4.28%，为窗口内最大降幅；与预测方向相反。",
+                "days_after_event": 5
+              },
+              {
+                "date": "2020-02-26",
+                "type": "reversion",
+                "description": "事件后第 6 天 3 日滚动收益方向翻转，价格开始回吐前期涨跌。",
+                "days_after_event": 6
+              }
+            ],
+            "time_to_peak_impact_days": 5,
+            "narrative": "事件后 3 天累计 -3.72%，峰值出现在事件后第 5 天 (-4.28%)，第 6 天起回吐。",
+            "method": "heuristic"
+          }
         }
       ]
     },

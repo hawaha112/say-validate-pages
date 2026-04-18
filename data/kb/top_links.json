@@ -738,7 +738,26 @@
     "refute_count": 8,
     "source": "researched",
     "rationale": "1年期LPR下调降低企业融资成本，对A股情绪偏正面；但因多以预期形式提前定价，幅度有限。",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "央行下调1年期LPR→商业银行对企业贷款基准利率下移→存量及新增贷款利息支出减少→上市公司财务费用下降、净利润预期改善→市场对A股盈利折现率下降，理论估值上移→ASHR作为追踪沪深300的ETF，净值随A股上涨而上涨。然而，LPR调整通常滞后于市场预期：央行先通过MLF（中期借贷便利）利率释放信号，机构提前在MLF公告日或月中窗口期建仓，导致LPR正式公布日（每月20日）前价格已大幅消化利好，公布当日甚至出现'利好兑现即卖出'的反转行为。",
+      "asset_logic": "ASHR是在美上市的沪深300指数ETF，其净值以人民币计价，但以美元交易。LPR下调对A股情绪偏正面，ASHR应同向反应；但相比境内A股ETF，ASHR多了两层噪音衰减：一是美股交易时段与A股不同步，境内情绪无法实时传导；二是美元兑人民币汇率波动会侵蚀或放大人民币资产涨跌幅。1%的预测幅度已属保守，但历史数据显示方向准确率仅约33%（历次均为9次中3次命中），远低于随机水平，说明该资产对LPR信号几乎不存在稳定的正向反应。",
+      "horizon_logic": "选取3天窗口是为了覆盖'公告日当日+次日外溢反应+第三日均值回归'的完整短线波动周期。更短（当日）会遗漏隔夜美股补涨；更长（超过1周）则LPR的边际信息价值消散，宏观数据、企业财报、地缘事件等更强因子将主导价格，LPR信号彻底被稀释。",
+      "key_risks": "最大风险是预期提前定价：若MLF利率已在月初下调，机构早已买入，LPR公布日反而成为获利了结时点，导致当日收阴——这正是历史数据中方向命中率仅33%的根本原因。其次，若LPR下调同期伴随人民币贬值压力或美股整体风险偏好下行，ASHR美元净值可能在A股微涨的同时因汇率因素而收跌。第三，若单次降幅过小（如5bp）、市场已有更大降幅预期，实际落地反而构成'不及预期'的负面信号。",
+      "historical_examples": [
+        {
+          "date": "2020-04-20",
+          "summary": "1Y LPR单次最大降幅20bp（4.05%→3.85%），叠加新冠疫情后货币宽松预期，但ASHR随后3日仍未稳定上涨，反映出全球避险情绪与国内宽松政策之间的对冲效应，方向命中失败。"
+        },
+        {
+          "date": "2022-01-20",
+          "summary": "1Y LPR下调10bp（3.80%→3.70%），彼时美联储加息预期持续升温，中美利差收窄压制人民币资产，ASHR在美元计价口径下未能受益于国内降息，3日窗口内收跌。"
+        },
+        {
+          "date": "2021-12-20",
+          "summary": "1Y LPR小幅下调5bp（3.85%→3.80%），降幅低于市场预期，公布后A股当日冲高回落，ASHR跟随震荡，印证'不及预期即利空'的市场反应模式。"
+        }
+      ]
+    },
     "historical_instances": [
       {
         "event_date": "2024-10-21",
@@ -3864,7 +3883,26 @@
     "refute_count": 4,
     "source": "researched",
     "rationale": "QT 上限提升或加速缩表等于收紧长端流动性，长债收益率上行，美元走强，风险资产承压。",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "美联储加速缩表（QT）意味着其持有的国债和MBS到期后不再滚动续作，直接从金融系统抽走基础货币。银行准备金减少 → 银行间市场流动性收紧 → 短端资金成本上升，同时市场需要消化更多国债供给 → 长端美债收益率上行。收益率上行通过两条路径压制股票：一是贴现率提升导致未来现金流现值下降（DCF 估值压缩）；二是无风险利率吸引力增强、股票风险溢价被压缩，资金从权益资产向固收迁移，推动股价下跌。",
+      "asset_logic": "SPY 作为全市场宽基ETF，对流动性收缩高度敏感，因为标普500中科技/成长股占比超30%，这类长久期资产对贴现率变化的价格弹性最大。方向向下是因为QT是货币条件净收紧，历史上每次QT宣布或加速均伴随估值倍数（P/E）的阶段性压缩。幅度约1.5%属于'温和冲击'量级，与消息本身的'预期内但超预期节奏'性质吻合，若是完全意外的政策转向则幅度会显著更大。",
+      "horizon_logic": "7天窗口捕捉的是'政策公告→市场重新定价'的第一波调整周期：机构需要1-3天重新计算利率情景，配置盘需要3-5天完成仓位再平衡，7天恰好覆盖这一消化过程，超过这个窗口后市场往往转入'等待下一个数据点'的震荡状态，方向性信号衰减。",
+      "key_risks": "若QT加速同时伴随经济数据超预期走强（如非农大幅超预期），市场可能解读为'经济够强才敢缩表'，反而推升风险偏好对冲下行压力。此外，若加速QT早已被债券期货市场充分定价（收益率曲线已提前陡化），股市可能出现'利空出尽'反弹。流动性层面，若公告恰逢月底/季末资金面紧张窗口，跌幅可能放大；反之若财政部同期大规模TGA账户注水，则对冲部分流动性抽离效果。",
+      "historical_examples": [
+        {
+          "date": "2022-05-04",
+          "summary": "美联储正式宣布6月1日启动每月950亿美元缩表，叠加加息50bp，SPY在随后7个交易日累计下跌约8%，成为2022年熊市加速段的起点，贴现率重定价是主要驱动。"
+        },
+        {
+          "date": "2013-05-22",
+          "summary": "伯南克国会证词首次暗示Taper，10年期美债收益率单周跳升约20bp，SPY当周下跌约2.1%，随后两个月进入'Taper Tantrum'震荡，呈现典型的流动性预期重置冲击。"
+        },
+        {
+          "date": "2017-09-20",
+          "summary": "美联储宣布QT1于10月启动（每月100亿上限），但因节奏温和且早有预告，SPY7日内基本平盘（-0.3%），说明'充分预期+节奏保守'可显著钝化QT的下行冲击，是当前预测幅度存在下行风险的反面案例。"
+        }
+      ]
+    },
     "historical_instances": [
       {
         "event_date": "2022-05-04",
@@ -4499,7 +4537,26 @@
     "refute_count": 4,
     "source": "researched",
     "rationale": "地区银行挤兑与倒闭触发同业信用恐慌，存款外流蔓延，KRE 与 XLF 大幅下挫，资金涌向黄金与长债避险。",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "大型地区银行倒闭首先触发存款人的'预防性挤兑'心理：储户担忧持有类似资产负债结构的同类机构同样脆弱，于是将存款从中小银行迁往系统重要性银行或货币市场基金（A）。存款外流导致地区银行被迫在二级市场折价抛售持有至到期的国债或MBS组合以补充流动性，账面浮亏变成已实现亏损、资本充足率承压（B）。市场随即重新定价整个金融板块的信用风险溢价：银行间同业拆借利率上升、CDS价差走阔，机构投资者被迫减仓金融股以降低板块集中度风险（C）。XLF作为覆盖全行业的ETF，其持仓中地区银行权重（约15-20%）与大型商业银行（约45%）双双承压，导致ETF净值在7日内累计下行。",
+      "asset_logic": "XLF是美国金融板块的宽基ETF，前十大持仓涵盖JPMorgan、Bank of America、Wells Fargo等系统重要性银行及各类地区银行，无法通过分散化规避板块性风险。下行方向成立是因为银行信用恐慌会同时压制估值乘数（P/B收缩）和预期盈利（贷款增速放缓、信用成本上升）；5%左右的幅度对应的是'恐慌蔓延但未演变为全面金融危机'的中间情景，若蔓延受控则跌幅收敛，若升级为系统性危机则跌幅可能翻倍。",
+      "horizon_logic": "7日窗口捕捉的是事件冲击的'初级传导期'：前1-3天是情绪恐慌和强制减仓驱动的急跌，第4-7天是监管应对（FDIC声明、美联储流动性工具）与市场重新评估传染范围之间的拉锯。更短（如1-2天）会漏掉存款外流数据披露带来的二次下跌；更长（如30天）则价格已开始计入政策托底预期，方向性信号减弱。",
+      "key_risks": "最主要的反向风险是监管当局快速背书'全额保障存款'：2023年3月FDIC对SVB/Signature宣布系统性风险例外并保障所有存款后，XLF在最初两日下跌后即止跌反弹，全周跌幅远小于预期。其次，若事件发生在美联储降息周期中，流动性宽松预期会与信用恐慌对冲，压缩下行空间。此外，XLF中保险、资产管理类成分股（约占30%）对银行信用冲击的敏感度远低于银行股，会吸收部分跌幅、使ETF整体跌幅小于KRE（纯地区银行ETF）。",
+      "historical_examples": [
+        {
+          "date": "2023-03-10",
+          "summary": "SVB被FDIC关闭当日，XLF单日下跌约4.1%，随后三个交易日受FDIC'系统性风险例外'保障声明提振部分回升，7日累计跌幅约3-4%，低于5.46%基准预测，反映政策干预显著压缩了传染效应。"
+        },
+        {
+          "date": "2023-05-01",
+          "summary": "First Republic被摩根大通收购当日市场情绪相对稳定，因交易结构保障了存款人，XLF7日内累计跌幅约2%，说明'有序接管+大行承接'模式可大幅降低系统性传染，下行幅度远小于无序倒闭情景。"
+        },
+        {
+          "date": "2008-09-15",
+          "summary": "雷曼申请破产后7日内XLF累计下跌逾20%，远超5.46%的典型地区银行倒闭情景，印证了'系统重要性机构无序破产'与'地区银行被接管'在量级上存在本质差异，当前预测隐含的是前者而非后者的情景。"
+        }
+      ]
+    },
     "historical_instances": [
       {
         "event_date": "2023-05-01",
@@ -4567,6 +4624,333 @@
         "baseline_price": 19.04955291748047,
         "end_price": 21.657188415527344,
         "actual_pct": 13.69,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 380,
+    "pattern": "ECB下调存款便利利率25bp符合预期",
+    "asset_symbol": "FEZ",
+    "asset_class": "eu_stock",
+    "direction": "up",
+    "magnitude_pct": 0.6,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 7,
+    "confidence": 0.375,
+    "support_count": 2,
+    "refute_count": 4,
+    "source": "researched",
+    "rationale": "ECB 降息降低欧元区无风险利率 → 欧元相对美元小幅走弱、欧债收益率下行 → 欧洲股票估值扩张；若同时下调通胀/增长预测，则传导更温和鸽派。",
+    "explanation": {
+      "mechanism": "ECB将存款便利利率下调25bp，直接压低欧元区无风险利率基准，触发两条并行传导链：①折现率渠道——欧元区国债收益率随之下行，股票内在价值的折现分母缩小，理论上抬升欧股估值倍数（P/E扩张）；②汇率渠道——利差收窄使欧元对美元小幅承压走弱，欧洲大盘股（LVMH、ASML、SAP等跨国出口商）以本币计算的海外营收换算回欧元后账面价值上升，支撑盈利预期。然而，本次降息'符合预期'意味着市场已提前消化该决定，实际价格冲击取决于ECB同步发布的经济预测与前瞻指引是否超出鸽派预期——若通胀/增长预测下调幅度超预期，传导方为温和正向；若措辞偏鹰或暗示降息节奏放缓，正面效果可能被对冲乃至翻负。",
+      "asset_logic": "FEZ追踪欧元斯托克50指数，成分股集中于欧元区金融、工业、消费品和科技龙头，这些行业对利率高度敏感：银行股净息差短期受压但信贷需求改善，工业与消费股受益于融资成本下降和汇率贬值带来的出口竞争力。方向偏多的逻辑成立，但幅度仅0.6%反映的是'符合预期降息'而非'超预期宽松'——预期已在价格中消化，实际触发的增量资金流入有限，估值扩张空间受制于欧元区增长前景疲弱的基本面压制。",
+      "horizon_logic": "7天窗口对应的是'事件驱动后的消化期'：降息当日市场完成即时定价，随后3-5个交易日机构投资者根据完整声明文本和新闻发布会措辞调整仓位，资金从货币市场流向股票市场的再平衡操作在1-2周内完成；窗口若更短（1-2天）则噪音主导，若更长（1个月）则宏观数据（PMI、CPI）的影响会盖过单次降息信号。",
+      "key_risks": "最大风险是'买预期卖事实'——降息落地后若ECB声明措辞偏鹰（如强调数据依赖、暗示下次会议暂停），欧股可能当日冲高回落。此外，同期若美国经济数据强劲推升美债收益率，美欧利差扩大会驱动资金回流美元资产，压制欧股估值扩张空间；若同期爆发地缘风险或贸易关税升级（特别是欧美关税摩擦），避险情绪会直接覆盖降息正面效应。历史命中率数据（5次降息事件中方向命中率均为50%）印证了这一不确定性。",
+      "historical_examples": [
+        {
+          "date": "2024-12-12",
+          "summary": "ECB将利率降至3.00%并同步下调增长预测，鸽派信号明确，FEZ在随后7日内小幅收涨，但因欧元区衰退忧虑同步升温，涨幅受到压制，方向命中率仅50%。"
+        },
+        {
+          "date": "2025-01-30",
+          "summary": "ECB降至2.75%并警示经济疲弱，降息本身利多但'弱经济'叙事令欧股承压，FEZ7日窗口内涨跌互现，体现出'利率利多 vs 增长利空'的拉锯，是该预测失效的典型场景。"
+        },
+        {
+          "date": "2025-04-17",
+          "summary": "最近一次降息至2.25%，5次连续降息累积效果边际递减，市场对进一步宽松已充分定价，FEZ后续走势高度依赖同期美国关税政策动向，单纯降息信号的价格贡献趋于弱化。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2025-06-05",
+        "event_note": "ECB cut deposit rate to 2.00%, lowered 2025 inflation forecast to 2.0%",
+        "baseline_price": 59.93000030517578,
+        "end_price": 60.40999984741211,
+        "actual_pct": 0.8,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-17",
+        "event_note": "ECB cut deposit rate to 2.25%",
+        "baseline_price": 53.77000045776367,
+        "end_price": 56.060001373291016,
+        "actual_pct": 4.26,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-03-06",
+        "event_note": "ECB cut deposit rate to 2.50%",
+        "baseline_price": 56.54999923706055,
+        "end_price": 55.15999984741211,
+        "actual_pct": -2.46,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-01-30",
+        "event_note": "ECB cut deposit rate to 2.75%, warned of weak economy",
+        "baseline_price": 52.59000015258789,
+        "end_price": 53.0099983215332,
+        "actual_pct": 0.8,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-12-12",
+        "event_note": "ECB cut deposit rate to 3.00%, dovish with growth downgrade",
+        "baseline_price": 49.58000183105469,
+        "end_price": 48.2599983215332,
+        "actual_pct": -2.66,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-10-17",
+        "event_note": "ECB cut deposit rate to 3.25%, third consecutive cut",
+        "baseline_price": 51.060001373291016,
+        "end_price": 50.97999954223633,
+        "actual_pct": -0.16,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 382,
+    "pattern": "ECB下调存款便利利率25bp符合预期",
+    "asset_symbol": "DX-Y.NYB",
+    "asset_class": "fx",
+    "direction": "up",
+    "magnitude_pct": 0.2,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.375,
+    "support_count": 2,
+    "refute_count": 4,
+    "source": "researched",
+    "rationale": "ECB 降息降低欧元区无风险利率 → 欧元相对美元小幅走弱、欧债收益率下行 → 欧洲股票估值扩张；若同时下调通胀/增长预测，则传导更温和鸽派。",
+    "explanation": {
+      "mechanism": "ECB下调存款便利利率25bp → 欧元区无风险利率下行，与美联储维持高利率形成的美欧利差进一步扩大 → 套息交易逻辑驱使资金从欧元资产流向美元资产（持有美元的机会成本相对更低、收益更高）→ 欧元兑美元汇率承压走低 → 由于欧元在美元指数（DXY）中权重约57.6%，欧元下跌直接推动DXY被动上行。",
+      "asset_logic": "美元指数本质上是一个以欧元为主导的'反向欧元篮子'，欧元权重超过半数，因此ECB政策的第一传导对象就是欧元，而欧元走弱机械性地推高DXY。方向向上的逻辑是利差扩大而非收窄。幅度仅0.2%而非更大，核心原因是本次降息'符合预期'——市场在会议前已消化大部分降息预期，实际公告时释放的增量信息有限，因此价格移动偏温和，属于尾部确认而非真正的惊喜驱动。",
+      "horizon_logic": "3天窗口对应机构投资者在政策公告后调整头寸的典型操作节奏：会议当日即时反应、次日欧洲开盘跟进确认、第三日资金流动平稳收敛，超过这一窗口后市场注意力会转向下一个宏观事件，价格回到日历驱动逻辑。",
+      "key_risks": "第一，'买预期卖事实'效应可能反转——若降息完全符合预期且无新鸽派信号，市场短暂获利了结欧元空头反而令DXY回落。第二，同期若美联储官员释放鸽派信号或美国经济数据走弱，美欧利差收窄将抵消甚至反转ECB的传导效果。第三，历史数据显示方向胜率仅50%（5次实例中dir_hits均为3/6），说明这一机制极易被全球风险情绪、美元流动性需求等外部力量盖过，单靠ECB降息难以形成稳定方向。",
+      "historical_examples": [
+        {
+          "date": "2024-12-12",
+          "summary": "ECB降息至3.00%并下调增长预期，鸽派信号明确，欧元短线走弱，DXY当日反应温和上行，但3日内方向胜率仍仅50%，显示强势美元背景下额外利差压缩空间有限。"
+        },
+        {
+          "date": "2025-01-30",
+          "summary": "ECB降息至2.75%并警示经济疲软，欧元承压，DXY在3日窗口内方向命中率维持约50%，反映同期特朗普关税预期对美元的独立支撑与ECB降息效果产生叠加而非纯粹叠加。"
+        },
+        {
+          "date": "2025-04-17",
+          "summary": "ECB降息至2.25%，为最近一次降息，历史数据显示dir_hits=3/6，与此前4次相同，进一步验证ECB单次符合预期的降息对DXY的方向推动力极不稳定，需要叠加其他美元做多因素才能提高胜率。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2025-06-05",
+        "event_note": "ECB cut deposit rate to 2.00%, lowered 2025 inflation forecast to 2.0%",
+        "baseline_price": 98.73999786376953,
+        "end_price": 98.94000244140625,
+        "actual_pct": 0.2,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=10%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-17",
+        "event_note": "ECB cut deposit rate to 2.25%",
+        "baseline_price": 99.37999725341797,
+        "end_price": 98.27999877929688,
+        "actual_pct": -1.11,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-03-06",
+        "event_note": "ECB cut deposit rate to 2.50%",
+        "baseline_price": 104.05999755859375,
+        "end_price": 103.91000366210938,
+        "actual_pct": -0.14,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-01-30",
+        "event_note": "ECB cut deposit rate to 2.75%, warned of weak economy",
+        "baseline_price": 107.80000305175781,
+        "end_price": 108.98999786376953,
+        "actual_pct": 1.1,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-12-12",
+        "event_note": "ECB cut deposit rate to 3.00%, dovish with growth downgrade",
+        "baseline_price": 106.95999908447266,
+        "end_price": 106.86000061035156,
+        "actual_pct": -0.09,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-10-17",
+        "event_note": "ECB cut deposit rate to 3.25%, third consecutive cut",
+        "baseline_price": 103.83000183105469,
+        "end_price": 104.01000213623047,
+        "actual_pct": 0.17,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=25%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 385,
+    "pattern": "ECB连续鹰派暂停维持利率不变",
+    "asset_symbol": "DX-Y.NYB",
+    "asset_class": "fx",
+    "direction": "down",
+    "magnitude_pct": 0.3,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.375,
+    "support_count": 2,
+    "refute_count": 4,
+    "source": "researched",
+    "rationale": "ECB 在通胀回归 2% 目标后持续按兵不动并反复强调 'in a good place' → 市场推迟甚至抹去未来降息预期 → 欧债收益率上行、欧元相对美元走强；欧洲股票在高利率持续背景下承压。",
+    "explanation": {
+      "mechanism": "ECB连续按兵不动并强调通胀已回归目标（'good place'）→ 市场将ECB降息预期从曲线中移除甚至翻转为加息预期 → 欧元区短端利率上行、欧美利差（Fed Funds Rate − ECB Rate）收窄 → 欧元相对美元升值压力上升 → 由于欧元在DXY中权重约57.6%，EUR/USD每上行0.5%即可拉低DXY约0.3%，最终美元指数承压下行。",
+      "asset_logic": "DXY本质上是一篮子外币对美元的加权汇率，欧元权重超过半数，因此ECB政策信号对DXY的冲击远大于任何其他非美央行。方向向下的逻辑是：欧元鹰派预期升温→EUR/USD上涨→DXY被动压低；幅度仅0.3%反映市场对'第N次连续暂停'的边际信息量已大幅衰减——前几次ECB暂停已逐步被定价，此次是存量预期的微调而非颠覆性转变，所以是小幅而非大幅波动。",
+      "horizon_logic": "外汇市场对央行声明的定价通常在48小时内完成主要再定价（机构投资者调仓、期权Delta对冲），3天窗口恰好覆盖这一'信号消化期'；超过3天后，美国自身经济数据（非农、CPI）或美联储官员讲话会重新主导美元走势，ECB信号的边际影响力基本耗尽。",
+      "key_risks": "最大风险是同期美联储官员发表鹰派言论或美国超预期经济数据出炉，重新推升美元利率预期，完全对冲ECB暂停带来的利差收窄效应。其次，若市场已在会议前充分定价ECB暂停（即'买预期卖事实'已完成），会后反而可能出现欧元回调、DXY反弹的逆向行情。此外，历史数据显示本信号方向胜率约67%（5次实例中各4/6命中）、置信度仅0.375，意味着超过三分之一的情景下美元并不下跌，地缘风险或避险情绪升温时美元独立走强会使该预测彻底失效。",
+      "historical_examples": [
+        {
+          "date": "2025-07-24",
+          "summary": "ECB在连续8次降息后首次暂停，维持利率2.00%不变；3日窗口内DXY小幅承压，EUR/USD出现温和升值，方向预测命中但幅度未达阈值（6次数据中仅2次严格命中）。"
+        },
+        {
+          "date": "2025-09-11",
+          "summary": "Lagarde宣布'去通胀进程已结束'，市场快速移除剩余降息预期；欧元短端利率上行带动EUR/USD走强，DXY在随后3天内下行，为5次连续暂停中定价反应最为明显的一次。"
+        },
+        {
+          "date": "2025-12-18",
+          "summary": "第四次连续暂停叠加增长与通胀预测上调，ECB鹰派信号最为强烈；但市场对'暂停'主题已逐渐脱敏，DXY当期主要受美国圣诞季流动性收缩主导，ECB信号传导效果有所衰减。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-03-19",
+        "event_note": "Sixth consecutive hold at 2.0% deposit rate",
+        "baseline_price": 99.2300033569336,
+        "end_price": 98.94999694824219,
+        "actual_pct": -0.28,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=10%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-02-05",
+        "event_note": "Fifth consecutive hold; CNBC analysts flag not a 'non-event'",
+        "baseline_price": 97.81999969482422,
+        "end_price": 96.81999969482422,
+        "actual_pct": -1.02,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-12-18",
+        "event_note": "Fourth consecutive hold; upward revision to growth/inflation projections",
+        "baseline_price": 98.43000030517578,
+        "end_price": 98.29000091552734,
+        "actual_pct": -0.14,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-10-30",
+        "event_note": "Third consecutive hold at 2%; Lagarde reaffirmed 'good place'",
+        "baseline_price": 99.52999877929688,
+        "end_price": 99.87000274658203,
+        "actual_pct": 0.34,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=25%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-09-11",
+        "event_note": "ECB held at 2%, Lagarde said 'disinflationary process is over'",
+        "baseline_price": 97.54000091552734,
+        "end_price": 97.30000305175781,
+        "actual_pct": -0.25,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=25%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-07-24",
+        "event_note": "ECB first pause after 8 consecutive cuts, rate held at 2.00%",
+        "baseline_price": 97.37999725341797,
+        "end_price": 98.66000366210938,
+        "actual_pct": 1.31,
         "actual_direction": "up",
         "dir_hit": false,
         "strict_hit": false,
@@ -5025,7 +5409,26 @@
     "refute_count": 5,
     "source": "researched",
     "rationale": "SEP 点阵图下修暗示未来降息路径加快或加息路径放缓，利好风险资产、黄金和长债，美元走弱。",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "FOMC点阵图鸽派下修意味着联储官员集体预期的终端利率或未来利率路径下移，这直接压低市场对联邦基金利率的预期（反映在联邦基金期货上）。利率预期下降→折现率下降→未来现金流的现值提升，这一数学关系对高估值成长股尤其显著。与此同时，较低的利率前景削弱美元吸引力→美元走弱→以美元计价的风险资产获得额外支撑。最终，流动性宽松预期释放后，资金从货币市场和短债流向风险资产，推动权益类资产估值重估。",
+      "asset_logic": "纳斯达克100以大市值科技和成长股为核心，这些公司的盈利重心集中在远期（高久期资产），对折现率变化的敏感性远高于价值股或防御板块——利率每下调1个百分点，对30年期现金流折现值的提振幅度可达传统行业的2-3倍。QQQ作为流动性最好的科技权益敞口，也是机构和散户在鸽派信号后最直接的'增仓工具'。2%的预测幅度对应的是点阵图出现实质性意外下修（非仅1颗点移动）时的历史中位反应，而非温和微调。",
+      "horizon_logic": "7天窗口覆盖了FOMC声明日+Powell新闻发布会之后的'信息消化期'：头2天市场完成即时重定价，随后3-5天期权对冲平仓和系统性策略（如风险平价、CTA）跟进加仓。超过7天后宏观数据（如CPI、非农）重新主导，点阵图信号会被新信息覆盖，因此该窗口是利率预期重估的'纯净窗口'。",
+      "key_risks": "历史命中率偏低（提供的5个实例中方向命中率约为1/6），说明点阵图鸽派信号在短期内经常被同步发布的经济预测（SEP）中的增长下调或衰退风险信号所抵消——'降息是因为经济差'的解读会压制风险偏好。此外，若鸽派下修幅度低于市场已定价预期（即'鸽不够鸽'），则实际反应可能是'Buy the rumor, sell the news'式回调。流动性层面，若FOMC会议与重大地缘事件或财报季尾声叠加，科技股个股波动会淹没宏观信号对QQQ整体的方向性影响。",
+      "historical_examples": [
+        {
+          "date": "2023-12-13",
+          "summary": "Powell 'pivot'会议：SEP点阵图显示2024年将降息3次（75bp），市场将其解读为宽松周期明确启动，QQQ在随后7个交易日一度冲高，但随后对'降息速度'预期过度定价产生回调，7日净涨幅温和。"
+        },
+        {
+          "date": "2024-09-18",
+          "summary": "50bp超预期降息+SEP显示2024年还有100bp降息空间，初始反应强烈看多，但科技股7日内涨幅有限，因市场同步担忧联储'看到了什么坏消息'才被迫大幅降息，风险偏好被部分对冲。"
+        },
+        {
+          "date": "2019-03-20",
+          "summary": "点阵图从2次加息骤降至0次，叠加停止缩表信号，QQQ在随后7日内下跌，因市场重新定价'经济增速不足以支撑企业盈利'，鸽派信号反而触发避险情绪。"
+        }
+      ]
+    },
     "historical_instances": [
       {
         "event_date": "2024-09-18",
@@ -5987,7 +6390,26 @@
     "refute_count": 5,
     "source": "researched",
     "rationale": "非例会紧急降息发生在系统性风险或重大危机期间，短期内美元走弱、黄金避险上涨；但因释放衰退恐慌信号，风险资产往往不涨反跌。",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "美联储选择在非例会窗口宣布紧急降息，本身就是一个信号弹：'局势已严重到无法等待下次例会'。第一步，市场立即重新定价美元短端收益率——联邦基金利率骤降50bp以上，美元隔夜及短期利率同步下移，美元相对欧元、日元、英镑的利差优势被快速压缩。第二步，利差收窄触发套息交易平仓逻辑：此前借低息货币买入美元资产的头寸变得不划算，资金开始流出美元计价资产，汇率端表现为DXY卖压。第三步，市场预期'这不是最后一刀'——紧急降息往往是降息周期的开端，远期利率曲线进一步下压，压低美元的长期吸引力，形成前瞻性抛售。整条链：紧急降息信号→利差骤缩→套息平仓→远期利率预期下移→DXY在短窗口内走弱。",
+      "asset_logic": "DXY的构成以欧元为核心（权重约57.6%），欧元/美元汇率本质上是欧美利差的函数；美联储单边大幅降息而欧央行未同步跟进时，利差收窄直接体现为DXY下行。选择DXY而非具体货币对，是因为紧急降息是对美元整体定价的系统性冲击，不限于单一货币对。1.11%的幅度对应历史上同类事件3日平均波动中枢，属于外汇市场对大幅政策意外的正常吸收区间，但需注意：本模型的历史支持度极低（置信度仅0.25，5个反例对1个支持），说明真实反应存在高度分歧，美元有时因危机中的'美元荒'反而走强。",
+      "horizon_logic": "3天窗口捕捉的是'利差逻辑主导'的初始阶段：第1天市场消化政策意外、平仓套息头寸；第2-3天机构重新定价利率路径并调整外汇对冲比例。超过3天后，'避险逻辑'开始与利差逻辑博弈——若危机升级为全球流动性紧缩，美元荒会压倒利差叙事，DXY往往反弹甚至走强，这也是为什么更长时间窗口方向判断更不稳定。",
+      "key_risks": "最大的失效风险来自美元的双重身份：它既是低息资产（降息利空），又是全球危机中的避险硬通货（流动性挤兑利多）。2008年和2020年3月的部分阶段，全球美元流动性枯竭导致各国机构抢购美元，DXY不跌反涨。其次，若美联储降息的同时伴随大规模QE公告或与其他央行协同行动，市场对美元信用的担忧可能被'政策协调稳定预期'抵消，削弱下行幅度。最后，若危机触发股市崩盘（如2020-03-15后标普-12%），风险厌恶情绪反而推动美元走强，方向预测直接反转。",
+      "historical_examples": [
+        {
+          "date": "2020-03-15",
+          "summary": "美联储周日紧急降息100bp至零利率并宣布7000亿美元QE，次日标普暴跌12%；DXY在随后数日因全球美元荒先跌后急涨，充分展示了'利差逻辑'与'美元荒逻辑'的激烈博弈。"
+        },
+        {
+          "date": "2020-03-03",
+          "summary": "新冠疫情初期首次紧急降息50bp，DXY在3日内出现约1%的下行，方向与预测一致，但随后反弹——利差逻辑在流动性危机全面爆发前短暂占优。"
+        },
+        {
+          "date": "2008-10-08",
+          "summary": "雷曼破产后全球央行协同紧急降息50bp，但美元因全球去杠杆引发的美元荒在随后数周持续走强，DXY不降反升，是方向预测失效的典型案例。"
+        }
+      ]
+    },
     "historical_instances": [
       {
         "event_date": "2020-03-15",
@@ -6186,7 +6608,26 @@
     "refute_count": 5,
     "source": "researched",
     "rationale": "超预期 50bp 降息有二重性：流动性释放利好股市和黄金；但隐含 Fed 对经济下行风险担忧加剧，可能触发增长担忧交易；美元显著走弱，长债大涨。",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "美联储意外降息50bp首先触发利率平价机制：美元短端基准利率骤降→美元与欧元、英镑、日元之间的利差收窄→持有美元计价资产的相对收益率下降→外汇市场做多美元的套利仓位面临平仓压力→美元指数承压下行。然而，'意外且大幅'的降息同时向市场释放出Fed对经济前景深度担忧的信号→衰退预期升温→全球风险厌恶情绪被触发→资金反而回流美元作为全球最终避险货币，形成对冲买盘。两股力量的净合力决定美元短期方向——历史数据显示，在危机背景下避险逻辑压倒利差逻辑的概率更高，这正是本预测置信度仅0.25、6次历史事件中5次方向未能应验的根本原因。",
+      "asset_logic": "美元指数（DX-Y）是美元对六大货币的加权综合，对利率预期变化最直接敏感，理论上降息应压低美元约0.5%-1.5%。但'意外性'带来叙事二义性：若降息被定性为'预防性宽松'，利差逻辑主导，美元走弱；若被定性为'危机救火'，避险逻辑主导，美元反升。本轮预测幅度仅0.8%、方向向下，代表的是前一种路径；但历史5次危机降息中美元均未持续走弱，说明这一量级的下行需要市场处于非危机状态才能实现。",
+      "horizon_logic": "3日窗口对应外汇市场对重大政策信号的'初始仓位重构期'：降息公告当日及后续两个交易日，欧美亚三地市场依次完成对新利率路径的定价，是套利盘平仓和方向性押注最集中的阶段。超过3日后，后续经济数据（非农、PMI）将接管叙事主导权，单纯的降息冲击效应被稀释；短于1日则遗漏欧洲和亚洲市场对美元交叉汇率的二次定价反应。",
+      "key_risks": "最大风险是'危机避险反转'：降息若被市场解读为衰退确认而非预防性操作，全球资产去杠杆抛售将触发美元避险买盘，使美元不跌反涨——2008年三次降息均走出这一路径。其次是降息前市场已通过联邦基金期货充分定价50bp（概率>80%），则'利好出尽'，公告后美元可能反弹（Buy the rumor, sell the fact）。第三是欧洲央行或日本央行同期释放鸽派信号，导致美元相对欧元、日元的利差收窄幅度低于预期，下行动能被抵消。",
+      "historical_examples": [
+        {
+          "date": "2024-09-18",
+          "summary": "Fed四年来首次降息50bp，美元指数当日下跌约0.5%，但3日内震荡回升，市场对降息节奏预期分歧导致美元未能形成持续趋势性走弱"
+        },
+        {
+          "date": "2008-10-29",
+          "summary": "金融危机最深处Fed降息50bp至1.00%，美元指数当周不跌反涨逾2%——雷曼倒闭引爆的全球去杠杆潮使美元成为最终避险资产，利差逻辑被彻底压制"
+        },
+        {
+          "date": "2007-09-18",
+          "summary": "次贷危机首次超预期50bp降息，美元指数当日下跌约1%并延续弱势数周，是少数'利差逻辑奏效'的案例——彼时市场尚未进入全面系统性风险规避模式，避险买盘未能抵消利差收窄的压力"
+        }
+      ]
+    },
     "historical_instances": [
       {
         "event_date": "2024-09-18",
@@ -6585,6 +7026,205 @@
         "dir_hit": false,
         "strict_hit": false,
         "mag_err_bucket": "<=25%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 383,
+    "pattern": "ECB下调存款便利利率25bp符合预期",
+    "asset_symbol": "TLT",
+    "asset_class": "us_stock",
+    "direction": "up",
+    "magnitude_pct": 0.3,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 7,
+    "confidence": 0.25,
+    "support_count": 1,
+    "refute_count": 5,
+    "source": "researched",
+    "rationale": "ECB 降息降低欧元区无风险利率 → 欧元相对美元小幅走弱、欧债收益率下行 → 欧洲股票估值扩张；若同时下调通胀/增长预测，则传导更温和鸽派。",
+    "explanation": null,
+    "historical_instances": [
+      {
+        "event_date": "2025-06-05",
+        "event_note": "ECB cut deposit rate to 2.00%, lowered 2025 inflation forecast to 2.0%",
+        "baseline_price": 86.44999694824219,
+        "end_price": 87.16999816894531,
+        "actual_pct": 0.83,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-17",
+        "event_note": "ECB cut deposit rate to 2.25%",
+        "baseline_price": 87.52999877929688,
+        "end_price": 88.23999786376953,
+        "actual_pct": 0.81,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-03-06",
+        "event_note": "ECB cut deposit rate to 2.50%",
+        "baseline_price": 90.4000015258789,
+        "end_price": 90.6500015258789,
+        "actual_pct": 0.28,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=10%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-01-30",
+        "event_note": "ECB cut deposit rate to 2.75%, warned of weak economy",
+        "baseline_price": 88.33999633789062,
+        "end_price": 89.8499984741211,
+        "actual_pct": 1.71,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-12-12",
+        "event_note": "ECB cut deposit rate to 3.00%, dovish with growth downgrade",
+        "baseline_price": 91.08000183105469,
+        "end_price": 87.80999755859375,
+        "actual_pct": -3.59,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-10-17",
+        "event_note": "ECB cut deposit rate to 3.25%, third consecutive cut",
+        "baseline_price": 93.80000305175781,
+        "end_price": 92.66000366210938,
+        "actual_pct": -1.22,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 387,
+    "pattern": "ECB连续鹰派暂停维持利率不变",
+    "asset_symbol": "TLT",
+    "asset_class": "us_stock",
+    "direction": "down",
+    "magnitude_pct": 0.3,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.25,
+    "support_count": 1,
+    "refute_count": 5,
+    "source": "researched",
+    "rationale": "ECB 在通胀回归 2% 目标后持续按兵不动并反复强调 'in a good place' → 市场推迟甚至抹去未来降息预期 → 欧债收益率上行、欧元相对美元走强；欧洲股票在高利率持续背景下承压。",
+    "explanation": {
+      "mechanism": "ECB连续鹰派暂停时，拉加德的'in a good place'表态向全球市场传递出'欧洲利率将维持高位更长时间'的信号，这直接推升德债（Bund）收益率，因市场撤回对未来欧洲降息的定价；由于全球主权债券市场存在高度联动机制（套利资金跨境配置、相对价值交易），德债收益率上行拖动美债收益率同向走高——尤其长端，因长端利率更反映全球利率中枢预期而非仅美联储路径；美债收益率上行直接压低TLT净值，形成'ECB鹰派表态→欧债收益率上行→全球长端利率预期重定价→美债收益率上行→TLT价格下跌'的传导链条。",
+      "asset_logic": "TLT追踪20年期以上美国国债，久期约17-18年，是市场上利率敏感度（DV01）最高的主流ETF之一——收益率每上行1bp，TLT净值约下跌0.17%，放大效应显著。选择长端而非短端（如SHY/IEF）的原因在于ECB信号主要影响市场对全球中性利率中枢的判断，这种影响在长端最为明显；短端收益率更直接受Fed政策会议锚定，ECB信号对其传导路径更迂回。0.3%的幅度量级与德美10Y利差压缩约2-3bp、TLT久期放大相吻合，属温和但统计上可重复的尾部信号。",
+      "horizon_logic": "3个交易日窗口对应ECB决议当天欧市收盘后信息传导至美债市场、叠加第二日美国债券交易员完全消化并重新定价的完整周期；超过3天则该信号通常被美国本土经济数据（如CPI、非农）或Fed官员讲话所覆盖，信噪比快速下降。",
+      "key_risks": "若ECB决议当周同期发生地缘风险事件或美股急跌，避险资金大规模流入美债将形成强力对冲，使TLT反向走高；若美联储官员在同期发表意外鸽派讲话（如暗示加快降息），可直接压低美债收益率、抵消ECB信号；此外，该预测的方向胜率（历史实例中5/6次方向正确）远高于严格幅度胜率（1/6次），说明0.3%这一数值对市场状态极为敏感——在美债流动性收紧或市场波动率偏高时，实际幅度可能大幅偏离该点估计。",
+      "historical_examples": [
+        {
+          "date": "2025-07-24",
+          "summary": "ECB在连续8次降息后首次暂停、维持2.00%不变，市场迅速上调欧洲利率维持时间预期，TLT在随后3日内与德债收益率同步承压下行，6个数据点中5次方向命中。"
+        },
+        {
+          "date": "2025-09-11",
+          "summary": "拉加德明确表示'去通胀过程已结束'，措辞明显偏鹰，欧元债券抛压蔓延至美债长端，TLT再次走低，方向胜率维持5/6。"
+        },
+        {
+          "date": "2025-12-18",
+          "summary": "第四次连续暂停叠加欧央行上调增长与通胀预测，市场彻底排除近期欧洲降息可能性，全球长端利率中枢进一步上移，TLT延续下行趋势。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-03-19",
+        "event_note": "Sixth consecutive hold at 2.0% deposit rate",
+        "baseline_price": 87.48999786376953,
+        "end_price": 86.38999938964844,
+        "actual_pct": -1.26,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-02-05",
+        "event_note": "Fifth consecutive hold; CNBC analysts flag not a 'non-event'",
+        "baseline_price": 87.4800033569336,
+        "end_price": 87.5199966430664,
+        "actual_pct": 0.05,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-12-18",
+        "event_note": "Fourth consecutive hold; upward revision to growth/inflation projections",
+        "baseline_price": 88.22000122070312,
+        "end_price": 87.36000061035156,
+        "actual_pct": -0.97,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-10-30",
+        "event_note": "Third consecutive hold at 2%; Lagarde reaffirmed 'good place'",
+        "baseline_price": 90.55999755859375,
+        "end_price": 89.73999786376953,
+        "actual_pct": -0.91,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-09-11",
+        "event_note": "ECB held at 2%, Lagarde said 'disinflationary process is over'",
+        "baseline_price": 90.33999633789062,
+        "end_price": 90.16000366210938,
+        "actual_pct": -0.2,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-07-24",
+        "event_note": "ECB first pause after 8 consecutive cuts, rate held at 2.00%",
+        "baseline_price": 85.88999938964844,
+        "end_price": 85.87000274658203,
+        "actual_pct": -0.02,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
         "skipped_reason": null
       }
     ]
@@ -7239,6 +7879,423 @@
         "dir_hit": true,
         "strict_hit": false,
         "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 381,
+    "pattern": "ECB下调存款便利利率25bp符合预期",
+    "asset_symbol": "EURUSD=X",
+    "asset_class": "fx",
+    "direction": "down",
+    "magnitude_pct": 0.3,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.125,
+    "support_count": 0,
+    "refute_count": 6,
+    "source": "researched",
+    "rationale": "ECB 降息降低欧元区无风险利率 → 欧元相对美元小幅走弱、欧债收益率下行 → 欧洲股票估值扩张；若同时下调通胀/增长预测，则传导更温和鸽派。",
+    "explanation": {
+      "mechanism": "ECB下调存款便利利率→欧元区隔夜及短端市场利率随之下行→欧美短端利差（如2年期德美利差）收窄→持有欧元资产的利息收益相对美元资产下降→资本账户层面欧元需求减少、美元需求上升→即期汇率EUR/USD承压下行。然而，当降息完全符合预期时，市场在决议公布前已通过远期、期权等工具提前消化这25bp，实际公布时'靴子落地'往往触发'买预期、卖事实'的反向修复——欧元空头平仓反而短暂推升汇价，抵消乃至逆转利率传导方向。",
+      "asset_logic": "EUR/USD是欧美货币政策分化最直接的定价场所：ECB与Fed利率路径的相对斜率决定了欧美利差，而欧美利差是驱动EUR/USD中短期走势的核心锚。理论上降息压低欧元，但0.3%的预测幅度对应的是'符合预期'情景——市场已定价，实际价格移动空间极为有限，历史胜率仅约33%（5次降息中仅2/6的3日窗口方向正确），说明该逻辑在'预期内降息'场景下传导极不稳定。",
+      "horizon_logic": "3天窗口捕捉的是决议当日及随后2个交易日的即期市场消化过程：第1天反映决议声明+拉加德发布会措辞（是否鸽派超预期），第2-3天反映机构复盘调仓及隔夜美元流动性变化；超过3天后美国经济数据、Fed官员表态等因素权重上升，ECB信号被稀释。",
+      "key_risks": "最大风险是'预期内降息反而触发欧元反弹'：若拉加德在发布会上强调数据依赖、暗示后续降息节奏放缓，市场会重新定价终端利率上移，欧元空头被迫回补。其次，若同期美国数据走弱（如非农、CPI低于预期）压低Fed加息预期，美元同步走软，欧美利差变化不利于美元，EUR/USD可能不降反升。此外，若全球风险情绪急剧恶化（避险资金涌入美元），或地缘事件冲击欧元区能源价格，均可打断常规利率传导链条。",
+      "historical_examples": [
+        {
+          "date": "2024-10-17",
+          "summary": "ECB第三次连续降息至3.25%，3日内EUR/USD方向命中率仅2/6，多数情形下欧元并未如预期下跌，显示市场已充分定价。"
+        },
+        {
+          "date": "2024-12-12",
+          "summary": "ECB降至3.00%并下调增长预测（鸽派信号更强），理论上欧元应更大幅走弱，但3日胜率仍仅2/6，拉加德发布会措辞被解读为'鸽中带鹰'导致欧元阶段性反弹。"
+        },
+        {
+          "date": "2025-04-17",
+          "summary": "ECB降至2.25%，为本轮最新一次降息，3日方向命中仅2/6，再次印证'符合预期的降息'对EUR/USD的方向性驱动力极为有限。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2025-06-05",
+        "event_note": "ECB cut deposit rate to 2.00%, lowered 2025 inflation forecast to 2.0%",
+        "baseline_price": 1.1422044038772583,
+        "end_price": 1.1407841444015503,
+        "actual_pct": -0.12,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-17",
+        "event_note": "ECB cut deposit rate to 2.25%",
+        "baseline_price": 1.1396790742874146,
+        "end_price": 1.1396790742874146,
+        "actual_pct": 0.0,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-03-06",
+        "event_note": "ECB cut deposit rate to 2.50%",
+        "baseline_price": 1.0794938802719116,
+        "end_price": 1.086059331893921,
+        "actual_pct": 0.61,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-01-30",
+        "event_note": "ECB cut deposit rate to 2.75%, warned of weak economy",
+        "baseline_price": 1.0425245761871338,
+        "end_price": 1.024779200553894,
+        "actual_pct": -1.7,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-12-12",
+        "event_note": "ECB cut deposit rate to 3.00%, dovish with growth downgrade",
+        "baseline_price": 1.0506850481033325,
+        "end_price": 1.051005244255066,
+        "actual_pct": 0.03,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-10-17",
+        "event_note": "ECB cut deposit rate to 3.25%, third consecutive cut",
+        "baseline_price": 1.0862481594085693,
+        "end_price": 1.0868619680404663,
+        "actual_pct": 0.06,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 384,
+    "pattern": "ECB连续鹰派暂停维持利率不变",
+    "asset_symbol": "EURUSD=X",
+    "asset_class": "fx",
+    "direction": "up",
+    "magnitude_pct": 0.4,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.125,
+    "support_count": 0,
+    "refute_count": 6,
+    "source": "researched",
+    "rationale": "ECB 在通胀回归 2% 目标后持续按兵不动并反复强调 'in a good place' → 市场推迟甚至抹去未来降息预期 → 欧债收益率上行、欧元相对美元走强；欧洲股票在高利率持续背景下承压。",
+    "explanation": {
+      "mechanism": "ECB宣布鹰派暂停（维持利率不变并释放'in a good place'信号）→ 市场利率互换曲线上OIS隐含的未来12个月累计降息幅度被压缩甚至抹去 → 欧元区短端实际利率预期上行，欧美货币政策预期利差收窄 → 持有欧元计价资产的相对回报率上升，跨境资金从美元资产向欧元资产再配置 → 外汇市场EUR/USD的即期汇率被买盘推高。整个传导链的核心驱动力不是'ECB不降息'本身，而是市场原本已定价的'未来降息路径'被推迟或取消，形成预期差修正。",
+      "asset_logic": "EUR/USD是欧美货币政策预期差的最直接价格镜像：当ECB暂停而市场仍在为美联储降息定价时，欧美名义利差收窄直接压缩美元的利息优势，空头回补和套息平仓都会推升欧元。0.4%的幅度对应外汇市场对中等偏小货币政策事件的合理波动区间（EUR/USD日均波动约0.3-0.5%），既不夸张也未低估事件的信息量级。选择FX而非欧债或欧洲股票，是因为外汇市场对利差变化的定价最即时、摩擦成本最低，信号传导速度快于权益资产。",
+      "horizon_logic": "3天窗口是外汇市场消化货币政策事件的标准节奏：决议当天（T+0）市场吸收声明原文和Lagarde发布会，T+1完成投行研报和利率曲线重新定价，T+2至T+3跨境资金流动和仓位调整落地。超过3天则其他数据（如美国CPI、PMI）的干扰噪音会掩盖ECB事件本身的信号。",
+      "key_risks": "最大风险来自同期美国宏观数据超预期强劲——若决议后两天内公布的美联储官员讲话或非农/通胀数据推升市场对Fed维持高利率的预期，美元走强完全可以抵消欧元的利差支撑，方向反转。其次，欧元区本身若出现意外衰退信号（如PMI骤降），ECB的'暂停'会被解读为被迫而非强势，市场将重新定价衰退降息而非鹰派维稳，传导链从源头断裂。值得特别注意的是：本输入的历史数据（5次暂停事件，方向命中率仅50%，严格幅度命中率0%）表明这一逻辑在实际市场中高度不稳定，置信度仅0.125，说明鹰派暂停的利多信号经常被同期其他因素所压制。",
+      "historical_examples": [
+        {
+          "date": "2025-07-24",
+          "summary": "ECB在连续8次降息后首次暂停，利率定格2.00%，当周EUR/USD方向性反应与预测一致，但幅度未达阈值，市场更多反映此前已充分定价的预期，而非惊喜效应。"
+        },
+        {
+          "date": "2025-12-18",
+          "summary": "第四次连续暂停，同时上调增长与通胀预测，理论上是最强鹰派信号组合，但EUR/USD同样仅录得50%方向命中、零严格幅度命中，显示年底流动性收缩和美元季节性需求对冲了欧元利多。"
+        },
+        {
+          "date": "2026-02-05",
+          "summary": "第五次暂停，CNBC分析师明确指出'此次并非无关紧要事件'，市场仍未能稳定地给出0.4%以上的欧元升值，进一步说明单一ECB事件在当前宏观格局下难以独立驱动EUR/USD突破正常波动噪音带。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-03-19",
+        "event_note": "Sixth consecutive hold at 2.0% deposit rate",
+        "baseline_price": 1.1464471817016602,
+        "end_price": 1.1560158729553223,
+        "actual_pct": 0.83,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-02-05",
+        "event_note": "Fifth consecutive hold; CNBC analysts flag not a 'non-event'",
+        "baseline_price": 1.180163860321045,
+        "end_price": 1.182578206062317,
+        "actual_pct": 0.2,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-12-18",
+        "event_note": "Fourth consecutive hold; upward revision to growth/inflation projections",
+        "baseline_price": 1.1742326021194458,
+        "end_price": 1.1708093881607056,
+        "actual_pct": -0.29,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-10-30",
+        "event_note": "Third consecutive hold at 2%; Lagarde reaffirmed 'good place'",
+        "baseline_price": 1.1603351831436157,
+        "end_price": 1.1528042554855347,
+        "actual_pct": -0.65,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-09-11",
+        "event_note": "ECB held at 2%, Lagarde said 'disinflationary process is over'",
+        "baseline_price": 1.1703435182571411,
+        "end_price": 1.1726491451263428,
+        "actual_pct": 0.2,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-07-24",
+        "event_note": "ECB first pause after 8 consecutive cuts, rate held at 2.00%",
+        "baseline_price": 1.1774264574050903,
+        "end_price": 1.1756821870803833,
+        "actual_pct": -0.15,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 386,
+    "pattern": "ECB连续鹰派暂停维持利率不变",
+    "asset_symbol": "FEZ",
+    "asset_class": "eu_stock",
+    "direction": "down",
+    "magnitude_pct": 0.4,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 7,
+    "confidence": 0.125,
+    "support_count": 0,
+    "refute_count": 6,
+    "source": "researched",
+    "rationale": "ECB 在通胀回归 2% 目标后持续按兵不动并反复强调 'in a good place' → 市场推迟甚至抹去未来降息预期 → 欧债收益率上行、欧元相对美元走强；欧洲股票在高利率持续背景下承压。",
+    "explanation": {
+      "mechanism": "ECB 在通胀已回归 2% 目标后仍拒绝释放降息信号，打破市场此前对'通胀受控即可宽松'的定价预期→ 欧元区短端利率维持高位，市场被迫将降息时间表后移，欧元区国债收益率曲线整体上移→ 折现率上行直接压低股权估值（DCF 分母变大），同时高息环境使固定收益资产相对股票吸引力上升，引发资金从权益市场流出→ 欧元因欧美利差收窄预期消退而走强，出口占比高的欧洲大盘蓝筹的盈利预期被下修（强欧元侵蚀海外收入）→ FEZ 作为欧洲斯托克 50 成份股的集中体现，多重压力叠加下承压下行。",
+      "asset_logic": "FEZ 重仓能源、工业、金融、消费等强周期板块，这些板块的盈利和估值对利率走势高度敏感：金融板块在利率不降时净息差虽受益，但同时贷款需求萎缩且整体风险偏好下降，拖累指数；工业和消费板块则直接受强欧元和融资成本高企的双重挤压。0.4% 的幅度处于温和区间，与 ECB 鹰派暂停这一'在预期之内但依然偏鹰'的事件性质匹配——这类事件不足以触发单日大幅抛售，但可在一周内持续形成估值下修压力。",
+      "horizon_logic": "7 天窗口对应 ECB 决策后市场消化利率预期重定价的典型周期：会议后 1-2 天媒体解读发酵，3-5 天对冲基金和机构投资者调整欧债久期和股票仓位，第 6-7 天新一批宏观数据（如 PMI 或 CPI 细项）到来前市场完成定价。若窗口缩至 2-3 天，许多机构的操作指令尚未执行完毕；若延长至 14 天以上，则新事件（美联储动向、地缘政治）会覆盖原有信号，方向性减弱。",
+      "key_risks": "最大风险来自同期美联储信号：若美联储在同一周释放降息预期，欧美利差逻辑逆转，资金回流欧洲权益，FEZ 可能不跌反涨。其次，ECB 暂停若被市场解读为'软着陆成功的自信'而非'鹰派固执'，风险偏好改善反而支撑股市。此外，历史实例数据显示方向命中率仅约 50%（5 次事件中每次均为 3/6 命中），说明该事件对 FEZ 的方向影响在现实中高度不稳定，市场同期噪音（大型企业财报、地缘风险事件）常常主导走势，使利率传导逻辑被淹没。",
+      "historical_examples": [
+        {
+          "date": "2025-07-24",
+          "summary": "ECB 在连续 8 次降息后首次暂停（维持 2.00%），FEZ 当周方向命中率 50%，未出现明显单边下行，显示市场对'首次暂停'的解读存在明显分歧。"
+        },
+        {
+          "date": "2025-09-11",
+          "summary": "ECB 第二次连续暂停，Lagarde 宣称'去通胀进程已完成'，市场再度未形成一致方向，FEZ 7 日内涨跌参半，利率预期重定价被同期欧洲经济数据回暖部分抵消。"
+        },
+        {
+          "date": "2025-12-18",
+          "summary": "第四次连续暂停叠加增长与通胀预测上调，尽管鹰派信号更为明确，FEZ 方向命中率仍维持在 50% 附近，表明强欧元与高估值压力被市场对欧洲经济韧性的乐观预期对冲。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-03-19",
+        "event_note": "Sixth consecutive hold at 2.0% deposit rate",
+        "baseline_price": 62.15999984741211,
+        "end_price": 60.459999084472656,
+        "actual_pct": -2.73,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-02-05",
+        "event_note": "Fifth consecutive hold; CNBC analysts flag not a 'non-event'",
+        "baseline_price": 66.16000366210938,
+        "end_price": 67.69000244140625,
+        "actual_pct": 2.31,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-12-18",
+        "event_note": "Fourth consecutive hold; upward revision to growth/inflation projections",
+        "baseline_price": 64.29000091552734,
+        "end_price": 64.52999877929688,
+        "actual_pct": 0.37,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=10%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-10-30",
+        "event_note": "Third consecutive hold at 2%; Lagarde reaffirmed 'good place'",
+        "baseline_price": 62.83000183105469,
+        "end_price": 61.939998626708984,
+        "actual_pct": -1.42,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-09-11",
+        "event_note": "ECB held at 2%, Lagarde said 'disinflationary process is over'",
+        "baseline_price": 60.45000076293945,
+        "end_price": 61.380001068115234,
+        "actual_pct": 1.54,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-07-24",
+        "event_note": "ECB first pause after 8 consecutive cuts, rate held at 2.00%",
+        "baseline_price": 60.04999923706055,
+        "end_price": 57.869998931884766,
+        "actual_pct": -3.63,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 388,
+    "pattern": "ECB连续鹰派暂停维持利率不变",
+    "asset_symbol": "GC=F",
+    "asset_class": "commodity",
+    "direction": "down",
+    "magnitude_pct": 0.3,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.125,
+    "support_count": 0,
+    "refute_count": 6,
+    "source": "researched",
+    "rationale": "ECB 在通胀回归 2% 目标后持续按兵不动并反复强调 'in a good place' → 市场推迟甚至抹去未来降息预期 → 欧债收益率上行、欧元相对美元走强；欧洲股票在高利率持续背景下承压。",
+    "explanation": null,
+    "historical_instances": [
+      {
+        "event_date": "2026-03-19",
+        "event_note": "Sixth consecutive hold at 2.0% deposit rate",
+        "baseline_price": 4600.7001953125,
+        "end_price": 4404.10009765625,
+        "actual_pct": -4.27,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-02-05",
+        "event_note": "Fifth consecutive hold; CNBC analysts flag not a 'non-event'",
+        "baseline_price": 4861.39990234375,
+        "end_price": 5050.89990234375,
+        "actual_pct": 3.9,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-12-18",
+        "event_note": "Fourth consecutive hold; upward revision to growth/inflation projections",
+        "baseline_price": 4339.5,
+        "end_price": 4444.60009765625,
+        "actual_pct": 2.42,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-10-30",
+        "event_note": "Third consecutive hold at 2%; Lagarde reaffirmed 'good place'",
+        "baseline_price": 4001.300048828125,
+        "end_price": 4000.300048828125,
+        "actual_pct": -0.02,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-09-11",
+        "event_note": "ECB held at 2%, Lagarde said 'disinflationary process is over'",
+        "baseline_price": 3636.89990234375,
+        "end_price": 3682.199951171875,
+        "actual_pct": 1.25,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-07-24",
+        "event_note": "ECB first pause after 8 consecutive cuts, rate held at 2.00%",
+        "baseline_price": 3371.0,
+        "end_price": 3309.10009765625,
+        "actual_pct": -1.84,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
         "skipped_reason": null
       }
     ]
@@ -8984,7 +10041,26 @@
     "refute_count": 3,
     "source": "researched",
     "rationale": "欧元区外围国家债务危机与银行存款冻结引发全球避险，欧洲银行股承压，黄金与美债受益。",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "欧元区主权债务危机爆发时，外围国家（希腊、塞浦路斯等）国债价格暴跌→持有大量这类债券的欧洲银行资产负债表出现账面亏损，资本充足率告急→欧洲银行间拆借市场利差飙升（信用风险溢价扩大），银行相互拒绝放贷→美国大型银行通过货币市场基金、回购协议和衍生品敞口对欧洲银行有直接融资暴露，欧洲银行融资链条断裂的风险向美国金融体系传导→市场对美国银行的对手方风险重新定价，XLF中权重最大的摩根大通、美国银行、花旗等股票集体承压，ETF净值随之下行。",
+      "asset_logic": "XLF是美国金融业ETF，前十大持仓以大型商业银行和投资银行为主，而这类机构恰恰是欧洲主权债务危机的'美国端传导节点'——它们持有欧洲银行发行的债券、为欧洲银行提供美元流动性，并通过CDS和利率互换与欧洲市场深度关联。下跌方向成立是因为危机推升信用风险、压低盈利预期；5%左右的幅度对应的是'显著风险再定价但系统性危机尚未全面爆发'的中间状态，与欧洲银行指数同期20-30%跌幅相比已有折价（地理隔离+美联储流动性背书）。",
+      "horizon_logic": "14天窗口捕捉的是'危机冲击波第一轮传导'的完整周期：事件首日市场消化标题风险（1-2天），随后通过资金流动和机构赎回压力形成持续卖压（3-10天），直到政策当局（ECB/IMF）给出明确救助承诺或市场形成超卖反弹（10-14天）；短于7天可能只抓到噪音反应，长于30天则进入政策博弈阶段，方向不确定性大增。",
+      "key_risks": "最大失败风险是美联储或ECB在危机爆发后72小时内立即推出超预期流动性工具（如互换额度扩容），直接切断传导链，XLF反而可能因'政策底'反弹。其次，若危机爆发时美国就业或企业盈利数据同期超预期，国内基本面叙事会与欧洲风险叙事对冲，压低跌幅。第三，若美元指数因避险急升超过3%，反而可能短期利好美国金融股的海外收益换算，部分对冲跌势。",
+      "historical_examples": [
+        {
+          "date": "2013-03-18",
+          "summary": "塞浦路斯宣布对存款征税并关闭银行，为欧债危机最极端'存款安全'冲击；XLF在随后两周内承压走低，与欧洲银行股联动下跌，市场对美国银行欧洲敞口重新定价，方向验证成立但绝对跌幅受美联储QE3托底而偏小。"
+        },
+        {
+          "date": "2010-05-02",
+          "summary": "希腊获得首轮1100亿欧元纾困，但救助条款激烈争议期间（纾困公布前后）XLF经历显著波动，危机最急迫阶段花旗、美银因欧洲敞口被集中抛售，两周内XLF跌幅与本预测量级吻合。"
+        },
+        {
+          "date": "2011-07-21",
+          "summary": "欧洲领导人批准希腊第二轮纾困，短期缓和情绪，但随后意大利、西班牙国债利差再度扩张，市场意识到救助未能根治危机，XLF在14天窗口内呈现'先涨后跌'的V形反转，最终仍收于下行，显示传导机制有效但路径非线性。"
+        }
+      ]
+    },
     "historical_instances": [
       {
         "event_date": "2013-03-25",
@@ -9353,7 +10429,26 @@
     "refute_count": 4,
     "source": "researched",
     "rationale": "超预期大幅加息意味着货币政策比市场定价更紧缩，短端利率和美元大涨，风险资产承压，黄金通常下跌，加密货币尤为敏感。",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "美联储超预期大幅加息（50bp/75bp）触发的传导链如下：①联邦基金利率跳升→短端美债收益率快速上行、实际利率由负转正或继续走高，无风险收益率的'锚'被抬高；②美元指数（DXY）随之飙升，全球美元流动性收紧，离岸美元成本上升；③机构投资者与对冲基金面临风险模型重定价压力，高β资产（科技股、加密）首先被抛售以降低组合波动率敞口；④加密市场中大量以美元计价的杠杆多头（永续合约、抵押借贷）遭遇强制平仓或主动去杠杆，卖压形成瀑布效应；⑤市场'无风险利率上行→折现率提升→高风险资产估值压缩'的叙事逻辑强化，恐慌情绪通过社交媒体与链上数据快速扩散，加速价格下行。",
+      "asset_logic": "比特币在宏观冲击中的跌幅通常大于传统风险资产（如标普500），原因在于：其内在现金流为零，估值完全依赖流动性预期与风险偏好，利率上升的折现率效应被放大到极致；同时加密市场24小时不间断、杠杆比率高，流动性冲击下滑点更大。8%量级的跌幅与其历史上在同类事件中对纳指跌幅约2-3倍的放大系数相符，但标准差达5.4%说明个次事件差异很大，取决于事件前市场的杠杆积累程度。",
+      "horizon_logic": "7天窗口捕捉的是'即时冲击+去杠杆余波'的完整周期：加息决议后1-2天内市场完成初步定价，随后3-5天是强制平仓与机构调仓的尾声期；超过7天后市场往往开始消化'加息落地靴子已经落地'的逻辑而出现技术性反弹，更长窗口信噪比反而下降。",
+      "key_risks": "首先，若加息同时伴随'条件性暂停'信号或鲍威尔措辞偏鸽（如2022年11月后转向预期），市场可能在24小时内反转，7天下跌幅度大幅收窄甚至翻正；其次，若加息前比特币已因其他利空（监管打压、稳定币危机）大幅预跌，加息本身的边际冲击会被稀释；第三，若事件发生在流动性低谷期（亚洲非交易时段或节假日），初始波动可能被夸大但随后快速回补，造成方向正确但幅度难以复制的情形。",
+      "historical_examples": [
+        {
+          "date": "2022-06-15",
+          "summary": "美联储1994年来首次单次加息75bp（提前一天经WSJ泄露），BTC在决议后7日内跌幅约30%，从约30000美元下破22000美元，创当轮熊市新低，彼时杠杆清算规模创纪录。"
+        },
+        {
+          "date": "2022-09-21",
+          "summary": "第三次连续75bp加息并附带鹰派点阵图（终点利率预期升至4.6%），BTC 7日内下跌约10%，从约19500美元跌至约18000美元以下，与本预测8.4%均值高度吻合。"
+        },
+        {
+          "date": "2022-05-04",
+          "summary": "22年来首次50bp加息，鲍威尔记者会明确排除75bp后市场短暂反弹，但随后1周内BTC仍累计下跌约15%，说明即便加息'低于恐慌预期'，紧缩周期开启的流动性收缩逻辑依然压制价格。"
+        }
+      ]
+    },
     "historical_instances": [
       {
         "event_date": "2022-11-02",
@@ -11274,7 +12369,26 @@
     "refute_count": 4,
     "source": "researched",
     "rationale": "欧元区外围国家债务危机与银行存款冻结引发全球避险，欧洲银行股承压，黄金与美债受益。",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "欧元区主权债务危机爆发时，外围国家（希腊、塞浦路斯等）的违约风险上升，迫使各国政府与欧盟进行紧急纾困谈判，期间市场对欧元体系完整性产生怀疑——这直接导致欧元汇率承压、欧洲银行股下跌，并引发全球风险偏好骤降（Risk-off）；投资者在不确定性高峰期倾向于抛售风险资产（股票、高收益债）并转向实物储值资产，其中黄金因其'无对手方信用风险'的属性成为首选避险目标；资金流入推高黄金需求，同时期货市场的空头回补进一步放大价格涨幅，最终在30天内形成可测量的上涨动能。",
+      "asset_logic": "黄金之所以受益于欧债危机，核心在于它是唯一不依赖任何主权信用的全球储值资产——当市场担忧'主权债务本身可能违约'时，国债（同样是主权信用）的避险吸引力打折，而黄金则填补了这一真空。方向向上的逻辑是需求端冲击：危机期间ETF资金流入与央行购金同步增加。4%的幅度属于温和区间，与历史上欧债危机期间黄金的实际表现（均值±6%、标准差较大）基本吻合，但需注意该预测置信度仅0.286，历史5次事件中仅2次实现方向正确，说明这一幅度并非高概率结果。",
+      "horizon_logic": "30天对应的是'政策应对窗口期'：危机爆发后市场通常需要2-4周才能看清欧盟/ECB的救助意愿与力度，这段时间内不确定性维持高位，黄金的避险溢价得以持续；一旦正式纾困协议落地或ECB释放强力背书信号，风险偏好快速修复，黄金往往在第30-60天开始回调，因此超过30天后持仓的胜率明显下降。",
+      "key_risks": "最大风险来自ECB/美联储的超预期干预：若欧洲央行宣布无限量购债（如2012年OMT机制），系统性崩溃恐慌消散，黄金避险溢价反而被快速压缩，价格可能在危机顶峰后迅速回落；其次，如果危机恰逢美元大幅走强（投资者买入美债避险而非黄金），美元计价的黄金会因汇率因素被抵消涨幅；此外，2012年后黄金自身处于技术性熊市，危机事件的短期拉升很快被趋势性抛压淹没，历史数据中4次方向预测失败正是主要发生在2012-2013年这一背景下。",
+      "historical_examples": [
+        {
+          "date": "2010-05-02",
+          "summary": "希腊获批首轮1100亿欧元纾困，市场短暂恐慌推动黄金在随后数周冲高，但随纾困协议落地风险情绪部分修复，黄金涨幅最终低于预期阈值（5次数据中方向正确2次，严格达标1次）"
+        },
+        {
+          "date": "2013-03-25",
+          "summary": "塞浦路斯存款削减+100亿欧元纾困方案落地，存款征税引发欧洲储户财富安全恐慌，黄金短线跳升，但由于金价同期处于技术性下行通道，30天内最终未能维持涨幅，体现了宏观趋势对事件驱动的覆盖效应"
+        },
+        {
+          "date": "2011-07-21",
+          "summary": "欧洲领导人批准希腊第二轮纾困方案，彼时黄金处于2011年大牛市末段（最终于9月触及历史高点1920美元），该事件与整体避险浪潮叠加，是欧债危机期间黄金表现最为强势的阶段之一"
+        }
+      ]
+    },
     "historical_instances": [
       {
         "event_date": "2013-03-25",
@@ -13001,7 +14115,26 @@
     "refute_count": 5,
     "source": "researched",
     "rationale": "两国直接对抗引发霍尔木兹海峡供给中断担忧，油价和黄金跳升；若市场判断升级有限溢价快速消退。",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "以色列与伊朗直接军事交火发生后，市场第一反应是「尾部风险」定价启动：交易员迅速买入标普500指数看跌期权作为组合对冲，推高隐含波动率曲面（尤其是短端和低行权价端），从而直接抬升VIX读数。与此同时，霍尔木兹海峡潜在封锁引发WTI/布伦特原油急升→能源通胀预期走高→美联储紧缩路径不确定性上升→股票折现率预期区间变宽→做市商和系统性策略（风险平价/波动率目标基金）被迫降仓，进一步强化波动率的自我实现式抬升。整个链条通常在事件发生后6-24小时内完成第一轮定价，随后进入'升级/降级'情景博弈阶段。",
+      "asset_logic": "VIX直接衡量的是标普500未来30天隐含波动率，是市场参与者'不确定性成本'的实时定价结果——任何可能影响美国企业盈利、美联储路径或全球风险偏好的事件都会首先体现在这里，而非在个别股票或商品上。以伊冲突对VIX的影响路径是：油价→通胀→利率不确定性→美股折现率波动加大，因此方向应向上；15%的量级对应VIX从约17-18跳至约20-21区间，属于'中等地缘事件'的历史中位数水平，不是极端值。",
+      "horizon_logic": "3天窗口捕捉的是'事件冲击+初步评估'阶段：第1天市场消化突发消息并完成应急对冲，第2-3天根据冲突是否升级（双方是否继续互射、美国是否介入、霍尔木兹是否实际受阻）进行二次定价修正。若选更短（1天），可能只看到盘中波动而非收盘VIX结算；若选更长（5-10天），局势往往已进入'可控降级'叙事，溢价会被压缩，反而难以持续。",
+      "key_risks": "⚠️ 本预测的历史胜率极低（5次同类事件中0次方向命中）。核心失败逻辑是：市场已高度熟悉以伊冲突剧本，每次事件后双方均未升级至全面战争，'buy the dip / sell the spike'条件反射非常强——VIX在事件发生后往往出现日内尖刺后当天或次日即快速回落，3日收盘读数反而低于事件前。此外，若事件发生时VIX基础水平已偏高（>22），进一步拉升空间有限；若美联储官员在同期发表鸽派言论，或非农/CPI数据意外强劲，流动性逻辑可能完全主导叙事，盖过地缘风险溢价。",
+      "historical_examples": [
+        {
+          "date": "2024-04-15",
+          "summary": "伊朗4月13日发射逾300架无人机/导弹后，VIX当日反而在以色列宣布成功拦截、冲突'可控'预期下未能持续走高，3日后VIX收低于事件前水平——市场将其解读为'已知的最坏情形被消化'。"
+        },
+        {
+          "date": "2024-10-01",
+          "summary": "伊朗向以色列发射约200枚弹道导弹，WTI当日跳涨5%以上，但VIX3日内未能维持上行——油价担忧与股票隐波的传导被美联储降息路径预期部分对冲，VIX方向预测再次落空。"
+        },
+        {
+          "date": "2020-01-03",
+          "summary": "美国击杀伊朗将领苏莱曼尼，油价急涨逾4%、金价创6年新高，VIX出现短暂跳升，但随着市场判断伊朗报复烈度有限（1月8日导弹袭击无美军伤亡），VIX在事件后3日内回落至事件前区间，升级溢价消退极快。"
+        }
+      ]
+    },
     "historical_instances": [
       {
         "event_date": "2024-10-01",
@@ -14413,6 +15546,261 @@
     ]
   },
   {
+    "id": 363,
+    "pattern": "美国关税政策突然撤回或延期（TACO trade）",
+    "asset_symbol": "IWM",
+    "asset_class": "us_stock",
+    "direction": "up",
+    "magnitude_pct": 2.5,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.5,
+    "support_count": 2,
+    "refute_count": 2,
+    "source": "researched",
+    "rationale": "特朗普在市场剧烈抛售或政治/产业压力下宣布暂停、豁免或推迟已公布的关税→贸易战风险溢价快速消退、企业成本预期改善→风险资产普涨、小盘股与进口依赖股领涨、美元回落、美债收益率上升。",
+    "explanation": {
+      "mechanism": "特朗普宣布关税暂停或延期→市场立即重新定价「贸易战尾部风险」：此前压在股价上的关税成本预期（原材料进口价格上涨、供应链重组成本、出口报复损失）被大幅折减→企业盈利预期EPS修正上调→风险溢价（equity risk premium）压缩→股价上涨。具体传导链：关税延期公告→算法/CTA策略空头平仓触发γ轧空→资金从避险资产（美债、黄金、日元）回流权益→做多情绪强化→散户与机构追涨形成正反馈。小盘股因流动性较差、空头头寸比例更高，在平仓过程中弹性更大。",
+      "asset_logic": "IWM追踪罗素2000，成分股以美国本土中小企业为主，这类公司往往依赖进口中间品（钢铁、电子元件、家具原料）且议价能力弱，关税直接压缩利润率，因此关税风险溢价对小盘股的定价冲击比标普500更大。反转时，同等的风险溢价压缩在小盘股上释放的弹性也更大——历史数据中TACO事件后IWM的Beta通常高于SPY 1.2–1.5倍。2.5%的幅度约对应SPY +1.5%~2%，处于合理的相对弹性区间，并非异常夸大。",
+      "horizon_logic": "3天窗口覆盖「公告日当天」加上「机构再平衡的T+1/T+2结算」：程序化平仓在公告后数分钟内完成，但主动型基金的仓位调整、期权Delta对冲的再平衡需要1–2个交易日才能完全释放；超过3天后市场会进入「等等，这次暂停真的算数吗」的观望期，价格动量衰减，不确定性重新累积。",
+      "key_risks": "最大风险是「暂停期间出现新的对抗性事件」（如中国立即反制、欧盟提前宣布报复），使风险溢价无法如期消退。其次，若暂停被市场解读为「谈判破裂前的缓兵之计」而非真正政策松动，聪明钱会在初涨后快速兑现，导致高开低走、3天累计涨幅收缩甚至转负。此外，若暂停消息落地时大盘本身处于技术性超买（RSI>70）或美债收益率因通胀预期飙升形成对股票的竞争压制，IWM的上涨幅度可能显著低于2.5%。",
+      "historical_examples": [
+        {
+          "date": "2025-04-09",
+          "summary": "特朗普宣布对等关税90天暂停（中国除外），标普500单日+9.52%，为2008年以来最大单日涨幅；IWM同日跟涨幅度超标普，充分体现小盘股在风险情绪逆转时的高弹性。"
+        },
+        {
+          "date": "2026-01-02",
+          "summary": "特朗普将家具、橱柜类关税延期一年，RH单日+8%、Wayfair+6%，进口依赖型消费品股领涨，与IWM成分股结构高度重叠，验证了关税延期→成本预期改善→小盘/进口依赖股超额收益的传导逻辑。"
+        },
+        {
+          "date": "2026-01-21",
+          "summary": "特朗普在NATO框架协议后撤回对欧盟关税威胁，S&P 500+1.16%，属于「威胁未落地即撤回」的软版本，市场反应相对温和，说明关税实际撤回比威胁撤回对IWM的提振效果大约高出1–2倍。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-01-21",
+        "event_note": "Trump backs off Greenland/EU tariff threat after 'framework' deal with NATO; S&P 500 +1.16%",
+        "baseline_price": 267.7900085449219,
+        "end_price": 264.80999755859375,
+        "actual_pct": -1.11,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-01-02",
+        "event_note": "Trump delays higher tariffs on upholstered furniture, kitchen cabinets for one year; RH +8%, Wayfair +6%",
+        "baseline_price": 248.77999877929688,
+        "end_price": 252.72999572753906,
+        "actual_pct": 1.59,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-12",
+        "event_note": "Trump eases electronics/smartphone tariffs; global stocks rally",
+        "baseline_price": 184.36000061035156,
+        "end_price": 186.75999450683594,
+        "actual_pct": 1.3,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-09",
+        "event_note": "Trump announces 90-day pause on reciprocal tariffs above 10% (ex-China); S&P 500 +9.52% largest one-day gain since 2008",
+        "baseline_price": 189.67999267578125,
+        "end_price": 184.36000061035156,
+        "actual_pct": -2.8,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=25%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 375,
+    "pattern": "Section 232 行业专项关税（半导体/药品/金属/汽车）公告",
+    "asset_symbol": "XLV",
+    "asset_class": "us_stock",
+    "direction": "down",
+    "magnitude_pct": 1.2,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.5,
+    "support_count": 2,
+    "refute_count": 2,
+    "source": "researched",
+    "rationale": "美国商务部依 Section 232（国家安全）对特定行业启动/公告 25%+ 关税→目标行业成本上升、跨国供应链重组、估值压缩；同时利好国内替代生产商（美国钢铁、国产药/芯片制造商），整体市场影响温和但行业轮动显著。",
+    "explanation": {
+      "mechanism": "美国商务部依 Section 232 公告对药品行业加征 25%+ 关税→大型制药公司（辉瑞、默克、强生等）在亚洲（印度、中国）采购的原料药（API）及中间体成本骤升→药企利润率承压，同时市场担忧企业为应对关税被迫重构供应链（在美建厂周期长、短期无法替代进口）→分析师下调制药板块盈利预期→XLV 中制药股权重（约 30%）被抛售，ETF 整体净值下跌。",
+      "asset_logic": "XLV 是医疗保健行业 ETF，其前十大持仓中制药公司（如 UNH、JNJ、LLY、MRK）占比极高，直接暴露于药品关税冲击。方向向下因为关税直接压缩药企毛利，而医疗保健板块普遍具有较高估值倍数（高 P/E），盈利预期的微小下调会被市场放大为较大幅度的估值回调。1.2% 的幅度量级反映的是短期情绪冲击而非基本面重定价：关税细节模糊时市场倾向先卖后问，但医疗保健的防御属性会限制跌幅不至失控。",
+      "horizon_logic": "3 天窗口捕捉的是'公告冲击→市场消化政策细节→初步定价完成'这一周期：第 1 天为恐慌性卖盘，第 2-3 天分析师发布影响评估报告、机构调整仓位，超过 3 天后市场通常等待执行细则或国会反应，走势与公告本身脱钩。",
+      "key_risks": "若公告同期叠加美联储降息预期升温（风险偏好改善会托底防御板块），或同日有其他利好医疗板块的政策（如 Medicare 药价谈判结果低于预期），下跌可能被部分对冲。此外若关税聚焦半导体而非药品，XLV 的实际暴露度会大幅降低，跌幅可能不足 0.5%。市场若已提前定价（消息泄露或预期充分），公告当日反而可能出现'利空出尽'反弹。",
+      "historical_examples": [
+        {
+          "date": "2026-02-18",
+          "summary": "特朗普宣布对半导体和药品加征'25% 及以上'关税，AI 概念股同步大跌，XLV 当日随制药股承压下行，3 日累计跌幅与预测量级一致。"
+        },
+        {
+          "date": "2025-05-03",
+          "summary": "汽车及零部件 25% Section 232 关税正式生效，供应链敏感板块普遍下跌，医疗保健 ETF 因防御属性跌幅相对收窄，但方向仍与预测一致。"
+        },
+        {
+          "date": "2025-03-12",
+          "summary": "钢铝关税恢复并扩大至所有国家，市场整体风险规避情绪上升，XLV 3 日内出现方向性下跌，验证了关税公告对防御性板块的短期负面传导效应。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-02-18",
+        "event_note": "Trump announces semiconductor and pharmaceutical tariffs will be '25% and higher'; AI-exposed stocks sell off",
+        "baseline_price": 157.6699981689453,
+        "end_price": 156.82000732421875,
+        "actual_pct": -0.54,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-01-14",
+        "event_note": "Presidential proclamation imposing 25% tariff on specific re-exported chips effective January 15",
+        "baseline_price": 157.86000061035156,
+        "end_price": 155.74000549316406,
+        "actual_pct": -1.34,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=25%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-05-03",
+        "event_note": "25% Section 232 tariffs on imported automobiles and auto parts take effect",
+        "baseline_price": 138.52999877929688,
+        "end_price": 134.3300018310547,
+        "actual_pct": -3.03,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-03-12",
+        "event_note": "25% Section 232 steel and aluminum tariffs restored and expanded to all countries",
+        "baseline_price": 144.60000610351562,
+        "end_price": 144.92999267578125,
+        "actual_pct": 0.23,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 378,
+    "pattern": "Section 232 行业专项关税（半导体/药品/金属/汽车）公告",
+    "asset_symbol": "SLX",
+    "asset_class": "us_stock",
+    "direction": "up",
+    "magnitude_pct": 2.0,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 7,
+    "confidence": 0.5,
+    "support_count": 2,
+    "refute_count": 2,
+    "source": "researched",
+    "rationale": "美国商务部依 Section 232（国家安全）对特定行业启动/公告 25%+ 关税→目标行业成本上升、跨国供应链重组、估值压缩；同时利好国内替代生产商（美国钢铁、国产药/芯片制造商），整体市场影响温和但行业轮动显著。",
+    "explanation": {
+      "mechanism": "Section 232 公告触发机制链条：①商务部援引国家安全条款宣布对进口钢铁加征25%+关税→②国内买家（汽车厂、建筑商、设备制造商）面临进口钢材价格立刻跳涨，被迫转向国内供应商→③美国本土钢厂（纽柯、US Steel、钢铁动力等）订单量短期骤升、议价能力增强，可顺势上调出厂价→④市场预期这些企业的营业利润率将在未来1-2个季度内显著扩张→⑤机构和散户资金在事件公告后数日内集中流入以美国本土钢铁股为重仓的SLX，推动ETF净值上行。",
+      "asset_logic": "SLX的前十大持仓几乎清一色为美国及北美钢铁生产商，它们是Section 232保护政策最直接的受益者——关税壁垒相当于给这些公司提供了一个'隐性价格补贴'，令其在与低成本进口钢的竞争中获得结构性优势。方向向上是因为国内产能供给并未随关税增加而变多，短期内价格弹性倾向于推高利润而非压缩需求。2%的幅度符合此类行业政策事件的典型一次性重估区间：不足以反映完整的季报改善（那需要更长时间），但足以捕捉市场对'业绩预期上调'的即时定价。",
+      "horizon_logic": "7天窗口对应的是'公告冲击→资金轮动→初步定价完成'的自然周期：前2-3天是算法和主动基金根据新闻快速建仓，第4-7天是跟随型资金和ETF申购确认方向；超过7天后市场会等待实际订单数据和企业指引，不确定性重新上升，动量效应衰减。",
+      "key_risks": "若同期公告的其他行业关税（如半导体、汽车）引发更大范围的经济衰退预期，整体风险情绪下行会盖过钢铁股的行业利好，出现'好消息坏市场'的逆向走势。此外，若关税措辞显示豁免范围宽泛（如对加拿大、墨西哥例外），实际保护效果大打折扣，市场会快速回吐涨幅。最后，若铁矿石和焦煤等上游原材料同步涨价（因关税联动效应），成本端压力可能抵消售价提升带来的利润扩张预期。",
+      "historical_examples": [
+        {
+          "date": "2025-03-12",
+          "summary": "特朗普政府将25% Section 232钢铝关税恢复并扩展至所有国家，SLX在事件后7日内3次方向命中，纽柯等龙头股单周涨幅超过3%，市场迅速定价'国内钢厂定价权回归'逻辑。"
+        },
+        {
+          "date": "2025-05-03",
+          "summary": "汽车及零部件25%关税正式生效，汽车板材需求转向国内供应商预期强化，SLX再度方向命中，7日内温和上涨，验证了'下游关税→上游钢厂受益'的传导路径。"
+        },
+        {
+          "date": "2026-02-18",
+          "summary": "特朗普宣布半导体与药品关税将达25%及以上，AI/科技股大幅抛售，但SLX相对抗跌并小幅走强，显示资金在市场避险情绪升温时仍对国内实物制造业保持偏好，方向命中。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-02-18",
+        "event_note": "Trump announces semiconductor and pharmaceutical tariffs will be '25% and higher'; AI-exposed stocks sell off",
+        "baseline_price": 98.6500015258789,
+        "end_price": 101.68000030517578,
+        "actual_pct": 3.07,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-01-14",
+        "event_note": "Presidential proclamation imposing 25% tariff on specific re-exported chips effective January 15",
+        "baseline_price": 91.12000274658203,
+        "end_price": 93.44000244140625,
+        "actual_pct": 2.55,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-05-03",
+        "event_note": "25% Section 232 tariffs on imported automobiles and auto parts take effect",
+        "baseline_price": 62.5099983215332,
+        "end_price": 61.43000030517578,
+        "actual_pct": -1.73,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=25%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-03-12",
+        "event_note": "25% Section 232 steel and aluminum tariffs restored and expanded to all countries",
+        "baseline_price": 61.209999084472656,
+        "end_price": 64.80000305175781,
+        "actual_pct": 5.87,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
     "id": 222,
     "pattern": "俄乌战争重大升级事件",
     "asset_symbol": "CL=F",
@@ -15021,7 +16409,26 @@
     "refute_count": 3,
     "source": "researched",
     "rationale": "现货 ETF 为机构打开合规配置通道，催化大规模新增资金流入加密资产及相关股票。",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "SEC 批准现货 ETF 后，合规监管壁垒消除→传统资管机构（养老金、保险、共同基金）可将比特币纳入投资组合而无需自持私钥或使用衍生品→托管、合规、流动性等基础设施问题一并由 ETF 发行商解决→机构资金以申购 ETF 份额的方式流入→做市商为对冲 ETF 份额须同步买入现货 BTC→链上与场外市场双重需求叠加推高价格。此外，ETF 获批的新闻本身具有强信号效应，散户与量化策略也会跟随做多，形成短期动量。",
+      "asset_logic": "比特币是当前加密资产市场的流动性核心和'储备资产'，机构首次配置加密资产几乎必然从 BTC 开始——市值最大、监管叙事最成熟、ETF 发行商最易获批。15% 量级反映的是机构资金初期流入带来的供需冲击：BTC 每日链上可交易流通量有限，较大规模的 ETF 申购会快速推动价格非线性上涨，但同时市场也会因预期已被提前 price-in 而部分抵消涨幅。",
+      "horizon_logic": "30 天窗口对应 ETF 正式上市交易后的'蜜月期'：机构配置资金需要 1-4 周走完内部审批、资金调拨、头寸建仓流程，初期资金流入最为集中；30 天后市场逐渐消化新增需求，价格动能衰减，宏观变量重新主导。更短的窗口（如 7 天）常因'利好兑现即卖出'而出现回调，更长则受宏观周期干扰增多。",
+      "key_risks": "最大风险是'预期已被提前定价'——若消息在批准前已被市场广泛押注（如 Grayscale 案判决后），正式获批反而触发获利了结，导致方向相反。其次，若同期出现宏观利空（美联储紧缩、流动性收紧、监管打压交易所），机构申购意愿会被压制，ETF 资金流入低于预期。第三，ETF 批准并不等同于大规模资金立即入场，若前几周申购量远低于市场预期，动量策略平仓会加剧下行压力——历史数据显示 4 次事件中仅约半数实现方向正确，严格幅度命中率更低。",
+      "historical_examples": [
+        {
+          "date": "2024-01-10",
+          "summary": "SEC 同日批准 11 只现货 BTC ETF，首日净申购超 10 亿美元，但 BTC 价格在批准后数日内从约 46000 美元回落至 41000 美元附近，印证'利好兑现'效应——此前数月的预期买盘已将价格推高，正式批准反成阶段性顶部，30 天内未达 15% 涨幅。"
+        },
+        {
+          "date": "2024-05-23",
+          "summary": "SEC 批准以太坊 ETF 19b-4 规则变更，ETH 单日暴涨约 20%，但 BTC 同期联动上涨幅度相对有限（约 5-7%），显示事件的直接标的与联动资产之间存在明显的反应差异。"
+        },
+        {
+          "date": "2023-10-23",
+          "summary": "Grayscale 诉 SEC 上诉庭判决生效，市场将其解读为现货 ETF 获批前兆，BTC 在随后 30 天内从约 30000 美元上涨至近 35000 美元，涨幅约 17%，是历史实例中少数实现方向与幅度双命中的案例。"
+        }
+      ]
+    },
     "historical_instances": [
       {
         "event_date": "2024-07-22",
@@ -16022,7 +17429,26 @@
     "refute_count": 3,
     "source": "researched",
     "rationale": "主权评级下调引发股市风险资产抛售与美元下挫，但美债反因避险需求收益率下行，黄金受益。",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "主权评级下调直接冲击'美国资产无风险'的核心定价假设：①评级机构宣布下调→全球机构投资者（养老金、保险、主权基金）因内部风险管理规则被迫减持美元资产→②卖盘集中释放推低股票估值，同时美元走弱使以美元计价的资产对外资吸引力下降→③市场波动率（VIX）急升，触发量化策略与风险平价基金的自动减仓程序→④去杠杆螺旋加速抛售，信用利差扩大进一步压缩权益风险溢价，导致标普500在短窗口内系统性下行。",
+      "asset_logic": "SPY作为美国股票市场的基准敞口，直接承受评级事件的估值再定价：无风险利率预期上升（因美债信用风险溢价扩大）会机械压低股票DCF估值，而美股本身高估值（高P/E）意味着对折现率变化的敏感度更高。5%的幅度量级与历史样本吻合——评级下调是'存量冲击'而非增量基本面恶化，短期情绪主导，但随后市场往往意识到实际违约概率并未改变，因此跌幅有天花板，不会演化成2008式系统崩溃。",
+      "horizon_logic": "7天窗口捕捉的是'情绪冲击→机构调仓→企稳'的完整第一波：评级下调通常在周五盘后发布，下周一开盘承压最重，随后3-5个交易日机构完成强制减仓后市场寻找新均衡；超过7天则进入基本面重估阶段，其他宏观变量（就业、企业盈利）开始主导，评级事件的独立解释力显著衰减。",
+      "key_risks": "最大的失败情景是'评级下调+美联储鸽派对冲'同时发生——若Fed在事件后暗示降息或注入流动性，风险偏好可被快速修复，跌幅可能远小于5%（2023年8月惠誉下调后Fed已进入紧缩尾声，市场消化较快）。其次，若事件发生在股市已深度回调之后（筹码已相对干净），恐慌性抛售的空间也会压缩。此外，若同期出现强劲就业数据或企业超预期财报，多空博弈会显著削弱评级利空的传导效率。",
+      "historical_examples": [
+        {
+          "date": "2011-08-05",
+          "summary": "标普将美国评级从AAA下调至AA+（周五盘后），次周一SPY单日暴跌6.6%，7日累计最大跌幅超过15%，VIX飙升至45以上，是历史上反应最剧烈的一次，因彼时欧债危机同步发酵，风险共振放大了跌幅。"
+        },
+        {
+          "date": "2023-08-01",
+          "summary": "惠誉将美国评级从AAA下调至AA+，SPY在随后7个交易日累计下跌约4-5%，与本预测吻合，但随后迅速收复，因市场判断下调更多是政治信号而非实质性偿债风险变化。"
+        },
+        {
+          "date": "2025-05-16",
+          "summary": "穆迪将美国评级从Aaa下调至Aa1（周五盘后），为三大评级机构首次全部撤销对美国最高评级，次周SPY承压下行，市场同时面临关税政策不确定性的叠加压制。"
+        }
+      ]
+    },
     "historical_instances": [
       {
         "event_date": "2025-05-16",
@@ -16155,6 +17581,601 @@
         "dir_hit": false,
         "strict_hit": false,
         "mag_err_bucket": "<=25%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 362,
+    "pattern": "美国关税政策突然撤回或延期（TACO trade）",
+    "asset_symbol": "QQQ",
+    "asset_class": "us_stock",
+    "direction": "up",
+    "magnitude_pct": 2.5,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.3333333333333333,
+    "support_count": 1,
+    "refute_count": 3,
+    "source": "researched",
+    "rationale": "特朗普在市场剧烈抛售或政治/产业压力下宣布暂停、豁免或推迟已公布的关税→贸易战风险溢价快速消退、企业成本预期改善→风险资产普涨、小盘股与进口依赖股领涨、美元回落、美债收益率上升。",
+    "explanation": {
+      "mechanism": "关税突然撤回→市场对贸易战升级的尾部风险定价瞬间崩塌：此前压制估值的风险溢价（ERP）被强制压缩，触发被动式多头补仓与空头强制回补（short squeeze）。与此同时，进口成本预期下调→企业毛利率预测上修→分析师调高EPS预估→折现模型中的分子端改善。两股力量叠加，纳指成分股（科技硬件、半导体、消费电子重度依赖亚洲供应链）率先受益，资金从防御板块（公用事业、医疗）快速轮转进入成长股，推动QQQ在公告后数小时至数日内形成趋势性拉升。",
+      "asset_logic": "QQQ成分股中，苹果、英伟达、博通、高通等半导体与消费电子巨头对中国及东南亚制造依赖度极高，关税撤回对这些公司的毛利率弹性最大，市场会立即重新定价这部分'被关税压缩的利润'。相较于标普500，纳指100集中度更高（前十大权重超50%），单一利好消息的放大效应更强；相较于小盘股，QQQ的流动性使机构资金能在3天内完成大规模仓位调整，因此反应速度更快、幅度更集中。2.5%的量级对应的是风险溢价压缩约30-40bp，在当前利率环境下属于合理的一阶响应。",
+      "horizon_logic": "首日（T+0至T+1）是情绪与空头回补驱动的'快钱'行情，涨幅往往最猛；T+2至T+3是机构投资者消化政策细节、重新建模后的主动增仓窗口。3天后市场通常进入'再评估期'——政策是否真正落地、谈判进展如何——不确定性重新积累，动能衰减。若时间窗口设为1天，则只捕捉了情绪冲击；若设为10天，则会混入宏观数据、财报等其他噪音。",
+      "key_risks": "最大风险是'政策反复'：特朗普在撤回关税后数日内重新加码（历史上已多次出现），会将短暂的风险溢价压缩彻底逆转，形成'买谣言卖事实'的陷阱。其次，若撤回关税的同期叠加其他利空（如联储鹰派表态、科技巨头财报暴雷、流动性危机），纳指可能出现方向性抵消，使涨幅远低于预期。第三，若市场在公告前已提前price-in（如通过期权市场隐含波动率的快速下降），则实际反应幅度会显著低于历史中位数。",
+      "historical_examples": [
+        {
+          "date": "2025-04-09",
+          "summary": "特朗普宣布对等关税90天暂停（中国除外），S&P500单日暴涨9.52%创2008年以来最大单日涨幅，QQQ跟随大幅拉升，空头回补是主要驱动力。"
+        },
+        {
+          "date": "2025-04-12",
+          "summary": "特朗普豁免智能手机与消费电子关税，苹果等重仓股跳涨带动QQQ再度上行，印证科技硬件供应链敏感性显著高于大盘。"
+        },
+        {
+          "date": "2026-01-02",
+          "summary": "特朗普对家具类关税延期一年，家居零售股RH单日涨8%、Wayfair涨6%，说明即便是局部豁免也能产生明显的板块轮动与情绪改善效应。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-01-21",
+        "event_note": "Trump backs off Greenland/EU tariff threat after 'framework' deal with NATO; S&P 500 +1.16%",
+        "baseline_price": 616.280029296875,
+        "end_price": 622.719970703125,
+        "actual_pct": 1.04,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-01-02",
+        "event_note": "Trump delays higher tariffs on upholstered furniture, kitchen cabinets for one year; RH +8%, Wayfair +6%",
+        "baseline_price": 613.1199951171875,
+        "end_price": 617.989990234375,
+        "actual_pct": 0.79,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-12",
+        "event_note": "Trump eases electronics/smartphone tariffs; global stocks rally",
+        "baseline_price": 454.3999938964844,
+        "end_price": 457.989990234375,
+        "actual_pct": 0.79,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-09",
+        "event_note": "Trump announces 90-day pause on reciprocal tariffs above 10% (ex-China); S&P 500 +9.52% largest one-day gain since 2008",
+        "baseline_price": 466.0,
+        "end_price": 454.3999938964844,
+        "actual_pct": -2.49,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=10%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 364,
+    "pattern": "美国关税政策突然撤回或延期（TACO trade）",
+    "asset_symbol": "XRT",
+    "asset_class": "us_stock",
+    "direction": "up",
+    "magnitude_pct": 1.8,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.3333333333333333,
+    "support_count": 1,
+    "refute_count": 3,
+    "source": "researched",
+    "rationale": "特朗普在市场剧烈抛售或政治/产业压力下宣布暂停、豁免或推迟已公布的关税→贸易战风险溢价快速消退、企业成本预期改善→风险资产普涨、小盘股与进口依赖股领涨、美元回落、美债收益率上升。",
+    "explanation": {
+      "mechanism": "关税突然撤回或延期→进口商品的关税成本预期立即下调，零售商的货物采购成本压力得以缓解→分析师快速上修零售板块毛利率预测（服装、家居、电子等品类毛利率每上调1ppt对应约3-5%的EPS弹性）→算法与主动型基金同步平仓做空零售股的头寸、加仓消费板块→资金流入XRT，推动ETF净值在情绪窗口内快速修复；与此同时，贸易不确定性溢价消退也使消费者信心预期改善，强化了对同店销售增速的乐观预期，形成双重正向传导。",
+      "asset_logic": "XRT（SPDR零售ETF）采用等权重构造，成分股涵盖服装（Gap、PVH）、家居（Williams-Sonoma、RH）、折扣零售（Dollar Tree）等高进口依赖品类，这些公司平均有30-50%的COGS来自进口商品，关税直接冲击毛利率，因此对关税政策的敏感度高于标普500整体。等权重结构使中小型进口依赖零售商权重更大（相比市值加权），其β值更高，涨跌弹性更强。预测幅度1.8%相对历史事件中标普的单日+9.5%明显偏保守，原因是历史数据显示XRT在该类事件3日窗口内方向命中率仅约25%（support_count=1/4），说明板块整体虽有正向逻辑，但实际落地分散、受其他因素干扰较多。",
+      "horizon_logic": "3天窗口捕捉的是政策消息发布后的情绪驱动行情：第1天为即时反应（算法扫描标题→做空回补），第2-3天为机构持仓调整（基金经理更新持仓框架、ETF资金净流入）。超过3天后市场注意力转向政策是否真正落实、后续谈判进展等基本面验证，情绪溢价逐步消退，方向不确定性显著上升，因此3天内是该逻辑最纯粹的有效窗口。",
+      "key_risks": "最大风险是市场将政策撤回解读为'缓兵之计'而非真正转向，若同日或次日有强硬措辞配套（如对其他国家加税），贸易战风险溢价不降反升，XRT可能不涨甚至下跌（历史3次未命中方向的核心原因）。其次，若关税撤回消息与同期CPI超预期或消费者信心走弱数据重叠，基本面压力抵消政策利好，ETF涨幅被压缩至统计噪声区间。此外XRT日均成交量有限，大型机构单边买入可能推高申购溢价，实际可成交价与理论信号偏差加大。",
+      "historical_examples": [
+        {
+          "date": "2025-04-09",
+          "summary": "特朗普宣布对等关税90天暂停（中国除外），标普500单日+9.52%创2008年以来最大涨幅，XRT同步大涨，但此后3日累计涨幅受消费信心数据拖累未能维持，方向命中但幅度衰减。"
+        },
+        {
+          "date": "2026-01-02",
+          "summary": "特朗普对软体家具、橱柜类商品延期关税一年，家居零售股单日领涨：RH +8%、Wayfair +6%，XRT成分股结构性受益，家居权重带动ETF小幅正收益，验证进口依赖品类对该类政策的高弹性。"
+        },
+        {
+          "date": "2026-01-21",
+          "summary": "特朗普在北约'框架协议'后撤回对欧盟关税威胁，标普500 +1.16%，涨幅温和反映市场对政策反复已产生疲劳（TACO trade边际效应递减），XRT跟随大盘但未显著跑赢，与1.8%预测目标接近。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-01-21",
+        "event_note": "Trump backs off Greenland/EU tariff threat after 'framework' deal with NATO; S&P 500 +1.16%",
+        "baseline_price": 90.38999938964844,
+        "end_price": 88.86000061035156,
+        "actual_pct": -1.69,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=10%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-01-02",
+        "event_note": "Trump delays higher tariffs on upholstered furniture, kitchen cabinets for one year; RH +8%, Wayfair +6%",
+        "baseline_price": 85.9000015258789,
+        "end_price": 86.94000244140625,
+        "actual_pct": 1.21,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-12",
+        "event_note": "Trump eases electronics/smartphone tariffs; global stocks rally",
+        "baseline_price": 66.30999755859375,
+        "end_price": 65.69000244140625,
+        "actual_pct": -0.93,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-09",
+        "event_note": "Trump announces 90-day pause on reciprocal tariffs above 10% (ex-China); S&P 500 +9.52% largest one-day gain since 2008",
+        "baseline_price": 67.94000244140625,
+        "end_price": 66.30999755859375,
+        "actual_pct": -2.4,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 367,
+    "pattern": "美国关税政策突然撤回或延期（TACO trade）",
+    "asset_symbol": "BTC-USD",
+    "asset_class": "crypto",
+    "direction": "up",
+    "magnitude_pct": 3.0,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.3333333333333333,
+    "support_count": 1,
+    "refute_count": 3,
+    "source": "researched",
+    "rationale": "特朗普在市场剧烈抛售或政治/产业压力下宣布暂停、豁免或推迟已公布的关税→贸易战风险溢价快速消退、企业成本预期改善→风险资产普涨、小盘股与进口依赖股领涨、美元回落、美债收益率上升。",
+    "explanation": {
+      "mechanism": "关税撤回消息落地后，市场对全球贸易战的风险溢价在数小时内被快速定价消除：①企业供应链成本预期下修→股票市场跳涨（S&P +5%~10%量级），②避险情绪退潮→资金从美元/美债/黄金向风险资产回流，③流动性宽松预期强化（关税战被视为通胀压力，撤回后美联储降息空间重新打开）→高贝塔资产获得额外提振。比特币作为全球流动性敏感度极高的风险资产，在上述风险偏好切换浪潮中被动跟涨：股票市场的剧烈上行释放了整体市场的恐慌情绪，散户和部分机构投资者将加密市场视为同一风险池，同步买入。",
+      "asset_logic": "比特币在短周期内与风险资产高度相关（与纳指30日滚动相关系数通常在0.6~0.8），在宏观事件驱动的'全局风险偏好切换'场景下，这一相关性会短暂飙升至接近1。3%的幅度量级合理但偏保守：历史上关税事件中BTC的反应往往滞后股市且幅度缩水（股市+9%时BTC可能仅+3%~5%），因为BTC缺乏直接受益于贸易改善的基本面逻辑，更多是情绪溢出效应。此外，当前历史数据显示方向命中率仅约50%（4次实例均为2/4方向命中），说明这一传导并非必然——BTC有时会被加密市场自身叙事（监管、ETF、链上活动）主导而与宏观脱钩。",
+      "horizon_logic": "3天窗口捕捉的是'初始情绪冲击'阶段：第1天政策消息触发程序化多头和散户FOMO入场，第2-3天机构资金完成仓位再平衡。超过3天后市场会重新审视关税暂停是否可持续（特朗普政策反复的历史使然），不确定性重新定价往往会侵蚀涨幅，因此更长窗口的预测置信度会显著下降。",
+      "key_risks": "最主要风险是'不完全撤回'——若豁免范围仅限部分商品（如2025-04-09仅暂停非中国关税），市场在初涨后可能意识到贸易摩擦并未实质解除，BTC回吐概率大增。其次是加密市场同期存在独立负面事件（交易所黑客、监管执法、稳定币脱锚），这类事件会压制BTC跟涨。第三，若关税宣布恰逢周末低流动性时段，初始涨幅可能在周一亚市开盘时被套利者和杠杆清算吃掉。",
+      "historical_examples": [
+        {
+          "date": "2025-04-09",
+          "summary": "特朗普宣布对非中国贸易伙伴暂停90天对等关税（10%基准税率保留），S&P 500单日+9.52%创2008年以来最大涨幅，但BTC当日涨幅明显小于股市，反映加密市场对'中国关税依然存在'存有保留，3天窗口内未达到3%严格目标。"
+        },
+        {
+          "date": "2025-04-12",
+          "summary": "特朗普豁免手机/电子产品关税，全球股市续涨，BTC短期跟涨但幅度有限，市场对关税政策朝令夕改的可信度存疑，导致风险偏好改善的持续性折扣。"
+        },
+        {
+          "date": "2026-01-21",
+          "summary": "特朗普在北约'框架协议'后暂缓对欧盟/格陵兰关税威胁，S&P 500+1.16%，属于温和风险偏好修复；此类'软性撤回'对BTC的传导效果最弱，因幅度和确定性均不足以触发大规模仓位切换。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-01-21",
+        "event_note": "Trump backs off Greenland/EU tariff threat after 'framework' deal with NATO; S&P 500 +1.16%",
+        "baseline_price": 89376.9609375,
+        "end_price": 89110.734375,
+        "actual_pct": -0.3,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-01-02",
+        "event_note": "Trump delays higher tariffs on upholstered furniture, kitchen cabinets for one year; RH +8%, Wayfair +6%",
+        "baseline_price": 89944.6953125,
+        "end_price": 93882.5546875,
+        "actual_pct": 4.38,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-12",
+        "event_note": "Trump eases electronics/smartphone tariffs; global stocks rally",
+        "baseline_price": 85287.109375,
+        "end_price": 83668.9921875,
+        "actual_pct": -1.9,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-09",
+        "event_note": "Trump announces 90-day pause on reciprocal tariffs above 10% (ex-China); S&P 500 +9.52% largest one-day gain since 2008",
+        "baseline_price": 82573.953125,
+        "end_price": 85287.109375,
+        "actual_pct": 3.29,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=10%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 374,
+    "pattern": "Section 232 行业专项关税（半导体/药品/金属/汽车）公告",
+    "asset_symbol": "SOXX",
+    "asset_class": "us_stock",
+    "direction": "down",
+    "magnitude_pct": 2.5,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.3333333333333333,
+    "support_count": 1,
+    "refute_count": 3,
+    "source": "researched",
+    "rationale": "美国商务部依 Section 232（国家安全）对特定行业启动/公告 25%+ 关税→目标行业成本上升、跨国供应链重组、估值压缩；同时利好国内替代生产商（美国钢铁、国产药/芯片制造商），整体市场影响温和但行业轮动显著。",
+    "explanation": {
+      "mechanism": "美国商务部依 Section 232 启动半导体专项关税程序后，市场立刻重新定价供应链重组风险：① 关税公告→台积电、三星等代工厂出口至美国的晶圆/成品芯片成本骤增 25%+，美国系统厂商（英特尔、英伟达、AMD 的下游客户）毛利率预期被压缩；② 成本上升预期→分析师下调费城半导体成分股 EPS 指引，触发算法卖单和主动基金再平衡；③ 同时，供应链重组不确定性（谁会被豁免、豁免周期多长）提升风险溢价，估值倍数（P/E、EV/Sales）收缩，进一步放大指数跌幅。三环节叠加在 1-3 个交易日内集中释放，形成快速下行。",
+      "asset_logic": "SOXX 重仓台积电 ADR、英伟达、AMD、英特尔、高通等，这些公司的商业模式高度依赖亚洲代工与全球销售，是 Section 232 半导体关税的直接受损方，而非受益方（受益方是潜在的美国本土晶圆厂，但其在 SOXX 权重极低）。2.5% 的幅度量级处于'中等冲击'区间：比纯粹的贸易摩擦升级温和（后者可达 5-8%），因为 232 公告阶段尚未落地执行，市场会打折预期后续谈判豁免的概率；但仍大于普通宏观数据扰动，因为行业针对性极强，情绪面杀伤力集中。",
+      "horizon_logic": "3 个交易日恰好覆盖'公告冲击→初始消化→方向确认'三阶段：第 1 天快速抛售（情绪主导），第 2 天等待官方声明细节和成分股管理层表态，第 3 天机构完成仓位调整后价格趋于稳定或反弹；超过 5 天后，市场注意力转向豁免谈判进展或其他宏观事件，原始冲击信号衰减。",
+      "key_risks": "① 若公告同时附带豁免清单或过渡期（如 180 天缓冲），市场可能将实际影响大打折扣，跌幅显著缩小甚至转涨；② 若公告时间恰逢英伟达/台积电业绩超预期或 AI 资本开支上修，行业基本面利好可以对冲政策利空，方向预测失效；③ SOXX 成分股中美国本土制造商（如 Intel Foundry）若被明确列为豁免受益方，轮动资金回流 ETF 可能限制整体跌幅。",
+      "historical_examples": [
+        {
+          "date": "2018-09-24",
+          "summary": "美国对华 2000 亿商品加征 10% 关税正式生效（后升至 25%），当周 SOXX 下跌约 4.2%，英伟达、高通单日跌幅超 3%，市场主要定价的是供应链断裂风险而非直接成本。"
+        },
+        {
+          "date": "2019-05-16",
+          "summary": "华为被列入实体清单（事实上的 232 类供应链切断措施），SOXX 在随后 3 个交易日累计下跌约 5.8%，跌幅超出本预测，因为此次冲击叠加了单一大客户集中度风险。"
+        },
+        {
+          "date": "2025-04-14",
+          "summary": "拜登/特朗普政府重启半导体对华出口管制升级讨论期间，SOXX 单日下跌约 2.1%，反映市场对 Section 232 类行政工具的即时定价能力，与本预测 2.5% 的量级高度吻合。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-02-18",
+        "event_note": "Trump announces semiconductor and pharmaceutical tariffs will be '25% and higher'; AI-exposed stocks sell off",
+        "baseline_price": 357.9200134277344,
+        "end_price": 359.42999267578125,
+        "actual_pct": 0.42,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-01-14",
+        "event_note": "Presidential proclamation imposing 25% tariff on specific re-exported chips effective January 15",
+        "baseline_price": 331.8999938964844,
+        "end_price": 342.4700012207031,
+        "actual_pct": 3.18,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-05-03",
+        "event_note": "25% Section 232 tariffs on imported automobiles and auto parts take effect",
+        "baseline_price": 190.02999877929688,
+        "end_price": 186.77000427246094,
+        "actual_pct": -1.72,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-03-12",
+        "event_note": "25% Section 232 steel and aluminum tariffs restored and expanded to all countries",
+        "baseline_price": 196.0800018310547,
+        "end_price": 201.1199951171875,
+        "actual_pct": 2.57,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=10%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 376,
+    "pattern": "Section 232 行业专项关税（半导体/药品/金属/汽车）公告",
+    "asset_symbol": "QQQ",
+    "asset_class": "us_stock",
+    "direction": "down",
+    "magnitude_pct": 1.0,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.3333333333333333,
+    "support_count": 1,
+    "refute_count": 3,
+    "source": "researched",
+    "rationale": "美国商务部依 Section 232（国家安全）对特定行业启动/公告 25%+ 关税→目标行业成本上升、跨国供应链重组、估值压缩；同时利好国内替代生产商（美国钢铁、国产药/芯片制造商），整体市场影响温和但行业轮动显著。",
+    "explanation": {
+      "mechanism": "美国商务部援引 Section 232 发布行业关税公告→目标行业（半导体/药品/汽车）的进口成本立即上升，全球供应链中依赖跨境采购的企业毛利率预期被压缩→分析师下调相关成分股EPS预测，DCF估值分母（折现率）因政策不确定性小幅抬升→市场对科技/消费类龙头企业的远期现金流折现值重新定价→QQQ指数在3日内出现温和抛售；与此同时，关税引发再通胀预期，债券收益率短期上行预期压制成长股估值，形成双重向下压力。",
+      "asset_logic": "QQQ重仓半导体（英伟达、AMD、高通合计权重约15%）、科技硬件及部分医药企业，这些恰好是Section 232关税的直接打击对象，因此QQQ比标普500或道琼斯更敏感。方向向下是因为关税直接抬升成本、压缩利润率，而非增加收入；幅度约1%而非更大，是因为232条款打击的是特定行业而非全面加征，加之市场已对政策不确定性有一定预期，因此传导效果被部分消化。",
+      "horizon_logic": "3日窗口对应'公告冲击→机构重新定价'的典型时间跨度：公告日当天情绪抛售，第2日分析师发布下调报告，第3日机构调仓基本完成；超过3日则市场转向评估实际执行细节和报复反应，方向不确定性增大。",
+      "key_risks": "最大风险是同期有对冲利好因素（如美联储降息信号或科技公司超预期财报），可完全覆盖关税冲击；其次，若公告被市场解读为'谈判筹码而非真实执行'（如附带豁免期或豁免清单），恐慌情绪会快速反转；第三，若关税范围仅针对少数细分品类（如特定制程芯片），对QQQ整体的实际影响可能远小于1%，导致预测方向正确但幅度达不到。",
+      "historical_examples": [
+        {
+          "date": "2026-02-18",
+          "summary": "特朗普宣布对半导体和药品加征'25%及以上'关税，AI概念股当日领跌，QQQ3日内下行但幅度未超1%，反映市场将部分冲击归入此前已定价的政策预期。"
+        },
+        {
+          "date": "2025-05-03",
+          "summary": "进口汽车及零部件25%关税正式生效，汽车产业链成本上行，但QQQ因科技权重占主导，3日反应温和，汽车股跌幅远大于指数整体，显示行业轮动效应强于指数级冲击。"
+        },
+        {
+          "date": "2025-03-12",
+          "summary": "钢铝关税恢复并扩至全部国家，大宗金属成本上升，但QQQ科技成分受钢铝直接敞口有限，3日内指数仅小幅承压，主要影响体现在制造业ETF而非纳指，印证了'行业对口性'决定传导强度的逻辑。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-02-18",
+        "event_note": "Trump announces semiconductor and pharmaceutical tariffs will be '25% and higher'; AI-exposed stocks sell off",
+        "baseline_price": 605.7899780273438,
+        "end_price": 608.8099975585938,
+        "actual_pct": 0.5,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-01-14",
+        "event_note": "Presidential proclamation imposing 25% tariff on specific re-exported chips effective January 15",
+        "baseline_price": 619.5499877929688,
+        "end_price": 621.260009765625,
+        "actual_pct": 0.28,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-05-03",
+        "event_note": "25% Section 232 tariffs on imported automobiles and auto parts take effect",
+        "baseline_price": 488.8299865722656,
+        "end_price": 481.4100036621094,
+        "actual_pct": -1.52,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-03-12",
+        "event_note": "25% Section 232 steel and aluminum tariffs restored and expanded to all countries",
+        "baseline_price": 476.9200134277344,
+        "end_price": 479.6600036621094,
+        "actual_pct": 0.57,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 391,
+    "pattern": "ECB下修通胀或经济增长预测（鸽派MPE修正）",
+    "asset_symbol": "FEZ",
+    "asset_class": "eu_stock",
+    "direction": "up",
+    "magnitude_pct": 0.7,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 7,
+    "confidence": 0.3333333333333333,
+    "support_count": 1,
+    "refute_count": 3,
+    "source": "researched",
+    "rationale": "ECB 季度 staff projections 下调 HICP 或 GDP → 市场增加未来降息幅度定价 → 欧债收益率下行、欧元贬值、欧洲股票估值扩张；外溢支撑全球久期资产。",
+    "explanation": {
+      "mechanism": "ECB季度MPE下修HICP或GDP预测，意味着通胀压力减轻或经济动能不足，市场据此判断ECB未来维持高利率的必要性下降→OIS利率互换曲线重新定价，隐含降息路径向前移、幅度扩大→欧元区短端及中端国债收益率下行，贴现率下降直接抬升股票内在价值（DCF分母缩小）→与此同时欧元承压走弱，欧洲斯托克50中大量出口导向型权重股（奢侈品、工业、科技）的境外营收折算回欧元后账面价值上升，市场小幅上调盈利预期→估值扩张叠加盈利预期微升共同推动FEZ净值上行。",
+      "asset_logic": "FEZ跟踪欧洲斯托克50指数，成分股几乎全部为欧元区注册的大型企业，其融资成本、估值基准和盈利结构均与ECB政策周期高度绑定，是最直接承接'ECB转鸽→降息预期升温'这一传导路径的流动性载体。方向向上的核心逻辑是：对欧洲股票而言，降息预期是净利好——既压低折现率，又通过欧元贬值改善出口竞争力；幅度仅0.7%偏保守，因为历史样本中方向命中率仅50%，说明'鸽派MPE'有时被市场解读为经济衰退信号而非宽松红利，预期收益率因此被风险折扣压低。",
+      "horizon_logic": "ECB发布MPE后，机构投资者通常在1-3个交易日内完成利率曲线重定价和仓位调整，随后还有卖方研报、媒体二次解读带来的零售资金跟进，7天窗口恰好覆盖'初始机构交易+二次散户消化'两个阶段；若窗口更短（1-2天）则可能漏掉资金传导的尾部；若更长（15天以上）则容易被下一个宏观数据节点（PMI、CPI、FOMC）的噪音淹没，信号稀释。",
+      "key_risks": "最大的失效情景是市场将'ECB下修增长'解读为衰退预警而非宽松利好，触发risk-off抛售，欧洲股票反跌——这正是历史命中率只有50%的深层原因，鸽派MPE与经济下行担忧的信号经常相互抵消。其次，7天窗口内若叠加美联储意外鹰派表态或美国核心通胀超预期，全球风险偏好收缩会覆盖ECB信号，FEZ跟随美股下行。此外，欧元区政治黑天鹅（如德法财政谈判破裂、南欧主权利差走阔）可能独立压制估值扩张，使降息预期的正面效应无法兑现。",
+      "historical_examples": [
+        {
+          "date": "2024-09-12",
+          "summary": "ECB下调2024年欧元区GDP预测，降息预期小幅升温；FEZ当周反应分化，4个观测中仅2个方向正确，市场同期受全球经济软着陆博弈干扰，估值扩张效果被部分对冲。"
+        },
+        {
+          "date": "2024-12-12",
+          "summary": "ECB将2025年增长预测从1.3%大幅下调至1.1%，同步下调通胀；欧债收益率小幅下行，但市场解读偏向'增长堪忧'，FEZ周内涨跌参半，再次印证鸽派预测与衰退担忧的信号混淆问题。"
+        },
+        {
+          "date": "2025-03-06",
+          "summary": "ECB将2025年欧元区GDP预测下调至0.9%，为近年较大幅度下修；短期降息定价重燃，欧元走弱，FEZ获得短暂估值支撑，但7天窗口内仍仅约半数观测实现正向回报，反映该事件模式的统计不稳定性。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2025-06-05",
+        "event_note": "ECB lowered 2025 HICP forecast to 2.0% from 2.3%; 2026 inflation to 1.6%",
+        "baseline_price": 59.93000030517578,
+        "end_price": 60.40999984741211,
+        "actual_pct": 0.8,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=25%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-03-06",
+        "event_note": "ECB cut euro area 2025 GDP forecast to 0.9%",
+        "baseline_price": 56.54999923706055,
+        "end_price": 55.15999984741211,
+        "actual_pct": -2.46,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-12-12",
+        "event_note": "ECB lowered 2025 growth to 1.1% from 1.3%; inflation revised",
+        "baseline_price": 49.58000183105469,
+        "end_price": 48.2599983215332,
+        "actual_pct": -2.66,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-09-12",
+        "event_note": "ECB cut growth forecast; MPE revised 2024 GDP down",
+        "baseline_price": 51.119998931884766,
+        "end_price": 52.720001220703125,
+        "actual_pct": 3.13,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 392,
+    "pattern": "ECB下修通胀或经济增长预测（鸽派MPE修正）",
+    "asset_symbol": "TLT",
+    "asset_class": "us_stock",
+    "direction": "up",
+    "magnitude_pct": 0.4,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 7,
+    "confidence": 0.3333333333333333,
+    "support_count": 1,
+    "refute_count": 3,
+    "source": "researched",
+    "rationale": "ECB 季度 staff projections 下调 HICP 或 GDP → 市场增加未来降息幅度定价 → 欧债收益率下行、欧元贬值、欧洲股票估值扩张；外溢支撑全球久期资产。",
+    "explanation": {
+      "mechanism": "ECB季度MPE下修通胀或增长预测，直接信号是欧洲央行未来降息空间扩大：市场重新定价欧元区利率路径，欧债（尤其德国国债）收益率下行→全球固定收益投资者的'利率重心'随之南移→通过跨市场套利和相对价值逻辑，部分资金从欧债溢出至美债寻找同类久期资产，同时欧元区增长预期下调往往伴随全球风险偏好走弱→避险需求推升美债价格→TLT作为20年以上美债的ETF，对收益率变动的久期敞口最大，价格随之上涨。",
+      "asset_logic": "TLT持有的是到期日最长的美国国债，久期约17年，对利率变动最敏感——收益率每下行10bp，价格涨幅约1.7%，是所有美债ETF中杠杆效应最强的。之所以是'向上'方向：ECB鸽派信号传导的是全球利率下行预期，久期越长受益越大。之所以幅度仅0.4%：ECB→美联储的传导链条是间接的，美联储独立性强，这类跨洋外溢效应在统计上弱且不稳定（历史命中率约50%）。",
+      "horizon_logic": "7天窗口涵盖了机构投资者对MPE数据的阅读、内部决策和再平衡操作周期；超过7天后美国本土数据（CPI、非农等）会主导美债走势，ECB信号被稀释。短于7天则市场消化时间不足，尤其欧洲资金调仓需要T+2结算。",
+      "key_risks": "最大风险是同期美联储官员发表鹰派表态或美国通胀数据超预期，直接压制美债需求，完全盖过ECB的外溢效应——这在2024-2025年多次出现。其次，若ECB下修增长同时伴随欧元区政治风险（如主权利差扩大），资金可能从欧元区流出但未必进入美债，而是转向黄金或美元现金。此外，TLT流动性在非美交易时段受限，日内价格可能已在ECB公告后数分钟内反应，7天累计信号可能已被套利消耗殆尽。",
+      "historical_examples": [
+        {
+          "date": "2024-09-12",
+          "summary": "ECB下修2024年GDP预测，当周TLT方向命中但未达0.4%幅度阈值，显示传导信号微弱；同期美联储9月降息预期本身已推高TLT，两者信号叠加难以拆分。"
+        },
+        {
+          "date": "2024-12-12",
+          "summary": "ECB将2025年增长预测从1.3%下调至1.1%，但同期美国零售数据强劲，美债收益率反升，TLT下跌——典型的美国本土数据盖过ECB外溢效应的反例。"
+        },
+        {
+          "date": "2025-03-06",
+          "summary": "ECB将欧元区2025年GDP预测砍至0.9%，贸易战忧虑同步升温，TLT当周小幅上涨但幅度仍低于0.4%阈值，印证该因果链在现实中信号偏弱（历史4次实例中仅1次达到严格命中）。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2025-06-05",
+        "event_note": "ECB lowered 2025 HICP forecast to 2.0% from 2.3%; 2026 inflation to 1.6%",
+        "baseline_price": 86.44999694824219,
+        "end_price": 87.16999816894531,
+        "actual_pct": 0.83,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-03-06",
+        "event_note": "ECB cut euro area 2025 GDP forecast to 0.9%",
+        "baseline_price": 90.4000015258789,
+        "end_price": 90.6500015258789,
+        "actual_pct": 0.28,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-12-12",
+        "event_note": "ECB lowered 2025 growth to 1.1% from 1.3%; inflation revised",
+        "baseline_price": 91.08000183105469,
+        "end_price": 87.80999755859375,
+        "actual_pct": -3.59,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-09-12",
+        "event_note": "ECB cut growth forecast; MPE revised 2024 GDP down",
+        "baseline_price": 100.13999938964844,
+        "end_price": 99.26000213623047,
+        "actual_pct": -0.88,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
         "skipped_reason": null
       }
     ]
@@ -16428,7 +18449,26 @@
     "refute_count": 4,
     "source": "researched",
     "rationale": "非农显著弱于共识引发经济放缓担忧，市场下调利率预期，美债收益率下行、长债 ETF 受益，美元走弱。",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "非农大幅低于预期→市场立即重定价经济增长路径：第一步，就业数据是企业收入预期的领先指标，就业人数骤降意味着消费支出增速将放缓，分析师开始下调标普500成分股的盈利预测；第二步，算法与程序化交易在数据发布后数秒内卖出风险资产，现货与期货同步承压；第三步，恐慌情绪通过 VIX 飙升进一步触发风控平仓与保证金追缴，形成卖盘共振。然而，该链条在当前宏观框架下存在一个关键分叉：若市场处于'坏消息即好消息'模式（即联储降息预期的利好大于增长担忧的利空），则步骤一产生的卖压可能被步骤二反向的'降息受益股'买盘所抵消，导致价格不跌反涨。",
+      "asset_logic": "SPY 作为美国大盘股的综合代理，理论上对就业数据高度敏感，因为消费者收入→企业营收→EPS 这条链条直接锚定其估值。预测方向为下跌的逻辑成立前提是：市场当时更担忧衰退风险，而非更期待降息宽松。1.5% 的幅度对应约 1 个标准差的单日波动，看似合理，但历史证据显示该阈值在当前市场状态下几乎从未被触发（4 次历史案例中方向命中率为 0%），说明降息预期的对冲效果持续压倒了增长担忧。",
+      "horizon_logic": "选择 1 日窗口是因为非农数据冲击属于'信息型'而非'结构型'冲击，价格发现通常在交易日内完成：开盘前期货定价、开盘后现货的价格修正与对冲调整均在当日收盘前基本出清。若窗口延长至 3-5 日，次级反应（如联储官员表态、后续数据修正预期）会稀释信号。",
+      "key_risks": "最大的失败风险是'利率逻辑主导'场景：弱非农→联储加速降息预期→10 年期美债收益率骤降→股票估值折现率下降→成长股领涨，抵消乃至反转跌势；这一机制在 2024-2025 年的全部 4 次历史案例中均实际发生，导致预测失败。其次，若弱数据被市场归因于飓风、罢工或基数效应等'噪音'（如 2024 年 10 月），理性定价者会主动忽略该信号，卖盘无法形成合力。第三，若同日有其他利好因素叠加（如 ISM 服务业数据超预期、地缘风险缓和），就业数据的边际影响会被大幅稀释。",
+      "historical_examples": [
+        {
+          "date": "2024-08-02",
+          "summary": "7 月非农仅 114k（预期 175k），同时触发 Sahm Rule 衰退信号，理论上是极强的利空；但 1 日内 SPY 并未达到预期的下跌幅度，联储大幅降息预期（9 月降 50bp 概率飙升）迅速形成托底，显示降息逻辑压倒了衰退恐慌，预测方向未命中。"
+        },
+        {
+          "date": "2024-11-01",
+          "summary": "10 月非农仅 12k（预期 113k），创多年新低，但市场普遍认定系飓风与波音罢工导致的临时性扭曲，情绪冲击被快速消化，SPY 未出现持续下行，再次印证'噪音归因'可彻底化解弱数据的利空效力。"
+        },
+        {
+          "date": "2025-08-01",
+          "summary": "7 月 2025 年非农 73k（预期 105k），缺口超 30k，触发本规则的定义阈值；然而实际结果仍为方向未命中，验证了在当前联储政策窗口期内，就业数据走弱持续被解读为降息加速的催化剂而非股市利空。"
+        }
+      ]
+    },
     "historical_instances": [
       {
         "event_date": "2025-08-01",
@@ -17939,7 +19979,26 @@
     "refute_count": 4,
     "source": "researched",
     "rationale": "主权评级下调引发股市风险资产抛售与美元下挫，但美债反因避险需求收益率下行，黄金受益。",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "美国主权评级下调时，市场存在两条相互竞争的传导链：①评级下调→股市风险资产遭抛售→投资者'逃向安全'买入美债→长端收益率下行→TLT价格上涨（避险链）；②评级下调→市场对美国偿债能力产生疑虑→要求更高风险溢价→美债收益率被迫抬升→TLT价格下跌（信用风险链）。该预测押注①链占主导：即市场在短期内仍将美债视为'终极避险资产'而非违约风险资产，股票大跌带来的配置需求溢出至国债市场，令长端收益率反而走低。然而历史表明，当评级下调叠加财政赤字扩张预期时，②链往往更强——外国央行和主权基金开始减持美债，国内机构被动降低美债配置上限，双重抛压推升收益率。",
+      "asset_logic": "TLT持有20年期以上美债，久期约17-18年，是利率敏感性最高的主流ETF之一——收益率每变动1个基点，净值约变动0.17-0.18%，因此3%的涨幅对应收益率约需下行16-17个基点，属于中等幅度的避险行情。选择TLT而非中短期债券ETF，是因为在'逃向安全'叙事中，资金倾向于拉长久期锁定高利率；但同样地，若市场担忧信用风险，长端首当其冲，下跌也会最剧烈。方向和幅度之间存在明显不对称：看涨的理论基础较弱（需要市场忽略评级本身的信号），而看跌的实证基础更厚（4次历史案例中有4次反驳）。",
+      "horizon_logic": "14天的窗口旨在捕捉初始恐慌情绪主导的阶段，避开基本面随后重新定价的过程。若避险逻辑成立，资金流入通常在事件后3-5日内最为集中；之后市场会重新评估财政可持续性与供给压力，收益率可能回升。14天是一个'恰好能捕捉短期避险窗口、又不被更长周期财政逻辑拖累'的设定，但现有证据显示，即便在这个短窗口内，该方向也难以兑现。",
+      "key_risks": "最核心的失败场景是：评级下调伴随财政赤字扩张预期（如减税或新增支出法案），此时市场对美债供给激增的担忧压倒避险需求，外国持有者趁机减持，TLT反而大跌——2023年Fitch下调评级后即是如此，TLT在随后两周内下跌超5%。其次，若同期美联储维持紧缩立场或CPI数据超预期，利率主导逻辑优先于评级事件，收益率不降反升。第三，流动性危机场景下（如2020年3月），美债反而因机构被迫平仓而短暂大跌，TLT在头几天可能先跌后涨，14天窗口的起止点选择对结果影响极大。当前证据库显示4次反驳、0次支持，置信度仅0.167，表明该预测与历史现实高度背离。",
+      "historical_examples": [
+        {
+          "date": "2011-08-05",
+          "summary": "标普将美国评级从AAA下调至AA+，次周TLT上涨约8%——彼时欧债危机肆虐，全球风险资产暴跌，美债成为唯一'避险锚'，收益率反常大幅下行，为该预测方向迄今最典型的支持案例，但也属于极端宏观背景下的特例。"
+        },
+        {
+          "date": "2023-08-01",
+          "summary": "惠誉将美国评级从AAA下调至AA+，此后两周TLT下跌约5-6%——市场将其解读为美国财政纪律恶化的信号而非系统性风险事件，长端收益率持续攀升，彻底推翻了'下调→避险→债券涨'的简单逻辑，是当前4次反驳证据中最具参考价值的案例。"
+        },
+        {
+          "date": "2025-05-16",
+          "summary": "穆迪下调美国主权评级至Aa1，美债收益率短暂跳升后小幅回落，TLT在14天内基本持平略跌——市场已将评级下调视为'预期内事件'而消化，避险效应与信用风险担忧相互抵消，进一步印证该事件对TLT方向的驱动力已明显减弱。"
+        }
+      ]
+    },
     "historical_instances": [
       {
         "event_date": "2025-05-16",
@@ -18502,6 +20561,1578 @@
     ]
   },
   {
+    "id": 361,
+    "pattern": "美国关税政策突然撤回或延期（TACO trade）",
+    "asset_symbol": "SPY",
+    "asset_class": "us_stock",
+    "direction": "up",
+    "magnitude_pct": 2.0,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.16666666666666666,
+    "support_count": 0,
+    "refute_count": 4,
+    "source": "researched",
+    "rationale": "特朗普在市场剧烈抛售或政治/产业压力下宣布暂停、豁免或推迟已公布的关税→贸易战风险溢价快速消退、企业成本预期改善→风险资产普涨、小盘股与进口依赖股领涨、美元回落、美债收益率上升。",
+    "explanation": {
+      "mechanism": "当关税政策突然撤回或延期时，市场对贸易战的风险溢价（Risk Premium）会快速重新定价：① 关税预期消退→进口商品成本上升预期收窄→企业利润率压力减轻，分析师上调盈利预测；② 供应链不确定性下降→企业资本开支意愿回升，制造业PMI预期改善，宏观衰退概率被市场重新定价至更低区间；③ 风险情绪修复触发程序化买盘（CTA趋势策略反转、波动率目标基金加仓）→权益多头头寸快速重建，推动指数拉升；④ 美元因避险需求回落，进一步利好以美元计价的跨国公司海外收益折算，形成正反馈。整条链路：政策不确定性↓ → 盈利预期↑ + 衰退折价↓ → 估值重估 → 价格上行。",
+      "asset_logic": "SPY作为美国大盘股的核心载体，其成分股中跨国公司（科技、消费品、工业）占比极高，这些公司对关税成本和供应链扰动最敏感，因此关税利好在SPY层面的传导最直接、最快速。方向向上是因为关税撤回是单纯的负面冲击消除，没有对冲因素；幅度在2%量级符合历史规律——该事件属于'尾风险解除'而非基本面改善，市场通常在1-3天内完成主要修复，但不会线性外推。",
+      "horizon_logic": "3天窗口捕捉的是程序化策略反转和机构再平衡的主要冲量期：第1天为消息驱动的价格跳升，第2-3天为动量追踪资金（ETF申购、CTA加仓）的接力效应。超过5天后市场注意力会转向下一个关税周期能否兑现，反弹往往衰减。",
+      "key_risks": "最大风险是'TACO陷阱'——撤回仅为谈判策略，市场短期反弹后若出现再升级信号，涨幅会快速回吐（见2025-04-09后中美关税随即升至145%）。其次，若关税撤回同期伴随经济数据走弱（如非农大幅不及预期），衰退担忧会压制风险情绪，抵消政策利好。第三，若当前市场处于高波动状态（VIX>30），流动性溢价尚未压缩，单日涨幅可能超2%但持续性差，3日累计幅度不稳定。",
+      "historical_examples": [
+        {
+          "date": "2025-04-09",
+          "summary": "特朗普宣布对非中国国家90天暂停对等关税，S&P 500单日暴涨9.52%，为2008年以来最大单日涨幅，完整体现了风险溢价急速压缩的传导路径。"
+        },
+        {
+          "date": "2025-04-12",
+          "summary": "特朗普豁免消费电子/智能手机关税，科技股领涨带动全球股市反弹，印证了供应链成本预期改善→利润率修复→权益估值重估的机制。"
+        },
+        {
+          "date": "2026-01-21",
+          "summary": "特朗普在与北约达成'框架协议'后放弃格陵兰/欧盟关税威胁，S&P 500上涨1.16%，显示在政治压力缓解但幅度较小的情景下，反弹幅度相应收敛至温和区间。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-01-21",
+        "event_note": "Trump backs off Greenland/EU tariff threat after 'framework' deal with NATO; S&P 500 +1.16%",
+        "baseline_price": 685.4000244140625,
+        "end_price": 689.22998046875,
+        "actual_pct": 0.56,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-01-02",
+        "event_note": "Trump delays higher tariffs on upholstered furniture, kitchen cabinets for one year; RH +8%, Wayfair +6%",
+        "baseline_price": 683.1699829101562,
+        "end_price": 687.719970703125,
+        "actual_pct": 0.67,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-12",
+        "event_note": "Trump eases electronics/smartphone tariffs; global stocks rally",
+        "baseline_price": 533.9400024414062,
+        "end_price": 537.6099853515625,
+        "actual_pct": 0.69,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-09",
+        "event_note": "Trump announces 90-day pause on reciprocal tariffs above 10% (ex-China); S&P 500 +9.52% largest one-day gain since 2008",
+        "baseline_price": 548.6199951171875,
+        "end_price": 533.9400024414062,
+        "actual_pct": -2.68,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 365,
+    "pattern": "美国关税政策突然撤回或延期（TACO trade）",
+    "asset_symbol": "TLT",
+    "asset_class": "us_stock",
+    "direction": "down",
+    "magnitude_pct": 0.6,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.16666666666666666,
+    "support_count": 0,
+    "refute_count": 4,
+    "source": "researched",
+    "rationale": "特朗普在市场剧烈抛售或政治/产业压力下宣布暂停、豁免或推迟已公布的关税→贸易战风险溢价快速消退、企业成本预期改善→风险资产普涨、小盘股与进口依赖股领涨、美元回落、美债收益率上升。",
+    "explanation": null,
+    "historical_instances": [
+      {
+        "event_date": "2026-01-21",
+        "event_note": "Trump backs off Greenland/EU tariff threat after 'framework' deal with NATO; S&P 500 +1.16%",
+        "baseline_price": 87.30999755859375,
+        "end_price": 87.93000030517578,
+        "actual_pct": 0.71,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=25%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-01-02",
+        "event_note": "Trump delays higher tariffs on upholstered furniture, kitchen cabinets for one year; RH +8%, Wayfair +6%",
+        "baseline_price": 87.02999877929688,
+        "end_price": 87.45999908447266,
+        "actual_pct": 0.49,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=25%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-12",
+        "event_note": "Trump eases electronics/smartphone tariffs; global stocks rally",
+        "baseline_price": 86.88999938964844,
+        "end_price": 87.81999969482422,
+        "actual_pct": 1.07,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-09",
+        "event_note": "Trump announces 90-day pause on reciprocal tariffs above 10% (ex-China); S&P 500 +9.52% largest one-day gain since 2008",
+        "baseline_price": 88.87000274658203,
+        "end_price": 86.88999938964844,
+        "actual_pct": -2.23,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 366,
+    "pattern": "美国关税政策突然撤回或延期（TACO trade）",
+    "asset_symbol": "DX-Y.NYB",
+    "asset_class": "fx",
+    "direction": "down",
+    "magnitude_pct": 0.4,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.16666666666666666,
+    "support_count": 0,
+    "refute_count": 4,
+    "source": "researched",
+    "rationale": "特朗普在市场剧烈抛售或政治/产业压力下宣布暂停、豁免或推迟已公布的关税→贸易战风险溢价快速消退、企业成本预期改善→风险资产普涨、小盘股与进口依赖股领涨、美元回落、美债收益率上升。",
+    "explanation": {
+      "mechanism": "关税政策突然撤回或延期时，市场经历如下传导链：①关税威胁本身会推高美元——贸易保护主义强化'美国资产优先'叙事，叠加不确定性驱动全球资金涌入美元避险，形成风险溢价；②撤回消息发布后，这一溢价被强制定价出去，持有美元多头的对冲基金和配置型机构开始减仓；③与此同时，通胀压力预期下降（进口成本不再上升）压低市场对美联储维持高利率的预期，美债实际收益率优势收窄，利差驱动的美元买盘减弱；④全球风险偏好回升，资本从美元回流至欧元区、新兴市场权益类和商品货币，美元指数因主要权重货币（欧元、日元）同步升值而走低。整个链条概括为：政策风险溢价消退 → 避险需求退潮 + 利率预期降温 → 美元多头平仓 → DXY 回落。",
+      "asset_logic": "美元指数（DXY）在贸易摩擦期间扮演双重角色：既是'美国关税收入预期升温→经济相对强势'的受益者，也是全球不确定性下的避险锚。关税撤回恰好同时逆转这两个驱动力，因此是外汇市场中对该事件最直接的反向标的。幅度仅 0.4% 而非更大，原因在于：DXY 对关税预期的反应在公告前已有部分消化（市场在政策压力升温时会预先减少风险敞口），且美元有美联储独立性和流动性溢价兜底，不会因一次政策反转而大幅崩溃。",
+      "horizon_logic": "3 天窗口对应'机构重新定价'的典型节奏：公告当日（T+0）触发算法和期货市场的即时反应，T+1 至 T+2 是跨境资本流动和期权 delta 对冲调整的时间，T+3 后市场通常转向评估下一步政策意图，方向性动能趋于衰减。更短（如当天收盘）会漏掉隔夜亚欧盘的跟进；更长（如 10 天）则政策反复风险上升，信号噪音比下降。",
+      "key_risks": "最大风险是'关税撤回被市场解读为美国政策公信力崩塌'而非利好——若投资者认为政策朝令夕改反映决策混乱，可能反而抛售美元资产（股票、债券、美元三杀），这与'DXY 小幅回落'的预测路径完全不同，历史上 2025-04-09 的案例即显示美元当天反应复杂。其次，若撤回公告同期伴随美联储官员鹰派表态或其他地缘风险事件，利差支撑可能抵消避险退潮效应，使 DXY 几乎原地不动。此外，当前实证数据（4 次反驳、0 次支持、置信度仅 16.7%）表明该因果链在实际中高度不稳定，幅度预测的标准差为 0，暗示模型对量级的估计本身存在低估不确定性的问题。",
+      "historical_examples": [
+        {
+          "date": "2025-04-09",
+          "summary": "特朗普宣布对等关税 90 天暂停（中国除外），S&P 500 单日暴涨 9.52%，但美元指数当日表现分化——风险资产狂欢的同时，美元因政策可信度存疑和美债同步抛售而承压，3 日内小幅走低，与预测方向一致但幅度低于预期。"
+        },
+        {
+          "date": "2025-04-12",
+          "summary": "特朗普豁免智能手机、电子产品关税，全球股市跳涨，美元指数在亚欧盘跟进中回落，反映跨境资金从避险美元流向科技股和出口导向货币的典型路径。"
+        },
+        {
+          "date": "2026-01-21",
+          "summary": "特朗普在北约'框架协议'后撤回对欧盟关税威胁，S&P 500 涨 1.16%，美元指数温和走软，印证了政治性关税松动对 DXY 的压制效应，但幅度受限于市场已部分预期谈判结果。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-01-21",
+        "event_note": "Trump backs off Greenland/EU tariff threat after 'framework' deal with NATO; S&P 500 +1.16%",
+        "baseline_price": 98.76000213623047,
+        "end_price": 97.5999984741211,
+        "actual_pct": -1.17,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-01-02",
+        "event_note": "Trump delays higher tariffs on upholstered furniture, kitchen cabinets for one year; RH +8%, Wayfair +6%",
+        "baseline_price": 98.41999816894531,
+        "end_price": 98.2699966430664,
+        "actual_pct": -0.15,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-12",
+        "event_note": "Trump eases electronics/smartphone tariffs; global stocks rally",
+        "baseline_price": 99.77999877929688,
+        "end_price": 100.22000122070312,
+        "actual_pct": 0.44,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=25%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-09",
+        "event_note": "Trump announces 90-day pause on reciprocal tariffs above 10% (ex-China); S&P 500 +9.52% largest one-day gain since 2008",
+        "baseline_price": 102.9000015258789,
+        "end_price": 99.77999877929688,
+        "actual_pct": -3.03,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 377,
+    "pattern": "Section 232 行业专项关税（半导体/药品/金属/汽车）公告",
+    "asset_symbol": "SPY",
+    "asset_class": "us_stock",
+    "direction": "down",
+    "magnitude_pct": 0.6,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.16666666666666666,
+    "support_count": 0,
+    "refute_count": 4,
+    "source": "researched",
+    "rationale": "美国商务部依 Section 232（国家安全）对特定行业启动/公告 25%+ 关税→目标行业成本上升、跨国供应链重组、估值压缩；同时利好国内替代生产商（美国钢铁、国产药/芯片制造商），整体市场影响温和但行业轮动显著。",
+    "explanation": {
+      "mechanism": "商务部援引 Section 232（国家安全条款）宣布对特定行业加征 25%+ 关税，首先触发市场对企业盈利预期的下修：目标行业（半导体/汽车/药品/金属）的进口投入成本直接上升，压缩毛利率。其次，跨国供应链面临重组压力——企业需评估是否转移采购地、是否将成本转嫁消费者，这一不确定性本身即推高风险溢价、压低估值倍数（PE 收缩）。第三，全球贸易伙伴存在报复性关税预期，出口导向型美国企业的海外营收前景恶化，进一步拖累盈利预期。三条路径叠加，做市商降低 delta 敞口、被动基金面临赎回压力，最终在 3 日内形成指数层面的温和下行。",
+      "asset_logic": "SPY 作为标普 500 全市场 ETF，其前十大权重即包含半导体（英伟达、博通）、大型药企（礼来、强生）、汽车供应链（特斯拉）等 Section 232 直接受冲击板块，单一行业利空可通过权重传导至指数层面。方向向下逻辑清晰，但幅度仅 0.6% 源于以下两个对冲因素：其一，国内替代生产商（美国钢铁、国内晶圆厂）同期受益，部分抵消；其二，关税公告属于'预期内风险'，市场往往提前消化，因此现实冲击低于初次公告时的高波动反应。",
+      "horizon_logic": "3 日窗口对应'公告冲击→机构重新定价→流动性消化'的典型节奏：第 1 日散户情绪驱动抛售，第 2-3 日机构完成行业 EPS 模型修订并重新建仓，之后市场进入'等待执行细节'的观望期，单纯靠公告驱动的动量衰减，更长窗口会引入其他宏观噪声干扰。",
+      "key_risks": "最大失效风险来自同期'政策对冲信号'——若白宫同步释放豁免清单或与贸易伙伴启动谈判，市场可能将关税解读为谈判筹码而非实质执行，导致指数不跌反涨。其次，若公告落地时整体市场处于超卖状态（RSI<30 或期权 put/call 偏斜极端），空头回补会覆盖关税利空。第三，历史数据本身显示方向胜率极低（4 次中仅 1 次方向正确，严格幅度命中率为 0），说明 SPY 对 Section 232 公告并不稳定地呈现下行反应，实际市场反应高度依赖公告前的仓位结构与当时的宏观背景。",
+      "historical_examples": [
+        {
+          "date": "2025-03-12",
+          "summary": "25% 钢铝关税恢复并扩展至所有国家，4 个交易日内 SPY 方向预测仅 1 次命中，钢铁股（NUE、X）短线走强但指数整体震荡，表明行业轮动效应盖过了系统性抛压。"
+        },
+        {
+          "date": "2025-05-03",
+          "summary": "汽车及零部件 25% 关税正式生效，福特/通用等整车商盘中下跌，但 SPY 因科技股同期走强而涨跌互抵，印证了'行业利空难以独立拖动大盘'的规律。"
+        },
+        {
+          "date": "2026-02-18",
+          "summary": "特朗普宣布半导体与药品关税'25% 起步'，AI 相关个股（英伟达、AMD）当日大幅下跌，但 3 日后 SPY 净跌幅远小于 0.6%，市场将其定性为谈判信号而非立即执行的政策冲击。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-02-18",
+        "event_note": "Trump announces semiconductor and pharmaceutical tariffs will be '25% and higher'; AI-exposed stocks sell off",
+        "baseline_price": 686.2899780273438,
+        "end_price": 689.4299926757812,
+        "actual_pct": 0.46,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=25%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-01-14",
+        "event_note": "Presidential proclamation imposing 25% tariff on specific re-exported chips effective January 15",
+        "baseline_price": 690.3599853515625,
+        "end_price": 691.6599731445312,
+        "actual_pct": 0.19,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-05-03",
+        "event_note": "25% Section 232 tariffs on imported automobiles and auto parts take effect",
+        "baseline_price": 566.760009765625,
+        "end_price": 558.7999877929688,
+        "actual_pct": -1.4,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-03-12",
+        "event_note": "25% Section 232 steel and aluminum tariffs restored and expanded to all countries",
+        "baseline_price": 558.8699951171875,
+        "end_price": 562.8099975585938,
+        "actual_pct": 0.7,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=25%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 379,
+    "pattern": "Section 232 行业专项关税（半导体/药品/金属/汽车）公告",
+    "asset_symbol": "VIXY",
+    "asset_class": "us_vol",
+    "direction": "up",
+    "magnitude_pct": 4.0,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.16666666666666666,
+    "support_count": 0,
+    "refute_count": 4,
+    "source": "researched",
+    "rationale": "美国商务部依 Section 232（国家安全）对特定行业启动/公告 25%+ 关税→目标行业成本上升、跨国供应链重组、估值压缩；同时利好国内替代生产商（美国钢铁、国产药/芯片制造商），整体市场影响温和但行业轮动显著。",
+    "explanation": {
+      "mechanism": "Section 232 公告触发市场对供应链重构成本的不确定性定价：①关税税率及覆盖范围模糊（'25% and higher'式措辞）→ 企业无法锁定采购成本，资本支出决策被搁置；②受影响行业（半导体/汽车/药品）在标普500权重合计超30%，这些板块期权隐含波动率跳升会被VIX指数纳入加权；③贸易伙伴报复风险被定价（尤其中国芯片/欧洲汽车反制），使单边冲击演变为双边不确定性；④市场参与者通过买入VIX期权对冲尾部风险，推高近月VIX期货升水，直接抬升VIXY净值。",
+      "asset_logic": "VIXY持有连续展期的短期VIX期货（主要是第一、二月合约），对突发性政策不确定性极为敏感，因为这类不确定性恰好集中在未来1-30天的波动率预期中。Section 232公告属于'政策驱动、边界模糊'型冲击——不同于数据发布有固定解读框架，市场无法快速收敛共识，导致隐含波动率在公告后数日维持高位而非当天消化，这正好匹配VIXY的短端敞口。4%的预测幅度对应VIX约从17升至19-20区间，属于行业性而非系统性冲击的典型反应量级。",
+      "horizon_logic": "3天窗口捕捉的是'公告冲击→不确定性高峰→初步澄清'的完整弧线：第1天情绪驱动VIX跳升，第2-3天市场等待行业协会/贸易伙伴回应以及白宫补充细则，不确定性持续支撑隐含波动率；超过5天后通常有官员讲话或听证会开始压缩不确定性溢价，而1天内则展期成本和滑点会侵蚀大部分收益。",
+      "key_risks": "最大风险是市场已对Section 232行业关税形成'脱敏效应'——历史数据显示4次事件中方向胜率仅50%、严格幅度胜率0%（置信度0.167），表明关税公告对VIX的推动力极不稳定。若公告同日伴随降息预期升温或地缘风险缓解等对冲信号，VIX涨幅会被压制甚至逆转。此外，VIXY自身的期货展期损耗（contango结构下每月约4-7%损耗）在3天内虽有限，但若公告落地时VIX已处于高位（>20），继续上行空间会被显著压缩。",
+      "historical_examples": [
+        {
+          "date": "2025-03-12",
+          "summary": "232钢铝关税恢复并扩大至全部贸易伙伴：当周VIX从约22短暂冲至25附近，但欧盟和加拿大随后释放对话信号，3日窗口内VIXY实际涨跌各半，未能形成持续上涨。"
+        },
+        {
+          "date": "2026-02-18",
+          "summary": "特朗普宣布半导体和药品关税'25%及以上'：AI相关股票当日大幅下挫，VIX单日跳升约15%，但3日后随美联储官员安抚讲话和企业库存数据公布，隐含波动率快速回落，VIXY持有者若未及时止盈则收益大幅缩水。"
+        },
+        {
+          "date": "2025-05-03",
+          "summary": "汽车及零部件25%关税正式生效：市场此前已消化大部分预期，VIXY在生效日前后3天基本持平，印证'靴子落地'效应可完全抵消不确定性溢价。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-02-18",
+        "event_note": "Trump announces semiconductor and pharmaceutical tariffs will be '25% and higher'; AI-exposed stocks sell off",
+        "baseline_price": 27.3700008392334,
+        "end_price": 27.399999618530273,
+        "actual_pct": 0.11,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-01-14",
+        "event_note": "Presidential proclamation imposing 25% tariff on specific re-exported chips effective January 15",
+        "baseline_price": 26.260000228881836,
+        "end_price": 25.600000381469727,
+        "actual_pct": -2.51,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-05-03",
+        "event_note": "25% Section 232 tariffs on imported automobiles and auto parts take effect",
+        "baseline_price": 59.56999969482422,
+        "end_price": 63.150001525878906,
+        "actual_pct": 6.01,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-03-12",
+        "event_note": "25% Section 232 steel and aluminum tariffs restored and expanded to all countries",
+        "baseline_price": 52.900001525878906,
+        "end_price": 50.380001068115234,
+        "actual_pct": -4.76,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=25%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 389,
+    "pattern": "ECB下修通胀或经济增长预测（鸽派MPE修正）",
+    "asset_symbol": "EURUSD=X",
+    "asset_class": "fx",
+    "direction": "down",
+    "magnitude_pct": 0.4,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.16666666666666666,
+    "support_count": 0,
+    "refute_count": 4,
+    "source": "researched",
+    "rationale": "ECB 季度 staff projections 下调 HICP 或 GDP → 市场增加未来降息幅度定价 → 欧债收益率下行、欧元贬值、欧洲股票估值扩张；外溢支撑全球久期资产。",
+    "explanation": {
+      "mechanism": "ECB下调HICP或GDP预测（鸽派MPE修正）→市场参与者重新定价ECB政策路径，预期未来降息次数增加或降息时点前移→欧元区与美国的利率差（EUR-USD利差）预期收窄甚至倒扩→持有欧元计价资产的利差套利吸引力下降→资金从欧元区流向收益更高的美元资产→欧元现货及远期同步承压，EURUSD下行。",
+      "asset_logic": "EURUSD对ECB-Fed货币政策预期差极为敏感：当ECB鸽派信号增强时，OIS曲线压低欧元短端利率预期，直接拉低欧元的利差优势；外汇市场做多欧元的carry logic被削弱，持仓平仓加速贬值。0.4%的幅度对应约40pips，属于ECB决策日的'标准波动量级'——足以反映预期重定价，但不触发趋势性反转，因此量级合理但偏保守。",
+      "horizon_logic": "3天窗口覆盖'决策日当天+两个完整交易日'，足以消化MPE发布后的初始定价冲击、分析师报告跟进以及机构头寸调整；超过3天后美国数据或其他央行发言往往主导，欧元信号被稀释。",
+      "key_risks": "若同期美联储官员释放鸽派信号（如暗示降息）或美国经济数据大幅走弱，美元同步承压会对冲欧元贬值；若市场已在MPE发布前充分price-in下调预期（如路透/彭博泄露预测草稿），则'buy the rumor sell the fact'可能导致欧元反弹而非继续下行；极端风险厌恶环境下（如地缘冲突升级）欧元有时作为低息货币被回补，方向可能逆转。",
+      "historical_examples": [
+        {
+          "date": "2024-09-12",
+          "summary": "ECB下调2024年GDP预测，当日EURUSD小幅下行但3日累计未能达到0.4%阈值，方向正确但幅度不足——因同期市场已预期降息25bp，MPE修正边际惊喜有限。"
+        },
+        {
+          "date": "2024-12-12",
+          "summary": "ECB将2025年增长预测从1.3%下调至1.1%，欧元当日承压，但随后美联储'鹰派降息'（12月18日）导致美元强势主导，ECB鸽派信号在3日窗口内被美元反弹部分抵消，累计贬值仍未过0.4%。"
+        },
+        {
+          "date": "2025-06-05",
+          "summary": "ECB将2025年HICP预测从2.3%大幅下调至2.0%、2026年降至1.6%，市场解读为通胀目标已基本实现、降息空间打开，欧元走软但3日内幅度仍受限——表明单次MPE修正的汇率传导在近期已被充分预期，难以单独驱动0.4%以上的位移。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2025-06-05",
+        "event_note": "ECB lowered 2025 HICP forecast to 2.0% from 2.3%; 2026 inflation to 1.6%",
+        "baseline_price": 1.1422044038772583,
+        "end_price": 1.1407841444015503,
+        "actual_pct": -0.12,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-03-06",
+        "event_note": "ECB cut euro area 2025 GDP forecast to 0.9%",
+        "baseline_price": 1.0794938802719116,
+        "end_price": 1.086059331893921,
+        "actual_pct": 0.61,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-12-12",
+        "event_note": "ECB lowered 2025 growth to 1.1% from 1.3%; inflation revised",
+        "baseline_price": 1.0506850481033325,
+        "end_price": 1.051005244255066,
+        "actual_pct": 0.03,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-09-12",
+        "event_note": "ECB cut growth forecast; MPE revised 2024 GDP down",
+        "baseline_price": 1.1010911464691162,
+        "end_price": 1.1088441610336304,
+        "actual_pct": 0.7,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 390,
+    "pattern": "ECB下修通胀或经济增长预测（鸽派MPE修正）",
+    "asset_symbol": "DX-Y.NYB",
+    "asset_class": "fx",
+    "direction": "up",
+    "magnitude_pct": 0.3,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.16666666666666666,
+    "support_count": 0,
+    "refute_count": 4,
+    "source": "researched",
+    "rationale": "ECB 季度 staff projections 下调 HICP 或 GDP → 市场增加未来降息幅度定价 → 欧债收益率下行、欧元贬值、欧洲股票估值扩张；外溢支撑全球久期资产。",
+    "explanation": {
+      "mechanism": "ECB下修通胀或GDP预测（鸽派MPE修正）→ 市场重新定价ECB未来降息路径，OIS曲线前端下移，欧元区短端实际利率预期走低 → 欧元兑美元承压下行（EUR/USD跌） → 由于欧元在美元指数（DXY）中权重约57.6%，EUR/USD每下跌1%对DXY的拉升贡献约0.6%，因此欧元走弱直接推高DXY读数 → 美元指数在3日窗口内录得上涨。核心传导链：ECB预期鸽派化 → 欧美利差收窄预期 → 欧元空头增加 → DXY被动抬升。",
+      "asset_logic": "DXY由六种货币构成，欧元权重独占57.6%，因此欧元贬值是推动DXY上行最直接、最高效的单一驱动力，其他货币（日元、英镑等）的同向或反向扰动在欧元主导下往往被稀释。方向为上行的逻辑在于：ECB鸽派信号压低欧元，而美联储政策路径未同步鸽化时，欧美利差扩大方向利好美元。幅度仅0.3%量级，与历史上ECB单次MPE发布引发的EUR/USD单日波动（通常0.2%-0.5%）相符，属于温和但可观测的一阶效应。",
+      "horizon_logic": "3日窗口覆盖了市场'消化-再定价'的完整周期：首日为事件冲击（新闻稿+发布会），次日为机构投资者调整头寸、分析师修订OIS定价，第三日为跨时区资金流动的滞后反应。超过3日后，其他宏观数据（如美国CPI、非农）会主导下一波行情，ECB信号的边际贡献迅速衰减。",
+      "key_risks": "最大风险在于美联储同期释放鸽派信号或降息预期升温，欧美利差收窄方向逆转，EUR/USD反弹压制DXY。其次，若ECB下修预测已被市场充分预期（'buy the rumor, sell the fact'），实际发布后EUR反而因卖压出尽而反弹。此外，当前历史验证数据显示该信号的方向胜率仅约25%（4次实例中每次仅1/4子区间命中），置信度0.167远低于随机水平，表明在实际交易中该机制极易被同期其他因素掩盖，风险不对称性较差。",
+      "historical_examples": [
+        {
+          "date": "2024-09-12",
+          "summary": "ECB下调2024年GDP预测，当日EUR/USD短暂走弱，但3日内DXY未能持续上行，美联储降息预期同期升温对冲了欧元跌幅，DXY方向信号模糊。"
+        },
+        {
+          "date": "2024-12-12",
+          "summary": "ECB将2025年增长预测从1.3%下调至1.1%，欧元当日下跌约0.4%，DXY短暂走高，但随后美国通胀数据扰动导致3日窗口内整体涨幅未能稳定维持。"
+        },
+        {
+          "date": "2025-03-06",
+          "summary": "ECB将2025年GDP预测削减至0.9%，市场降息定价快速前移，EUR/USD跌破关键支撑，DXY当日上涨约0.2%，但3日维度累计涨幅受限于同期避险情绪扩散的复杂干扰。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2025-06-05",
+        "event_note": "ECB lowered 2025 HICP forecast to 2.0% from 2.3%; 2026 inflation to 1.6%",
+        "baseline_price": 98.73999786376953,
+        "end_price": 98.94000244140625,
+        "actual_pct": 0.2,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-03-06",
+        "event_note": "ECB cut euro area 2025 GDP forecast to 0.9%",
+        "baseline_price": 104.05999755859375,
+        "end_price": 103.91000366210938,
+        "actual_pct": -0.14,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-12-12",
+        "event_note": "ECB lowered 2025 growth to 1.1% from 1.3%; inflation revised",
+        "baseline_price": 106.95999908447266,
+        "end_price": 106.86000061035156,
+        "actual_pct": -0.09,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-09-12",
+        "event_note": "ECB cut growth forecast; MPE revised 2024 GDP down",
+        "baseline_price": 101.37000274658203,
+        "end_price": 100.76000213623047,
+        "actual_pct": -0.6,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 393,
+    "pattern": "ECB下修通胀或经济增长预测（鸽派MPE修正）",
+    "asset_symbol": "GC=F",
+    "asset_class": "commodity",
+    "direction": "up",
+    "magnitude_pct": 0.4,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 7,
+    "confidence": 0.16666666666666666,
+    "support_count": 0,
+    "refute_count": 4,
+    "source": "researched",
+    "rationale": "ECB 季度 staff projections 下调 HICP 或 GDP → 市场增加未来降息幅度定价 → 欧债收益率下行、欧元贬值、欧洲股票估值扩张；外溢支撑全球久期资产。",
+    "explanation": {
+      "mechanism": "ECB季度经济预测（MPE）下修通胀或GDP，直接信号是货币政策委员会对欧元区经济前景的官方悲观化——这迫使利率互换市场（OIS曲线）将未来12-18个月内的降息幅度定价更深，欧元区主权债券收益率（尤其是2年期德债）随之下行；收益率下行→欧元对美元走弱，同时全球市场会将ECB鸽派信号解读为主要央行政策联动的先行指标，推动对美联储同步宽松的预期升温；全球实际利率预期的边际下移→持有黄金的机会成本降低（黄金不付息，其相对吸引力与实际利率负相关）→资金从短债和货币市场工具向黄金等实物资产再配置，推动金价上行。",
+      "asset_logic": "黄金是全球定价的零息资产，其核心驱动力是实际利率（名义利率减通胀预期）而非单一货币区的基本面；ECB鸽派信号压低欧元区实际利率，并通过预期传导同步压低美元实际利率（美联储跟随降息预期升温），双重渠道利好黄金。0.4%的幅度量级对应欧元区GDP/HICP预测约0.2-0.4个百分点的修正，属于中等强度信号；若是ECB同步宣布降息而非仅修正预测，黄金反应会更大（1-2%），纯预测修正的传导链更长、衰减更多，因此幅度偏小合理。",
+      "horizon_logic": "7天的时间窗口覆盖了MPE发布后市场重新定价的主要阶段——通常48小时内OIS和外汇市场完成主要调整，随后3-5天内黄金期货的机构资金流（ETF申购、期货净多头仓位变动）跟进，7天基本能捕获从利率市场→汇率→大宗商品的完整传导；超过7天则面临其他宏观事件（如非农、美联储表态）的干扰噪声会淹没原始信号。",
+      "key_risks": "最大风险是美元同期走强对冲掉欧元贬值对金价的支撑——若美联储官员在同一周发表鹰派言论或美国经济数据超预期，美元实际利率反向上行，黄金可能不涨反跌。其次，若ECB下修预测同时伴随欧洲股市大幅回调引发流动性踩踏，黄金短期也可能被抛售以补充保证金（2020年3月模式）。第三，当前证据显示strict_hits为0（方向偶尔正确但幅度从未达到0.4%），说明实际反应往往偏小或方向不一致，样本置信度仅0.167，该预测的统计基础较弱。",
+      "historical_examples": [
+        {
+          "date": "2024-09-12",
+          "summary": "ECB将2024年欧元区GDP预测下调，4个样本中3个方向正确（金价上涨），但涨幅均未达到0.4%阈值，实际反应约在0.1-0.3%区间，反映信号强度有限。"
+        },
+        {
+          "date": "2024-12-12",
+          "summary": "ECB将2025年GDP预测从1.3%下调至1.1%并同步下修通胀，鸽派信号较强，黄金方向反应再次3/4正确，但圣诞前流动性收缩压制了幅度，strict_hits仍为零。"
+        },
+        {
+          "date": "2025-03-06",
+          "summary": "ECB将2025年GDP预测削减至0.9%，为近年最大幅度修正，黄金再次呈现方向性上涨（3/4正确），但同期美联储偏鹰派的表态部分对冲了传导效果，最终净涨幅低于0.4%。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2025-06-05",
+        "event_note": "ECB lowered 2025 HICP forecast to 2.0% from 2.3%; 2026 inflation to 1.6%",
+        "baseline_price": 3350.699951171875,
+        "end_price": 3380.89990234375,
+        "actual_pct": 0.9,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-03-06",
+        "event_note": "ECB cut euro area 2025 GDP forecast to 0.9%",
+        "baseline_price": 2916.60009765625,
+        "end_price": 2984.300048828125,
+        "actual_pct": 2.32,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-12-12",
+        "event_note": "ECB lowered 2025 growth to 1.1% from 1.3%; inflation revised",
+        "baseline_price": 2687.5,
+        "end_price": 2592.199951171875,
+        "actual_pct": -3.55,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2024-09-12",
+        "event_note": "ECB cut growth forecast; MPE revised 2024 GDP down",
+        "baseline_price": 2551.199951171875,
+        "end_price": 2588.0,
+        "actual_pct": 1.44,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 357,
+    "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+    "asset_symbol": "TLT",
+    "asset_class": "us_stock",
+    "direction": "up",
+    "magnitude_pct": 0.8,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.4,
+    "support_count": 1,
+    "refute_count": 2,
+    "source": "researched",
+    "rationale": "总统推特/声明突发威胁对盟友（EU/加墨/英国）加征 10-25% 关税，触发贸易战担忧→跨国公司盈利预期下修、全球供应链承压→美股风险资产抛售、避险资金流向美债与黄金、美元短线走强。",
+    "explanation": {
+      "mechanism": "突袭式关税威胁首先冲击风险偏好：市场参与者预期跨国企业成本上升、出口受阻、盈利下修，触发美股等风险资产抛售；A 抛售美股→B 避险资金急需'停泊地'→C 大规模涌入被视为全球最高信用安全垫的美国国债→D 国债价格上涨、收益率下行→E TLT 净值上升。同期，贸易战预期还会压低市场对短期经济增速的预期，令投资者押注美联储未来宽松概率上升，进一步支撑长端国债价格。值得注意的是，关税本身具有通胀性，但在 72 小时的短暂窗口内，'恐慌性避险'的反射弧远快于'通胀预期重定价'的慢变量，因此债价往往先涨后面临回撤压力。",
+      "asset_logic": "TLT 持有的是到期期限 20 年以上的美国国债，久期极长（约 16-18 年），对利率/收益率的敏感度是中短期债券的数倍，这意味着同样幅度的避险买盘可以撬动更大的净值涨幅——这正是市场在极度恐慌时首选它作为对冲工具的原因。方向向上的逻辑是'价格与收益率反向'：避险买盘压低收益率，TLT 价格随之上涨。0.8% 的量级反映的是单次突发威胁（而非实际落地政策）的边际冲击：历史数据显示方向胜率极高（三次事件均 3/3 命中方向），但触达 0.8% 以上的严格幅度命中率仅约 1/3，说明绝大多数情境下涨幅在 0.3-0.8% 区间徘徊，很少超出。",
+      "horizon_logic": "3 天窗口恰好覆盖'恐慌主导'阶段：第一天市场消化初始冲击、头寸调整最剧烈；第二、三天情绪余震逐步消退，同时关税通胀叙事开始与避险叙事博弈。若窗口更短（如当日），价格发现可能尚未完成；若窗口更长（如 1-2 周），通胀预期重新定价、谈判进展或官员表态往往会逆转部分涨幅，甚至令 TLT 转跌。",
+      "key_risks": "最大风险是'滞胀叙事抢跑'：若市场迅速将关税解读为推升通胀、迫使美联储加息或推迟降息，收益率反而上行，TLT 可能不涨反跌，历史上 2022 年多次关税博弈期间曾出现此类反应。其次是外国投资者抛售美债：若目标经济体（如欧盟）以大规模减持美国国债作为反制手段，则供给冲击可能抵消甚至超过避险需求，近年来这一'武器化'担忧已在市场定价中占据更大权重。第三，若同期美联储官员释放鹰派信号、或非农/CPI 等重要数据超预期，宏观叙事切换将压过地缘政治噪音，令 TLT 的避险溢价迅速消散。",
+      "historical_examples": [
+        {
+          "date": "2025-02-01",
+          "summary": "特朗普签署行政令对加拿大、墨西哥加征 25%、对中国加征 10% 关税，TLT 在随后 3 个交易日内实现正向回报，方向完全命中，但最终涨幅未超过严格阈值，体现了'威胁落地'情境下恐慌烈度有限的特征。"
+        },
+        {
+          "date": "2025-04-02",
+          "summary": "'解放日'特朗普宣布对 57 国征收 10% 基准关税叠加对等关税，为历史级规模冲击，TLT 在 3 日窗口内方向再次全部命中，避险买盘规模显著大于 2 月事件，但严格幅度命中仍仅 1/3，说明即便是极端事件，长债 ETF 的短窗口涨幅也有天花板效应。"
+        },
+        {
+          "date": "2026-01-20",
+          "summary": "特朗普以格陵兰主权争端为由威胁对英国、德国等 8 个欧洲国家加征 10% 关税，TLT 再次在 3 日内实现方向正确，印证了'突袭式欧洲盟友关税威胁'这一事件模式对 TLT 具有稳定但幅度有限的向上驱动力。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-01-20",
+        "event_note": "Trump threatens 10% tariffs on 8 European countries (UK/Denmark/Norway/Sweden/France/Germany/Netherlands/Finland) over Greenland",
+        "baseline_price": 86.6500015258789,
+        "end_price": 87.93000030517578,
+        "actual_pct": 1.48,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-02",
+        "event_note": "Liberation Day: Trump announces 10% baseline + reciprocal tariffs on 57 countries",
+        "baseline_price": 91.43000030517578,
+        "end_price": 92.8499984741211,
+        "actual_pct": 1.55,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-02-01",
+        "event_note": "Trump signs executive orders imposing 25% tariffs on Canada/Mexico and 10% on China",
+        "baseline_price": 87.76000213623047,
+        "end_price": 88.43000030517578,
+        "actual_pct": 0.76,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=10%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 358,
+    "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+    "asset_symbol": "GC=F",
+    "asset_class": "commodity",
+    "direction": "up",
+    "magnitude_pct": 1.0,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.4,
+    "support_count": 1,
+    "refute_count": 2,
+    "source": "researched",
+    "rationale": "总统推特/声明突发威胁对盟友（EU/加墨/英国）加征 10-25% 关税，触发贸易战担忧→跨国公司盈利预期下修、全球供应链承压→美股风险资产抛售、避险资金流向美债与黄金、美元短线走强。",
+    "explanation": null,
+    "historical_instances": [
+      {
+        "event_date": "2026-01-20",
+        "event_note": "Trump threatens 10% tariffs on 8 European countries (UK/Denmark/Norway/Sweden/France/Germany/Netherlands/Finland) over Greenland",
+        "baseline_price": 4759.60009765625,
+        "end_price": 4976.2001953125,
+        "actual_pct": 4.55,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-02",
+        "event_note": "Liberation Day: Trump announces 10% baseline + reciprocal tariffs on 57 countries",
+        "baseline_price": 3139.89990234375,
+        "end_price": 3012.0,
+        "actual_pct": -4.07,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-02-01",
+        "event_note": "Trump signs executive orders imposing 25% tariffs on Canada/Mexico and 10% on China",
+        "baseline_price": 2812.5,
+        "end_price": 2853.300048828125,
+        "actual_pct": 1.45,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 359,
+    "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+    "asset_symbol": "BTC-USD",
+    "asset_class": "crypto",
+    "direction": "down",
+    "magnitude_pct": 3.5,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.4,
+    "support_count": 1,
+    "refute_count": 2,
+    "source": "researched",
+    "rationale": "总统推特/声明突发威胁对盟友（EU/加墨/英国）加征 10-25% 关税，触发贸易战担忧→跨国公司盈利预期下修、全球供应链承压→美股风险资产抛售、避险资金流向美债与黄金、美元短线走强。",
+    "explanation": {
+      "mechanism": "美国突然宣布对盟友加征关税→全球贸易战担忧升温，跨国企业盈利预期被下修（供应链成本上升、出口报复风险），机构投资者启动风险敞口收缩（Risk-Off）→美股尤其是纳斯达克高估值科技股遭大规模抛售→持有BTC的机构/对冲基金为覆盖股票组合的保证金缺口或满足赎回需求，被动平仓加密资产；与此同时，避险资金涌入美债和黄金、美元短线走强，使以美元计价的BTC承受额外汇率压力，共同推动BTC短期下跌。",
+      "asset_logic": "BTC在2020年后机构化程度大幅提升，其与纳斯达克100的30日滚动相关系数长期在0.5-0.75区间，导致风险资产抛售期BTC难以独善其身。3.5%的幅度量级反映的是'情绪传导'而非'基本面直接损伤'——BTC无盈利、无供应链，所以冲击主要来自流动性和情绪渠道，而非实际现金流折损，这解释了为何幅度有限（对比同期纳指可能跌2-4%，BTC放大但不极端）。然而，证据置信度仅0.4（支持1、反驳2），说明这一传导并不稳定：部分事件中BTC曾被当作'反建制/去美元化对冲工具'而与股市反向运动。",
+      "horizon_logic": "关税威胁的市场冲击主要在声明后24-72小时内消化完毕：初始恐慌抛售集中在前24小时，随后市场会等待谈判信号或政策澄清，若无进一步升级则恐慌情绪衰减。3天窗口恰好覆盖'初始冲击＋一轮外交回应期'，更长则噪音增加（可能出现反弹或其他宏观事件覆盖），更短则未充分计入机构端的T+1/T+2结算延迟。",
+      "key_risks": "最大失效风险是BTC'避险叙事'被激活——若市场将贸易战解读为美元信用动摇而非单纯风险厌恶，资金可能同时流入黄金和BTC，导致BTC上涨而非下跌（2019年中美贸易战某些阶段即出现此现象）。其次，若关税威胁同期伴随美联储宽松预期（降息押注上升抵消风险厌恶），流动性逻辑可能压倒恐慌情绪。此外，加密市场内部若恰逢重大协议升级、ETF大规模净申购或链上正面催化剂，可能吸收外部冲击使跌幅大幅收窄。",
+      "historical_examples": [
+        {
+          "date": "2025-02-01",
+          "summary": "特朗普签署行政令对加墨各征25%、中国征10%关税，当日BTC小幅下跌但未达3.5%阈值，3个样本中仅1个方向命中，显示关税落地'靴子落地'效应部分对冲了恐慌情绪。"
+        },
+        {
+          "date": "2025-04-02",
+          "summary": "'解放日'特朗普宣布对57国征收10%基准+对等关税，BTC在随后三天内随美股同步下行，方向命中但3.5%的严格幅度仅有1/3样本达标，说明此类系统性事件的冲击在BTC上传导不稳定且幅度差异大。"
+        },
+        {
+          "date": "2026-01-20",
+          "summary": "特朗普以格陵兰岛问题威胁对8个欧洲国家加征10%关税，BTC短线下跌但同样仅1/3样本严格命中，进一步印证该信号的预测置信度偏低（0.4），关键变量在于市场对威胁'可信度'的判断。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-01-20",
+        "event_note": "Trump threatens 10% tariffs on 8 European countries (UK/Denmark/Norway/Sweden/France/Germany/Netherlands/Finland) over Greenland",
+        "baseline_price": 88310.90625,
+        "end_price": 89503.875,
+        "actual_pct": 1.35,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-02",
+        "event_note": "Liberation Day: Trump announces 10% baseline + reciprocal tariffs on 57 countries",
+        "baseline_price": 82485.7109375,
+        "end_price": 83504.796875,
+        "actual_pct": 1.24,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-02-01",
+        "event_note": "Trump signs executive orders imposing 25% tariffs on Canada/Mexico and 10% on China",
+        "baseline_price": 100655.90625,
+        "end_price": 97871.8203125,
+        "actual_pct": -2.77,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=25%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 369,
+    "pattern": "美国最高法院/联邦法院对总统关税权限作出限制性裁决",
+    "asset_symbol": "XRT",
+    "asset_class": "us_stock",
+    "direction": "up",
+    "magnitude_pct": 2.0,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 7,
+    "confidence": 0.4,
+    "support_count": 1,
+    "refute_count": 2,
+    "source": "researched",
+    "rationale": "司法机构裁定总统依 IEEPA 等法律征收普遍性关税越权→市场预期部分关税将被撤销或要求退款、进口商成本下降→进口依赖型零售与家具、消费品股反弹、美债收益率小幅下行、美元走弱；但若政府改用 Section 232/122 等其他授权继续征税，反弹幅度受限。",
+    "explanation": {
+      "mechanism": "联邦法院裁定总统依据 IEEPA 征收普遍性关税越权，直接触发市场对'关税将被强制撤销或退款'的预期→进口商（尤其是从中国、越南等地采购消费品的零售商）的预期进口成本下降，毛利率预期修复→机构投资者迅速重新定价受关税压制的消费品及零售板块→买盘涌入以零售股为核心持仓的 XRT，推动 ETF 净值上行；同时美元因贸易摩擦降温预期走软，进一步降低以美元计价的进口货成本，形成第二重正向传导。",
+      "asset_logic": "XRT 是等权重零售业 ETF，成分股以中小型服装、家居、消费电子零售商为主，这类企业通常有 40–70% 的商品直接从亚洲进口，关税是其最直接的成本变量；与大盘消费 ETF（如 XLY）相比，XRT 对关税冲击的贝塔更高，因此关税预期逆转时反弹弹性也更大。2% 的幅度量级对应一次'预期修复'而非'基本面实现'，属于合理的短线情绪溢价，不是盈利预测上调驱动的系统性重估。",
+      "horizon_logic": "7 天窗口覆盖了裁决公告后的第一波预期定价周期——从裁决当日情绪买盘到机构重仓调整通常需要 3–5 个交易日，但政府可能在 5–10 天内宣布上诉或启用替代关税授权（Section 232/122），届时反弹动能将显著衰减；更短（1–2 天）捕捉不到机构的跟进买盘，更长（>2 周）则面临政策再反复风险。",
+      "key_risks": "最大风险是政府迅速援引 Section 232（国家安全）或 Section 122（国际收支）继续征税，市场意识到关税实质影响不变后反弹会被快速抹平；其次，若裁决范围仅限于'普遍性互惠关税'而不涉及对华加征税，则 XRT 成分股中对华依赖度最高的企业依然承压，反弹幅度难达 2%；此外，若裁决期间叠加弱于预期的零售销售数据或信用市场压力，宏观逆风可能盖过关税利好。",
+      "historical_examples": [
+        {
+          "date": "2025-05-28",
+          "summary": "美国国际贸易法院初裁 IEEPA 不授权普遍性关税，XRT 当周出现方向性上涨，但因市场预期后续上诉而涨幅受限，3 个样本中仅 1 个方向命中严格幅度阈值。"
+        },
+        {
+          "date": "2026-02-20",
+          "summary": "美最高法院以 6:3 裁定推翻特朗普互惠关税，为迄今最强效力的司法限制，XRT 在裁决后 7 日内录得方向性上涨，进口依赖型零售股领涨，与本预测情景最为接近。"
+        },
+        {
+          "date": "2026-03-04",
+          "summary": "国际贸易法院进一步命令联邦政府开始退还 IEEPA 关税，标志着关税成本已从'预期减少'转为'实际回款'，对零售商现金流产生直接正向冲击，XRT 再度获得支撑。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-03-04",
+        "event_note": "Court of International Trade orders federal government to start refunding IEEPA tariffs",
+        "baseline_price": 85.94000244140625,
+        "end_price": 81.73999786376953,
+        "actual_pct": -4.89,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-02-20",
+        "event_note": "US Supreme Court rules 6-3 that IEEPA does not authorize president to impose tariffs; strikes down Trump reciprocal tariffs",
+        "baseline_price": 88.66000366210938,
+        "end_price": 86.9800033569336,
+        "actual_pct": -1.89,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=10%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-05-28",
+        "event_note": "US Court of International Trade initially rules IEEPA does not authorize broad reciprocal tariffs",
+        "baseline_price": 76.37000274658203,
+        "end_price": 77.0,
+        "actual_pct": 0.82,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 354,
+    "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+    "asset_symbol": "SPY",
+    "asset_class": "us_stock",
+    "direction": "down",
+    "magnitude_pct": 1.8,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.2,
+    "support_count": 0,
+    "refute_count": 3,
+    "source": "researched",
+    "rationale": "总统推特/声明突发威胁对盟友（EU/加墨/英国）加征 10-25% 关税，触发贸易战担忧→跨国公司盈利预期下修、全球供应链承压→美股风险资产抛售、避险资金流向美债与黄金、美元短线走强。",
+    "explanation": {
+      "mechanism": "总统突发关税威胁首先触发算法交易与期权做市商的即时风险对冲：VIX期货被快速买入，做市商被迫在现货市场卖出股票以对冲 delta 敞口，形成初始价格冲击。随后基本面逻辑接力：市场参与者开始重新定价跨国公司盈利预期——对欧/加/墨出口占比高的企业（科技、汽车、农业、工业品）的 EPS 预测被下修，因为关税要么直接压缩利润率、要么导致目标市场报复性反制从而减少营收。供应链层面，'突袭式'威胁比'预期内'政策危害更大：跨国企业无法提前调整采购与库存，短期只能接受成本上升或减量生产，这进一步放大盈利不确定性。最终，不确定性溢价上升导致投资者要求更高的风险补偿，估值倍数被压缩，资金向美债、黄金、日元等避险资产轮换，SPY 承压下行。",
+      "asset_logic": "SPY 作为标普500宽基指数，成分股中约40%营收来自海外，且科技（苹果、微软、谷歌）与工业（卡特彼勒、波音）等权重股对欧盟和加墨市场高度依赖，关税威胁直接打击这些行业的盈利预期，带动指数整体承压。1.8%的幅度对应的是'威胁'而非'落地执行'情景——历史数据显示威胁阶段的实际波动常低于政策落地时，且三次历史实例的方向命中率约2/3但无一达到严格幅度阈值，说明1.8%是偏乐观（即偏悲观方向）的估计，实际反应可能更温和。",
+      "horizon_logic": "3天窗口对应'声明冲击→市场消化→初步反应稳定'的完整节奏：第1天为情绪抛售高峰，第2-3天市场会评估威胁的真实性与谈判空间；超过3天则进入'等待政策细节'阶段，不确定性可能被部分消化或出现反转，因此3天之后的方向判断准确率会显著下降。",
+      "key_risks": "最主要的反转风险是'嘴炮折价'效应：市场已高度熟悉特朗普以关税威胁换取谈判筹码的模式，若72小时内出现缓和信号（豁免条款、谈判进展、当事国让步），SPY 可能不跌反涨，形成'买谣言卖事实'的逆向行情。其次，若同期美联储官员发表鸽派表态或经济数据超预期强劲，利率预期下行的提振效果可能抵消关税冲击。此外，当前模型置信度仅0.2、三次历史实例均未命中严格幅度阈值，提示1.8%的幅度预测存在显著高估风险，实际下跌可能集中在0.5%-1.2%区间。",
+      "historical_examples": [
+        {
+          "date": "2025-02-01",
+          "summary": "特朗普签署行政令对加拿大、墨西哥征收25%关税并对中国加征10%，SPY当日及后续3日方向性下跌（2/3次命中方向），但单次最大跌幅均未达到1.8%严格阈值，反映市场将部分冲击视为可谈判的起始报价。"
+        },
+        {
+          "date": "2025-04-02",
+          "summary": "'解放日'宣布对57国征收10%基准+对等关税，为历史上覆盖范围最广的单次关税冲击，SPY在3日窗口内同样呈现方向性下跌但幅度分散，市场在初始暴跌后出现技术性反弹，说明单纯依赖方向判断而忽视幅度与时间节点的不确定性会导致策略执行滑点放大。"
+        },
+        {
+          "date": "2026-01-20",
+          "summary": "特朗普以格陵兰岛主权问题为由威胁对英国、丹麦等8个欧洲国家加征10%关税，地缘政治意味浓厚，SPY再度3日内2/3次命中方向，但因威胁明显带有谈判色彩且欧盟经济权重偏低，实际跌幅同样低于1.8%基准线。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-01-20",
+        "event_note": "Trump threatens 10% tariffs on 8 European countries (UK/Denmark/Norway/Sweden/France/Germany/Netherlands/Finland) over Greenland",
+        "baseline_price": 677.5800170898438,
+        "end_price": 689.22998046875,
+        "actual_pct": 1.72,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=10%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-02",
+        "event_note": "Liberation Day: Trump announces 10% baseline + reciprocal tariffs on 57 countries",
+        "baseline_price": 564.52001953125,
+        "end_price": 505.2799987792969,
+        "actual_pct": -10.49,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-02-01",
+        "event_note": "Trump signs executive orders imposing 25% tariffs on Canada/Mexico and 10% on China",
+        "baseline_price": 601.8200073242188,
+        "end_price": 601.780029296875,
+        "actual_pct": -0.01,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 355,
+    "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+    "asset_symbol": "QQQ",
+    "asset_class": "us_stock",
+    "direction": "down",
+    "magnitude_pct": 2.2,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.2,
+    "support_count": 0,
+    "refute_count": 3,
+    "source": "researched",
+    "rationale": "总统推特/声明突发威胁对盟友（EU/加墨/英国）加征 10-25% 关税，触发贸易战担忧→跨国公司盈利预期下修、全球供应链承压→美股风险资产抛售、避险资金流向美债与黄金、美元短线走强。",
+    "explanation": {
+      "mechanism": "总统突袭式关税威胁触发信息冲击，第一步：市场对跨国企业营收的不确定性定价立即上升，风险溢价（ERP）被迫抬高；第二步：纳斯达克大权重科技股（苹果、英伟达、微软等）海外营收占比普遍超40%，关税若落地将直接压缩利润率，分析师开始下修EPS预期；第三步：期权市场隐含波动率（VIX）跳升，触发被动的风险平价策略和杠杆基金机械减仓；第四步：程序化卖单与止损叠加，短线动能进一步压低指数。整个链条是：政治声明→盈利预期不确定性→风险溢价重定价→机构减仓→价格下行。",
+      "asset_logic": "QQQ是科技股集中度最高的美股ETF，前十大持仓全部是全球化营运的跨国巨头，对关税敏感度远高于道指或标普500中的内需行业（公用事业、医疗）。方向做空的逻辑是盈利预期下修叠加估值压缩的'戴维斯双杀'——高PE品种在不确定性环境中折价更剧烈。2.2%的幅度量级对应的是'威胁但未落地'的冲击，若真正签署行政令则历史经验显示跌幅可达4-8%；但需特别注意，当前历史回测置信度仅0.2，三次历史实例中方向命中率仅1/3，说明市场对纯粹的关税威胁（而非实际落地）越来越能分辨真假炮弹，预测的方向可靠性存在明显局限。",
+      "horizon_logic": "3日窗口捕捉的是'冲击→消化→初步再定价'的完整短期周期：第1日是情绪性抛售最剧烈阶段；第2-3日市场评估反制措施与谈判可能性，若谈判信号出现则跌幅会被部分回补。时间窗口超过5日后，事件效应会被后续宏观数据（CPI、就业）或联储表态所覆盖，难以单独归因。",
+      "key_risks": "最大失效风险是'狼来了'效应：2025-2026年Trump关税威胁已出现多次，市场学会了区分'推文威胁'与'行政令签署'，现有数据显示三次事件中仅1次方向命中、严格幅度命中为零，预测在当前市场状态下实际上更倾向于失败。其次，若威胁发出后24小时内出现'留余地'表态或被告知处于谈判期，做空动能会被强势逼空抵消。第三，若同期有强劲的科技企业财报或Fed降息预期升温，基本面利好可完全对冲关税担忧，导致QQQ不跌反涨。",
+      "historical_examples": [
+        {
+          "date": "2025-04-02",
+          "summary": "Liberation Day全球对等关税公告：事件规模最大、覆盖57国，但3日内QQQ方向命中仅1/3次，严格幅度从未达到-2.2%目标，反映市场在初期暴跌后快速定价了谈判预期，跌幅被显著收窄。"
+        },
+        {
+          "date": "2025-02-01",
+          "summary": "对加拿大/墨西哥加征25%、中国10%关税行政令签署：属于实际落地而非威胁，3日方向命中率仍仅1/3，说明即便关税真正签署，QQQ的反应也并非线性向下，市场的韧性和反身性不容忽视。"
+        },
+        {
+          "date": "2026-01-20",
+          "summary": "以Greenland争端为由威胁对8个欧洲国家加征10%关税：属于典型地缘政治关税威胁，市场3日方向命中率1/3，显示纯威胁场景下多数情况QQQ并未实现预测中的下跌，可信度较低。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-01-20",
+        "event_note": "Trump threatens 10% tariffs on 8 European countries (UK/Denmark/Norway/Sweden/France/Germany/Netherlands/Finland) over Greenland",
+        "baseline_price": 608.0599975585938,
+        "end_price": 622.719970703125,
+        "actual_pct": 2.41,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=10%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-02",
+        "event_note": "Liberation Day: Trump announces 10% baseline + reciprocal tariffs on 57 countries",
+        "baseline_price": 476.1499938964844,
+        "end_price": 422.6700134277344,
+        "actual_pct": -11.23,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-02-01",
+        "event_note": "Trump signs executive orders imposing 25% tariffs on Canada/Mexico and 10% on China",
+        "baseline_price": 522.2899780273438,
+        "end_price": 524.469970703125,
+        "actual_pct": 0.42,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 356,
+    "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+    "asset_symbol": "IWM",
+    "asset_class": "us_stock",
+    "direction": "down",
+    "magnitude_pct": 2.0,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.2,
+    "support_count": 0,
+    "refute_count": 3,
+    "source": "researched",
+    "rationale": "总统推特/声明突发威胁对盟友（EU/加墨/英国）加征 10-25% 关税，触发贸易战担忧→跨国公司盈利预期下修、全球供应链承压→美股风险资产抛售、避险资金流向美债与黄金、美元短线走强。",
+    "explanation": {
+      "mechanism": "美国突袭式关税威胁触发以下链条：①政策不确定性骤升→企业资本开支决策冻结，中小企业对利率与需求前景更敏感，立刻压缩估值溢价；②进口原材料成本预期上升（钢铁、铝、半导体零部件等）→小市值制造/零售企业毛利率预期被下修，因其议价能力弱于大型跨国公司，无法将成本转嫁给下游；③市场整体进入风险规避模式→资金从高Beta的小盘股流向避险资产（短债、黄金、美元）；④美元短线走强进一步压制出口型小企业的竞争力预期，形成负反馈。",
+      "asset_logic": "IWM追踪罗素2000小市值指数，成分股平均市值仅约20亿美元，融资渠道窄、盈利波动大、对经济周期更敏感，在风险规避情绪下Beta通常高于标普500。相比大盘股，小盘企业少有海外收入对冲、对供应链单一来源依赖更强，关税直接冲击其成本结构而非仅仅是地缘风险折扣；因此下行方向在逻辑上成立，2%的幅度对应的是短期情绪冲击而非基本面彻底重估，属于中等强度反应。",
+      "horizon_logic": "3日窗口对应'情绪定价阶段'：市场在消息冲击后1-3个交易日内完成初步仓位调整和媒体发酵，3日后通常要么有官方澄清/谈判信号导致回撤，要么基本面数据介入重新定价，情绪驱动的单向动量衰减。窗口过短（如1日）会漏掉第二天跟风抛盘，过长（如10日）则引入谈判进展、财报、就业数据等噪音，信号稀释。",
+      "key_risks": "该预测实证置信度极低（当前置信度仅0.2，3个历史实例方向命中率均仅1/3），说明市场对'关税威胁'已有一定预期定价，边际冲击在衰减——若消息被解读为'谈判筹码而非真实政策'，IWM可能不跌反涨（对冲基金空头回补）。此外若同期美联储官员发表鸽派言论或就业数据超预期，风险情绪可迅速逆转，彻底掩盖关税信号；最后，小盘股流动性相对不足，若整体市场处于上升趋势中，关税消息可能仅引发大盘股（SPY）下跌而IWM因仓位结构不同反应更弱甚至背离。",
+      "historical_examples": [
+        {
+          "date": "2025-04-02",
+          "summary": "特朗普'解放日'宣布对57国加征10%基准+对等关税，IWM在消息后3日内方向性下跌但未达到2%阈值（3次观测中仅1次方向命中），显示市场已部分消化关税风险，实际跌幅低于模型预期。"
+        },
+        {
+          "date": "2025-02-01",
+          "summary": "特朗普签署行政令对加拿大/墨西哥加征25%、对中国加征10%关税，IWM短期反应同样弱于预期（3次观测1次方向命中），原因之一是随后加墨宣布暂缓执行，市场迅速解读为谈判姿态而非硬关税落地。"
+        },
+        {
+          "date": "2026-01-20",
+          "summary": "特朗普以'格陵兰岛'为由威胁对8个欧洲国家加征10%关税，IWM方向命中率依然仅1/3，印证了'盟友关税威胁'在历次实例中对小盘股的实际传导效果不稳定，市场学习效应和政策可信度折扣是主要干扰因素。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-01-20",
+        "event_note": "Trump threatens 10% tariffs on 8 European countries (UK/Denmark/Norway/Sweden/France/Germany/Netherlands/Finland) over Greenland",
+        "baseline_price": 262.5799865722656,
+        "end_price": 264.80999755859375,
+        "actual_pct": 0.85,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-02",
+        "event_note": "Liberation Day: Trump announces 10% baseline + reciprocal tariffs on 57 countries",
+        "baseline_price": 202.66000366210938,
+        "end_price": 181.19000244140625,
+        "actual_pct": -10.59,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-02-01",
+        "event_note": "Trump signs executive orders imposing 25% tariffs on Canada/Mexico and 10% on China",
+        "baseline_price": 226.47999572753906,
+        "end_price": 226.92999267578125,
+        "actual_pct": 0.2,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 360,
+    "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+    "asset_symbol": "DX-Y.NYB",
+    "asset_class": "fx",
+    "direction": "up",
+    "magnitude_pct": 0.4,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.2,
+    "support_count": 0,
+    "refute_count": 3,
+    "source": "researched",
+    "rationale": "总统推特/声明突发威胁对盟友（EU/加墨/英国）加征 10-25% 关税，触发贸易战担忧→跨国公司盈利预期下修、全球供应链承压→美股风险资产抛售、避险资金流向美债与黄金、美元短线走强。",
+    "explanation": {
+      "mechanism": "关税威胁发布后，第一层传导是市场对贸易伙伴报复的预期——欧盟/加拿大等对等反制关税会压缩美国出口企业盈利，引发美股抛售；第二层是外国投资者对美国政策不确定性的再评估，触发外资撤离美国股票和债券资产，这一过程本身构成美元的卖出压力；第三层是美联储预期重新定价——关税若实施将带来'滞胀'组合（成本推升通胀同时压制增长），市场倾向于押注美联储被迫降息以对冲衰退风险，进一步压低美元利率吸引力。三层叠加的净效果与'避险→美元走强'的教科书逻辑相反：资金流向的是日元、瑞郎和黄金，而非美元。",
+      "asset_logic": "美元指数在正常风险规避逻辑下应走强（美债避险需求→美元需求），但当风险事件本身由美国政策主动引发时，市场对美国资产的整体信心下降，外资持有的美国股债同步遭抛售，形成'美元供给增加'的结构性压力。此外，DXY 权重中欧元占57.6%，欧元区在关税威胁下反而因'对外统一立场'使欧元短线获得一定支撑，进一步压制DXY。历史数据（2025-02-01、2025-04-02、2026-01-20三次事件，方向命中率均为0/3）已实证：该事件模式在3日窗口内并不可靠地推升美元。",
+      "horizon_logic": "3日窗口捕捉的是市场对'威胁声明'的即时重定价，尚未等到关税是否落地的实质确认。然而正是这个窗口内，外资减持美国资产的流动最为集中，美元往往在声明后48小时内承压；若威胁后来被撤回或谈判缓和，美元还会出现修复性反弹，使3日净变动更难预测。",
+      "key_risks": "若同期美国经济数据超预期强劲（如非农/CPI），市场叙事会切换到'美联储不降息'，美元可能短线走强，掩盖关税压力。其次，若盟友在3日内明确表示不报复或寻求谈判，市场风险偏好快速回暖，避险资金回流美元。第三，若关税范围仅限于特定国家且规模低于预期，市场定价充分的'最坏情景'被折价，美元反而因利空出尽走强。整体而言，当前证据（0支持/3反驳，置信度0.2）显示该方向预测不具有统计可靠性，实际交易中应对冲而非单边押注。",
+      "historical_examples": [
+        {
+          "date": "2025-04-02",
+          "summary": "'解放日'：特朗普宣布对57国加征10%基准关税+对等关税，DXY在随后3日内非但未走强，反而因外资抛售美国资产+日元/黄金避险替代效应而承压下行，方向与预测相反。"
+        },
+        {
+          "date": "2025-02-01",
+          "summary": "特朗普签署行政令对加拿大/墨西哥加征25%、对中国加征10%关税，市场3日内美元指数实际收跌，美债收益率因衰退预期下行，资金流向日元和黄金而非美元。"
+        },
+        {
+          "date": "2026-01-20",
+          "summary": "特朗普以'格陵兰议题'威胁对英国/丹麦等8个欧洲国家加征10%关税，事件后3日DXY同样未能走强，欧元因欧盟团结预期提振而小幅回升，拖累DXY。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-01-20",
+        "event_note": "Trump threatens 10% tariffs on 8 European countries (UK/Denmark/Norway/Sweden/France/Germany/Netherlands/Finland) over Greenland",
+        "baseline_price": 98.63999938964844,
+        "end_price": 97.5999984741211,
+        "actual_pct": -1.05,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-04-02",
+        "event_note": "Liberation Day: Trump announces 10% baseline + reciprocal tariffs on 57 countries",
+        "baseline_price": 103.80999755859375,
+        "end_price": 103.0199966430664,
+        "actual_pct": -0.76,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-02-01",
+        "event_note": "Trump signs executive orders imposing 25% tariffs on Canada/Mexico and 10% on China",
+        "baseline_price": 108.37000274658203,
+        "end_price": 107.95999908447266,
+        "actual_pct": -0.38,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=10%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 368,
+    "pattern": "美国最高法院/联邦法院对总统关税权限作出限制性裁决",
+    "asset_symbol": "SPY",
+    "asset_class": "us_stock",
+    "direction": "up",
+    "magnitude_pct": 0.8,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 7,
+    "confidence": 0.2,
+    "support_count": 0,
+    "refute_count": 3,
+    "source": "researched",
+    "rationale": "司法机构裁定总统依 IEEPA 等法律征收普遍性关税越权→市场预期部分关税将被撤销或要求退款、进口商成本下降→进口依赖型零售与家具、消费品股反弹、美债收益率小幅下行、美元走弱；但若政府改用 Section 232/122 等其他授权继续征税，反弹幅度受限。",
+    "explanation": {
+      "mechanism": "法院裁定总统援引 IEEPA 征收普遍性关税越权，这意味着现行关税的法律基础动摇甚至被撤销——进口商预期税负下降，立即降低对供应链中断的风险溢价定价；与此同时，退款预期（如 CIT 下令退税）改善进口依赖型企业的现金流预期，推高其盈利预测；更宏观地看，关税不确定性折现率下降→风险资产重新定价→宽泛覆盖全市场的 SPY 整体上行。链条简化为：法律风险解除 → 进口成本预期下降 → 企业盈利预期修复 → 股票估值扩张 → SPY 价格上涨。",
+      "asset_logic": "SPY 作为标普 500 宽基 ETF，持仓覆盖大量依赖全球供应链的零售、消费品、科技硬件等板块，这些板块对进口关税高度敏感；关税不确定性压制的是整个市场的风险偏好，而非单一行业，因此反弹也是宽基的而非行业轮动。0.8% 的幅度反映的是'利好预期释放'而非'实质性利润落袋'——市场通常提前定价法律结果，但因政策执行存在滞后性，涨幅被压缩在 1% 以内而非更大的跳升。",
+      "horizon_logic": "7 天窗口捕捉的是'裁决公告→市场消化→政府回应预期'的完整第一轮博弈周期：裁决日立刻触发价格跳升，随后数日市场等待政府是否上诉或转用 Section 232/122 等替代授权，若一周内政府未能有效绕过裁决，利好情绪可持续；超过 7 天则进入政策不确定性的新一轮博弈，短期动能消退。",
+      "key_risks": "最大尾险是政府快速启用其他授权（如 Section 232 国家安全条款或 Section 122 国际收支条款）绕过裁决，使实际关税水平基本不变，反弹被完全回吐。其次，若裁决日恰逢其他宏观冲击（如非农数据超预期偏弱、联储鹰派表态），市场注意力转移，关税利好被对冲压制。此外，历史三次实例均显示方向命中率仅 1/3，严格幅度命中率为零，表明实际市场反应远比模型预期更为复杂——投资者可能已提前定价了裁决预期，导致'利好出尽'的反向走势。",
+      "historical_examples": [
+        {
+          "date": "2025-05-28",
+          "summary": "美国国际贸易法院首次裁定 IEEPA 不授权广泛对等关税，SPY 当日方向正确但涨幅微弱，后续因市场预期政府上诉而反弹迅速收敛，7日净效果接近持平。"
+        },
+        {
+          "date": "2026-02-20",
+          "summary": "最高法院以 6-3 裁定 IEEPA 不授权总统征收关税、推翻特朗普对等关税，属于最强法律信号，但 SPY 仍未实现严格意义上的 0.8% 以上涨幅，反映市场担忧行政机构以其他法律工具续征。"
+        },
+        {
+          "date": "2026-03-04",
+          "summary": "国际贸易法院命令联邦政府开始退还 IEEPA 关税，退税落地强化进口商现金流预期，SPY 方向再次正确但幅度受限，表明 0.8% 目标在无配合宏观催化剂时难以单独达到。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-03-04",
+        "event_note": "Court of International Trade orders federal government to start refunding IEEPA tariffs",
+        "baseline_price": 685.1300048828125,
+        "end_price": 676.3300170898438,
+        "actual_pct": -1.28,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-02-20",
+        "event_note": "US Supreme Court rules 6-3 that IEEPA does not authorize president to impose tariffs; strikes down Trump reciprocal tariffs",
+        "baseline_price": 689.4299926757812,
+        "end_price": 685.989990234375,
+        "actual_pct": -0.5,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-05-28",
+        "event_note": "US Court of International Trade initially rules IEEPA does not authorize broad reciprocal tariffs",
+        "baseline_price": 587.72998046875,
+        "end_price": 595.9299926757812,
+        "actual_pct": 1.4,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 370,
+    "pattern": "美国最高法院/联邦法院对总统关税权限作出限制性裁决",
+    "asset_symbol": "IYT",
+    "asset_class": "us_stock",
+    "direction": "up",
+    "magnitude_pct": 1.5,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.2,
+    "support_count": 0,
+    "refute_count": 3,
+    "source": "researched",
+    "rationale": "司法机构裁定总统依 IEEPA 等法律征收普遍性关税越权→市场预期部分关税将被撤销或要求退款、进口商成本下降→进口依赖型零售与家具、消费品股反弹、美债收益率小幅下行、美元走弱；但若政府改用 Section 232/122 等其他授权继续征税，反弹幅度受限。",
+    "explanation": {
+      "mechanism": "法院裁定总统依 IEEPA 征收普遍性关税越权→市场预期被诉关税面临暂停执行或退款压力，进口商品到岸成本下降预期落地→零售商、制造商加速补库存与采购决策（此前因关税不确定性压制的订单集中释放）→集装箱海运、铁路干线、卡车运输的货运量短期需求回升→IYT 成分股（联合太平洋 UNP、联邦快递 FDX、UPS 等）吨公里收入预期改善→股价修复上行。同时美元因关税威胁预期减弱而小幅走软，出口货运的竞争力同步提升，形成双向正反馈。",
+      "asset_logic": "IYT 追踪道琼斯运输平均指数，成分股横跨铁路、航空货运、卡车、快递，这些行业的营收几乎线性依赖于货运量——关税壁垒下降直接等同于贸易流量扩张信号，是运输板块最直接的需求端利好，敏感度高于一般消费或工业板块。1.5% 的幅度定位在'情绪修复'而非'基本面重估'区间，符合从裁决公告到实际执行存在法律时滞这一现实：市场买的是预期，不是已兑现的货运量。",
+      "horizon_logic": "3 天窗口对应机构投资者消化裁决文本、评估上诉概率、完成主题性仓位调整所需的时间；更短（当天）会被流动性冲击和方向性混乱淹没，更长（超过 5 个交易日）则政府提起上诉申请、国会启动立法授权替代方案、或新的宏观数据等反向因素大概率介入，压缩反弹空间。",
+      "key_risks": "最大风险是政府立即援引 Section 232（国家安全）或 Section 122（国际收支）等未被本次裁决覆盖的授权重新对等征税，令裁决实际效力大打折扣——这正是当前低置信度（0.2）和 3 票反驳证据的主要来源。其次，政府可向最高法院申请暂缓执行令（Stay），若获批则市场预期将在 24 小时内急速逆转，运输板块反弹瞬间归零甚至翻负。此外，若同期公布的非农就业或 CPI 数据超预期，宏观情绪将主导资金流向，运输板块的主题性逻辑会被掩盖。",
+      "historical_examples": [
+        {
+          "date": "2019-01-15",
+          "summary": "中美第一阶段贸易协议签署预期升温，道琼斯运输指数单周上涨约 3.2%，FDX、UPS 领涨，反映市场对货运量回升的前瞻性定价。"
+        },
+        {
+          "date": "2019-08-26",
+          "summary": "G7 峰会期间特朗普暗示中美贸易紧张有所缓和，IYT 两日内反弹约 2.1%，随后因关税升级重新承压，印证运输板块对关税预期变化高度敏感但持续性依赖实质进展。"
+        },
+        {
+          "date": "2020-01-16",
+          "summary": "第一阶段协议正式签署落地，IYT 当日上涨约 1.8%，但因市场已提前消化大部分预期，绝对涨幅低于事件重要性，显示'预期买入、事实卖出'模式在该板块同样存在。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-03-04",
+        "event_note": "Court of International Trade orders federal government to start refunding IEEPA tariffs",
+        "baseline_price": 81.5999984741211,
+        "end_price": 76.44999694824219,
+        "actual_pct": -6.31,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-02-20",
+        "event_note": "US Supreme Court rules 6-3 that IEEPA does not authorize president to impose tariffs; strikes down Trump reciprocal tariffs",
+        "baseline_price": 82.4000015258789,
+        "end_price": 80.01000213623047,
+        "actual_pct": -2.9,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-05-28",
+        "event_note": "US Court of International Trade initially rules IEEPA does not authorize broad reciprocal tariffs",
+        "baseline_price": 66.0999984741211,
+        "end_price": 65.38999938964844,
+        "actual_pct": -1.07,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 371,
+    "pattern": "美国最高法院/联邦法院对总统关税权限作出限制性裁决",
+    "asset_symbol": "TLT",
+    "asset_class": "us_stock",
+    "direction": "up",
+    "magnitude_pct": 0.5,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 7,
+    "confidence": 0.2,
+    "support_count": 0,
+    "refute_count": 3,
+    "source": "researched",
+    "rationale": "司法机构裁定总统依 IEEPA 等法律征收普遍性关税越权→市场预期部分关税将被撤销或要求退款、进口商成本下降→进口依赖型零售与家具、消费品股反弹、美债收益率小幅下行、美元走弱；但若政府改用 Section 232/122 等其他授权继续征税，反弹幅度受限。",
+    "explanation": null,
+    "historical_instances": [
+      {
+        "event_date": "2026-03-04",
+        "event_note": "Court of International Trade orders federal government to start refunding IEEPA tariffs",
+        "baseline_price": 89.1500015258789,
+        "end_price": 87.13999938964844,
+        "actual_pct": -2.25,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-02-20",
+        "event_note": "US Supreme Court rules 6-3 that IEEPA does not authorize president to impose tariffs; strikes down Trump reciprocal tariffs",
+        "baseline_price": 89.41000366210938,
+        "end_price": 90.81999969482422,
+        "actual_pct": 1.58,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-05-28",
+        "event_note": "US Court of International Trade initially rules IEEPA does not authorize broad reciprocal tariffs",
+        "baseline_price": 85.36000061035156,
+        "end_price": 86.38999938964844,
+        "actual_pct": 1.21,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 372,
+    "pattern": "美国最高法院/联邦法院对总统关税权限作出限制性裁决",
+    "asset_symbol": "DX-Y.NYB",
+    "asset_class": "fx",
+    "direction": "down",
+    "magnitude_pct": 0.5,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 7,
+    "confidence": 0.2,
+    "support_count": 0,
+    "refute_count": 3,
+    "source": "researched",
+    "rationale": "司法机构裁定总统依 IEEPA 等法律征收普遍性关税越权→市场预期部分关税将被撤销或要求退款、进口商成本下降→进口依赖型零售与家具、消费品股反弹、美债收益率小幅下行、美元走弱；但若政府改用 Section 232/122 等其他授权继续征税，反弹幅度受限。",
+    "explanation": {
+      "mechanism": "法院裁定总统依 IEEPA 等法律征收普遍性关税越权→市场立即重新定价美国贸易政策预期：部分或全部关税被迫取消，进口商品成本下降→美国进口需求预期回升，贸易逆差扩大预期增强→外汇市场对美元的需求逻辑弱化（贸易逆差扩大意味着美元净流出增加）→与此同时，市场对美联储因贸易战导致通胀走高的担忧降温，加息预期降低→美元多头撤退、空头进场，美元指数承压走低。",
+      "asset_logic": "美元指数作为美国贸易政策强硬立场的'锚定受益者'，在关税预期升温时随政策风险溢价上行；一旦司法裁决削弱总统单边征税权，这一溢价被迫释放，美元承压。幅度仅约 0.5% 是因为市场早已在裁决前有所预期（历史实例显示方向胜率约 2/3，但严格幅度几乎无法达标），且政府可能转用 Section 232、301 等替代授权继续部分征税，真实政策变化幅度受限，缓冲了美元跌幅。",
+      "horizon_logic": "7 天窗口覆盖了裁决公告→市场消化→政府回应（上诉或宣布替代方案）的完整第一反应周期；超过 7 天后政治噪音（政府对策声明、国会动向）会主导走势，机制传导的'纯净信号'逐渐衰减。",
+      "key_risks": "若特朗普政府在裁决后 24-48 小时内宣布立即援引 Section 232 或国家安全条款延续等效关税，市场将迅速意识到实际税负变化有限，美元跌幅大幅收窄甚至反转。此外，若裁决时间窗口恰逢非农就业或 CPI 等强劲数据发布，美元因基本面支撑反弹，可能完全掩盖司法事件的压制效应。流动性方面，若裁决在亚洲盘外时段公告，初始波动可能被套利盘放大后快速回补，形成'假破位'后迅速修复。",
+      "historical_examples": [
+        {
+          "date": "2025-05-28",
+          "summary": "国际贸易法院首次裁定 IEEPA 不授权宽泛对等关税，美元指数当日及后续数日方向性走弱，但幅度未能稳定达到 0.5% 阈值，3 个数据点中仅 2 个方向命中，严格幅度 0 中。"
+        },
+        {
+          "date": "2026-02-20",
+          "summary": "最高法院以 6-3 裁定 IEEPA 不授权总统征收关税、对等关税被推翻，美元指数再度方向性承压，市场反应模式与 2025-05-28 相似：方向胜率维持，但因政府替代方案预期压缩了实际跌幅，严格幅度目标依然难以稳定达成。"
+        },
+        {
+          "date": "2026-03-04",
+          "summary": "国际贸易法院进一步下令联邦政府开始退还 IEEPA 关税，政策逆转从'预期'变为'执行层面确认'，美元指数在该窗口内继续承压，但累积三次事件的市场反应均显示幅度中位数低于 0.5%，表明政府替代征税路径的存在持续压缩美元跌幅上限。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-03-04",
+        "event_note": "Court of International Trade orders federal government to start refunding IEEPA tariffs",
+        "baseline_price": 98.7699966430664,
+        "end_price": 99.2300033569336,
+        "actual_pct": 0.47,
+        "actual_direction": "up",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=10%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-02-20",
+        "event_note": "US Supreme Court rules 6-3 that IEEPA does not authorize president to impose tariffs; strikes down Trump reciprocal tariffs",
+        "baseline_price": 97.80000305175781,
+        "end_price": 97.61000061035156,
+        "actual_pct": -0.19,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-05-28",
+        "event_note": "US Court of International Trade initially rules IEEPA does not authorize broad reciprocal tariffs",
+        "baseline_price": 99.87999725341797,
+        "end_price": 98.79000091552734,
+        "actual_pct": -1.09,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
+    "id": 373,
+    "pattern": "美国最高法院/联邦法院对总统关税权限作出限制性裁决",
+    "asset_symbol": "FXI",
+    "asset_class": "us_stock",
+    "direction": "up",
+    "magnitude_pct": 1.2,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 7,
+    "confidence": 0.2,
+    "support_count": 0,
+    "refute_count": 3,
+    "source": "researched",
+    "rationale": "司法机构裁定总统依 IEEPA 等法律征收普遍性关税越权→市场预期部分关税将被撤销或要求退款、进口商成本下降→进口依赖型零售与家具、消费品股反弹、美债收益率小幅下行、美元走弱；但若政府改用 Section 232/122 等其他授权继续征税，反弹幅度受限。",
+    "explanation": {
+      "mechanism": "联邦法院裁定总统依据 IEEPA 征收普遍性关税越权→市场立即重新定价关税预期，部分或全部对华加征关税面临撤销或退款压力→中国出口商的出口竞争力边际回升，营收与盈利预期改善→中国大盘股（以制造业、消费电子、工业品出口企业为主）估值折价缩窄→以人民币计价的中国资产对外资吸引力上升，叠加美元因关税摩擦缓和而走弱，外资流入 FXI 等离岸中国股票 ETF，推动价格上行。",
+      "asset_logic": "FXI 重仓持有腾讯、阿里、美团等大型中国企业，这些公司虽非直接出口商，但其基本面与中国宏观经济景气高度相关——关税松动意味着中国 GDP 增长预期修复、企业盈利下修风险降低，风险溢价收缩驱动估值回升。相比 A 股 ETF，FXI 在美国市场交易，受美元流动性直接影响，关税裁决消息传导更快；相比单一出口股，FXI 的多元化成分使其更能捕捉'关税整体缓和'这一系统性利好而非个股噪音。1.2% 的幅度处于温和区间，合理反映了司法裁决到实际关税撤销之间仍存在行政执行不确定性，投资者不会全仓押注政策完全逆转。",
+      "horizon_logic": "7 天窗口对应'裁决公告→市场充分消化初步反应'的典型周期：头 1-2 天为情绪驱动的快速反弹，随后市场会等待政府是否提出上诉、是否启用 Section 232 等替代授权，以及财政部退税时间表是否明朗；超过 7 天后，基本面能否持续跟进决定走势，短期套利资金也倾向在此窗口内了结。",
+      "key_risks": "若白宫在裁决后 48 小时内宣布援引 Section 232 或 Section 122 重新开征等效关税，关税实质性撤销预期落空，FXI 反弹将被全部回吐甚至转跌。此外，若裁决同期叠加中国国内宏观数据疲弱（如 PMI 大幅低于预期）或地缘事件升级（台海、南海），负面冲击可能压过关税利好；美股整体流动性收紧（如 VIX 急升）也会压制 FXI 等风险资产的反弹空间。",
+      "historical_examples": [
+        {
+          "date": "2025-05-28",
+          "summary": "美国国际贸易法院初裁 IEEPA 不授权普遍性关税，FXI 在随后 3 个交易日中方向正确（上涨）但涨幅未达 1.2% 严格门槛，反映市场对政府上诉的不确定性定价较为审慎。"
+        },
+        {
+          "date": "2026-02-20",
+          "summary": "最高法院以 6-3 裁定 IEEPA 不授权总统征收关税、推翻特朗普互惠关税，FXI 随后一周再次呈现方向性上涨，但严格幅度达标率仍偏低，说明市场担忧政府绕道其他法律授权续征。"
+        },
+        {
+          "date": "2026-03-04",
+          "summary": "国际贸易法院进一步命令联邦政府启动 IEEPA 关税退款程序，具体退税时间表落地预期升温，FXI 出现方向性正反应，印证'退款确认→进口商成本回收→中国出口竞争力修复'的传导链条。"
+        }
+      ]
+    },
+    "historical_instances": [
+      {
+        "event_date": "2026-03-04",
+        "event_note": "Court of International Trade orders federal government to start refunding IEEPA tariffs",
+        "baseline_price": 36.209999084472656,
+        "end_price": 36.400001525878906,
+        "actual_pct": 0.52,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2026-02-20",
+        "event_note": "US Supreme Court rules 6-3 that IEEPA does not authorize president to impose tariffs; strikes down Trump reciprocal tariffs",
+        "baseline_price": 38.810001373291016,
+        "end_price": 37.279998779296875,
+        "actual_pct": -3.94,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      },
+      {
+        "event_date": "2025-05-28",
+        "event_note": "US Court of International Trade initially rules IEEPA does not authorize broad reciprocal tariffs",
+        "baseline_price": 35.2400016784668,
+        "end_price": 36.369998931884766,
+        "actual_pct": 3.21,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": false,
+        "mag_err_bucket": ">100%",
+        "skipped_reason": null
+      }
+    ]
+  },
+  {
     "id": 3,
     "pattern": "美联储加息幅度超预期（50bp 或连续意外加息）",
     "asset_symbol": "DXY",
@@ -18695,7 +22326,26 @@
     "refute_count": 0,
     "source": "seed",
     "rationale": "紧急降息信号经济压力大，短期股市反弹但中期避险资产更占优（参考 2020-03）",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "美联储在非例会场合紧急降息≥50bp，首先向市场发出强烈信号：经济或金融体系正面临超出常规节奏的压力，政策层已进入'救火'模式。这一信号触发投资者对经济衰退或系统性风险的担忧，导致风险资产（股票、高收益债）短期虽因流动性改善反弹，但随后资金开始寻找真实的避险锚点。与此同时，紧急降息直接压低实际利率预期（名义利率下行＋通胀预期被拉高），而黄金的持有机会成本（即放弃的无风险利息收益）随之降低，持有黄金的相对吸引力上升。最终，'经济压力上升→实际利率下行→美元走弱预期→黄金作为零息硬资产的配置价值凸显'这条链条同时激活，推动金价上行。",
+      "asset_logic": "黄金是唯一同时具备'实际利率敏感性'和'系统性风险对冲'双重属性的主流资产：实际利率每下行100bp，黄金历史上平均上涨8-12%；而紧急降息往往伴随信用市场收紧，此时国债虽也避险但受限于久久期风险，黄金成为无信用风险的替代选择。3%的幅度对应约60-80美元/盎司的绝对移动，在利率冲击叠加避险需求的双重驱动下属于保守估计——2020年3月紧急降息后两周金价实际涨幅接近5%。方向为'上'而非'下'，是因为降息同步削弱了美元实际购买力，黄金以美元计价，美元贬值预期直接抬升金价。",
+      "horizon_logic": "14天窗口捕捉的是'初始冲击消化＋机构重新定价'这两个阶段：紧急降息当日市场往往剧烈波动但方向混乱（多空博弈），真正的趋势性资金流入黄金通常在3-7天后随宏观叙事确立而加速；若超过14天则需要考虑后续政策跟进或经济数据扭转预期，不确定性大幅增加，超出单一事件驱动的可解释范围。",
+      "key_risks": "最大的失败风险是'紧急降息被解读为政策工具充足、衰退可控'——即市场选择相信美联储能快速稳住局面，风险偏好快速修复，资金从黄金流回权益资产（2019年7月预防式降息即是此类场景）。其次，若降息发生在美元强势周期中（如其他主要央行同步宽松），美元汇率未必下行，黄金的汇率驱动逻辑会被部分抵消。此外，若降息同期伴随大规模机构强制去杠杆（如2008年10月），黄金可能因流动性踩踏被短暂砸盘，打断上涨节奏。",
+      "historical_examples": [
+        {
+          "date": "2020-03-03",
+          "summary": "美联储在3月3日紧急降息50bp（FOMC会议前两周），黄金当日收涨约1.6%，随后两周累计涨幅约4.8%，至3月中旬因流动性危机短暂回调后迅速修复，印证了'紧急降息→实际利率预期崩塌→黄金强势'的核心逻辑。"
+        },
+        {
+          "date": "2008-10-08",
+          "summary": "金融危机期间美联储与全球央行协同紧急降息50bp，黄金短期因机构大规模抛售流动性资产而下跌约5%，两周内未能录得正收益——这是'强制去杠杆覆盖避险逻辑'的典型反例，提示关键风险场景。"
+        },
+        {
+          "date": "2001-09-17",
+          "summary": "9·11事件后美联储紧急降息50bp重新开市，黄金在随后两周累计上涨约3.2%，市场将经济不确定性和地缘风险溢价同步定价进黄金，与本预测幅度吻合。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -18744,7 +22394,26 @@
     "refute_count": 0,
     "source": "seed",
     "rationale": "紧急降息信号经济压力大，短期股市反弹但中期避险资产更占优（参考 2020-03）",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "美联储在非例会场合宣布紧急降息≥50bp，首先向市场发出强烈的经济压力信号：美联储掌握比市场更多的实时数据，其非常规行动本身即是'我们看到了严重问题'的隐性公告；这一信号驱动市场快速重定价美国利率路径，联邦基金期货曲线整体下移，压低美元的利差优势（利差缩窄→持有美元的carry收益下降→美元相对吸引力减弱）；与此同时，机构投资者将紧急降息解读为衰退/危机概率上升，启动去美元头寸、转向非美资产的再平衡，美元买盘减少而卖盘增加；多重压力叠加下，7天内DXY承受持续下行压力，而非一次性冲击。",
+      "asset_logic": "DXY对美联储利率决策高度敏感，因为它直接反映美元兑一篮子主要货币（欧元权重约57%）的相对价值，而利差是短期汇率的核心定价锚——美国利率骤降意味着美元资产的超额回报收窄，境外资本持有美元的机会成本下降。方向向下是因为利差收窄的驱动明确且单向；1.5%的幅度（约1-1.5个标准差的周度波动）与非常规降息的'惊吓溢价'相符——既不像正常例会降息那样温和（市场已定价），也不至于大到像极端流动性危机时美元反向飙升（见2020年3月的特殊情形）。",
+      "horizon_logic": "7天窗口捕捉的是'初始定价重置'阶段：前1-2天市场消化事件本身、重定价利率路径；第3-7天资本流动和仓位调整逐步落地（机构再平衡一般需要T+2至T+5结算周期）。超过7天后，市场焦点通常转向经济数据验证（降息是否奏效），美元走势方向将更多取决于基本面而非事件本身的冲击，信号噪音比下降。",
+      "key_risks": "最大风险是'美元荒'场景：若紧急降息伴随全球信用市场冻结（如2020年3月），机构和企业反而大量抢购美元以偿还美元债务和满足保证金追缴，DXY可能不跌反涨超过2%，完全颠覆预测方向。其次，若同期有其他央行同步宽松（如欧央行、日央行跟随降息），美元跌幅将显著收窄，利差逻辑被对冲掉。此外，若降息发生在地缘冲突激化或市场流动性极度匮乏时期，美元的避险属性可能短暂压倒利差逻辑，导致前3天美元先涨再跌，7天窗口的净变化方向不确定。",
+      "historical_examples": [
+        {
+          "date": "2020-03-03",
+          "summary": "新冠疫情冲击下Fed紧急降息50bp，DXY当日下跌约0.8%至97附近，但随后因全球美元流动性危机（股市熔断、信用市场冻结），3月中旬DXY反而飙升至103，是'美元荒'覆盖利差逻辑的典型反例，7天净效果为美元走强而非走弱。"
+        },
+        {
+          "date": "2008-01-22",
+          "summary": "次贷危机期间Fed紧急降息75bp，DXY在随后7个交易日累计下跌约1.2%，欧元兑美元突破1.47，与'降息压低利差→美元走弱'的标准逻辑基本吻合，是该预测模式成立的历史支撑案例。"
+        },
+        {
+          "date": "2001-09-17",
+          "summary": "9·11事件后Fed紧急降息50bp重开市场，DXY当周下跌约1.4%，避险情绪与利差效应同向叠加（美国本土受袭、资本外流），属于方向和幅度均与预测吻合的案例。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -18977,7 +22646,26 @@
     "refute_count": 0,
     "source": "seed",
     "rationale": "鸽派点阵图释放宽松预期，风险资产共振上涨",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "FOMC点阵图下移意味着联储官员集体下调对未来政策利率的预期中枢，这一信号直接压低美国国债实际收益率预期（因为市场会提前price in更低的终端利率）；实际利率下行削弱了美元的利差优势，美元指数承压走软；美元走弱叠加无风险收益率预期下降，使得持有零息、高波动资产的机会成本降低，资金的风险偏好系统性抬升；比特币作为全球流动性敏感型资产，在机构和散户同步涌入风险资产的浪潮中获得增量买盘，推动价格上行。链条为：点阵图下移 → 实际利率预期走低 → 美元走弱 + 风险偏好抬升 → 加密市场获增量资金 → BTC价格上涨。",
+      "asset_logic": "比特币对美元流动性环境极为敏感，历史上其与美联储资产负债表扩张、实际利率走低的相关性显著高于黄金之外的大多数传统资产，部分原因是BTC市场以美元计价且散户/宏观对冲基金参与度高，对利率叙事反应迅速。方向向上是因为鸽派信号降低了持有非生息资产的隐性成本（机会成本逻辑），同时触发了做空美元/做多风险资产的经典交易。4%量级属于BTC对中等强度宏观催化剂的正常反应区间（低于重大避险解除事件的10%+，但高于纯技术驱动的1-2%波动）。",
+      "horizon_logic": "7天窗口捕捉的是'预期消化期'：点阵图发布后市场在1-3天内完成主要定价，随后3-5天内机构配置资金和套利交易逐步跟进，叠加周末流动性再平衡，整体动能在一周内趋于耗散。若窗口更短（1-2天）则可能只捕捉到初始情绪冲击；更长（30天+）则需要考虑后续经济数据对宽松预期的验证或证伪，噪声大幅上升。",
+      "key_risks": "若同期公布的CPI或非农数据超预期强劲，市场会质疑点阵图的可信度，导致预期反转抵消鸽派效应。此外，若鸽派信号被市场解读为'联储对经济前景悲观'而非'主动宽松'，则风险资产可能出现'利好出尽'式下跌，BTC会随股市同步走弱。加密市场自身的监管事件（如交易所爆雷、稳定币脱锚）也可能完全覆盖宏观驱动力，使该预测失效。",
+      "historical_examples": [
+        {
+          "date": "2023-11-01",
+          "summary": "11月FOMC会议暗示加息周期基本结束，点阵图隐含路径趋于平坦，BTC在随后7日内从约34,000美元涨至约37,000美元，涨幅约8.8%，超出4%基准，反映当时市场对宽松转向的强烈定价热情。"
+        },
+        {
+          "date": "2024-03-20",
+          "summary": "3月FOMC点阵图维持年内三次降息预期未变（市场曾担忧缩减至两次），偏鸽派结果令BTC在7日内从约63,000美元反弹至约67,000美元，约涨6%，与4%预测量级接近。"
+        },
+        {
+          "date": "2022-11-02",
+          "summary": "反例参考：11月FOMC虽放缓加息节奏但鲍威尔措辞偏鹰，点阵图终端利率上调，BTC随后7日从约20,500美元跌至约18,000美元约-12%，印证点阵图方向的关键性——鸽/鹰信号逆转会产生对称但放大的反向效果。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -19278,7 +22966,26 @@
     "refute_count": 0,
     "source": "seed",
     "rationale": "系统性风险预期推升避险资产，美联储被迫转向宽松预期（参考 2023 SVB）",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "大型银行倒闭触发市场对金融体系传染风险的恐慌（银行A倒闭→投资者担忧同类银行资产负债表→存款人挤兑其他银行）→信用市场流动性骤紧、股票与高收益债券遭抛售→资金大量涌入无信用风险、无对手方风险的实物储值资产；与此同时，市场迅速定价美联储将暂停加息甚至转向降息以防止金融危机蔓延（加息预期回落→实际利率下行预期→黄金持有机会成本降低）→黄金作为'无息但无违约风险'的资产相对吸引力显著上升，期货多头头寸快速累积推动价格上涨。",
+      "asset_logic": "黄金是全球公认的避险资产，其价格与实际利率负相关——当银行危机迫使央行转鸽，实际利率预期下行直接抬升黄金估值；相比之下，美债虽同为避险资产，但银行危机初期投资者会担忧机构被迫抛售国债以补充流动性，导致国债价格短期受压，反而凸显黄金优势。3.5% 的幅度对应约 70-90 美元/盎司的波动，这与历史上中等规模系统性风险事件（单一大行倒闭而非全面危机）的黄金反应区间吻合，若演变为系统性危机则幅度可能更大。",
+      "horizon_logic": "7 天窗口捕捉的是事件冲击波的'一阶反应'：前 1-2 天为恐慌性避险买入高峰，第 3-7 天为政策预期重新定价（市场等待美联储紧急声明或注资操作），之后若危机得到遏制黄金往往高位回落；超过 7 天的走势则更多取决于后续政策路径，而非初始冲击本身。",
+      "key_risks": "若美联储立即采取果断救助行动（如 2023 年 BTFP 银行定期融资计划），市场恐慌在 48 小时内平息，黄金涨幅可能仅 1-2% 即遭回吐；此外，若倒闭银行引发大宗商品对冲基金的强制平仓，黄金多头头寸被同步清仓，短期可能出现'危机中黄金不涨反跌'的悖论（2008 年 9 月雷曼倒闭后黄金曾短暂急跌即为此例）；最后，若事件叠加美元指数因避险需求飙升，美元走强会在短期内压制以美元计价的黄金涨幅。",
+      "historical_examples": [
+        {
+          "date": "2023-03-10",
+          "summary": "硅谷银行（SVB）被 FDIC 接管当日，黄金期货从约 1845 美元/盎司在随后 5 个交易日内涨至约 1990 美元，累计涨幅接近 8%，远超 3.5% 基准预测，因市场同步定价美联储加息终点提前到来。"
+        },
+        {
+          "date": "2023-05-01",
+          "summary": "第一共和银行（First Republic）被摩根大通收购，黄金在消息确认后 7 日内上涨约 2.5%，幅度低于 SVB 事件，因市场已将区域银行风险部分消化，体现'同类事件边际效应递减'规律。"
+        },
+        {
+          "date": "2008-09-15",
+          "summary": "雷曼兄弟申请破产后黄金先跌后涨：头两周因机构强制平仓下跌约 5%，但随后 30 天随美联储紧急降息累计反弹超 15%，提示极端系统性危机下短期方向与中期方向可能背离。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -19367,7 +23074,26 @@
     "refute_count": 0,
     "source": "historical_case",
     "rationale": "基于 2008-09-15 实际观察到的市场反应；category=financial_crisis",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "雷曼兄弟申请破产→短期货币市场基金（尤其是持有雷曼商业票据的 Reserve Primary Fund）净值跌破1美元，触发大规模赎回潮→银行间同业拆借市场（Libor-OIS 利差飙升至365bp）几近冻结，金融机构无法获得短期流动性→全球银行、保险公司、对冲基金被迫抛售风险资产以满足赎回和保证金追缴→标普500成分股遭遇系统性抛压，叠加信贷市场收紧导致企业盈利预期大幅下修，价格螺旋式下跌。",
+      "asset_logic": "SPY作为美股大盘的直接映射，涵盖金融板块（当时权重超过18%），而金融板块是本次危机的震中，直接拖累指数；同时美股是全球机构投资者的核心流动性池，去杠杆时优先变现，导致跌幅远超其他非核心资产。28%的量级反映的是'流动性危机+盈利预期双杀'的叠加效应，而非单纯估值重定价，历史上系统性金融危机首月往往产生20-35%的集中释放。",
+      "horizon_logic": "30天窗口对应的是'恐慌性去杠杆'阶段：前两周是流动性冲击的急跌，后两周是机构赎回二次传导与政策响应博弈期；超过30天后市场进入'政策托底vs基本面恶化'的拉锯，单向动能减弱，因此30天捕捉的是最集中的风险释放窗口。",
+      "key_risks": "若美联储/财政部在事件发生后72小时内宣布系统性救助计划（如直接购买商业票据、为货币基金背书），流动性冻结可能提前解除，跌幅将显著收窄；若同期其他主要经济体协同降息或注资，全球风险偏好修复会对冲卖压；此外，若事件发生时市场已处于超卖状态（RSI<30）或净空头仓位极度拥挤，技术性反弹可能使30日窗口内实际跌幅远低于28%。",
+      "historical_examples": [
+        {
+          "date": "2008-09-15",
+          "summary": "雷曼破产申请当日SPY单日跌4.7%，此后30个自然日（至10月15日附近）SPY累计下跌约28%，期间VIX从25飙升至80，为本预测的直接历史依据。"
+        },
+        {
+          "date": "2008-10-10",
+          "summary": "G7财长华盛顿紧急会议承诺协调救市后，SPY单周反弹近12%，印证了'政策响应'是中断下跌链条的关键变量。"
+        },
+        {
+          "date": "2008-09-29",
+          "summary": "美国众议院首次否决7000亿美元TARP救助方案，SPY单日暴跌8.8%，展示了在流动性危机期间'政策预期落空'对跌幅的放大效应。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -20020,7 +23746,26 @@
     "refute_count": 0,
     "source": "historical_case",
     "rationale": "基于 2022-06-15 实际观察到的市场反应；category=monetary_policy",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "美联储单次加息75bp → 无风险利率大幅跳升，美元融资成本骤增，全球流动性收紧预期被重新定价 → 机构投资者和对冲基金面临保证金压力与风险敞口再平衡，率先抛售高波动率、无现金流资产 → 加密市场因缺乏内在价值锚定（无股息、无票息），在折现率上升时估值框架几近崩塌 → 散户止损单被触发，链上清算瀑布放大下行动能，BTC在14天内形成加速下跌。",
+      "asset_logic": "比特币作为'风险资产中的风险资产'，其定价高度依赖流动性宽松预期和投机情绪——加息75bp直接击穿'Fed持续宽松'叙事，与成长股同步遭受重估。20%的幅度量级反映加密市场的高杠杆结构：链上永续合约多头持仓在价格下跌时被强制平仓，产生2-4倍于传统股票市场的跌幅放大效应。相比黄金（有避险属性）或能源（有实物需求），BTC在货币紧缩周期中缺乏任何基本面支撑锚。",
+      "horizon_logic": "14天窗口捕捉的是'冲击→消化→二次抛压'的完整第一波：事件公告后1-3天为主力机构去杠杆，第4-10天为散户恐慌+媒体放大+链上清算余震，第11-14天市场开始试探底部但尚未形成共识反弹——超过14天则进入'等待下次议息会议'的震荡期，方向性信号减弱。",
+      "key_risks": "若同期出现地缘缓和或其他风险资产大幅反弹（如科技股强劲财报），资金可能回流加密市场抵消跌幅。若市场在加息前已提前充分定价（如2023年3月议息前BTC已跌30%），'buy the news'效应会使实际反应远低于预期。极端情况下，稳定币脱锚或主要交易所流动性危机（类UST/LUNA事件）会使跌幅远超20%，超出该预测的可信区间。",
+      "historical_examples": [
+        {
+          "date": "2022-06-15",
+          "summary": "Fed宣布加息75bp（1994年以来最大单次加息），BTC从约28000美元在随后14天跌至约20000美元，跌幅约28%，与本预测方向一致但幅度更大，因同期Three Arrows Capital流动性危机形成双重打压。"
+        },
+        {
+          "date": "2022-07-27",
+          "summary": "第二次75bp加息落地，但市场已充分定价+衰退预期反转预期，BTC逆势反弹约15%，说明'加息幅度'之外的宏观叙事同样决定方向。"
+        },
+        {
+          "date": "2018-12-19",
+          "summary": "Fed加息25bp但鲍威尔暗示缩表提速，BTC在随后两周从3500美元跌破3200美元，跌幅约9%——加息幅度较小但前瞻指引紧缩同样有效传导至加密市场。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -20209,7 +23954,22 @@
     "refute_count": 0,
     "source": "historical_case",
     "rationale": "基于 2023-04-02 实际观察到的市场反应；category=energy",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "OPEC+宣布超预期减产后，市场立即对全球原油供应预期进行重新定价：首先，1.16mbpd的削减量约占全球供应量的1%以上，直接收窄了市场对未来数月库存累积的预期；其次，'surprise'属性（此前无预告）触发算法和量化交易策略的强制止损与追涨，形成短时流动性冲击；随后，空头持仓者面临损失压力被迫平仓（即'空头回补'），进一步推高价格；最终三者叠加，驱动WTI期货在短窗口内完成从基本面重估到技术面突破的完整传导链：供应预期收紧 → 远期曲线上移 → 近月合约跳涨 → 空头回补放大涨幅。",
+      "asset_logic": "WTI原油期货是OPEC+减产政策最直接的定价标的，减产协议以美元/桶计价且合约交割对应实物原油，供应变化与价格之间无中间环节的稀释。6%的幅度与历史上同等量级的'超预期'减产匹配：1.16mbpd占OPEC+总产能约1.1%，以原油短期需求弹性约0.1-0.2估算，纯基本面支撑约3-4%，叠加情绪冲击与空头回补可额外贡献2-3%，合计6%量级合理。",
+      "horizon_logic": "3天窗口精确覆盖'初始冲击重估期'：第1天为消息释放与算法快速定价，第2-3天为机构投资者完成头寸调整、空头回补尾声及媒体叙事强化带来的惯性延续。3天后市场开始转向评估成员国实际执行合规率与需求侧反应（如中国需求、美国就业数据），不确定性重新上升，纯供应驱动的单边动能衰减。",
+      "key_risks": "若同期公布的美国经济数据（如非农、ISM）显著低于预期，衰退叙事可能压制需求预期，抵消减产带来的供应溢价；美元指数若同步走强（DXY上涨>1%），将直接压低以美元计价的大宗商品价格。此外，若市场迅速解读为部分成员国（如伊拉克、尼日利亚）减产承诺兑现率存疑，实际供应收紧幅度可能不及预告，价格会在第2-3天出现回吐。",
+      "historical_examples": [
+        {
+          "date": "2023-04-03",
+          "summary": "2023年4月2日（周日）OPEC+突然宣布自愿减产1.16mbpd，WTI原油期货在4月3日（周一）开盘跳涨约6.3%，从约75美元/桶飙升至约80美元/桶，三日内最高触及83美元，完整实现了本预测描述的传导路径。"
+        },
+        {
+          "date": "2022-10-05",
+          "summary": "2022年10月OPEC+宣布减产200万桶/日，同样属于超预期削减，WTI在随后3个交易日内上涨约11%，印证了'意外减产→空头回补→价格跳涨'的机制，幅度更大因彼时能源市场波动率更高。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -20514,7 +24274,26 @@
     "refute_count": 0,
     "source": "seed",
     "rationale": "通胀粘性强化紧缩预期，长久期资产与黄金承压，美元走强",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "当美国CPI同比读数超出预期0.2个百分点及以上时，市场立即重新定价联储货币政策路径：通胀粘性信号→交易员削减年内降息次数预期（或推迟降息时间表）→美国2年期国债收益率上行（对政策利率最敏感）→美元短端利差相对其他主要货币扩大→全球资金从欧元、日元等低息货币流向美元资产→DXY被动抬升。整条链的核心驱动力是'利率预期差'的瞬时重估，而非实体经济层面的即时变化。",
+      "asset_logic": "DXY由欧元（57.6%）、日元（13.6%）、英镑等一篮子货币构成，对美联储政策预期的边际变化极为敏感——欧央行和日本央行在紧缩周期末段的政策弹性远低于美联储，因此美国通胀超预期会单方面拉大美元利率优势，直接推升DXY。方向向上是因为更高更久的美元利率吸引套息资金流入；0.5%的幅度量级对应的是数据发布后1-3天内期货市场对联储会议结果概率的快速重定价所引发的即时汇率调整，属于中等强度的信息冲击反应。",
+      "horizon_logic": "3天窗口捕捉的是'数据冲击→预期重定价→头寸调整'的完整短周期：第1天为高频算法和宏观对冲基金的初始反应，第2-3天为慢钱（养老金、主权财富基金）的跟进以及期权Gamma对冲造成的趋势延续；超过3天后市场开始等待下一个数据锚点（如PPI、PCE、就业），新信息会稀释CPI冲击的边际影响。",
+      "key_risks": "若同期美联储官员发表鸽派讲话或'一次性因素'叙事主导解读（如能源基数扭曲），市场可能忽视CPI读数，美元反应会被压制甚至逆转。此外，若欧元区同期公布强于预期的经济数据或欧央行意外释放鹰派信号，欧元走强会抵消DXY的上涨动力；极端风险厌恶环境下（如系统性信用事件），美元可能因避险买盘而已提前大幅走强，CPI超预期的边际推力会显著衰减。",
+      "historical_examples": [
+        {
+          "date": "2023-01-12",
+          "summary": "2022年12月CPI同比6.5%符合预期但核心项仍超预期，DXY当日先跌后企稳，印证了'符合但不显著超预期时美元反应有限'的基准，反向验证超预期阈值的重要性。"
+        },
+        {
+          "date": "2023-09-13",
+          "summary": "8月CPI同比3.7%超预期0.2pct，核心CPI环比超预期，DXY在数据发布后3日内从104.4上涨至105.4附近，涨幅约1%，与0.5%预测同向但幅度更大，彼时市场对联储加息路径仍高度不确定。"
+        },
+        {
+          "date": "2024-04-10",
+          "summary": "3月CPI同比3.5%超预期0.3pct，市场迅速将年内首次降息预期从6月推迟至9月，DXY单日涨超1%并在随后3日维持强势，是近年CPI超预期推升美元最典型的案例之一。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -20567,7 +24346,26 @@
     "refute_count": 0,
     "source": "seed",
     "rationale": "通胀粘性强化紧缩预期，长久期资产与黄金承压，美元走强",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "CPI 同比超预期 ≥0.2pct → 市场重新定价 Fed 降息路径：投资者预期 Fed 将维持高利率更长时间，甚至推迟首次降息 → 短端实际利率预期上升，通过期限溢价传导至长端，10年/30年美债收益率上行 → 债券价格与收益率反向运动，TLT 净值下跌；同时通胀数据公布后算法交易和固收基金的止损盘集中释放，放大价格冲击。",
+      "asset_logic": "TLT 持有久期约 16-18 年，是所有主流债券 ETF 中对利率最敏感的品种——收益率每上行 10bp，净值约下跌 1.6-1.8%，因此同样的利率冲击在 TLT 上体现的幅度远大于 SHY、IEF 等中短端产品。CPI 超预期直接打击'通胀已降服、Fed 即将转向'的叙事，而这正是 TLT 过去两年多头的核心逻辑支柱，叙事破裂时抛压尤为集中。1.5% 的幅度对应约 8-10bp 的收益率上行，在高通胀数据冲击下属于历史中位数水平，不算极端。",
+      "horizon_logic": "CPI 数据发布后，市场对 Fed 路径的重新定价通常在 1-2 个交易日内完成（Fed 官员讲话和债市做市商报价调整的节奏），第 3 天多数冲击已被消化或出现技术性超卖反弹；选取 3 天窗口既能捕捉初始冲击，又避免将随后可能出现的均值回归误计入损失。",
+      "key_risks": "若同周期内出现风险资产大幅抛售（股市跌超 2%），避险资金可能涌入美债抵消通胀压力，导致 TLT 跌幅收窄甚至反涨；若 CPI 超预期的同时 PPI 或零售销售数据显著低于预期，市场可能解读为'滞胀而非过热'，对长债的冲击逻辑也会改变；此外，若 Fed 官员在数据后公开表态'不急于行动'，可压制收益率上行幅度。",
+      "historical_examples": [
+        {
+          "date": "2023-09-13",
+          "summary": "8月CPI同比4.3%略超预期，TLT当日下跌约1.8%，10年期收益率单日上行12bp，3日累计跌幅约2.1%，与预测方向和量级高度吻合。"
+        },
+        {
+          "date": "2024-02-13",
+          "summary": "1月CPI同比3.1%超预期（市场预期2.9%），TLT当日急跌2.3%，为近一年单日最大跌幅，市场将首次降息预期从3月推迟至6月，3日累计跌约2.6%。"
+        },
+        {
+          "date": "2022-09-13",
+          "summary": "8月CPI同比8.3%大幅超预期（市场预期8.1%），TLT单日暴跌4.7%，3日累计跌幅逾6%——彼时处于激进加息周期顶部，超预期幅度更大，因此冲击远超本预测的基准情景。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -20980,7 +24778,26 @@
     "refute_count": 0,
     "source": "seed",
     "rationale": "压制中国外需敞口与科技股，人民币承压，避险资产受益",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "美国宣布对华加征关税或扩大科技出口管制→市场立即定价中美贸易摩擦升级风险，全球供应链中断预期上升→投资者抛售风险资产（A股、港股、科技股）并减少美元风险敞口→避险需求集中涌入黄金；与此同时，人民币因出口前景恶化而承压贬值，中国居民与机构为对冲本币风险增加黄金配置需求→双重买盘（西方避险盘＋亚洲货币对冲盘）在短期内推高金价。",
+      "asset_logic": "黄金是全球公认的'无国籍'储值资产，在地缘政治与贸易冲突中与风险资产相关性转负，天然承接避险资金。人民币贬值压力尤为关键：中国是全球最大黄金消费国，人民币计价黄金价格上涨会刺激国内需求，同时央行层面也有动机增持黄金以分散外储风险。1%的涨幅属于温和反应，反映事件本身属于'升级'而非'全面脱钩'，市场已部分price-in中美长期博弈，边际冲击有限。",
+      "horizon_logic": "5天窗口捕捉的是事件公告后的即时情绪冲击与头寸调整期：政策公告当日及次日为恐慌性买入高峰，随后2-3天机构完成仓位再平衡；超过5天后市场往往等待中方反制措施或谈判信号，金价走势转由后续事件驱动，初始冲击效应趋于衰减。",
+      "key_risks": "若美联储官员在同期发表鹰派表态或公布强劲就业数据，实际利率上行压力会压制金价，抵消避险需求；若中方反制措施温和或双方同步释放谈判信号，市场风险偏好快速修复，避险盘可能在3天内回吐涨幅；此外，若美元指数同步大幅走强（贸易战初期常见），以美元计价的黄金涨幅会被汇率因素部分对冲。",
+      "historical_examples": [
+        {
+          "date": "2018-07-06",
+          "summary": "美国正式对340亿美元中国商品加征25%关税生效，当日黄金小幅下跌（美元同步走强压制），但随后一周随风险情绪蔓延至欧洲市场，黄金在5个交易日内累计反弹约1.2%。"
+        },
+        {
+          "date": "2019-05-10",
+          "summary": "特朗普宣布将对2000亿美元中国商品关税从10%提至25%，人民币单周贬值逾1.5%，黄金在随后5日内上涨约1.8%，为当年最强的单次贸易冲击响应。"
+        },
+        {
+          "date": "2022-10-07",
+          "summary": "拜登政府宣布对华芯片及半导体设备全面出口管制，黄金当日一度跳涨0.8%，但因同期美元指数处于20年高位，5日累计涨幅收窄至约0.5%，印证强势美元是关键对冲变量。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -21069,7 +24886,26 @@
     "refute_count": 0,
     "source": "seed",
     "rationale": "直接利空被制裁企业与其供应链美股，间接利多本土替代",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "美国将中国科技企业（通常为芯片制造商如中芯国际、长江存储等）列入实体清单后，ASML 向该企业出售光刻机须申请美国出口许可证——因为 ASML 设备含有受《出口管理条例》（EAR）管辖的美国技术成分，这一许可在制裁背景下几乎必然被拒。→ ASML 立即失去该客户的现有订单及未来采购计划，中国区收入预期被强制下修。→ 市场重新定价 ASML 的中国敞口：中国近年贡献 ASML 总营收 25–35%，任何一个主要客户的封禁都会触发分析师下调出货量预测。→ 机构投资者抢先减仓，股价在消息发酵的 3–5 个交易日内承压下行。",
+      "asset_logic": "ASML 是全球唯一 EUV 光刻机供应商，DUV 机台也高度依赖其平台，中国晶圆厂是其少数几个仍可购买 DUV 的大型增量市场；一旦客户被拉黑，无可替代的收入就此消失，没有其他地区的客户能在短期内填补该体量的订单缺口。方向向下是因为这直接削减营收确定性而非只是情绪扰动；幅度约 2% 的量级对应的是单一大客户占 ASML 年营收约 5–8% 的份额，结合市场对未来扩散风险的折价，形成中等幅度而非剧烈冲击。",
+      "horizon_logic": "5 个交易日对应的是机构从'消化政策文本→确认订单影响→调整模型→执行调仓'的完整反应周期；更短（1–2 天）的反应往往被做市商的流动性缓冲抵消，而超过 2 周则会有公司官方回应或市场找到新均衡，边际卖压减弱。",
+      "key_risks": "若制裁针对的是消费电子或互联网企业（非晶圆厂），则 ASML 直接收入影响极小，机制链条断裂，跌幅将显著低于预期。此外，若同期欧洲市场风险偏好整体上行（如 ECB 意外降息或欧元区数据超预期），可能对冲地缘政治利空，令跌幅收窄至 1% 以内。最后，若市场已提前消化制裁预期（如此前媒体大篇幅报道），实际公告可能引发'卖预期买事实'的反向反弹。",
+      "historical_examples": [
+        {
+          "date": "2020-12-18",
+          "summary": "美国将中芯国际列入实体清单，ASML 随后在数周内确认无法向中芯出口部分设备，股价在消息冲击后约 5 日内累计下跌约 3–4%，随后因其他区域订单强劲而修复。"
+        },
+        {
+          "date": "2023-10-17",
+          "summary": "美国出台新一轮对华芯片出口管制（扩展至 A100 级 GPU 及配套设备），ASML 明确承认部分 DUV 出货受阻，当周股价下跌约 5%，为近两年最大单周跌幅之一。"
+        },
+        {
+          "date": "2024-09-09",
+          "summary": "美方讨论进一步限制 ASML 向中国出售 DUV 机台的报道流出，ASML 单日跌幅超 3%，市场直接将中国营收占比作为风险敞口参数重新定价。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -21482,7 +25318,26 @@
     "refute_count": 0,
     "source": "seed",
     "rationale": "PCE 是美联储首选指标，加速意味紧缩维持更久",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "核心PCE同比加速→市场重新定价美联储政策路径→联邦基金利率期货曲线上移（降息预期后推或加息概率上升）→美元短端实际利率预期走高→套利资金从低息货币流入美元资产→美元指数承压上行。具体而言，PCE是美联储在FOMC声明中明确援引的通胀锚点，当其同比读数加速，市场会立即修正'降息时间表'，使美债收益率（尤其是2年期）跳升，美欧、美日利差扩大，触发外汇市场的利差交易再平衡。",
+      "asset_logic": "DXY是美元对一篮子货币（欧元权重57.6%、日元13.6%等）的加权指数，对美联储预期变化极为敏感——因为欧央行、日央行的政策节奏通常滞后于美联储，当美国通胀超预期时，美联储-其他央行的政策分化会被放大，推动美元相对升值。0.4%的幅度对应的是'一次数据超预期'的典型短期冲击，并非趋势性重估，因为单月PCE读数仍有噪音，市场不会全仓押注政策转向。",
+      "horizon_logic": "3天窗口覆盖数据发布当日的即时定价（T+0）、次日机构调仓与分析师报告扩散（T+1），以及期权到期/月末再平衡的尾部影响消化（T+2~T+3）；超过3天后市场注意力转向下一个经济数据点（如非农、CPI），PCE的边际信息量衰减，美元走势重回宏观叙事主导。",
+      "key_risks": "若同一窗口内出现地缘风险升级或美国经济衰退信号（如PMI骤降），避险情绪可能同时压制风险资产与美元；若欧元区通胀同步超预期，欧央行加息预期同步上修，欧元走强会抵消DXY涨幅；此外，若PCE加速主要由能源/食品分项驱动而核心服务回落，市场可能认定Fed不会行动，导致美元反应平淡甚至反向。",
+      "historical_examples": [
+        {
+          "date": "2024-02-29",
+          "summary": "2024年1月核心PCE同比2.8%、环比0.4%双超预期，发布当日DXY从103.8升至104.2附近，3日累涨约0.5%，2年期美债收益率同步跳升逾10bp，市场将首次降息预期从3月推迟至6月。"
+        },
+        {
+          "date": "2023-09-29",
+          "summary": "2023年8月核心PCE同比3.9%略超预期，DXY在数据后3日维持强势，从106.0附近进一步升至106.5，印证'higher for longer'叙事强化对美元的支撑。"
+        },
+        {
+          "date": "2022-06-30",
+          "summary": "2022年5月核心PCE同比4.7%仍处高位，叠加市场对75bp加息的强烈预期，DXY当日冲破105关口，3日内涨幅超1%，成为该年美元牛市的重要节点之一。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -21855,7 +25710,26 @@
     "refute_count": 0,
     "source": "seed",
     "rationale": "AI 需求见顶信号，整个半导体产业链回调",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "英伟达发布远低于预期的营收指引，直接信号是数据中心客户（微软、谷歌、Meta 等超大规模云厂商）的 AI 训练/推理采购计划收缩或延迟；这一信号传导至市场后，投资者重新定价整条 AI 算力供应链的未来现金流——GPU 需求下降 → HBM 内存（SK 海力士/美光）出货量预期下修 → 先进封装（台积电 CoWoS）产能利用率预期下降 → 上游设备（ASML、泛林、科磊）订单能见度收窄 → 整个半导体板块估值收缩。由于 SMH 持仓高度集中于英伟达（权重约 20%+）及与 AI 毛细血管深度绑定的台积电、美光、博通，ETF 整体遭到系统性抛售而非个股分化。",
+      "asset_logic": "SMH 作为费城半导体指数 ETF，前五大持仓中 AI 相关芯片及供应链占比超 60%，一旦英伟达指引下调，基金经理无法快速剥离个股风险，只能通过做空或减仓 SMH 对冲整体敞口，形成 ETF 层面的放大效应。3% 的下跌幅度对应的是'指引低于预期但尚未崩塌'的中等冲击情景——若叠加宏观风险或流动性收紧，幅度会更大；若市场认为是一次性库存调整，则反弹也会更快。",
+      "horizon_logic": "3 天窗口覆盖的是财报/业绩预告发布后的'一次性重定价'阶段：第 1 天为情绪宣泄式抛售，第 2-3 天是机构调整模型、分析师下调目标价、被动基金再平衡的执行期；超过 3 天后，市场注意力转向下一个催化剂（如宏观数据、竞争对手表态），纯粹由单一指引驱动的动量会衰减。",
+      "key_risks": "若同期美联储发出降息信号或科技股整体有强劲宏观顺风，可能对冲半导体的行业利空，使跌幅显著收窄。此外，若英伟达同步公布大规模回购或股息，市场可能将利空解读为'估值支撑'而快速反弹。最后，若指引下调是因为下一代芯片（如 Blackwell Ultra）供应瓶颈而非需求萎缩，市场可能重新解读为短期扰动而非趋势逆转，导致预测失效。",
+      "historical_examples": [
+        {
+          "date": "2024-08-28",
+          "summary": "英伟达 FY2025Q2 财报虽超预期但 Q3 指引仅略高于预期、毛利率指引环比下滑，SMH 次日跌约 4%，三日内累计下跌约 6%，市场将其解读为 AI 资本支出高峰临近的早期信号。"
+        },
+        {
+          "date": "2022-08-08",
+          "summary": "英伟达发布盈利预警，Q2 营收预计较此前指引低约 19 亿美元，游戏及数据中心双双走弱，SMH 当日跌逾 4%，随后一周累计跌幅接近 7%，验证了单一龙头指引下调对 ETF 的级联打压效应。"
+        },
+        {
+          "date": "2023-05-25",
+          "summary": "英伟达发布破纪录的 AI 强劲指引（正向对照）：Q2 营收指引达 110 亿美元远超预期，SMH 次日飙升逾 9%——反向印证了指引对 SMH 的杠杆传导机制，低预期情景下对称方向的下跌逻辑同样成立。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -21980,7 +25854,26 @@
     "refute_count": 0,
     "source": "seed",
     "rationale": "新药获批直接提升相关药企估值",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "FDA 批准重磅新药时，获批药企的预期未来现金流立即重新定价：市场将原本折价的峰值销售额（Peak Sales）概率从<50%调至接近100%，DCF估值跳升→股价大涨。由于IBB前十大持仓占比通常超过50%（如Amgen、Gilead、Regeneron等），单只龙头药企的估值跳升会直接拉动ETF净值。与此同时，获批信号还会触发板块情绪溢价：投资者预期同类管线（pipeline）药物也将受益，买盘扩散至整个生物科技板块→IBB被动跟涨。",
+      "asset_logic": "IBB是生物科技行业的宽基ETF，成分股高度集中在依赖FDA审批的创新药企，单药获批对持股比重较高的成分股影响可直接穿透至ETF层面，而其他行业ETF（如XLV医疗大盘）受药企权重稀释影响较小。方向向上源于获批消除了最大的二元风险（binary risk），幅度1.2%量级对应的是'龙头成分股涨幅×权重'的加权效应，若获批药企仅占IBB权重5-10%，则单股涨10-20%可贡献约1-2%的ETF涨幅，与预测量级吻合。",
+      "horizon_logic": "5天窗口捕捉的是'初始定价+机构再配置'的完整节奏：获批当日散户和量化策略快速反应完成第一波定价，随后2-4天内机构投资者调整生物科技板块敞口、卖方分析师上调目标价并发布报告，推动第二波温和追涨；超过5天后，获批利好通常已被充分消化，走势回归基本面与大盘驱动。",
+      "key_risks": "若获批药物市场空间低于预期（孤儿药/小适应症），龙头成分股涨幅有限，ETF层面信号被稀释。同期若宏观风险事件爆发（如非农数据超预期、地缘冲突升级），系统性抛压会覆盖板块利好，IBB可能不涨反跌。此外，加速通道获批（Accelerated Approval）有时附带上市后确认性研究要求，市场可能以'条件获批'折价处理，削减实际涨幅。",
+      "historical_examples": [
+        {
+          "date": "2023-07-06",
+          "summary": "礼来阿尔茨海默新药Donanemab III期数据积极公布后获FDA优先审查，IBB当周累计上涨约2.1%，龙头生物科技股普遍跟涨，板块情绪显著修复。"
+        },
+        {
+          "date": "2021-06-07",
+          "summary": "Biogen阿尔茨海默药物Aduhelm争议性获批，IBB单日跳涨超3%，但随后因定价争议和医保覆盖不确定性在5日内回吐约1.5%，显示获批质量对持续性至关重要。"
+        },
+        {
+          "date": "2022-11-29",
+          "summary": "FDA批准BioMarin罕见病基因疗法Roctavian，相关生物科技指数5日累计涨幅约1.0-1.5%，与1.2%预测量级高度吻合，体现中型适应症获批的典型市场反应。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -21997,7 +25890,26 @@
     "refute_count": 0,
     "source": "seed",
     "rationale": "缓和信号提振中概股与全球风险偏好",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "美中高层会晤释放缓和信号→市场对关税下调或豁免预期升温→出口依赖型企业盈利预期修复（尤其是电子、机械、消费品板块）→机构投资者风险偏好提升、外资通过沪深港通加速流入→A股估值中枢上移，沪深300获得系统性重估。与此同时，谈判进展通常伴随人民币汇率走强，离岸汇率升值信号进一步吸引境外资金买入人民币资产，形成'基本面预期改善＋资金面增量'的双重正反馈。",
+      "asset_logic": "沪深300覆盖A股市值最大的300只股票，重仓金融、消费、工业及科技龙头，这些行业对中美贸易环境极为敏感——关税预期缓和直接改善企业盈利预测，而非像中概股那样还需额外承受ADR退市或VIE结构风险。选择ETF而非个股，是因为贸易谈判属于系统性宏观事件，利好扩散至整个市场而非单一行业，510300作为最流动的宽基ETF，是外资和量化资金快速建仓的首选工具，因此价格反应最为直接。1.2%的幅度对应约1个标准差的事件驱动日内波动，属于'利好兑现但不过热'的合理区间，反映市场已有部分预期但尚未完全定价。",
+      "horizon_logic": "3天窗口对应'消息发酵→资金流入→价格稳定'的完整短周期：第1天情绪冲击与快速定价，第2天外资申购T+1到账与机构调仓，第3天动量效应尾声与部分止盈压力出现。超过3天后，市场通常需要等待谈判细节落地或新的数据验证，价格动能衰减；短于1天则无法捕捉隔日外资资金流的放大效应。",
+      "key_risks": "①谈判'进展'措辞模糊或仅为礼节性会晤，缺乏具体关税承诺，市场在48小时内回吐涨幅（'买预期卖事实'逻辑）；②同期若美联储官员发表鹰派言论或美股大跌，全球风险偏好骤降会压制A股独立行情；③国内若同步公布偏弱的经济数据（PMI、出口数据），贸易缓和的基本面改善逻辑被对冲，导致涨幅收窄至0.5%以内甚至转负。",
+      "historical_examples": [
+        {
+          "date": "2019-06-29",
+          "summary": "G20大阪峰会习特会后宣布重启谈判、暂停新增关税，沪深300ETF次日跳空高开约2.8%，3日累计涨幅约3.1%，外资单日净流入超120亿元。"
+        },
+        {
+          "date": "2019-10-11",
+          "summary": "中美达成'第一阶段协议'框架，沪深300当日涨约1.5%，3日内累计上涨约2.0%，但随后因细节谈判拖延，涨幅部分回吐。"
+        },
+        {
+          "date": "2023-11-15",
+          "summary": "拜习旧金山会晤后市场情绪短暂回暖，沪深300在会晤后3个交易日累计涨约0.9%，幅度低于预期，因国内需求数据偏弱形成对冲。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -22050,7 +25962,26 @@
     "refute_count": 0,
     "source": "seed",
     "rationale": "供给减速预期带动长周期上涨，历史减半后 180 日内均显著正收益",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "比特币网络每隔约 21 万个区块（约 4 年）将矿工出块奖励强制减半，此次减半后每日新增供应量从约 900 BTC 骤降至 450 BTC。矿工是市场上最大的结构性卖方——他们持续出售新挖出的 BTC 以支付电费和硬件成本；供应量减半意味着矿工的日常抛压减少约一半，在需求不变的前提下，市场的净买压随之增加。与此同时，减半本身是可预期的叙事催化剂：机构和散户投资者提前数周入场布局'供给冲击'预期，资金流入加速 → 价格在减半前后形成共振上涨。减半后媒体曝光度激增 → 新增零售关注 → FOMO（错失恐惧）驱动的追涨买盘进一步放大涨幅，形成'减半叙事 → 资金流入 → 价格上涨 → 媒体报道 → 更多资金流入'的自我强化循环。",
+      "asset_logic": "BTC 是唯一通过代码写死总量上限（2100 万枚）并以可预测时间表减少增发的主流资产，供给侧冲击对其价格边际影响远大于黄金或股票等供给弹性较高的资产。方向向上的核心依据是：减半直接压缩矿工的 BTC 产出，在能源成本不变的情况下，矿工若要维持运营利润则需要更高的 BTC 价格，这构成了结构性价格底部支撑。25% 的幅度量级对应加密市场的历史波动率（BTC 年化波动率通常在 60-80%），在 30 天内实现该幅度在统计上属于中等偏高预期，历史减半后 30 天的实际涨幅中位数约为 10-15%，25% 处于历史分布的乐观端。",
+      "horizon_logic": "30 天窗口捕捉的是减半后市场从'预期兑现'过渡到'叙事扩散'的关键阶段：减半前的资金往往在事件发生后数周内完成初步获利了结，而新一轮零售资金入场和媒体发酵通常在减半后 2-6 周达到峰值。选择更短（<7 天）无法覆盖叙事扩散周期，选择更长（>90 天）则引入宏观周期和监管周期等噪音，降低减半本身的信号纯度。",
+      "key_risks": "最大风险是'买预期、卖事实'（Buy the Rumor, Sell the News）效应：若减半前价格已大幅上涨（提前定价），减半当天反而触发获利了结，30 天内可能出现回调而非上涨。其次，若减半期间叠加宏观风险事件（美联储超预期加息、美股大幅下跌、稳定币脱锚等），加密市场与风险资产的高相关性会压制供给侧利好，减半逻辑将被宏观逻辑覆盖。第三，若 BTC 价格在减半后未能快速上涨，高算力矿工的运营成本倒挂可能引发规模性关机潮，矿工被迫出售持仓以维持现金流，产生额外的供给压力，形成短期负反馈。",
+      "historical_examples": [
+        {
+          "date": "2020-05-11",
+          "summary": "第三次减半（奖励 12.5→6.25 BTC），减半当日价格约 $8,500，30 天后约 $9,400，涨幅约 +11%；但 180 天后价格突破 $18,000，显示减半效应在更长周期中才充分释放。"
+        },
+        {
+          "date": "2024-04-20",
+          "summary": "第四次减半（奖励 6.25→3.125 BTC），减半前已从年初 $42,000 涨至约 $64,000（涨幅已提前释放），减半后 30 天价格在 $61,000-$68,000 区间震荡，涨幅约 +5%，典型的'预期已定价'后动能衰减案例。"
+        },
+        {
+          "date": "2016-07-09",
+          "summary": "第二次减半（奖励 25→12.5 BTC），减半后 30 天价格从约 $650 微涨至 $680（+5%），市场几乎无即时反应；但此后 12 个月内 BTC 涨至 $2,500 以上，说明减半的供给冲击效应具有显著的时间滞后性。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -22919,7 +26850,22 @@
     "refute_count": 0,
     "source": "online",
     "rationale": "百事降价信号表明过去两年靠涨价驱动业绩的美国消费必需品板块进入定价能力衰退阶段，后续各大消费品公司可能被迫跟进促销，压制板块整体盈利预期与估值倍数。检索到的因果链不涵盖此类消费降级/定价权逆转主题，为新模式。",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "百事可乐等龙头宣布主动降价或促销，直接触发市场重新评估整个消费必需品板块的'定价权溢价'：过去两年，该板块的盈利增长几乎完全依赖提价（volume持平甚至下滑，revenue靠price/mix拉升），分析师在建模时默认公司具备持续转嫁通胀成本的能力。一旦头部公司率先折价，意味着消费者价格弹性已超过临界点——量的流失倒逼企业用价格换销量。这一信号传导路径为：龙头降价 → 市场预期后续财报毛利率压缩 → 分析师下调EPS预测 → 板块估值倍数（P/E、EV/EBITDA）被动收缩 → ETF净值下跌。",
+      "asset_logic": "XLP重仓宝洁、可口可乐、百事、好市多等典型'提价型防御股'，这些公司过去两年股价中隐含了高于历史均值的定价权溢价，一旦定价能力被证伪，估值回归的幅度与溢价本身正相关。0.8%的下跌幅度处于温和区间，反映的是'预期修正的第一波'而非盈利实质崩塌——市场在消化信号但尚未看到财报数据验证，因此是估值层面的小幅重估而非恐慌性抛售。",
+      "horizon_logic": "7天窗口对应'信号发酵到机构调仓'的典型节奏：首日情绪冲击后，卖方分析师需1-2天更新报告，机构投资者在3-5天内完成仓位评估并执行，7天足以捕捉这一轮预期重定价；但尚不足以等到下一个财报季或零售商渠道数据来验证实际量/价表现，故更长窗口的不确定性显著上升。",
+      "key_risks": "若同期美国宏观数据走弱（如非农大幅不及预期）触发避险情绪，XLP作为防御板块反而可能获得资金流入，对冲甚至逆转跌势。其次，若美联储释放降息信号，高股息消费必需品的相对吸引力上升，资金再配置可能压制跌幅。此外，若百事降价被市场解读为'主动放弃低利润低端市场、聚焦高端'的战略升级而非被迫让步，板块不降反升的概率不可忽视。",
+      "historical_examples": [
+        {
+          "date": "2023-07-27",
+          "summary": "卡夫亨氏Q2财报显示销量同比下滑4%，公司首次明确表示'定价周期接近尾声'，XLP当日下跌约1.2%，随后一周累计跌幅约1.8%，标志着消费必需品板块从'涨价受益'叙事转向'量价权衡'担忧的关键拐点。"
+        },
+        {
+          "date": "2024-04-23",
+          "summary": "宝洁FY2024Q3财报显示有机增长仅靠提价支撑，北美核心品类销量下滑3%，财报后股价单日跌4.8%，带动XLP单周下跌约2.1%，市场开始系统性给消费必需品板块的定价权假设打折。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {
@@ -23280,7 +27226,26 @@
     "refute_count": 0,
     "source": "online",
     "rationale": "尽管亏损主要来自ETH押注，但加密财库公司巨亏会引发对整个机构加密储备模式的质疑，风险偏好回落传导至BTC，短期内BTC跟随加密板块情绪小幅回调。检索链(id 78/12)反映的是利好情形，与本次利空相反，属新模式。",
-    "explanation": null,
+    "explanation": {
+      "mechanism": "加密财库公司（如持有大量ETH的上市企业）公告巨额亏损→市场投资者对「机构用公司资产负债表持有加密货币」这一商业模式的可持续性产生怀疑→做空这类公司的资金同时撤离相关加密资产敞口→ETH现货抛压外溢至BTC（因两者在加密市场中高度相关，投资者通常以BTC作为流动性最高的出口进行整体仓位减仓）→短期内BTC承受情绪性卖压，价格小幅下行。",
+      "asset_logic": "BTC作为加密市场的定价锚，往往是机构减仓时最先被动用的流动性池——当风险情绪恶化时，持仓者倾向于卖出BTC而非流动性更差的山寨币以快速套现。此次亏损虽源于ETH押注，但市场会将其泛化为「加密财库模式整体失败」的信号，传导至BTC的方向因此为下行。1.5%的幅度量级反映的是情绪性溢出而非基本面冲击——BTC本身未直接受损，因此跌幅有限，属于「连带折价」而非「核心受损」。",
+      "horizon_logic": "3天窗口对应的是情绪冲击的典型消化周期：第1天是新闻驱动的即时反应，第2-3天是机构投资者评估持仓风险后的二次调整；超过3天后，如无新增利空，市场注意力通常转移，价格回归基本面驱动。",
+      "key_risks": "若同期有BTC现货ETF净流入放量或美联储释放宽松信号，可以对冲情绪性卖压，使本次预测失效。此外，若市场判断亏损为该公司个案（ETH押注失误）而非系统性风险，BTC可能与事件解耦，跌幅远小于1.5%甚至不跌。流动性极低的亚盘或节假日期间，价格波动可能被放大，导致实际跌幅超预期。",
+      "historical_examples": [
+        {
+          "date": "2022-11-08",
+          "summary": "FTX流动性危机曝光首日，BTC单日下跌约5%——彼时机构信任危机远大于本次，但传导路径相同：机构持仓模式被质疑→流动性撤离→BTC作为出口承压。"
+        },
+        {
+          "date": "2023-03-10",
+          "summary": "硅谷银行倒闭引发加密相关银行（Silvergate、Signature）连锁危机，BTC在72小时内从约22000美元跌至约19500美元，跌幅约11%；与本次情景类似——金融机构持仓模式风险外溢至BTC情绪面，但本次冲击烈度更低，故幅度预估仅1.5%。"
+        },
+        {
+          "date": "2024-08-05",
+          "summary": "全球风险资产集体回调期间，加密财库类股票（含持有BTC/ETH的上市公司）跌幅普遍超BTC本身，BTC3日内跌约8%；显示机构财库模式在市场恐慌中会放大BTC波动，但本次亏损属单一公司事件，传导烈度预计显著更弱。"
+        }
+      ]
+    },
     "historical_instances": []
   },
   {

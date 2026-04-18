@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-04-18T13:03:09.161650",
+  "generated_at": "2026-04-18T13:08:05.182534",
   "stats": {
-    "generated_at": "2026-04-18T13:03:08.685940",
+    "generated_at": "2026-04-18T13:08:04.794781",
     "kb_summary": {
       "n_links_active": 335,
-      "n_strong": 153,
+      "n_strong": 157,
       "n_weak": 24,
-      "n_retire_candidate": 4,
+      "n_retire_candidate": 10,
       "n_flip_candidate": 4,
-      "n_insufficient_data": 150,
+      "n_insufficient_data": 140,
       "strong_avg_dir_hit_rate": 0.766,
       "n_instances_total": 1936,
-      "n_instances_with_price_path": 1882,
-      "n_instances_with_turning_points": 1882,
-      "n_instances_classified": 1890,
+      "n_instances_with_price_path": 1903,
+      "n_instances_with_turning_points": 1903,
+      "n_instances_classified": 1911,
       "n_links_with_causal_chain": 302,
       "by_macro_category": {
         "monetary_policy": 87,

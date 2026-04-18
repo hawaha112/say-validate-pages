@@ -1,5 +1,31 @@
 {
-  "generated_at": "2026-04-18T12:23:43.176206",
+  "generated_at": "2026-04-18T12:31:57.550317",
+  "kb_summary": {
+    "n_links_active": 336,
+    "n_strong": 141,
+    "n_weak": 23,
+    "n_retire_candidate": 2,
+    "n_flip_candidate": 0,
+    "n_insufficient_data": 170,
+    "strong_avg_dir_hit_rate": 0.773,
+    "n_instances_total": 1936,
+    "n_instances_with_price_path": 1702,
+    "n_instances_with_turning_points": 1702,
+    "n_instances_classified": 1753,
+    "n_links_with_causal_chain": 303,
+    "by_macro_category": {
+      "monetary_policy": 88,
+      "macro_data": 43,
+      "energy_commodity": 41,
+      "politics_geo": 41,
+      "regulation": 37,
+      "tech_breakthrough": 4,
+      "corporate_sector": 32,
+      "crypto_market": 13,
+      "financial_stress": 35,
+      "market_stress": 2
+    }
+  },
   "total": 49,
   "verified": 0,
   "pending": 49,

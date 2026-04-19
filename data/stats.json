@@ -1,35 +1,53 @@
 {
-  "generated_at": "2026-04-18T14:07:38.114049",
+  "generated_at": "2026-04-19T04:46:39.774564",
   "kb_summary": {
-    "n_links_active": 335,
-    "n_strong": 175,
+    "n_links_active": 301,
+    "n_strong": 167,
+    "n_strong_rigorous": 37,
+    "rigor_thresholds": {
+      "min_n_legacy": 5,
+      "min_n_rigorous": 5,
+      "min_dir_rate": 0.6,
+      "min_abs_t": 2.77,
+      "note": "rigorous requires |t|≥2.77 (Bonferroni across 9 horizons, α=0.05) AND n≥5 AND dir_rate≥0.6"
+    },
+    "rigorous_strong_avg_abs_t": 3.97,
     "n_weak": 9,
-    "n_retire_candidate": 9,
-    "n_flip_candidate": 2,
-    "n_insufficient_data": 140,
-    "strong_avg_dir_hit_rate": 0.797,
-    "n_instances_total": 1936,
+    "n_retire_candidate": 0,
+    "n_flip_candidate": 0,
+    "n_insufficient_data": 125,
+    "strong_avg_dir_hit_rate": 0.798,
+    "n_instances_total": 1937,
     "n_instances_with_price_path": 1903,
     "n_instances_with_turning_points": 1903,
-    "n_instances_classified": 1911,
-    "n_links_with_causal_chain": 302,
+    "n_instances_classified": 1912,
+    "n_links_with_causal_chain": 275,
     "by_macro_category": {
-      "monetary_policy": 87,
-      "macro_data": 43,
-      "energy_commodity": 41,
-      "politics_geo": 41,
-      "regulation": 37,
+      "monetary_policy": 75,
+      "macro_data": 42,
+      "energy_commodity": 38,
+      "politics_geo": 36,
+      "regulation": 35,
       "tech_breakthrough": 4,
-      "corporate_sector": 32,
+      "corporate_sector": 30,
       "crypto_market": 13,
-      "financial_stress": 35,
+      "financial_stress": 26,
       "market_stress": 2
     }
   },
   "total": 49,
   "verified": 0,
-  "pending": 49,
+  "pending": 48,
+  "pending_past_expire": 1,
+  "expired_no_data": 0,
   "hit_rate": null,
+  "hit_rate_strict": null,
+  "hit_rate_honest": 0.0,
+  "hit_rate_denominator": {
+    "strict": 0,
+    "honest": 1,
+    "note": "strict counts only verified predictions; honest treats expired_no_data and past-expire pending as misses (they're predictions the system couldn't score, not omissions)"
+  },
   "hit_breakdown_summary": {
     "n": 0,
     "dir_hit_rate": null,
@@ -44,6 +62,28 @@
     "random_dir_hit_rate": null,
     "actual_strict_hit_rate": null,
     "random_strict_hit_rate": null
+  },
+  "kb_vs_random": {
+    "n_instances": 1912,
+    "actual_dir_hit_rate": 0.664,
+    "random_dir_hit_rate": 0.515,
+    "actual_strict_hit_rate": 0.459,
+    "random_strict_hit_rate": 0.361,
+    "edge_dir": 0.15,
+    "edge_strict": 0.098
+  },
+  "freeze": {
+    "date": "2026-04-19",
+    "pre_freeze": {
+      "n_verified": 0,
+      "hit_rate_strict": null,
+      "note": "built before KB freeze; treat as training/in-sample"
+    },
+    "post_freeze": {
+      "n_verified": 0,
+      "hit_rate_strict": null,
+      "note": "verified predictions made after KB freeze — this is the number you can actually trust. Grows as live predictions accumulate."
+    }
   },
   "by_class": {
     "us_stock": 36,

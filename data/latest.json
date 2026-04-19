@@ -1,37 +1,55 @@
 {
-  "generated_at": "2026-04-18T14:07:38.876269",
+  "generated_at": "2026-04-19T04:46:40.431607",
   "stats": {
-    "generated_at": "2026-04-18T14:07:38.114049",
+    "generated_at": "2026-04-19T04:46:39.774564",
     "kb_summary": {
-      "n_links_active": 335,
-      "n_strong": 175,
+      "n_links_active": 301,
+      "n_strong": 167,
+      "n_strong_rigorous": 37,
+      "rigor_thresholds": {
+        "min_n_legacy": 5,
+        "min_n_rigorous": 5,
+        "min_dir_rate": 0.6,
+        "min_abs_t": 2.77,
+        "note": "rigorous requires |t|≥2.77 (Bonferroni across 9 horizons, α=0.05) AND n≥5 AND dir_rate≥0.6"
+      },
+      "rigorous_strong_avg_abs_t": 3.97,
       "n_weak": 9,
-      "n_retire_candidate": 9,
-      "n_flip_candidate": 2,
-      "n_insufficient_data": 140,
-      "strong_avg_dir_hit_rate": 0.797,
-      "n_instances_total": 1936,
+      "n_retire_candidate": 0,
+      "n_flip_candidate": 0,
+      "n_insufficient_data": 125,
+      "strong_avg_dir_hit_rate": 0.798,
+      "n_instances_total": 1937,
       "n_instances_with_price_path": 1903,
       "n_instances_with_turning_points": 1903,
-      "n_instances_classified": 1911,
-      "n_links_with_causal_chain": 302,
+      "n_instances_classified": 1912,
+      "n_links_with_causal_chain": 275,
       "by_macro_category": {
-        "monetary_policy": 87,
-        "macro_data": 43,
-        "energy_commodity": 41,
-        "politics_geo": 41,
-        "regulation": 37,
+        "monetary_policy": 75,
+        "macro_data": 42,
+        "energy_commodity": 38,
+        "politics_geo": 36,
+        "regulation": 35,
         "tech_breakthrough": 4,
-        "corporate_sector": 32,
+        "corporate_sector": 30,
         "crypto_market": 13,
-        "financial_stress": 35,
+        "financial_stress": 26,
         "market_stress": 2
       }
     },
     "total": 49,
     "verified": 0,
-    "pending": 49,
+    "pending": 48,
+    "pending_past_expire": 1,
+    "expired_no_data": 0,
     "hit_rate": null,
+    "hit_rate_strict": null,
+    "hit_rate_honest": 0.0,
+    "hit_rate_denominator": {
+      "strict": 0,
+      "honest": 1,
+      "note": "strict counts only verified predictions; honest treats expired_no_data and past-expire pending as misses (they're predictions the system couldn't score, not omissions)"
+    },
     "hit_breakdown_summary": {
       "n": 0,
       "dir_hit_rate": null,
@@ -46,6 +64,28 @@
       "random_dir_hit_rate": null,
       "actual_strict_hit_rate": null,
       "random_strict_hit_rate": null
+    },
+    "kb_vs_random": {
+      "n_instances": 1912,
+      "actual_dir_hit_rate": 0.664,
+      "random_dir_hit_rate": 0.515,
+      "actual_strict_hit_rate": 0.459,
+      "random_strict_hit_rate": 0.361,
+      "edge_dir": 0.15,
+      "edge_strict": 0.098
+    },
+    "freeze": {
+      "date": "2026-04-19",
+      "pre_freeze": {
+        "n_verified": 0,
+        "hit_rate_strict": null,
+        "note": "built before KB freeze; treat as training/in-sample"
+      },
+      "post_freeze": {
+        "n_verified": 0,
+        "hit_rate_strict": null,
+        "note": "verified predictions made after KB freeze — this is the number you can actually trust. Grows as live predictions accumulate."
+      }
     },
     "by_class": {
       "us_stock": 36,
@@ -2253,7 +2293,7 @@
           "actual_pct": 0.84,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -2803,7 +2843,7 @@
           "actual_pct": 4.38,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -3131,7 +3171,7 @@
           "actual_pct": 0.33,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -4080,1538 +4120,6 @@
       ]
     },
     {
-      "id": 240,
-      "pattern": "央行宣布全面降准",
-      "asset_symbol": "USDCNY=X",
-      "asset_name": "美元兑人民币",
-      "asset_class": "fx",
-      "macro_category": "monetary_policy",
-      "direction": "up",
-      "magnitude_pct": 0.3,
-      "magnitude_pct_stddev": 0.0,
-      "horizon_days": 3,
-      "confidence": 0.2727272727272727,
-      "support_count": 2,
-      "refute_count": 7,
-      "source": "researched",
-      "rationale": "降准释放长期流动性，提振 A 股和在岸离岸资产；人民币短期承压但幅度有限。",
-      "explanation": {
-        "causal_chain": [
-          {
-            "step": 1,
-            "trigger": "中国人民银行正式宣布全面降准（下调金融机构存款准备金率）",
-            "mechanism": "降准直接释放银行体系超额准备金，增加可贷资金规模，市场立即将其解读为货币宽松信号，国内利率下行预期升温",
-            "assumption": "降准幅度具有实质意义（≥25bps），且市场此前未充分预期；若已提前price-in，则反应衰减",
-            "confidence": "high"
-          },
-          {
-            "step": 2,
-            "trigger": "国内货币宽松预期升温，短端利率（DR007/SHIBOR）应声下行",
-            "mechanism": "资金供给增加压低银行间市场利率，中美短端利差随之收窄（甚至倒挂扩大）；利差是汇率的核心锚之一，利差收窄使持有人民币的套息收益下降",
-            "assumption": "美联储政策保持稳定，美元利率未同步下行；若美联储同期降息，利差效应可能抵消",
-            "confidence": "medium"
-          },
-          {
-            "step": 3,
-            "trigger": "中美利差收窄，持有人民币的相对吸引力下降",
-            "mechanism": "利差交易（carry trade）逻辑受损：套利资金减少流入/加速流出人民币资产，离岸市场（香港）出现CNH抛压；同时，宽松预期也可能引发资本账户项下资金的短期外流担忧",
-            "assumption": "当前没有强力的风险偏好改善因素（如重大政策刺激组合拳）来对冲利差逻辑；若降准同步伴随大规模财政扩张，资本可能反向流入",
-            "confidence": "medium"
-          },
-          {
-            "step": 4,
-            "trigger": "离岸人民币（CNH）抛售压力上升，CNH相对在岸CNY出现贴水扩大",
-            "mechanism": "离岸市场流动性较薄、监管约束较少，对宏观信号反应更敏感、更快；做空CNH或买入USDCNH成为短期对冲/投机的优先选择，推动USDCNH汇价上行",
-            "assumption": "中国央行未在离岸市场通过中间价引导或离岸央票发行来对冲贬值压力；若央行逆周期干预，上行空间受限",
-            "confidence": "low"
-          },
-          {
-            "step": 5,
-            "trigger": "USDCNH买盘增加，汇价在3日窗口内走高约0.3%",
-            "mechanism": "短期供需失衡（CNH卖盘 > 买盘）推动USDCNH上行；但由于降准本身属于常规宽松工具、幅度有限，市场通常在消化预期后止跌回稳，故幅度受限于0.3%量级，不会形成趋势性贬值",
-            "assumption": "宏观背景下无其他重大利好人民币的同期事件（贸易顺差超预期、外资大规模流入等）；市场情绪整体中性偏空",
-            "confidence": "low"
-          }
-        ],
-        "mechanism_summary": "降准压低中美利差 → 套息吸引力下降 → 离岸CNH承压 → USDCNH短期小幅走高",
-        "asset_logic": "USDCNH（离岸人民币）是对货币政策预期最敏感的中国资产之一，离岸市场干预成本高、价格发现更自由，因此率先反映宽松预期。方向为USDCNH上行（人民币小幅贬值），逻辑在于利差收窄削弱持汇动力，而非人民币基本面恶化。幅度仅0.3%，因降准属常规操作、幅度可预期，且央行有意维稳汇率，限制了单边下行空间。",
-        "horizon_logic": "3日窗口对应市场'消化公告→重新定价→回归均值'的典型节奏：宣布当日冲击最大，第2-3日多空博弈收敛；超过1周则基本面逻辑（贸易数据、外资流向）重新主导，汇率回归央行引导区间。",
-        "key_risks": "最大风险在于降准被市场解读为'稳增长信号'而非'贬值信号'，带动A股上涨、风险偏好改善，外资反而增配人民币资产，推动USDCNH下行（与预测方向相反）——这正是当前证据中9次反驳、0次支持、置信度仅9.1%所揭示的主要失效模式。此外，若央行同步在离岸发行央票收紧CNH流动性、或外汇储备数据强劲，贬值逻辑将迅速瓦解。全球risk-off情绪骤变（如美股急跌）也可能导致美元全面走强，遮蔽降准本身的方向性信号。",
-        "historical_examples": [
-          {
-            "date": "2023-03-17",
-            "summary": "央行宣布降准25bps（3月27日生效），USDCNH当日从6.87短暂升破6.90，但随后因市场解读为稳增长信号、风险偏好回升，3日内反转至6.85附近，USDCNH实际下行，与'降准→人民币贬值'预测方向相反。"
-          },
-          {
-            "date": "2021-12-06",
-            "summary": "央行宣布降准50bps（12月15日生效），USDCNH从6.37附近不升反降至6.35，A股同步上涨；市场将降准定性为经济托底利好，资本流入逻辑压制了利差收窄的贬值逻辑，再次与预测方向相悖。"
-          },
-          {
-            "date": "2022-11-25",
-            "summary": "央行宣布降准25bps，USDCNH从7.16附近短暂上行至7.19，3日后回落至7.12；彼时市场处于弱势人民币背景下，贬值逻辑短暂成立，是少数支持该预测方向的历史案例，但幅度和持续性均有限。"
-          }
-        ]
-      },
-      "historical_instances": [
-        {
-          "event_date": "2025-05-07",
-          "event_note": "PBOC降准50bp，5/15生效",
-          "baseline_price": 7.2163,
-          "end_price": 7.2363,
-          "actual_pct": 0.28,
-          "actual_direction": "up",
-          "dir_hit": true,
-          "strict_hit": true,
-          "mag_err_bucket": "<=10%",
-          "skipped_reason": null,
-          "price_path": [
-            {
-              "date": "2025-04-29",
-              "close": 7.294
-            },
-            {
-              "date": "2025-04-30",
-              "close": 7.269
-            },
-            {
-              "date": "2025-05-01",
-              "close": 7.2706
-            },
-            {
-              "date": "2025-05-02",
-              "close": 7.2706
-            },
-            {
-              "date": "2025-05-05",
-              "close": 7.2706
-            },
-            {
-              "date": "2025-05-06",
-              "close": 7.27
-            },
-            {
-              "date": "2025-05-07",
-              "close": 7.2163
-            },
-            {
-              "date": "2025-05-08",
-              "close": 7.2252
-            },
-            {
-              "date": "2025-05-09",
-              "close": 7.2252
-            },
-            {
-              "date": "2025-05-12",
-              "close": 7.2363
-            },
-            {
-              "date": "2025-05-13",
-              "close": 7.2018
-            },
-            {
-              "date": "2025-05-14",
-              "close": 7.2057
-            },
-            {
-              "date": "2025-05-15",
-              "close": 7.2057
-            },
-            {
-              "date": "2025-05-16",
-              "close": 7.2065
-            },
-            {
-              "date": "2025-05-19",
-              "close": 7.209
-            },
-            {
-              "date": "2025-05-20",
-              "close": 7.209
-            },
-            {
-              "date": "2025-05-21",
-              "close": 7.2194
-            },
-            {
-              "date": "2025-05-22",
-              "close": 7.2019
-            },
-            {
-              "date": "2025-05-23",
-              "close": 7.2037
-            },
-            {
-              "date": "2025-05-26",
-              "close": 7.2037
-            },
-            {
-              "date": "2025-05-27",
-              "close": 7.2037
-            },
-            {
-              "date": "2025-05-28",
-              "close": 7.2037
-            },
-            {
-              "date": "2025-05-29",
-              "close": 7.2037
-            },
-            {
-              "date": "2025-05-30",
-              "close": 7.2037
-            },
-            {
-              "date": "2025-06-02",
-              "close": 7.2037
-            },
-            {
-              "date": "2025-06-03",
-              "close": 7.2037
-            },
-            {
-              "date": "2025-06-04",
-              "close": 7.2037
-            },
-            {
-              "date": "2025-06-05",
-              "close": 7.2037
-            },
-            {
-              "date": "2025-06-06",
-              "close": 7.175
-            },
-            {
-              "date": "2025-06-09",
-              "close": 7.1886
-            },
-            {
-              "date": "2025-06-10",
-              "close": 7.1802
-            },
-            {
-              "date": "2025-06-11",
-              "close": 7.1802
-            },
-            {
-              "date": "2025-06-12",
-              "close": 7.1928
-            },
-            {
-              "date": "2025-06-13",
-              "close": 7.1928
-            }
-          ],
-          "turning_points": {
-            "turning_points": [
-              {
-                "date": "2025-06-06",
-                "type": "trough",
-                "description": "事件后第 30 天录得相对基准 -0.57%，为窗口内最大降幅；与预测方向相反。",
-                "days_after_event": 30
-              }
-            ],
-            "time_to_peak_impact_days": 30,
-            "narrative": "事件后 3 天累计 +0.28%，峰值出现在事件后第 30 天 (-0.57%)。",
-            "method": "heuristic"
-          },
-          "data_source_name": null,
-          "data_source_url": null,
-          "user_provided": false
-        },
-        {
-          "event_date": "2024-09-24",
-          "event_note": "央行降准50bp（一揽子刺激）",
-          "baseline_price": 7.0513,
-          "end_price": 7.009,
-          "actual_pct": -0.6,
-          "actual_direction": "down",
-          "dir_hit": false,
-          "strict_hit": false,
-          "mag_err_bucket": "<=100%",
-          "skipped_reason": null,
-          "price_path": [
-            {
-              "date": "2024-09-16",
-              "close": 7.0927
-            },
-            {
-              "date": "2024-09-17",
-              "close": 7.0925
-            },
-            {
-              "date": "2024-09-18",
-              "close": 7.0925
-            },
-            {
-              "date": "2024-09-19",
-              "close": 7.081
-            },
-            {
-              "date": "2024-09-20",
-              "close": 7.067
-            },
-            {
-              "date": "2024-09-23",
-              "close": 7.0509
-            },
-            {
-              "date": "2024-09-24",
-              "close": 7.0513
-            },
-            {
-              "date": "2024-09-25",
-              "close": 7.0302
-            },
-            {
-              "date": "2024-09-26",
-              "close": 7.0323
-            },
-            {
-              "date": "2024-09-27",
-              "close": 7.009
-            },
-            {
-              "date": "2024-09-30",
-              "close": 7.0103
-            },
-            {
-              "date": "2024-10-01",
-              "close": 7.0175
-            },
-            {
-              "date": "2024-10-02",
-              "close": 7.0304
-            },
-            {
-              "date": "2024-10-03",
-              "close": 7.0377
-            },
-            {
-              "date": "2024-10-04",
-              "close": 7.0451
-            },
-            {
-              "date": "2024-10-07",
-              "close": 7.0175
-            },
-            {
-              "date": "2024-10-08",
-              "close": 7.0191
-            },
-            {
-              "date": "2024-10-09",
-              "close": 7.0578
-            },
-            {
-              "date": "2024-10-10",
-              "close": 7.0801
-            },
-            {
-              "date": "2024-10-11",
-              "close": 7.0801
-            },
-            {
-              "date": "2024-10-14",
-              "close": 7.0652
-            },
-            {
-              "date": "2024-10-15",
-              "close": 7.0872
-            },
-            {
-              "date": "2024-10-16",
-              "close": 7.1178
-            },
-            {
-              "date": "2024-10-17",
-              "close": 7.1184
-            },
-            {
-              "date": "2024-10-18",
-              "close": 7.123
-            },
-            {
-              "date": "2024-10-21",
-              "close": 7.1008
-            },
-            {
-              "date": "2024-10-22",
-              "close": 7.118
-            },
-            {
-              "date": "2024-10-23",
-              "close": 7.1217
-            },
-            {
-              "date": "2024-10-24",
-              "close": 7.1253
-            },
-            {
-              "date": "2024-10-25",
-              "close": 7.1187
-            },
-            {
-              "date": "2024-10-28",
-              "close": 7.1201
-            },
-            {
-              "date": "2024-10-29",
-              "close": 7.1275
-            },
-            {
-              "date": "2024-10-30",
-              "close": 7.1301
-            },
-            {
-              "date": "2024-10-31",
-              "close": 7.1148
-            }
-          ],
-          "turning_points": {
-            "turning_points": [
-              {
-                "date": "2024-10-30",
-                "type": "peak",
-                "description": "事件后第 36 天录得相对基准 +1.12%，为窗口内最大升幅；印证预测方向。",
-                "days_after_event": 36
-              }
-            ],
-            "time_to_peak_impact_days": 36,
-            "narrative": "事件后 3 天累计 -0.60%，峰值出现在事件后第 36 天 (+1.12%)，第 6 天起回吐。",
-            "method": "heuristic"
-          },
-          "data_source_name": null,
-          "data_source_url": null,
-          "user_provided": false
-        },
-        {
-          "event_date": "2024-01-24",
-          "event_note": "PBOC降准50bp，2/5生效",
-          "baseline_price": 7.0776,
-          "end_price": 7.0866,
-          "actual_pct": 0.13,
-          "actual_direction": "up",
-          "dir_hit": true,
-          "strict_hit": false,
-          "mag_err_bucket": "<=100%",
-          "skipped_reason": null,
-          "price_path": [
-            {
-              "date": "2024-01-16",
-              "close": 7.097
-            },
-            {
-              "date": "2024-01-17",
-              "close": 7.1165
-            },
-            {
-              "date": "2024-01-18",
-              "close": 7.1145
-            },
-            {
-              "date": "2024-01-19",
-              "close": 7.115
-            },
-            {
-              "date": "2024-01-22",
-              "close": 7.1071
-            },
-            {
-              "date": "2024-01-23",
-              "close": 7.1927
-            },
-            {
-              "date": "2024-01-24",
-              "close": 7.0776
-            },
-            {
-              "date": "2024-01-25",
-              "close": 7.082
-            },
-            {
-              "date": "2024-01-26",
-              "close": 7.0811
-            },
-            {
-              "date": "2024-01-29",
-              "close": 7.0866
-            },
-            {
-              "date": "2024-01-30",
-              "close": 7.0845
-            },
-            {
-              "date": "2024-01-31",
-              "close": 7.0941
-            },
-            {
-              "date": "2024-02-01",
-              "close": 7.1007
-            },
-            {
-              "date": "2024-02-02",
-              "close": 7.0885
-            },
-            {
-              "date": "2024-02-05",
-              "close": 7.1126
-            },
-            {
-              "date": "2024-02-06",
-              "close": 7.1085
-            },
-            {
-              "date": "2024-02-07",
-              "close": 7.1001
-            },
-            {
-              "date": "2024-02-08",
-              "close": 7.1011
-            },
-            {
-              "date": "2024-02-09",
-              "close": 7.107
-            },
-            {
-              "date": "2024-02-12",
-              "close": 7.179
-            },
-            {
-              "date": "2024-02-13",
-              "close": 7.1922
-            },
-            {
-              "date": "2024-02-14",
-              "close": 7.1887
-            },
-            {
-              "date": "2024-02-15",
-              "close": 7.1759
-            },
-            {
-              "date": "2024-02-16",
-              "close": 7.1639
-            },
-            {
-              "date": "2024-02-19",
-              "close": 7.1186
-            },
-            {
-              "date": "2024-02-20",
-              "close": 7.1972
-            },
-            {
-              "date": "2024-02-21",
-              "close": 7.1897
-            },
-            {
-              "date": "2024-02-22",
-              "close": 7.1881
-            },
-            {
-              "date": "2024-02-23",
-              "close": 7.1933
-            },
-            {
-              "date": "2024-02-26",
-              "close": 7.1944
-            },
-            {
-              "date": "2024-02-27",
-              "close": 7.1963
-            },
-            {
-              "date": "2024-02-28",
-              "close": 7.1974
-            },
-            {
-              "date": "2024-02-29",
-              "close": 7.196
-            },
-            {
-              "date": "2024-03-01",
-              "close": 7.1872
-            }
-          ],
-          "turning_points": {
-            "turning_points": [
-              {
-                "date": "2024-02-28",
-                "type": "peak",
-                "description": "事件后第 35 天录得相对基准 +1.69%，为窗口内最大升幅；印证预测方向。",
-                "days_after_event": 35
-              }
-            ],
-            "time_to_peak_impact_days": 35,
-            "narrative": "事件后 3 天累计 +0.13%，峰值出现在事件后第 35 天 (+1.69%)。",
-            "method": "heuristic"
-          },
-          "data_source_name": null,
-          "data_source_url": null,
-          "user_provided": false
-        },
-        {
-          "event_date": "2023-03-17",
-          "event_note": "PBOC首次2023年降准25bp",
-          "baseline_price": 6.8975,
-          "end_price": 6.8861,
-          "actual_pct": -0.17,
-          "actual_direction": "down",
-          "dir_hit": false,
-          "strict_hit": false,
-          "mag_err_bucket": "<=50%",
-          "skipped_reason": null,
-          "price_path": [
-            {
-              "date": "2023-03-09",
-              "close": 6.9503
-            },
-            {
-              "date": "2023-03-10",
-              "close": 6.9636
-            },
-            {
-              "date": "2023-03-13",
-              "close": 6.9052
-            },
-            {
-              "date": "2023-03-14",
-              "close": 6.8446
-            },
-            {
-              "date": "2023-03-15",
-              "close": 6.8705
-            },
-            {
-              "date": "2023-03-16",
-              "close": 6.9059
-            },
-            {
-              "date": "2023-03-17",
-              "close": 6.8975
-            },
-            {
-              "date": "2023-03-20",
-              "close": 6.8861
-            },
-            {
-              "date": "2023-03-21",
-              "close": 6.8777
-            },
-            {
-              "date": "2023-03-22",
-              "close": 6.883
-            },
-            {
-              "date": "2023-03-23",
-              "close": 6.8792
-            },
-            {
-              "date": "2023-03-24",
-              "close": 6.8184
-            },
-            {
-              "date": "2023-03-27",
-              "close": 6.867
-            },
-            {
-              "date": "2023-03-28",
-              "close": 6.8844
-            },
-            {
-              "date": "2023-03-29",
-              "close": 6.8733
-            },
-            {
-              "date": "2023-03-30",
-              "close": 6.8856
-            },
-            {
-              "date": "2023-03-31",
-              "close": 6.8704
-            },
-            {
-              "date": "2023-04-03",
-              "close": 6.868
-            },
-            {
-              "date": "2023-04-04",
-              "close": 6.8773
-            },
-            {
-              "date": "2023-04-05",
-              "close": 6.8788
-            },
-            {
-              "date": "2023-04-06",
-              "close": 6.8785
-            },
-            {
-              "date": "2023-04-07",
-              "close": 6.8749
-            },
-            {
-              "date": "2023-04-10",
-              "close": 6.8693
-            },
-            {
-              "date": "2023-04-11",
-              "close": 6.8811
-            },
-            {
-              "date": "2023-04-12",
-              "close": 6.8855
-            },
-            {
-              "date": "2023-04-13",
-              "close": 6.8737
-            },
-            {
-              "date": "2023-04-14",
-              "close": 6.8678
-            },
-            {
-              "date": "2023-04-17",
-              "close": 6.8704
-            },
-            {
-              "date": "2023-04-18",
-              "close": 6.8788
-            },
-            {
-              "date": "2023-04-19",
-              "close": 6.8749
-            },
-            {
-              "date": "2023-04-20",
-              "close": 6.8851
-            },
-            {
-              "date": "2023-04-21",
-              "close": 6.8721
-            }
-          ],
-          "turning_points": {
-            "turning_points": [
-              {
-                "date": "2023-03-24",
-                "type": "trough",
-                "description": "事件后第 7 天录得相对基准 -1.15%，为窗口内最大降幅；与预测方向相反。",
-                "days_after_event": 7
-              },
-              {
-                "date": "2023-03-27",
-                "type": "reversion",
-                "description": "事件后第 10 天 3 日滚动收益方向翻转，价格开始回吐前期涨跌。",
-                "days_after_event": 10
-              }
-            ],
-            "time_to_peak_impact_days": 7,
-            "narrative": "事件后 3 天累计 -0.17%，峰值出现在事件后第 7 天 (-1.15%)，第 10 天起回吐。",
-            "method": "heuristic"
-          },
-          "data_source_name": null,
-          "data_source_url": null,
-          "user_provided": false
-        },
-        {
-          "event_date": "2022-11-25",
-          "event_note": "PBOC全面降准25bp，12/5生效",
-          "baseline_price": 7.1503,
-          "end_price": 7.1705,
-          "actual_pct": 0.28,
-          "actual_direction": "up",
-          "dir_hit": true,
-          "strict_hit": true,
-          "mag_err_bucket": "<=10%",
-          "skipped_reason": null,
-          "price_path": [
-            {
-              "date": "2022-11-17",
-              "close": 7.0872
-            },
-            {
-              "date": "2022-11-18",
-              "close": 7.1562
-            },
-            {
-              "date": "2022-11-21",
-              "close": 7.1189
-            },
-            {
-              "date": "2022-11-22",
-              "close": 7.1642
-            },
-            {
-              "date": "2022-11-23",
-              "close": 7.1393
-            },
-            {
-              "date": "2022-11-24",
-              "close": 7.1658
-            },
-            {
-              "date": "2022-11-25",
-              "close": 7.1503
-            },
-            {
-              "date": "2022-11-28",
-              "close": 7.1705
-            },
-            {
-              "date": "2022-11-29",
-              "close": 7.2071
-            },
-            {
-              "date": "2022-11-30",
-              "close": 7.1594
-            },
-            {
-              "date": "2022-12-01",
-              "close": 7.0762
-            },
-            {
-              "date": "2022-12-02",
-              "close": 7.0437
-            },
-            {
-              "date": "2022-12-05",
-              "close": 7.0239
-            },
-            {
-              "date": "2022-12-06",
-              "close": 6.9609
-            },
-            {
-              "date": "2022-12-07",
-              "close": 6.9949
-            },
-            {
-              "date": "2022-12-08",
-              "close": 6.9726
-            },
-            {
-              "date": "2022-12-09",
-              "close": 6.9663
-            },
-            {
-              "date": "2022-12-12",
-              "close": 6.9566
-            },
-            {
-              "date": "2022-12-13",
-              "close": 6.9765
-            },
-            {
-              "date": "2022-12-14",
-              "close": 6.9434
-            },
-            {
-              "date": "2022-12-15",
-              "close": 6.9499
-            },
-            {
-              "date": "2022-12-16",
-              "close": 6.9722
-            },
-            {
-              "date": "2022-12-19",
-              "close": 6.9721
-            },
-            {
-              "date": "2022-12-20",
-              "close": 6.9786
-            },
-            {
-              "date": "2022-12-21",
-              "close": 6.9608
-            },
-            {
-              "date": "2022-12-22",
-              "close": 6.9806
-            },
-            {
-              "date": "2022-12-23",
-              "close": 6.983
-            },
-            {
-              "date": "2022-12-26",
-              "close": 6.9887
-            },
-            {
-              "date": "2022-12-27",
-              "close": 6.9612
-            },
-            {
-              "date": "2022-12-28",
-              "close": 6.959
-            },
-            {
-              "date": "2022-12-29",
-              "close": 6.9776
-            },
-            {
-              "date": "2022-12-30",
-              "close": 6.9631
-            }
-          ],
-          "turning_points": {
-            "turning_points": [
-              {
-                "date": "2022-12-14",
-                "type": "trough",
-                "description": "事件后第 19 天录得相对基准 -2.89%，为窗口内最大降幅；与预测方向相反。",
-                "days_after_event": 19
-              }
-            ],
-            "time_to_peak_impact_days": 19,
-            "narrative": "事件后 3 天累计 +0.28%，峰值出现在事件后第 19 天 (-2.89%)，第 5 天起回吐。",
-            "method": "heuristic"
-          },
-          "data_source_name": null,
-          "data_source_url": null,
-          "user_provided": false
-        },
-        {
-          "event_date": "2022-04-15",
-          "event_note": "PBOC降准25bp，4/25生效",
-          "baseline_price": 6.3774,
-          "end_price": 6.3702,
-          "actual_pct": -0.11,
-          "actual_direction": "down",
-          "dir_hit": false,
-          "strict_hit": false,
-          "mag_err_bucket": "<=100%",
-          "skipped_reason": null,
-          "price_path": [
-            {
-              "date": "2022-04-07",
-              "close": 6.3585
-            },
-            {
-              "date": "2022-04-08",
-              "close": 6.3597
-            },
-            {
-              "date": "2022-04-11",
-              "close": 6.364
-            },
-            {
-              "date": "2022-04-12",
-              "close": 6.3687
-            },
-            {
-              "date": "2022-04-13",
-              "close": 6.365
-            },
-            {
-              "date": "2022-04-14",
-              "close": 6.3672
-            },
-            {
-              "date": "2022-04-15",
-              "close": 6.3774
-            },
-            {
-              "date": "2022-04-18",
-              "close": 6.3702
-            },
-            {
-              "date": "2022-04-19",
-              "close": 6.3662
-            },
-            {
-              "date": "2022-04-20",
-              "close": 6.3924
-            },
-            {
-              "date": "2022-04-21",
-              "close": 6.4177
-            },
-            {
-              "date": "2022-04-22",
-              "close": 6.4493
-            },
-            {
-              "date": "2022-04-25",
-              "close": 6.5003
-            },
-            {
-              "date": "2022-04-26",
-              "close": 6.5579
-            },
-            {
-              "date": "2022-04-27",
-              "close": 6.5563
-            },
-            {
-              "date": "2022-04-28",
-              "close": 6.5595
-            },
-            {
-              "date": "2022-04-29",
-              "close": 6.6253
-            },
-            {
-              "date": "2022-05-02",
-              "close": 6.6075
-            },
-            {
-              "date": "2022-05-03",
-              "close": 6.6075
-            },
-            {
-              "date": "2022-05-04",
-              "close": 6.6074
-            },
-            {
-              "date": "2022-05-05",
-              "close": 6.6075
-            },
-            {
-              "date": "2022-05-06",
-              "close": 6.6546
-            },
-            {
-              "date": "2022-05-09",
-              "close": 6.6656
-            },
-            {
-              "date": "2022-05-10",
-              "close": 6.7298
-            },
-            {
-              "date": "2022-05-11",
-              "close": 6.7336
-            },
-            {
-              "date": "2022-05-12",
-              "close": 6.7207
-            },
-            {
-              "date": "2022-05-13",
-              "close": 6.7859
-            },
-            {
-              "date": "2022-05-16",
-              "close": 6.788
-            },
-            {
-              "date": "2022-05-17",
-              "close": 6.7851
-            },
-            {
-              "date": "2022-05-18",
-              "close": 6.7362
-            },
-            {
-              "date": "2022-05-19",
-              "close": 6.7534
-            },
-            {
-              "date": "2022-05-20",
-              "close": 6.7121
-            }
-          ],
-          "turning_points": {
-            "turning_points": [
-              {
-                "date": "2022-05-16",
-                "type": "peak",
-                "description": "事件后第 31 天录得相对基准 +6.44%，为窗口内最大升幅；印证预测方向。",
-                "days_after_event": 31
-              }
-            ],
-            "time_to_peak_impact_days": 31,
-            "narrative": "事件后 3 天累计 -0.11%，峰值出现在事件后第 31 天 (+6.44%)。",
-            "method": "heuristic"
-          },
-          "data_source_name": null,
-          "data_source_url": null,
-          "user_provided": false
-        },
-        {
-          "event_date": "2021-12-06",
-          "event_note": "PBOC全面降准50bp，释放1.2万亿",
-          "baseline_price": 6.3753,
-          "end_price": 6.3437,
-          "actual_pct": -0.5,
-          "actual_direction": "down",
-          "dir_hit": false,
-          "strict_hit": false,
-          "mag_err_bucket": "<=100%",
-          "skipped_reason": null,
-          "price_path": [
-            {
-              "date": "2021-11-29",
-              "close": 6.392
-            },
-            {
-              "date": "2021-11-30",
-              "close": 6.387
-            },
-            {
-              "date": "2021-12-01",
-              "close": 6.3632
-            },
-            {
-              "date": "2021-12-02",
-              "close": 6.3673
-            },
-            {
-              "date": "2021-12-03",
-              "close": 6.3756
-            },
-            {
-              "date": "2021-12-06",
-              "close": 6.3753
-            },
-            {
-              "date": "2021-12-07",
-              "close": 6.3748
-            },
-            {
-              "date": "2021-12-08",
-              "close": 6.3663
-            },
-            {
-              "date": "2021-12-09",
-              "close": 6.3437
-            },
-            {
-              "date": "2021-12-10",
-              "close": 6.3765
-            },
-            {
-              "date": "2021-12-13",
-              "close": 6.36
-            },
-            {
-              "date": "2021-12-14",
-              "close": 6.3655
-            },
-            {
-              "date": "2021-12-15",
-              "close": 6.3665
-            },
-            {
-              "date": "2021-12-16",
-              "close": 6.3665
-            },
-            {
-              "date": "2021-12-17",
-              "close": 6.3672
-            },
-            {
-              "date": "2021-12-20",
-              "close": 6.374
-            },
-            {
-              "date": "2021-12-21",
-              "close": 6.3746
-            },
-            {
-              "date": "2021-12-22",
-              "close": 6.3706
-            },
-            {
-              "date": "2021-12-23",
-              "close": 6.3691
-            },
-            {
-              "date": "2021-12-24",
-              "close": 6.3688
-            },
-            {
-              "date": "2021-12-27",
-              "close": 6.3666
-            },
-            {
-              "date": "2021-12-28",
-              "close": 6.3698
-            },
-            {
-              "date": "2021-12-29",
-              "close": 6.3672
-            },
-            {
-              "date": "2021-12-30",
-              "close": 6.3673
-            },
-            {
-              "date": "2021-12-31",
-              "close": 6.3721
-            },
-            {
-              "date": "2022-01-03",
-              "close": 6.3549
-            },
-            {
-              "date": "2022-01-04",
-              "close": 6.3551
-            },
-            {
-              "date": "2022-01-05",
-              "close": 6.3543
-            },
-            {
-              "date": "2022-01-06",
-              "close": 6.354
-            },
-            {
-              "date": "2022-01-07",
-              "close": 6.3819
-            },
-            {
-              "date": "2022-01-10",
-              "close": 6.3762
-            },
-            {
-              "date": "2022-01-11",
-              "close": 6.3739
-            },
-            {
-              "date": "2022-01-12",
-              "close": 6.3729
-            }
-          ],
-          "turning_points": {
-            "turning_points": [
-              {
-                "date": "2021-12-09",
-                "type": "trough",
-                "description": "事件后第 3 天录得相对基准 -0.50%，为窗口内最大降幅；与预测方向相反。",
-                "days_after_event": 3
-              }
-            ],
-            "time_to_peak_impact_days": 3,
-            "narrative": "事件后 3 天累计 -0.50%，峰值出现在事件后第 3 天 (-0.50%)。",
-            "method": "heuristic"
-          },
-          "data_source_name": null,
-          "data_source_url": null,
-          "user_provided": false
-        },
-        {
-          "event_date": "2021-07-09",
-          "event_note": "PBOC全面降准50bp，释放约1万亿",
-          "baseline_price": 6.4891,
-          "end_price": 6.478,
-          "actual_pct": -0.17,
-          "actual_direction": "down",
-          "dir_hit": false,
-          "strict_hit": false,
-          "mag_err_bucket": "<=50%",
-          "skipped_reason": null,
-          "price_path": [
-            {
-              "date": "2021-07-01",
-              "close": 6.4562
-            },
-            {
-              "date": "2021-07-02",
-              "close": 6.4676
-            },
-            {
-              "date": "2021-07-05",
-              "close": 6.4721
-            },
-            {
-              "date": "2021-07-06",
-              "close": 6.4628
-            },
-            {
-              "date": "2021-07-07",
-              "close": 6.4781
-            },
-            {
-              "date": "2021-07-08",
-              "close": 6.4715
-            },
-            {
-              "date": "2021-07-09",
-              "close": 6.4891
-            },
-            {
-              "date": "2021-07-12",
-              "close": 6.478
-            },
-            {
-              "date": "2021-07-13",
-              "close": 6.4746
-            },
-            {
-              "date": "2021-07-14",
-              "close": 6.4675
-            },
-            {
-              "date": "2021-07-15",
-              "close": 6.4683
-            },
-            {
-              "date": "2021-07-16",
-              "close": 6.4601
-            },
-            {
-              "date": "2021-07-19",
-              "close": 6.4782
-            },
-            {
-              "date": "2021-07-20",
-              "close": 6.4894
-            },
-            {
-              "date": "2021-07-21",
-              "close": 6.4839
-            },
-            {
-              "date": "2021-07-22",
-              "close": 6.467
-            },
-            {
-              "date": "2021-07-23",
-              "close": 6.4697
-            },
-            {
-              "date": "2021-07-26",
-              "close": 6.4804
-            },
-            {
-              "date": "2021-07-27",
-              "close": 6.4817
-            },
-            {
-              "date": "2021-07-28",
-              "close": 6.5097
-            },
-            {
-              "date": "2021-07-29",
-              "close": 6.4894
-            },
-            {
-              "date": "2021-07-30",
-              "close": 6.4553
-            },
-            {
-              "date": "2021-08-02",
-              "close": 6.4605
-            },
-            {
-              "date": "2021-08-03",
-              "close": 6.461
-            },
-            {
-              "date": "2021-08-04",
-              "close": 6.4692
-            },
-            {
-              "date": "2021-08-05",
-              "close": 6.4652
-            },
-            {
-              "date": "2021-08-06",
-              "close": 6.4603
-            },
-            {
-              "date": "2021-08-09",
-              "close": 6.4825
-            },
-            {
-              "date": "2021-08-10",
-              "close": 6.4852
-            },
-            {
-              "date": "2021-08-11",
-              "close": 6.4849
-            },
-            {
-              "date": "2021-08-12",
-              "close": 6.4782
-            },
-            {
-              "date": "2021-08-13",
-              "close": 6.4783
-            }
-          ],
-          "turning_points": {
-            "turning_points": [
-              {
-                "date": "2021-07-30",
-                "type": "trough",
-                "description": "事件后第 21 天录得相对基准 -0.52%，为窗口内最大降幅；与预测方向相反。",
-                "days_after_event": 21
-              }
-            ],
-            "time_to_peak_impact_days": 21,
-            "narrative": "事件后 3 天累计 -0.17%，峰值出现在事件后第 21 天 (-0.52%)，第 7 天起回吐。",
-            "method": "heuristic"
-          },
-          "data_source_name": null,
-          "data_source_url": null,
-          "user_provided": false
-        },
-        {
-          "event_date": "2020-03-13",
-          "event_note": "PBOC定向降准50-100bp，释放5500亿",
-          "baseline_price": 7.0286,
-          "end_price": 7.0072,
-          "actual_pct": -0.3,
-          "actual_direction": "down",
-          "dir_hit": false,
-          "strict_hit": false,
-          "mag_err_bucket": "<=10%",
-          "skipped_reason": null,
-          "price_path": [
-            {
-              "date": "2020-03-05",
-              "close": 6.9654
-            },
-            {
-              "date": "2020-03-06",
-              "close": 6.936
-            },
-            {
-              "date": "2020-03-09",
-              "close": 6.9311
-            },
-            {
-              "date": "2020-03-10",
-              "close": 6.9456
-            },
-            {
-              "date": "2020-03-11",
-              "close": 6.9556
-            },
-            {
-              "date": "2020-03-12",
-              "close": 6.9596
-            },
-            {
-              "date": "2020-03-13",
-              "close": 7.0286
-            },
-            {
-              "date": "2020-03-16",
-              "close": 7.0072
-            },
-            {
-              "date": "2020-03-17",
-              "close": 6.9927
-            },
-            {
-              "date": "2020-03-18",
-              "close": 7.0062
-            },
-            {
-              "date": "2020-03-19",
-              "close": 7.0464
-            },
-            {
-              "date": "2020-03-20",
-              "close": 7.1077
-            },
-            {
-              "date": "2020-03-23",
-              "close": 7.0948
-            },
-            {
-              "date": "2020-03-24",
-              "close": 7.0913
-            },
-            {
-              "date": "2020-03-25",
-              "close": 7.062
-            },
-            {
-              "date": "2020-03-26",
-              "close": 7.1135
-            },
-            {
-              "date": "2020-03-27",
-              "close": 7.0731
-            },
-            {
-              "date": "2020-03-30",
-              "close": 7.0953
-            },
-            {
-              "date": "2020-03-31",
-              "close": 7.0992
-            },
-            {
-              "date": "2020-04-01",
-              "close": 7.0814
-            },
-            {
-              "date": "2020-04-02",
-              "close": 7.0993
-            },
-            {
-              "date": "2020-04-03",
-              "close": 7.0832
-            },
-            {
-              "date": "2020-04-06",
-              "close": 7.0913
-            },
-            {
-              "date": "2020-04-07",
-              "close": 7.0913
-            },
-            {
-              "date": "2020-04-08",
-              "close": 7.0448
-            },
-            {
-              "date": "2020-04-09",
-              "close": 7.0649
-            },
-            {
-              "date": "2020-04-10",
-              "close": 7.0422
-            },
-            {
-              "date": "2020-04-13",
-              "close": 7.0351
-            },
-            {
-              "date": "2020-04-14",
-              "close": 7.0516
-            },
-            {
-              "date": "2020-04-15",
-              "close": 7.0483
-            },
-            {
-              "date": "2020-04-16",
-              "close": 7.0665
-            },
-            {
-              "date": "2020-04-17",
-              "close": 7.0788
-            }
-          ],
-          "turning_points": {
-            "turning_points": [
-              {
-                "date": "2020-03-26",
-                "type": "peak",
-                "description": "事件后第 13 天录得相对基准 +1.21%，为窗口内最大升幅；印证预测方向。",
-                "days_after_event": 13
-              }
-            ],
-            "time_to_peak_impact_days": 13,
-            "narrative": "事件后 3 天累计 -0.30%，峰值出现在事件后第 13 天 (+1.21%)，第 5 天起回吐。",
-            "method": "heuristic"
-          },
-          "data_source_name": null,
-          "data_source_url": null,
-          "user_provided": false
-        }
-      ]
-    },
-    {
       "id": 259,
       "pattern": "央行下调7天逆回购政策利率",
       "asset_symbol": "USDCNY=X",
@@ -6021,7 +4529,7 @@
           "actual_pct": 0.05,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -6521,7 +5029,7 @@
           "actual_pct": 0.45,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=50%",
           "skipped_reason": null,
           "price_path": [
@@ -6845,7 +5353,7 @@
           "actual_pct": 0.05,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -7238,7 +5746,7 @@
           "actual_pct": 3.51,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -7728,7 +6236,7 @@
           "actual_pct": 0.73,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -8344,7 +6852,7 @@
           "actual_pct": 0.35,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -8890,7 +7398,7 @@
           "actual_pct": 0.05,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -9214,7 +7722,7 @@
           "actual_pct": 0.28,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=50%",
           "skipped_reason": null,
           "price_path": [
@@ -10034,7 +8542,7 @@
           "actual_pct": 0.36,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -10923,7 +9431,7 @@
           "actual_pct": 0.16,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -13559,7 +12067,7 @@
           "actual_pct": 0.57,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -14049,7 +12557,7 @@
           "actual_pct": 0.16,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=50%",
           "skipped_reason": null,
           "price_path": [
@@ -14932,7 +13440,7 @@
           "actual_pct": 0.38,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=50%",
           "skipped_reason": null,
           "price_path": [
@@ -15258,7 +13766,7 @@
           "actual_pct": 0.12,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -16308,7 +14816,7 @@
           "actual_pct": 0.1,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -16620,7 +15128,7 @@
           "actual_pct": 0.45,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -17009,7 +15517,7 @@
           "actual_pct": -1.2,
           "actual_direction": "down",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -20465,7 +18973,7 @@
           "actual_pct": -0.57,
           "actual_direction": "down",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -21837,7 +20345,7 @@
           "actual_pct": -4.39,
           "actual_direction": "down",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -23891,7 +22399,7 @@
           "actual_pct": -0.66,
           "actual_direction": "down",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -24605,7 +23113,7 @@
           "actual_pct": 0.24,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -25059,7 +23567,7 @@
           "actual_pct": 2.22,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -26245,7 +24753,7 @@
           "actual_pct": 0.92,
           "actual_direction": "up",
           "dir_hit": true,
-          "strict_hit": false,
+          "strict_hit": true,
           "mag_err_bucket": "<=100%",
           "skipped_reason": null,
           "price_path": [
@@ -26551,6 +25059,996 @@
             ],
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 3 天累计 +0.00%，峰值出现在事件后第 37 天 (-3.02%)。",
+            "method": "heuristic"
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
+        }
+      ]
+    },
+    {
+      "id": 145,
+      "pattern": "美联储紧急降息（非例会、≥50bp）",
+      "asset_symbol": "SPY",
+      "asset_name": "标普500ETF",
+      "asset_class": "us_stock",
+      "macro_category": "monetary_policy",
+      "direction": "down",
+      "magnitude_pct": 3.728,
+      "magnitude_pct_stddev": 0.891614266373077,
+      "horizon_days": 7,
+      "confidence": 0.375,
+      "support_count": 2,
+      "refute_count": 4,
+      "source": "researched",
+      "rationale": "非例会紧急降息发生在系统性风险或重大危机期间，短期内美元走弱、黄金避险上涨；但因释放衰退恐慌信号，风险资产往往不涨反跌。",
+      "explanation": null,
+      "historical_instances": [
+        {
+          "event_date": "2020-03-15",
+          "event_note": "Sunday emergency -100bp to zero + $700B QE; S&P -12% Monday",
+          "baseline_price": 239.85,
+          "end_price": 222.95,
+          "actual_pct": -7.05,
+          "actual_direction": "down",
+          "dir_hit": true,
+          "strict_hit": true,
+          "mag_err_bucket": "<=100%",
+          "skipped_reason": null,
+          "price_path": [
+            {
+              "date": "2020-03-09",
+              "close": 274.23
+            },
+            {
+              "date": "2020-03-10",
+              "close": 288.42
+            },
+            {
+              "date": "2020-03-11",
+              "close": 274.36
+            },
+            {
+              "date": "2020-03-12",
+              "close": 248.11
+            },
+            {
+              "date": "2020-03-13",
+              "close": 269.32
+            },
+            {
+              "date": "2020-03-16",
+              "close": 239.85
+            },
+            {
+              "date": "2020-03-17",
+              "close": 252.8
+            },
+            {
+              "date": "2020-03-18",
+              "close": 240.0
+            },
+            {
+              "date": "2020-03-19",
+              "close": 240.51
+            },
+            {
+              "date": "2020-03-20",
+              "close": 228.8
+            },
+            {
+              "date": "2020-03-23",
+              "close": 222.95
+            },
+            {
+              "date": "2020-03-24",
+              "close": 243.15
+            },
+            {
+              "date": "2020-03-25",
+              "close": 246.79
+            },
+            {
+              "date": "2020-03-26",
+              "close": 261.2
+            },
+            {
+              "date": "2020-03-27",
+              "close": 253.42
+            },
+            {
+              "date": "2020-03-30",
+              "close": 261.65
+            },
+            {
+              "date": "2020-03-31",
+              "close": 257.75
+            },
+            {
+              "date": "2020-04-01",
+              "close": 246.15
+            },
+            {
+              "date": "2020-04-02",
+              "close": 251.83
+            },
+            {
+              "date": "2020-04-03",
+              "close": 248.19
+            },
+            {
+              "date": "2020-04-06",
+              "close": 264.86
+            },
+            {
+              "date": "2020-04-07",
+              "close": 265.13
+            },
+            {
+              "date": "2020-04-08",
+              "close": 274.03
+            },
+            {
+              "date": "2020-04-09",
+              "close": 278.2
+            },
+            {
+              "date": "2020-04-13",
+              "close": 275.66
+            },
+            {
+              "date": "2020-04-14",
+              "close": 283.79
+            },
+            {
+              "date": "2020-04-15",
+              "close": 277.76
+            },
+            {
+              "date": "2020-04-16",
+              "close": 279.1
+            },
+            {
+              "date": "2020-04-17",
+              "close": 286.64
+            },
+            {
+              "date": "2020-04-20",
+              "close": 281.59
+            },
+            {
+              "date": "2020-04-21",
+              "close": 273.04
+            }
+          ],
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2020-04-17",
+                "type": "peak",
+                "description": "事件后第 33 天录得相对基准 +19.51%，为窗口内最大升幅；与预测方向相反。",
+                "days_after_event": 33
+              }
+            ],
+            "time_to_peak_impact_days": 33,
+            "narrative": "事件后 7 天累计 -7.05%，峰值出现在事件后第 33 天 (+19.51%)。",
+            "method": "heuristic"
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
+        },
+        {
+          "event_date": "2020-03-03",
+          "event_note": "Fed emergency -50bp, COVID response",
+          "baseline_price": 300.24,
+          "end_price": 288.42,
+          "actual_pct": -3.94,
+          "actual_direction": "down",
+          "dir_hit": true,
+          "strict_hit": true,
+          "mag_err_bucket": "<=10%",
+          "skipped_reason": null,
+          "price_path": [
+            {
+              "date": "2020-02-24",
+              "close": 322.42
+            },
+            {
+              "date": "2020-02-25",
+              "close": 312.65
+            },
+            {
+              "date": "2020-02-26",
+              "close": 311.5
+            },
+            {
+              "date": "2020-02-27",
+              "close": 297.51
+            },
+            {
+              "date": "2020-02-28",
+              "close": 296.26
+            },
+            {
+              "date": "2020-03-02",
+              "close": 309.09
+            },
+            {
+              "date": "2020-03-03",
+              "close": 300.24
+            },
+            {
+              "date": "2020-03-04",
+              "close": 312.86
+            },
+            {
+              "date": "2020-03-05",
+              "close": 302.46
+            },
+            {
+              "date": "2020-03-06",
+              "close": 297.46
+            },
+            {
+              "date": "2020-03-09",
+              "close": 274.23
+            },
+            {
+              "date": "2020-03-10",
+              "close": 288.42
+            },
+            {
+              "date": "2020-03-11",
+              "close": 274.36
+            },
+            {
+              "date": "2020-03-12",
+              "close": 248.11
+            },
+            {
+              "date": "2020-03-13",
+              "close": 269.32
+            },
+            {
+              "date": "2020-03-16",
+              "close": 239.85
+            },
+            {
+              "date": "2020-03-17",
+              "close": 252.8
+            },
+            {
+              "date": "2020-03-18",
+              "close": 240.0
+            },
+            {
+              "date": "2020-03-19",
+              "close": 240.51
+            },
+            {
+              "date": "2020-03-20",
+              "close": 228.8
+            },
+            {
+              "date": "2020-03-23",
+              "close": 222.95
+            },
+            {
+              "date": "2020-03-24",
+              "close": 243.15
+            },
+            {
+              "date": "2020-03-25",
+              "close": 246.79
+            },
+            {
+              "date": "2020-03-26",
+              "close": 261.2
+            },
+            {
+              "date": "2020-03-27",
+              "close": 253.42
+            },
+            {
+              "date": "2020-03-30",
+              "close": 261.65
+            },
+            {
+              "date": "2020-03-31",
+              "close": 257.75
+            },
+            {
+              "date": "2020-04-01",
+              "close": 246.15
+            },
+            {
+              "date": "2020-04-02",
+              "close": 251.83
+            },
+            {
+              "date": "2020-04-03",
+              "close": 248.19
+            },
+            {
+              "date": "2020-04-06",
+              "close": 264.86
+            },
+            {
+              "date": "2020-04-07",
+              "close": 265.13
+            },
+            {
+              "date": "2020-04-08",
+              "close": 274.03
+            },
+            {
+              "date": "2020-04-09",
+              "close": 278.2
+            }
+          ],
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2020-03-23",
+                "type": "trough",
+                "description": "事件后第 20 天录得相对基准 -25.74%，为窗口内最大降幅；印证预测方向。",
+                "days_after_event": 20
+              }
+            ],
+            "time_to_peak_impact_days": 20,
+            "narrative": "事件后 7 天累计 -3.94%，峰值出现在事件后第 20 天 (-25.74%)，第 3 天起回吐。",
+            "method": "heuristic"
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
+        },
+        {
+          "event_date": "2008-10-08",
+          "event_note": "Coordinated global emergency -50bp post-Lehman",
+          "baseline_price": 97.51,
+          "end_price": 90.02,
+          "actual_pct": -7.68,
+          "actual_direction": "down",
+          "dir_hit": true,
+          "strict_hit": false,
+          "mag_err_bucket": ">100%",
+          "skipped_reason": null,
+          "price_path": [
+            {
+              "date": "2008-09-30",
+              "close": 115.99
+            },
+            {
+              "date": "2008-10-01",
+              "close": 116.06
+            },
+            {
+              "date": "2008-10-02",
+              "close": 111.85
+            },
+            {
+              "date": "2008-10-03",
+              "close": 110.34
+            },
+            {
+              "date": "2008-10-06",
+              "close": 104.72
+            },
+            {
+              "date": "2008-10-07",
+              "close": 100.03
+            },
+            {
+              "date": "2008-10-08",
+              "close": 97.51
+            },
+            {
+              "date": "2008-10-09",
+              "close": 90.7
+            },
+            {
+              "date": "2008-10-10",
+              "close": 88.5
+            },
+            {
+              "date": "2008-10-13",
+              "close": 101.35
+            },
+            {
+              "date": "2008-10-14",
+              "close": 99.85
+            },
+            {
+              "date": "2008-10-15",
+              "close": 90.02
+            },
+            {
+              "date": "2008-10-16",
+              "close": 93.77
+            },
+            {
+              "date": "2008-10-17",
+              "close": 93.21
+            },
+            {
+              "date": "2008-10-20",
+              "close": 98.81
+            },
+            {
+              "date": "2008-10-21",
+              "close": 95.86
+            },
+            {
+              "date": "2008-10-22",
+              "close": 90.64
+            },
+            {
+              "date": "2008-10-23",
+              "close": 91.69
+            },
+            {
+              "date": "2008-10-24",
+              "close": 87.04
+            },
+            {
+              "date": "2008-10-27",
+              "close": 83.95
+            },
+            {
+              "date": "2008-10-28",
+              "close": 93.76
+            },
+            {
+              "date": "2008-10-29",
+              "close": 93.08
+            },
+            {
+              "date": "2008-10-30",
+              "close": 96.3
+            },
+            {
+              "date": "2008-10-31",
+              "close": 96.83
+            },
+            {
+              "date": "2008-11-03",
+              "close": 97.11
+            },
+            {
+              "date": "2008-11-04",
+              "close": 100.41
+            },
+            {
+              "date": "2008-11-05",
+              "close": 96.19
+            },
+            {
+              "date": "2008-11-06",
+              "close": 90.86
+            },
+            {
+              "date": "2008-11-07",
+              "close": 93.86
+            },
+            {
+              "date": "2008-11-10",
+              "close": 92.63
+            },
+            {
+              "date": "2008-11-11",
+              "close": 89.77
+            },
+            {
+              "date": "2008-11-12",
+              "close": 85.82
+            },
+            {
+              "date": "2008-11-13",
+              "close": 91.17
+            },
+            {
+              "date": "2008-11-14",
+              "close": 86.62
+            }
+          ],
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2008-10-27",
+                "type": "trough",
+                "description": "事件后第 19 天录得相对基准 -13.91%，为窗口内最大降幅；印证预测方向。",
+                "days_after_event": 19
+              }
+            ],
+            "time_to_peak_impact_days": 19,
+            "narrative": "事件后 7 天累计 -7.68%，峰值出现在事件后第 19 天 (-13.91%)，第 5 天起回吐。",
+            "method": "heuristic"
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
+        },
+        {
+          "event_date": "2008-01-22",
+          "event_note": "Emergency -75bp inter-meeting amid credit crisis",
+          "baseline_price": 130.72,
+          "end_price": 135.91,
+          "actual_pct": 3.97,
+          "actual_direction": "up",
+          "dir_hit": false,
+          "strict_hit": false,
+          "mag_err_bucket": "<=10%",
+          "skipped_reason": null,
+          "price_path": [
+            {
+              "date": "2008-01-14",
+              "close": 141.28
+            },
+            {
+              "date": "2008-01-15",
+              "close": 138.17
+            },
+            {
+              "date": "2008-01-16",
+              "close": 136.98
+            },
+            {
+              "date": "2008-01-17",
+              "close": 133.43
+            },
+            {
+              "date": "2008-01-18",
+              "close": 132.06
+            },
+            {
+              "date": "2008-01-22",
+              "close": 130.72
+            },
+            {
+              "date": "2008-01-23",
+              "close": 133.86
+            },
+            {
+              "date": "2008-01-24",
+              "close": 134.99
+            },
+            {
+              "date": "2008-01-25",
+              "close": 133.04
+            },
+            {
+              "date": "2008-01-28",
+              "close": 135.24
+            },
+            {
+              "date": "2008-01-29",
+              "close": 135.91
+            },
+            {
+              "date": "2008-01-30",
+              "close": 134.91
+            },
+            {
+              "date": "2008-01-31",
+              "close": 137.37
+            },
+            {
+              "date": "2008-02-01",
+              "close": 139.58
+            },
+            {
+              "date": "2008-02-04",
+              "close": 137.82
+            },
+            {
+              "date": "2008-02-05",
+              "close": 134.13
+            },
+            {
+              "date": "2008-02-06",
+              "close": 133.05
+            },
+            {
+              "date": "2008-02-07",
+              "close": 133.93
+            },
+            {
+              "date": "2008-02-08",
+              "close": 133.07
+            },
+            {
+              "date": "2008-02-11",
+              "close": 133.75
+            },
+            {
+              "date": "2008-02-12",
+              "close": 134.99
+            },
+            {
+              "date": "2008-02-13",
+              "close": 136.37
+            },
+            {
+              "date": "2008-02-14",
+              "close": 135.17
+            },
+            {
+              "date": "2008-02-15",
+              "close": 135.14
+            },
+            {
+              "date": "2008-02-19",
+              "close": 135.52
+            },
+            {
+              "date": "2008-02-20",
+              "close": 135.92
+            },
+            {
+              "date": "2008-02-21",
+              "close": 134.79
+            },
+            {
+              "date": "2008-02-22",
+              "close": 135.62
+            },
+            {
+              "date": "2008-02-25",
+              "close": 137.33
+            },
+            {
+              "date": "2008-02-26",
+              "close": 138.36
+            },
+            {
+              "date": "2008-02-27",
+              "close": 138.22
+            },
+            {
+              "date": "2008-02-28",
+              "close": 136.87
+            }
+          ],
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2008-02-01",
+                "type": "peak",
+                "description": "事件后第 10 天录得相对基准 +6.78%，为窗口内最大升幅；与预测方向相反。",
+                "days_after_event": 10
+              }
+            ],
+            "time_to_peak_impact_days": 10,
+            "narrative": "事件后 7 天累计 +3.97%，峰值出现在事件后第 10 天 (+6.78%)，第 10 天起回吐。",
+            "method": "heuristic"
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
+        },
+        {
+          "event_date": "2001-04-18",
+          "event_note": "Emergency -50bp, recession risk",
+          "baseline_price": 124.0,
+          "end_price": 123.17,
+          "actual_pct": -0.67,
+          "actual_direction": "down",
+          "dir_hit": true,
+          "strict_hit": true,
+          "mag_err_bucket": "<=100%",
+          "skipped_reason": null,
+          "price_path": [
+            {
+              "date": "2001-04-10",
+              "close": 116.65
+            },
+            {
+              "date": "2001-04-11",
+              "close": 116.73
+            },
+            {
+              "date": "2001-04-12",
+              "close": 118.85
+            },
+            {
+              "date": "2001-04-16",
+              "close": 117.6
+            },
+            {
+              "date": "2001-04-17",
+              "close": 119.26
+            },
+            {
+              "date": "2001-04-18",
+              "close": 124.0
+            },
+            {
+              "date": "2001-04-19",
+              "close": 125.65
+            },
+            {
+              "date": "2001-04-20",
+              "close": 124.5
+            },
+            {
+              "date": "2001-04-23",
+              "close": 122.24
+            },
+            {
+              "date": "2001-04-24",
+              "close": 121.58
+            },
+            {
+              "date": "2001-04-25",
+              "close": 123.17
+            },
+            {
+              "date": "2001-04-26",
+              "close": 123.72
+            },
+            {
+              "date": "2001-04-27",
+              "close": 125.78
+            },
+            {
+              "date": "2001-04-30",
+              "close": 126.66
+            },
+            {
+              "date": "2001-05-01",
+              "close": 127.05
+            },
+            {
+              "date": "2001-05-02",
+              "close": 126.82
+            },
+            {
+              "date": "2001-05-03",
+              "close": 125.21
+            },
+            {
+              "date": "2001-05-04",
+              "close": 127.34
+            },
+            {
+              "date": "2001-05-07",
+              "close": 126.24
+            },
+            {
+              "date": "2001-05-08",
+              "close": 126.18
+            },
+            {
+              "date": "2001-05-09",
+              "close": 125.65
+            },
+            {
+              "date": "2001-05-10",
+              "close": 126.02
+            },
+            {
+              "date": "2001-05-11",
+              "close": 125.15
+            },
+            {
+              "date": "2001-05-14",
+              "close": 125.4
+            },
+            {
+              "date": "2001-05-15",
+              "close": 125.98
+            },
+            {
+              "date": "2001-05-16",
+              "close": 128.95
+            },
+            {
+              "date": "2001-05-17",
+              "close": 129.15
+            },
+            {
+              "date": "2001-05-18",
+              "close": 129.74
+            },
+            {
+              "date": "2001-05-21",
+              "close": 131.65
+            },
+            {
+              "date": "2001-05-22",
+              "close": 131.48
+            },
+            {
+              "date": "2001-05-23",
+              "close": 129.25
+            },
+            {
+              "date": "2001-05-24",
+              "close": 129.63
+            },
+            {
+              "date": "2001-05-25",
+              "close": 128.1
+            }
+          ],
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2001-05-21",
+                "type": "peak",
+                "description": "事件后第 33 天录得相对基准 +6.17%，为窗口内最大升幅；与预测方向相反。",
+                "days_after_event": 33
+              }
+            ],
+            "time_to_peak_impact_days": 33,
+            "narrative": "事件后 7 天累计 -0.67%，峰值出现在事件后第 33 天 (+6.17%)，第 5 天起回吐。",
+            "method": "heuristic"
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
+        },
+        {
+          "event_date": "2001-01-03",
+          "event_note": "Emergency -50bp, dot-com bust",
+          "baseline_price": 135.0,
+          "end_price": 132.125,
+          "actual_pct": -2.13,
+          "actual_direction": "down",
+          "dir_hit": true,
+          "strict_hit": true,
+          "mag_err_bucket": "<=50%",
+          "skipped_reason": null,
+          "price_path": [
+            {
+              "date": "2000-12-26",
+              "close": 132.3438
+            },
+            {
+              "date": "2000-12-27",
+              "close": 133.3125
+            },
+            {
+              "date": "2000-12-28",
+              "close": 133.7188
+            },
+            {
+              "date": "2000-12-29",
+              "close": 131.1875
+            },
+            {
+              "date": "2001-01-02",
+              "close": 128.8125
+            },
+            {
+              "date": "2001-01-03",
+              "close": 135.0
+            },
+            {
+              "date": "2001-01-04",
+              "close": 133.5469
+            },
+            {
+              "date": "2001-01-05",
+              "close": 129.1875
+            },
+            {
+              "date": "2001-01-08",
+              "close": 130.1875
+            },
+            {
+              "date": "2001-01-09",
+              "close": 129.8438
+            },
+            {
+              "date": "2001-01-10",
+              "close": 132.125
+            },
+            {
+              "date": "2001-01-11",
+              "close": 132.25
+            },
+            {
+              "date": "2001-01-12",
+              "close": 132.0
+            },
+            {
+              "date": "2001-01-16",
+              "close": 132.8438
+            },
+            {
+              "date": "2001-01-17",
+              "close": 133.4531
+            },
+            {
+              "date": "2001-01-18",
+              "close": 134.7812
+            },
+            {
+              "date": "2001-01-19",
+              "close": 134.0156
+            },
+            {
+              "date": "2001-01-22",
+              "close": 134.9062
+            },
+            {
+              "date": "2001-01-23",
+              "close": 135.9688
+            },
+            {
+              "date": "2001-01-24",
+              "close": 136.375
+            },
+            {
+              "date": "2001-01-25",
+              "close": 136.0312
+            },
+            {
+              "date": "2001-01-26",
+              "close": 135.875
+            },
+            {
+              "date": "2001-01-29",
+              "close": 136.6
+            },
+            {
+              "date": "2001-01-30",
+              "close": 137.8
+            },
+            {
+              "date": "2001-01-31",
+              "close": 137.02
+            },
+            {
+              "date": "2001-02-01",
+              "close": 137.93
+            },
+            {
+              "date": "2001-02-02",
+              "close": 134.8
+            },
+            {
+              "date": "2001-02-05",
+              "close": 135.79
+            },
+            {
+              "date": "2001-02-06",
+              "close": 135.39
+            },
+            {
+              "date": "2001-02-07",
+              "close": 134.69
+            },
+            {
+              "date": "2001-02-08",
+              "close": 133.12
+            },
+            {
+              "date": "2001-02-09",
+              "close": 131.84
+            }
+          ],
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2001-01-05",
+                "type": "trough",
+                "description": "事件后第 2 天录得相对基准 -4.31%，为窗口内最大降幅；印证预测方向。",
+                "days_after_event": 2
+              },
+              {
+                "date": "2001-01-08",
+                "type": "reversion",
+                "description": "事件后第 5 天 3 日滚动收益方向翻转，价格开始回吐前期涨跌。",
+                "days_after_event": 5
+              }
+            ],
+            "time_to_peak_impact_days": 2,
+            "narrative": "事件后 7 天累计 -2.13%，峰值出现在事件后第 2 天 (-4.31%)，第 5 天起回吐。",
             "method": "heuristic"
           },
           "data_source_name": null,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T04:46:39.774564",
+  "generated_at": "2026-04-20T11:37:46.781874",
   "kb_summary": {
     "n_links_active": 301,
     "n_strong": 167,
@@ -37,15 +37,15 @@
   },
   "total": 49,
   "verified": 0,
-  "pending": 48,
-  "pending_past_expire": 1,
+  "pending": 33,
+  "pending_past_expire": 16,
   "expired_no_data": 0,
   "hit_rate": null,
   "hit_rate_strict": null,
   "hit_rate_honest": 0.0,
   "hit_rate_denominator": {
     "strict": 0,
-    "honest": 1,
+    "honest": 16,
     "note": "strict counts only verified predictions; honest treats expired_no_data and past-expire pending as misses (they're predictions the system couldn't score, not omissions)"
   },
   "hit_breakdown_summary": {

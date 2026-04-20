@@ -240409,7 +240409,7 @@
     "pattern": "Section 232 行业专项关税（半导体/药品/金属/汽车）公告",
     "asset_symbol": "VIXY",
     "asset_name": "短期VIX期货ETF",
-    "asset_class": "us_vol",
+    "asset_class": "us_stock",
     "macro_category": "regulation",
     "direction": "up",
     "magnitude_pct": 4.0,
@@ -240486,7 +240486,7 @@
         "actual_pct": 27.77,
         "actual_direction": "up",
         "dir_hit": true,
-        "strict_hit": true,
+        "strict_hit": false,
         "mag_err_bucket": ">100%",
         "skipped_reason": null,
         "price_path": [
@@ -240648,7 +240648,7 @@
         "actual_pct": 7.81,
         "actual_direction": "up",
         "dir_hit": true,
-        "strict_hit": true,
+        "strict_hit": false,
         "mag_err_bucket": "<=100%",
         "skipped_reason": null,
         "price_path": [

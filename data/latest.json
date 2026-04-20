@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-20T12:27:00.891736",
+  "generated_at": "2026-04-20T12:36:08.535665",
   "stats": {
-    "generated_at": "2026-04-20T12:27:00.345444",
+    "generated_at": "2026-04-20T12:36:07.912411",
     "kb_summary": {
       "n_links_active": 301,
       "n_strong": 167,
@@ -69,8 +69,8 @@
       "n_instances": 1912,
       "actual_dir_hit_rate": 0.664,
       "random_dir_hit_rate": 0.515,
-      "actual_strict_hit_rate": 0.459,
-      "random_strict_hit_rate": 0.361,
+      "actual_strict_hit_rate": 0.458,
+      "random_strict_hit_rate": 0.36,
       "edge_dir": 0.15,
       "edge_strict": 0.098
     },

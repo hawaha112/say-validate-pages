@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-20T12:36:08.535665",
+  "generated_at": "2026-04-22T13:18:12.509401",
   "stats": {
-    "generated_at": "2026-04-20T12:36:07.912411",
+    "generated_at": "2026-04-22T13:18:11.944058",
     "kb_summary": {
-      "n_links_active": 301,
+      "n_links_active": 300,
       "n_strong": 167,
       "n_strong_rigorous": 37,
       "rigor_thresholds": {
@@ -14,7 +14,7 @@
         "note": "rigorous requires |t|≥2.77 (Bonferroni across 9 horizons, α=0.05) AND n≥5 AND dir_rate≥0.6"
       },
       "rigorous_strong_avg_abs_t": 3.97,
-      "n_weak": 9,
+      "n_weak": 8,
       "n_retire_candidate": 0,
       "n_flip_candidate": 0,
       "n_insufficient_data": 125,
@@ -23,10 +23,10 @@
       "n_instances_with_price_path": 1903,
       "n_instances_with_turning_points": 1903,
       "n_instances_classified": 1912,
-      "n_links_with_causal_chain": 275,
+      "n_links_with_causal_chain": 274,
       "by_macro_category": {
         "monetary_policy": 75,
-        "macro_data": 42,
+        "macro_data": 41,
         "energy_commodity": 38,
         "politics_geo": 36,
         "regulation": 35,
@@ -38,32 +38,38 @@
       }
     },
     "total": 49,
-    "verified": 0,
-    "pending": 33,
-    "pending_past_expire": 16,
+    "verified": 17,
+    "pending": 32,
+    "pending_past_expire": 0,
     "expired_no_data": 0,
-    "hit_rate": null,
-    "hit_rate_strict": null,
-    "hit_rate_honest": 0.0,
+    "hit_rate": 0.29411764705882354,
+    "hit_rate_strict": 0.29411764705882354,
+    "hit_rate_honest": 0.29411764705882354,
     "hit_rate_denominator": {
-      "strict": 0,
-      "honest": 16,
+      "strict": 17,
+      "honest": 17,
       "note": "strict counts only verified predictions; honest treats expired_no_data and past-expire pending as misses (they're predictions the system couldn't score, not omissions)"
     },
     "hit_breakdown_summary": {
-      "n": 0,
-      "dir_hit_rate": null,
-      "mag_hit_rate": null,
-      "strict_hit_rate": null,
-      "mag_err_bucket_counts": {}
+      "n": 17,
+      "dir_hit_rate": 0.29411764705882354,
+      "mag_hit_rate": 0.8823529411764706,
+      "strict_hit_rate": 0.29411764705882354,
+      "mag_err_bucket_counts": {
+        "<=50%": 6,
+        "<=100%": 7,
+        "<=10%": 1,
+        ">100%": 2,
+        "<=25%": 1
+      }
     },
     "hit_rate_vs_random": {
       "lookback_days": 30,
-      "n_verified": 0,
-      "actual_dir_hit_rate": null,
-      "random_dir_hit_rate": null,
-      "actual_strict_hit_rate": null,
-      "random_strict_hit_rate": null
+      "n_verified": 17,
+      "actual_dir_hit_rate": 0.29411764705882354,
+      "random_dir_hit_rate": 0.7058823529411765,
+      "actual_strict_hit_rate": 0.29411764705882354,
+      "random_strict_hit_rate": 0.7058823529411765
     },
     "kb_vs_random": {
       "n_instances": 1912,
@@ -77,8 +83,8 @@
     "freeze": {
       "date": "2026-04-19",
       "pre_freeze": {
-        "n_verified": 0,
-        "hit_rate_strict": null,
+        "n_verified": 17,
+        "hit_rate_strict": 0.29411764705882354,
         "note": "built before KB freeze; treat as training/in-sample"
       },
       "post_freeze": {
@@ -181,11 +187,19 @@
       "expire_at": "2026-04-20T16:20:58.109988",
       "baseline_price": 117.68009948730469,
       "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.46462999347923306,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -2.1414800260830678,
+      "actual_direction": "down",
       "reasoning": "CoreWeave高收益债超额认购并扩容至27.5亿美元，反映投资者对其AI基础设施业务信用和现金流预期强劲，融资成本改善和资本开支可持续性提升将直接利好股价短期表现。检索结果中无直接对应的因果链，此为新模式。",
       "event": {
         "id": 3,
@@ -313,11 +327,19 @@
       "expire_at": "2026-04-19T19:18:48.580429",
       "baseline_price": 43.43000030517578,
       "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.4166856830597638,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 3.4998859016414174,
+      "actual_direction": "up",
       "reasoning": "REX公布2025财年第四季度业绩大幅超预期，属于典型的业绩超预期利好个股事件。小盘股在财报大超预期后通常在短期内出现显著跳涨，市场会快速重新定价盈利能力。检索到的因果链均不涉及个股业绩超预期模式，故标记为新模式。",
       "event": {
         "id": 1,
@@ -346,11 +368,19 @@
       "expire_at": "2026-04-19T19:18:32.469783",
       "baseline_price": 454.25,
       "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.5277936029512933,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 2.29169040442694,
+      "actual_direction": "up",
       "reasoning": "AMD作为半导体权重股走强会外溢至整个半导体板块，强化AI与数据中心景气主线。检索到的因果链均聚焦A股，未覆盖美股半导体板块联动，故记为新模式。",
       "event": {
         "id": 2,
@@ -478,11 +508,19 @@
       "expire_at": "2026-04-19T19:17:51.723728",
       "baseline_price": 75.125,
       "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.6228480960551858,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -0.5657278559172213,
+      "actual_direction": "down",
       "reasoning": "百事作为饮料行业风向标释放需求回暖信号，可口可乐作为最直接同业会受益于板块情绪联动，市场会把'消费者回流'外推到整个软饮龙头。属于新模式，因为检索的因果链没有覆盖消费行业同业联动。",
       "event": {
         "id": 4,
@@ -511,11 +549,19 @@
       "expire_at": "2026-04-19T19:17:50.994054",
       "baseline_price": 157.7899932861328,
       "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.4803228089225232,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -1.8188701687711688,
+      "actual_direction": "down",
       "reasoning": "百事公布降价及健康化产品策略成功拉回消费者，且管理层表示伊朗战争冲击有限，短期利空被证伪叠加基本面改善，直接利好股价。检索结果中没有消费品龙头正面业绩指引的对应 pattern，属于新模式。",
       "event": {
         "id": 4,
@@ -544,11 +590,19 @@
       "expire_at": "2026-04-19T19:17:28.013118",
       "baseline_price": 81.38999938964844,
       "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.3088878369321191,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 0.5528897304543048,
+      "actual_direction": "up",
       "reasoning": "百事作为 XLP 前十大权重股，其股价大涨及对地缘风险的乐观表态会直接拉动 ETF 净值，同时改善市场对必需消费板块整体盈利韧性的评估。短期 3 天内板块情绪外溢有限，涨幅约 0.8%。",
       "event": {
         "id": 5,
@@ -577,11 +631,19 @@
       "expire_at": "2026-04-19T19:17:27.295639",
       "baseline_price": 75.125,
       "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.5285601200689822,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -0.5657278559172213,
+      "actual_direction": "down",
       "reasoning": "百事业绩回暖和消费者回流的信号会外溢至同业龙头可口可乐，市场会预期整个软饮板块需求企稳；但可口可乐本身未直接受益，幅度弱于百事。该因果关系未在检索链中，故标记为新模式。",
       "event": {
         "id": 5,
@@ -610,11 +672,19 @@
       "expire_at": "2026-04-19T19:17:26.161443",
       "baseline_price": 157.7949981689453,
       "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.3926719196084523,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -1.821984241174643,
+      "actual_direction": "down",
       "reasoning": "百事通过降价和健康化新品重新吸引了观望的消费者，同时管理层披露伊朗战争尚未对业务造成实质冲击，双重利好驱动股价当日大涨。短期内盘后情绪和分析师上修预期会延续推动，3 天窗口内有望维持 3% 左右涨幅。",
       "event": {
         "id": 5,
@@ -676,11 +746,19 @@
       "expire_at": "2026-04-17T19:17:06.542473",
       "baseline_price": 170.52999877929688,
       "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.06726519512513307,
+        "mag_err_bucket": "<=10%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 0.5336325975625665,
+      "actual_direction": "up",
       "reasoning": "1999年以来最大工业IPO首日爆发，短线将点燃工业板块情绪，同业估值比价效应迅速传导至XLI成分股，尤其是HVAC/空气质量/暖通相关龙头。属新模式，无现成因果链匹配。",
       "event": {
         "id": 6,
@@ -841,11 +919,19 @@
       "expire_at": "2026-04-19T19:16:16.904487",
       "baseline_price": 74824.09375,
       "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": false,
+        "strict_hit": false,
+        "mag_err_rel": 2.0568988682205056,
+        "mag_err_bucket": ">100%",
+        "tol_used": 0.92,
+        "asset_class": "crypto"
+      },
+      "actual_magnitude_pct": 4.585348302330758,
+      "actual_direction": "up",
       "reasoning": "尽管亏损主要来自ETH押注，但加密财库公司巨亏会引发对整个机构加密储备模式的质疑，风险偏好回落传导至BTC，短期内BTC跟随加密板块情绪小幅回调。检索链(id 78/12)反映的是利好情形，与本次利空相反，属新模式。",
       "event": {
         "id": 8,
@@ -874,11 +960,19 @@
       "expire_at": "2026-04-19T19:16:16.298668",
       "baseline_price": 22.065000534057617,
       "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.770158660456078,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -1.6088893768074537,
+      "actual_direction": "down",
       "reasoning": "作为亏损主体，38.2亿美元的季度亏损直接重创公司财报与净资产，市场会立刻对其ETH敞口与偿付能力重新定价，股价大概率跳空下跌并在数日内继续承压。检索结果无对应模式，属新模式。",
       "event": {
         "id": 8,
@@ -907,11 +1001,19 @@
       "expire_at": "2026-04-19T19:16:15.369836",
       "baseline_price": 2337.27001953125,
       "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.2016319644225883,
+        "mag_err_bucket": "<=25%",
+        "tol_used": 0.92,
+        "asset_class": "crypto"
+      },
+      "actual_magnitude_pct": 2.794288124520941,
+      "actual_direction": "up",
       "reasoning": "BitMine作为大型以太坊财库公司单季巨亏38.2亿美元，引发市场对企业级ETH持仓被迫减仓/止损的担忧，且会打击其他机构继续增持ETH作为储备资产的信心。检索到的因果链均未覆盖'加密财库公司巨亏'情景，属新模式。短期情绪面承压，3日内ETH承压下行。",
       "event": {
         "id": 8,
@@ -940,11 +1042,19 @@
       "expire_at": "2026-04-19T19:15:48.905726",
       "baseline_price": 20.03499984741211,
       "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.45994758242249945,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 2.919895164844999,
+      "actual_direction": "up",
       "reasoning": "Snap大规模裁员暗示中小型社交广告平台面临用户增长放缓与竞争加剧的压力，作为与Snap定位接近的中型广告平台，Pinterest易被市场一并下调预期。检索结果未覆盖该同业传导模式，属于新模式。",
       "event": {
         "id": 9,
@@ -1006,11 +1116,19 @@
       "expire_at": "2026-04-19T19:15:47.188177",
       "baseline_price": 6.079999923706055,
       "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.6081873638221205,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -7.236843137199542,
+      "actual_direction": "down",
       "reasoning": "公司宣布裁员1000人以应对激进投资者压力并押注AI提效，短期内市场通常将大规模裁员解读为成本削减和利润率改善的积极信号，加上激进投资者介入常推动股价上行。检索到的因果链未覆盖该模式，属于新模式。",
       "event": {
         "id": 9,
@@ -1039,11 +1157,19 @@
       "expire_at": "2026-04-19T19:15:27.633059",
       "baseline_price": 0.7986999750137329,
       "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": false,
+        "strict_hit": false,
+        "mag_err_rel": 7.810745667999442,
+        "mag_err_bucket": ">100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 30.83760983799805,
+      "actual_direction": "up",
       "reasoning": "短期内负面舆情发酵（CEO甩锅消费者引发公关危机）将触发散户与机构的恐慌性抛售，股价在3日窗口延续跌势。属于舆情驱动短期崩跌的新模式，检索结果中无对应因果链。",
       "event": {
         "id": 10,
@@ -1105,6 +1231,7 @@
       "magnitude_pct_stddev": 1.234542830362722,
       "horizon_days": 3,
       "confidence": 0.36363636363636365,
+      "grade": "C",
       "support_count": 3,
       "refute_count": 6,
       "source": "researched",
@@ -1166,6 +1293,9 @@
           }
         ]
       },
+      "failure_conditions": [
+        "**1. 市场已提前定价**：如果降息在政策会议前已被广泛预期并反映在股价中，实际公告后可能'利好出尽'，ASHR反而回调。**2. 人民币贬值压力**：降息可能扩大中美利差，引发资本外流和汇率贬值，抵消A股上涨对ASHR美元持有者的收益（汇兑损失）。**3. 经济数据不佳**：若同期公布的信贷、工业或消费数据显著低于预期，市场会质疑降息的有效性，转而担忧经济衰退，压制风险偏好。**4. 美股大跌联动**：ASHR在美交易时段受美股情绪影响，若标普500因美联储鹰派或其他原因暴跌，ASHR可能跟随下跌而忽略A股利好。"
+      ],
       "historical_instances": [
         {
           "event_date": "2025-05-08",
@@ -2615,6 +2745,7 @@
       "magnitude_pct_stddev": 1.2296438508771552,
       "horizon_days": 30,
       "confidence": 0.36363636363636365,
+      "grade": "B",
       "support_count": 3,
       "refute_count": 6,
       "source": "researched",
@@ -2676,6 +2807,12 @@
           }
         ]
       },
+      "failure_conditions": [
+        "1)同期若美联储释放鹰派信号或美元大幅走强,离岸资金回流美国会抵消降息利好,FXI可能不涨反跌",
+        "2)若降息伴随经济数据超预期恶化(如PMI跌破荣枯线),市场可能解读为'衰退式降息',风险偏好下降压制股价",
+        "3)若人民币即期汇率因降息快速贬值超过1%,外资可能因汇兑损失担忧抛售中国资产,削弱FXI涨幅",
+        "4)A股若处于重大监管整顿期(如2021年教育、互联网整顿),政策利好会被监管风险对冲"
+      ],
       "historical_instances": [
         {
           "event_date": "2025-05-08",
@@ -4131,6 +4268,7 @@
       "magnitude_pct_stddev": 0.0,
       "horizon_days": 1,
       "confidence": 0.2727272727272727,
+      "grade": "C",
       "support_count": 2,
       "refute_count": 7,
       "source": "researched",
@@ -4192,6 +4330,12 @@
           }
         ]
       },
+      "failure_conditions": [
+        "**主要失效场景**：(1) 市场已充分预期降息（定价完毕），实际宣布时无新增信息，CNH可能不跌反涨（buy the rumor, sell the fact反向）",
+        "(2) 同期公布超预期强劲的PMI或出口数据,增长预期压倒利差效应",
+        "(3) 央行通过中间价或离岸市场操作强力稳汇率，抵消市场卖压",
+        "(4) 美元指数同步大跌（如美国突发衰退担忧），USD/CNH分母效应抵消分子贬值。**历史反证**：输入显示0支持/9反驳（置信度仅9.1%），可能原因是过去降息多发生在经济企稳预期下，或央行配套稳汇率措施到位，导致CNH实际未贬值甚至升值。"
+      ],
       "historical_instances": [
         {
           "event_date": "2025-05-08",
@@ -5683,6 +5827,7 @@
       "magnitude_pct_stddev": 0.6809581484937236,
       "horizon_days": 3,
       "confidence": 0.18181818181818182,
+      "grade": "C",
       "support_count": 1,
       "refute_count": 8,
       "source": "researched",
@@ -5737,6 +5882,9 @@
           }
         ]
       },
+      "failure_conditions": [
+        "最大风险是'利好出尽'效应——若降准已被市场充分预期，宣布当日反而可能引发'卖事实'回调。其次，若降准同期叠加人民币贬值压力扩大（如美联储同期鹰派表态），美元计价的ASHR涨幅将被汇率侵蚀。第三，A股结构性问题（房地产风险、企业盈利下修）可能导致流动性无法有效转化为股价上涨，历史数据已显示此事件类型的预测胜率仅约18%（refute: 8条），需格外谨慎。"
+      ],
       "historical_instances": [
         {
           "event_date": "2025-05-07",
@@ -7166,6 +7314,7 @@
       "magnitude_pct_stddev": 0.0,
       "horizon_days": 1,
       "confidence": 0.18181818181818182,
+      "grade": "C",
       "support_count": 1,
       "refute_count": 8,
       "source": "researched",
@@ -7227,6 +7376,9 @@
           }
         ]
       },
+      "failure_conditions": [
+        "最大风险来自央行主动干预：历史上每当USDCNH快速走高，央行会通过调整中间价、发行离岸央票等手段压制贬值，使预测方向反转。其次，若LPR下调被市场解读为'稳增长信号'（利好股市风险偏好），外资可能反而流入A股，带动人民币走强，方向与预测相反。第三，同期若美联储释放降息信号，美元走弱会直接覆盖LPR的贬值效应。"
+      ],
       "historical_instances": [
         {
           "event_date": "2024-10-21",
@@ -8710,6 +8862,7 @@
       "magnitude_pct_stddev": 0.39681733833087485,
       "horizon_days": 1,
       "confidence": 0.5,
+      "grade": "C",
       "support_count": 4,
       "refute_count": 4,
       "source": "researched",
@@ -8778,6 +8931,12 @@
           }
         ]
       },
+      "failure_conditions": [
+        "历史数据显示8次反例、0次支持，核心风险在于：(1) 居民购房意愿持续低迷（如对房价下跌或失业的恐慌压倒利率优势），LPR下调沦为'推绳子'",
+        "(2) 同期出现更强负面冲击（如美股因美联储鹰派暴跌、人民币急贬引发资本外流担忧），压制A股风险偏好",
+        "(3) 市场已提前消化预期（如LPR下调传闻前一周地产股已大涨），政策落地反成'利好出尽'",
+        "(4) 地产企业债务危机未解（如头部房企爆雷），销售改善无法转化为产业链订单，政策效果被'资产负债表衰退'抵消。当前0.1的置信度表明该预测在过往样本中大概率失败，需警惕结构性因素（如居民加杠杆意愿长期下行）已改变传统传导机制。"
+      ],
       "historical_instances": [
         {
           "event_date": "2024-10-21",
@@ -10057,11 +10216,13 @@
       "magnitude_pct_stddev": 0.0,
       "horizon_days": 14,
       "confidence": 0.4,
+      "grade": "C",
       "support_count": 3,
       "refute_count": 5,
       "source": "researched",
       "rationale": "5年期LPR是房贷定价基准，单独或大幅下调体现稳楼市意图，对地产链和A股偏正面。",
       "explanation": null,
+      "failure_conditions": null,
       "historical_instances": [
         {
           "event_date": "2024-10-21",
@@ -11341,6 +11502,7 @@
       "magnitude_pct_stddev": 0.0,
       "horizon_days": 3,
       "confidence": 0.3,
+      "grade": "C",
       "support_count": 2,
       "refute_count": 6,
       "source": "researched",
@@ -11402,6 +11564,12 @@
           }
         ]
       },
+      "failure_conditions": [
+        "1) 央行同步通过离岸市场干预（如收紧CNH流动性、提高隔夜利率）稳定汇率",
+        "2) 同期公布超预期的经济数据（如出口增速、制造业PMI回升）改善人民币预期",
+        "3) 美元指数因美国经济数据疲软而大幅下跌，抵消人民币自身贬值压力",
+        "4) 历史证据显示该预测失败率高（8次反例 vs 0次支持），可能存在系统性遗漏因素（如市场已提前定价、央行沟通策略改变）。"
+      ],
       "historical_instances": [
         {
           "event_date": "2024-09-25",
@@ -12725,6 +12893,7 @@
       "magnitude_pct_stddev": 0.0,
       "horizon_days": 7,
       "confidence": 0.2,
+      "grade": "C",
       "support_count": 1,
       "refute_count": 7,
       "source": "researched",
@@ -12779,6 +12948,12 @@
           }
         ]
       },
+      "failure_conditions": [
+        "（1）央行若在离岸市场逆周期操作（抽紧CNH流动性或口头干预），可压制贬值",
+        "（2）同期若有利好抵消（如出口数据强劲、外资流入股市），人民币反而走强",
+        "（3）若美联储同期释放鸽派信号，中美利差逻辑反转",
+        "（4）历史数据显示support_count=0、refute_count=8，过往8次该事件后USDCNH实际表现与预测相反，说明机制链条在实操中常被其他因素打断。"
+      ],
       "historical_instances": [
         {
           "event_date": "2024-10-21",
@@ -14096,6 +14271,7 @@
       "magnitude_pct_stddev": 0.8720183484308114,
       "horizon_days": 1,
       "confidence": 0.1,
+      "grade": "C",
       "support_count": 0,
       "refute_count": 8,
       "source": "researched",
@@ -14157,6 +14333,11 @@
           }
         ]
       },
+      "failure_conditions": [
+        "当前证据显示1支持、7反驳（置信度仅0.2），说明此预测历史命中率偏低，最大风险在于：①若降息背景是经济数据明显恶化（降息救市），市场可能'buy the rumor, sell the news'甚至直接反应基本面担忧",
+        "②若降息同步引发人民币快速贬值（CNY/USD跌幅超过A股涨幅），ASHR美元净值反而下行",
+        "③若全球风险资产同期处于避险模式（美债利率飙升、美股大跌），中国降息的局部提振力度不足以对抗外部压力。"
+      ],
       "historical_instances": [
         {
           "event_date": "2024-09-25",
@@ -15454,6 +15635,7 @@
       "magnitude_pct_stddev": 0.2606189214585585,
       "horizon_days": 3,
       "confidence": 0.2222222222222222,
+      "grade": "A",
       "support_count": 1,
       "refute_count": 6,
       "source": "researched",
@@ -15508,6 +15690,11 @@
           }
         ]
       },
+      "failure_conditions": [
+        "若会后通胀数据意外回落或就业大幅走弱,市场会忽略FOMC鹰派转向鸽派预期,长债反而上涨",
+        "若同期地缘风险激化(如中东冲突升级)触发避险买盘,TLT会因safe-haven需求抵消利率上行压力",
+        "预测隐含历史样本中鹰派会议占多数,但当前样本支持度仅44.4%,表明'符合预期加息'情景下市场反应分化较大"
+      ],
       "historical_instances": [
         {
           "event_date": "2023-07-26",
@@ -16665,6 +16852,7 @@
       "magnitude_pct_stddev": 0.375,
       "horizon_days": 30,
       "confidence": 0.1111111111111111,
+      "grade": "A",
       "support_count": 0,
       "refute_count": 7,
       "source": "researched",
@@ -16726,6 +16914,9 @@
           }
         ]
       },
+      "failure_conditions": [
+        "最大风险是点阵图/声明偏鸽（步骤 2 假设不成立），历史上此类'鸽派 surprise'曾导致 DXY 在加息后反跌 0.5-1.5%。其次，同期若出现地缘风险或信用事件，避险资金会驱动日元、黄金走强而非美元，打断利差传导链。此外，evidence 数据显示支持案例仅 1/7（置信度 0.222），表明这一方向在历史实例中并不稳健，实际预测价值有限。"
+      ],
       "historical_instances": [
         {
           "event_date": "2023-07-26",
@@ -17883,6 +18074,7 @@
       "magnitude_pct_stddev": 0.16166632302368975,
       "horizon_days": 3,
       "confidence": 0.5,
+      "grade": "C",
       "support_count": 3,
       "refute_count": 3,
       "source": "researched",
@@ -17944,6 +18136,10 @@
           }
         ]
       },
+      "failure_conditions": [
+        "本预测当前支持证据仅 1 条、反驳证据 5 条（置信度仅 0.25），说明历史上鹰派点阵图后金价下跌并不必然发生——主因是点阵图信息往往已在会前被定价（'买预期卖事实'），公布后反而触发空头回补。此外若 FOMC 同期释放经济下行担忧（衰退风险），避险需求会覆盖利率压力",
+        "地缘冲突或信用事件爆发也会使黄金避险属性主导方向，令本链条完全失效。"
+      ],
       "historical_instances": [
         {
           "event_date": "2024-12-18",
@@ -18903,6 +19099,7 @@
       "magnitude_pct_stddev": 0.05388877434122995,
       "horizon_days": 7,
       "confidence": 0.5,
+      "grade": "A",
       "support_count": 3,
       "refute_count": 3,
       "source": "researched",
@@ -18964,6 +19161,9 @@
           }
         ]
       },
+      "failure_conditions": [
+        "若同期公布的经济数据意外走弱（如非农大幅不及预期），市场会转向押注 QT 不可持续甚至再度 QE，反而推动长债走强抵消 QT 效应。此外，若地缘风险或股市大跌引发避险资金大量涌入美债，也会压制收益率上行空间。当前预测置信度仅 0.5（支持与反对证据各 3 条），说明宏观背景存在明显分歧，结果双向风险较大。"
+      ],
       "historical_instances": [
         {
           "event_date": "2022-05-04",
@@ -19953,6 +20153,7 @@
       "magnitude_pct_stddev": 3.6497397167469345,
       "horizon_days": 30,
       "confidence": 0.5,
+      "grade": "B",
       "support_count": 3,
       "refute_count": 3,
       "source": "researched",
@@ -20014,6 +20215,11 @@
           }
         ]
       },
+      "failure_conditions": [
+        "预测失败的三大情形：（1）监管机构在倒闭当日同步宣布系统性救助（如 FDIC 无限担保、Fed 开启紧急贷款窗口），立即切断传染链",
+        "（2）倒闭银行的问题被证实为孤立事件（如欺诈而非行业性利率风险），市场在初步恐慌后 48 小时内恢复理性",
+        "（3）同期出现更强势的风险偏好事件（如超预期降息、重大财政刺激），资金快速回流风险资产稀释银行板块跌幅。此外，若事件发生在周五收盘后，周末监管协调可能削弱周一开盘的抛压。"
+      ],
       "historical_instances": [
         {
           "event_date": "2023-05-01",
@@ -20983,6 +21189,7 @@
       "magnitude_pct_stddev": 2.356409132557417,
       "horizon_days": 14,
       "confidence": 0.5,
+      "grade": "C",
       "support_count": 3,
       "refute_count": 3,
       "source": "researched",
@@ -21044,6 +21251,11 @@
           }
         ]
       },
+      "failure_conditions": [
+        "**预测失效的三种情况：** (1) 美联储或财政部在倒闭当日立即启动 '大而不倒' 级别救助（如 2008 年贝尔斯登模式），直接消除传染预期",
+        "(2) 同期公布超预期利好数据（如 CPI 大幅回落触发降息定价），风险偏好回升抵消银行股抛压",
+        "(3) 倒闭银行被证明是 '孤立事件'（如欺诈而非系统性风险），市场在 48 小时内完成定价后企稳。此外，若事件发生在极低波动率环境（VIX < 12），历史跌幅可能被低估。"
+      ],
       "historical_instances": [
         {
           "event_date": "2023-05-01",
@@ -22013,6 +22225,7 @@
       "magnitude_pct_stddev": 1.8812081224574808,
       "horizon_days": 14,
       "confidence": 0.5,
+      "grade": "C",
       "support_count": 3,
       "refute_count": 3,
       "source": "researched",
@@ -22074,6 +22287,11 @@
           }
         ]
       },
+      "failure_conditions": [
+        "**预测失效场景**:(1)联储在48小时内宣布无限额存款担保+贴现窗口全开,类似2023年3月的BTFP工具,则XLF可能仅跌2-3%",
+        "(2)同期公布的非农/CPI数据意外强劲,引发「经济韧性→银行不会大规模倒闭」的叙事反转",
+        "(3)倒闭银行被证实是孤立事件(如CEO欺诈),而非行业性利率风险或资产质量问题,则传染预期落空。此外,若大盘同步因其他因素(如地缘冲突)大跌,XLF可能超跌至-8%以上,偏离银行业基本面的独立定价。"
+      ],
       "historical_instances": [
         {
           "event_date": "2023-05-01",
@@ -23043,6 +23261,7 @@
       "magnitude_pct_stddev": 0.0,
       "horizon_days": 7,
       "confidence": 0.375,
+      "grade": "A",
       "support_count": 2,
       "refute_count": 4,
       "source": "seed",
@@ -23104,6 +23323,11 @@
           }
         ]
       },
+      "failure_conditions": [
+        "如果同期公布的时薪增速意外疲软,可能抵消就业人数的鹰派信号",
+        "如果美联储官员迅速发表鸽派讲话(强调通胀下行趋势),市场可能不调整降息预期",
+        "如果全球避险情绪突然升温(如地缘冲突),资金可能涌入长债避险,完全逆转方向。此外,月末机构再平衡、日本央行政策意外等技术性或外部因素也可能压倒基本面逻辑。"
+      ],
       "historical_instances": [
         {
           "event_date": "2024-01-05",
@@ -24039,6 +24263,7 @@
       "magnitude_pct_stddev": 0.35762550244634395,
       "horizon_days": 3,
       "confidence": 0.375,
+      "grade": "C",
       "support_count": 2,
       "refute_count": 4,
       "source": "researched",
@@ -24100,6 +24325,9 @@
           }
         ]
       },
+      "failure_conditions": [
+        "最大风险是'流动性黑洞'：重大危机初期市场参与者被迫抛售所有资产（含黄金）以应对保证金追缴，导致黄金反跌——2020年3月初即为典型案例。其次，若美元因全球美元荒同步飙升（如雷曼危机后期），黄金以美元计价的涨幅会被大幅压缩。此外，当前证据显示历史上 6 次类似事件中仅 1 次上涨（置信度 0.25），意味着该推导链在现实中频繁断裂，预测失败是大概率场景而非小概率风险。"
+      ],
       "historical_instances": [
         {
           "event_date": "2020-03-15",
@@ -25079,11 +25307,13 @@
       "magnitude_pct_stddev": 0.891614266373077,
       "horizon_days": 7,
       "confidence": 0.375,
+      "grade": "C",
       "support_count": 2,
       "refute_count": 4,
       "source": "researched",
       "rationale": "非例会紧急降息发生在系统性风险或重大危机期间，短期内美元走弱、黄金避险上涨；但因释放衰退恐慌信号，风险资产往往不涨反跌。",
       "explanation": null,
+      "failure_conditions": null,
       "historical_instances": [
         {
           "event_date": "2020-03-15",

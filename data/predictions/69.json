@@ -1,6 +1,8 @@
 {
   "id": 69,
   "made_at": "2026-04-27T12:45:46.352899",
+  "expire_at": "2026-05-04T12:45:46.352899",
+  "verified_at": null,
   "asset": {
     "symbol": "GC=F",
     "name": "黄金期货",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 2.5,
   "horizon_days": 7,
-  "expire_at": "2026-05-04T12:45:46.352899",
   "baseline_price": 4719.7998046875,
   "baseline_source": "event_time",
   "status": "pending",
@@ -18,6 +19,59 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "以色列对黎巴嫩真主党发动军事打击，中东地缘政治紧张局势显著升级，可能引发更大范围的区域冲突。这类地缘冲突事件会推动资金流入黄金等避险资产。虽然检索到的因果链是关于美国债务上限的，但避险逻辑相通——地缘政治风险同样会提振黄金需求。",
+  "stop_loss_price": 4695.0419,
+  "take_profit": {
+    "prices": [
+      4756.9366,
+      4781.6945,
+      4818.8314
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 24.7579,
+    "atr": 12.3789
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.72,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.72,
+    "log_odds": 0.944,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.4,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 94,
+        "pattern": "美国政府停摆 / 债务上限临近违约",
+        "asset": "GC=F",
+        "dir_hit_rate": 1.0,
+        "n_samples": 5,
+        "log_lr": 1.792,
+        "grade": "A"
+      }
+    ],
+    "note": ""
+  },
+  "cited_link_ids": [
+    94
+  ],
+  "cited_chains": [
+    {
+      "id": 94,
+      "pattern": "美国政府停摆 / 债务上限临近违约",
+      "asset_symbol": "GC=F",
+      "direction": "up",
+      "horizon_days": 7,
+      "magnitude_pct": 2.0,
+      "grade": "A",
+      "retail_edge": "mid"
+    }
+  ],
   "event": {
     "id": 207,
     "summary": "以色列军方开始打击黎巴嫩真主党目标，地缘政治紧张局势升级",

@@ -1,6 +1,8 @@
 {
   "id": 1,
   "made_at": "2026-04-16T19:12:48.535064",
+  "expire_at": "2026-04-23T19:12:48.535064",
+  "verified_at": "2026-04-27T12:26:36.353369",
   "asset": {
     "symbol": "CL=F",
     "name": "WTI原油期货",
@@ -9,15 +11,75 @@
   "direction": "up",
   "magnitude_pct": 2.5,
   "horizon_days": 7,
-  "expire_at": "2026-04-23T19:12:48.535064",
   "baseline_price": 90.31999969482422,
   "baseline_source": null,
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": true,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": 1.1080611834870235,
+    "mag_err_bucket": ">100%",
+    "tol_used": 0.95,
+    "asset_class": "commodity"
+  },
+  "actual_magnitude_pct": 5.270152958717559,
+  "actual_direction": "up",
   "reasoning": "海湾地区供应中断导致欧洲航空煤油库存仅剩六周，精炼产品紧张将向上游原油传导，提振原油价格。虽然新闻不是飓风导致的炼油中断（#53），但供给端冲击的传导逻辑相似，可参考该模式；鉴于地缘风险溢价更具持续性，按中等幅度估计。",
+  "stop_loss_price": 87.2589,
+  "take_profit": {
+    "prices": [
+      94.9116,
+      97.9726,
+      102.5642
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 3.0611,
+    "atr": 1.5305
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": 0.2432,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.2432,
+    "log_odds": -1.135,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 0.81,
+    "signal_grade": "💤 D",
+    "evidence": [
+      {
+        "link_id": 53,
+        "pattern": "墨西哥湾飓风影响主要炼油/海上平台",
+        "asset": "CL=F",
+        "dir_hit_rate": 0.4,
+        "n_samples": 5,
+        "log_lr": -0.288,
+        "grade": null
+      }
+    ],
+    "note": ""
+  },
+  "cited_link_ids": [
+    53
+  ],
+  "cited_chains": [
+    {
+      "id": 53,
+      "pattern": "墨西哥湾飓风影响主要炼油/海上平台",
+      "asset_symbol": "CL=F",
+      "direction": "up",
+      "horizon_days": 5,
+      "magnitude_pct": 3.0,
+      "grade": null,
+      "retail_edge": null
+    }
+  ],
   "event": {
     "id": 17,
     "summary": "国际能源署警告欧洲航空燃料库存仅剩约六周，若来自海湾地区的供应持续中断，航班或将被取消",

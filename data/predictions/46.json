@@ -1,6 +1,8 @@
 {
   "id": 46,
   "made_at": "2026-04-17T16:20:42.477164",
+  "expire_at": "2026-05-17T16:20:42.477164",
+  "verified_at": null,
   "asset": {
     "symbol": "BIRD",
     "name": "Allbirds股票",
@@ -9,7 +11,6 @@
   "direction": "down",
   "magnitude_pct": 40.0,
   "horizon_days": 30,
-  "expire_at": "2026-05-17T16:20:42.477164",
   "baseline_price": 10.90999984741211,
   "baseline_source": "event_time",
   "status": "pending",
@@ -18,6 +19,26 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "剥离原有鞋类业务后，公司营收几乎归零，而AI基础设施需要长期重资本投入，短期难以兑现业绩。随着炒作热度消退、稀释性融资风险以及可能的监管问询，30天维度估值将大幅回归。该情景不在检索到的宏观因果链内，判定为新模式。",
+  "stop_loss_price": 15.274,
+  "take_profit": {
+    "prices": [
+      4.364,
+      0.0,
+      -6.546
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 4.364,
+    "atr": 2.182
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 11,
     "summary": "Allbirds宣布放弃鞋类品牌转型AI技术基础设施，股价单日暴涨580%",

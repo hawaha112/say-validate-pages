@@ -1,6 +1,8 @@
 {
   "id": 13,
   "made_at": "2026-04-16T19:14:24.425517",
+  "expire_at": "2026-04-30T19:14:24.425517",
+  "verified_at": null,
   "asset": {
     "symbol": "PEP",
     "name": "百事可乐",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 2.0,
   "horizon_days": 14,
-  "expire_at": "2026-04-30T19:14:24.425517",
   "baseline_price": 157.2949981689453,
   "baseline_source": null,
   "status": "pending",
@@ -18,6 +19,26 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "百事通过降价最高15%成功挽回流失的零食消费者，销量回升信号直接缓解此前市场对其量价双杀的担忧。虽然短期毛利率承压，但销量恢复和市场份额企稳通常会被市场视为拐点信号，超级碗旺季验证需求回暖。检索到的因果链均与本新闻主题无关，属于新模式。",
+  "stop_loss_price": 154.1491,
+  "take_profit": {
+    "prices": [
+      162.0138,
+      165.1597,
+      169.8786
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 3.1459,
+    "atr": 1.5729
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 13,
     "summary": "百事公司通过下调零食价格最高15%赢回消费者，销量回升",

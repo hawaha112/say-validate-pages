@@ -1,6 +1,8 @@
 {
   "id": 61,
   "made_at": "2026-04-27T12:44:42.967510",
+  "expire_at": "2026-04-30T12:44:42.967510",
+  "verified_at": null,
   "asset": {
     "symbol": "002602",
     "name": "世纪华通",
@@ -9,7 +11,6 @@
   "direction": "down",
   "magnitude_pct": 1.8,
   "horizon_days": 3,
-  "expire_at": "2026-04-30T12:44:42.967510",
   "baseline_price": null,
   "baseline_source": "live_fallback",
   "status": "pending",
@@ -18,6 +19,13 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "世纪华通作为游戏行业另一家主要上市公司，在完美世界披露业绩大幅下滑后，投资者可能担忧行业整体需求疲软，对同类公司采取防御性减仓。这是游戏行业龙头业绩不佳引发的板块情绪传导。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 211,
     "summary": "完美世界一季度业绩大幅下滑，营收和净利润分别同比下降42%和66%",

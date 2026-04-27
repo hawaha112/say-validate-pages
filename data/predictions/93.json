@@ -1,6 +1,8 @@
 {
   "id": 93,
   "made_at": "2026-04-27T12:47:44.792984",
+  "expire_at": "2026-04-30T12:47:44.792984",
+  "verified_at": null,
   "asset": {
     "symbol": "002304",
     "name": "洋河股份",
@@ -9,7 +11,6 @@
   "direction": "down",
   "magnitude_pct": 0.5,
   "horizon_days": 3,
-  "expire_at": "2026-04-30T12:47:44.792984",
   "baseline_price": null,
   "baseline_source": "live_fallback",
   "status": "pending",
@@ -18,6 +19,13 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "高端白酒造假事件曝光后，投资者对白酒板块整体信任度下降，洋河股份作为白酒龙头之一，短期内会受到板块情绪拖累。消费者对高价白酒的购买谨慎度提升，可能影响整体白酒消费预期。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 199,
     "summary": "38万元购买的百箱茅台全部为假酒，成本仅百元，涉及食品安全和消费者权益问题",

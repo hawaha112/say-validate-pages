@@ -1,6 +1,8 @@
 {
   "id": 19,
   "made_at": "2026-04-16T19:15:26.136335",
+  "expire_at": "2026-04-23T19:15:26.136335",
+  "verified_at": "2026-04-27T12:26:36.353369",
   "asset": {
     "symbol": "BYND",
     "name": "超越肉类",
@@ -9,15 +11,42 @@
   "direction": "down",
   "magnitude_pct": 6.0,
   "horizon_days": 7,
-  "expire_at": "2026-04-23T19:15:26.136335",
   "baseline_price": 0.7986999750137329,
   "baseline_source": null,
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": true,
+    "strict_hit": false,
+    "mag_err_rel": 0.5504372325831968,
+    "mag_err_bucket": "<=100%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": 9.30262339549918,
+  "actual_direction": "up",
   "reasoning": "新闻直接揭示公司基本面恶化（股价从200美元跌至仙股区间）且管理层治理存在争议——CEO在公司崩溃之际反获加薪并将责任推给消费者，这种治理与公关双重利空将加剧投资者抛售和做空压力。检索到的因果链均不涉及此类『公司治理争议叠加基本面崩塌』模式，故判定为新模式。",
+  "stop_loss_price": 0.8466,
+  "take_profit": {
+    "prices": [
+      0.7268,
+      0.6789,
+      0.607
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.0479,
+    "atr": 0.024
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 10,
     "summary": "Beyond Meat股价从200美元暴跌至仙股水平，CEO薪酬却获上调，并将公司崩溃归咎于美国消费者",

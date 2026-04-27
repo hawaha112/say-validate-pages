@@ -1,6 +1,8 @@
 {
   "id": 45,
   "made_at": "2026-04-17T16:20:41.822025",
+  "expire_at": "2026-04-24T16:20:41.822025",
+  "verified_at": "2026-04-27T12:26:36.353369",
   "asset": {
     "symbol": "BIRD",
     "name": "Allbirds股票",
@@ -9,15 +11,42 @@
   "direction": "down",
   "magnitude_pct": 25.0,
   "horizon_days": 7,
-  "expire_at": "2026-04-24T16:20:41.822025",
   "baseline_price": 10.90999984741211,
   "baseline_source": "event_time",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
+  "status": "verified",
+  "hit": true,
+  "hit_breakdown": {
+    "dir_hit": true,
+    "mag_hit": true,
+    "strict_hit": true,
+    "mag_err_rel": 0.42621445312240497,
+    "mag_err_bucket": "<=50%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": -35.655361328060124,
+  "actual_direction": "down",
   "reasoning": "单日暴涨580%主要由meme式投机和转型AI的炒作驱动，而非基本面支撑。公司剥离核心鞋类业务、尚未验证AI基础设施能力，短期内获利回吐和情绪降温会带来明显回调。检索到的因果链均针对宏观事件，无直接匹配模式，故作为新模式处理。",
+  "stop_loss_price": 13.6375,
+  "take_profit": {
+    "prices": [
+      6.8187,
+      4.0912,
+      0.0
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 2.7275,
+    "atr": 1.3637
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 11,
     "summary": "Allbirds宣布放弃鞋类品牌转型AI技术基础设施，股价单日暴涨580%",

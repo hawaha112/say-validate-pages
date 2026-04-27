@@ -1,6 +1,8 @@
 {
   "id": 32,
   "made_at": "2026-04-16T19:17:06.542473",
+  "expire_at": "2026-04-17T19:17:06.542473",
+  "verified_at": "2026-04-22T12:45:07.425810",
   "asset": {
     "symbol": "XLI",
     "name": "工业板块ETF",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 0.5,
   "horizon_days": 1,
-  "expire_at": "2026-04-17T19:17:06.542473",
   "baseline_price": 170.52999877929688,
   "baseline_source": null,
   "status": "verified",
@@ -26,6 +27,26 @@
   "actual_magnitude_pct": 0.5336325975625665,
   "actual_direction": "up",
   "reasoning": "1999年以来最大工业IPO首日爆发，短线将点燃工业板块情绪，同业估值比价效应迅速传导至XLI成分股，尤其是HVAC/空气质量/暖通相关龙头。属新模式，无现成因果链匹配。",
+  "stop_loss_price": 169.6773,
+  "take_profit": {
+    "prices": [
+      171.809,
+      172.6616,
+      173.9406
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.8526,
+    "atr": 0.4263
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 6,
     "summary": "Madison Air完成22亿美元IPO，成为2026年最大规模IPO及1999年以来工业板块最大IPO",

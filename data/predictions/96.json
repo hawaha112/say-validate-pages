@@ -1,6 +1,8 @@
 {
   "id": 96,
   "made_at": "2026-04-27T12:47:56.742155",
+  "expire_at": "2026-05-04T12:47:56.742155",
+  "verified_at": null,
   "asset": {
     "symbol": "002287",
     "name": "奇正藏药",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 2.2,
   "horizon_days": 7,
-  "expire_at": "2026-05-04T12:47:56.742155",
   "baseline_price": null,
   "baseline_source": "live_fallback",
   "status": "pending",
@@ -18,6 +19,13 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "中医药服务消费与贸易融合试点将带动特色民族医药企业发展。奇正藏药主打藏药特色，具有独特的文化和医疗价值，在中医药国际化进程中具备差异化优势，政策利好将提振市场对民族医药板块的关注度。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 198,
     "summary": "六部门推动中医药服务消费与贸易融合发展，18个地区成为试点",

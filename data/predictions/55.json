@@ -1,6 +1,8 @@
 {
   "id": 55,
   "made_at": "2026-04-27T12:44:08.846700",
+  "expire_at": "2026-05-04T12:44:08.846700",
+  "verified_at": null,
   "asset": {
     "symbol": "COW",
     "name": "iPath彭博牲畜子指数ETN",
@@ -9,7 +11,6 @@
   "direction": "down",
   "magnitude_pct": 1.5,
   "horizon_days": 7,
-  "expire_at": "2026-05-04T12:44:08.846700",
   "baseline_price": null,
   "baseline_source": "live_fallback",
   "status": "pending",
@@ -18,6 +19,13 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "政府调查肉类高价可能导致市场预期未来会有抑制价格的政策措施出台，包括增加进口、释放储备或限制出口等，这将压低牲畜类商品价格预期，COW作为追踪牲畜价格的ETN会相应下跌。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 213,
     "summary": "特朗普政府调查肉类价格高企问题",

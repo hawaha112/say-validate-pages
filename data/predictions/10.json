@@ -1,6 +1,8 @@
 {
   "id": 10,
   "made_at": "2026-04-16T19:13:55.845723",
+  "expire_at": "2026-04-30T19:13:55.845723",
+  "verified_at": null,
   "asset": {
     "symbol": "ZW=F",
     "name": "小麦期货",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 4.5,
   "horizon_days": 14,
-  "expire_at": "2026-04-30T19:13:55.845723",
   "baseline_price": 608.25,
   "baseline_source": null,
   "status": "pending",
@@ -18,6 +19,26 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "英国政府制定最坏情景预案预警夏季粮食短缺，叠加伊朗战争持续扰乱中东物流与黑海-红海运输通道，市场会提前定价全球粮食供应紧张预期。小麦作为英国主要进口主粮品种，对此类地缘+供应冲击最为敏感，期货价格通常在政府层面公开预警后两周内快速反应。检索到的因果链未覆盖战争叠加粮食安全的模式，故标记为新模式。",
+  "stop_loss_price": 580.8787,
+  "take_profit": {
+    "prices": [
+      649.3069,
+      676.6781,
+      717.735
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 27.3713,
+    "atr": 13.6856
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 14,
     "summary": "英国政府官员制定最坏情景预案，预计夏季可能面临粮食短缺，背景为伊朗战争持续",

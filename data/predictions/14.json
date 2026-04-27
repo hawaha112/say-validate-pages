@@ -1,6 +1,8 @@
 {
   "id": 14,
   "made_at": "2026-04-16T19:14:25.408714",
+  "expire_at": "2026-04-23T19:14:25.408714",
+  "verified_at": "2026-04-27T12:26:36.353369",
   "asset": {
     "symbol": "MDLZ",
     "name": "亿滋国际",
@@ -9,15 +11,42 @@
   "direction": "down",
   "magnitude_pct": 1.8,
   "horizon_days": 7,
-  "expire_at": "2026-04-23T19:14:25.408714",
   "baseline_price": 56.904998779296875,
   "baseline_source": null,
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": true,
+    "strict_hit": false,
+    "mag_err_rel": 0.31171655861318287,
+    "mag_err_bucket": "<=50%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": 1.2389101944962708,
+  "actual_direction": "up",
   "reasoning": "百事大幅降价抢回零食市场份额，亿滋作为饼干/巧克力零食直接竞争对手面临跟降压力，否则将流失货架份额和销量。市场会担心整个零食赛道进入价格战，压缩毛利率预期。该因果关系不在检索到的因果链中，属于新模式。",
+  "stop_loss_price": 57.9293,
+  "take_profit": {
+    "prices": [
+      55.3686,
+      54.3443,
+      52.8078
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 1.0243,
+    "atr": 0.5121
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 13,
     "summary": "百事公司通过下调零食价格最高15%赢回消费者，销量回升",

@@ -1,6 +1,8 @@
 {
   "id": 30,
   "made_at": "2026-04-16T19:16:43.385336",
+  "expire_at": "2026-05-16T19:16:43.385336",
+  "verified_at": null,
   "asset": {
     "symbol": "NG=F",
     "name": "天然气期货",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 4.0,
   "horizon_days": 30,
-  "expire_at": "2026-05-16T19:16:43.385336",
   "baseline_price": 2.6630001068115234,
   "baseline_source": null,
   "status": "pending",
@@ -18,6 +19,26 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "馏分油/柴油价格居高不下会促使发电厂在边际上更多使用天然气替代燃油发电，叠加居民电费上行预期，天然气需求面受到提振。与检索到的贸易/政治类因果链无关，属新模式。",
+  "stop_loss_price": 2.5565,
+  "take_profit": {
+    "prices": [
+      2.8228,
+      2.9293,
+      3.0891
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.1065,
+    "atr": 0.0533
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 7,
     "summary": "油价隐性成本创历史新高，或推高居民电费",

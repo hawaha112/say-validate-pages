@@ -1,6 +1,8 @@
 {
   "id": 2,
   "made_at": "2026-04-16T19:12:49.142867",
+  "expire_at": "2026-04-23T19:12:49.142867",
+  "verified_at": "2026-04-27T12:26:36.353369",
   "asset": {
     "symbol": "LHA.DE",
     "name": "汉莎航空",
@@ -9,15 +11,42 @@
   "direction": "down",
   "magnitude_pct": 4.0,
   "horizon_days": 7,
-  "expire_at": "2026-04-23T19:12:49.142867",
   "baseline_price": 7.552000045776367,
   "baseline_source": null,
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
+  "status": "verified",
+  "hit": true,
+  "hit_breakdown": {
+    "dir_hit": true,
+    "mag_hit": true,
+    "strict_hit": true,
+    "mag_err_rel": 0.1459219563052494,
+    "mag_err_bucket": "<=25%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": -3.4163121747790024,
+  "actual_direction": "down",
   "reasoning": "欧洲航空煤油供应告急直接冲击欧洲航司：燃料成本飙升、航班可能被迫取消，双重挤压营收与利润。汉莎作为欧洲最大网络航司之一且枢纽位于法兰克福，敞口显著。检索因果链未直接覆盖欧洲航司对航油供应的敏感度，属新模式。",
+  "stop_loss_price": 7.8541,
+  "take_profit": {
+    "prices": [
+      7.0989,
+      6.7968,
+      6.3437
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.3021,
+    "atr": 0.151
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 17,
     "summary": "国际能源署警告欧洲航空燃料库存仅剩约六周，若来自海湾地区的供应持续中断，航班或将被取消",

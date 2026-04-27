@@ -1,6 +1,8 @@
 {
   "id": 90,
   "made_at": "2026-04-27T12:47:33.679706",
+  "expire_at": "2026-04-30T12:47:33.679706",
+  "verified_at": null,
   "asset": {
     "symbol": "GC=F",
     "name": "黄金期货",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 0.6,
   "horizon_days": 3,
-  "expire_at": "2026-04-30T12:47:33.679706",
   "baseline_price": 4718.89990234375,
   "baseline_source": "event_time",
   "status": "pending",
@@ -18,6 +19,26 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "中美制裁摩擦升级属于地缘政治风险事件，通常推动避险资金流入黄金。虽然本次制裁规模有限，但叠加中方表态反对，市场对中美关系的不确定性担忧加剧，黄金短期受到支撑。",
+  "stop_loss_price": 4690.5865,
+  "take_profit": {
+    "prices": [
+      4761.37,
+      4789.6834,
+      4832.1535
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 28.3134,
+    "atr": 14.1567
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 200,
     "summary": "美国以涉伊朗为由制裁中国企业，中方表态反对",

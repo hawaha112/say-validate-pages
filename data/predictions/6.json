@@ -1,11 +1,12 @@
 {
   "id": 6,
   "made_at": "2026-04-16T19:13:11.323630",
+  "expire_at": "2026-04-23T19:13:11.323630",
+  "verified_at": null,
   "asset": null,
   "direction": "up",
   "magnitude_pct": 1.5,
   "horizon_days": 7,
-  "expire_at": "2026-04-23T19:13:11.323630",
   "baseline_price": null,
   "baseline_source": null,
   "status": "pending",
@@ -14,6 +15,46 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "与链95（财政危机压制美元）不同，战争场景下美元通常因避险属性走强而非走弱，叠加油价飙升打压欧元/英镑等能源进口货币，DXY倾向上行。属于新模式：战争驱动的美元避险买盘。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": 0.72,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.72,
+    "log_odds": 0.944,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.4,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 95,
+        "pattern": "美国政府停摆 / 债务上限临近违约",
+        "asset": "DX-Y.NYB",
+        "dir_hit_rate": 1.0,
+        "n_samples": 5,
+        "log_lr": 1.792,
+        "grade": "A"
+      }
+    ],
+    "note": ""
+  },
+  "cited_link_ids": [
+    95
+  ],
+  "cited_chains": [
+    {
+      "id": 95,
+      "pattern": "美国政府停摆 / 债务上限临近违约",
+      "asset_symbol": "DX-Y.NYB",
+      "direction": "down",
+      "horizon_days": 1,
+      "magnitude_pct": 0.8,
+      "grade": "A",
+      "retail_edge": "low"
+    }
+  ],
   "event": {
     "id": 16,
     "summary": "美国与以色列联合对伊朗开战，地缘政治冲突爆发，推高避险与能源资产",

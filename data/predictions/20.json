@@ -1,6 +1,8 @@
 {
   "id": 20,
   "made_at": "2026-04-16T19:15:27.095054",
+  "expire_at": "2026-04-23T19:15:27.095054",
+  "verified_at": "2026-04-27T12:26:36.353369",
   "asset": {
     "symbol": "TSN",
     "name": "泰森食品",
@@ -9,15 +11,42 @@
   "direction": "up",
   "magnitude_pct": 0.8,
   "horizon_days": 7,
-  "expire_at": "2026-04-23T19:15:27.095054",
   "baseline_price": 63.540000915527344,
   "baseline_source": null,
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
+  "status": "verified",
+  "hit": true,
+  "hit_breakdown": {
+    "dir_hit": true,
+    "mag_hit": true,
+    "strict_hit": true,
+    "mag_err_rel": 0.03604450600151424,
+    "mag_err_bucket": "<=10%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": 0.7711643951987887,
+  "actual_direction": "up",
   "reasoning": "Beyond Meat的崩盘进一步印证植物肉赛道需求疲软，传统动物蛋白龙头泰森食品作为替代品受益者，市场份额预期改善。此为行业替代效应的新模式，检索到的因果链未覆盖该消费替代主题。",
+  "stop_loss_price": 63.0317,
+  "take_profit": {
+    "prices": [
+      64.3025,
+      64.8108,
+      65.5733
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.5083,
+    "atr": 0.2542
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 10,
     "summary": "Beyond Meat股价从200美元暴跌至仙股水平，CEO薪酬却获上调，并将公司崩溃归咎于美国消费者",

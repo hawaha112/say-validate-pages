@@ -1,6 +1,8 @@
 {
   "id": 102,
   "made_at": "2026-04-27T12:48:51.291504",
+  "expire_at": "2026-05-04T12:48:51.291504",
+  "verified_at": null,
   "asset": {
     "symbol": "XOMA",
     "name": "Xoma公司",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 3.5,
   "horizon_days": 7,
-  "expire_at": "2026-05-04T12:48:51.291504",
   "baseline_price": 37.900001525878906,
   "baseline_source": "eod",
   "status": "pending",
@@ -18,6 +19,26 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "XOMA提交8-K披露签署重大协议（Item 1.01），对于专注于药物版税收购的小型生物医药版税公司而言，新协议通常意味着未来现金流增加或版税资产组合扩张。市场通常对此类利好消息给予正面反应。由于检索到的因果链与中东能源袭击相关，与本新闻无关，此为新发现的因果模式。",
+  "stop_loss_price": 36.5735,
+  "take_profit": {
+    "prices": [
+      39.8898,
+      41.2163,
+      43.206
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 1.3265,
+    "atr": 0.6633
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 191,
     "summary": "XOMA Royalty Corp提交8-K文件，披露重大协议签署及其他事件",

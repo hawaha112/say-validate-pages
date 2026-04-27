@@ -1,6 +1,8 @@
 {
   "id": 47,
   "made_at": "2026-04-17T16:20:58.109988",
+  "expire_at": "2026-04-20T16:20:58.109988",
+  "verified_at": "2026-04-22T12:45:07.425810",
   "asset": {
     "symbol": "CRWV",
     "name": "CoreWeave股票",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 4.0,
   "horizon_days": 3,
-  "expire_at": "2026-04-20T16:20:58.109988",
   "baseline_price": 117.68009948730469,
   "baseline_source": "event_time",
   "status": "verified",
@@ -26,6 +27,26 @@
   "actual_magnitude_pct": -2.1414800260830678,
   "actual_direction": "down",
   "reasoning": "CoreWeave高收益债超额认购并扩容至27.5亿美元，反映投资者对其AI基础设施业务信用和现金流预期强劲，融资成本改善和资本开支可持续性提升将直接利好股价短期表现。检索结果中无直接对应的因果链，此为新模式。",
+  "stop_loss_price": 112.9729,
+  "take_profit": {
+    "prices": [
+      124.7409,
+      129.4481,
+      136.5089
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 4.7072,
+    "atr": 2.3536
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 3,
     "summary": "CoreWeave将高收益债券发行规模扩大至27.5亿美元，超额认购显示AI基础设施债务受市场追捧",

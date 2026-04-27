@@ -1,6 +1,8 @@
 {
   "id": 74,
   "made_at": "2026-04-27T12:46:12.590475",
+  "expire_at": "2026-04-30T12:46:12.590475",
+  "verified_at": null,
   "asset": {
     "symbol": "301117",
     "name": "协创数据",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 4.5,
   "horizon_days": 3,
-  "expire_at": "2026-04-30T12:46:12.590475",
   "baseline_price": null,
   "baseline_source": "live_fallback",
   "status": "pending",
@@ -18,6 +19,13 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "协创数据一季度净利润同比暴增343%，营收增长193%，业绩远超市场预期。如此强劲的盈利增长通常会在短期内推动股价大幅上涨，尤其是在A股市场，超预期业绩公告后1-3个交易日内往往有明显的正向反应。检索到的因果链均与美国CPI相关，不适用于此A股个股业绩事件，因此识别为新模式。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 205,
     "summary": "协创数据一季度净利润7.5亿元，同比暴增343%，营收增长193%",

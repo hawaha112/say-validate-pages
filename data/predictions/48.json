@@ -1,6 +1,8 @@
 {
   "id": 48,
   "made_at": "2026-04-17T16:20:58.870383",
+  "expire_at": "2026-04-24T16:20:58.870383",
+  "verified_at": "2026-04-27T12:26:36.353369",
   "asset": {
     "symbol": "NVDA",
     "name": "英伟达",
@@ -9,15 +11,42 @@
   "direction": "up",
   "magnitude_pct": 2.0,
   "horizon_days": 7,
-  "expire_at": "2026-04-24T16:20:58.870383",
   "baseline_price": 200.64500427246094,
   "baseline_source": "event_time",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
+  "status": "verified",
+  "hit": true,
+  "hit_breakdown": {
+    "dir_hit": true,
+    "mag_hit": true,
+    "strict_hit": true,
+    "mag_err_rel": 0.9001220657469793,
+    "mag_err_bucket": "<=100%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": 3.8002441314939586,
+  "actual_direction": "up",
   "reasoning": "CoreWeave债券超募显示AI数据中心资本开支融资通道畅通，作为其最大GPU供应商，英伟达将受益于AI基建持续扩张的资本支出预期。此为检索库中未覆盖的新模式，反映AI债务融资对上游芯片的传导。",
+  "stop_loss_price": 196.6321,
+  "take_profit": {
+    "prices": [
+      206.6644,
+      210.6773,
+      216.6966
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 4.0129,
+    "atr": 2.0065
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 3,
     "summary": "CoreWeave将高收益债券发行规模扩大至27.5亿美元，超额认购显示AI基础设施债务受市场追捧",

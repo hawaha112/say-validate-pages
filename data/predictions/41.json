@@ -1,6 +1,8 @@
 {
   "id": 41,
   "made_at": "2026-04-16T19:18:31.617860",
+  "expire_at": "2026-04-23T19:18:31.617860",
+  "verified_at": "2026-04-27T12:26:36.353369",
   "asset": {
     "symbol": "INTC",
     "name": "英特尔",
@@ -9,15 +11,42 @@
   "direction": "down",
   "magnitude_pct": 2.5,
   "horizon_days": 7,
-  "expire_at": "2026-04-23T19:18:31.617860",
   "baseline_price": 68.32980346679688,
   "baseline_source": null,
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": 7.318594070381339,
+    "mag_err_bucket": ">100%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": 20.796485175953347,
+  "actual_direction": "up",
   "reasoning": "AMD服务器CPU业务强势意味着继续抢占Intel在数据中心的市场份额，是零和竞争。AMD的估值修复往往伴随Intel相对承压。检索因果链不涉及半导体竞争格局，故标注为新模式。",
+  "stop_loss_price": 70.038,
+  "take_profit": {
+    "prices": [
+      65.7674,
+      64.0592,
+      61.4968
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 1.7082,
+    "atr": 0.8541
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 2,
     "summary": "AMD服务器CPU业务重获投资者青睐，股票表现迎来近二十年最佳走势",

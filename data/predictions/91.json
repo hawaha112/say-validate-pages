@@ -1,6 +1,8 @@
 {
   "id": 91,
   "made_at": "2026-04-27T12:47:44.566124",
+  "expire_at": "2026-04-30T12:47:44.566124",
+  "verified_at": null,
   "asset": {
     "symbol": "600519",
     "name": "贵州茅台",
@@ -9,7 +11,6 @@
   "direction": "down",
   "magnitude_pct": 1.2,
   "horizon_days": 3,
-  "expire_at": "2026-04-30T12:47:44.566124",
   "baseline_price": null,
   "baseline_source": "live_fallback",
   "status": "pending",
@@ -18,6 +19,13 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "茅台假酒泛滥新闻曝光后，会引发消费者对茅台真伪鉴别的担忧，短期内可能抑制部分购买意愿，尤其是非官方渠道的消费信心受挫。同时该事件暴露茅台产品流通环节的管控漏洞，品牌溢价能力受到质疑。检索到的因果链未覆盖食品造假对品牌股的影响，属新模式。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 199,
     "summary": "38万元购买的百箱茅台全部为假酒，成本仅百元，涉及食品安全和消费者权益问题",

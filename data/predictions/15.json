@@ -1,6 +1,8 @@
 {
   "id": 15,
   "made_at": "2026-04-16T19:14:26.356498",
+  "expire_at": "2026-04-23T19:14:26.356498",
+  "verified_at": "2026-04-27T12:26:36.353369",
   "asset": {
     "symbol": "XLP",
     "name": "美国消费必需品ETF",
@@ -9,15 +11,42 @@
   "direction": "down",
   "magnitude_pct": 0.8,
   "horizon_days": 7,
-  "expire_at": "2026-04-23T19:14:26.356498",
   "baseline_price": 81.33499908447266,
   "baseline_source": null,
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": 1.9123444608587716,
+    "mag_err_bucket": ">100%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": 2.3298755686870174,
+  "actual_direction": "up",
   "reasoning": "百事降价信号表明过去两年靠涨价驱动业绩的美国消费必需品板块进入定价能力衰退阶段，后续各大消费品公司可能被迫跟进促销，压制板块整体盈利预期与估值倍数。检索到的因果链不涵盖此类消费降级/定价权逆转主题，为新模式。",
+  "stop_loss_price": 81.9857,
+  "take_profit": {
+    "prices": [
+      80.359,
+      79.7083,
+      78.7323
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.6507,
+    "atr": 0.3253
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 13,
     "summary": "百事公司通过下调零食价格最高15%赢回消费者，销量回升",

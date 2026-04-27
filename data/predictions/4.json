@@ -1,6 +1,8 @@
 {
   "id": 4,
   "made_at": "2026-04-16T19:13:09.915878",
+  "expire_at": "2026-04-23T19:13:09.915878",
+  "verified_at": "2026-04-27T12:26:36.353369",
   "asset": {
     "symbol": "CL=F",
     "name": "WTI原油期货",
@@ -9,15 +11,42 @@
   "direction": "up",
   "magnitude_pct": 6.0,
   "horizon_days": 7,
-  "expire_at": "2026-04-23T19:13:09.915878",
   "baseline_price": 90.38999938964844,
   "baseline_source": null,
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
+  "status": "verified",
+  "hit": true,
+  "hit_breakdown": {
+    "dir_hit": true,
+    "mag_hit": true,
+    "strict_hit": true,
+    "mag_err_rel": 0.13522836724653672,
+    "mag_err_bucket": "<=25%",
+    "tol_used": 0.95,
+    "asset_class": "commodity"
+  },
+  "actual_magnitude_pct": 5.18862979652078,
+  "actual_direction": "up",
   "reasoning": "美国与以色列对伊朗开战将直接威胁霍尔木兹海峡原油运输通道，伊朗作为OPEC重要产油国供应面临中断风险，地缘溢价快速计入油价。检索到的因果链未覆盖中东战争场景，属于新模式。",
+  "stop_loss_price": 84.9666,
+  "take_profit": {
+    "prices": [
+      98.5251,
+      103.9485,
+      112.0836
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 5.4234,
+    "atr": 2.7117
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 16,
     "summary": "美国与以色列联合对伊朗开战，地缘政治冲突爆发，推高避险与能源资产",

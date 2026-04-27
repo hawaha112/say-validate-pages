@@ -1,9 +1,11 @@
 {
-  "count": 56,
+  "count": 105,
   "items": [
     {
       "id": 105,
       "made_at": "2026-04-27T12:49:17.704434",
+      "expire_at": "2026-05-04T12:49:17.704434",
+      "verified_at": null,
       "asset": {
         "symbol": "GC=F",
         "name": "黄金期货",
@@ -12,7 +14,6 @@
       "direction": "up",
       "magnitude_pct": 1.2,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:49:17.704434",
       "baseline_price": 4717.89990234375,
       "baseline_source": "event_time",
       "status": "pending",
@@ -21,6 +22,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "南海地缘紧张升级触发避险情绪，资金倾向流入黄金等传统避险资产。中国海军围观美日菲军演的强势姿态加剧市场对区域冲突风险的担忧，短期内支撑金价。检索因果链虽提及地区银行危机推动黄金避险，但地缘冲突驱动的避险逻辑为新模式。",
+      "stop_loss_price": 4661.2851,
+      "take_profit": {
+        "prices": [
+          4802.8221,
+          4859.4369,
+          4944.3591
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 56.6148,
+        "atr": 28.3074
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 186,
         "summary": "中国海军监视美日菲联合军演，南海地缘紧张升级",
@@ -37,6 +58,8 @@
     {
       "id": 104,
       "made_at": "2026-04-27T12:49:17.244906",
+      "expire_at": "2026-05-11T12:49:17.244906",
+      "verified_at": null,
       "asset": {
         "symbol": "LMT",
         "name": "洛克希德·马丁（美国国防股）",
@@ -45,7 +68,6 @@
       "direction": "up",
       "magnitude_pct": 2.0,
       "horizon_days": 14,
-      "expire_at": "2026-05-11T12:49:17.244906",
       "baseline_price": 513.4500122070312,
       "baseline_source": "eod",
       "status": "pending",
@@ -54,6 +76,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "美日菲联合军演及中国海军强势回应凸显亚太军备竞赛加剧，将推动美国及盟国增加国防开支预期。洛克希德·马丁作为全球最大军工企业，在F-35战斗机及导弹防御系统领域拥有核心地位，地缘紧张直接利好其订单前景。检索因果链未覆盖此模式，属新发现。",
+      "stop_loss_price": 503.181,
+      "take_profit": {
+        "prices": [
+          528.8535,
+          539.1225,
+          554.526
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 10.269,
+        "atr": 5.1345
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 186,
         "summary": "中国海军监视美日菲联合军演，南海地缘紧张升级",
@@ -70,6 +112,8 @@
     {
       "id": 103,
       "made_at": "2026-04-27T12:49:16.340617",
+      "expire_at": "2026-05-04T12:49:16.340617",
+      "verified_at": null,
       "asset": {
         "symbol": "FXI",
         "name": "中国大盘股ETF",
@@ -78,7 +122,6 @@
       "direction": "down",
       "magnitude_pct": 1.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:49:16.340617",
       "baseline_price": 36.86000061035156,
       "baseline_source": "eod",
       "status": "pending",
@@ -87,6 +130,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "中国海军高调监视美日菲联合军演显示南海地缘对抗升级，国际投资者对中国资产的风险溢价短期上升。FXI作为追踪中国大盘股的主要ETF，在地缘紧张情绪下通常承压。虽然检索到的因果链主要涉及房地产违约，但地缘政治风险同样影响中国风险资产估值，属于新模式。",
+      "stop_loss_price": 37.4129,
+      "take_profit": {
+        "prices": [
+          36.0307,
+          35.4778,
+          34.6484
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.5529,
+        "atr": 0.2765
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 186,
         "summary": "中国海军监视美日菲联合军演，南海地缘紧张升级",
@@ -103,6 +166,8 @@
     {
       "id": 102,
       "made_at": "2026-04-27T12:48:51.291504",
+      "expire_at": "2026-05-04T12:48:51.291504",
+      "verified_at": null,
       "asset": {
         "symbol": "XOMA",
         "name": "Xoma公司",
@@ -111,7 +176,6 @@
       "direction": "up",
       "magnitude_pct": 3.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:48:51.291504",
       "baseline_price": 37.900001525878906,
       "baseline_source": "eod",
       "status": "pending",
@@ -120,6 +184,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "XOMA提交8-K披露签署重大协议（Item 1.01），对于专注于药物版税收购的小型生物医药版税公司而言，新协议通常意味着未来现金流增加或版税资产组合扩张。市场通常对此类利好消息给予正面反应。由于检索到的因果链与中东能源袭击相关，与本新闻无关，此为新发现的因果模式。",
+      "stop_loss_price": 36.5735,
+      "take_profit": {
+        "prices": [
+          39.8898,
+          41.2163,
+          43.206
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.3265,
+        "atr": 0.6633
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 191,
         "summary": "XOMA Royalty Corp提交8-K文件，披露重大协议签署及其他事件",
@@ -136,6 +220,8 @@
     {
       "id": 101,
       "made_at": "2026-04-27T12:48:31.820875",
+      "expire_at": "2026-05-04T12:48:31.820875",
+      "verified_at": null,
       "asset": {
         "symbol": "06160.HK",
         "name": "百济神州港股",
@@ -144,7 +230,6 @@
       "direction": "up",
       "magnitude_pct": 3.0,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:48:31.820875",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -153,6 +238,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "港股作为百济神州另一重要上市地，对公司战略性合作公告反应积极。此次与华辉安健的合作涉及创新三特异性抗体，里程碑总额达20亿美元，对公司管线估值和未来收入预期形成正面催化。港股生物医药板块近期关注度提升，预计短期内港股同步走强。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 195,
         "summary": "百济神州全资子公司与华辉安健签订三特异性抗体全球独家开发合作协议，总里程碑款可达20亿美元",
@@ -169,6 +261,8 @@
     {
       "id": 100,
       "made_at": "2026-04-27T12:48:29.957837",
+      "expire_at": "2026-05-04T12:48:29.957837",
+      "verified_at": null,
       "asset": {
         "symbol": "BGNE",
         "name": "百济神州美股",
@@ -177,7 +271,6 @@
       "direction": "up",
       "magnitude_pct": 2.8,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:48:29.957837",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -186,6 +279,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "作为百济神州主要上市地之一，美股BGNE对公司重大BD交易同样敏感。本次三特异性抗体合作总额达20亿美元，彰显公司持续丰富管线的战略意图，尤其在PD-1赛道竞争白热化背景下，差异化靶点组合有望提升市场估值。美股投资者对创新药BD交易的反应往往迅速，预计短期内股价温和上涨。该模式属新发现。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 195,
         "summary": "百济神州全资子公司与华辉安健签订三特异性抗体全球独家开发合作协议，总里程碑款可达20亿美元",
@@ -202,6 +302,8 @@
     {
       "id": 99,
       "made_at": "2026-04-27T12:48:26.162450",
+      "expire_at": "2026-05-04T12:48:26.162450",
+      "verified_at": null,
       "asset": {
         "symbol": "688235.SH",
         "name": "百济神州科创板",
@@ -210,7 +312,6 @@
       "direction": "up",
       "magnitude_pct": 3.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:48:26.162450",
       "baseline_price": 235.0,
       "baseline_source": "event_time",
       "status": "pending",
@@ -219,6 +320,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "百济神州与华辉安健签订的三特异性抗体（PD-1/CTLA-4/VEGF-A）全球独家合作协议，总里程碑款高达20亿美元，展示了公司在创新药BD能力和管线拓展上的积极布局。三靶点联合抗体在肿瘤免疫领域属前沿方向，市场对创新药企的License-in交易通常给予正面反应。首付款2000万美元及后续里程碑结构合理，短期内将提振投资者对公司研发管线价值的预期。检索到的因果链未覆盖生物医药BD交易对股价的影响，属新模式。",
+      "stop_loss_price": 226.775,
+      "take_profit": {
+        "prices": [
+          247.3375,
+          255.5625,
+          267.9
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 8.225,
+        "atr": 4.1125
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 195,
         "summary": "百济神州全资子公司与华辉安健签订三特异性抗体全球独家开发合作协议，总里程碑款可达20亿美元",
@@ -235,6 +356,8 @@
     {
       "id": 98,
       "made_at": "2026-04-27T12:48:07.366429",
+      "expire_at": "2026-05-04T12:48:07.366429",
+      "verified_at": null,
       "asset": {
         "symbol": "300238",
         "name": "冠昊生物",
@@ -243,7 +366,6 @@
       "direction": "up",
       "magnitude_pct": 3.0,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:48:07.366429",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -252,6 +374,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "批量克隆牦牛成功展示了我国在细胞克隆和再生医学领域的技术实力。冠昊生物专注于再生医学和组织工程，克隆技术的突破会带动市场对整个生物技术板块的关注和估值重估。此为新模式，检索结果中未覆盖生物技术突破事件。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 196,
         "summary": "中国首次实现批量克隆10头牦牛，生物技术领域取得突破",
@@ -268,6 +397,8 @@
     {
       "id": 97,
       "made_at": "2026-04-27T12:48:07.131327",
+      "expire_at": "2026-05-04T12:48:07.131327",
+      "verified_at": null,
       "asset": {
         "symbol": "002100",
         "name": "天康生物",
@@ -276,7 +407,6 @@
       "direction": "up",
       "magnitude_pct": 2.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:48:07.131327",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -285,6 +415,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "我国首次批量克隆牦牛标志着大动物克隆技术的商业化突破。天康生物作为国内畜牧业龙头，在动物育种和生物技术领域有布局，克隆技术突破将提升市场对相关企业技术应用前景的预期。此为新发现的因果模式，检索库中无相关链条。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 196,
         "summary": "中国首次实现批量克隆10头牦牛，生物技术领域取得突破",
@@ -301,6 +438,8 @@
     {
       "id": 96,
       "made_at": "2026-04-27T12:47:56.742155",
+      "expire_at": "2026-05-04T12:47:56.742155",
+      "verified_at": null,
       "asset": {
         "symbol": "002287",
         "name": "奇正藏药",
@@ -309,7 +448,6 @@
       "direction": "up",
       "magnitude_pct": 2.2,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:47:56.742155",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -318,6 +456,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "中医药服务消费与贸易融合试点将带动特色民族医药企业发展。奇正藏药主打藏药特色，具有独特的文化和医疗价值，在中医药国际化进程中具备差异化优势，政策利好将提振市场对民族医药板块的关注度。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 198,
         "summary": "六部门推动中医药服务消费与贸易融合发展，18个地区成为试点",
@@ -334,6 +479,8 @@
     {
       "id": 95,
       "made_at": "2026-04-27T12:47:56.482363",
+      "expire_at": "2026-05-11T12:47:56.482363",
+      "verified_at": null,
       "asset": {
         "symbol": "000538",
         "name": "云南白药",
@@ -342,7 +489,6 @@
       "direction": "up",
       "magnitude_pct": 2.8,
       "horizon_days": 14,
-      "expire_at": "2026-05-11T12:47:56.482363",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -351,6 +497,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "中医药服务贸易融合发展试点政策将推动中药产品和服务的国际化进程。云南白药作为中国知名中药品牌，在东南亚等地区有较好的市场基础，试点政策有望促进其海外业务拓展和品牌价值提升。此为中医药政策利好新模式。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 198,
         "summary": "六部门推动中医药服务消费与贸易融合发展，18个地区成为试点",
@@ -367,6 +520,8 @@
     {
       "id": 94,
       "made_at": "2026-04-27T12:47:56.235318",
+      "expire_at": "2026-05-11T12:47:56.235318",
+      "verified_at": null,
       "asset": {
         "symbol": "600085",
         "name": "同仁堂",
@@ -375,7 +530,6 @@
       "direction": "up",
       "magnitude_pct": 3.5,
       "horizon_days": 14,
-      "expire_at": "2026-05-11T12:47:56.235318",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -384,6 +538,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "六部门联合推动中医药服务消费与贸易融合发展，18个地区试点将带来政策红利和市场拓展机遇。同仁堂作为中医药龙头企业，品牌国际知名度高，将直接受益于中医药服务出口和消费扩张。检索到的因果链未覆盖中医药政策利好模式，属于新模式。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 198,
         "summary": "六部门推动中医药服务消费与贸易融合发展，18个地区成为试点",
@@ -400,6 +561,8 @@
     {
       "id": 93,
       "made_at": "2026-04-27T12:47:44.792984",
+      "expire_at": "2026-04-30T12:47:44.792984",
+      "verified_at": null,
       "asset": {
         "symbol": "002304",
         "name": "洋河股份",
@@ -408,7 +571,6 @@
       "direction": "down",
       "magnitude_pct": 0.5,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:47:44.792984",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -417,6 +579,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "高端白酒造假事件曝光后，投资者对白酒板块整体信任度下降，洋河股份作为白酒龙头之一，短期内会受到板块情绪拖累。消费者对高价白酒的购买谨慎度提升，可能影响整体白酒消费预期。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 199,
         "summary": "38万元购买的百箱茅台全部为假酒，成本仅百元，涉及食品安全和消费者权益问题",
@@ -433,6 +602,8 @@
     {
       "id": 92,
       "made_at": "2026-04-27T12:47:44.791850",
+      "expire_at": "2026-04-30T12:47:44.791850",
+      "verified_at": null,
       "asset": {
         "symbol": "000858",
         "name": "五粮液",
@@ -441,7 +612,6 @@
       "direction": "down",
       "magnitude_pct": 0.6,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:47:44.791850",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -450,6 +620,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "茅台假酒事件会引发市场对整个高端白酒行业流通渠道乱象的担忧，作为高端白酒第二大品牌的五粮液也会受到连带影响，投资者可能担心类似造假问题波及其他品牌，行业情绪整体承压。此为茅台假酒事件的行业传染效应。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 199,
         "summary": "38万元购买的百箱茅台全部为假酒，成本仅百元，涉及食品安全和消费者权益问题",
@@ -466,6 +643,8 @@
     {
       "id": 91,
       "made_at": "2026-04-27T12:47:44.566124",
+      "expire_at": "2026-04-30T12:47:44.566124",
+      "verified_at": null,
       "asset": {
         "symbol": "600519",
         "name": "贵州茅台",
@@ -474,7 +653,6 @@
       "direction": "down",
       "magnitude_pct": 1.2,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:47:44.566124",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -483,6 +661,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "茅台假酒泛滥新闻曝光后，会引发消费者对茅台真伪鉴别的担忧，短期内可能抑制部分购买意愿，尤其是非官方渠道的消费信心受挫。同时该事件暴露茅台产品流通环节的管控漏洞，品牌溢价能力受到质疑。检索到的因果链未覆盖食品造假对品牌股的影响，属新模式。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 199,
         "summary": "38万元购买的百箱茅台全部为假酒，成本仅百元，涉及食品安全和消费者权益问题",
@@ -499,6 +684,8 @@
     {
       "id": 90,
       "made_at": "2026-04-27T12:47:33.679706",
+      "expire_at": "2026-04-30T12:47:33.679706",
+      "verified_at": null,
       "asset": {
         "symbol": "GC=F",
         "name": "黄金期货",
@@ -507,7 +694,6 @@
       "direction": "up",
       "magnitude_pct": 0.6,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:47:33.679706",
       "baseline_price": 4718.89990234375,
       "baseline_source": "event_time",
       "status": "pending",
@@ -516,6 +702,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "中美制裁摩擦升级属于地缘政治风险事件，通常推动避险资金流入黄金。虽然本次制裁规模有限，但叠加中方表态反对，市场对中美关系的不确定性担忧加剧，黄金短期受到支撑。",
+      "stop_loss_price": 4690.5865,
+      "take_profit": {
+        "prices": [
+          4761.37,
+          4789.6834,
+          4832.1535
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 28.3134,
+        "atr": 14.1567
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 200,
         "summary": "美国以涉伊朗为由制裁中国企业，中方表态反对",
@@ -532,6 +738,8 @@
     {
       "id": 89,
       "made_at": "2026-04-27T12:47:33.183505",
+      "expire_at": "2026-04-30T12:47:33.183505",
+      "verified_at": null,
       "asset": {
         "symbol": "USDCNH=X",
         "name": "美元兑离岸人民币",
@@ -540,7 +748,6 @@
       "direction": "up",
       "magnitude_pct": 0.4,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:47:33.183505",
       "baseline_price": 6.823490142822266,
       "baseline_source": "event_time",
       "status": "pending",
@@ -549,6 +756,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "中美摩擦升级事件通常引发避险情绪，资金流向美元避险，人民币承压贬值。此次制裁虽规模有限，但反映中美关系紧张持续，短期内离岸人民币可能小幅走弱。这是地缘政治风险影响汇率的常见模式。",
+      "stop_loss_price": 6.7962,
+      "take_profit": {
+        "prices": [
+          6.8644,
+          6.8917,
+          6.9327
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0273,
+        "atr": 0.0136
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 200,
         "summary": "美国以涉伊朗为由制裁中国企业，中方表态反对",
@@ -565,6 +792,8 @@
     {
       "id": 88,
       "made_at": "2026-04-27T12:47:32.707226",
+      "expire_at": "2026-05-04T12:47:32.707226",
+      "verified_at": null,
       "asset": {
         "symbol": "600028.SH",
         "name": "中国石化",
@@ -573,7 +802,6 @@
       "direction": "down",
       "magnitude_pct": 2.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:47:32.707226",
       "baseline_price": 5.34,
       "baseline_source": "event_time",
       "status": "pending",
@@ -582,6 +810,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "美国以涉伊朗为由制裁中国企业，通常涉及能源贸易领域。中国石化作为与伊朗有石油贸易往来的大型央企，面临被列入制裁名单或供应链受阻的风险，市场短期会对其海外业务前景产生担忧。这是基于地缘制裁影响能源企业的新模式判断。",
+      "stop_loss_price": 5.4735,
+      "take_profit": {
+        "prices": [
+          5.1398,
+          5.0062,
+          4.806
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.1335,
+        "atr": 0.0668
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 200,
         "summary": "美国以涉伊朗为由制裁中国企业，中方表态反对",
@@ -598,6 +846,8 @@
     {
       "id": 87,
       "made_at": "2026-04-27T12:47:18.240515",
+      "expire_at": "2026-05-04T12:47:18.240515",
+      "verified_at": null,
       "asset": {
         "symbol": "LHA.DE",
         "name": "汉莎航空",
@@ -606,7 +856,6 @@
       "direction": "down",
       "magnitude_pct": 2.0,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:47:18.240515",
       "baseline_price": 7.2820000648498535,
       "baseline_source": "event_time",
       "status": "pending",
@@ -615,6 +864,59 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "俄伊高层会晤强调中东局势紧张，若局势进一步恶化可能影响海湾地区航油供应与中东航线运营。欧洲航司如汉莎对中东航线依赖度高，航油成本敏感。参考检索到的因果链id=96，海湾燃料供应风险会压制欧洲航司股价，此次地缘紧张信号可能提前触发类似担忧。",
+      "stop_loss_price": 7.4364,
+      "take_profit": {
+        "prices": [
+          7.0504,
+          6.8959,
+          6.6643
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.1544,
+        "atr": 0.0772
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": 0.3,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.3,
+        "log_odds": -0.847,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.0,
+        "signal_grade": "💤 D",
+        "evidence": [
+          {
+            "link_id": 96,
+            "pattern": "海湾地区航油/燃料供应中断→欧洲航空公司股价承压",
+            "asset": "LHA.DE",
+            "dir_hit_rate": 0.5,
+            "n_samples": 4,
+            "log_lr": 0.0,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "cited_link_ids": [
+        96
+      ],
+      "cited_chains": [
+        {
+          "id": 96,
+          "pattern": "海湾地区航油/燃料供应中断→欧洲航空公司股价承压",
+          "asset_symbol": "LHA.DE",
+          "direction": "down",
+          "horizon_days": 7,
+          "magnitude_pct": 4.0,
+          "grade": "C",
+          "retail_edge": "mid"
+        }
+      ],
       "event": {
         "id": 201,
         "summary": "俄罗斯总统普京会见伊朗外长讨论中东局势",
@@ -631,6 +933,8 @@
     {
       "id": 86,
       "made_at": "2026-04-27T12:47:17.690459",
+      "expire_at": "2026-05-04T12:47:17.690459",
+      "verified_at": null,
       "asset": {
         "symbol": "GC=F",
         "name": "黄金期货",
@@ -639,7 +943,6 @@
       "direction": "up",
       "magnitude_pct": 1.2,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:47:17.690459",
       "baseline_price": 4719.2001953125,
       "baseline_source": "event_time",
       "status": "pending",
@@ -648,6 +951,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "俄伊领导人会晤聚焦中东紧张局势，投资者避险情绪升温。黄金作为传统避险资产，在地缘政治不确定性上升时往往获得资金流入。当前中东局势本就脆弱，此次会见被定义为'非常重要'，强化了冲突可能升级的市场预期。检索链未覆盖此类地缘外交事件对黄金的直接影响。",
+      "stop_loss_price": 4662.5698,
+      "take_profit": {
+        "prices": [
+          4804.1458,
+          4860.7762,
+          4945.7218
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 56.6304,
+        "atr": 28.3152
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 201,
         "summary": "俄罗斯总统普京会见伊朗外长讨论中东局势",
@@ -664,6 +987,8 @@
     {
       "id": 85,
       "made_at": "2026-04-27T12:47:17.191630",
+      "expire_at": "2026-05-04T12:47:17.191630",
+      "verified_at": null,
       "asset": {
         "symbol": "CL=F",
         "name": "WTI原油期货",
@@ -672,7 +997,6 @@
       "direction": "up",
       "magnitude_pct": 2.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:47:17.191630",
       "baseline_price": 95.98999786376953,
       "baseline_source": "event_time",
       "status": "pending",
@@ -681,6 +1005,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "俄罗斯与伊朗是全球主要产油国，两国高层会晤讨论中东局势会加剧市场对地缘冲突升级、石油供应中断的担忧。伊朗在霍尔木兹海峡的战略位置使任何紧张升级都可能威胁全球约20%的石油运输。此次会见表明俄伊协调立场，市场倾向于给油价计入地缘风险溢价。检索的因果链未直接覆盖俄伊高层会晤对油价的影响，属新模式。",
+      "stop_loss_price": 93.5902,
+      "take_profit": {
+        "prices": [
+          99.5896,
+          101.9894,
+          105.589
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.3997,
+        "atr": 1.1999
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 201,
         "summary": "俄罗斯总统普京会见伊朗外长讨论中东局势",
@@ -697,6 +1041,8 @@
     {
       "id": 84,
       "made_at": "2026-04-27T12:47:01.449473",
+      "expire_at": "2026-04-30T12:47:01.449473",
+      "verified_at": null,
       "asset": {
         "symbol": "BABA",
         "name": "阿里巴巴",
@@ -705,7 +1051,6 @@
       "direction": "down",
       "magnitude_pct": 1.5,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:47:01.449473",
       "baseline_price": 135.82000732421875,
       "baseline_source": "eod",
       "status": "pending",
@@ -714,6 +1059,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "中方对外资收购关键AI项目的限制信号可能引发海外投资者对中国科技监管收紧的担忧，中概股短期承压。阿里巴巴作为中概股龙头，对政策敏感度较高，可能面临短期资金流出压力。",
+      "stop_loss_price": 137.8573,
+      "take_profit": {
+        "prices": [
+          132.7641,
+          130.7268,
+          127.6708
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.0373,
+        "atr": 1.0187
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 202,
         "summary": "中国禁止外资收购Manus项目",
@@ -730,6 +1095,8 @@
     {
       "id": 83,
       "made_at": "2026-04-27T12:47:00.560227",
+      "expire_at": "2026-05-04T12:47:00.560227",
+      "verified_at": null,
       "asset": {
         "symbol": "300024.SZ",
         "name": "机器人",
@@ -738,7 +1105,6 @@
       "direction": "up",
       "magnitude_pct": 3.0,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:47:00.560227",
       "baseline_price": 14.8,
       "baseline_source": "event_time",
       "status": "pending",
@@ -747,6 +1113,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "Manus是备受关注的AI机器人项目，中方禁止外资收购意味着国内机器人产业将获得更多政策支持和发展空间。机器人（新松机器人）作为A股机器人板块的标杆企业，将直接受益于这一产业保护政策，市场情绪有望推动股价上涨。",
+      "stop_loss_price": 14.356,
+      "take_profit": {
+        "prices": [
+          15.466,
+          15.91,
+          16.576
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.444,
+        "atr": 0.222
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 202,
         "summary": "中国禁止外资收购Manus项目",
@@ -763,6 +1149,8 @@
     {
       "id": 82,
       "made_at": "2026-04-27T12:46:56.668320",
+      "expire_at": "2026-05-04T12:46:56.668320",
+      "verified_at": null,
       "asset": {
         "symbol": "002415.SZ",
         "name": "海康威视",
@@ -771,7 +1159,6 @@
       "direction": "up",
       "magnitude_pct": 2.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:46:56.668320",
       "baseline_price": 33.97,
       "baseline_source": "event_time",
       "status": "pending",
@@ -780,6 +1167,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "中方禁止外资收购Manus项目体现了对关键技术领域的保护政策，这将利好国内AI和机器人龙头企业。海康威视作为国内AI视觉和机器人领域的领军企业，在外资被限制进入的情况下，其市场地位和竞争优势将进一步巩固。此为新发现的因果模式，检索结果中无直接相关链条。",
+      "stop_loss_price": 33.1208,
+      "take_profit": {
+        "prices": [
+          35.2439,
+          36.0931,
+          37.367
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.8492,
+        "atr": 0.4246
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 202,
         "summary": "中国禁止外资收购Manus项目",
@@ -796,6 +1203,8 @@
     {
       "id": 81,
       "made_at": "2026-04-27T12:46:41.747120",
+      "expire_at": "2026-05-04T12:46:41.747120",
+      "verified_at": null,
       "asset": {
         "symbol": "EURUSD=X",
         "name": "欧元兑美元",
@@ -804,7 +1213,6 @@
       "direction": "up",
       "magnitude_pct": 0.4,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:46:41.747120",
       "baseline_price": 1.1750881671905518,
       "baseline_source": "event_time",
       "status": "pending",
@@ -813,6 +1221,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "欧洲股市走强反映经济前景乐观和资金流入欧洲，这通常支撑欧元汇率。投资者增持欧洲资产需要买入欧元，形成汇率上行压力。检索结果未包含欧洲股市与欧元汇率的联动关系，属新模式。",
+      "stop_loss_price": 1.1704,
+      "take_profit": {
+        "prices": [
+          1.1821,
+          1.1868,
+          1.1939
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0047,
+        "atr": 0.0024
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 203,
         "summary": "欧洲斯托克600指数上涨触及盘中高点",
@@ -829,6 +1257,8 @@
     {
       "id": 80,
       "made_at": "2026-04-27T12:46:40.611520",
+      "expire_at": "2026-04-30T12:46:40.611520",
+      "verified_at": null,
       "asset": {
         "symbol": "EZU",
         "name": "欧洲市场ETF",
@@ -837,7 +1267,6 @@
       "direction": "up",
       "magnitude_pct": 1.0,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:46:40.611520",
       "baseline_price": 66.51000213623047,
       "baseline_source": "eod",
       "status": "pending",
@@ -846,6 +1275,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "欧洲斯托克600指数创盘中新高直接反映欧洲股市动能强劲。EZU作为追踪欧元区大盘股的ETF将同步受益于这一上涨趋势。市场情绪改善和资金流入将在短期内延续涨势。检索结果未覆盖欧洲指数上涨的直接传导，属新模式。",
+      "stop_loss_price": 65.8449,
+      "take_profit": {
+        "prices": [
+          67.5077,
+          68.1728,
+          69.1704
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.6651,
+        "atr": 0.3326
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 203,
         "summary": "欧洲斯托克600指数上涨触及盘中高点",
@@ -862,6 +1311,8 @@
     {
       "id": 79,
       "made_at": "2026-04-27T12:46:39.897850",
+      "expire_at": "2026-04-30T12:46:39.897850",
+      "verified_at": null,
       "asset": {
         "symbol": "FXI",
         "name": "中国大盘股ETF",
@@ -870,7 +1321,6 @@
       "direction": "up",
       "magnitude_pct": 1.5,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:46:39.897850",
       "baseline_price": 36.86000061035156,
       "baseline_source": "eod",
       "status": "pending",
@@ -879,6 +1329,59 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "欧洲斯托克600指数触及盘中高点反映全球风险偏好回升。根据检索到的因果链(id:62)，全球风险偏好提升时中国相关资产受益。欧洲市场走强通常带动全球股市联动上涨，中国大盘股ETF作为新兴市场风险资产将受到外资流入支撑。",
+      "stop_loss_price": 36.8068,
+      "take_profit": {
+        "prices": [
+          36.9397,
+          36.9929,
+          37.0726
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0532,
+        "atr": 0.0266
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.5172,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.5172,
+        "log_odds": 0.069,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.72,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 62,
+            "pattern": "美中高层会晤/贸易谈判取得进展",
+            "asset": "510300.SS",
+            "dir_hit_rate": 0.8,
+            "n_samples": 5,
+            "log_lr": 0.916,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "cited_link_ids": [
+        62
+      ],
+      "cited_chains": [
+        {
+          "id": 62,
+          "pattern": "美中高层会晤/贸易谈判取得进展",
+          "asset_symbol": "510300.SS",
+          "direction": "up",
+          "horizon_days": 3,
+          "magnitude_pct": 1.2,
+          "grade": "C",
+          "retail_edge": "mid"
+        }
+      ],
       "event": {
         "id": 203,
         "summary": "欧洲斯托克600指数上涨触及盘中高点",
@@ -895,6 +1398,8 @@
     {
       "id": 78,
       "made_at": "2026-04-27T12:46:27.547311",
+      "expire_at": "2026-05-04T12:46:27.547311",
+      "verified_at": null,
       "asset": {
         "symbol": "GC=F",
         "name": "黄金期货",
@@ -903,7 +1408,6 @@
       "direction": "up",
       "magnitude_pct": 1.2,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:46:27.547311",
       "baseline_price": 4720.2998046875,
       "baseline_source": "event_time",
       "status": "pending",
@@ -912,6 +1416,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "朝俄军事合作实质化加剧全球地缘政治不确定性，避险资金将流向黄金。朝鲜正式参与俄乌战争意味着冲突扩大化风险上升，可能引发更广泛的国际紧张局势，支撑金价走高。",
+      "stop_loss_price": 4663.6562,
+      "take_profit": {
+        "prices": [
+          4805.2652,
+          4861.9088,
+          4946.8742
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 56.6436,
+        "atr": 28.3218
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 204,
         "summary": "金正恩与俄罗斯高官向阵亡朝鲜士兵鞠躬，暗示朝俄军事合作深化",
@@ -928,6 +1452,8 @@
     {
       "id": 77,
       "made_at": "2026-04-27T12:46:27.046407",
+      "expire_at": "2026-05-11T12:46:27.046407",
+      "verified_at": null,
       "asset": {
         "symbol": "067160.KQ",
         "name": "韩华航空航天",
@@ -936,7 +1462,6 @@
       "direction": "up",
       "magnitude_pct": 3.5,
       "horizon_days": 14,
-      "expire_at": "2026-05-11T12:46:27.046407",
       "baseline_price": 60000.0,
       "baseline_source": "event_time",
       "status": "pending",
@@ -945,6 +1470,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "朝俄军事同盟强化将刺激韩国加大国防开支，韩国主要防务承包商将受益。朝鲜士兵阵亡消息确认朝鲜深度介入俄乌冲突，韩国政府将面临更大压力提升军事能力，利好韩国国防股。",
+      "stop_loss_price": 57900.0,
+      "take_profit": {
+        "prices": [
+          63150.0,
+          65250.0,
+          68400.0
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2100.0,
+        "atr": 1050.0
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 204,
         "summary": "金正恩与俄罗斯高官向阵亡朝鲜士兵鞠躬，暗示朝俄军事合作深化",
@@ -961,6 +1506,8 @@
     {
       "id": 76,
       "made_at": "2026-04-27T12:46:26.199702",
+      "expire_at": "2026-05-04T12:46:26.199702",
+      "verified_at": null,
       "asset": {
         "symbol": "USDKRW=X",
         "name": "美元/韩元汇率",
@@ -969,7 +1516,6 @@
       "direction": "up",
       "magnitude_pct": 0.8,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:46:26.199702",
       "baseline_price": 1471.010009765625,
       "baseline_source": "event_time",
       "status": "pending",
@@ -978,6 +1524,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "朝俄军事合作深化加剧朝鲜半岛地缘紧张，市场避险情绪升温会导致韩元承压贬值。朝鲜士兵在俄作战并有阵亡确认，意味着朝俄军事同盟进入实质性阶段，韩国面临的安全威胁上升，资本可能流出韩国市场。",
+      "stop_loss_price": 1459.2419,
+      "take_profit": {
+        "prices": [
+          1488.6621,
+          1500.4302,
+          1518.0823
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 11.7681,
+        "atr": 5.884
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 204,
         "summary": "金正恩与俄罗斯高官向阵亡朝鲜士兵鞠躬，暗示朝俄军事合作深化",
@@ -994,6 +1560,8 @@
     {
       "id": 75,
       "made_at": "2026-04-27T12:46:12.806430",
+      "expire_at": "2026-05-04T12:46:12.806430",
+      "verified_at": null,
       "asset": {
         "symbol": "301117",
         "name": "协创数据",
@@ -1002,7 +1570,6 @@
       "direction": "up",
       "magnitude_pct": 6.0,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:46:12.806430",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -1011,6 +1578,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "业绩大幅超预期后，随着更多投资者和机构关注到这一消息，资金流入可能在一周内持续推高股价。343%的净利润增速属于极端正面业绩，市场消化和追涨情绪可能延续至更长时间窗口。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 205,
         "summary": "协创数据一季度净利润7.5亿元，同比暴增343%，营收增长193%",
@@ -1027,6 +1601,8 @@
     {
       "id": 74,
       "made_at": "2026-04-27T12:46:12.590475",
+      "expire_at": "2026-04-30T12:46:12.590475",
+      "verified_at": null,
       "asset": {
         "symbol": "301117",
         "name": "协创数据",
@@ -1035,7 +1611,6 @@
       "direction": "up",
       "magnitude_pct": 4.5,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:46:12.590475",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -1044,6 +1619,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "协创数据一季度净利润同比暴增343%，营收增长193%，业绩远超市场预期。如此强劲的盈利增长通常会在短期内推动股价大幅上涨，尤其是在A股市场，超预期业绩公告后1-3个交易日内往往有明显的正向反应。检索到的因果链均与美国CPI相关，不适用于此A股个股业绩事件，因此识别为新模式。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 205,
         "summary": "协创数据一季度净利润7.5亿元，同比暴增343%，营收增长193%",
@@ -1060,6 +1642,8 @@
     {
       "id": 73,
       "made_at": "2026-04-27T12:46:01.700462",
+      "expire_at": "2026-05-04T12:46:01.700462",
+      "verified_at": null,
       "asset": {
         "symbol": "KWEB",
         "name": "中概互联ETF",
@@ -1068,7 +1652,6 @@
       "direction": "up",
       "magnitude_pct": 0.8,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:46:01.700462",
       "baseline_price": 28.829999923706055,
       "baseline_source": "eod",
       "status": "pending",
@@ -1077,6 +1660,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "小红书主动建立AI治理框架，显示中国互联网平台在AI监管方面走向规范化和自律化，这降低了市场对中国科技平台面临突发监管风险的担忧。对整体中概互联网板块形成温和利好，但影响较为间接和有限。此为新发现的市场模式。",
+      "stop_loss_price": 28.5994,
+      "take_profit": {
+        "prices": [
+          29.176,
+          29.4066,
+          29.7526
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.2306,
+        "atr": 0.1153
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 206,
         "summary": "小红书首次发布AI内容治理主张，明确鼓励和反对的AI行为规范",
@@ -1093,6 +1696,8 @@
     {
       "id": 72,
       "made_at": "2026-04-27T12:46:01.151512",
+      "expire_at": "2026-05-04T12:46:01.151512",
+      "verified_at": null,
       "asset": {
         "symbol": "PDD",
         "name": "拼多多",
@@ -1101,7 +1706,6 @@
       "direction": "up",
       "magnitude_pct": 1.2,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:46:01.151512",
       "baseline_price": 98.02999877929688,
       "baseline_source": "eod",
       "status": "pending",
@@ -1110,6 +1714,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "小红书作为中国领先的社交电商平台，首次系统性发布AI治理框架，展现了平台治理的成熟度和前瞻性。这有助于提升平台内容质量和用户信任度，利好其商业化前景。由于小红书未上市，市场可能通过关联的中概电商股（如PDD等社交电商概念）来反映这一积极信号。此为新模式，未在检索结果中找到匹配的因果链。",
+      "stop_loss_price": 96.8536,
+      "take_profit": {
+        "prices": [
+          99.7945,
+          100.9709,
+          102.7354
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.1764,
+        "atr": 0.5882
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 206,
         "summary": "小红书首次发布AI内容治理主张，明确鼓励和反对的AI行为规范",
@@ -1126,6 +1750,8 @@
     {
       "id": 71,
       "made_at": "2026-04-27T12:45:47.655259",
+      "expire_at": "2026-04-30T12:45:47.655259",
+      "verified_at": null,
       "asset": {
         "symbol": "TA35.TA",
         "name": "以色列TA-35指数",
@@ -1134,7 +1760,6 @@
       "direction": "down",
       "magnitude_pct": 2.0,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:45:47.655259",
       "baseline_price": 4348.080078125,
       "baseline_source": "event_time",
       "status": "pending",
@@ -1143,6 +1768,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "以色列扩大对黎巴嫩的军事行动，国内面临战争升级风险，投资者会担忧经济活动受扰、国防开支增加以及潜在的多线作战压力，短期内以色列股市承压。",
+      "stop_loss_price": 4435.0417,
+      "take_profit": {
+        "prices": [
+          4217.6377,
+          4130.6761,
+          4000.2337
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 86.9616,
+        "atr": 43.4808
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 207,
         "summary": "以色列军方开始打击黎巴嫩真主党目标，地缘政治紧张局势升级",
@@ -1159,6 +1804,8 @@
     {
       "id": 70,
       "made_at": "2026-04-27T12:45:46.900197",
+      "expire_at": "2026-05-04T12:45:46.900197",
+      "verified_at": null,
       "asset": {
         "symbol": "CL=F",
         "name": "WTI原油期货",
@@ -1167,7 +1814,6 @@
       "direction": "up",
       "magnitude_pct": 3.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:45:46.900197",
       "baseline_price": 95.8499984741211,
       "baseline_source": "event_time",
       "status": "pending",
@@ -1176,6 +1822,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "以色列打击黎巴嫩贝卡谷地的真主党目标，意味着冲突可能向更广泛的中东地区蔓延。贝卡谷地靠近叙利亚，若冲突扩大涉及伊朗，将威胁霍尔木兹海峡等关键石油运输通道，市场会提前计入供应中断风险溢价。",
+      "stop_loss_price": 92.4952,
+      "take_profit": {
+        "prices": [
+          100.8821,
+          104.2369,
+          109.269
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 3.3547,
+        "atr": 1.6774
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 207,
         "summary": "以色列军方开始打击黎巴嫩真主党目标，地缘政治紧张局势升级",
@@ -1192,6 +1858,8 @@
     {
       "id": 69,
       "made_at": "2026-04-27T12:45:46.352899",
+      "expire_at": "2026-05-04T12:45:46.352899",
+      "verified_at": null,
       "asset": {
         "symbol": "GC=F",
         "name": "黄金期货",
@@ -1200,7 +1868,6 @@
       "direction": "up",
       "magnitude_pct": 2.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:45:46.352899",
       "baseline_price": 4719.7998046875,
       "baseline_source": "event_time",
       "status": "pending",
@@ -1209,6 +1876,59 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "以色列对黎巴嫩真主党发动军事打击，中东地缘政治紧张局势显著升级，可能引发更大范围的区域冲突。这类地缘冲突事件会推动资金流入黄金等避险资产。虽然检索到的因果链是关于美国债务上限的，但避险逻辑相通——地缘政治风险同样会提振黄金需求。",
+      "stop_loss_price": 4695.0419,
+      "take_profit": {
+        "prices": [
+          4756.9366,
+          4781.6945,
+          4818.8314
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 24.7579,
+        "atr": 12.3789
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.72,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.72,
+        "log_odds": 0.944,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.4,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 94,
+            "pattern": "美国政府停摆 / 债务上限临近违约",
+            "asset": "GC=F",
+            "dir_hit_rate": 1.0,
+            "n_samples": 5,
+            "log_lr": 1.792,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "cited_link_ids": [
+        94
+      ],
+      "cited_chains": [
+        {
+          "id": 94,
+          "pattern": "美国政府停摆 / 债务上限临近违约",
+          "asset_symbol": "GC=F",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 2.0,
+          "grade": "A",
+          "retail_edge": "mid"
+        }
+      ],
       "event": {
         "id": 207,
         "summary": "以色列军方开始打击黎巴嫩真主党目标，地缘政治紧张局势升级",
@@ -1225,6 +1945,8 @@
     {
       "id": 68,
       "made_at": "2026-04-27T12:45:33.998219",
+      "expire_at": "2026-05-11T12:45:33.998219",
+      "verified_at": null,
       "asset": {
         "symbol": "DE",
         "name": "迪尔公司(国防概念)",
@@ -1233,7 +1955,6 @@
       "direction": "up",
       "magnitude_pct": 1.2,
       "horizon_days": 14,
-      "expire_at": "2026-05-11T12:45:33.998219",
       "baseline_price": 562.6400146484375,
       "baseline_source": "eod",
       "status": "pending",
@@ -1242,6 +1963,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "德国作为欧洲最大经济体，其总理对美国中东战略的质疑反映欧洲对自身安全的担忧加剧。这将推动欧洲加速国防自主化进程，利好美欧防务承包商。结合欧洲近期增加国防开支的趋势，防务板块有望受益。",
+      "stop_loss_price": 555.8883,
+      "take_profit": {
+        "prices": [
+          572.7675,
+          579.5192,
+          589.6467
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 6.7517,
+        "atr": 3.3758
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 208,
         "summary": "德国总理默茨称暂未看到美国在伊朗战争中的退出战略",
@@ -1258,6 +1999,8 @@
     {
       "id": 67,
       "made_at": "2026-04-27T12:45:33.050177",
+      "expire_at": "2026-05-04T12:45:33.050177",
+      "verified_at": null,
       "asset": {
         "symbol": "CL=F",
         "name": "WTI原油期货",
@@ -1266,7 +2009,6 @@
       "direction": "up",
       "magnitude_pct": 2.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:45:33.050177",
       "baseline_price": 95.87000274658203,
       "baseline_source": "event_time",
       "status": "pending",
@@ -1275,6 +2017,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "默茨的表态意味着伊朗冲突可能旷日持久，中东原油供应中断风险溢价将持续存在。伊朗作为OPEC重要产油国，任何军事升级都将威胁霍尔木兹海峡通行安全，推升油价。市场将重新定价地缘风险溢价。",
+      "stop_loss_price": 93.4733,
+      "take_profit": {
+        "prices": [
+          99.4651,
+          101.8619,
+          105.457
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.3968,
+        "atr": 1.1984
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 208,
         "summary": "德国总理默茨称暂未看到美国在伊朗战争中的退出战略",
@@ -1291,6 +2053,8 @@
     {
       "id": 66,
       "made_at": "2026-04-27T12:45:32.549744",
+      "expire_at": "2026-05-04T12:45:32.549744",
+      "verified_at": null,
       "asset": {
         "symbol": "GC=F",
         "name": "黄金期货",
@@ -1299,7 +2063,6 @@
       "direction": "up",
       "magnitude_pct": 1.8,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:45:32.549744",
       "baseline_price": 4719.39990234375,
       "baseline_source": "event_time",
       "status": "pending",
@@ -1308,6 +2071,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "德国总理公开质疑美国在伊朗冲突中缺乏退出战略，暗示中东地缘局势可能长期化甚至升级。这种来自北约核心成员的公开质疑加剧市场对美伊冲突扩大化的担忧，避险资金将流向黄金。历史上中东地缘紧张升级期间黄金通常有1-3%的涨幅。",
+      "stop_loss_price": 4634.4507,
+      "take_profit": {
+        "prices": [
+          4846.8237,
+          4931.7729,
+          5059.1967
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 84.9492,
+        "atr": 42.4746
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 208,
         "summary": "德国总理默茨称暂未看到美国在伊朗战争中的退出战略",
@@ -1324,6 +2107,8 @@
     {
       "id": 65,
       "made_at": "2026-04-27T12:45:19.098230",
+      "expire_at": "2026-04-30T12:45:19.098230",
+      "verified_at": null,
       "asset": {
         "symbol": "002290",
         "name": "禾盛新材",
@@ -1332,7 +2117,6 @@
       "direction": "down",
       "magnitude_pct": 2.5,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:45:19.098230",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -1341,6 +2125,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "禾盛新材主动澄清并非熠知电子控股股东，且强调熠知电子持续亏损、盈利不确定。这种公告通常意味着市场此前对公司参股熠知电子存在过度乐观预期，澄清公告打压投资者情绪，短期内股价承压。此外，关联企业亏损也增加了市场对禾盛新材投资回报的担忧。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 209,
         "summary": "禾盛新材澄清与熠知电子关系，熠知电子持续亏损盈利不确定",
@@ -1357,6 +2148,8 @@
     {
       "id": 64,
       "made_at": "2026-04-27T12:45:11.719654",
+      "expire_at": "2026-04-30T12:45:11.719654",
+      "verified_at": null,
       "asset": {
         "symbol": "002460.SZ",
         "name": "赣锋锂业",
@@ -1365,7 +2158,6 @@
       "direction": "up",
       "magnitude_pct": 3.5,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:45:11.719654",
       "baseline_price": 84.11,
       "baseline_source": "event_time",
       "status": "pending",
@@ -1374,6 +2166,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "赣锋锂业与天齐锂业同为锂资源双寡头，天齐锂业业绩暴增将引发市场对赣锋锂业同样实现业绩高增长的预期。板块联动效应下，投资者会对同业公司进行估值重估，推动股价上行。",
+      "stop_loss_price": 81.1662,
+      "take_profit": {
+        "prices": [
+          88.5258,
+          91.4696,
+          95.8854
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.9438,
+        "atr": 1.4719
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 210,
         "summary": "天齐锂业一季度净利润18.76亿元，同比暴增1699%",
@@ -1390,6 +2202,8 @@
     {
       "id": 63,
       "made_at": "2026-04-27T12:45:08.514679",
+      "expire_at": "2026-05-04T12:45:08.514679",
+      "verified_at": null,
       "asset": {
         "symbol": "300750.SZ",
         "name": "宁德时代",
@@ -1398,7 +2212,6 @@
       "direction": "up",
       "magnitude_pct": 2.0,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:45:08.514679",
       "baseline_price": 434.88,
       "baseline_source": "event_time",
       "status": "pending",
@@ -1407,6 +2220,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "天齐锂业作为上游锂资源龙头业绩暴增，反映锂电产业链景气度高企。宁德时代作为下游电池龙头，产业链联动效应下将受益于市场对锂电板块的重新关注，资金可能从上游向中下游扩散。",
+      "stop_loss_price": 426.1824,
+      "take_profit": {
+        "prices": [
+          447.9264,
+          456.624,
+          469.6704
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 8.6976,
+        "atr": 4.3488
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 210,
         "summary": "天齐锂业一季度净利润18.76亿元，同比暴增1699%",
@@ -1423,6 +2256,8 @@
     {
       "id": 62,
       "made_at": "2026-04-27T12:45:05.271346",
+      "expire_at": "2026-04-30T12:45:05.271346",
+      "verified_at": null,
       "asset": {
         "symbol": "002466.SZ",
         "name": "天齐锂业",
@@ -1431,7 +2266,6 @@
       "direction": "up",
       "magnitude_pct": 4.5,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:45:05.271346",
       "baseline_price": 73.65,
       "baseline_source": "event_time",
       "status": "pending",
@@ -1440,6 +2274,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "天齐锂业一季度净利润同比暴增1699%，远超市场预期，营收也接近翻倍。如此强劲的业绩释放将直接推动股价上涨，市场通常在财报公布后1-3个交易日内完成对超预期业绩的定价。这是典型的业绩驱动型行情。",
+      "stop_loss_price": 70.3358,
+      "take_profit": {
+        "prices": [
+          78.6214,
+          81.9356,
+          86.907
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 3.3143,
+        "atr": 1.6571
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 210,
         "summary": "天齐锂业一季度净利润18.76亿元，同比暴增1699%",
@@ -1456,6 +2310,8 @@
     {
       "id": 61,
       "made_at": "2026-04-27T12:44:42.967510",
+      "expire_at": "2026-04-30T12:44:42.967510",
+      "verified_at": null,
       "asset": {
         "symbol": "002602",
         "name": "世纪华通",
@@ -1464,7 +2320,6 @@
       "direction": "down",
       "magnitude_pct": 1.8,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:44:42.967510",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -1473,6 +2328,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "世纪华通作为游戏行业另一家主要上市公司，在完美世界披露业绩大幅下滑后，投资者可能担忧行业整体需求疲软，对同类公司采取防御性减仓。这是游戏行业龙头业绩不佳引发的板块情绪传导。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 211,
         "summary": "完美世界一季度业绩大幅下滑，营收和净利润分别同比下降42%和66%",
@@ -1489,6 +2351,8 @@
     {
       "id": 60,
       "made_at": "2026-04-27T12:44:42.755352",
+      "expire_at": "2026-04-30T12:44:42.755352",
+      "verified_at": null,
       "asset": {
         "symbol": "300418",
         "name": "昆仑万维",
@@ -1497,7 +2361,6 @@
       "direction": "down",
       "magnitude_pct": 2.0,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:44:42.755352",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -1506,6 +2369,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "完美世界作为A股游戏板块龙头之一，其业绩大幅下滑可能引发市场对整个游戏行业景气度的担忧，形成板块联动效应。昆仑万维等同行业公司可能受到情绪传染，短期承压。这是行业龙头业绩暴雷带来的板块负面外溢效应。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 211,
         "summary": "完美世界一季度业绩大幅下滑，营收和净利润分别同比下降42%和66%",
@@ -1522,6 +2392,8 @@
     {
       "id": 59,
       "made_at": "2026-04-27T12:44:42.544485",
+      "expire_at": "2026-04-30T12:44:42.544485",
+      "verified_at": null,
       "asset": {
         "symbol": "002624",
         "name": "完美世界",
@@ -1530,7 +2402,6 @@
       "direction": "down",
       "magnitude_pct": 5.5,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:44:42.544485",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -1539,6 +2410,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "完美世界一季度营收同比下滑42%、净利润暴跌66%，业绩大幅低于市场预期。游戏行业公司发布如此糟糕的季报通常会引发投资者抛售，尤其是在当前A股对成长股盈利质量敏感度较高的背景下。检索到的因果链均与美国宏观数据相关，不适用于本案例，这属于个股基本面恶化的新模式。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 211,
         "summary": "完美世界一季度业绩大幅下滑，营收和净利润分别同比下降42%和66%",
@@ -1555,6 +2433,8 @@
     {
       "id": 58,
       "made_at": "2026-04-27T12:44:29.127475",
+      "expire_at": "2026-04-30T12:44:29.127475",
+      "verified_at": null,
       "asset": {
         "symbol": "002459",
         "name": "晶澳科技",
@@ -1563,7 +2443,6 @@
       "direction": "down",
       "magnitude_pct": 2.0,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:44:29.127475",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -1572,6 +2451,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "阳光电源业绩大幅下滑揭示光伏行业整体面临价格战和产能过剩压力，晶澳科技作为光伏组件龙头同样面临类似的盈利压力，市场将重新评估光伏板块估值，短期承压下行。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 212,
         "summary": "阳光电源一季度净利润同比下降40.12%，营收同比下降18.26%",
@@ -1588,6 +2474,8 @@
     {
       "id": 57,
       "made_at": "2026-04-27T12:44:28.810427",
+      "expire_at": "2026-04-30T12:44:28.810427",
+      "verified_at": null,
       "asset": {
         "symbol": "601012",
         "name": "隆基绿能",
@@ -1596,7 +2484,6 @@
       "direction": "down",
       "magnitude_pct": 2.5,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:44:28.810427",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -1605,6 +2492,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "阳光电源作为光伏行业龙头业绩大幅下滑，将引发市场对整个光伏产业链盈利能力的担忧。隆基绿能作为光伏硅片龙头，受行业情绪传导影响，短期内可能出现联动下跌。此为新发现的行业联动模式。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 212,
         "summary": "阳光电源一季度净利润同比下降40.12%，营收同比下降18.26%",
@@ -1621,6 +2515,8 @@
     {
       "id": 56,
       "made_at": "2026-04-27T12:44:28.594553",
+      "expire_at": "2026-04-30T12:44:28.594553",
+      "verified_at": null,
       "asset": {
         "symbol": "300274",
         "name": "阳光电源",
@@ -1629,7 +2525,6 @@
       "direction": "down",
       "magnitude_pct": 4.5,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:44:28.594553",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -1638,6 +2533,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "阳光电源一季度净利润同比大幅下降40.12%，营收下降18.26%，业绩显著低于市场预期。光伏逆变器龙头业绩大幅下滑反映行业竞争加剧和毛利率承压，短期内股价将面临业绩杀估值的压力。检索到的因果链均为美国CPI相关，与本次A股个股业绩事件不匹配，属于新模式。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 212,
         "summary": "阳光电源一季度净利润同比下降40.12%，营收同比下降18.26%",
@@ -1654,6 +2556,8 @@
     {
       "id": 55,
       "made_at": "2026-04-27T12:44:08.846700",
+      "expire_at": "2026-05-04T12:44:08.846700",
+      "verified_at": null,
       "asset": {
         "symbol": "COW",
         "name": "iPath彭博牲畜子指数ETN",
@@ -1662,7 +2566,6 @@
       "direction": "down",
       "magnitude_pct": 1.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:44:08.846700",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -1671,6 +2574,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "政府调查肉类高价可能导致市场预期未来会有抑制价格的政策措施出台，包括增加进口、释放储备或限制出口等，这将压低牲畜类商品价格预期，COW作为追踪牲畜价格的ETN会相应下跌。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 213,
         "summary": "特朗普政府调查肉类价格高企问题",
@@ -1687,6 +2597,8 @@
     {
       "id": 54,
       "made_at": "2026-04-27T12:44:07.761419",
+      "expire_at": "2026-05-11T12:44:07.761419",
+      "verified_at": null,
       "asset": {
         "symbol": "HRL",
         "name": "荷美尔食品",
@@ -1695,7 +2607,6 @@
       "direction": "down",
       "magnitude_pct": 1.8,
       "horizon_days": 14,
-      "expire_at": "2026-05-11T12:44:07.761419",
       "baseline_price": 21.549999237060547,
       "baseline_source": "eod",
       "status": "pending",
@@ -1704,6 +2615,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "作为美国主要肉制品生产商之一，荷美尔同样会受到政府价格调查的波及。投资者担忧潜在的反垄断行动或价格管制将压缩行业利润空间，股价承压。这属于新发现的政策干预因果链。",
+      "stop_loss_price": 21.9379,
+      "take_profit": {
+        "prices": [
+          20.9681,
+          20.5802,
+          19.9984
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.3879,
+        "atr": 0.1939
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 213,
         "summary": "特朗普政府调查肉类价格高企问题",
@@ -1720,6 +2651,8 @@
     {
       "id": 53,
       "made_at": "2026-04-27T12:44:06.902753",
+      "expire_at": "2026-05-11T12:44:06.902753",
+      "verified_at": null,
       "asset": {
         "symbol": "TSN",
         "name": "泰森食品",
@@ -1728,7 +2661,6 @@
       "direction": "down",
       "magnitude_pct": 2.5,
       "horizon_days": 14,
-      "expire_at": "2026-05-11T12:44:06.902753",
       "baseline_price": 64.02999877929688,
       "baseline_source": "eod",
       "status": "pending",
@@ -1737,6 +2669,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "白宫正式调查肉类价格高企，意味着政府可能对肉类加工商施压或出台限价措施。泰森食品作为美国最大肉类加工企业，将直接面临监管审查和定价权受限的风险，市场会提前反映利润率压缩预期。这是检索结果中未覆盖的新因果模式。",
+      "stop_loss_price": 65.6307,
+      "take_profit": {
+        "prices": [
+          61.6289,
+          60.0281,
+          57.627
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.6007,
+        "atr": 0.8004
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 213,
         "summary": "特朗普政府调查肉类价格高企问题",
@@ -1753,6 +2705,8 @@
     {
       "id": 52,
       "made_at": "2026-04-27T12:43:50.287383",
+      "expire_at": "2026-05-04T12:43:50.287383",
+      "verified_at": null,
       "asset": {
         "symbol": "601618",
         "name": "中国中冶",
@@ -1761,7 +2715,6 @@
       "direction": "up",
       "magnitude_pct": 0.8,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:43:50.287383",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -1770,6 +2723,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "巴基斯坦总统访华释放中巴合作升温信号，中国中冶在巴基斯坦承建多个重大基建项目，外交层面的积极互动通常被市场解读为海外订单预期改善，短期提振股价。此为新模式，检索因果链未涉及。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 214,
         "summary": "巴基斯坦总统访华向毛泽东铜像献花篮，中巴友好关系持续深化",
@@ -1786,6 +2746,8 @@
     {
       "id": 51,
       "made_at": "2026-04-27T12:43:50.074890",
+      "expire_at": "2026-05-04T12:43:50.074890",
+      "verified_at": null,
       "asset": {
         "symbol": "000425",
         "name": "徐工机械",
@@ -1794,7 +2756,6 @@
       "direction": "up",
       "magnitude_pct": 1.2,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:43:50.074890",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -1803,6 +2764,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "中巴关系深化预示基建合作项目可能加速推进，徐工机械是中巴经济走廊基建工程机械主要出口商，外交利好事件往往带动一带一路工程机械板块估值修复。检索结果无相关因果链覆盖。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 214,
         "summary": "巴基斯坦总统访华向毛泽东铜像献花篮，中巴友好关系持续深化",
@@ -1819,6 +2787,8 @@
     {
       "id": 50,
       "made_at": "2026-04-27T12:43:49.846164",
+      "expire_at": "2026-04-30T12:43:49.846164",
+      "verified_at": null,
       "asset": {
         "symbol": "601311",
         "name": "骆驼股份",
@@ -1827,7 +2797,6 @@
       "direction": "up",
       "magnitude_pct": 1.5,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:43:49.846164",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -1836,6 +2805,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "巴基斯坦总统访华强化中巴经济走廊合作预期，骆驼股份作为中巴经济走廊汽车电池主要供应商，在巴基斯坦有深度布局，高层互访通常带动相关概念股短期上涨。检索到的因果链未覆盖中巴外交事件对A股的影响，属于新模式。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 214,
         "summary": "巴基斯坦总统访华向毛泽东铜像献花篮，中巴友好关系持续深化",
@@ -1848,6 +2824,3125 @@
         "url": "https://www.toutiao.com/trending/7633401438361882158/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633401438361882158%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E5%86%92%E9%9B%A8%E5%90%91%E6%AF%9B%E6%B3%BD%E4%B8%9C%E9%93%9C%E5%83%8F%E7%8C%AE%E8%8A%B1%E7%AF%AE%22%7D&rank=&style_id=40132&topic_id=7633401438361882158",
         "published_at": "2026-04-27T12:36:50.016503"
       }
+    },
+    {
+      "id": 49,
+      "made_at": "2026-04-17T16:20:59.884091",
+      "expire_at": "2026-04-24T16:20:59.884091",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "HYG",
+        "name": "iShares高收益公司债ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.5,
+      "horizon_days": 7,
+      "baseline_price": 80.75499725341797,
+      "baseline_source": "event_time",
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.31894271354770976,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -0.3405286432261451,
+      "actual_direction": "down",
+      "reasoning": "大型AI债券发行扩容并被超额认购，反映高收益债市场风险偏好旺盛、利差收窄，HYG作为高收益债代表ETF将小幅受益。检索结果未涉及该因果链，属新模式。",
+      "stop_loss_price": 80.3512,
+      "take_profit": {
+        "prices": [
+          81.3607,
+          81.7644,
+          82.3701
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.4038,
+        "atr": 0.2019
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 3,
+        "summary": "CoreWeave将高收益债券发行规模扩大至27.5亿美元，超额认购显示AI基础设施债务受市场追捧",
+        "category": "tech"
+      },
+      "news": {
+        "title": "CoreWeave upsizes bond deal for an additional $1 billion. AI debt is in vogue.",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/coreweave-upsizes-bond-deal-for-additional-1-billion-ai-debt-is-in-vogue-c4bafa5c?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:04:00"
+      }
+    },
+    {
+      "id": 48,
+      "made_at": "2026-04-17T16:20:58.870383",
+      "expire_at": "2026-04-24T16:20:58.870383",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "NVDA",
+        "name": "英伟达",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.0,
+      "horizon_days": 7,
+      "baseline_price": 200.64500427246094,
+      "baseline_source": "event_time",
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.9001220657469793,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 3.8002441314939586,
+      "actual_direction": "up",
+      "reasoning": "CoreWeave债券超募显示AI数据中心资本开支融资通道畅通，作为其最大GPU供应商，英伟达将受益于AI基建持续扩张的资本支出预期。此为检索库中未覆盖的新模式，反映AI债务融资对上游芯片的传导。",
+      "stop_loss_price": 196.6321,
+      "take_profit": {
+        "prices": [
+          206.6644,
+          210.6773,
+          216.6966
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 4.0129,
+        "atr": 2.0065
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 3,
+        "summary": "CoreWeave将高收益债券发行规模扩大至27.5亿美元，超额认购显示AI基础设施债务受市场追捧",
+        "category": "tech"
+      },
+      "news": {
+        "title": "CoreWeave upsizes bond deal for an additional $1 billion. AI debt is in vogue.",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/coreweave-upsizes-bond-deal-for-additional-1-billion-ai-debt-is-in-vogue-c4bafa5c?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:04:00"
+      }
+    },
+    {
+      "id": 47,
+      "made_at": "2026-04-17T16:20:58.109988",
+      "expire_at": "2026-04-20T16:20:58.109988",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "CRWV",
+        "name": "CoreWeave股票",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 4.0,
+      "horizon_days": 3,
+      "baseline_price": 117.68009948730469,
+      "baseline_source": "event_time",
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.46462999347923306,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -2.1414800260830678,
+      "actual_direction": "down",
+      "reasoning": "CoreWeave高收益债超额认购并扩容至27.5亿美元，反映投资者对其AI基础设施业务信用和现金流预期强劲，融资成本改善和资本开支可持续性提升将直接利好股价短期表现。检索结果中无直接对应的因果链，此为新模式。",
+      "stop_loss_price": 112.9729,
+      "take_profit": {
+        "prices": [
+          124.7409,
+          129.4481,
+          136.5089
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 4.7072,
+        "atr": 2.3536
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 3,
+        "summary": "CoreWeave将高收益债券发行规模扩大至27.5亿美元，超额认购显示AI基础设施债务受市场追捧",
+        "category": "tech"
+      },
+      "news": {
+        "title": "CoreWeave upsizes bond deal for an additional $1 billion. AI debt is in vogue.",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/coreweave-upsizes-bond-deal-for-additional-1-billion-ai-debt-is-in-vogue-c4bafa5c?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:04:00"
+      }
+    },
+    {
+      "id": 46,
+      "made_at": "2026-04-17T16:20:42.477164",
+      "expire_at": "2026-05-17T16:20:42.477164",
+      "verified_at": null,
+      "asset": {
+        "symbol": "BIRD",
+        "name": "Allbirds股票",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 40.0,
+      "horizon_days": 30,
+      "baseline_price": 10.90999984741211,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "剥离原有鞋类业务后，公司营收几乎归零，而AI基础设施需要长期重资本投入，短期难以兑现业绩。随着炒作热度消退、稀释性融资风险以及可能的监管问询，30天维度估值将大幅回归。该情景不在检索到的宏观因果链内，判定为新模式。",
+      "stop_loss_price": 15.274,
+      "take_profit": {
+        "prices": [
+          4.364,
+          0.0,
+          -6.546
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 4.364,
+        "atr": 2.182
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 11,
+        "summary": "Allbirds宣布放弃鞋类品牌转型AI技术基础设施，股价单日暴涨580%",
+        "category": "tech"
+      },
+      "news": {
+        "title": "Allbirds shares soar 580% after pivot from shoes to AI",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/c98mrepzgj7o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T01:58:56"
+      }
+    },
+    {
+      "id": 45,
+      "made_at": "2026-04-17T16:20:41.822025",
+      "expire_at": "2026-04-24T16:20:41.822025",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "BIRD",
+        "name": "Allbirds股票",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 25.0,
+      "horizon_days": 7,
+      "baseline_price": 10.90999984741211,
+      "baseline_source": "event_time",
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.42621445312240497,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -35.655361328060124,
+      "actual_direction": "down",
+      "reasoning": "单日暴涨580%主要由meme式投机和转型AI的炒作驱动，而非基本面支撑。公司剥离核心鞋类业务、尚未验证AI基础设施能力，短期内获利回吐和情绪降温会带来明显回调。检索到的因果链均针对宏观事件，无直接匹配模式，故作为新模式处理。",
+      "stop_loss_price": 13.6375,
+      "take_profit": {
+        "prices": [
+          6.8187,
+          4.0912,
+          0.0
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.7275,
+        "atr": 1.3637
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 11,
+        "summary": "Allbirds宣布放弃鞋类品牌转型AI技术基础设施，股价单日暴涨580%",
+        "category": "tech"
+      },
+      "news": {
+        "title": "Allbirds shares soar 580% after pivot from shoes to AI",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/c98mrepzgj7o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T01:58:56"
+      }
+    },
+    {
+      "id": 44,
+      "made_at": "2026-04-16T19:18:49.232472",
+      "expire_at": "2026-04-30T19:18:49.232472",
+      "verified_at": null,
+      "asset": {
+        "symbol": "REX",
+        "name": "REX美国资源公司",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.5,
+      "horizon_days": 14,
+      "baseline_price": 43.43000030517578,
+      "baseline_source": null,
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "财报超预期的利好效应通常具备持续性，分析师上调盈利预测与机构加仓会在2-3周内推动股价继续走高，即所谓的盈余公告后漂移（PEAD）效应。此模式未在检索结果中出现，故标记为新模式。",
+      "stop_loss_price": 41.91,
+      "take_profit": {
+        "prices": [
+          45.7101,
+          47.2301,
+          49.5102
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.5201,
+        "atr": 0.76
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 1,
+        "summary": "REX美国资源公司2025财年第四季度业绩大幅超预期",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "REX: Monster Earnings Beat to End Fiscal 2025 – Quarterly Update Report",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/rex-monster-earnings-beat-end-083051662.html",
+        "published_at": "2026-04-15T08:30:51"
+      }
+    },
+    {
+      "id": 43,
+      "made_at": "2026-04-16T19:18:48.580429",
+      "expire_at": "2026-04-19T19:18:48.580429",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "REX",
+        "name": "REX美国资源公司",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 6.0,
+      "horizon_days": 3,
+      "baseline_price": 43.43000030517578,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.4166856830597638,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 3.4998859016414174,
+      "actual_direction": "up",
+      "reasoning": "REX公布2025财年第四季度业绩大幅超预期，属于典型的业绩超预期利好个股事件。小盘股在财报大超预期后通常在短期内出现显著跳涨，市场会快速重新定价盈利能力。检索到的因果链均不涉及个股业绩超预期模式，故标记为新模式。",
+      "stop_loss_price": 40.8242,
+      "take_profit": {
+        "prices": [
+          47.3387,
+          49.9445,
+          53.8532
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.6058,
+        "atr": 1.3029
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 1,
+        "summary": "REX美国资源公司2025财年第四季度业绩大幅超预期",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "REX: Monster Earnings Beat to End Fiscal 2025 – Quarterly Update Report",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/rex-monster-earnings-beat-end-083051662.html",
+        "published_at": "2026-04-15T08:30:51"
+      }
+    },
+    {
+      "id": 42,
+      "made_at": "2026-04-16T19:18:32.469783",
+      "expire_at": "2026-04-19T19:18:32.469783",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "SMH",
+        "name": "半导体ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.5,
+      "horizon_days": 3,
+      "baseline_price": 454.25,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.5277936029512933,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 2.29169040442694,
+      "actual_direction": "up",
+      "reasoning": "AMD作为半导体权重股走强会外溢至整个半导体板块，强化AI与数据中心景气主线。检索到的因果链均聚焦A股，未覆盖美股半导体板块联动，故记为新模式。",
+      "stop_loss_price": 447.4362,
+      "take_profit": {
+        "prices": [
+          464.4706,
+          471.2844,
+          481.505
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 6.8138,
+        "atr": 3.4069
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 2,
+        "summary": "AMD服务器CPU业务重获投资者青睐，股票表现迎来近二十年最佳走势",
+        "category": "tech"
+      },
+      "news": {
+        "title": "AMD has ‘indispensable assets’ — powering the stock toward its best run in two decades",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/amd-has-indispensable-assets-powering-the-stock-toward-its-best-run-in-two-decades-aa44c469?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:01:00"
+      }
+    },
+    {
+      "id": 41,
+      "made_at": "2026-04-16T19:18:31.617860",
+      "expire_at": "2026-04-23T19:18:31.617860",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "INTC",
+        "name": "英特尔",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.5,
+      "horizon_days": 7,
+      "baseline_price": 68.32980346679688,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": false,
+        "strict_hit": false,
+        "mag_err_rel": 7.318594070381339,
+        "mag_err_bucket": ">100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 20.796485175953347,
+      "actual_direction": "up",
+      "reasoning": "AMD服务器CPU业务强势意味着继续抢占Intel在数据中心的市场份额，是零和竞争。AMD的估值修复往往伴随Intel相对承压。检索因果链不涉及半导体竞争格局，故标注为新模式。",
+      "stop_loss_price": 70.038,
+      "take_profit": {
+        "prices": [
+          65.7674,
+          64.0592,
+          61.4968
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.7082,
+        "atr": 0.8541
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 2,
+        "summary": "AMD服务器CPU业务重获投资者青睐，股票表现迎来近二十年最佳走势",
+        "category": "tech"
+      },
+      "news": {
+        "title": "AMD has ‘indispensable assets’ — powering the stock toward its best run in two decades",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/amd-has-indispensable-assets-powering-the-stock-toward-its-best-run-in-two-decades-aa44c469?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:01:00"
+      }
+    },
+    {
+      "id": 40,
+      "made_at": "2026-04-16T19:18:30.632084",
+      "expire_at": "2026-04-23T19:18:30.632084",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "AMD",
+        "name": "超微半导体",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 4.5,
+      "horizon_days": 7,
+      "baseline_price": 274.9100036621094,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": false,
+        "strict_hit": false,
+        "mag_err_rel": 4.892837084086086,
+        "mag_err_bucket": ">100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 26.517766878387384,
+      "actual_direction": "up",
+      "reasoning": "新闻直接利好AMD，服务器CPU业务重获投资者青睐，市场情绪推动股价创近二十年最佳走势。检索到的因果链均为中国A股相关，与本则新闻无关，故作为新模式处理。数据中心CPU是AMD高毛利业务，投资者重新定价将在1-2周内持续发酵。",
+      "stop_loss_price": 262.5391,
+      "take_profit": {
+        "prices": [
+          293.4664,
+          305.8374,
+          324.3938
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 12.371,
+        "atr": 6.1855
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 2,
+        "summary": "AMD服务器CPU业务重获投资者青睐，股票表现迎来近二十年最佳走势",
+        "category": "tech"
+      },
+      "news": {
+        "title": "AMD has ‘indispensable assets’ — powering the stock toward its best run in two decades",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/amd-has-indispensable-assets-powering-the-stock-toward-its-best-run-in-two-decades-aa44c469?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:01:00"
+      }
+    },
+    {
+      "id": 39,
+      "made_at": "2026-04-16T19:17:52.349190",
+      "expire_at": "2026-04-23T19:17:52.349190",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "XLP",
+        "name": "美国消费必需品ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.0,
+      "horizon_days": 7,
+      "baseline_price": 81.375,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": false,
+        "strict_hit": false,
+        "mag_err_rel": 1.279574017737135,
+        "mag_err_bucket": ">100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 2.279574017737135,
+      "actual_direction": "up",
+      "reasoning": "PEP 是 XLP 的核心权重股，其股价大涨及对消费需求回暖的表态会改善整个必需消费板块的盈利预期，带动 ETF 温和上行。检索结果中没有必需消费板块层面的因果链，标记为新模式。",
+      "stop_loss_price": 80.5613,
+      "take_profit": {
+        "prices": [
+          82.5956,
+          83.4094,
+          84.63
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.8137,
+        "atr": 0.4069
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 4,
+        "summary": "百事可乐表示降价及健康产品推动消费者回流，股价大涨",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:19:00"
+      }
+    },
+    {
+      "id": 38,
+      "made_at": "2026-04-16T19:17:51.723728",
+      "expire_at": "2026-04-19T19:17:51.723728",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "KO",
+        "name": "可口可乐",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.5,
+      "horizon_days": 3,
+      "baseline_price": 75.125,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.6228480960551858,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -0.5657278559172213,
+      "actual_direction": "down",
+      "reasoning": "百事作为饮料行业风向标释放需求回暖信号，可口可乐作为最直接同业会受益于板块情绪联动，市场会把'消费者回流'外推到整个软饮龙头。属于新模式，因为检索的因果链没有覆盖消费行业同业联动。",
+      "stop_loss_price": 73.9981,
+      "take_profit": {
+        "prices": [
+          76.8153,
+          77.9422,
+          79.6325
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.1269,
+        "atr": 0.5634
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 4,
+        "summary": "百事可乐表示降价及健康产品推动消费者回流，股价大涨",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:19:00"
+      }
+    },
+    {
+      "id": 37,
+      "made_at": "2026-04-16T19:17:50.994054",
+      "expire_at": "2026-04-19T19:17:50.994054",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "PEP",
+        "name": "百事可乐",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.5,
+      "horizon_days": 3,
+      "baseline_price": 157.7899932861328,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.4803228089225232,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -1.8188701687711688,
+      "actual_direction": "down",
+      "reasoning": "百事公布降价及健康化产品策略成功拉回消费者，且管理层表示伊朗战争冲击有限，短期利空被证伪叠加基本面改善，直接利好股价。检索结果中没有消费品龙头正面业绩指引的对应 pattern，属于新模式。",
+      "stop_loss_price": 152.2673,
+      "take_profit": {
+        "prices": [
+          166.074,
+          171.5966,
+          179.8806
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 5.5226,
+        "atr": 2.7613
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 4,
+        "summary": "百事可乐表示降价及健康产品推动消费者回流，股价大涨",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:19:00"
+      }
+    },
+    {
+      "id": 36,
+      "made_at": "2026-04-16T19:17:28.013118",
+      "expire_at": "2026-04-19T19:17:28.013118",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "XLP",
+        "name": "美国消费必需品ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.8,
+      "horizon_days": 3,
+      "baseline_price": 81.38999938964844,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.3088878369321191,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 0.5528897304543048,
+      "actual_direction": "up",
+      "reasoning": "百事作为 XLP 前十大权重股，其股价大涨及对地缘风险的乐观表态会直接拉动 ETF 净值，同时改善市场对必需消费板块整体盈利韧性的评估。短期 3 天内板块情绪外溢有限，涨幅约 0.8%。",
+      "stop_loss_price": 80.7389,
+      "take_profit": {
+        "prices": [
+          82.3667,
+          83.0178,
+          83.9945
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.6511,
+        "atr": 0.3256
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 5,
+        "summary": "伊朗战争对百事可乐业务影响有限，地缘风险暂未冲击消费品供应链",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:19:00"
+      }
+    },
+    {
+      "id": 35,
+      "made_at": "2026-04-16T19:17:27.295639",
+      "expire_at": "2026-04-19T19:17:27.295639",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "KO",
+        "name": "可口可乐",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.2,
+      "horizon_days": 3,
+      "baseline_price": 75.125,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.5285601200689822,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -0.5657278559172213,
+      "actual_direction": "down",
+      "reasoning": "百事业绩回暖和消费者回流的信号会外溢至同业龙头可口可乐，市场会预期整个软饮板块需求企稳；但可口可乐本身未直接受益，幅度弱于百事。该因果关系未在检索链中，故标记为新模式。",
+      "stop_loss_price": 74.2235,
+      "take_profit": {
+        "prices": [
+          76.4772,
+          77.3787,
+          78.731
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.9015,
+        "atr": 0.4507
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 5,
+        "summary": "伊朗战争对百事可乐业务影响有限，地缘风险暂未冲击消费品供应链",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:19:00"
+      }
+    },
+    {
+      "id": 34,
+      "made_at": "2026-04-16T19:17:26.161443",
+      "expire_at": "2026-04-19T19:17:26.161443",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "PEP",
+        "name": "百事可乐",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.0,
+      "horizon_days": 3,
+      "baseline_price": 157.7949981689453,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.3926719196084523,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -1.821984241174643,
+      "actual_direction": "down",
+      "reasoning": "百事通过降价和健康化新品重新吸引了观望的消费者，同时管理层披露伊朗战争尚未对业务造成实质冲击，双重利好驱动股价当日大涨。短期内盘后情绪和分析师上修预期会延续推动，3 天窗口内有望维持 3% 左右涨幅。",
+      "stop_loss_price": 153.0611,
+      "take_profit": {
+        "prices": [
+          164.8958,
+          169.6296,
+          176.7304
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 4.7338,
+        "atr": 2.3669
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 5,
+        "summary": "伊朗战争对百事可乐业务影响有限，地缘风险暂未冲击消费品供应链",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:19:00"
+      }
+    },
+    {
+      "id": 33,
+      "made_at": "2026-04-16T19:17:07.084215",
+      "expire_at": "2026-04-30T19:17:07.084215",
+      "verified_at": null,
+      "asset": {
+        "symbol": "IPO",
+        "name": "Renaissance IPO ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.5,
+      "horizon_days": 14,
+      "baseline_price": 48.0098991394043,
+      "baseline_source": null,
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "本年度最大IPO成功定价并首日大涨，验证了一级市场承接能力恢复，将刺激后续IPO排队加速发行并提升已上市次新股估值，Renaissance IPO ETF作为新股组合直接受益于IPO窗口重启的情绪与资金流入。检索结果无对应因果模式，属新模式。",
+      "stop_loss_price": 46.8097,
+      "take_profit": {
+        "prices": [
+          49.8103,
+          51.0105,
+          52.8109
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.2002,
+        "atr": 0.6001
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 6,
+        "summary": "Madison Air完成22亿美元IPO，成为2026年最大规模IPO及1999年以来工业板块最大IPO",
+        "category": "other"
+      },
+      "news": {
+        "title": "With the largest industrial IPO since 1999, this air-quality giant’s stock opened with a bang",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/with-the-largest-industrial-ipo-since-1999-this-air-quality-giant-is-going-public-08a50184?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:21:00"
+      }
+    },
+    {
+      "id": 32,
+      "made_at": "2026-04-16T19:17:06.542473",
+      "expire_at": "2026-04-17T19:17:06.542473",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "XLI",
+        "name": "工业板块ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.5,
+      "horizon_days": 1,
+      "baseline_price": 170.52999877929688,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.06726519512513307,
+        "mag_err_bucket": "<=10%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 0.5336325975625665,
+      "actual_direction": "up",
+      "reasoning": "1999年以来最大工业IPO首日爆发，短线将点燃工业板块情绪，同业估值比价效应迅速传导至XLI成分股，尤其是HVAC/空气质量/暖通相关龙头。属新模式，无现成因果链匹配。",
+      "stop_loss_price": 169.6773,
+      "take_profit": {
+        "prices": [
+          171.809,
+          172.6616,
+          173.9406
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.8526,
+        "atr": 0.4263
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 6,
+        "summary": "Madison Air完成22亿美元IPO，成为2026年最大规模IPO及1999年以来工业板块最大IPO",
+        "category": "other"
+      },
+      "news": {
+        "title": "With the largest industrial IPO since 1999, this air-quality giant’s stock opened with a bang",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/with-the-largest-industrial-ipo-since-1999-this-air-quality-giant-is-going-public-08a50184?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:21:00"
+      }
+    },
+    {
+      "id": 31,
+      "made_at": "2026-04-16T19:17:05.934056",
+      "expire_at": "2026-04-23T19:17:05.934056",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "XLI",
+        "name": "工业板块ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.2,
+      "horizon_days": 7,
+      "baseline_price": 170.52999877929688,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.05197401469274739,
+        "mag_err_bucket": "<=10%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 1.137631182368703,
+      "actual_direction": "up",
+      "reasoning": "Madison Air作为1999年以来最大工业板块IPO募资22亿美元且首日大涨，显示机构对工业板块配置意愿强烈，将提升整个工业板块的估值中枢和资金关注度，XLI作为工业板块代表ETF将受到资金轮动带动。检索到的因果链未覆盖大型工业IPO对板块的情绪传导模式，属新模式。",
+      "stop_loss_price": 168.4836,
+      "take_profit": {
+        "prices": [
+          173.5995,
+          175.6459,
+          178.7154
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.0464,
+        "atr": 1.0232
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 6,
+        "summary": "Madison Air完成22亿美元IPO，成为2026年最大规模IPO及1999年以来工业板块最大IPO",
+        "category": "other"
+      },
+      "news": {
+        "title": "With the largest industrial IPO since 1999, this air-quality giant’s stock opened with a bang",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/with-the-largest-industrial-ipo-since-1999-this-air-quality-giant-is-going-public-08a50184?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T17:21:00"
+      }
+    },
+    {
+      "id": 30,
+      "made_at": "2026-04-16T19:16:43.385336",
+      "expire_at": "2026-05-16T19:16:43.385336",
+      "verified_at": null,
+      "asset": {
+        "symbol": "NG=F",
+        "name": "天然气期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 4.0,
+      "horizon_days": 30,
+      "baseline_price": 2.6630001068115234,
+      "baseline_source": null,
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "馏分油/柴油价格居高不下会促使发电厂在边际上更多使用天然气替代燃油发电，叠加居民电费上行预期，天然气需求面受到提振。与检索到的贸易/政治类因果链无关，属新模式。",
+      "stop_loss_price": 2.5565,
+      "take_profit": {
+        "prices": [
+          2.8228,
+          2.9293,
+          3.0891
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.1065,
+        "atr": 0.0533
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 7,
+        "summary": "油价隐性成本创历史新高，或推高居民电费",
+        "category": "energy"
+      },
+      "news": {
+        "title": "This ‘hidden’ price of oil is at record highs — and it’ll hit your electric bill next",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/this-hidden-oil-price-is-ripping-the-hull-out-of-the-global-economy-89ff8e54?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T18:17:00"
+      }
+    },
+    {
+      "id": 29,
+      "made_at": "2026-04-16T19:16:42.564583",
+      "expire_at": "2026-04-23T19:16:42.564583",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "XLE",
+        "name": "能源板块ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.0,
+      "horizon_days": 7,
+      "baseline_price": 56.584999084472656,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.748166605970384,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 0.5036667880592322,
+      "actual_direction": "up",
+      "reasoning": "油价隐性成本(馏分油裂解价差)创历史新高意味着炼厂与综合油气公司下游毛利显著扩张，直接利好能源板块业绩预期。市场在关注地缘和平而低估该结构性利多，修复时会推高XLE。属新模式，未匹配到现有因果链。",
+      "stop_loss_price": 55.4533,
+      "take_profit": {
+        "prices": [
+          58.2825,
+          59.4142,
+          61.1118
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.1317,
+        "atr": 0.5658
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 7,
+        "summary": "油价隐性成本创历史新高，或推高居民电费",
+        "category": "energy"
+      },
+      "news": {
+        "title": "This ‘hidden’ price of oil is at record highs — and it’ll hit your electric bill next",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/this-hidden-oil-price-is-ripping-the-hull-out-of-the-global-economy-89ff8e54?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T18:17:00"
+      }
+    },
+    {
+      "id": 28,
+      "made_at": "2026-04-16T19:16:41.612172",
+      "expire_at": "2026-04-30T19:16:41.612172",
+      "verified_at": null,
+      "asset": {
+        "symbol": "XLU",
+        "name": "公用事业行业ETF",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.5,
+      "horizon_days": 14,
+      "baseline_price": 46.165000915527344,
+      "baseline_source": null,
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "新闻指出油价的隐性成本(如柴油/馏分油裂解价差、运输与发电燃料成本)创历史新高，将传导至居民电费。公用事业公司短期内受限于费率审批，难以立刻转嫁燃料成本，利润率受挤压，股价承压。检索到的因果链均不涉及能源-电力传导链，属新模式。",
+      "stop_loss_price": 46.8575,
+      "take_profit": {
+        "prices": [
+          45.1263,
+          44.4338,
+          43.3951
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.6925,
+        "atr": 0.3462
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 7,
+        "summary": "油价隐性成本创历史新高，或推高居民电费",
+        "category": "energy"
+      },
+      "news": {
+        "title": "This ‘hidden’ price of oil is at record highs — and it’ll hit your electric bill next",
+        "source": "marketwatch",
+        "lang": "en",
+        "url": "https://www.marketwatch.com/story/this-hidden-oil-price-is-ripping-the-hull-out-of-the-global-economy-89ff8e54?mod=mw_rss_topstories",
+        "published_at": "2026-04-16T18:17:00"
+      }
+    },
+    {
+      "id": 27,
+      "made_at": "2026-04-16T19:16:16.904487",
+      "expire_at": "2026-04-19T19:16:16.904487",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "BTC-USD",
+        "name": "比特币",
+        "class": "crypto"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.5,
+      "horizon_days": 3,
+      "baseline_price": 74824.09375,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": false,
+        "strict_hit": false,
+        "mag_err_rel": 2.0568988682205056,
+        "mag_err_bucket": ">100%",
+        "tol_used": 0.92,
+        "asset_class": "crypto"
+      },
+      "actual_magnitude_pct": 4.585348302330758,
+      "actual_direction": "up",
+      "reasoning": "尽管亏损主要来自ETH押注，但加密财库公司巨亏会引发对整个机构加密储备模式的质疑，风险偏好回落传导至BTC，短期内BTC跟随加密板块情绪小幅回调。检索链(id 78/12)反映的是利好情形，与本次利空相反，属新模式。",
+      "stop_loss_price": 75946.4552,
+      "take_profit": {
+        "prices": [
+          73140.5516,
+          72018.1902,
+          70334.6481
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1122.3614,
+        "atr": 561.1807
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 8,
+        "summary": "BitMine公司因以太坊押注巨亏，单季度亏损38.2亿美元",
+        "category": "crypto"
+      },
+      "news": {
+        "title": "BitMine Reports $3.82 Billion Quarterly Loss as Ethereum Bet Weighs Heavy",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/crypto/articles/bitmine-reports-3-82-billion-090629115.html",
+        "published_at": "2026-04-15T09:06:29"
+      }
+    },
+    {
+      "id": 26,
+      "made_at": "2026-04-16T19:16:16.298668",
+      "expire_at": "2026-04-19T19:16:16.298668",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "BMNR",
+        "name": "BitMine Immersion Technologies",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 7.0,
+      "horizon_days": 3,
+      "baseline_price": 22.065000534057617,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.770158660456078,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -1.6088893768074537,
+      "actual_direction": "down",
+      "reasoning": "作为亏损主体，38.2亿美元的季度亏损直接重创公司财报与净资产，市场会立刻对其ETH敞口与偿付能力重新定价，股价大概率跳空下跌并在数日内继续承压。检索结果无对应模式，属新模式。",
+      "stop_loss_price": 23.6096,
+      "take_profit": {
+        "prices": [
+          19.7482,
+          18.2036,
+          15.8868
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.5446,
+        "atr": 0.7723
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 8,
+        "summary": "BitMine公司因以太坊押注巨亏，单季度亏损38.2亿美元",
+        "category": "crypto"
+      },
+      "news": {
+        "title": "BitMine Reports $3.82 Billion Quarterly Loss as Ethereum Bet Weighs Heavy",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/crypto/articles/bitmine-reports-3-82-billion-090629115.html",
+        "published_at": "2026-04-15T09:06:29"
+      }
+    },
+    {
+      "id": 25,
+      "made_at": "2026-04-16T19:16:15.369836",
+      "expire_at": "2026-04-19T19:16:15.369836",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "ETH-USD",
+        "name": "以太坊",
+        "class": "crypto"
+      },
+      "direction": "down",
+      "magnitude_pct": 3.5,
+      "horizon_days": 3,
+      "baseline_price": 2337.27001953125,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.2016319644225883,
+        "mag_err_bucket": "<=25%",
+        "tol_used": 0.92,
+        "asset_class": "crypto"
+      },
+      "actual_magnitude_pct": 2.794288124520941,
+      "actual_direction": "up",
+      "reasoning": "BitMine作为大型以太坊财库公司单季巨亏38.2亿美元，引发市场对企业级ETH持仓被迫减仓/止损的担忧，且会打击其他机构继续增持ETH作为储备资产的信心。检索到的因果链均未覆盖'加密财库公司巨亏'情景，属新模式。短期情绪面承压，3日内ETH承压下行。",
+      "stop_loss_price": 2419.0745,
+      "take_profit": {
+        "prices": [
+          2214.5633,
+          2132.7589,
+          2010.0522
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 81.8045,
+        "atr": 40.9022
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 8,
+        "summary": "BitMine公司因以太坊押注巨亏，单季度亏损38.2亿美元",
+        "category": "crypto"
+      },
+      "news": {
+        "title": "BitMine Reports $3.82 Billion Quarterly Loss as Ethereum Bet Weighs Heavy",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/crypto/articles/bitmine-reports-3-82-billion-090629115.html",
+        "published_at": "2026-04-15T09:06:29"
+      }
+    },
+    {
+      "id": 24,
+      "made_at": "2026-04-16T19:15:48.905726",
+      "expire_at": "2026-04-19T19:15:48.905726",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "PINS",
+        "name": "Pinterest",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.0,
+      "horizon_days": 3,
+      "baseline_price": 20.03499984741211,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.45994758242249945,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 2.919895164844999,
+      "actual_direction": "up",
+      "reasoning": "Snap大规模裁员暗示中小型社交广告平台面临用户增长放缓与竞争加剧的压力，作为与Snap定位接近的中型广告平台，Pinterest易被市场一并下调预期。检索结果未覆盖该同业传导模式，属于新模式。",
+      "stop_loss_price": 20.4357,
+      "take_profit": {
+        "prices": [
+          19.4339,
+          19.0332,
+          18.4322
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.4007,
+        "atr": 0.2003
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 9,
+        "summary": "Snap宣布裁员1000人，受激进投资者施压并押注AI提效",
+        "category": "tech"
+      },
+      "news": {
+        "title": "Snap to cut 1,000 jobs after activist pressure, bets on AI efficiency",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/snap-lay-off-16-staff-101450564.html",
+        "published_at": "2026-04-15T10:14:50"
+      }
+    },
+    {
+      "id": 23,
+      "made_at": "2026-04-16T19:15:48.090840",
+      "expire_at": "2026-04-23T19:15:48.090840",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "META",
+        "name": "Meta平台",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.5,
+      "horizon_days": 7,
+      "baseline_price": 673.4298706054688,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.8415911578174601,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 0.23761326327380994,
+      "actual_direction": "up",
+      "reasoning": "Snap裁员并押注AI提效会强化市场对广告类科技公司走'效率年'路线的预期，作为社交广告同业且AI投入更深的Meta容易获得情绪外溢和估值抬升。此关系不在检索到的因果链中，属于新模式。",
+      "stop_loss_price": 663.3284,
+      "take_profit": {
+        "prices": [
+          688.582,
+          698.6835,
+          713.8357
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 10.1014,
+        "atr": 5.0507
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 9,
+        "summary": "Snap宣布裁员1000人，受激进投资者施压并押注AI提效",
+        "category": "tech"
+      },
+      "news": {
+        "title": "Snap to cut 1,000 jobs after activist pressure, bets on AI efficiency",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/snap-lay-off-16-staff-101450564.html",
+        "published_at": "2026-04-15T10:14:50"
+      }
+    },
+    {
+      "id": 22,
+      "made_at": "2026-04-16T19:15:47.188177",
+      "expire_at": "2026-04-19T19:15:47.188177",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "SNAP",
+        "name": "Snap公司",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 4.5,
+      "horizon_days": 3,
+      "baseline_price": 6.079999923706055,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.6081873638221205,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -7.236843137199542,
+      "actual_direction": "down",
+      "reasoning": "公司宣布裁员1000人以应对激进投资者压力并押注AI提效，短期内市场通常将大规模裁员解读为成本削减和利润率改善的积极信号，加上激进投资者介入常推动股价上行。检索到的因果链未覆盖该模式，属于新模式。",
+      "stop_loss_price": 5.8064,
+      "take_profit": {
+        "prices": [
+          6.4904,
+          6.764,
+          7.1744
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.2736,
+        "atr": 0.1368
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 9,
+        "summary": "Snap宣布裁员1000人，受激进投资者施压并押注AI提效",
+        "category": "tech"
+      },
+      "news": {
+        "title": "Snap to cut 1,000 jobs after activist pressure, bets on AI efficiency",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/snap-lay-off-16-staff-101450564.html",
+        "published_at": "2026-04-15T10:14:50"
+      }
+    },
+    {
+      "id": 21,
+      "made_at": "2026-04-16T19:15:27.633059",
+      "expire_at": "2026-04-19T19:15:27.633059",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "BYND",
+        "name": "超越肉类",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 3.5,
+      "horizon_days": 3,
+      "baseline_price": 0.7986999750137329,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": false,
+        "strict_hit": false,
+        "mag_err_rel": 7.810745667999442,
+        "mag_err_bucket": ">100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 30.83760983799805,
+      "actual_direction": "up",
+      "reasoning": "短期内负面舆情发酵（CEO甩锅消费者引发公关危机）将触发散户与机构的恐慌性抛售，股价在3日窗口延续跌势。属于舆情驱动短期崩跌的新模式，检索结果中无对应因果链。",
+      "stop_loss_price": 0.8267,
+      "take_profit": {
+        "prices": [
+          0.7568,
+          0.7288,
+          0.6869
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.028,
+        "atr": 0.014
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 10,
+        "summary": "Beyond Meat股价从200美元暴跌至仙股水平，CEO薪酬却获上调，并将公司崩溃归咎于美国消费者",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Beyond Meat crashed from $200 to penny-stock territory. The CEO got a raise — and blames Americans for the collapse",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/beyond-meat-crashed-200-penny-091500999.html",
+        "published_at": "2026-04-15T09:15:00"
+      }
+    },
+    {
+      "id": 20,
+      "made_at": "2026-04-16T19:15:27.095054",
+      "expire_at": "2026-04-23T19:15:27.095054",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "TSN",
+        "name": "泰森食品",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.8,
+      "horizon_days": 7,
+      "baseline_price": 63.540000915527344,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.03604450600151424,
+        "mag_err_bucket": "<=10%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 0.7711643951987887,
+      "actual_direction": "up",
+      "reasoning": "Beyond Meat的崩盘进一步印证植物肉赛道需求疲软，传统动物蛋白龙头泰森食品作为替代品受益者，市场份额预期改善。此为行业替代效应的新模式，检索到的因果链未覆盖该消费替代主题。",
+      "stop_loss_price": 63.0317,
+      "take_profit": {
+        "prices": [
+          64.3025,
+          64.8108,
+          65.5733
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.5083,
+        "atr": 0.2542
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 10,
+        "summary": "Beyond Meat股价从200美元暴跌至仙股水平，CEO薪酬却获上调，并将公司崩溃归咎于美国消费者",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Beyond Meat crashed from $200 to penny-stock territory. The CEO got a raise — and blames Americans for the collapse",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/beyond-meat-crashed-200-penny-091500999.html",
+        "published_at": "2026-04-15T09:15:00"
+      }
+    },
+    {
+      "id": 19,
+      "made_at": "2026-04-16T19:15:26.136335",
+      "expire_at": "2026-04-23T19:15:26.136335",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "BYND",
+        "name": "超越肉类",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 6.0,
+      "horizon_days": 7,
+      "baseline_price": 0.7986999750137329,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.5504372325831968,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 9.30262339549918,
+      "actual_direction": "up",
+      "reasoning": "新闻直接揭示公司基本面恶化（股价从200美元跌至仙股区间）且管理层治理存在争议——CEO在公司崩溃之际反获加薪并将责任推给消费者，这种治理与公关双重利空将加剧投资者抛售和做空压力。检索到的因果链均不涉及此类『公司治理争议叠加基本面崩塌』模式，故判定为新模式。",
+      "stop_loss_price": 0.8466,
+      "take_profit": {
+        "prices": [
+          0.7268,
+          0.6789,
+          0.607
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0479,
+        "atr": 0.024
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 10,
+        "summary": "Beyond Meat股价从200美元暴跌至仙股水平，CEO薪酬却获上调，并将公司崩溃归咎于美国消费者",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Beyond Meat crashed from $200 to penny-stock territory. The CEO got a raise — and blames Americans for the collapse",
+        "source": "yahoo_finance",
+        "lang": "en",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/beyond-meat-crashed-200-penny-091500999.html",
+        "published_at": "2026-04-15T09:15:00"
+      }
+    },
+    {
+      "id": 18,
+      "made_at": "2026-04-16T19:14:49.221808",
+      "expire_at": "2026-04-30T19:14:49.221808",
+      "verified_at": null,
+      "asset": {
+        "symbol": "CHGG",
+        "name": "Chegg",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.0,
+      "horizon_days": 14,
+      "baseline_price": 1.149999976158142,
+      "baseline_source": null,
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "作为在线学习平台代表，Chegg 受'教育回归纸质'叙事影响更直接：若公共政策开始质疑屏幕学习效果，投资者会下修 EdTech 板块终局规模预期。属于检索结果未覆盖的新因果模式。",
+      "stop_loss_price": 1.173,
+      "take_profit": {
+        "prices": [
+          1.1155,
+          1.0925,
+          1.058
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.023,
+        "atr": 0.0115
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 12,
+        "summary": "瑞典学校削减数字化教学，课堂重返纸质书本与纸笔",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "Back to books - Sweden's schools cutting back on digital learning",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/cly0vk77vdko?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-15T23:06:43"
+      }
+    },
+    {
+      "id": 17,
+      "made_at": "2026-04-16T19:14:48.404582",
+      "expire_at": "2026-04-30T19:14:48.404582",
+      "verified_at": null,
+      "asset": {
+        "symbol": "LOGI",
+        "name": "罗技",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.5,
+      "horizon_days": 14,
+      "baseline_price": 99.16000366210938,
+      "baseline_source": null,
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "罗技教育市场的键鼠、摄像头、平板配件销售对学校 IT 采购敏感。瑞典削减课堂电子设备的政策若被其他北欧国家效仿，将压低教育细分渠道出货预期。此属于'教育去数字化'这一新模式，现有因果链未覆盖。",
+      "stop_loss_price": 100.6474,
+      "take_profit": {
+        "prices": [
+          96.9289,
+          95.4415,
+          93.2104
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.4874,
+        "atr": 0.7437
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 12,
+        "summary": "瑞典学校削减数字化教学，课堂重返纸质书本与纸笔",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "Back to books - Sweden's schools cutting back on digital learning",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/cly0vk77vdko?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-15T23:06:43"
+      }
+    },
+    {
+      "id": 16,
+      "made_at": "2026-04-16T19:14:47.464715",
+      "expire_at": "2026-04-23T19:14:47.464715",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "GOOGL",
+        "name": "谷歌",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 0.5,
+      "horizon_days": 7,
+      "baseline_price": 335.0199890136719,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": false,
+        "strict_hit": false,
+        "mag_err_rel": 4.599668790168643,
+        "mag_err_bucket": ">100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 2.7998343950843214,
+      "actual_direction": "up",
+      "reasoning": "瑞典学校削减数字化教学、重回纸笔，对教育科技（Chromebook、Google Classroom 等）构成负面信号。若此趋势在欧洲扩散，将削弱谷歌教育硬件与服务渗透率的长期叙事，短期情绪面小幅承压。检索到的因果链均与 AI 芯片、反垄断或中美贸易相关，未覆盖'教育数字化回潮'这一新模式。",
+      "stop_loss_price": 336.6951,
+      "take_profit": {
+        "prices": [
+          332.5073,
+          330.8322,
+          328.3196
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.6751,
+        "atr": 0.8375
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 12,
+        "summary": "瑞典学校削减数字化教学，课堂重返纸质书本与纸笔",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "Back to books - Sweden's schools cutting back on digital learning",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/cly0vk77vdko?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-15T23:06:43"
+      }
+    },
+    {
+      "id": 15,
+      "made_at": "2026-04-16T19:14:26.356498",
+      "expire_at": "2026-04-23T19:14:26.356498",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "XLP",
+        "name": "美国消费必需品ETF",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 0.8,
+      "horizon_days": 7,
+      "baseline_price": 81.33499908447266,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": false,
+        "strict_hit": false,
+        "mag_err_rel": 1.9123444608587716,
+        "mag_err_bucket": ">100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 2.3298755686870174,
+      "actual_direction": "up",
+      "reasoning": "百事降价信号表明过去两年靠涨价驱动业绩的美国消费必需品板块进入定价能力衰退阶段，后续各大消费品公司可能被迫跟进促销，压制板块整体盈利预期与估值倍数。检索到的因果链不涵盖此类消费降级/定价权逆转主题，为新模式。",
+      "stop_loss_price": 81.9857,
+      "take_profit": {
+        "prices": [
+          80.359,
+          79.7083,
+          78.7323
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.6507,
+        "atr": 0.3253
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 13,
+        "summary": "百事公司通过下调零食价格最高15%赢回消费者，销量回升",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Cheaper Doritos and Lays helps PepsiCo win back struggling snackers",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/c625dqzpm7qo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T16:26:58"
+      }
+    },
+    {
+      "id": 14,
+      "made_at": "2026-04-16T19:14:25.408714",
+      "expire_at": "2026-04-23T19:14:25.408714",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "MDLZ",
+        "name": "亿滋国际",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.8,
+      "horizon_days": 7,
+      "baseline_price": 56.904998779296875,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.31171655861318287,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 1.2389101944962708,
+      "actual_direction": "up",
+      "reasoning": "百事大幅降价抢回零食市场份额，亿滋作为饼干/巧克力零食直接竞争对手面临跟降压力，否则将流失货架份额和销量。市场会担心整个零食赛道进入价格战，压缩毛利率预期。该因果关系不在检索到的因果链中，属于新模式。",
+      "stop_loss_price": 57.9293,
+      "take_profit": {
+        "prices": [
+          55.3686,
+          54.3443,
+          52.8078
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.0243,
+        "atr": 0.5121
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 13,
+        "summary": "百事公司通过下调零食价格最高15%赢回消费者，销量回升",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Cheaper Doritos and Lays helps PepsiCo win back struggling snackers",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/c625dqzpm7qo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T16:26:58"
+      }
+    },
+    {
+      "id": 13,
+      "made_at": "2026-04-16T19:14:24.425517",
+      "expire_at": "2026-04-30T19:14:24.425517",
+      "verified_at": null,
+      "asset": {
+        "symbol": "PEP",
+        "name": "百事可乐",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.0,
+      "horizon_days": 14,
+      "baseline_price": 157.2949981689453,
+      "baseline_source": null,
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "百事通过降价最高15%成功挽回流失的零食消费者，销量回升信号直接缓解此前市场对其量价双杀的担忧。虽然短期毛利率承压，但销量恢复和市场份额企稳通常会被市场视为拐点信号，超级碗旺季验证需求回暖。检索到的因果链均与本新闻主题无关，属于新模式。",
+      "stop_loss_price": 154.1491,
+      "take_profit": {
+        "prices": [
+          162.0138,
+          165.1597,
+          169.8786
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 3.1459,
+        "atr": 1.5729
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 13,
+        "summary": "百事公司通过下调零食价格最高15%赢回消费者，销量回升",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Cheaper Doritos and Lays helps PepsiCo win back struggling snackers",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/c625dqzpm7qo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T16:26:58"
+      }
+    },
+    {
+      "id": 12,
+      "made_at": "2026-04-16T19:13:57.379961",
+      "expire_at": "2026-04-23T19:13:57.379961",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "GBPUSD=X",
+        "name": "英镑兑美元",
+        "class": "fx"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.2,
+      "horizon_days": 7,
+      "baseline_price": 1.3532696962356567,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.7850681699253882,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.92,
+        "asset_class": "fx"
+      },
+      "actual_magnitude_pct": 0.25791819608953415,
+      "actual_direction": "up",
+      "reasoning": "英国面临粮食进口短缺风险将推高输入型通胀预期，同时财政需为战略储备与补贴增加支出，市场会担忧英国经贸与财政双重承压而抛售英镑。美元在全球避险与能源计价双重逻辑下相对走强，因此英镑兑美元在一周内承压下行。该场景不在检索到的因果链内，标记为新模式。",
+      "stop_loss_price": 1.3695,
+      "take_profit": {
+        "prices": [
+          1.3289,
+          1.3127,
+          1.2883
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0162,
+        "atr": 0.0081
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 14,
+        "summary": "英国政府官员制定最坏情景预案，预计夏季可能面临粮食短缺，背景为伊朗战争持续",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "UK prepares for food shortages in worst case scenario as Iran war continues",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/cpvxp4xnrwdo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T16:04:42"
+      }
+    },
+    {
+      "id": 11,
+      "made_at": "2026-04-16T19:13:56.806386",
+      "expire_at": "2026-04-23T19:13:56.806386",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "BZ=F",
+        "name": "布伦特原油期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.5,
+      "horizon_days": 7,
+      "baseline_price": 98.58000183105469,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.5449672012107437,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "commodity"
+      },
+      "actual_magnitude_pct": 1.5926147957623968,
+      "actual_direction": "up",
+      "reasoning": "英国作为G7成员公开制定战时短缺预案，说明伊朗战争已进入被主流政府严肃评估其长期供应冲击的阶段，霍尔木兹海峡风险溢价会被重新定价。原油作为战争风险最直接的定价标的，通常在政府级预案曝光后一周内有显著上行。检索到的因果链中无伊朗战争相关模式，标记为新模式。",
+      "stop_loss_price": 95.1297,
+      "take_profit": {
+        "prices": [
+          103.7555,
+          107.2058,
+          112.3812
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 3.4503,
+        "atr": 1.7252
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 14,
+        "summary": "英国政府官员制定最坏情景预案，预计夏季可能面临粮食短缺，背景为伊朗战争持续",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "UK prepares for food shortages in worst case scenario as Iran war continues",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/cpvxp4xnrwdo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T16:04:42"
+      }
+    },
+    {
+      "id": 10,
+      "made_at": "2026-04-16T19:13:55.845723",
+      "expire_at": "2026-04-30T19:13:55.845723",
+      "verified_at": null,
+      "asset": {
+        "symbol": "ZW=F",
+        "name": "小麦期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 4.5,
+      "horizon_days": 14,
+      "baseline_price": 608.25,
+      "baseline_source": null,
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "英国政府制定最坏情景预案预警夏季粮食短缺，叠加伊朗战争持续扰乱中东物流与黑海-红海运输通道，市场会提前定价全球粮食供应紧张预期。小麦作为英国主要进口主粮品种，对此类地缘+供应冲击最为敏感，期货价格通常在政府层面公开预警后两周内快速反应。检索到的因果链未覆盖战争叠加粮食安全的模式，故标记为新模式。",
+      "stop_loss_price": 580.8787,
+      "take_profit": {
+        "prices": [
+          649.3069,
+          676.6781,
+          717.735
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 27.3713,
+        "atr": 13.6856
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 14,
+        "summary": "英国政府官员制定最坏情景预案，预计夏季可能面临粮食短缺，背景为伊朗战争持续",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "UK prepares for food shortages in worst case scenario as Iran war continues",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/cpvxp4xnrwdo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T16:04:42"
+      }
+    },
+    {
+      "id": 9,
+      "made_at": "2026-04-16T19:13:33.525085",
+      "expire_at": "2026-04-19T19:13:33.525085",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "IGLT.L",
+        "name": "英国国债ETF",
+        "class": "index"
+      },
+      "direction": "down",
+      "magnitude_pct": 0.5,
+      "horizon_days": 3,
+      "baseline_price": 9.800000190734863,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.6796043614055797,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.94,
+        "asset_class": "index"
+      },
+      "actual_magnitude_pct": 0.16019781929721016,
+      "actual_direction": "up",
+      "reasoning": "经济数据强于预期会推迟英国央行降息节奏，长端Gilt收益率上行、价格下跌。该因果链与检索到的非农→TLT传导逻辑类似（id 40/42），但标的为英国国债，故作为新模式记录。",
+      "stop_loss_price": 10.9221,
+      "take_profit": {
+        "prices": [
+          8.1168,
+          6.9947,
+          5.3116
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.1221,
+        "atr": 0.5611
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": 0.2707,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.2707,
+        "log_odds": -0.991,
+        "effective_n": 1.0,
+        "r_bar": 1.0,
+        "uplift": 0.9,
+        "signal_grade": "💤 D",
+        "evidence": [
+          {
+            "link_id": 40,
+            "pattern": "美国非农就业大幅不及预期（差幅 >=100k）",
+            "asset": "TLT",
+            "dir_hit_rate": 0.4,
+            "n_samples": 5,
+            "log_lr": -0.288,
+            "grade": null
+          },
+          {
+            "link_id": 42,
+            "pattern": "美国非农就业大幅超预期（超幅 >=100k）",
+            "asset": "DX-Y.NYB",
+            "dir_hit_rate": 0.5,
+            "n_samples": 6,
+            "log_lr": 0.0,
+            "grade": null
+          }
+        ],
+        "note": "⚠ 证据同类别重叠 r̄=1.00，已折扣 (n=2 → n_eff=1.0)"
+      },
+      "cited_link_ids": [
+        40,
+        42
+      ],
+      "cited_chains": [
+        {
+          "id": 40,
+          "pattern": "美国非农就业大幅不及预期（差幅 >=100k）",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 3,
+          "magnitude_pct": 1.3,
+          "grade": null,
+          "retail_edge": null
+        },
+        {
+          "id": 42,
+          "pattern": "美国非农就业大幅超预期（超幅 >=100k）",
+          "asset_symbol": "DX-Y.NYB",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.5,
+          "grade": null,
+          "retail_edge": null
+        }
+      ],
+      "event": {
+        "id": 15,
+        "summary": "英国2月GDP增速超预期，创两年多来最大单月涨幅",
+        "category": "macro"
+      },
+      "news": {
+        "title": "UK economy grew faster than expected in February ahead of Iran war",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/cz0e23r0993o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T10:22:48"
+      }
+    },
+    {
+      "id": 8,
+      "made_at": "2026-04-16T19:13:32.630233",
+      "expire_at": "2026-04-23T19:13:32.630233",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "^FTSE",
+        "name": "英国富时100指数",
+        "class": "index"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.0,
+      "horizon_days": 7,
+      "baseline_price": 10589.990234375,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": false,
+        "strict_hit": false,
+        "mag_err_rel": 0.9709244154682479,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.94,
+        "asset_class": "index"
+      },
+      "actual_magnitude_pct": -1.970924415468248,
+      "actual_direction": "down",
+      "reasoning": "GDP超预期显示内需与服务业韧性，利好英国本土周期股与银行股盈利预期，富时100短期风险偏好上行。但由于新闻提及随后爆发美伊战争的外部冲击，涨幅受限，因此给出较温和幅度。该传导未在检索结果中覆盖，属新模式。",
+      "stop_loss_price": 10484.0903,
+      "take_profit": {
+        "prices": [
+          10748.8401,
+          10854.74,
+          11013.5898
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 105.8999,
+        "atr": 52.95
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 15,
+        "summary": "英国2月GDP增速超预期，创两年多来最大单月涨幅",
+        "category": "macro"
+      },
+      "news": {
+        "title": "UK economy grew faster than expected in February ahead of Iran war",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/cz0e23r0993o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T10:22:48"
+      }
+    },
+    {
+      "id": 7,
+      "made_at": "2026-04-16T19:13:31.736600",
+      "expire_at": "2026-04-19T19:13:31.736600",
+      "verified_at": "2026-04-22T12:45:07.425810",
+      "asset": {
+        "symbol": "GBPUSD=X",
+        "name": "英镑兑美元",
+        "class": "fx"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.6,
+      "horizon_days": 3,
+      "baseline_price": 1.3532696962356567,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.5272512771336112,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.92,
+        "asset_class": "fx"
+      },
+      "actual_magnitude_pct": -0.2836492337198333,
+      "actual_direction": "down",
+      "reasoning": "英国2月GDP创两年多来最大单月涨幅，经济超预期强劲将削弱英国央行短期降息预期，推升英镑相对美元的利率优势。检索到的因果链主要覆盖中国与美国宏观数据，未直接覆盖英国GDP对英镑的传导，因此标记为新模式。",
+      "stop_loss_price": 1.3452,
+      "take_profit": {
+        "prices": [
+          1.3654,
+          1.3736,
+          1.3857
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0081,
+        "atr": 0.0041
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 15,
+        "summary": "英国2月GDP增速超预期，创两年多来最大单月涨幅",
+        "category": "macro"
+      },
+      "news": {
+        "title": "UK economy grew faster than expected in February ahead of Iran war",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/cz0e23r0993o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T10:22:48"
+      }
+    },
+    {
+      "id": 6,
+      "made_at": "2026-04-16T19:13:11.323630",
+      "expire_at": "2026-04-23T19:13:11.323630",
+      "verified_at": null,
+      "asset": null,
+      "direction": "up",
+      "magnitude_pct": 1.5,
+      "horizon_days": 7,
+      "baseline_price": null,
+      "baseline_source": null,
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "与链95（财政危机压制美元）不同，战争场景下美元通常因避险属性走强而非走弱，叠加油价飙升打压欧元/英镑等能源进口货币，DXY倾向上行。属于新模式：战争驱动的美元避险买盘。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": 0.72,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.72,
+        "log_odds": 0.944,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.4,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 95,
+            "pattern": "美国政府停摆 / 债务上限临近违约",
+            "asset": "DX-Y.NYB",
+            "dir_hit_rate": 1.0,
+            "n_samples": 5,
+            "log_lr": 1.792,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "cited_link_ids": [
+        95
+      ],
+      "cited_chains": [
+        {
+          "id": 95,
+          "pattern": "美国政府停摆 / 债务上限临近违约",
+          "asset_symbol": "DX-Y.NYB",
+          "direction": "down",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "A",
+          "retail_edge": "low"
+        }
+      ],
+      "event": {
+        "id": 16,
+        "summary": "美国与以色列联合对伊朗开战，地缘政治冲突爆发，推高避险与能源资产",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "UK economy grew faster than expected in February ahead of Iran war",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/cz0e23r0993o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T10:22:48"
+      }
+    },
+    {
+      "id": 5,
+      "made_at": "2026-04-16T19:13:10.815375",
+      "expire_at": "2026-04-23T19:13:10.815375",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.5,
+      "horizon_days": 7,
+      "baseline_price": 4814.60009765625,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.47125056614107713,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "commodity"
+      },
+      "actual_magnitude_pct": -1.85062301850623,
+      "actual_direction": "down",
+      "reasoning": "美以对伊朗开战引发剧烈避险情绪，黄金作为终极避险资产将获资金流入，逻辑与链94（停摆/债务违约推升黄金避险需求）一致，但战争冲击力度更强，因此幅度略高于停摆场景。",
+      "stop_loss_price": 4789.8422,
+      "take_profit": {
+        "prices": [
+          4851.7369,
+          4876.4948,
+          4913.6317
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 24.7579,
+        "atr": 12.3789
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.72,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.72,
+        "log_odds": 0.944,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.4,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 94,
+            "pattern": "美国政府停摆 / 债务上限临近违约",
+            "asset": "GC=F",
+            "dir_hit_rate": 1.0,
+            "n_samples": 5,
+            "log_lr": 1.792,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "cited_link_ids": [
+        94
+      ],
+      "cited_chains": [
+        {
+          "id": 94,
+          "pattern": "美国政府停摆 / 债务上限临近违约",
+          "asset_symbol": "GC=F",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 2.0,
+          "grade": "A",
+          "retail_edge": "mid"
+        }
+      ],
+      "event": {
+        "id": 16,
+        "summary": "美国与以色列联合对伊朗开战，地缘政治冲突爆发，推高避险与能源资产",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "UK economy grew faster than expected in February ahead of Iran war",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/cz0e23r0993o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T10:22:48"
+      }
+    },
+    {
+      "id": 4,
+      "made_at": "2026-04-16T19:13:09.915878",
+      "expire_at": "2026-04-23T19:13:09.915878",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "CL=F",
+        "name": "WTI原油期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 6.0,
+      "horizon_days": 7,
+      "baseline_price": 90.38999938964844,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.13522836724653672,
+        "mag_err_bucket": "<=25%",
+        "tol_used": 0.95,
+        "asset_class": "commodity"
+      },
+      "actual_magnitude_pct": 5.18862979652078,
+      "actual_direction": "up",
+      "reasoning": "美国与以色列对伊朗开战将直接威胁霍尔木兹海峡原油运输通道，伊朗作为OPEC重要产油国供应面临中断风险，地缘溢价快速计入油价。检索到的因果链未覆盖中东战争场景，属于新模式。",
+      "stop_loss_price": 84.9666,
+      "take_profit": {
+        "prices": [
+          98.5251,
+          103.9485,
+          112.0836
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 5.4234,
+        "atr": 2.7117
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 16,
+        "summary": "美国与以色列联合对伊朗开战，地缘政治冲突爆发，推高避险与能源资产",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "UK economy grew faster than expected in February ahead of Iran war",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/cz0e23r0993o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T10:22:48"
+      }
+    },
+    {
+      "id": 3,
+      "made_at": "2026-04-16T19:12:50.131337",
+      "expire_at": "2026-04-30T19:12:50.131337",
+      "verified_at": null,
+      "asset": {
+        "symbol": "VLO",
+        "name": "瓦莱罗能源（炼油）",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.5,
+      "horizon_days": 14,
+      "baseline_price": 241.4600067138672,
+      "baseline_source": null,
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "海湾供应断供导致欧洲精炼产品（航油、柴油）紧缺，全球精炼裂解价差走阔，美湾炼厂（瓦莱罗）有望通过出口套利获益。类似#53中炼油毛利被利多的逻辑，但本次是精炼产品短缺而非原油中断，利多更为纯粹且持续时间更长，故选14天窗口。",
+      "stop_loss_price": 238.399,
+      "take_profit": {
+        "prices": [
+          246.0516,
+          249.1126,
+          253.7042
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 3.0611,
+        "atr": 1.5305
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.2432,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.2432,
+        "log_odds": -1.135,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 0.81,
+        "signal_grade": "💤 D",
+        "evidence": [
+          {
+            "link_id": 53,
+            "pattern": "墨西哥湾飓风影响主要炼油/海上平台",
+            "asset": "CL=F",
+            "dir_hit_rate": 0.4,
+            "n_samples": 5,
+            "log_lr": -0.288,
+            "grade": null
+          }
+        ],
+        "note": ""
+      },
+      "cited_link_ids": [
+        53
+      ],
+      "cited_chains": [
+        {
+          "id": 53,
+          "pattern": "墨西哥湾飓风影响主要炼油/海上平台",
+          "asset_symbol": "CL=F",
+          "direction": "up",
+          "horizon_days": 5,
+          "magnitude_pct": 3.0,
+          "grade": null,
+          "retail_edge": null
+        }
+      ],
+      "event": {
+        "id": 17,
+        "summary": "国际能源署警告欧洲航空燃料库存仅剩约六周，若来自海湾地区的供应持续中断，航班或将被取消",
+        "category": "energy"
+      },
+      "news": {
+        "title": "Europe has 'maybe six weeks of jet fuel left', energy boss warns",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/czjw2kz0l22o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T15:34:39"
+      }
+    },
+    {
+      "id": 2,
+      "made_at": "2026-04-16T19:12:49.142867",
+      "expire_at": "2026-04-23T19:12:49.142867",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "LHA.DE",
+        "name": "汉莎航空",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 4.0,
+      "horizon_days": 7,
+      "baseline_price": 7.552000045776367,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.1459219563052494,
+        "mag_err_bucket": "<=25%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -3.4163121747790024,
+      "actual_direction": "down",
+      "reasoning": "欧洲航空煤油供应告急直接冲击欧洲航司：燃料成本飙升、航班可能被迫取消，双重挤压营收与利润。汉莎作为欧洲最大网络航司之一且枢纽位于法兰克福，敞口显著。检索因果链未直接覆盖欧洲航司对航油供应的敏感度，属新模式。",
+      "stop_loss_price": 7.8541,
+      "take_profit": {
+        "prices": [
+          7.0989,
+          6.7968,
+          6.3437
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.3021,
+        "atr": 0.151
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 17,
+        "summary": "国际能源署警告欧洲航空燃料库存仅剩约六周，若来自海湾地区的供应持续中断，航班或将被取消",
+        "category": "energy"
+      },
+      "news": {
+        "title": "Europe has 'maybe six weeks of jet fuel left', energy boss warns",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/czjw2kz0l22o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T15:34:39"
+      }
+    },
+    {
+      "id": 1,
+      "made_at": "2026-04-16T19:12:48.535064",
+      "expire_at": "2026-04-23T19:12:48.535064",
+      "verified_at": "2026-04-27T12:26:36.353369",
+      "asset": {
+        "symbol": "CL=F",
+        "name": "WTI原油期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.5,
+      "horizon_days": 7,
+      "baseline_price": 90.31999969482422,
+      "baseline_source": null,
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": false,
+        "strict_hit": false,
+        "mag_err_rel": 1.1080611834870235,
+        "mag_err_bucket": ">100%",
+        "tol_used": 0.95,
+        "asset_class": "commodity"
+      },
+      "actual_magnitude_pct": 5.270152958717559,
+      "actual_direction": "up",
+      "reasoning": "海湾地区供应中断导致欧洲航空煤油库存仅剩六周，精炼产品紧张将向上游原油传导，提振原油价格。虽然新闻不是飓风导致的炼油中断（#53），但供给端冲击的传导逻辑相似，可参考该模式；鉴于地缘风险溢价更具持续性，按中等幅度估计。",
+      "stop_loss_price": 87.2589,
+      "take_profit": {
+        "prices": [
+          94.9116,
+          97.9726,
+          102.5642
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 3.0611,
+        "atr": 1.5305
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": 0.2432,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.2432,
+        "log_odds": -1.135,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 0.81,
+        "signal_grade": "💤 D",
+        "evidence": [
+          {
+            "link_id": 53,
+            "pattern": "墨西哥湾飓风影响主要炼油/海上平台",
+            "asset": "CL=F",
+            "dir_hit_rate": 0.4,
+            "n_samples": 5,
+            "log_lr": -0.288,
+            "grade": null
+          }
+        ],
+        "note": ""
+      },
+      "cited_link_ids": [
+        53
+      ],
+      "cited_chains": [
+        {
+          "id": 53,
+          "pattern": "墨西哥湾飓风影响主要炼油/海上平台",
+          "asset_symbol": "CL=F",
+          "direction": "up",
+          "horizon_days": 5,
+          "magnitude_pct": 3.0,
+          "grade": null,
+          "retail_edge": null
+        }
+      ],
+      "event": {
+        "id": 17,
+        "summary": "国际能源署警告欧洲航空燃料库存仅剩约六周，若来自海湾地区的供应持续中断，航班或将被取消",
+        "category": "energy"
+      },
+      "news": {
+        "title": "Europe has 'maybe six weeks of jet fuel left', energy boss warns",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/czjw2kz0l22o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-04-16T15:34:39"
+      }
     }
-  ]
+  ],
+  "freeze_date": "2026-04-19"
 }

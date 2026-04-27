@@ -1,6 +1,8 @@
 {
   "id": 94,
   "made_at": "2026-04-27T12:47:56.235318",
+  "expire_at": "2026-05-11T12:47:56.235318",
+  "verified_at": null,
   "asset": {
     "symbol": "600085",
     "name": "同仁堂",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 3.5,
   "horizon_days": 14,
-  "expire_at": "2026-05-11T12:47:56.235318",
   "baseline_price": null,
   "baseline_source": "live_fallback",
   "status": "pending",
@@ -18,6 +19,13 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "六部门联合推动中医药服务消费与贸易融合发展，18个地区试点将带来政策红利和市场拓展机遇。同仁堂作为中医药龙头企业，品牌国际知名度高，将直接受益于中医药服务出口和消费扩张。检索到的因果链未覆盖中医药政策利好模式，属于新模式。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 198,
     "summary": "六部门推动中医药服务消费与贸易融合发展，18个地区成为试点",

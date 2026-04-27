@@ -1,6 +1,8 @@
 {
   "id": 24,
   "made_at": "2026-04-16T19:15:48.905726",
+  "expire_at": "2026-04-19T19:15:48.905726",
+  "verified_at": "2026-04-22T12:45:07.425810",
   "asset": {
     "symbol": "PINS",
     "name": "Pinterest",
@@ -9,7 +11,6 @@
   "direction": "down",
   "magnitude_pct": 2.0,
   "horizon_days": 3,
-  "expire_at": "2026-04-19T19:15:48.905726",
   "baseline_price": 20.03499984741211,
   "baseline_source": null,
   "status": "verified",
@@ -26,6 +27,26 @@
   "actual_magnitude_pct": 2.919895164844999,
   "actual_direction": "up",
   "reasoning": "Snap大规模裁员暗示中小型社交广告平台面临用户增长放缓与竞争加剧的压力，作为与Snap定位接近的中型广告平台，Pinterest易被市场一并下调预期。检索结果未覆盖该同业传导模式，属于新模式。",
+  "stop_loss_price": 20.4357,
+  "take_profit": {
+    "prices": [
+      19.4339,
+      19.0332,
+      18.4322
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.4007,
+    "atr": 0.2003
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 9,
     "summary": "Snap宣布裁员1000人，受激进投资者施压并押注AI提效",

@@ -1,6 +1,8 @@
 {
   "id": 68,
   "made_at": "2026-04-27T12:45:33.998219",
+  "expire_at": "2026-05-11T12:45:33.998219",
+  "verified_at": null,
   "asset": {
     "symbol": "DE",
     "name": "迪尔公司(国防概念)",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 1.2,
   "horizon_days": 14,
-  "expire_at": "2026-05-11T12:45:33.998219",
   "baseline_price": 562.6400146484375,
   "baseline_source": "eod",
   "status": "pending",
@@ -18,6 +19,26 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "德国作为欧洲最大经济体，其总理对美国中东战略的质疑反映欧洲对自身安全的担忧加剧。这将推动欧洲加速国防自主化进程，利好美欧防务承包商。结合欧洲近期增加国防开支的趋势，防务板块有望受益。",
+  "stop_loss_price": 555.8883,
+  "take_profit": {
+    "prices": [
+      572.7675,
+      579.5192,
+      589.6467
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 6.7517,
+    "atr": 3.3758
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 208,
     "summary": "德国总理默茨称暂未看到美国在伊朗战争中的退出战略",

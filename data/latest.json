@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-27T12:50:00.329619",
+  "generated_at": "2026-04-27T13:13:30.479519",
   "stats": {
-    "generated_at": "2026-04-27T12:49:59.862572",
+    "generated_at": "2026-04-27T13:13:29.859217",
     "kb_summary": {
       "n_links_active": 346,
       "n_strong": 167,
@@ -105,6 +105,8 @@
     {
       "id": 105,
       "made_at": "2026-04-27T12:49:17.704434",
+      "expire_at": "2026-05-04T12:49:17.704434",
+      "verified_at": null,
       "asset": {
         "symbol": "GC=F",
         "name": "黄金期货",
@@ -113,7 +115,6 @@
       "direction": "up",
       "magnitude_pct": 1.2,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:49:17.704434",
       "baseline_price": 4717.89990234375,
       "baseline_source": "event_time",
       "status": "pending",
@@ -122,6 +123,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "南海地缘紧张升级触发避险情绪，资金倾向流入黄金等传统避险资产。中国海军围观美日菲军演的强势姿态加剧市场对区域冲突风险的担忧，短期内支撑金价。检索因果链虽提及地区银行危机推动黄金避险，但地缘冲突驱动的避险逻辑为新模式。",
+      "stop_loss_price": 4661.2851,
+      "take_profit": {
+        "prices": [
+          4802.8221,
+          4859.4369,
+          4944.3591
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 56.6148,
+        "atr": 28.3074
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 186,
         "summary": "中国海军监视美日菲联合军演，南海地缘紧张升级",
@@ -138,6 +159,8 @@
     {
       "id": 104,
       "made_at": "2026-04-27T12:49:17.244906",
+      "expire_at": "2026-05-11T12:49:17.244906",
+      "verified_at": null,
       "asset": {
         "symbol": "LMT",
         "name": "洛克希德·马丁（美国国防股）",
@@ -146,7 +169,6 @@
       "direction": "up",
       "magnitude_pct": 2.0,
       "horizon_days": 14,
-      "expire_at": "2026-05-11T12:49:17.244906",
       "baseline_price": 513.4500122070312,
       "baseline_source": "eod",
       "status": "pending",
@@ -155,6 +177,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "美日菲联合军演及中国海军强势回应凸显亚太军备竞赛加剧，将推动美国及盟国增加国防开支预期。洛克希德·马丁作为全球最大军工企业，在F-35战斗机及导弹防御系统领域拥有核心地位，地缘紧张直接利好其订单前景。检索因果链未覆盖此模式，属新发现。",
+      "stop_loss_price": 503.181,
+      "take_profit": {
+        "prices": [
+          528.8535,
+          539.1225,
+          554.526
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 10.269,
+        "atr": 5.1345
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 186,
         "summary": "中国海军监视美日菲联合军演，南海地缘紧张升级",
@@ -171,6 +213,8 @@
     {
       "id": 103,
       "made_at": "2026-04-27T12:49:16.340617",
+      "expire_at": "2026-05-04T12:49:16.340617",
+      "verified_at": null,
       "asset": {
         "symbol": "FXI",
         "name": "中国大盘股ETF",
@@ -179,7 +223,6 @@
       "direction": "down",
       "magnitude_pct": 1.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:49:16.340617",
       "baseline_price": 36.86000061035156,
       "baseline_source": "eod",
       "status": "pending",
@@ -188,6 +231,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "中国海军高调监视美日菲联合军演显示南海地缘对抗升级，国际投资者对中国资产的风险溢价短期上升。FXI作为追踪中国大盘股的主要ETF，在地缘紧张情绪下通常承压。虽然检索到的因果链主要涉及房地产违约，但地缘政治风险同样影响中国风险资产估值，属于新模式。",
+      "stop_loss_price": 37.4129,
+      "take_profit": {
+        "prices": [
+          36.0307,
+          35.4778,
+          34.6484
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.5529,
+        "atr": 0.2765
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 186,
         "summary": "中国海军监视美日菲联合军演，南海地缘紧张升级",
@@ -204,6 +267,8 @@
     {
       "id": 102,
       "made_at": "2026-04-27T12:48:51.291504",
+      "expire_at": "2026-05-04T12:48:51.291504",
+      "verified_at": null,
       "asset": {
         "symbol": "XOMA",
         "name": "Xoma公司",
@@ -212,7 +277,6 @@
       "direction": "up",
       "magnitude_pct": 3.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:48:51.291504",
       "baseline_price": 37.900001525878906,
       "baseline_source": "eod",
       "status": "pending",
@@ -221,6 +285,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "XOMA提交8-K披露签署重大协议（Item 1.01），对于专注于药物版税收购的小型生物医药版税公司而言，新协议通常意味着未来现金流增加或版税资产组合扩张。市场通常对此类利好消息给予正面反应。由于检索到的因果链与中东能源袭击相关，与本新闻无关，此为新发现的因果模式。",
+      "stop_loss_price": 36.5735,
+      "take_profit": {
+        "prices": [
+          39.8898,
+          41.2163,
+          43.206
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.3265,
+        "atr": 0.6633
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 191,
         "summary": "XOMA Royalty Corp提交8-K文件，披露重大协议签署及其他事件",
@@ -237,6 +321,8 @@
     {
       "id": 101,
       "made_at": "2026-04-27T12:48:31.820875",
+      "expire_at": "2026-05-04T12:48:31.820875",
+      "verified_at": null,
       "asset": {
         "symbol": "06160.HK",
         "name": "百济神州港股",
@@ -245,7 +331,6 @@
       "direction": "up",
       "magnitude_pct": 3.0,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:48:31.820875",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -254,6 +339,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "港股作为百济神州另一重要上市地，对公司战略性合作公告反应积极。此次与华辉安健的合作涉及创新三特异性抗体，里程碑总额达20亿美元，对公司管线估值和未来收入预期形成正面催化。港股生物医药板块近期关注度提升，预计短期内港股同步走强。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 195,
         "summary": "百济神州全资子公司与华辉安健签订三特异性抗体全球独家开发合作协议，总里程碑款可达20亿美元",
@@ -270,6 +362,8 @@
     {
       "id": 100,
       "made_at": "2026-04-27T12:48:29.957837",
+      "expire_at": "2026-05-04T12:48:29.957837",
+      "verified_at": null,
       "asset": {
         "symbol": "BGNE",
         "name": "百济神州美股",
@@ -278,7 +372,6 @@
       "direction": "up",
       "magnitude_pct": 2.8,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:48:29.957837",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -287,6 +380,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "作为百济神州主要上市地之一，美股BGNE对公司重大BD交易同样敏感。本次三特异性抗体合作总额达20亿美元，彰显公司持续丰富管线的战略意图，尤其在PD-1赛道竞争白热化背景下，差异化靶点组合有望提升市场估值。美股投资者对创新药BD交易的反应往往迅速，预计短期内股价温和上涨。该模式属新发现。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 195,
         "summary": "百济神州全资子公司与华辉安健签订三特异性抗体全球独家开发合作协议，总里程碑款可达20亿美元",
@@ -303,6 +403,8 @@
     {
       "id": 99,
       "made_at": "2026-04-27T12:48:26.162450",
+      "expire_at": "2026-05-04T12:48:26.162450",
+      "verified_at": null,
       "asset": {
         "symbol": "688235.SH",
         "name": "百济神州科创板",
@@ -311,7 +413,6 @@
       "direction": "up",
       "magnitude_pct": 3.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:48:26.162450",
       "baseline_price": 235.0,
       "baseline_source": "event_time",
       "status": "pending",
@@ -320,6 +421,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "百济神州与华辉安健签订的三特异性抗体（PD-1/CTLA-4/VEGF-A）全球独家合作协议，总里程碑款高达20亿美元，展示了公司在创新药BD能力和管线拓展上的积极布局。三靶点联合抗体在肿瘤免疫领域属前沿方向，市场对创新药企的License-in交易通常给予正面反应。首付款2000万美元及后续里程碑结构合理，短期内将提振投资者对公司研发管线价值的预期。检索到的因果链未覆盖生物医药BD交易对股价的影响，属新模式。",
+      "stop_loss_price": 226.775,
+      "take_profit": {
+        "prices": [
+          247.3375,
+          255.5625,
+          267.9
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 8.225,
+        "atr": 4.1125
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 195,
         "summary": "百济神州全资子公司与华辉安健签订三特异性抗体全球独家开发合作协议，总里程碑款可达20亿美元",
@@ -336,6 +457,8 @@
     {
       "id": 98,
       "made_at": "2026-04-27T12:48:07.366429",
+      "expire_at": "2026-05-04T12:48:07.366429",
+      "verified_at": null,
       "asset": {
         "symbol": "300238",
         "name": "冠昊生物",
@@ -344,7 +467,6 @@
       "direction": "up",
       "magnitude_pct": 3.0,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:48:07.366429",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -353,6 +475,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "批量克隆牦牛成功展示了我国在细胞克隆和再生医学领域的技术实力。冠昊生物专注于再生医学和组织工程，克隆技术的突破会带动市场对整个生物技术板块的关注和估值重估。此为新模式，检索结果中未覆盖生物技术突破事件。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 196,
         "summary": "中国首次实现批量克隆10头牦牛，生物技术领域取得突破",
@@ -369,6 +498,8 @@
     {
       "id": 97,
       "made_at": "2026-04-27T12:48:07.131327",
+      "expire_at": "2026-05-04T12:48:07.131327",
+      "verified_at": null,
       "asset": {
         "symbol": "002100",
         "name": "天康生物",
@@ -377,7 +508,6 @@
       "direction": "up",
       "magnitude_pct": 2.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:48:07.131327",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -386,6 +516,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "我国首次批量克隆牦牛标志着大动物克隆技术的商业化突破。天康生物作为国内畜牧业龙头，在动物育种和生物技术领域有布局，克隆技术突破将提升市场对相关企业技术应用前景的预期。此为新发现的因果模式，检索库中无相关链条。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 196,
         "summary": "中国首次实现批量克隆10头牦牛，生物技术领域取得突破",
@@ -402,6 +539,8 @@
     {
       "id": 96,
       "made_at": "2026-04-27T12:47:56.742155",
+      "expire_at": "2026-05-04T12:47:56.742155",
+      "verified_at": null,
       "asset": {
         "symbol": "002287",
         "name": "奇正藏药",
@@ -410,7 +549,6 @@
       "direction": "up",
       "magnitude_pct": 2.2,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:47:56.742155",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -419,6 +557,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "中医药服务消费与贸易融合试点将带动特色民族医药企业发展。奇正藏药主打藏药特色，具有独特的文化和医疗价值，在中医药国际化进程中具备差异化优势，政策利好将提振市场对民族医药板块的关注度。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 198,
         "summary": "六部门推动中医药服务消费与贸易融合发展，18个地区成为试点",
@@ -435,6 +580,8 @@
     {
       "id": 95,
       "made_at": "2026-04-27T12:47:56.482363",
+      "expire_at": "2026-05-11T12:47:56.482363",
+      "verified_at": null,
       "asset": {
         "symbol": "000538",
         "name": "云南白药",
@@ -443,7 +590,6 @@
       "direction": "up",
       "magnitude_pct": 2.8,
       "horizon_days": 14,
-      "expire_at": "2026-05-11T12:47:56.482363",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -452,6 +598,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "中医药服务贸易融合发展试点政策将推动中药产品和服务的国际化进程。云南白药作为中国知名中药品牌，在东南亚等地区有较好的市场基础，试点政策有望促进其海外业务拓展和品牌价值提升。此为中医药政策利好新模式。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 198,
         "summary": "六部门推动中医药服务消费与贸易融合发展，18个地区成为试点",
@@ -468,6 +621,8 @@
     {
       "id": 94,
       "made_at": "2026-04-27T12:47:56.235318",
+      "expire_at": "2026-05-11T12:47:56.235318",
+      "verified_at": null,
       "asset": {
         "symbol": "600085",
         "name": "同仁堂",
@@ -476,7 +631,6 @@
       "direction": "up",
       "magnitude_pct": 3.5,
       "horizon_days": 14,
-      "expire_at": "2026-05-11T12:47:56.235318",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -485,6 +639,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "六部门联合推动中医药服务消费与贸易融合发展，18个地区试点将带来政策红利和市场拓展机遇。同仁堂作为中医药龙头企业，品牌国际知名度高，将直接受益于中医药服务出口和消费扩张。检索到的因果链未覆盖中医药政策利好模式，属于新模式。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 198,
         "summary": "六部门推动中医药服务消费与贸易融合发展，18个地区成为试点",
@@ -501,6 +662,8 @@
     {
       "id": 93,
       "made_at": "2026-04-27T12:47:44.792984",
+      "expire_at": "2026-04-30T12:47:44.792984",
+      "verified_at": null,
       "asset": {
         "symbol": "002304",
         "name": "洋河股份",
@@ -509,7 +672,6 @@
       "direction": "down",
       "magnitude_pct": 0.5,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:47:44.792984",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -518,6 +680,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "高端白酒造假事件曝光后，投资者对白酒板块整体信任度下降，洋河股份作为白酒龙头之一，短期内会受到板块情绪拖累。消费者对高价白酒的购买谨慎度提升，可能影响整体白酒消费预期。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 199,
         "summary": "38万元购买的百箱茅台全部为假酒，成本仅百元，涉及食品安全和消费者权益问题",
@@ -534,6 +703,8 @@
     {
       "id": 92,
       "made_at": "2026-04-27T12:47:44.791850",
+      "expire_at": "2026-04-30T12:47:44.791850",
+      "verified_at": null,
       "asset": {
         "symbol": "000858",
         "name": "五粮液",
@@ -542,7 +713,6 @@
       "direction": "down",
       "magnitude_pct": 0.6,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:47:44.791850",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -551,6 +721,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "茅台假酒事件会引发市场对整个高端白酒行业流通渠道乱象的担忧，作为高端白酒第二大品牌的五粮液也会受到连带影响，投资者可能担心类似造假问题波及其他品牌，行业情绪整体承压。此为茅台假酒事件的行业传染效应。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 199,
         "summary": "38万元购买的百箱茅台全部为假酒，成本仅百元，涉及食品安全和消费者权益问题",
@@ -567,6 +744,8 @@
     {
       "id": 91,
       "made_at": "2026-04-27T12:47:44.566124",
+      "expire_at": "2026-04-30T12:47:44.566124",
+      "verified_at": null,
       "asset": {
         "symbol": "600519",
         "name": "贵州茅台",
@@ -575,7 +754,6 @@
       "direction": "down",
       "magnitude_pct": 1.2,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:47:44.566124",
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -584,6 +762,13 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "茅台假酒泛滥新闻曝光后，会引发消费者对茅台真伪鉴别的担忧，短期内可能抑制部分购买意愿，尤其是非官方渠道的消费信心受挫。同时该事件暴露茅台产品流通环节的管控漏洞，品牌溢价能力受到质疑。检索到的因果链未覆盖食品造假对品牌股的影响，属新模式。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 199,
         "summary": "38万元购买的百箱茅台全部为假酒，成本仅百元，涉及食品安全和消费者权益问题",
@@ -600,6 +785,8 @@
     {
       "id": 90,
       "made_at": "2026-04-27T12:47:33.679706",
+      "expire_at": "2026-04-30T12:47:33.679706",
+      "verified_at": null,
       "asset": {
         "symbol": "GC=F",
         "name": "黄金期货",
@@ -608,7 +795,6 @@
       "direction": "up",
       "magnitude_pct": 0.6,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:47:33.679706",
       "baseline_price": 4718.89990234375,
       "baseline_source": "event_time",
       "status": "pending",
@@ -617,6 +803,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "中美制裁摩擦升级属于地缘政治风险事件，通常推动避险资金流入黄金。虽然本次制裁规模有限，但叠加中方表态反对，市场对中美关系的不确定性担忧加剧，黄金短期受到支撑。",
+      "stop_loss_price": 4690.5865,
+      "take_profit": {
+        "prices": [
+          4761.37,
+          4789.6834,
+          4832.1535
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 28.3134,
+        "atr": 14.1567
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 200,
         "summary": "美国以涉伊朗为由制裁中国企业，中方表态反对",
@@ -633,6 +839,8 @@
     {
       "id": 89,
       "made_at": "2026-04-27T12:47:33.183505",
+      "expire_at": "2026-04-30T12:47:33.183505",
+      "verified_at": null,
       "asset": {
         "symbol": "USDCNH=X",
         "name": "美元兑离岸人民币",
@@ -641,7 +849,6 @@
       "direction": "up",
       "magnitude_pct": 0.4,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:47:33.183505",
       "baseline_price": 6.823490142822266,
       "baseline_source": "event_time",
       "status": "pending",
@@ -650,6 +857,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "中美摩擦升级事件通常引发避险情绪，资金流向美元避险，人民币承压贬值。此次制裁虽规模有限，但反映中美关系紧张持续，短期内离岸人民币可能小幅走弱。这是地缘政治风险影响汇率的常见模式。",
+      "stop_loss_price": 6.7962,
+      "take_profit": {
+        "prices": [
+          6.8644,
+          6.8917,
+          6.9327
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0273,
+        "atr": 0.0136
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 200,
         "summary": "美国以涉伊朗为由制裁中国企业，中方表态反对",
@@ -666,6 +893,8 @@
     {
       "id": 88,
       "made_at": "2026-04-27T12:47:32.707226",
+      "expire_at": "2026-05-04T12:47:32.707226",
+      "verified_at": null,
       "asset": {
         "symbol": "600028.SH",
         "name": "中国石化",
@@ -674,7 +903,6 @@
       "direction": "down",
       "magnitude_pct": 2.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:47:32.707226",
       "baseline_price": 5.34,
       "baseline_source": "event_time",
       "status": "pending",
@@ -683,6 +911,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "美国以涉伊朗为由制裁中国企业，通常涉及能源贸易领域。中国石化作为与伊朗有石油贸易往来的大型央企，面临被列入制裁名单或供应链受阻的风险，市场短期会对其海外业务前景产生担忧。这是基于地缘制裁影响能源企业的新模式判断。",
+      "stop_loss_price": 5.4735,
+      "take_profit": {
+        "prices": [
+          5.1398,
+          5.0062,
+          4.806
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.1335,
+        "atr": 0.0668
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 200,
         "summary": "美国以涉伊朗为由制裁中国企业，中方表态反对",
@@ -699,6 +947,8 @@
     {
       "id": 87,
       "made_at": "2026-04-27T12:47:18.240515",
+      "expire_at": "2026-05-04T12:47:18.240515",
+      "verified_at": null,
       "asset": {
         "symbol": "LHA.DE",
         "name": "汉莎航空",
@@ -707,7 +957,6 @@
       "direction": "down",
       "magnitude_pct": 2.0,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:47:18.240515",
       "baseline_price": 7.2820000648498535,
       "baseline_source": "event_time",
       "status": "pending",
@@ -716,6 +965,59 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "俄伊高层会晤强调中东局势紧张，若局势进一步恶化可能影响海湾地区航油供应与中东航线运营。欧洲航司如汉莎对中东航线依赖度高，航油成本敏感。参考检索到的因果链id=96，海湾燃料供应风险会压制欧洲航司股价，此次地缘紧张信号可能提前触发类似担忧。",
+      "stop_loss_price": 7.4364,
+      "take_profit": {
+        "prices": [
+          7.0504,
+          6.8959,
+          6.6643
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.1544,
+        "atr": 0.0772
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": 0.3,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.3,
+        "log_odds": -0.847,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.0,
+        "signal_grade": "💤 D",
+        "evidence": [
+          {
+            "link_id": 96,
+            "pattern": "海湾地区航油/燃料供应中断→欧洲航空公司股价承压",
+            "asset": "LHA.DE",
+            "dir_hit_rate": 0.5,
+            "n_samples": 4,
+            "log_lr": 0.0,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "cited_link_ids": [
+        96
+      ],
+      "cited_chains": [
+        {
+          "id": 96,
+          "pattern": "海湾地区航油/燃料供应中断→欧洲航空公司股价承压",
+          "asset_symbol": "LHA.DE",
+          "direction": "down",
+          "horizon_days": 7,
+          "magnitude_pct": 4.0,
+          "grade": "C",
+          "retail_edge": "mid"
+        }
+      ],
       "event": {
         "id": 201,
         "summary": "俄罗斯总统普京会见伊朗外长讨论中东局势",
@@ -732,6 +1034,8 @@
     {
       "id": 86,
       "made_at": "2026-04-27T12:47:17.690459",
+      "expire_at": "2026-05-04T12:47:17.690459",
+      "verified_at": null,
       "asset": {
         "symbol": "GC=F",
         "name": "黄金期货",
@@ -740,7 +1044,6 @@
       "direction": "up",
       "magnitude_pct": 1.2,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:47:17.690459",
       "baseline_price": 4719.2001953125,
       "baseline_source": "event_time",
       "status": "pending",
@@ -749,6 +1052,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "俄伊领导人会晤聚焦中东紧张局势，投资者避险情绪升温。黄金作为传统避险资产，在地缘政治不确定性上升时往往获得资金流入。当前中东局势本就脆弱，此次会见被定义为'非常重要'，强化了冲突可能升级的市场预期。检索链未覆盖此类地缘外交事件对黄金的直接影响。",
+      "stop_loss_price": 4662.5698,
+      "take_profit": {
+        "prices": [
+          4804.1458,
+          4860.7762,
+          4945.7218
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 56.6304,
+        "atr": 28.3152
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 201,
         "summary": "俄罗斯总统普京会见伊朗外长讨论中东局势",
@@ -765,6 +1088,8 @@
     {
       "id": 85,
       "made_at": "2026-04-27T12:47:17.191630",
+      "expire_at": "2026-05-04T12:47:17.191630",
+      "verified_at": null,
       "asset": {
         "symbol": "CL=F",
         "name": "WTI原油期货",
@@ -773,7 +1098,6 @@
       "direction": "up",
       "magnitude_pct": 2.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:47:17.191630",
       "baseline_price": 95.98999786376953,
       "baseline_source": "event_time",
       "status": "pending",
@@ -782,6 +1106,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "俄罗斯与伊朗是全球主要产油国，两国高层会晤讨论中东局势会加剧市场对地缘冲突升级、石油供应中断的担忧。伊朗在霍尔木兹海峡的战略位置使任何紧张升级都可能威胁全球约20%的石油运输。此次会见表明俄伊协调立场，市场倾向于给油价计入地缘风险溢价。检索的因果链未直接覆盖俄伊高层会晤对油价的影响，属新模式。",
+      "stop_loss_price": 93.5902,
+      "take_profit": {
+        "prices": [
+          99.5896,
+          101.9894,
+          105.589
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.3997,
+        "atr": 1.1999
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 201,
         "summary": "俄罗斯总统普京会见伊朗外长讨论中东局势",
@@ -798,6 +1142,8 @@
     {
       "id": 84,
       "made_at": "2026-04-27T12:47:01.449473",
+      "expire_at": "2026-04-30T12:47:01.449473",
+      "verified_at": null,
       "asset": {
         "symbol": "BABA",
         "name": "阿里巴巴",
@@ -806,7 +1152,6 @@
       "direction": "down",
       "magnitude_pct": 1.5,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:47:01.449473",
       "baseline_price": 135.82000732421875,
       "baseline_source": "eod",
       "status": "pending",
@@ -815,6 +1160,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "中方对外资收购关键AI项目的限制信号可能引发海外投资者对中国科技监管收紧的担忧，中概股短期承压。阿里巴巴作为中概股龙头，对政策敏感度较高，可能面临短期资金流出压力。",
+      "stop_loss_price": 137.8573,
+      "take_profit": {
+        "prices": [
+          132.7641,
+          130.7268,
+          127.6708
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.0373,
+        "atr": 1.0187
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 202,
         "summary": "中国禁止外资收购Manus项目",
@@ -831,6 +1196,8 @@
     {
       "id": 83,
       "made_at": "2026-04-27T12:47:00.560227",
+      "expire_at": "2026-05-04T12:47:00.560227",
+      "verified_at": null,
       "asset": {
         "symbol": "300024.SZ",
         "name": "机器人",
@@ -839,7 +1206,6 @@
       "direction": "up",
       "magnitude_pct": 3.0,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:47:00.560227",
       "baseline_price": 14.8,
       "baseline_source": "event_time",
       "status": "pending",
@@ -848,6 +1214,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "Manus是备受关注的AI机器人项目，中方禁止外资收购意味着国内机器人产业将获得更多政策支持和发展空间。机器人（新松机器人）作为A股机器人板块的标杆企业，将直接受益于这一产业保护政策，市场情绪有望推动股价上涨。",
+      "stop_loss_price": 14.356,
+      "take_profit": {
+        "prices": [
+          15.466,
+          15.91,
+          16.576
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.444,
+        "atr": 0.222
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 202,
         "summary": "中国禁止外资收购Manus项目",
@@ -864,6 +1250,8 @@
     {
       "id": 82,
       "made_at": "2026-04-27T12:46:56.668320",
+      "expire_at": "2026-05-04T12:46:56.668320",
+      "verified_at": null,
       "asset": {
         "symbol": "002415.SZ",
         "name": "海康威视",
@@ -872,7 +1260,6 @@
       "direction": "up",
       "magnitude_pct": 2.5,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:46:56.668320",
       "baseline_price": 33.97,
       "baseline_source": "event_time",
       "status": "pending",
@@ -881,6 +1268,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "中方禁止外资收购Manus项目体现了对关键技术领域的保护政策，这将利好国内AI和机器人龙头企业。海康威视作为国内AI视觉和机器人领域的领军企业，在外资被限制进入的情况下，其市场地位和竞争优势将进一步巩固。此为新发现的因果模式，检索结果中无直接相关链条。",
+      "stop_loss_price": 33.1208,
+      "take_profit": {
+        "prices": [
+          35.2439,
+          36.0931,
+          37.367
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.8492,
+        "atr": 0.4246
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 202,
         "summary": "中国禁止外资收购Manus项目",
@@ -897,6 +1304,8 @@
     {
       "id": 81,
       "made_at": "2026-04-27T12:46:41.747120",
+      "expire_at": "2026-05-04T12:46:41.747120",
+      "verified_at": null,
       "asset": {
         "symbol": "EURUSD=X",
         "name": "欧元兑美元",
@@ -905,7 +1314,6 @@
       "direction": "up",
       "magnitude_pct": 0.4,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:46:41.747120",
       "baseline_price": 1.1750881671905518,
       "baseline_source": "event_time",
       "status": "pending",
@@ -914,6 +1322,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "欧洲股市走强反映经济前景乐观和资金流入欧洲，这通常支撑欧元汇率。投资者增持欧洲资产需要买入欧元，形成汇率上行压力。检索结果未包含欧洲股市与欧元汇率的联动关系，属新模式。",
+      "stop_loss_price": 1.1704,
+      "take_profit": {
+        "prices": [
+          1.1821,
+          1.1868,
+          1.1939
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0047,
+        "atr": 0.0024
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 203,
         "summary": "欧洲斯托克600指数上涨触及盘中高点",
@@ -930,6 +1358,8 @@
     {
       "id": 80,
       "made_at": "2026-04-27T12:46:40.611520",
+      "expire_at": "2026-04-30T12:46:40.611520",
+      "verified_at": null,
       "asset": {
         "symbol": "EZU",
         "name": "欧洲市场ETF",
@@ -938,7 +1368,6 @@
       "direction": "up",
       "magnitude_pct": 1.0,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:46:40.611520",
       "baseline_price": 66.51000213623047,
       "baseline_source": "eod",
       "status": "pending",
@@ -947,6 +1376,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "欧洲斯托克600指数创盘中新高直接反映欧洲股市动能强劲。EZU作为追踪欧元区大盘股的ETF将同步受益于这一上涨趋势。市场情绪改善和资金流入将在短期内延续涨势。检索结果未覆盖欧洲指数上涨的直接传导，属新模式。",
+      "stop_loss_price": 65.8449,
+      "take_profit": {
+        "prices": [
+          67.5077,
+          68.1728,
+          69.1704
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.6651,
+        "atr": 0.3326
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 203,
         "summary": "欧洲斯托克600指数上涨触及盘中高点",
@@ -963,6 +1412,8 @@
     {
       "id": 79,
       "made_at": "2026-04-27T12:46:39.897850",
+      "expire_at": "2026-04-30T12:46:39.897850",
+      "verified_at": null,
       "asset": {
         "symbol": "FXI",
         "name": "中国大盘股ETF",
@@ -971,7 +1422,6 @@
       "direction": "up",
       "magnitude_pct": 1.5,
       "horizon_days": 3,
-      "expire_at": "2026-04-30T12:46:39.897850",
       "baseline_price": 36.86000061035156,
       "baseline_source": "eod",
       "status": "pending",
@@ -980,6 +1430,59 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "欧洲斯托克600指数触及盘中高点反映全球风险偏好回升。根据检索到的因果链(id:62)，全球风险偏好提升时中国相关资产受益。欧洲市场走强通常带动全球股市联动上涨，中国大盘股ETF作为新兴市场风险资产将受到外资流入支撑。",
+      "stop_loss_price": 36.8068,
+      "take_profit": {
+        "prices": [
+          36.9397,
+          36.9929,
+          37.0726
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0532,
+        "atr": 0.0266
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.5172,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.5172,
+        "log_odds": 0.069,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.72,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 62,
+            "pattern": "美中高层会晤/贸易谈判取得进展",
+            "asset": "510300.SS",
+            "dir_hit_rate": 0.8,
+            "n_samples": 5,
+            "log_lr": 0.916,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "cited_link_ids": [
+        62
+      ],
+      "cited_chains": [
+        {
+          "id": 62,
+          "pattern": "美中高层会晤/贸易谈判取得进展",
+          "asset_symbol": "510300.SS",
+          "direction": "up",
+          "horizon_days": 3,
+          "magnitude_pct": 1.2,
+          "grade": "C",
+          "retail_edge": "mid"
+        }
+      ],
       "event": {
         "id": 203,
         "summary": "欧洲斯托克600指数上涨触及盘中高点",
@@ -996,6 +1499,8 @@
     {
       "id": 78,
       "made_at": "2026-04-27T12:46:27.547311",
+      "expire_at": "2026-05-04T12:46:27.547311",
+      "verified_at": null,
       "asset": {
         "symbol": "GC=F",
         "name": "黄金期货",
@@ -1004,7 +1509,6 @@
       "direction": "up",
       "magnitude_pct": 1.2,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:46:27.547311",
       "baseline_price": 4720.2998046875,
       "baseline_source": "event_time",
       "status": "pending",
@@ -1013,6 +1517,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "朝俄军事合作实质化加剧全球地缘政治不确定性，避险资金将流向黄金。朝鲜正式参与俄乌战争意味着冲突扩大化风险上升，可能引发更广泛的国际紧张局势，支撑金价走高。",
+      "stop_loss_price": 4663.6562,
+      "take_profit": {
+        "prices": [
+          4805.2652,
+          4861.9088,
+          4946.8742
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 56.6436,
+        "atr": 28.3218
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 204,
         "summary": "金正恩与俄罗斯高官向阵亡朝鲜士兵鞠躬，暗示朝俄军事合作深化",
@@ -1029,6 +1553,8 @@
     {
       "id": 77,
       "made_at": "2026-04-27T12:46:27.046407",
+      "expire_at": "2026-05-11T12:46:27.046407",
+      "verified_at": null,
       "asset": {
         "symbol": "067160.KQ",
         "name": "韩华航空航天",
@@ -1037,7 +1563,6 @@
       "direction": "up",
       "magnitude_pct": 3.5,
       "horizon_days": 14,
-      "expire_at": "2026-05-11T12:46:27.046407",
       "baseline_price": 60000.0,
       "baseline_source": "event_time",
       "status": "pending",
@@ -1046,6 +1571,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "朝俄军事同盟强化将刺激韩国加大国防开支，韩国主要防务承包商将受益。朝鲜士兵阵亡消息确认朝鲜深度介入俄乌冲突，韩国政府将面临更大压力提升军事能力，利好韩国国防股。",
+      "stop_loss_price": 57900.0,
+      "take_profit": {
+        "prices": [
+          63150.0,
+          65250.0,
+          68400.0
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2100.0,
+        "atr": 1050.0
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 204,
         "summary": "金正恩与俄罗斯高官向阵亡朝鲜士兵鞠躬，暗示朝俄军事合作深化",
@@ -1062,6 +1607,8 @@
     {
       "id": 76,
       "made_at": "2026-04-27T12:46:26.199702",
+      "expire_at": "2026-05-04T12:46:26.199702",
+      "verified_at": null,
       "asset": {
         "symbol": "USDKRW=X",
         "name": "美元/韩元汇率",
@@ -1070,7 +1617,6 @@
       "direction": "up",
       "magnitude_pct": 0.8,
       "horizon_days": 7,
-      "expire_at": "2026-05-04T12:46:26.199702",
       "baseline_price": 1471.010009765625,
       "baseline_source": "event_time",
       "status": "pending",
@@ -1079,6 +1625,26 @@
       "actual_magnitude_pct": null,
       "actual_direction": null,
       "reasoning": "朝俄军事合作深化加剧朝鲜半岛地缘紧张，市场避险情绪升温会导致韩元承压贬值。朝鲜士兵在俄作战并有阵亡确认，意味着朝俄军事同盟进入实质性阶段，韩国面临的安全威胁上升，资本可能流出韩国市场。",
+      "stop_loss_price": 1459.2419,
+      "take_profit": {
+        "prices": [
+          1488.6621,
+          1500.4302,
+          1518.0823
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 11.7681,
+        "atr": 5.884
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
       "event": {
         "id": 204,
         "summary": "金正恩与俄罗斯高官向阵亡朝鲜士兵鞠躬，暗示朝俄军事合作深化",

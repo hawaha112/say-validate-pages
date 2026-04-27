@@ -1,6 +1,8 @@
 {
   "id": 73,
   "made_at": "2026-04-27T12:46:01.700462",
+  "expire_at": "2026-05-04T12:46:01.700462",
+  "verified_at": null,
   "asset": {
     "symbol": "KWEB",
     "name": "中概互联ETF",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 0.8,
   "horizon_days": 7,
-  "expire_at": "2026-05-04T12:46:01.700462",
   "baseline_price": 28.829999923706055,
   "baseline_source": "eod",
   "status": "pending",
@@ -18,6 +19,26 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "小红书主动建立AI治理框架，显示中国互联网平台在AI监管方面走向规范化和自律化，这降低了市场对中国科技平台面临突发监管风险的担忧。对整体中概互联网板块形成温和利好，但影响较为间接和有限。此为新发现的市场模式。",
+  "stop_loss_price": 28.5994,
+  "take_profit": {
+    "prices": [
+      29.176,
+      29.4066,
+      29.7526
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.2306,
+    "atr": 0.1153
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 206,
     "summary": "小红书首次发布AI内容治理主张，明确鼓励和反对的AI行为规范",

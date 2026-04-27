@@ -1,6 +1,8 @@
 {
   "id": 104,
   "made_at": "2026-04-27T12:49:17.244906",
+  "expire_at": "2026-05-11T12:49:17.244906",
+  "verified_at": null,
   "asset": {
     "symbol": "LMT",
     "name": "洛克希德·马丁（美国国防股）",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 2.0,
   "horizon_days": 14,
-  "expire_at": "2026-05-11T12:49:17.244906",
   "baseline_price": 513.4500122070312,
   "baseline_source": "eod",
   "status": "pending",
@@ -18,6 +19,26 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "美日菲联合军演及中国海军强势回应凸显亚太军备竞赛加剧，将推动美国及盟国增加国防开支预期。洛克希德·马丁作为全球最大军工企业，在F-35战斗机及导弹防御系统领域拥有核心地位，地缘紧张直接利好其订单前景。检索因果链未覆盖此模式，属新发现。",
+  "stop_loss_price": 503.181,
+  "take_profit": {
+    "prices": [
+      528.8535,
+      539.1225,
+      554.526
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 10.269,
+    "atr": 5.1345
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 186,
     "summary": "中国海军监视美日菲联合军演，南海地缘紧张升级",

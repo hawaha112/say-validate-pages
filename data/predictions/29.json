@@ -1,6 +1,8 @@
 {
   "id": 29,
   "made_at": "2026-04-16T19:16:42.564583",
+  "expire_at": "2026-04-23T19:16:42.564583",
+  "verified_at": "2026-04-27T12:26:36.353369",
   "asset": {
     "symbol": "XLE",
     "name": "能源板块ETF",
@@ -9,15 +11,42 @@
   "direction": "up",
   "magnitude_pct": 2.0,
   "horizon_days": 7,
-  "expire_at": "2026-04-23T19:16:42.564583",
   "baseline_price": 56.584999084472656,
   "baseline_source": null,
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
+  "status": "verified",
+  "hit": true,
+  "hit_breakdown": {
+    "dir_hit": true,
+    "mag_hit": true,
+    "strict_hit": true,
+    "mag_err_rel": 0.748166605970384,
+    "mag_err_bucket": "<=100%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": 0.5036667880592322,
+  "actual_direction": "up",
   "reasoning": "油价隐性成本(馏分油裂解价差)创历史新高意味着炼厂与综合油气公司下游毛利显著扩张，直接利好能源板块业绩预期。市场在关注地缘和平而低估该结构性利多，修复时会推高XLE。属新模式，未匹配到现有因果链。",
+  "stop_loss_price": 55.4533,
+  "take_profit": {
+    "prices": [
+      58.2825,
+      59.4142,
+      61.1118
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 1.1317,
+    "atr": 0.5658
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 7,
     "summary": "油价隐性成本创历史新高，或推高居民电费",

@@ -1,6 +1,8 @@
 {
   "id": 5,
   "made_at": "2026-04-16T19:13:10.815375",
+  "expire_at": "2026-04-23T19:13:10.815375",
+  "verified_at": "2026-04-27T12:26:36.353369",
   "asset": {
     "symbol": "GC=F",
     "name": "黄金期货",
@@ -9,15 +11,75 @@
   "direction": "up",
   "magnitude_pct": 3.5,
   "horizon_days": 7,
-  "expire_at": "2026-04-23T19:13:10.815375",
   "baseline_price": 4814.60009765625,
   "baseline_source": null,
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": true,
+    "strict_hit": false,
+    "mag_err_rel": 0.47125056614107713,
+    "mag_err_bucket": "<=50%",
+    "tol_used": 0.95,
+    "asset_class": "commodity"
+  },
+  "actual_magnitude_pct": -1.85062301850623,
+  "actual_direction": "down",
   "reasoning": "美以对伊朗开战引发剧烈避险情绪，黄金作为终极避险资产将获资金流入，逻辑与链94（停摆/债务违约推升黄金避险需求）一致，但战争冲击力度更强，因此幅度略高于停摆场景。",
+  "stop_loss_price": 4789.8422,
+  "take_profit": {
+    "prices": [
+      4851.7369,
+      4876.4948,
+      4913.6317
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 24.7579,
+    "atr": 12.3789
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.72,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.72,
+    "log_odds": 0.944,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.4,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 94,
+        "pattern": "美国政府停摆 / 债务上限临近违约",
+        "asset": "GC=F",
+        "dir_hit_rate": 1.0,
+        "n_samples": 5,
+        "log_lr": 1.792,
+        "grade": "A"
+      }
+    ],
+    "note": ""
+  },
+  "cited_link_ids": [
+    94
+  ],
+  "cited_chains": [
+    {
+      "id": 94,
+      "pattern": "美国政府停摆 / 债务上限临近违约",
+      "asset_symbol": "GC=F",
+      "direction": "up",
+      "horizon_days": 7,
+      "magnitude_pct": 2.0,
+      "grade": "A",
+      "retail_edge": "mid"
+    }
+  ],
   "event": {
     "id": 16,
     "summary": "美国与以色列联合对伊朗开战，地缘政治冲突爆发，推高避险与能源资产",

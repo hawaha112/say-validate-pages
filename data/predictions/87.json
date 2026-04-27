@@ -1,6 +1,8 @@
 {
   "id": 87,
   "made_at": "2026-04-27T12:47:18.240515",
+  "expire_at": "2026-05-04T12:47:18.240515",
+  "verified_at": null,
   "asset": {
     "symbol": "LHA.DE",
     "name": "汉莎航空",
@@ -9,7 +11,6 @@
   "direction": "down",
   "magnitude_pct": 2.0,
   "horizon_days": 7,
-  "expire_at": "2026-05-04T12:47:18.240515",
   "baseline_price": 7.2820000648498535,
   "baseline_source": "event_time",
   "status": "pending",
@@ -18,6 +19,59 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "俄伊高层会晤强调中东局势紧张，若局势进一步恶化可能影响海湾地区航油供应与中东航线运营。欧洲航司如汉莎对中东航线依赖度高，航油成本敏感。参考检索到的因果链id=96，海湾燃料供应风险会压制欧洲航司股价，此次地缘紧张信号可能提前触发类似担忧。",
+  "stop_loss_price": 7.4364,
+  "take_profit": {
+    "prices": [
+      7.0504,
+      6.8959,
+      6.6643
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.1544,
+    "atr": 0.0772
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": 0.3,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.3,
+    "log_odds": -0.847,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 1.0,
+    "signal_grade": "💤 D",
+    "evidence": [
+      {
+        "link_id": 96,
+        "pattern": "海湾地区航油/燃料供应中断→欧洲航空公司股价承压",
+        "asset": "LHA.DE",
+        "dir_hit_rate": 0.5,
+        "n_samples": 4,
+        "log_lr": 0.0,
+        "grade": "C"
+      }
+    ],
+    "note": ""
+  },
+  "cited_link_ids": [
+    96
+  ],
+  "cited_chains": [
+    {
+      "id": 96,
+      "pattern": "海湾地区航油/燃料供应中断→欧洲航空公司股价承压",
+      "asset_symbol": "LHA.DE",
+      "direction": "down",
+      "horizon_days": 7,
+      "magnitude_pct": 4.0,
+      "grade": "C",
+      "retail_edge": "mid"
+    }
+  ],
   "event": {
     "id": 201,
     "summary": "俄罗斯总统普京会见伊朗外长讨论中东局势",

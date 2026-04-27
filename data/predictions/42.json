@@ -1,6 +1,8 @@
 {
   "id": 42,
   "made_at": "2026-04-16T19:18:32.469783",
+  "expire_at": "2026-04-19T19:18:32.469783",
+  "verified_at": "2026-04-22T12:45:07.425810",
   "asset": {
     "symbol": "SMH",
     "name": "半导体ETF",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 1.5,
   "horizon_days": 3,
-  "expire_at": "2026-04-19T19:18:32.469783",
   "baseline_price": 454.25,
   "baseline_source": null,
   "status": "verified",
@@ -26,6 +27,26 @@
   "actual_magnitude_pct": 2.29169040442694,
   "actual_direction": "up",
   "reasoning": "AMD作为半导体权重股走强会外溢至整个半导体板块，强化AI与数据中心景气主线。检索到的因果链均聚焦A股，未覆盖美股半导体板块联动，故记为新模式。",
+  "stop_loss_price": 447.4362,
+  "take_profit": {
+    "prices": [
+      464.4706,
+      471.2844,
+      481.505
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 6.8138,
+    "atr": 3.4069
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 2,
     "summary": "AMD服务器CPU业务重获投资者青睐，股票表现迎来近二十年最佳走势",

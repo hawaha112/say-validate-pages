@@ -1,6 +1,8 @@
 {
   "id": 82,
   "made_at": "2026-04-27T12:46:56.668320",
+  "expire_at": "2026-05-04T12:46:56.668320",
+  "verified_at": null,
   "asset": {
     "symbol": "002415.SZ",
     "name": "海康威视",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 2.5,
   "horizon_days": 7,
-  "expire_at": "2026-05-04T12:46:56.668320",
   "baseline_price": 33.97,
   "baseline_source": "event_time",
   "status": "pending",
@@ -18,6 +19,26 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "中方禁止外资收购Manus项目体现了对关键技术领域的保护政策，这将利好国内AI和机器人龙头企业。海康威视作为国内AI视觉和机器人领域的领军企业，在外资被限制进入的情况下，其市场地位和竞争优势将进一步巩固。此为新发现的因果模式，检索结果中无直接相关链条。",
+  "stop_loss_price": 33.1208,
+  "take_profit": {
+    "prices": [
+      35.2439,
+      36.0931,
+      37.367
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.8492,
+    "atr": 0.4246
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 202,
     "summary": "中国禁止外资收购Manus项目",

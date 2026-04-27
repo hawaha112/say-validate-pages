@@ -1,6 +1,8 @@
 {
   "id": 84,
   "made_at": "2026-04-27T12:47:01.449473",
+  "expire_at": "2026-04-30T12:47:01.449473",
+  "verified_at": null,
   "asset": {
     "symbol": "BABA",
     "name": "阿里巴巴",
@@ -9,7 +11,6 @@
   "direction": "down",
   "magnitude_pct": 1.5,
   "horizon_days": 3,
-  "expire_at": "2026-04-30T12:47:01.449473",
   "baseline_price": 135.82000732421875,
   "baseline_source": "eod",
   "status": "pending",
@@ -18,6 +19,26 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "中方对外资收购关键AI项目的限制信号可能引发海外投资者对中国科技监管收紧的担忧，中概股短期承压。阿里巴巴作为中概股龙头，对政策敏感度较高，可能面临短期资金流出压力。",
+  "stop_loss_price": 137.8573,
+  "take_profit": {
+    "prices": [
+      132.7641,
+      130.7268,
+      127.6708
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 2.0373,
+    "atr": 1.0187
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 202,
     "summary": "中国禁止外资收购Manus项目",

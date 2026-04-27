@@ -1,6 +1,8 @@
 {
   "id": 28,
   "made_at": "2026-04-16T19:16:41.612172",
+  "expire_at": "2026-04-30T19:16:41.612172",
+  "verified_at": null,
   "asset": {
     "symbol": "XLU",
     "name": "公用事业行业ETF",
@@ -9,7 +11,6 @@
   "direction": "down",
   "magnitude_pct": 1.5,
   "horizon_days": 14,
-  "expire_at": "2026-04-30T19:16:41.612172",
   "baseline_price": 46.165000915527344,
   "baseline_source": null,
   "status": "pending",
@@ -18,6 +19,26 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "新闻指出油价的隐性成本(如柴油/馏分油裂解价差、运输与发电燃料成本)创历史新高，将传导至居民电费。公用事业公司短期内受限于费率审批，难以立刻转嫁燃料成本，利润率受挤压，股价承压。检索到的因果链均不涉及能源-电力传导链，属新模式。",
+  "stop_loss_price": 46.8575,
+  "take_profit": {
+    "prices": [
+      45.1263,
+      44.4338,
+      43.3951
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.6925,
+    "atr": 0.3462
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 7,
     "summary": "油价隐性成本创历史新高，或推高居民电费",

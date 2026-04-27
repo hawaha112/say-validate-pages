@@ -1,6 +1,8 @@
 {
   "id": 23,
   "made_at": "2026-04-16T19:15:48.090840",
+  "expire_at": "2026-04-23T19:15:48.090840",
+  "verified_at": "2026-04-27T12:26:36.353369",
   "asset": {
     "symbol": "META",
     "name": "Meta平台",
@@ -9,15 +11,42 @@
   "direction": "up",
   "magnitude_pct": 1.5,
   "horizon_days": 7,
-  "expire_at": "2026-04-23T19:15:48.090840",
   "baseline_price": 673.4298706054688,
   "baseline_source": null,
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
+  "status": "verified",
+  "hit": true,
+  "hit_breakdown": {
+    "dir_hit": true,
+    "mag_hit": true,
+    "strict_hit": true,
+    "mag_err_rel": 0.8415911578174601,
+    "mag_err_bucket": "<=100%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": 0.23761326327380994,
+  "actual_direction": "up",
   "reasoning": "Snap裁员并押注AI提效会强化市场对广告类科技公司走'效率年'路线的预期，作为社交广告同业且AI投入更深的Meta容易获得情绪外溢和估值抬升。此关系不在检索到的因果链中，属于新模式。",
+  "stop_loss_price": 663.3284,
+  "take_profit": {
+    "prices": [
+      688.582,
+      698.6835,
+      713.8357
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 10.1014,
+    "atr": 5.0507
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 9,
     "summary": "Snap宣布裁员1000人，受激进投资者施压并押注AI提效",

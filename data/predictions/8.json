@@ -1,6 +1,8 @@
 {
   "id": 8,
   "made_at": "2026-04-16T19:13:32.630233",
+  "expire_at": "2026-04-23T19:13:32.630233",
+  "verified_at": "2026-04-27T12:26:36.353369",
   "asset": {
     "symbol": "^FTSE",
     "name": "英国富时100指数",
@@ -9,15 +11,42 @@
   "direction": "up",
   "magnitude_pct": 1.0,
   "horizon_days": 7,
-  "expire_at": "2026-04-23T19:13:32.630233",
   "baseline_price": 10589.990234375,
   "baseline_source": null,
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": 0.9709244154682479,
+    "mag_err_bucket": "<=100%",
+    "tol_used": 0.94,
+    "asset_class": "index"
+  },
+  "actual_magnitude_pct": -1.970924415468248,
+  "actual_direction": "down",
   "reasoning": "GDP超预期显示内需与服务业韧性，利好英国本土周期股与银行股盈利预期，富时100短期风险偏好上行。但由于新闻提及随后爆发美伊战争的外部冲击，涨幅受限，因此给出较温和幅度。该传导未在检索结果中覆盖，属新模式。",
+  "stop_loss_price": 10484.0903,
+  "take_profit": {
+    "prices": [
+      10748.8401,
+      10854.74,
+      11013.5898
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 105.8999,
+    "atr": 52.95
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 15,
     "summary": "英国2月GDP增速超预期，创两年多来最大单月涨幅",

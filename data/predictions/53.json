@@ -1,6 +1,8 @@
 {
   "id": 53,
   "made_at": "2026-04-27T12:44:06.902753",
+  "expire_at": "2026-05-11T12:44:06.902753",
+  "verified_at": null,
   "asset": {
     "symbol": "TSN",
     "name": "泰森食品",
@@ -9,7 +11,6 @@
   "direction": "down",
   "magnitude_pct": 2.5,
   "horizon_days": 14,
-  "expire_at": "2026-05-11T12:44:06.902753",
   "baseline_price": 64.02999877929688,
   "baseline_source": "eod",
   "status": "pending",
@@ -18,6 +19,26 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "白宫正式调查肉类价格高企，意味着政府可能对肉类加工商施压或出台限价措施。泰森食品作为美国最大肉类加工企业，将直接面临监管审查和定价权受限的风险，市场会提前反映利润率压缩预期。这是检索结果中未覆盖的新因果模式。",
+  "stop_loss_price": 65.6307,
+  "take_profit": {
+    "prices": [
+      61.6289,
+      60.0281,
+      57.627
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 1.6007,
+    "atr": 0.8004
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 213,
     "summary": "特朗普政府调查肉类价格高企问题",

@@ -1,6 +1,8 @@
 {
   "id": 58,
   "made_at": "2026-04-27T12:44:29.127475",
+  "expire_at": "2026-04-30T12:44:29.127475",
+  "verified_at": null,
   "asset": {
     "symbol": "002459",
     "name": "晶澳科技",
@@ -9,7 +11,6 @@
   "direction": "down",
   "magnitude_pct": 2.0,
   "horizon_days": 3,
-  "expire_at": "2026-04-30T12:44:29.127475",
   "baseline_price": null,
   "baseline_source": "live_fallback",
   "status": "pending",
@@ -18,6 +19,13 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "阳光电源业绩大幅下滑揭示光伏行业整体面临价格战和产能过剩压力，晶澳科技作为光伏组件龙头同样面临类似的盈利压力，市场将重新评估光伏板块估值，短期承压下行。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 212,
     "summary": "阳光电源一季度净利润同比下降40.12%，营收同比下降18.26%",

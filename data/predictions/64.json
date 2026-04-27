@@ -1,6 +1,8 @@
 {
   "id": 64,
   "made_at": "2026-04-27T12:45:11.719654",
+  "expire_at": "2026-04-30T12:45:11.719654",
+  "verified_at": null,
   "asset": {
     "symbol": "002460.SZ",
     "name": "赣锋锂业",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 3.5,
   "horizon_days": 3,
-  "expire_at": "2026-04-30T12:45:11.719654",
   "baseline_price": 84.11,
   "baseline_source": "event_time",
   "status": "pending",
@@ -18,6 +19,26 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "赣锋锂业与天齐锂业同为锂资源双寡头，天齐锂业业绩暴增将引发市场对赣锋锂业同样实现业绩高增长的预期。板块联动效应下，投资者会对同业公司进行估值重估，推动股价上行。",
+  "stop_loss_price": 81.1662,
+  "take_profit": {
+    "prices": [
+      88.5258,
+      91.4696,
+      95.8854
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 2.9438,
+    "atr": 1.4719
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 210,
     "summary": "天齐锂业一季度净利润18.76亿元，同比暴增1699%",

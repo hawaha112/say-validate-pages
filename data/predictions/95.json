@@ -1,6 +1,8 @@
 {
   "id": 95,
   "made_at": "2026-04-27T12:47:56.482363",
+  "expire_at": "2026-05-11T12:47:56.482363",
+  "verified_at": null,
   "asset": {
     "symbol": "000538",
     "name": "云南白药",
@@ -9,7 +11,6 @@
   "direction": "up",
   "magnitude_pct": 2.8,
   "horizon_days": 14,
-  "expire_at": "2026-05-11T12:47:56.482363",
   "baseline_price": null,
   "baseline_source": "live_fallback",
   "status": "pending",
@@ -18,6 +19,13 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "reasoning": "中医药服务贸易融合发展试点政策将推动中药产品和服务的国际化进程。云南白药作为中国知名中药品牌，在东南亚等地区有较好的市场基础，试点政策有望促进其海外业务拓展和品牌价值提升。此为中医药政策利好新模式。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
   "event": {
     "id": 198,
     "summary": "六部门推动中医药服务消费与贸易融合发展，18个地区成为试点",

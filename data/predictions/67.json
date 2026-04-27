@@ -1,0 +1,33 @@
+{
+  "id": 67,
+  "made_at": "2026-04-27T12:45:33.050177",
+  "asset": {
+    "symbol": "CL=F",
+    "name": "WTI原油期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.5,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:45:33.050177",
+  "baseline_price": 95.87000274658203,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "默茨的表态意味着伊朗冲突可能旷日持久，中东原油供应中断风险溢价将持续存在。伊朗作为OPEC重要产油国，任何军事升级都将威胁霍尔木兹海峡通行安全，推升油价。市场将重新定价地缘风险溢价。",
+  "event": {
+    "id": 208,
+    "summary": "德国总理默茨称暂未看到美国在伊朗战争中的退出战略",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "德国总理：暂未看到美方在伊朗战争中的退出战略",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094982",
+    "published_at": "2026-04-27T11:35:07"
+  }
+}

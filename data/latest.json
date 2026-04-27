@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-22T13:43:54.645724",
+  "generated_at": "2026-04-27T12:50:00.329619",
   "stats": {
-    "generated_at": "2026-04-22T13:43:54.165382",
+    "generated_at": "2026-04-27T12:49:59.862572",
     "kb_summary": {
-      "n_links_active": 300,
+      "n_links_active": 346,
       "n_strong": 167,
       "n_strong_rigorous": 37,
       "rigor_thresholds": {
@@ -17,7 +17,7 @@
       "n_weak": 8,
       "n_retire_candidate": 0,
       "n_flip_candidate": 0,
-      "n_insufficient_data": 125,
+      "n_insufficient_data": 171,
       "strong_avg_dir_hit_rate": 0.798,
       "n_instances_total": 1937,
       "n_instances_with_price_path": 1903,
@@ -34,42 +34,37 @@
         "corporate_sector": 30,
         "crypto_market": 13,
         "financial_stress": 26,
-        "market_stress": 2
+        "market_stress": 2,
+        "other": 46
       }
     },
-    "total": 49,
-    "verified": 17,
-    "pending": 32,
+    "total": 56,
+    "verified": 0,
+    "pending": 56,
     "pending_past_expire": 0,
     "expired_no_data": 0,
-    "hit_rate": 0.29411764705882354,
-    "hit_rate_strict": 0.29411764705882354,
-    "hit_rate_honest": 0.29411764705882354,
+    "hit_rate": null,
+    "hit_rate_strict": null,
+    "hit_rate_honest": null,
     "hit_rate_denominator": {
-      "strict": 17,
-      "honest": 17,
+      "strict": 0,
+      "honest": 0,
       "note": "strict counts only verified predictions; honest treats expired_no_data and past-expire pending as misses (they're predictions the system couldn't score, not omissions)"
     },
     "hit_breakdown_summary": {
-      "n": 17,
-      "dir_hit_rate": 0.29411764705882354,
-      "mag_hit_rate": 0.8823529411764706,
-      "strict_hit_rate": 0.29411764705882354,
-      "mag_err_bucket_counts": {
-        "<=50%": 6,
-        "<=100%": 7,
-        "<=10%": 1,
-        ">100%": 2,
-        "<=25%": 1
-      }
+      "n": 0,
+      "dir_hit_rate": null,
+      "mag_hit_rate": null,
+      "strict_hit_rate": null,
+      "mag_err_bucket_counts": {}
     },
     "hit_rate_vs_random": {
       "lookback_days": 30,
-      "n_verified": 17,
-      "actual_dir_hit_rate": 0.29411764705882354,
-      "random_dir_hit_rate": 0.7058823529411765,
-      "actual_strict_hit_rate": 0.29411764705882354,
-      "random_strict_hit_rate": 0.7058823529411765
+      "n_verified": 38,
+      "actual_dir_hit_rate": 0.4473684210526316,
+      "random_dir_hit_rate": 0.4473684210526316,
+      "actual_strict_hit_rate": 0.3684210526315789,
+      "random_strict_hit_rate": 0.3157894736842105
     },
     "kb_vs_random": {
       "n_instances": 1912,
@@ -83,8 +78,8 @@
     "freeze": {
       "date": "2026-04-19",
       "pre_freeze": {
-        "n_verified": 17,
-        "hit_rate_strict": 0.29411764705882354,
+        "n_verified": 0,
+        "hit_rate_strict": null,
         "note": "built before KB freeze; treat as training/in-sample"
       },
       "post_freeze": {
@@ -94,1127 +89,1007 @@
       }
     },
     "by_class": {
-      "us_stock": 36,
-      "commodity": 6,
-      "crypto": 2,
-      "fx": 2,
-      "index": 2,
-      "unknown": 1
+      "commodity": 9,
+      "us_stock": 16,
+      "a_stock": 27,
+      "fx": 3,
+      "index": 1
     },
     "baseline_source_distribution": {
-      "event_time": 5,
-      "unknown": 44
+      "event_time": 22,
+      "eod": 11,
+      "live_fallback": 23
     }
   },
   "recent_predictions": [
     {
-      "id": 49,
-      "made_at": "2026-04-17T16:20:59.884091",
+      "id": 105,
+      "made_at": "2026-04-27T12:49:17.704434",
       "asset": {
-        "symbol": "HYG",
-        "name": "iShares高收益公司债ETF",
-        "class": "us_stock"
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
       },
       "direction": "up",
-      "magnitude_pct": 0.5,
+      "magnitude_pct": 1.2,
       "horizon_days": 7,
-      "expire_at": "2026-04-24T16:20:59.884091",
-      "baseline_price": 80.75499725341797,
+      "expire_at": "2026-05-04T12:49:17.704434",
+      "baseline_price": 4717.89990234375,
       "baseline_source": "event_time",
       "status": "pending",
       "hit": null,
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "reasoning": "大型AI债券发行扩容并被超额认购，反映高收益债市场风险偏好旺盛、利差收窄，HYG作为高收益债代表ETF将小幅受益。检索结果未涉及该因果链，属新模式。",
+      "reasoning": "南海地缘紧张升级触发避险情绪，资金倾向流入黄金等传统避险资产。中国海军围观美日菲军演的强势姿态加剧市场对区域冲突风险的担忧，短期内支撑金价。检索因果链虽提及地区银行危机推动黄金避险，但地缘冲突驱动的避险逻辑为新模式。",
       "event": {
-        "id": 3,
-        "summary": "CoreWeave将高收益债券发行规模扩大至27.5亿美元，超额认购显示AI基础设施债务受市场追捧",
-        "category": "tech"
+        "id": 186,
+        "summary": "中国海军监视美日菲联合军演，南海地缘紧张升级",
+        "category": "geopolitics"
       },
       "news": {
-        "title": "CoreWeave upsizes bond deal for an additional $1 billion. AI debt is in vogue.",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/coreweave-upsizes-bond-deal-for-additional-1-billion-ai-debt-is-in-vogue-c4bafa5c?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T17:04:00"
+        "title": "中国海军强势“围观”美日菲军演",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633285262159711770/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633285262159711770%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E5%9B%BD%E6%B5%B7%E5%86%9B%E5%BC%BA%E5%8A%BF%E2%80%9C%E5%9B%B4%E8%A7%82%E2%80%9D%E7%BE%8E%E6%97%A5%E8%8F%B2%E5%86%9B%E6%BC%94%22%7D&rank=&style_id=40132&topic_id=7633285262159711770",
+        "published_at": "2026-04-27T12:36:50.016569"
       }
     },
     {
-      "id": 48,
-      "made_at": "2026-04-17T16:20:58.870383",
+      "id": 104,
+      "made_at": "2026-04-27T12:49:17.244906",
       "asset": {
-        "symbol": "NVDA",
-        "name": "英伟达",
+        "symbol": "LMT",
+        "name": "洛克希德·马丁（美国国防股）",
         "class": "us_stock"
       },
       "direction": "up",
       "magnitude_pct": 2.0,
-      "horizon_days": 7,
-      "expire_at": "2026-04-24T16:20:58.870383",
-      "baseline_price": 200.64500427246094,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "reasoning": "CoreWeave债券超募显示AI数据中心资本开支融资通道畅通，作为其最大GPU供应商，英伟达将受益于AI基建持续扩张的资本支出预期。此为检索库中未覆盖的新模式，反映AI债务融资对上游芯片的传导。",
-      "event": {
-        "id": 3,
-        "summary": "CoreWeave将高收益债券发行规模扩大至27.5亿美元，超额认购显示AI基础设施债务受市场追捧",
-        "category": "tech"
-      },
-      "news": {
-        "title": "CoreWeave upsizes bond deal for an additional $1 billion. AI debt is in vogue.",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/coreweave-upsizes-bond-deal-for-additional-1-billion-ai-debt-is-in-vogue-c4bafa5c?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T17:04:00"
-      }
-    },
-    {
-      "id": 47,
-      "made_at": "2026-04-17T16:20:58.109988",
-      "asset": {
-        "symbol": "CRWV",
-        "name": "CoreWeave股票",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 4.0,
-      "horizon_days": 3,
-      "expire_at": "2026-04-20T16:20:58.109988",
-      "baseline_price": 117.68009948730469,
-      "baseline_source": "event_time",
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": true,
-        "strict_hit": false,
-        "mag_err_rel": 0.46462999347923306,
-        "mag_err_bucket": "<=50%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": -2.1414800260830678,
-      "actual_direction": "down",
-      "reasoning": "CoreWeave高收益债超额认购并扩容至27.5亿美元，反映投资者对其AI基础设施业务信用和现金流预期强劲，融资成本改善和资本开支可持续性提升将直接利好股价短期表现。检索结果中无直接对应的因果链，此为新模式。",
-      "event": {
-        "id": 3,
-        "summary": "CoreWeave将高收益债券发行规模扩大至27.5亿美元，超额认购显示AI基础设施债务受市场追捧",
-        "category": "tech"
-      },
-      "news": {
-        "title": "CoreWeave upsizes bond deal for an additional $1 billion. AI debt is in vogue.",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/coreweave-upsizes-bond-deal-for-additional-1-billion-ai-debt-is-in-vogue-c4bafa5c?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T17:04:00"
-      }
-    },
-    {
-      "id": 46,
-      "made_at": "2026-04-17T16:20:42.477164",
-      "asset": {
-        "symbol": "BIRD",
-        "name": "Allbirds股票",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 40.0,
-      "horizon_days": 30,
-      "expire_at": "2026-05-17T16:20:42.477164",
-      "baseline_price": 10.90999984741211,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "reasoning": "剥离原有鞋类业务后，公司营收几乎归零，而AI基础设施需要长期重资本投入，短期难以兑现业绩。随着炒作热度消退、稀释性融资风险以及可能的监管问询，30天维度估值将大幅回归。该情景不在检索到的宏观因果链内，判定为新模式。",
-      "event": {
-        "id": 11,
-        "summary": "Allbirds宣布放弃鞋类品牌转型AI技术基础设施，股价单日暴涨580%",
-        "category": "tech"
-      },
-      "news": {
-        "title": "Allbirds shares soar 580% after pivot from shoes to AI",
-        "source": "bbc",
-        "lang": "en",
-        "url": "https://www.bbc.com/news/articles/c98mrepzgj7o?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-04-16T01:58:56"
-      }
-    },
-    {
-      "id": 45,
-      "made_at": "2026-04-17T16:20:41.822025",
-      "asset": {
-        "symbol": "BIRD",
-        "name": "Allbirds股票",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 25.0,
-      "horizon_days": 7,
-      "expire_at": "2026-04-24T16:20:41.822025",
-      "baseline_price": 10.90999984741211,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "reasoning": "单日暴涨580%主要由meme式投机和转型AI的炒作驱动，而非基本面支撑。公司剥离核心鞋类业务、尚未验证AI基础设施能力，短期内获利回吐和情绪降温会带来明显回调。检索到的因果链均针对宏观事件，无直接匹配模式，故作为新模式处理。",
-      "event": {
-        "id": 11,
-        "summary": "Allbirds宣布放弃鞋类品牌转型AI技术基础设施，股价单日暴涨580%",
-        "category": "tech"
-      },
-      "news": {
-        "title": "Allbirds shares soar 580% after pivot from shoes to AI",
-        "source": "bbc",
-        "lang": "en",
-        "url": "https://www.bbc.com/news/articles/c98mrepzgj7o?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-04-16T01:58:56"
-      }
-    },
-    {
-      "id": 44,
-      "made_at": "2026-04-16T19:18:49.232472",
-      "asset": {
-        "symbol": "REX",
-        "name": "REX美国资源公司",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 3.5,
       "horizon_days": 14,
-      "expire_at": "2026-04-30T19:18:49.232472",
-      "baseline_price": 43.43000030517578,
-      "baseline_source": null,
+      "expire_at": "2026-05-11T12:49:17.244906",
+      "baseline_price": 513.4500122070312,
+      "baseline_source": "eod",
       "status": "pending",
       "hit": null,
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "reasoning": "财报超预期的利好效应通常具备持续性，分析师上调盈利预测与机构加仓会在2-3周内推动股价继续走高，即所谓的盈余公告后漂移（PEAD）效应。此模式未在检索结果中出现，故标记为新模式。",
+      "reasoning": "美日菲联合军演及中国海军强势回应凸显亚太军备竞赛加剧，将推动美国及盟国增加国防开支预期。洛克希德·马丁作为全球最大军工企业，在F-35战斗机及导弹防御系统领域拥有核心地位，地缘紧张直接利好其订单前景。检索因果链未覆盖此模式，属新发现。",
       "event": {
-        "id": 1,
-        "summary": "REX美国资源公司2025财年第四季度业绩大幅超预期",
-        "category": "earnings"
+        "id": 186,
+        "summary": "中国海军监视美日菲联合军演，南海地缘紧张升级",
+        "category": "geopolitics"
       },
       "news": {
-        "title": "REX: Monster Earnings Beat to End Fiscal 2025 – Quarterly Update Report",
-        "source": "yahoo_finance",
-        "lang": "en",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/rex-monster-earnings-beat-end-083051662.html",
-        "published_at": "2026-04-15T08:30:51"
+        "title": "中国海军强势“围观”美日菲军演",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633285262159711770/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633285262159711770%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E5%9B%BD%E6%B5%B7%E5%86%9B%E5%BC%BA%E5%8A%BF%E2%80%9C%E5%9B%B4%E8%A7%82%E2%80%9D%E7%BE%8E%E6%97%A5%E8%8F%B2%E5%86%9B%E6%BC%94%22%7D&rank=&style_id=40132&topic_id=7633285262159711770",
+        "published_at": "2026-04-27T12:36:50.016569"
       }
     },
     {
-      "id": 43,
-      "made_at": "2026-04-16T19:18:48.580429",
+      "id": 103,
+      "made_at": "2026-04-27T12:49:16.340617",
       "asset": {
-        "symbol": "REX",
-        "name": "REX美国资源公司",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 6.0,
-      "horizon_days": 3,
-      "expire_at": "2026-04-19T19:18:48.580429",
-      "baseline_price": 43.43000030517578,
-      "baseline_source": null,
-      "status": "verified",
-      "hit": true,
-      "hit_breakdown": {
-        "dir_hit": true,
-        "mag_hit": true,
-        "strict_hit": true,
-        "mag_err_rel": 0.4166856830597638,
-        "mag_err_bucket": "<=50%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": 3.4998859016414174,
-      "actual_direction": "up",
-      "reasoning": "REX公布2025财年第四季度业绩大幅超预期，属于典型的业绩超预期利好个股事件。小盘股在财报大超预期后通常在短期内出现显著跳涨，市场会快速重新定价盈利能力。检索到的因果链均不涉及个股业绩超预期模式，故标记为新模式。",
-      "event": {
-        "id": 1,
-        "summary": "REX美国资源公司2025财年第四季度业绩大幅超预期",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "REX: Monster Earnings Beat to End Fiscal 2025 – Quarterly Update Report",
-        "source": "yahoo_finance",
-        "lang": "en",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/rex-monster-earnings-beat-end-083051662.html",
-        "published_at": "2026-04-15T08:30:51"
-      }
-    },
-    {
-      "id": 42,
-      "made_at": "2026-04-16T19:18:32.469783",
-      "asset": {
-        "symbol": "SMH",
-        "name": "半导体ETF",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 1.5,
-      "horizon_days": 3,
-      "expire_at": "2026-04-19T19:18:32.469783",
-      "baseline_price": 454.25,
-      "baseline_source": null,
-      "status": "verified",
-      "hit": true,
-      "hit_breakdown": {
-        "dir_hit": true,
-        "mag_hit": true,
-        "strict_hit": true,
-        "mag_err_rel": 0.5277936029512933,
-        "mag_err_bucket": "<=100%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": 2.29169040442694,
-      "actual_direction": "up",
-      "reasoning": "AMD作为半导体权重股走强会外溢至整个半导体板块，强化AI与数据中心景气主线。检索到的因果链均聚焦A股，未覆盖美股半导体板块联动，故记为新模式。",
-      "event": {
-        "id": 2,
-        "summary": "AMD服务器CPU业务重获投资者青睐，股票表现迎来近二十年最佳走势",
-        "category": "tech"
-      },
-      "news": {
-        "title": "AMD has ‘indispensable assets’ — powering the stock toward its best run in two decades",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/amd-has-indispensable-assets-powering-the-stock-toward-its-best-run-in-two-decades-aa44c469?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T17:01:00"
-      }
-    },
-    {
-      "id": 41,
-      "made_at": "2026-04-16T19:18:31.617860",
-      "asset": {
-        "symbol": "INTC",
-        "name": "英特尔",
+        "symbol": "FXI",
+        "name": "中国大盘股ETF",
         "class": "us_stock"
       },
       "direction": "down",
-      "magnitude_pct": 2.5,
-      "horizon_days": 7,
-      "expire_at": "2026-04-23T19:18:31.617860",
-      "baseline_price": 68.32980346679688,
-      "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "reasoning": "AMD服务器CPU业务强势意味着继续抢占Intel在数据中心的市场份额，是零和竞争。AMD的估值修复往往伴随Intel相对承压。检索因果链不涉及半导体竞争格局，故标注为新模式。",
-      "event": {
-        "id": 2,
-        "summary": "AMD服务器CPU业务重获投资者青睐，股票表现迎来近二十年最佳走势",
-        "category": "tech"
-      },
-      "news": {
-        "title": "AMD has ‘indispensable assets’ — powering the stock toward its best run in two decades",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/amd-has-indispensable-assets-powering-the-stock-toward-its-best-run-in-two-decades-aa44c469?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T17:01:00"
-      }
-    },
-    {
-      "id": 40,
-      "made_at": "2026-04-16T19:18:30.632084",
-      "asset": {
-        "symbol": "AMD",
-        "name": "超微半导体",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 4.5,
-      "horizon_days": 7,
-      "expire_at": "2026-04-23T19:18:30.632084",
-      "baseline_price": 274.9100036621094,
-      "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "reasoning": "新闻直接利好AMD，服务器CPU业务重获投资者青睐，市场情绪推动股价创近二十年最佳走势。检索到的因果链均为中国A股相关，与本则新闻无关，故作为新模式处理。数据中心CPU是AMD高毛利业务，投资者重新定价将在1-2周内持续发酵。",
-      "event": {
-        "id": 2,
-        "summary": "AMD服务器CPU业务重获投资者青睐，股票表现迎来近二十年最佳走势",
-        "category": "tech"
-      },
-      "news": {
-        "title": "AMD has ‘indispensable assets’ — powering the stock toward its best run in two decades",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/amd-has-indispensable-assets-powering-the-stock-toward-its-best-run-in-two-decades-aa44c469?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T17:01:00"
-      }
-    },
-    {
-      "id": 39,
-      "made_at": "2026-04-16T19:17:52.349190",
-      "asset": {
-        "symbol": "XLP",
-        "name": "美国消费必需品ETF",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 1.0,
-      "horizon_days": 7,
-      "expire_at": "2026-04-23T19:17:52.349190",
-      "baseline_price": 81.375,
-      "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "reasoning": "PEP 是 XLP 的核心权重股，其股价大涨及对消费需求回暖的表态会改善整个必需消费板块的盈利预期，带动 ETF 温和上行。检索结果中没有必需消费板块层面的因果链，标记为新模式。",
-      "event": {
-        "id": 4,
-        "summary": "百事可乐表示降价及健康产品推动消费者回流，股价大涨",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T17:19:00"
-      }
-    },
-    {
-      "id": 38,
-      "made_at": "2026-04-16T19:17:51.723728",
-      "asset": {
-        "symbol": "KO",
-        "name": "可口可乐",
-        "class": "us_stock"
-      },
-      "direction": "up",
       "magnitude_pct": 1.5,
-      "horizon_days": 3,
-      "expire_at": "2026-04-19T19:17:51.723728",
-      "baseline_price": 75.125,
-      "baseline_source": null,
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": true,
-        "strict_hit": false,
-        "mag_err_rel": 0.6228480960551858,
-        "mag_err_bucket": "<=100%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": -0.5657278559172213,
-      "actual_direction": "down",
-      "reasoning": "百事作为饮料行业风向标释放需求回暖信号，可口可乐作为最直接同业会受益于板块情绪联动，市场会把'消费者回流'外推到整个软饮龙头。属于新模式，因为检索的因果链没有覆盖消费行业同业联动。",
+      "horizon_days": 7,
+      "expire_at": "2026-05-04T12:49:16.340617",
+      "baseline_price": 36.86000061035156,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "中国海军高调监视美日菲联合军演显示南海地缘对抗升级，国际投资者对中国资产的风险溢价短期上升。FXI作为追踪中国大盘股的主要ETF，在地缘紧张情绪下通常承压。虽然检索到的因果链主要涉及房地产违约，但地缘政治风险同样影响中国风险资产估值，属于新模式。",
       "event": {
-        "id": 4,
-        "summary": "百事可乐表示降价及健康产品推动消费者回流，股价大涨",
-        "category": "earnings"
+        "id": 186,
+        "summary": "中国海军监视美日菲联合军演，南海地缘紧张升级",
+        "category": "geopolitics"
       },
       "news": {
-        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T17:19:00"
+        "title": "中国海军强势“围观”美日菲军演",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633285262159711770/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633285262159711770%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E5%9B%BD%E6%B5%B7%E5%86%9B%E5%BC%BA%E5%8A%BF%E2%80%9C%E5%9B%B4%E8%A7%82%E2%80%9D%E7%BE%8E%E6%97%A5%E8%8F%B2%E5%86%9B%E6%BC%94%22%7D&rank=&style_id=40132&topic_id=7633285262159711770",
+        "published_at": "2026-04-27T12:36:50.016569"
       }
     },
     {
-      "id": 37,
-      "made_at": "2026-04-16T19:17:50.994054",
+      "id": 102,
+      "made_at": "2026-04-27T12:48:51.291504",
       "asset": {
-        "symbol": "PEP",
-        "name": "百事可乐",
+        "symbol": "XOMA",
+        "name": "Xoma公司",
         "class": "us_stock"
       },
       "direction": "up",
       "magnitude_pct": 3.5,
-      "horizon_days": 3,
-      "expire_at": "2026-04-19T19:17:50.994054",
-      "baseline_price": 157.7899932861328,
-      "baseline_source": null,
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": true,
-        "strict_hit": false,
-        "mag_err_rel": 0.4803228089225232,
-        "mag_err_bucket": "<=50%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": -1.8188701687711688,
-      "actual_direction": "down",
-      "reasoning": "百事公布降价及健康化产品策略成功拉回消费者，且管理层表示伊朗战争冲击有限，短期利空被证伪叠加基本面改善，直接利好股价。检索结果中没有消费品龙头正面业绩指引的对应 pattern，属于新模式。",
+      "horizon_days": 7,
+      "expire_at": "2026-05-04T12:48:51.291504",
+      "baseline_price": 37.900001525878906,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "XOMA提交8-K披露签署重大协议（Item 1.01），对于专注于药物版税收购的小型生物医药版税公司而言，新协议通常意味着未来现金流增加或版税资产组合扩张。市场通常对此类利好消息给予正面反应。由于检索到的因果链与中东能源袭击相关，与本新闻无关，此为新发现的因果模式。",
       "event": {
-        "id": 4,
-        "summary": "百事可乐表示降价及健康产品推动消费者回流，股价大涨",
-        "category": "earnings"
+        "id": 191,
+        "summary": "XOMA Royalty Corp提交8-K文件，披露重大协议签署及其他事件",
+        "category": "regulation"
       },
       "news": {
-        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
-        "source": "marketwatch",
+        "title": "8-K · XOMA Royalty Corp (Item 1.01, Item 8.01, Item 9.01)",
+        "source": "sec_edgar_8k",
         "lang": "en",
-        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T17:19:00"
+        "url": "https://www.sec.gov/Archives/edgar/data/791908/000119312526179085/0001193125-26-179085-index.htm",
+        "published_at": "2026-04-27T12:16:27"
       }
     },
     {
-      "id": 36,
-      "made_at": "2026-04-16T19:17:28.013118",
+      "id": 101,
+      "made_at": "2026-04-27T12:48:31.820875",
       "asset": {
-        "symbol": "XLP",
-        "name": "美国消费必需品ETF",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 0.8,
-      "horizon_days": 3,
-      "expire_at": "2026-04-19T19:17:28.013118",
-      "baseline_price": 81.38999938964844,
-      "baseline_source": null,
-      "status": "verified",
-      "hit": true,
-      "hit_breakdown": {
-        "dir_hit": true,
-        "mag_hit": true,
-        "strict_hit": true,
-        "mag_err_rel": 0.3088878369321191,
-        "mag_err_bucket": "<=50%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": 0.5528897304543048,
-      "actual_direction": "up",
-      "reasoning": "百事作为 XLP 前十大权重股，其股价大涨及对地缘风险的乐观表态会直接拉动 ETF 净值，同时改善市场对必需消费板块整体盈利韧性的评估。短期 3 天内板块情绪外溢有限，涨幅约 0.8%。",
-      "event": {
-        "id": 5,
-        "summary": "伊朗战争对百事可乐业务影响有限，地缘风险暂未冲击消费品供应链",
-        "category": "geopolitics"
-      },
-      "news": {
-        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T17:19:00"
-      }
-    },
-    {
-      "id": 35,
-      "made_at": "2026-04-16T19:17:27.295639",
-      "asset": {
-        "symbol": "KO",
-        "name": "可口可乐",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 1.2,
-      "horizon_days": 3,
-      "expire_at": "2026-04-19T19:17:27.295639",
-      "baseline_price": 75.125,
-      "baseline_source": null,
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": true,
-        "strict_hit": false,
-        "mag_err_rel": 0.5285601200689822,
-        "mag_err_bucket": "<=100%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": -0.5657278559172213,
-      "actual_direction": "down",
-      "reasoning": "百事业绩回暖和消费者回流的信号会外溢至同业龙头可口可乐，市场会预期整个软饮板块需求企稳；但可口可乐本身未直接受益，幅度弱于百事。该因果关系未在检索链中，故标记为新模式。",
-      "event": {
-        "id": 5,
-        "summary": "伊朗战争对百事可乐业务影响有限，地缘风险暂未冲击消费品供应链",
-        "category": "geopolitics"
-      },
-      "news": {
-        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T17:19:00"
-      }
-    },
-    {
-      "id": 34,
-      "made_at": "2026-04-16T19:17:26.161443",
-      "asset": {
-        "symbol": "PEP",
-        "name": "百事可乐",
+        "symbol": "06160.HK",
+        "name": "百济神州港股",
         "class": "us_stock"
       },
       "direction": "up",
       "magnitude_pct": 3.0,
-      "horizon_days": 3,
-      "expire_at": "2026-04-19T19:17:26.161443",
-      "baseline_price": 157.7949981689453,
-      "baseline_source": null,
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": true,
-        "strict_hit": false,
-        "mag_err_rel": 0.3926719196084523,
-        "mag_err_bucket": "<=50%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": -1.821984241174643,
-      "actual_direction": "down",
-      "reasoning": "百事通过降价和健康化新品重新吸引了观望的消费者，同时管理层披露伊朗战争尚未对业务造成实质冲击，双重利好驱动股价当日大涨。短期内盘后情绪和分析师上修预期会延续推动，3 天窗口内有望维持 3% 左右涨幅。",
-      "event": {
-        "id": 5,
-        "summary": "伊朗战争对百事可乐业务影响有限，地缘风险暂未冲击消费品供应链",
-        "category": "geopolitics"
-      },
-      "news": {
-        "title": "Pepsi says price cuts and wellness push are bringing back customers — and the stock surges",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/pepsi-says-price-cuts-and-wellness-push-are-bringing-back-customers-and-the-stock-surges-e6e5ea05?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T17:19:00"
-      }
-    },
-    {
-      "id": 33,
-      "made_at": "2026-04-16T19:17:07.084215",
-      "asset": {
-        "symbol": "IPO",
-        "name": "Renaissance IPO ETF",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 2.5,
-      "horizon_days": 14,
-      "expire_at": "2026-04-30T19:17:07.084215",
-      "baseline_price": 48.0098991394043,
-      "baseline_source": null,
+      "horizon_days": 7,
+      "expire_at": "2026-05-04T12:48:31.820875",
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
       "status": "pending",
       "hit": null,
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "reasoning": "本年度最大IPO成功定价并首日大涨，验证了一级市场承接能力恢复，将刺激后续IPO排队加速发行并提升已上市次新股估值，Renaissance IPO ETF作为新股组合直接受益于IPO窗口重启的情绪与资金流入。检索结果无对应因果模式，属新模式。",
+      "reasoning": "港股作为百济神州另一重要上市地，对公司战略性合作公告反应积极。此次与华辉安健的合作涉及创新三特异性抗体，里程碑总额达20亿美元，对公司管线估值和未来收入预期形成正面催化。港股生物医药板块近期关注度提升，预计短期内港股同步走强。",
       "event": {
-        "id": 6,
-        "summary": "Madison Air完成22亿美元IPO，成为2026年最大规模IPO及1999年以来工业板块最大IPO",
-        "category": "other"
+        "id": 195,
+        "summary": "百济神州全资子公司与华辉安健签订三特异性抗体全球独家开发合作协议，总里程碑款可达20亿美元",
+        "category": "earnings"
       },
       "news": {
-        "title": "With the largest industrial IPO since 1999, this air-quality giant’s stock opened with a bang",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/with-the-largest-industrial-ipo-since-1999-this-air-quality-giant-is-going-public-08a50184?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T17:21:00"
+        "title": "百济神州：全资子公司与华辉安健签订全球独家开发合作协议",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3094969",
+        "published_at": "2026-04-27T11:23:35"
       }
     },
     {
-      "id": 32,
-      "made_at": "2026-04-16T19:17:06.542473",
+      "id": 100,
+      "made_at": "2026-04-27T12:48:29.957837",
       "asset": {
-        "symbol": "XLI",
-        "name": "工业板块ETF",
+        "symbol": "BGNE",
+        "name": "百济神州美股",
         "class": "us_stock"
       },
       "direction": "up",
-      "magnitude_pct": 0.5,
-      "horizon_days": 1,
-      "expire_at": "2026-04-17T19:17:06.542473",
-      "baseline_price": 170.52999877929688,
-      "baseline_source": null,
-      "status": "verified",
-      "hit": true,
-      "hit_breakdown": {
-        "dir_hit": true,
-        "mag_hit": true,
-        "strict_hit": true,
-        "mag_err_rel": 0.06726519512513307,
-        "mag_err_bucket": "<=10%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": 0.5336325975625665,
-      "actual_direction": "up",
-      "reasoning": "1999年以来最大工业IPO首日爆发，短线将点燃工业板块情绪，同业估值比价效应迅速传导至XLI成分股，尤其是HVAC/空气质量/暖通相关龙头。属新模式，无现成因果链匹配。",
+      "magnitude_pct": 2.8,
+      "horizon_days": 7,
+      "expire_at": "2026-05-04T12:48:29.957837",
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "作为百济神州主要上市地之一，美股BGNE对公司重大BD交易同样敏感。本次三特异性抗体合作总额达20亿美元，彰显公司持续丰富管线的战略意图，尤其在PD-1赛道竞争白热化背景下，差异化靶点组合有望提升市场估值。美股投资者对创新药BD交易的反应往往迅速，预计短期内股价温和上涨。该模式属新发现。",
       "event": {
-        "id": 6,
-        "summary": "Madison Air完成22亿美元IPO，成为2026年最大规模IPO及1999年以来工业板块最大IPO",
-        "category": "other"
+        "id": 195,
+        "summary": "百济神州全资子公司与华辉安健签订三特异性抗体全球独家开发合作协议，总里程碑款可达20亿美元",
+        "category": "earnings"
       },
       "news": {
-        "title": "With the largest industrial IPO since 1999, this air-quality giant’s stock opened with a bang",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/with-the-largest-industrial-ipo-since-1999-this-air-quality-giant-is-going-public-08a50184?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T17:21:00"
+        "title": "百济神州：全资子公司与华辉安健签订全球独家开发合作协议",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3094969",
+        "published_at": "2026-04-27T11:23:35"
       }
     },
     {
-      "id": 31,
-      "made_at": "2026-04-16T19:17:05.934056",
+      "id": 99,
+      "made_at": "2026-04-27T12:48:26.162450",
       "asset": {
-        "symbol": "XLI",
-        "name": "工业板块ETF",
+        "symbol": "688235.SH",
+        "name": "百济神州科创板",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.5,
+      "horizon_days": 7,
+      "expire_at": "2026-05-04T12:48:26.162450",
+      "baseline_price": 235.0,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "百济神州与华辉安健签订的三特异性抗体（PD-1/CTLA-4/VEGF-A）全球独家合作协议，总里程碑款高达20亿美元，展示了公司在创新药BD能力和管线拓展上的积极布局。三靶点联合抗体在肿瘤免疫领域属前沿方向，市场对创新药企的License-in交易通常给予正面反应。首付款2000万美元及后续里程碑结构合理，短期内将提振投资者对公司研发管线价值的预期。检索到的因果链未覆盖生物医药BD交易对股价的影响，属新模式。",
+      "event": {
+        "id": 195,
+        "summary": "百济神州全资子公司与华辉安健签订三特异性抗体全球独家开发合作协议，总里程碑款可达20亿美元",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "百济神州：全资子公司与华辉安健签订全球独家开发合作协议",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3094969",
+        "published_at": "2026-04-27T11:23:35"
+      }
+    },
+    {
+      "id": 98,
+      "made_at": "2026-04-27T12:48:07.366429",
+      "asset": {
+        "symbol": "300238",
+        "name": "冠昊生物",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.0,
+      "horizon_days": 7,
+      "expire_at": "2026-05-04T12:48:07.366429",
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "批量克隆牦牛成功展示了我国在细胞克隆和再生医学领域的技术实力。冠昊生物专注于再生医学和组织工程，克隆技术的突破会带动市场对整个生物技术板块的关注和估值重估。此为新模式，检索结果中未覆盖生物技术突破事件。",
+      "event": {
+        "id": 196,
+        "summary": "中国首次实现批量克隆10头牦牛，生物技术领域取得突破",
+        "category": "tech"
+      },
+      "news": {
+        "title": "我国首次实现批量克隆10头牦牛",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633318188621840438/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633318188621840438%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%88%91%E5%9B%BD%E9%A6%96%E6%AC%A1%E5%AE%9E%E7%8E%B0%E6%89%B9%E9%87%8F%E5%85%8B%E9%9A%8610%E5%A4%B4%E7%89%A6%E7%89%9B%22%7D&rank=&style_id=40132&topic_id=7633318188621840438",
+        "published_at": "2026-04-27T12:36:50.016538"
+      }
+    },
+    {
+      "id": 97,
+      "made_at": "2026-04-27T12:48:07.131327",
+      "asset": {
+        "symbol": "002100",
+        "name": "天康生物",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.5,
+      "horizon_days": 7,
+      "expire_at": "2026-05-04T12:48:07.131327",
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "我国首次批量克隆牦牛标志着大动物克隆技术的商业化突破。天康生物作为国内畜牧业龙头，在动物育种和生物技术领域有布局，克隆技术突破将提升市场对相关企业技术应用前景的预期。此为新发现的因果模式，检索库中无相关链条。",
+      "event": {
+        "id": 196,
+        "summary": "中国首次实现批量克隆10头牦牛，生物技术领域取得突破",
+        "category": "tech"
+      },
+      "news": {
+        "title": "我国首次实现批量克隆10头牦牛",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633318188621840438/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633318188621840438%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%88%91%E5%9B%BD%E9%A6%96%E6%AC%A1%E5%AE%9E%E7%8E%B0%E6%89%B9%E9%87%8F%E5%85%8B%E9%9A%8610%E5%A4%B4%E7%89%A6%E7%89%9B%22%7D&rank=&style_id=40132&topic_id=7633318188621840438",
+        "published_at": "2026-04-27T12:36:50.016538"
+      }
+    },
+    {
+      "id": 96,
+      "made_at": "2026-04-27T12:47:56.742155",
+      "asset": {
+        "symbol": "002287",
+        "name": "奇正藏药",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.2,
+      "horizon_days": 7,
+      "expire_at": "2026-05-04T12:47:56.742155",
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "中医药服务消费与贸易融合试点将带动特色民族医药企业发展。奇正藏药主打藏药特色，具有独特的文化和医疗价值，在中医药国际化进程中具备差异化优势，政策利好将提振市场对民族医药板块的关注度。",
+      "event": {
+        "id": 198,
+        "summary": "六部门推动中医药服务消费与贸易融合发展，18个地区成为试点",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "商务部、国家中医药局等6部门组织开展中医药服务消费和服务贸易融合发展试点",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3094970",
+        "published_at": "2026-04-27T11:23:58"
+      }
+    },
+    {
+      "id": 95,
+      "made_at": "2026-04-27T12:47:56.482363",
+      "asset": {
+        "symbol": "000538",
+        "name": "云南白药",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.8,
+      "horizon_days": 14,
+      "expire_at": "2026-05-11T12:47:56.482363",
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "中医药服务贸易融合发展试点政策将推动中药产品和服务的国际化进程。云南白药作为中国知名中药品牌，在东南亚等地区有较好的市场基础，试点政策有望促进其海外业务拓展和品牌价值提升。此为中医药政策利好新模式。",
+      "event": {
+        "id": 198,
+        "summary": "六部门推动中医药服务消费与贸易融合发展，18个地区成为试点",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "商务部、国家中医药局等6部门组织开展中医药服务消费和服务贸易融合发展试点",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3094970",
+        "published_at": "2026-04-27T11:23:58"
+      }
+    },
+    {
+      "id": 94,
+      "made_at": "2026-04-27T12:47:56.235318",
+      "asset": {
+        "symbol": "600085",
+        "name": "同仁堂",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.5,
+      "horizon_days": 14,
+      "expire_at": "2026-05-11T12:47:56.235318",
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "六部门联合推动中医药服务消费与贸易融合发展，18个地区试点将带来政策红利和市场拓展机遇。同仁堂作为中医药龙头企业，品牌国际知名度高，将直接受益于中医药服务出口和消费扩张。检索到的因果链未覆盖中医药政策利好模式，属于新模式。",
+      "event": {
+        "id": 198,
+        "summary": "六部门推动中医药服务消费与贸易融合发展，18个地区成为试点",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "商务部、国家中医药局等6部门组织开展中医药服务消费和服务贸易融合发展试点",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3094970",
+        "published_at": "2026-04-27T11:23:58"
+      }
+    },
+    {
+      "id": 93,
+      "made_at": "2026-04-27T12:47:44.792984",
+      "asset": {
+        "symbol": "002304",
+        "name": "洋河股份",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 0.5,
+      "horizon_days": 3,
+      "expire_at": "2026-04-30T12:47:44.792984",
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "高端白酒造假事件曝光后，投资者对白酒板块整体信任度下降，洋河股份作为白酒龙头之一，短期内会受到板块情绪拖累。消费者对高价白酒的购买谨慎度提升，可能影响整体白酒消费预期。",
+      "event": {
+        "id": 199,
+        "summary": "38万元购买的百箱茅台全部为假酒，成本仅百元，涉及食品安全和消费者权益问题",
+        "category": "other"
+      },
+      "news": {
+        "title": "38万买百箱茅台全是假酒 成本仅百元",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633292483396452402/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633292483396452402%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%2238%E4%B8%87%E4%B9%B0%E7%99%BE%E7%AE%B1%E8%8C%85%E5%8F%B0%E5%85%A8%E6%98%AF%E5%81%87%E9%85%92+%E6%88%90%E6%9C%AC%E4%BB%85%E7%99%BE%E5%85%83%22%7D&rank=&style_id=40132&topic_id=7633292483396452402",
+        "published_at": "2026-04-27T12:36:50.016531"
+      }
+    },
+    {
+      "id": 92,
+      "made_at": "2026-04-27T12:47:44.791850",
+      "asset": {
+        "symbol": "000858",
+        "name": "五粮液",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 0.6,
+      "horizon_days": 3,
+      "expire_at": "2026-04-30T12:47:44.791850",
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "茅台假酒事件会引发市场对整个高端白酒行业流通渠道乱象的担忧，作为高端白酒第二大品牌的五粮液也会受到连带影响，投资者可能担心类似造假问题波及其他品牌，行业情绪整体承压。此为茅台假酒事件的行业传染效应。",
+      "event": {
+        "id": 199,
+        "summary": "38万元购买的百箱茅台全部为假酒，成本仅百元，涉及食品安全和消费者权益问题",
+        "category": "other"
+      },
+      "news": {
+        "title": "38万买百箱茅台全是假酒 成本仅百元",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633292483396452402/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633292483396452402%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%2238%E4%B8%87%E4%B9%B0%E7%99%BE%E7%AE%B1%E8%8C%85%E5%8F%B0%E5%85%A8%E6%98%AF%E5%81%87%E9%85%92+%E6%88%90%E6%9C%AC%E4%BB%85%E7%99%BE%E5%85%83%22%7D&rank=&style_id=40132&topic_id=7633292483396452402",
+        "published_at": "2026-04-27T12:36:50.016531"
+      }
+    },
+    {
+      "id": 91,
+      "made_at": "2026-04-27T12:47:44.566124",
+      "asset": {
+        "symbol": "600519",
+        "name": "贵州茅台",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.2,
+      "horizon_days": 3,
+      "expire_at": "2026-04-30T12:47:44.566124",
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "茅台假酒泛滥新闻曝光后，会引发消费者对茅台真伪鉴别的担忧，短期内可能抑制部分购买意愿，尤其是非官方渠道的消费信心受挫。同时该事件暴露茅台产品流通环节的管控漏洞，品牌溢价能力受到质疑。检索到的因果链未覆盖食品造假对品牌股的影响，属新模式。",
+      "event": {
+        "id": 199,
+        "summary": "38万元购买的百箱茅台全部为假酒，成本仅百元，涉及食品安全和消费者权益问题",
+        "category": "other"
+      },
+      "news": {
+        "title": "38万买百箱茅台全是假酒 成本仅百元",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633292483396452402/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633292483396452402%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%2238%E4%B8%87%E4%B9%B0%E7%99%BE%E7%AE%B1%E8%8C%85%E5%8F%B0%E5%85%A8%E6%98%AF%E5%81%87%E9%85%92+%E6%88%90%E6%9C%AC%E4%BB%85%E7%99%BE%E5%85%83%22%7D&rank=&style_id=40132&topic_id=7633292483396452402",
+        "published_at": "2026-04-27T12:36:50.016531"
+      }
+    },
+    {
+      "id": 90,
+      "made_at": "2026-04-27T12:47:33.679706",
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.6,
+      "horizon_days": 3,
+      "expire_at": "2026-04-30T12:47:33.679706",
+      "baseline_price": 4718.89990234375,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "中美制裁摩擦升级属于地缘政治风险事件，通常推动避险资金流入黄金。虽然本次制裁规模有限，但叠加中方表态反对，市场对中美关系的不确定性担忧加剧，黄金短期受到支撑。",
+      "event": {
+        "id": 200,
+        "summary": "美国以涉伊朗为由制裁中国企业，中方表态反对",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "美国以涉伊朗为由制裁中企 中方表态",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7632821618738167818/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632821618738167818%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%BE%8E%E5%9B%BD%E4%BB%A5%E6%B6%89%E4%BC%8A%E6%9C%97%E4%B8%BA%E7%94%B1%E5%88%B6%E8%A3%81%E4%B8%AD%E4%BC%81+%E4%B8%AD%E6%96%B9%E8%A1%A8%E6%80%81%22%7D&rank=&style_id=40132&topic_id=7632821618738167818",
+        "published_at": "2026-04-27T12:36:50.016526"
+      }
+    },
+    {
+      "id": 89,
+      "made_at": "2026-04-27T12:47:33.183505",
+      "asset": {
+        "symbol": "USDCNH=X",
+        "name": "美元兑离岸人民币",
+        "class": "fx"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.4,
+      "horizon_days": 3,
+      "expire_at": "2026-04-30T12:47:33.183505",
+      "baseline_price": 6.823490142822266,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "中美摩擦升级事件通常引发避险情绪，资金流向美元避险，人民币承压贬值。此次制裁虽规模有限，但反映中美关系紧张持续，短期内离岸人民币可能小幅走弱。这是地缘政治风险影响汇率的常见模式。",
+      "event": {
+        "id": 200,
+        "summary": "美国以涉伊朗为由制裁中国企业，中方表态反对",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "美国以涉伊朗为由制裁中企 中方表态",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7632821618738167818/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632821618738167818%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%BE%8E%E5%9B%BD%E4%BB%A5%E6%B6%89%E4%BC%8A%E6%9C%97%E4%B8%BA%E7%94%B1%E5%88%B6%E8%A3%81%E4%B8%AD%E4%BC%81+%E4%B8%AD%E6%96%B9%E8%A1%A8%E6%80%81%22%7D&rank=&style_id=40132&topic_id=7632821618738167818",
+        "published_at": "2026-04-27T12:36:50.016526"
+      }
+    },
+    {
+      "id": 88,
+      "made_at": "2026-04-27T12:47:32.707226",
+      "asset": {
+        "symbol": "600028.SH",
+        "name": "中国石化",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.5,
+      "horizon_days": 7,
+      "expire_at": "2026-05-04T12:47:32.707226",
+      "baseline_price": 5.34,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "美国以涉伊朗为由制裁中国企业，通常涉及能源贸易领域。中国石化作为与伊朗有石油贸易往来的大型央企，面临被列入制裁名单或供应链受阻的风险，市场短期会对其海外业务前景产生担忧。这是基于地缘制裁影响能源企业的新模式判断。",
+      "event": {
+        "id": 200,
+        "summary": "美国以涉伊朗为由制裁中国企业，中方表态反对",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "美国以涉伊朗为由制裁中企 中方表态",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7632821618738167818/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632821618738167818%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%BE%8E%E5%9B%BD%E4%BB%A5%E6%B6%89%E4%BC%8A%E6%9C%97%E4%B8%BA%E7%94%B1%E5%88%B6%E8%A3%81%E4%B8%AD%E4%BC%81+%E4%B8%AD%E6%96%B9%E8%A1%A8%E6%80%81%22%7D&rank=&style_id=40132&topic_id=7632821618738167818",
+        "published_at": "2026-04-27T12:36:50.016526"
+      }
+    },
+    {
+      "id": 87,
+      "made_at": "2026-04-27T12:47:18.240515",
+      "asset": {
+        "symbol": "LHA.DE",
+        "name": "汉莎航空",
         "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.0,
+      "horizon_days": 7,
+      "expire_at": "2026-05-04T12:47:18.240515",
+      "baseline_price": 7.2820000648498535,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "俄伊高层会晤强调中东局势紧张，若局势进一步恶化可能影响海湾地区航油供应与中东航线运营。欧洲航司如汉莎对中东航线依赖度高，航油成本敏感。参考检索到的因果链id=96，海湾燃料供应风险会压制欧洲航司股价，此次地缘紧张信号可能提前触发类似担忧。",
+      "event": {
+        "id": 201,
+        "summary": "俄罗斯总统普京会见伊朗外长讨论中东局势",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "俄总统普京27日将在圣彼得堡会见来访的伊朗外长阿拉格齐",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3094973",
+        "published_at": "2026-04-27T11:25:58"
+      }
+    },
+    {
+      "id": 86,
+      "made_at": "2026-04-27T12:47:17.690459",
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
       },
       "direction": "up",
       "magnitude_pct": 1.2,
       "horizon_days": 7,
-      "expire_at": "2026-04-23T19:17:05.934056",
-      "baseline_price": 170.52999877929688,
-      "baseline_source": null,
+      "expire_at": "2026-05-04T12:47:17.690459",
+      "baseline_price": 4719.2001953125,
+      "baseline_source": "event_time",
       "status": "pending",
       "hit": null,
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "reasoning": "Madison Air作为1999年以来最大工业板块IPO募资22亿美元且首日大涨，显示机构对工业板块配置意愿强烈，将提升整个工业板块的估值中枢和资金关注度，XLI作为工业板块代表ETF将受到资金轮动带动。检索到的因果链未覆盖大型工业IPO对板块的情绪传导模式，属新模式。",
+      "reasoning": "俄伊领导人会晤聚焦中东紧张局势，投资者避险情绪升温。黄金作为传统避险资产，在地缘政治不确定性上升时往往获得资金流入。当前中东局势本就脆弱，此次会见被定义为'非常重要'，强化了冲突可能升级的市场预期。检索链未覆盖此类地缘外交事件对黄金的直接影响。",
       "event": {
-        "id": 6,
-        "summary": "Madison Air完成22亿美元IPO，成为2026年最大规模IPO及1999年以来工业板块最大IPO",
-        "category": "other"
+        "id": 201,
+        "summary": "俄罗斯总统普京会见伊朗外长讨论中东局势",
+        "category": "geopolitics"
       },
       "news": {
-        "title": "With the largest industrial IPO since 1999, this air-quality giant’s stock opened with a bang",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/with-the-largest-industrial-ipo-since-1999-this-air-quality-giant-is-going-public-08a50184?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T17:21:00"
+        "title": "俄总统普京27日将在圣彼得堡会见来访的伊朗外长阿拉格齐",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3094973",
+        "published_at": "2026-04-27T11:25:58"
       }
     },
     {
-      "id": 30,
-      "made_at": "2026-04-16T19:16:43.385336",
+      "id": 85,
+      "made_at": "2026-04-27T12:47:17.191630",
       "asset": {
-        "symbol": "NG=F",
-        "name": "天然气期货",
+        "symbol": "CL=F",
+        "name": "WTI原油期货",
         "class": "commodity"
       },
       "direction": "up",
-      "magnitude_pct": 4.0,
-      "horizon_days": 30,
-      "expire_at": "2026-05-16T19:16:43.385336",
-      "baseline_price": 2.6630001068115234,
-      "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "reasoning": "馏分油/柴油价格居高不下会促使发电厂在边际上更多使用天然气替代燃油发电，叠加居民电费上行预期，天然气需求面受到提振。与检索到的贸易/政治类因果链无关，属新模式。",
-      "event": {
-        "id": 7,
-        "summary": "油价隐性成本创历史新高，或推高居民电费",
-        "category": "energy"
-      },
-      "news": {
-        "title": "This ‘hidden’ price of oil is at record highs — and it’ll hit your electric bill next",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/this-hidden-oil-price-is-ripping-the-hull-out-of-the-global-economy-89ff8e54?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T18:17:00"
-      }
-    },
-    {
-      "id": 29,
-      "made_at": "2026-04-16T19:16:42.564583",
-      "asset": {
-        "symbol": "XLE",
-        "name": "能源板块ETF",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 2.0,
+      "magnitude_pct": 2.5,
       "horizon_days": 7,
-      "expire_at": "2026-04-23T19:16:42.564583",
-      "baseline_price": 56.584999084472656,
-      "baseline_source": null,
+      "expire_at": "2026-05-04T12:47:17.191630",
+      "baseline_price": 95.98999786376953,
+      "baseline_source": "event_time",
       "status": "pending",
       "hit": null,
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "reasoning": "油价隐性成本(馏分油裂解价差)创历史新高意味着炼厂与综合油气公司下游毛利显著扩张，直接利好能源板块业绩预期。市场在关注地缘和平而低估该结构性利多，修复时会推高XLE。属新模式，未匹配到现有因果链。",
+      "reasoning": "俄罗斯与伊朗是全球主要产油国，两国高层会晤讨论中东局势会加剧市场对地缘冲突升级、石油供应中断的担忧。伊朗在霍尔木兹海峡的战略位置使任何紧张升级都可能威胁全球约20%的石油运输。此次会见表明俄伊协调立场，市场倾向于给油价计入地缘风险溢价。检索的因果链未直接覆盖俄伊高层会晤对油价的影响，属新模式。",
       "event": {
-        "id": 7,
-        "summary": "油价隐性成本创历史新高，或推高居民电费",
-        "category": "energy"
+        "id": 201,
+        "summary": "俄罗斯总统普京会见伊朗外长讨论中东局势",
+        "category": "geopolitics"
       },
       "news": {
-        "title": "This ‘hidden’ price of oil is at record highs — and it’ll hit your electric bill next",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/this-hidden-oil-price-is-ripping-the-hull-out-of-the-global-economy-89ff8e54?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T18:17:00"
+        "title": "俄总统普京27日将在圣彼得堡会见来访的伊朗外长阿拉格齐",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3094973",
+        "published_at": "2026-04-27T11:25:58"
       }
     },
     {
-      "id": 28,
-      "made_at": "2026-04-16T19:16:41.612172",
+      "id": 84,
+      "made_at": "2026-04-27T12:47:01.449473",
       "asset": {
-        "symbol": "XLU",
-        "name": "公用事业行业ETF",
+        "symbol": "BABA",
+        "name": "阿里巴巴",
         "class": "us_stock"
       },
       "direction": "down",
       "magnitude_pct": 1.5,
+      "horizon_days": 3,
+      "expire_at": "2026-04-30T12:47:01.449473",
+      "baseline_price": 135.82000732421875,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "中方对外资收购关键AI项目的限制信号可能引发海外投资者对中国科技监管收紧的担忧，中概股短期承压。阿里巴巴作为中概股龙头，对政策敏感度较高，可能面临短期资金流出压力。",
+      "event": {
+        "id": 202,
+        "summary": "中国禁止外资收购Manus项目",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "中方禁止外资收购Manus项目",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633347357673177138/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633347357673177138%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E6%96%B9%E7%A6%81%E6%AD%A2%E5%A4%96%E8%B5%84%E6%94%B6%E8%B4%ADManus%E9%A1%B9%E7%9B%AE%22%7D&rank=&style_id=40132&topic_id=7633347357673177138",
+        "published_at": "2026-04-27T12:36:50.016522"
+      }
+    },
+    {
+      "id": 83,
+      "made_at": "2026-04-27T12:47:00.560227",
+      "asset": {
+        "symbol": "300024.SZ",
+        "name": "机器人",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.0,
+      "horizon_days": 7,
+      "expire_at": "2026-05-04T12:47:00.560227",
+      "baseline_price": 14.8,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "Manus是备受关注的AI机器人项目，中方禁止外资收购意味着国内机器人产业将获得更多政策支持和发展空间。机器人（新松机器人）作为A股机器人板块的标杆企业，将直接受益于这一产业保护政策，市场情绪有望推动股价上涨。",
+      "event": {
+        "id": 202,
+        "summary": "中国禁止外资收购Manus项目",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "中方禁止外资收购Manus项目",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633347357673177138/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633347357673177138%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E6%96%B9%E7%A6%81%E6%AD%A2%E5%A4%96%E8%B5%84%E6%94%B6%E8%B4%ADManus%E9%A1%B9%E7%9B%AE%22%7D&rank=&style_id=40132&topic_id=7633347357673177138",
+        "published_at": "2026-04-27T12:36:50.016522"
+      }
+    },
+    {
+      "id": 82,
+      "made_at": "2026-04-27T12:46:56.668320",
+      "asset": {
+        "symbol": "002415.SZ",
+        "name": "海康威视",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.5,
+      "horizon_days": 7,
+      "expire_at": "2026-05-04T12:46:56.668320",
+      "baseline_price": 33.97,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "中方禁止外资收购Manus项目体现了对关键技术领域的保护政策，这将利好国内AI和机器人龙头企业。海康威视作为国内AI视觉和机器人领域的领军企业，在外资被限制进入的情况下，其市场地位和竞争优势将进一步巩固。此为新发现的因果模式，检索结果中无直接相关链条。",
+      "event": {
+        "id": 202,
+        "summary": "中国禁止外资收购Manus项目",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "中方禁止外资收购Manus项目",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633347357673177138/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633347357673177138%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E6%96%B9%E7%A6%81%E6%AD%A2%E5%A4%96%E8%B5%84%E6%94%B6%E8%B4%ADManus%E9%A1%B9%E7%9B%AE%22%7D&rank=&style_id=40132&topic_id=7633347357673177138",
+        "published_at": "2026-04-27T12:36:50.016522"
+      }
+    },
+    {
+      "id": 81,
+      "made_at": "2026-04-27T12:46:41.747120",
+      "asset": {
+        "symbol": "EURUSD=X",
+        "name": "欧元兑美元",
+        "class": "fx"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.4,
+      "horizon_days": 7,
+      "expire_at": "2026-05-04T12:46:41.747120",
+      "baseline_price": 1.1750881671905518,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "欧洲股市走强反映经济前景乐观和资金流入欧洲，这通常支撑欧元汇率。投资者增持欧洲资产需要买入欧元，形成汇率上行压力。检索结果未包含欧洲股市与欧元汇率的联动关系，属新模式。",
+      "event": {
+        "id": 203,
+        "summary": "欧洲斯托克600指数上涨触及盘中高点",
+        "category": "macro"
+      },
+      "news": {
+        "title": "欧洲斯托克600指数延续涨势，触及盘中高点。",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3094976",
+        "published_at": "2026-04-27T11:28:09"
+      }
+    },
+    {
+      "id": 80,
+      "made_at": "2026-04-27T12:46:40.611520",
+      "asset": {
+        "symbol": "EZU",
+        "name": "欧洲市场ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.0,
+      "horizon_days": 3,
+      "expire_at": "2026-04-30T12:46:40.611520",
+      "baseline_price": 66.51000213623047,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "欧洲斯托克600指数创盘中新高直接反映欧洲股市动能强劲。EZU作为追踪欧元区大盘股的ETF将同步受益于这一上涨趋势。市场情绪改善和资金流入将在短期内延续涨势。检索结果未覆盖欧洲指数上涨的直接传导，属新模式。",
+      "event": {
+        "id": 203,
+        "summary": "欧洲斯托克600指数上涨触及盘中高点",
+        "category": "macro"
+      },
+      "news": {
+        "title": "欧洲斯托克600指数延续涨势，触及盘中高点。",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3094976",
+        "published_at": "2026-04-27T11:28:09"
+      }
+    },
+    {
+      "id": 79,
+      "made_at": "2026-04-27T12:46:39.897850",
+      "asset": {
+        "symbol": "FXI",
+        "name": "中国大盘股ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.5,
+      "horizon_days": 3,
+      "expire_at": "2026-04-30T12:46:39.897850",
+      "baseline_price": 36.86000061035156,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "欧洲斯托克600指数触及盘中高点反映全球风险偏好回升。根据检索到的因果链(id:62)，全球风险偏好提升时中国相关资产受益。欧洲市场走强通常带动全球股市联动上涨，中国大盘股ETF作为新兴市场风险资产将受到外资流入支撑。",
+      "event": {
+        "id": 203,
+        "summary": "欧洲斯托克600指数上涨触及盘中高点",
+        "category": "macro"
+      },
+      "news": {
+        "title": "欧洲斯托克600指数延续涨势，触及盘中高点。",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3094976",
+        "published_at": "2026-04-27T11:28:09"
+      }
+    },
+    {
+      "id": 78,
+      "made_at": "2026-04-27T12:46:27.547311",
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.2,
+      "horizon_days": 7,
+      "expire_at": "2026-05-04T12:46:27.547311",
+      "baseline_price": 4720.2998046875,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "reasoning": "朝俄军事合作实质化加剧全球地缘政治不确定性，避险资金将流向黄金。朝鲜正式参与俄乌战争意味着冲突扩大化风险上升，可能引发更广泛的国际紧张局势，支撑金价走高。",
+      "event": {
+        "id": 204,
+        "summary": "金正恩与俄罗斯高官向阵亡朝鲜士兵鞠躬，暗示朝俄军事合作深化",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "金正恩与俄高官向阵亡朝鲜士兵鞠躬",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7632898068169477674/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632898068169477674%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%87%91%E6%AD%A3%E6%81%A9%E4%B8%8E%E4%BF%84%E9%AB%98%E5%AE%98%E5%90%91%E9%98%B5%E4%BA%A1%E6%9C%9D%E9%B2%9C%E5%A3%AB%E5%85%B5%E9%9E%A0%E8%BA%AC%22%7D&rank=&style_id=40132&topic_id=7632898068169477674",
+        "published_at": "2026-04-27T12:36:50.016518"
+      }
+    },
+    {
+      "id": 77,
+      "made_at": "2026-04-27T12:46:27.046407",
+      "asset": {
+        "symbol": "067160.KQ",
+        "name": "韩华航空航天",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.5,
       "horizon_days": 14,
-      "expire_at": "2026-04-30T19:16:41.612172",
-      "baseline_price": 46.165000915527344,
-      "baseline_source": null,
+      "expire_at": "2026-05-11T12:46:27.046407",
+      "baseline_price": 60000.0,
+      "baseline_source": "event_time",
       "status": "pending",
       "hit": null,
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "reasoning": "新闻指出油价的隐性成本(如柴油/馏分油裂解价差、运输与发电燃料成本)创历史新高，将传导至居民电费。公用事业公司短期内受限于费率审批，难以立刻转嫁燃料成本，利润率受挤压，股价承压。检索到的因果链均不涉及能源-电力传导链，属新模式。",
+      "reasoning": "朝俄军事同盟强化将刺激韩国加大国防开支，韩国主要防务承包商将受益。朝鲜士兵阵亡消息确认朝鲜深度介入俄乌冲突，韩国政府将面临更大压力提升军事能力，利好韩国国防股。",
       "event": {
-        "id": 7,
-        "summary": "油价隐性成本创历史新高，或推高居民电费",
-        "category": "energy"
+        "id": 204,
+        "summary": "金正恩与俄罗斯高官向阵亡朝鲜士兵鞠躬，暗示朝俄军事合作深化",
+        "category": "geopolitics"
       },
       "news": {
-        "title": "This ‘hidden’ price of oil is at record highs — and it’ll hit your electric bill next",
-        "source": "marketwatch",
-        "lang": "en",
-        "url": "https://www.marketwatch.com/story/this-hidden-oil-price-is-ripping-the-hull-out-of-the-global-economy-89ff8e54?mod=mw_rss_topstories",
-        "published_at": "2026-04-16T18:17:00"
+        "title": "金正恩与俄高官向阵亡朝鲜士兵鞠躬",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7632898068169477674/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632898068169477674%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%87%91%E6%AD%A3%E6%81%A9%E4%B8%8E%E4%BF%84%E9%AB%98%E5%AE%98%E5%90%91%E9%98%B5%E4%BA%A1%E6%9C%9D%E9%B2%9C%E5%A3%AB%E5%85%B5%E9%9E%A0%E8%BA%AC%22%7D&rank=&style_id=40132&topic_id=7632898068169477674",
+        "published_at": "2026-04-27T12:36:50.016518"
       }
     },
     {
-      "id": 27,
-      "made_at": "2026-04-16T19:16:16.904487",
+      "id": 76,
+      "made_at": "2026-04-27T12:46:26.199702",
       "asset": {
-        "symbol": "BTC-USD",
-        "name": "比特币",
-        "class": "crypto"
-      },
-      "direction": "down",
-      "magnitude_pct": 1.5,
-      "horizon_days": 3,
-      "expire_at": "2026-04-19T19:16:16.904487",
-      "baseline_price": 74824.09375,
-      "baseline_source": null,
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": false,
-        "strict_hit": false,
-        "mag_err_rel": 2.0568988682205056,
-        "mag_err_bucket": ">100%",
-        "tol_used": 0.92,
-        "asset_class": "crypto"
-      },
-      "actual_magnitude_pct": 4.585348302330758,
-      "actual_direction": "up",
-      "reasoning": "尽管亏损主要来自ETH押注，但加密财库公司巨亏会引发对整个机构加密储备模式的质疑，风险偏好回落传导至BTC，短期内BTC跟随加密板块情绪小幅回调。检索链(id 78/12)反映的是利好情形，与本次利空相反，属新模式。",
-      "event": {
-        "id": 8,
-        "summary": "BitMine公司因以太坊押注巨亏，单季度亏损38.2亿美元",
-        "category": "crypto"
-      },
-      "news": {
-        "title": "BitMine Reports $3.82 Billion Quarterly Loss as Ethereum Bet Weighs Heavy",
-        "source": "yahoo_finance",
-        "lang": "en",
-        "url": "https://finance.yahoo.com/markets/crypto/articles/bitmine-reports-3-82-billion-090629115.html",
-        "published_at": "2026-04-15T09:06:29"
-      }
-    },
-    {
-      "id": 26,
-      "made_at": "2026-04-16T19:16:16.298668",
-      "asset": {
-        "symbol": "BMNR",
-        "name": "BitMine Immersion Technologies",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 7.0,
-      "horizon_days": 3,
-      "expire_at": "2026-04-19T19:16:16.298668",
-      "baseline_price": 22.065000534057617,
-      "baseline_source": null,
-      "status": "verified",
-      "hit": true,
-      "hit_breakdown": {
-        "dir_hit": true,
-        "mag_hit": true,
-        "strict_hit": true,
-        "mag_err_rel": 0.770158660456078,
-        "mag_err_bucket": "<=100%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": -1.6088893768074537,
-      "actual_direction": "down",
-      "reasoning": "作为亏损主体，38.2亿美元的季度亏损直接重创公司财报与净资产，市场会立刻对其ETH敞口与偿付能力重新定价，股价大概率跳空下跌并在数日内继续承压。检索结果无对应模式，属新模式。",
-      "event": {
-        "id": 8,
-        "summary": "BitMine公司因以太坊押注巨亏，单季度亏损38.2亿美元",
-        "category": "crypto"
-      },
-      "news": {
-        "title": "BitMine Reports $3.82 Billion Quarterly Loss as Ethereum Bet Weighs Heavy",
-        "source": "yahoo_finance",
-        "lang": "en",
-        "url": "https://finance.yahoo.com/markets/crypto/articles/bitmine-reports-3-82-billion-090629115.html",
-        "published_at": "2026-04-15T09:06:29"
-      }
-    },
-    {
-      "id": 25,
-      "made_at": "2026-04-16T19:16:15.369836",
-      "asset": {
-        "symbol": "ETH-USD",
-        "name": "以太坊",
-        "class": "crypto"
-      },
-      "direction": "down",
-      "magnitude_pct": 3.5,
-      "horizon_days": 3,
-      "expire_at": "2026-04-19T19:16:15.369836",
-      "baseline_price": 2337.27001953125,
-      "baseline_source": null,
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": true,
-        "strict_hit": false,
-        "mag_err_rel": 0.2016319644225883,
-        "mag_err_bucket": "<=25%",
-        "tol_used": 0.92,
-        "asset_class": "crypto"
-      },
-      "actual_magnitude_pct": 2.794288124520941,
-      "actual_direction": "up",
-      "reasoning": "BitMine作为大型以太坊财库公司单季巨亏38.2亿美元，引发市场对企业级ETH持仓被迫减仓/止损的担忧，且会打击其他机构继续增持ETH作为储备资产的信心。检索到的因果链均未覆盖'加密财库公司巨亏'情景，属新模式。短期情绪面承压，3日内ETH承压下行。",
-      "event": {
-        "id": 8,
-        "summary": "BitMine公司因以太坊押注巨亏，单季度亏损38.2亿美元",
-        "category": "crypto"
-      },
-      "news": {
-        "title": "BitMine Reports $3.82 Billion Quarterly Loss as Ethereum Bet Weighs Heavy",
-        "source": "yahoo_finance",
-        "lang": "en",
-        "url": "https://finance.yahoo.com/markets/crypto/articles/bitmine-reports-3-82-billion-090629115.html",
-        "published_at": "2026-04-15T09:06:29"
-      }
-    },
-    {
-      "id": 24,
-      "made_at": "2026-04-16T19:15:48.905726",
-      "asset": {
-        "symbol": "PINS",
-        "name": "Pinterest",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 2.0,
-      "horizon_days": 3,
-      "expire_at": "2026-04-19T19:15:48.905726",
-      "baseline_price": 20.03499984741211,
-      "baseline_source": null,
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": true,
-        "strict_hit": false,
-        "mag_err_rel": 0.45994758242249945,
-        "mag_err_bucket": "<=50%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": 2.919895164844999,
-      "actual_direction": "up",
-      "reasoning": "Snap大规模裁员暗示中小型社交广告平台面临用户增长放缓与竞争加剧的压力，作为与Snap定位接近的中型广告平台，Pinterest易被市场一并下调预期。检索结果未覆盖该同业传导模式，属于新模式。",
-      "event": {
-        "id": 9,
-        "summary": "Snap宣布裁员1000人，受激进投资者施压并押注AI提效",
-        "category": "tech"
-      },
-      "news": {
-        "title": "Snap to cut 1,000 jobs after activist pressure, bets on AI efficiency",
-        "source": "yahoo_finance",
-        "lang": "en",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/snap-lay-off-16-staff-101450564.html",
-        "published_at": "2026-04-15T10:14:50"
-      }
-    },
-    {
-      "id": 23,
-      "made_at": "2026-04-16T19:15:48.090840",
-      "asset": {
-        "symbol": "META",
-        "name": "Meta平台",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 1.5,
-      "horizon_days": 7,
-      "expire_at": "2026-04-23T19:15:48.090840",
-      "baseline_price": 673.4298706054688,
-      "baseline_source": null,
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "reasoning": "Snap裁员并押注AI提效会强化市场对广告类科技公司走'效率年'路线的预期，作为社交广告同业且AI投入更深的Meta容易获得情绪外溢和估值抬升。此关系不在检索到的因果链中，属于新模式。",
-      "event": {
-        "id": 9,
-        "summary": "Snap宣布裁员1000人，受激进投资者施压并押注AI提效",
-        "category": "tech"
-      },
-      "news": {
-        "title": "Snap to cut 1,000 jobs after activist pressure, bets on AI efficiency",
-        "source": "yahoo_finance",
-        "lang": "en",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/snap-lay-off-16-staff-101450564.html",
-        "published_at": "2026-04-15T10:14:50"
-      }
-    },
-    {
-      "id": 22,
-      "made_at": "2026-04-16T19:15:47.188177",
-      "asset": {
-        "symbol": "SNAP",
-        "name": "Snap公司",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 4.5,
-      "horizon_days": 3,
-      "expire_at": "2026-04-19T19:15:47.188177",
-      "baseline_price": 6.079999923706055,
-      "baseline_source": null,
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": true,
-        "strict_hit": false,
-        "mag_err_rel": 0.6081873638221205,
-        "mag_err_bucket": "<=100%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": -7.236843137199542,
-      "actual_direction": "down",
-      "reasoning": "公司宣布裁员1000人以应对激进投资者压力并押注AI提效，短期内市场通常将大规模裁员解读为成本削减和利润率改善的积极信号，加上激进投资者介入常推动股价上行。检索到的因果链未覆盖该模式，属于新模式。",
-      "event": {
-        "id": 9,
-        "summary": "Snap宣布裁员1000人，受激进投资者施压并押注AI提效",
-        "category": "tech"
-      },
-      "news": {
-        "title": "Snap to cut 1,000 jobs after activist pressure, bets on AI efficiency",
-        "source": "yahoo_finance",
-        "lang": "en",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/snap-lay-off-16-staff-101450564.html",
-        "published_at": "2026-04-15T10:14:50"
-      }
-    },
-    {
-      "id": 21,
-      "made_at": "2026-04-16T19:15:27.633059",
-      "asset": {
-        "symbol": "BYND",
-        "name": "超越肉类",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 3.5,
-      "horizon_days": 3,
-      "expire_at": "2026-04-19T19:15:27.633059",
-      "baseline_price": 0.7986999750137329,
-      "baseline_source": null,
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": false,
-        "strict_hit": false,
-        "mag_err_rel": 7.810745667999442,
-        "mag_err_bucket": ">100%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": 30.83760983799805,
-      "actual_direction": "up",
-      "reasoning": "短期内负面舆情发酵（CEO甩锅消费者引发公关危机）将触发散户与机构的恐慌性抛售，股价在3日窗口延续跌势。属于舆情驱动短期崩跌的新模式，检索结果中无对应因果链。",
-      "event": {
-        "id": 10,
-        "summary": "Beyond Meat股价从200美元暴跌至仙股水平，CEO薪酬却获上调，并将公司崩溃归咎于美国消费者",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "Beyond Meat crashed from $200 to penny-stock territory. The CEO got a raise — and blames Americans for the collapse",
-        "source": "yahoo_finance",
-        "lang": "en",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/beyond-meat-crashed-200-penny-091500999.html",
-        "published_at": "2026-04-15T09:15:00"
-      }
-    },
-    {
-      "id": 20,
-      "made_at": "2026-04-16T19:15:27.095054",
-      "asset": {
-        "symbol": "TSN",
-        "name": "泰森食品",
-        "class": "us_stock"
+        "symbol": "USDKRW=X",
+        "name": "美元/韩元汇率",
+        "class": "fx"
       },
       "direction": "up",
       "magnitude_pct": 0.8,
       "horizon_days": 7,
-      "expire_at": "2026-04-23T19:15:27.095054",
-      "baseline_price": 63.540000915527344,
-      "baseline_source": null,
+      "expire_at": "2026-05-04T12:46:26.199702",
+      "baseline_price": 1471.010009765625,
+      "baseline_source": "event_time",
       "status": "pending",
       "hit": null,
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "reasoning": "Beyond Meat的崩盘进一步印证植物肉赛道需求疲软，传统动物蛋白龙头泰森食品作为替代品受益者，市场份额预期改善。此为行业替代效应的新模式，检索到的因果链未覆盖该消费替代主题。",
+      "reasoning": "朝俄军事合作深化加剧朝鲜半岛地缘紧张，市场避险情绪升温会导致韩元承压贬值。朝鲜士兵在俄作战并有阵亡确认，意味着朝俄军事同盟进入实质性阶段，韩国面临的安全威胁上升，资本可能流出韩国市场。",
       "event": {
-        "id": 10,
-        "summary": "Beyond Meat股价从200美元暴跌至仙股水平，CEO薪酬却获上调，并将公司崩溃归咎于美国消费者",
-        "category": "earnings"
+        "id": 204,
+        "summary": "金正恩与俄罗斯高官向阵亡朝鲜士兵鞠躬，暗示朝俄军事合作深化",
+        "category": "geopolitics"
       },
       "news": {
-        "title": "Beyond Meat crashed from $200 to penny-stock territory. The CEO got a raise — and blames Americans for the collapse",
-        "source": "yahoo_finance",
-        "lang": "en",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/beyond-meat-crashed-200-penny-091500999.html",
-        "published_at": "2026-04-15T09:15:00"
+        "title": "金正恩与俄高官向阵亡朝鲜士兵鞠躬",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7632898068169477674/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632898068169477674%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%87%91%E6%AD%A3%E6%81%A9%E4%B8%8E%E4%BF%84%E9%AB%98%E5%AE%98%E5%90%91%E9%98%B5%E4%BA%A1%E6%9C%9D%E9%B2%9C%E5%A3%AB%E5%85%B5%E9%9E%A0%E8%BA%AC%22%7D&rank=&style_id=40132&topic_id=7632898068169477674",
+        "published_at": "2026-04-27T12:36:50.016518"
       }
     }
   ],
@@ -18075,6 +17950,871 @@
       ]
     },
     {
+      "id": 94,
+      "pattern": "美国政府停摆 / 债务上限临近违约",
+      "asset_symbol": "GC=F",
+      "asset_name": "黄金期货",
+      "asset_class": "commodity",
+      "macro_category": "politics_geo",
+      "direction": "up",
+      "magnitude_pct": 2.0,
+      "magnitude_pct_stddev": 0.0,
+      "horizon_days": 7,
+      "confidence": 0.574306779956617,
+      "grade": "A",
+      "retail_edge": "mid",
+      "support_count": 4,
+      "refute_count": 2,
+      "source": "seed",
+      "rationale": "短期提振避险资产，压制美元信用，长债剧烈波动",
+      "explanation": {
+        "causal_chain": [
+          {
+            "step": 1,
+            "trigger": "美国政府停摆或债务上限临近违约的消息公布",
+            "mechanism": "市场对美国主权信用风险的担忧急剧上升，投资者开始重新评估美国国债的违约概率（即使极低），触发风险偏好下降",
+            "assumption": "市场认为政治僵局可能真的导致技术性违约，而非仅仅是例行政治博弈",
+            "confidence": "high"
+          },
+          {
+            "step": 2,
+            "trigger": "风险偏好下降导致资金从股票、信用债等风险资产流出",
+            "mechanism": "投资者遵循经典避险逻辑：在主权信用不确定性事件中，优先配置'终极安全资产'。黄金作为无信用风险的实物资产，成为美债之外的主要避险选择",
+            "assumption": "市场仍将黄金视为有效避险工具，且流动性充足、交易成本可控",
+            "confidence": "high"
+          },
+          {
+            "step": 3,
+            "trigger": "避险资金开始涌入黄金市场，期货多头仓位增加",
+            "mechanism": "短期内（5-10 天）避险需求集中释放，黄金期货和现货市场同步出现买盘压力。由于黄金市场深度有限（相比国债），价格弹性较大，推动 GC=F 上涨",
+            "assumption": "同时段没有更强的反向因素（如美联储突然鹰派加息、美元暴涨挤压黄金）",
+            "confidence": "medium"
+          },
+          {
+            "step": 4,
+            "trigger": "黄金价格上涨进一步强化市场对危机的预期，形成短期正反馈",
+            "mechanism": "技术面突破（如关键阻力位）吸引趋势跟随者和算法交易加仓，放大初始避险需求的价格效应。7 天内涨幅约 2% 符合此类事件的短期脉冲特征",
+            "assumption": "政治僵局在 7 天内未迅速解决，维持市场紧张情绪；黄金未因其他因素（如实际利率飙升）受到压制",
+            "confidence": "medium"
+          }
+        ],
+        "mechanism_summary": "政府停摆 → 主权信用担忧 → 避险资金涌入黄金 → 短期价格脉冲上涨",
+        "asset_logic": "黄金是美债之外最主要的无信用风险避险资产，在美国主权信用受质疑时受益最直接。相比美元（其信用本身受损）或长债（面临违约风险担忧），黄金的'终极避险'属性在此场景下更纯粹。2% 的涨幅反映短期避险溢价，符合过往债务上限危机中黄金的典型脉冲幅度（通常 1-3%）。",
+        "horizon_logic": "7 天窗口对应市场对政治僵局的初始恐慌期。历史上债务上限危机通常在 1-2 周内出现转机（国会妥协或技术性延期），避险情绪随即消退，黄金涨幅回吐。若拖延超过 2 周，则进入更复杂的博弈阶段，预测难度显著上升。",
+        "key_risks": "（1）国会迅速达成协议（2-3 天内），避险需求夭折；（2）美联储同时释放鹰派信号（如意外加息预期升温），推高实际利率压制黄金；（3）美元指数因其他地缘风险（如欧洲危机）反而走强，对冲黄金的避险买盘；（4）市场已提前定价该事件（如上一轮停摆刚结束），边际冲击减弱。",
+        "historical_examples": [
+          {
+            "date": "2013-10-01",
+            "summary": "政府停摆 16 天，黄金在前 5 个交易日涨约 1.8%，随后因美联储 taper 预期回吐涨幅"
+          },
+          {
+            "date": "2011-07-22",
+            "summary": "债务上限危机最激烈阶段，黄金单周暴涨 3.6%，直至 8 月初协议达成后回调"
+          },
+          {
+            "date": "2018-12-22",
+            "summary": "政府停摆 35 天，但市场提前消化，黄金首周仅涨 0.9%，后因美联储转鸽另有涨幅"
+          }
+        ]
+      },
+      "failure_conditions": [
+        "（1）国会迅速达成协议（2-3 天内），避险需求夭折",
+        "（2）美联储同时释放鹰派信号（如意外加息预期升温），推高实际利率压制黄金",
+        "（3）美元指数因其他地缘风险（如欧洲危机）反而走强，对冲黄金的避险买盘",
+        "（4）市场已提前定价该事件（如上一轮停摆刚结束），边际冲击减弱。"
+      ],
+      "historical_instances": [
+        {
+          "event_date": "2023-05-01",
+          "event_note": "US Treasury Secretary Yellen warned June 1 'X-date' for debt ceiling breach, triggering market volatility",
+          "baseline_price": 1983.4,
+          "end_price": 2026.3,
+          "actual_pct": 2.16,
+          "actual_direction": "up",
+          "dir_hit": true,
+          "strict_hit": true,
+          "mag_err_bucket": "<=10%",
+          "skipped_reason": null,
+          "price_path": [
+            {
+              "date": "2023-04-24",
+              "close": 1989.1
+            },
+            {
+              "date": "2023-04-25",
+              "close": 1994.0
+            },
+            {
+              "date": "2023-04-26",
+              "close": 1985.7
+            },
+            {
+              "date": "2023-04-27",
+              "close": 1989.9
+            },
+            {
+              "date": "2023-04-28",
+              "close": 1990.1
+            },
+            {
+              "date": "2023-05-01",
+              "close": 1983.4
+            },
+            {
+              "date": "2023-05-02",
+              "close": 2014.3
+            },
+            {
+              "date": "2023-05-03",
+              "close": 2028.6
+            },
+            {
+              "date": "2023-05-04",
+              "close": 2048.0
+            },
+            {
+              "date": "2023-05-05",
+              "close": 2017.4
+            },
+            {
+              "date": "2023-05-08",
+              "close": 2026.3
+            },
+            {
+              "date": "2023-05-09",
+              "close": 2036.2
+            },
+            {
+              "date": "2023-05-10",
+              "close": 2030.5
+            },
+            {
+              "date": "2023-05-11",
+              "close": 2014.7
+            },
+            {
+              "date": "2023-05-12",
+              "close": 2014.5
+            },
+            {
+              "date": "2023-05-15",
+              "close": 2018.0
+            },
+            {
+              "date": "2023-05-16",
+              "close": 1988.4
+            },
+            {
+              "date": "2023-05-17",
+              "close": 1980.7
+            },
+            {
+              "date": "2023-05-18",
+              "close": 1956.5
+            },
+            {
+              "date": "2023-05-19",
+              "close": 1978.7
+            },
+            {
+              "date": "2023-05-22",
+              "close": 1974.8
+            },
+            {
+              "date": "2023-05-23",
+              "close": 1972.4
+            },
+            {
+              "date": "2023-05-24",
+              "close": 1962.8
+            },
+            {
+              "date": "2023-05-25",
+              "close": 1943.1
+            },
+            {
+              "date": "2023-05-26",
+              "close": 1944.1
+            },
+            {
+              "date": "2023-05-30",
+              "close": 1958.0
+            },
+            {
+              "date": "2023-05-31",
+              "close": 1963.9
+            },
+            {
+              "date": "2023-06-01",
+              "close": 1978.0
+            },
+            {
+              "date": "2023-06-02",
+              "close": 1952.4
+            },
+            {
+              "date": "2023-06-05",
+              "close": 1958.0
+            },
+            {
+              "date": "2023-06-06",
+              "close": 1965.5
+            },
+            {
+              "date": "2023-06-07",
+              "close": 1942.7
+            }
+          ],
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2023-05-04",
+                "type": "peak",
+                "description": "事件后第 3 天录得相对基准 +3.26%，为窗口内最大升幅；印证预测方向。",
+                "days_after_event": 3
+              },
+              {
+                "date": "2023-05-05",
+                "type": "reversion",
+                "description": "事件后第 4 天 3 日滚动收益方向翻转，价格开始回吐前期涨跌。",
+                "days_after_event": 4
+              }
+            ],
+            "time_to_peak_impact_days": 3,
+            "narrative": "事件后 7 天累计 +2.16%，峰值出现在事件后第 3 天 (+3.26%)，第 4 天起回吐。",
+            "method": "heuristic"
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
+        },
+        {
+          "event_date": "2021-09-30",
+          "event_note": "US government approached shutdown deadline as Congress failed to pass funding bill, averted hours before midnight",
+          "baseline_price": 1755.3,
+          "end_price": 1757.9,
+          "actual_pct": 0.15,
+          "actual_direction": "up",
+          "dir_hit": true,
+          "strict_hit": true,
+          "mag_err_bucket": "<=100%",
+          "skipped_reason": null,
+          "price_path": [
+            {
+              "date": "2021-09-22",
+              "close": 1776.7
+            },
+            {
+              "date": "2021-09-23",
+              "close": 1747.7
+            },
+            {
+              "date": "2021-09-24",
+              "close": 1749.7
+            },
+            {
+              "date": "2021-09-27",
+              "close": 1750.0
+            },
+            {
+              "date": "2021-09-28",
+              "close": 1735.8
+            },
+            {
+              "date": "2021-09-29",
+              "close": 1721.5
+            },
+            {
+              "date": "2021-09-30",
+              "close": 1755.3
+            },
+            {
+              "date": "2021-10-01",
+              "close": 1757.0
+            },
+            {
+              "date": "2021-10-04",
+              "close": 1766.2
+            },
+            {
+              "date": "2021-10-05",
+              "close": 1759.6
+            },
+            {
+              "date": "2021-10-06",
+              "close": 1760.5
+            },
+            {
+              "date": "2021-10-07",
+              "close": 1757.9
+            },
+            {
+              "date": "2021-10-08",
+              "close": 1756.3
+            },
+            {
+              "date": "2021-10-11",
+              "close": 1754.6
+            },
+            {
+              "date": "2021-10-12",
+              "close": 1758.3
+            },
+            {
+              "date": "2021-10-13",
+              "close": 1793.7
+            },
+            {
+              "date": "2021-10-14",
+              "close": 1796.7
+            },
+            {
+              "date": "2021-10-15",
+              "close": 1767.2
+            },
+            {
+              "date": "2021-10-18",
+              "close": 1764.8
+            },
+            {
+              "date": "2021-10-19",
+              "close": 1769.7
+            },
+            {
+              "date": "2021-10-20",
+              "close": 1784.1
+            },
+            {
+              "date": "2021-10-21",
+              "close": 1781.2
+            },
+            {
+              "date": "2021-10-22",
+              "close": 1795.5
+            },
+            {
+              "date": "2021-10-25",
+              "close": 1806.0
+            },
+            {
+              "date": "2021-10-26",
+              "close": 1792.7
+            },
+            {
+              "date": "2021-10-27",
+              "close": 1797.9
+            },
+            {
+              "date": "2021-10-28",
+              "close": 1801.6
+            },
+            {
+              "date": "2021-10-29",
+              "close": 1783.0
+            },
+            {
+              "date": "2021-11-01",
+              "close": 1795.1
+            },
+            {
+              "date": "2021-11-02",
+              "close": 1788.7
+            },
+            {
+              "date": "2021-11-03",
+              "close": 1763.6
+            },
+            {
+              "date": "2021-11-04",
+              "close": 1793.0
+            },
+            {
+              "date": "2021-11-05",
+              "close": 1816.4
+            }
+          ],
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2021-11-05",
+                "type": "peak",
+                "description": "事件后第 36 天录得相对基准 +3.48%，为窗口内最大升幅；印证预测方向。",
+                "days_after_event": 36
+              }
+            ],
+            "time_to_peak_impact_days": 36,
+            "narrative": "事件后 7 天累计 +0.15%，峰值出现在事件后第 36 天 (+3.48%)，第 5 天起回吐。",
+            "method": "heuristic"
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
+        },
+        {
+          "event_date": "2019-01-25",
+          "event_note": "End of longest US government shutdown (35 days), started Dec 22 2018 over border wall funding",
+          "baseline_price": 1297.4,
+          "end_price": 1316.9,
+          "actual_pct": 1.5,
+          "actual_direction": "up",
+          "dir_hit": true,
+          "strict_hit": true,
+          "mag_err_bucket": "<=25%",
+          "skipped_reason": null,
+          "price_path": [
+            {
+              "date": "2019-01-17",
+              "close": 1291.0
+            },
+            {
+              "date": "2019-01-18",
+              "close": 1281.3
+            },
+            {
+              "date": "2019-01-22",
+              "close": 1282.5
+            },
+            {
+              "date": "2019-01-23",
+              "close": 1283.1
+            },
+            {
+              "date": "2019-01-24",
+              "close": 1279.1
+            },
+            {
+              "date": "2019-01-25",
+              "close": 1297.4
+            },
+            {
+              "date": "2019-01-28",
+              "close": 1302.4
+            },
+            {
+              "date": "2019-01-29",
+              "close": 1308.2
+            },
+            {
+              "date": "2019-01-30",
+              "close": 1309.9
+            },
+            {
+              "date": "2019-01-31",
+              "close": 1319.7
+            },
+            {
+              "date": "2019-02-01",
+              "close": 1316.9
+            },
+            {
+              "date": "2019-02-04",
+              "close": 1314.3
+            },
+            {
+              "date": "2019-02-05",
+              "close": 1314.2
+            },
+            {
+              "date": "2019-02-06",
+              "close": 1309.5
+            },
+            {
+              "date": "2019-02-07",
+              "close": 1309.4
+            },
+            {
+              "date": "2019-02-08",
+              "close": 1313.7
+            },
+            {
+              "date": "2019-02-11",
+              "close": 1307.0
+            },
+            {
+              "date": "2019-02-12",
+              "close": 1309.2
+            },
+            {
+              "date": "2019-02-13",
+              "close": 1310.8
+            },
+            {
+              "date": "2019-02-14",
+              "close": 1309.8
+            },
+            {
+              "date": "2019-02-15",
+              "close": 1318.1
+            },
+            {
+              "date": "2019-02-19",
+              "close": 1340.1
+            },
+            {
+              "date": "2019-02-20",
+              "close": 1343.3
+            },
+            {
+              "date": "2019-02-21",
+              "close": 1323.5
+            },
+            {
+              "date": "2019-02-22",
+              "close": 1329.2
+            },
+            {
+              "date": "2019-02-25",
+              "close": 1325.9
+            },
+            {
+              "date": "2019-02-26",
+              "close": 1325.1
+            },
+            {
+              "date": "2019-02-27",
+              "close": 1317.7
+            },
+            {
+              "date": "2019-02-28",
+              "close": 1312.8
+            },
+            {
+              "date": "2019-03-01",
+              "close": 1296.4
+            }
+          ],
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2019-02-20",
+                "type": "peak",
+                "description": "事件后第 26 天录得相对基准 +3.54%，为窗口内最大升幅；印证预测方向。",
+                "days_after_event": 26
+              }
+            ],
+            "time_to_peak_impact_days": 26,
+            "narrative": "事件后 7 天累计 +1.50%，峰值出现在事件后第 26 天 (+3.54%)，第 7 天起回吐。",
+            "method": "heuristic"
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
+        },
+        {
+          "event_date": "2018-12-21",
+          "event_note": "US federal government shutdown began over border security funding dispute",
+          "baseline_price": 1253.8,
+          "end_price": 1279.9,
+          "actual_pct": 2.08,
+          "actual_direction": "up",
+          "dir_hit": true,
+          "strict_hit": true,
+          "mag_err_bucket": "<=10%",
+          "skipped_reason": null,
+          "price_path": [
+            {
+              "date": "2018-12-13",
+              "close": 1242.7
+            },
+            {
+              "date": "2018-12-14",
+              "close": 1237.0
+            },
+            {
+              "date": "2018-12-17",
+              "close": 1247.4
+            },
+            {
+              "date": "2018-12-18",
+              "close": 1249.2
+            },
+            {
+              "date": "2018-12-19",
+              "close": 1252.1
+            },
+            {
+              "date": "2018-12-20",
+              "close": 1263.6
+            },
+            {
+              "date": "2018-12-21",
+              "close": 1253.8
+            },
+            {
+              "date": "2018-12-24",
+              "close": 1267.5
+            },
+            {
+              "date": "2018-12-26",
+              "close": 1269.2
+            },
+            {
+              "date": "2018-12-27",
+              "close": 1277.3
+            },
+            {
+              "date": "2018-12-28",
+              "close": 1279.9
+            },
+            {
+              "date": "2018-12-31",
+              "close": 1278.3
+            },
+            {
+              "date": "2019-01-02",
+              "close": 1281.0
+            },
+            {
+              "date": "2019-01-03",
+              "close": 1291.8
+            },
+            {
+              "date": "2019-01-04",
+              "close": 1282.7
+            },
+            {
+              "date": "2019-01-07",
+              "close": 1286.8
+            },
+            {
+              "date": "2019-01-08",
+              "close": 1283.2
+            },
+            {
+              "date": "2019-01-09",
+              "close": 1289.3
+            },
+            {
+              "date": "2019-01-10",
+              "close": 1284.7
+            },
+            {
+              "date": "2019-01-11",
+              "close": 1287.1
+            },
+            {
+              "date": "2019-01-14",
+              "close": 1289.1
+            },
+            {
+              "date": "2019-01-15",
+              "close": 1286.2
+            },
+            {
+              "date": "2019-01-16",
+              "close": 1291.6
+            },
+            {
+              "date": "2019-01-17",
+              "close": 1291.0
+            },
+            {
+              "date": "2019-01-18",
+              "close": 1281.3
+            },
+            {
+              "date": "2019-01-22",
+              "close": 1282.5
+            },
+            {
+              "date": "2019-01-23",
+              "close": 1283.1
+            },
+            {
+              "date": "2019-01-24",
+              "close": 1279.1
+            },
+            {
+              "date": "2019-01-25",
+              "close": 1297.4
+            }
+          ],
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2019-01-25",
+                "type": "peak",
+                "description": "事件后第 35 天录得相对基准 +3.48%，为窗口内最大升幅；印证预测方向。",
+                "days_after_event": 35
+              }
+            ],
+            "time_to_peak_impact_days": 35,
+            "narrative": "事件后 7 天累计 +2.08%，峰值出现在事件后第 35 天 (+3.48%)，第 14 天起回吐。",
+            "method": "heuristic"
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
+        },
+        {
+          "event_date": "2013-10-01",
+          "event_note": "US government shutdown began (lasted 16 days) amid Obamacare funding dispute, coincided with debt ceiling crisis",
+          "baseline_price": 1286.0,
+          "end_price": 1324.2,
+          "actual_pct": 2.97,
+          "actual_direction": "up",
+          "dir_hit": true,
+          "strict_hit": true,
+          "mag_err_bucket": "<=50%",
+          "skipped_reason": null,
+          "price_path": [
+            {
+              "date": "2013-09-23",
+              "close": 1326.9
+            },
+            {
+              "date": "2013-09-24",
+              "close": 1316.0
+            },
+            {
+              "date": "2013-09-25",
+              "close": 1335.9
+            },
+            {
+              "date": "2013-09-26",
+              "close": 1323.6
+            },
+            {
+              "date": "2013-09-27",
+              "close": 1338.4
+            },
+            {
+              "date": "2013-09-30",
+              "close": 1326.5
+            },
+            {
+              "date": "2013-10-01",
+              "close": 1286.0
+            },
+            {
+              "date": "2013-10-02",
+              "close": 1320.6
+            },
+            {
+              "date": "2013-10-03",
+              "close": 1317.4
+            },
+            {
+              "date": "2013-10-04",
+              "close": 1309.7
+            },
+            {
+              "date": "2013-10-07",
+              "close": 1324.8
+            },
+            {
+              "date": "2013-10-08",
+              "close": 1324.2
+            },
+            {
+              "date": "2013-10-09",
+              "close": 1306.9
+            },
+            {
+              "date": "2013-10-10",
+              "close": 1296.6
+            },
+            {
+              "date": "2013-10-11",
+              "close": 1268.0
+            },
+            {
+              "date": "2013-10-14",
+              "close": 1276.4
+            },
+            {
+              "date": "2013-10-15",
+              "close": 1273.0
+            },
+            {
+              "date": "2013-10-16",
+              "close": 1282.0
+            },
+            {
+              "date": "2013-10-17",
+              "close": 1322.7
+            },
+            {
+              "date": "2013-10-18",
+              "close": 1314.4
+            },
+            {
+              "date": "2013-10-21",
+              "close": 1315.7
+            },
+            {
+              "date": "2013-10-22",
+              "close": 1342.5
+            },
+            {
+              "date": "2013-10-23",
+              "close": 1333.9
+            },
+            {
+              "date": "2013-10-24",
+              "close": 1350.2
+            },
+            {
+              "date": "2013-10-25",
+              "close": 1352.4
+            },
+            {
+              "date": "2013-10-28",
+              "close": 1352.0
+            },
+            {
+              "date": "2013-10-29",
+              "close": 1345.2
+            },
+            {
+              "date": "2013-10-30",
+              "close": 1349.0
+            },
+            {
+              "date": "2013-10-31",
+              "close": 1323.6
+            },
+            {
+              "date": "2013-11-01",
+              "close": 1313.1
+            },
+            {
+              "date": "2013-11-04",
+              "close": 1314.6
+            },
+            {
+              "date": "2013-11-05",
+              "close": 1308.0
+            },
+            {
+              "date": "2013-11-06",
+              "close": 1317.7
+            },
+            {
+              "date": "2013-11-07",
+              "close": 1308.4
+            }
+          ],
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2013-10-25",
+                "type": "peak",
+                "description": "事件后第 24 天录得相对基准 +5.16%，为窗口内最大升幅；印证预测方向。",
+                "days_after_event": 24
+              }
+            ],
+            "time_to_peak_impact_days": 24,
+            "narrative": "事件后 7 天累计 +2.97%，峰值出现在事件后第 24 天 (+5.16%)，第 7 天起回吐。",
+            "method": "heuristic"
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
+        }
+      ]
+    },
+    {
       "id": 155,
       "pattern": "FOMC 点阵图鹰派上修",
       "asset_symbol": "GC=F",
@@ -25306,999 +26046,6 @@
             ],
             "time_to_peak_impact_days": 37,
             "narrative": "事件后 3 天累计 +0.00%，峰值出现在事件后第 37 天 (-3.02%)。",
-            "method": "heuristic"
-          },
-          "data_source_name": null,
-          "data_source_url": null,
-          "user_provided": false
-        }
-      ]
-    },
-    {
-      "id": 145,
-      "pattern": "美联储紧急降息（非例会、≥50bp）",
-      "asset_symbol": "SPY",
-      "asset_name": "标普500ETF",
-      "asset_class": "us_stock",
-      "macro_category": "monetary_policy",
-      "direction": "down",
-      "magnitude_pct": 3.728,
-      "magnitude_pct_stddev": 0.891614266373077,
-      "horizon_days": 7,
-      "confidence": 0.375,
-      "grade": "C",
-      "retail_edge": "high",
-      "support_count": 2,
-      "refute_count": 4,
-      "source": "researched",
-      "rationale": "非例会紧急降息发生在系统性风险或重大危机期间，短期内美元走弱、黄金避险上涨；但因释放衰退恐慌信号，风险资产往往不涨反跌。",
-      "explanation": null,
-      "failure_conditions": null,
-      "historical_instances": [
-        {
-          "event_date": "2020-03-15",
-          "event_note": "Sunday emergency -100bp to zero + $700B QE; S&P -12% Monday",
-          "baseline_price": 239.85,
-          "end_price": 222.95,
-          "actual_pct": -7.05,
-          "actual_direction": "down",
-          "dir_hit": true,
-          "strict_hit": true,
-          "mag_err_bucket": "<=100%",
-          "skipped_reason": null,
-          "price_path": [
-            {
-              "date": "2020-03-09",
-              "close": 274.23
-            },
-            {
-              "date": "2020-03-10",
-              "close": 288.42
-            },
-            {
-              "date": "2020-03-11",
-              "close": 274.36
-            },
-            {
-              "date": "2020-03-12",
-              "close": 248.11
-            },
-            {
-              "date": "2020-03-13",
-              "close": 269.32
-            },
-            {
-              "date": "2020-03-16",
-              "close": 239.85
-            },
-            {
-              "date": "2020-03-17",
-              "close": 252.8
-            },
-            {
-              "date": "2020-03-18",
-              "close": 240.0
-            },
-            {
-              "date": "2020-03-19",
-              "close": 240.51
-            },
-            {
-              "date": "2020-03-20",
-              "close": 228.8
-            },
-            {
-              "date": "2020-03-23",
-              "close": 222.95
-            },
-            {
-              "date": "2020-03-24",
-              "close": 243.15
-            },
-            {
-              "date": "2020-03-25",
-              "close": 246.79
-            },
-            {
-              "date": "2020-03-26",
-              "close": 261.2
-            },
-            {
-              "date": "2020-03-27",
-              "close": 253.42
-            },
-            {
-              "date": "2020-03-30",
-              "close": 261.65
-            },
-            {
-              "date": "2020-03-31",
-              "close": 257.75
-            },
-            {
-              "date": "2020-04-01",
-              "close": 246.15
-            },
-            {
-              "date": "2020-04-02",
-              "close": 251.83
-            },
-            {
-              "date": "2020-04-03",
-              "close": 248.19
-            },
-            {
-              "date": "2020-04-06",
-              "close": 264.86
-            },
-            {
-              "date": "2020-04-07",
-              "close": 265.13
-            },
-            {
-              "date": "2020-04-08",
-              "close": 274.03
-            },
-            {
-              "date": "2020-04-09",
-              "close": 278.2
-            },
-            {
-              "date": "2020-04-13",
-              "close": 275.66
-            },
-            {
-              "date": "2020-04-14",
-              "close": 283.79
-            },
-            {
-              "date": "2020-04-15",
-              "close": 277.76
-            },
-            {
-              "date": "2020-04-16",
-              "close": 279.1
-            },
-            {
-              "date": "2020-04-17",
-              "close": 286.64
-            },
-            {
-              "date": "2020-04-20",
-              "close": 281.59
-            },
-            {
-              "date": "2020-04-21",
-              "close": 273.04
-            }
-          ],
-          "turning_points": {
-            "turning_points": [
-              {
-                "date": "2020-04-17",
-                "type": "peak",
-                "description": "事件后第 33 天录得相对基准 +19.51%，为窗口内最大升幅；与预测方向相反。",
-                "days_after_event": 33
-              }
-            ],
-            "time_to_peak_impact_days": 33,
-            "narrative": "事件后 7 天累计 -7.05%，峰值出现在事件后第 33 天 (+19.51%)。",
-            "method": "heuristic"
-          },
-          "data_source_name": null,
-          "data_source_url": null,
-          "user_provided": false
-        },
-        {
-          "event_date": "2020-03-03",
-          "event_note": "Fed emergency -50bp, COVID response",
-          "baseline_price": 300.24,
-          "end_price": 288.42,
-          "actual_pct": -3.94,
-          "actual_direction": "down",
-          "dir_hit": true,
-          "strict_hit": true,
-          "mag_err_bucket": "<=10%",
-          "skipped_reason": null,
-          "price_path": [
-            {
-              "date": "2020-02-24",
-              "close": 322.42
-            },
-            {
-              "date": "2020-02-25",
-              "close": 312.65
-            },
-            {
-              "date": "2020-02-26",
-              "close": 311.5
-            },
-            {
-              "date": "2020-02-27",
-              "close": 297.51
-            },
-            {
-              "date": "2020-02-28",
-              "close": 296.26
-            },
-            {
-              "date": "2020-03-02",
-              "close": 309.09
-            },
-            {
-              "date": "2020-03-03",
-              "close": 300.24
-            },
-            {
-              "date": "2020-03-04",
-              "close": 312.86
-            },
-            {
-              "date": "2020-03-05",
-              "close": 302.46
-            },
-            {
-              "date": "2020-03-06",
-              "close": 297.46
-            },
-            {
-              "date": "2020-03-09",
-              "close": 274.23
-            },
-            {
-              "date": "2020-03-10",
-              "close": 288.42
-            },
-            {
-              "date": "2020-03-11",
-              "close": 274.36
-            },
-            {
-              "date": "2020-03-12",
-              "close": 248.11
-            },
-            {
-              "date": "2020-03-13",
-              "close": 269.32
-            },
-            {
-              "date": "2020-03-16",
-              "close": 239.85
-            },
-            {
-              "date": "2020-03-17",
-              "close": 252.8
-            },
-            {
-              "date": "2020-03-18",
-              "close": 240.0
-            },
-            {
-              "date": "2020-03-19",
-              "close": 240.51
-            },
-            {
-              "date": "2020-03-20",
-              "close": 228.8
-            },
-            {
-              "date": "2020-03-23",
-              "close": 222.95
-            },
-            {
-              "date": "2020-03-24",
-              "close": 243.15
-            },
-            {
-              "date": "2020-03-25",
-              "close": 246.79
-            },
-            {
-              "date": "2020-03-26",
-              "close": 261.2
-            },
-            {
-              "date": "2020-03-27",
-              "close": 253.42
-            },
-            {
-              "date": "2020-03-30",
-              "close": 261.65
-            },
-            {
-              "date": "2020-03-31",
-              "close": 257.75
-            },
-            {
-              "date": "2020-04-01",
-              "close": 246.15
-            },
-            {
-              "date": "2020-04-02",
-              "close": 251.83
-            },
-            {
-              "date": "2020-04-03",
-              "close": 248.19
-            },
-            {
-              "date": "2020-04-06",
-              "close": 264.86
-            },
-            {
-              "date": "2020-04-07",
-              "close": 265.13
-            },
-            {
-              "date": "2020-04-08",
-              "close": 274.03
-            },
-            {
-              "date": "2020-04-09",
-              "close": 278.2
-            }
-          ],
-          "turning_points": {
-            "turning_points": [
-              {
-                "date": "2020-03-23",
-                "type": "trough",
-                "description": "事件后第 20 天录得相对基准 -25.74%，为窗口内最大降幅；印证预测方向。",
-                "days_after_event": 20
-              }
-            ],
-            "time_to_peak_impact_days": 20,
-            "narrative": "事件后 7 天累计 -3.94%，峰值出现在事件后第 20 天 (-25.74%)，第 3 天起回吐。",
-            "method": "heuristic"
-          },
-          "data_source_name": null,
-          "data_source_url": null,
-          "user_provided": false
-        },
-        {
-          "event_date": "2008-10-08",
-          "event_note": "Coordinated global emergency -50bp post-Lehman",
-          "baseline_price": 97.51,
-          "end_price": 90.02,
-          "actual_pct": -7.68,
-          "actual_direction": "down",
-          "dir_hit": true,
-          "strict_hit": false,
-          "mag_err_bucket": ">100%",
-          "skipped_reason": null,
-          "price_path": [
-            {
-              "date": "2008-09-30",
-              "close": 115.99
-            },
-            {
-              "date": "2008-10-01",
-              "close": 116.06
-            },
-            {
-              "date": "2008-10-02",
-              "close": 111.85
-            },
-            {
-              "date": "2008-10-03",
-              "close": 110.34
-            },
-            {
-              "date": "2008-10-06",
-              "close": 104.72
-            },
-            {
-              "date": "2008-10-07",
-              "close": 100.03
-            },
-            {
-              "date": "2008-10-08",
-              "close": 97.51
-            },
-            {
-              "date": "2008-10-09",
-              "close": 90.7
-            },
-            {
-              "date": "2008-10-10",
-              "close": 88.5
-            },
-            {
-              "date": "2008-10-13",
-              "close": 101.35
-            },
-            {
-              "date": "2008-10-14",
-              "close": 99.85
-            },
-            {
-              "date": "2008-10-15",
-              "close": 90.02
-            },
-            {
-              "date": "2008-10-16",
-              "close": 93.77
-            },
-            {
-              "date": "2008-10-17",
-              "close": 93.21
-            },
-            {
-              "date": "2008-10-20",
-              "close": 98.81
-            },
-            {
-              "date": "2008-10-21",
-              "close": 95.86
-            },
-            {
-              "date": "2008-10-22",
-              "close": 90.64
-            },
-            {
-              "date": "2008-10-23",
-              "close": 91.69
-            },
-            {
-              "date": "2008-10-24",
-              "close": 87.04
-            },
-            {
-              "date": "2008-10-27",
-              "close": 83.95
-            },
-            {
-              "date": "2008-10-28",
-              "close": 93.76
-            },
-            {
-              "date": "2008-10-29",
-              "close": 93.08
-            },
-            {
-              "date": "2008-10-30",
-              "close": 96.3
-            },
-            {
-              "date": "2008-10-31",
-              "close": 96.83
-            },
-            {
-              "date": "2008-11-03",
-              "close": 97.11
-            },
-            {
-              "date": "2008-11-04",
-              "close": 100.41
-            },
-            {
-              "date": "2008-11-05",
-              "close": 96.19
-            },
-            {
-              "date": "2008-11-06",
-              "close": 90.86
-            },
-            {
-              "date": "2008-11-07",
-              "close": 93.86
-            },
-            {
-              "date": "2008-11-10",
-              "close": 92.63
-            },
-            {
-              "date": "2008-11-11",
-              "close": 89.77
-            },
-            {
-              "date": "2008-11-12",
-              "close": 85.82
-            },
-            {
-              "date": "2008-11-13",
-              "close": 91.17
-            },
-            {
-              "date": "2008-11-14",
-              "close": 86.62
-            }
-          ],
-          "turning_points": {
-            "turning_points": [
-              {
-                "date": "2008-10-27",
-                "type": "trough",
-                "description": "事件后第 19 天录得相对基准 -13.91%，为窗口内最大降幅；印证预测方向。",
-                "days_after_event": 19
-              }
-            ],
-            "time_to_peak_impact_days": 19,
-            "narrative": "事件后 7 天累计 -7.68%，峰值出现在事件后第 19 天 (-13.91%)，第 5 天起回吐。",
-            "method": "heuristic"
-          },
-          "data_source_name": null,
-          "data_source_url": null,
-          "user_provided": false
-        },
-        {
-          "event_date": "2008-01-22",
-          "event_note": "Emergency -75bp inter-meeting amid credit crisis",
-          "baseline_price": 130.72,
-          "end_price": 135.91,
-          "actual_pct": 3.97,
-          "actual_direction": "up",
-          "dir_hit": false,
-          "strict_hit": false,
-          "mag_err_bucket": "<=10%",
-          "skipped_reason": null,
-          "price_path": [
-            {
-              "date": "2008-01-14",
-              "close": 141.28
-            },
-            {
-              "date": "2008-01-15",
-              "close": 138.17
-            },
-            {
-              "date": "2008-01-16",
-              "close": 136.98
-            },
-            {
-              "date": "2008-01-17",
-              "close": 133.43
-            },
-            {
-              "date": "2008-01-18",
-              "close": 132.06
-            },
-            {
-              "date": "2008-01-22",
-              "close": 130.72
-            },
-            {
-              "date": "2008-01-23",
-              "close": 133.86
-            },
-            {
-              "date": "2008-01-24",
-              "close": 134.99
-            },
-            {
-              "date": "2008-01-25",
-              "close": 133.04
-            },
-            {
-              "date": "2008-01-28",
-              "close": 135.24
-            },
-            {
-              "date": "2008-01-29",
-              "close": 135.91
-            },
-            {
-              "date": "2008-01-30",
-              "close": 134.91
-            },
-            {
-              "date": "2008-01-31",
-              "close": 137.37
-            },
-            {
-              "date": "2008-02-01",
-              "close": 139.58
-            },
-            {
-              "date": "2008-02-04",
-              "close": 137.82
-            },
-            {
-              "date": "2008-02-05",
-              "close": 134.13
-            },
-            {
-              "date": "2008-02-06",
-              "close": 133.05
-            },
-            {
-              "date": "2008-02-07",
-              "close": 133.93
-            },
-            {
-              "date": "2008-02-08",
-              "close": 133.07
-            },
-            {
-              "date": "2008-02-11",
-              "close": 133.75
-            },
-            {
-              "date": "2008-02-12",
-              "close": 134.99
-            },
-            {
-              "date": "2008-02-13",
-              "close": 136.37
-            },
-            {
-              "date": "2008-02-14",
-              "close": 135.17
-            },
-            {
-              "date": "2008-02-15",
-              "close": 135.14
-            },
-            {
-              "date": "2008-02-19",
-              "close": 135.52
-            },
-            {
-              "date": "2008-02-20",
-              "close": 135.92
-            },
-            {
-              "date": "2008-02-21",
-              "close": 134.79
-            },
-            {
-              "date": "2008-02-22",
-              "close": 135.62
-            },
-            {
-              "date": "2008-02-25",
-              "close": 137.33
-            },
-            {
-              "date": "2008-02-26",
-              "close": 138.36
-            },
-            {
-              "date": "2008-02-27",
-              "close": 138.22
-            },
-            {
-              "date": "2008-02-28",
-              "close": 136.87
-            }
-          ],
-          "turning_points": {
-            "turning_points": [
-              {
-                "date": "2008-02-01",
-                "type": "peak",
-                "description": "事件后第 10 天录得相对基准 +6.78%，为窗口内最大升幅；与预测方向相反。",
-                "days_after_event": 10
-              }
-            ],
-            "time_to_peak_impact_days": 10,
-            "narrative": "事件后 7 天累计 +3.97%，峰值出现在事件后第 10 天 (+6.78%)，第 10 天起回吐。",
-            "method": "heuristic"
-          },
-          "data_source_name": null,
-          "data_source_url": null,
-          "user_provided": false
-        },
-        {
-          "event_date": "2001-04-18",
-          "event_note": "Emergency -50bp, recession risk",
-          "baseline_price": 124.0,
-          "end_price": 123.17,
-          "actual_pct": -0.67,
-          "actual_direction": "down",
-          "dir_hit": true,
-          "strict_hit": true,
-          "mag_err_bucket": "<=100%",
-          "skipped_reason": null,
-          "price_path": [
-            {
-              "date": "2001-04-10",
-              "close": 116.65
-            },
-            {
-              "date": "2001-04-11",
-              "close": 116.73
-            },
-            {
-              "date": "2001-04-12",
-              "close": 118.85
-            },
-            {
-              "date": "2001-04-16",
-              "close": 117.6
-            },
-            {
-              "date": "2001-04-17",
-              "close": 119.26
-            },
-            {
-              "date": "2001-04-18",
-              "close": 124.0
-            },
-            {
-              "date": "2001-04-19",
-              "close": 125.65
-            },
-            {
-              "date": "2001-04-20",
-              "close": 124.5
-            },
-            {
-              "date": "2001-04-23",
-              "close": 122.24
-            },
-            {
-              "date": "2001-04-24",
-              "close": 121.58
-            },
-            {
-              "date": "2001-04-25",
-              "close": 123.17
-            },
-            {
-              "date": "2001-04-26",
-              "close": 123.72
-            },
-            {
-              "date": "2001-04-27",
-              "close": 125.78
-            },
-            {
-              "date": "2001-04-30",
-              "close": 126.66
-            },
-            {
-              "date": "2001-05-01",
-              "close": 127.05
-            },
-            {
-              "date": "2001-05-02",
-              "close": 126.82
-            },
-            {
-              "date": "2001-05-03",
-              "close": 125.21
-            },
-            {
-              "date": "2001-05-04",
-              "close": 127.34
-            },
-            {
-              "date": "2001-05-07",
-              "close": 126.24
-            },
-            {
-              "date": "2001-05-08",
-              "close": 126.18
-            },
-            {
-              "date": "2001-05-09",
-              "close": 125.65
-            },
-            {
-              "date": "2001-05-10",
-              "close": 126.02
-            },
-            {
-              "date": "2001-05-11",
-              "close": 125.15
-            },
-            {
-              "date": "2001-05-14",
-              "close": 125.4
-            },
-            {
-              "date": "2001-05-15",
-              "close": 125.98
-            },
-            {
-              "date": "2001-05-16",
-              "close": 128.95
-            },
-            {
-              "date": "2001-05-17",
-              "close": 129.15
-            },
-            {
-              "date": "2001-05-18",
-              "close": 129.74
-            },
-            {
-              "date": "2001-05-21",
-              "close": 131.65
-            },
-            {
-              "date": "2001-05-22",
-              "close": 131.48
-            },
-            {
-              "date": "2001-05-23",
-              "close": 129.25
-            },
-            {
-              "date": "2001-05-24",
-              "close": 129.63
-            },
-            {
-              "date": "2001-05-25",
-              "close": 128.1
-            }
-          ],
-          "turning_points": {
-            "turning_points": [
-              {
-                "date": "2001-05-21",
-                "type": "peak",
-                "description": "事件后第 33 天录得相对基准 +6.17%，为窗口内最大升幅；与预测方向相反。",
-                "days_after_event": 33
-              }
-            ],
-            "time_to_peak_impact_days": 33,
-            "narrative": "事件后 7 天累计 -0.67%，峰值出现在事件后第 33 天 (+6.17%)，第 5 天起回吐。",
-            "method": "heuristic"
-          },
-          "data_source_name": null,
-          "data_source_url": null,
-          "user_provided": false
-        },
-        {
-          "event_date": "2001-01-03",
-          "event_note": "Emergency -50bp, dot-com bust",
-          "baseline_price": 135.0,
-          "end_price": 132.125,
-          "actual_pct": -2.13,
-          "actual_direction": "down",
-          "dir_hit": true,
-          "strict_hit": true,
-          "mag_err_bucket": "<=50%",
-          "skipped_reason": null,
-          "price_path": [
-            {
-              "date": "2000-12-26",
-              "close": 132.3438
-            },
-            {
-              "date": "2000-12-27",
-              "close": 133.3125
-            },
-            {
-              "date": "2000-12-28",
-              "close": 133.7188
-            },
-            {
-              "date": "2000-12-29",
-              "close": 131.1875
-            },
-            {
-              "date": "2001-01-02",
-              "close": 128.8125
-            },
-            {
-              "date": "2001-01-03",
-              "close": 135.0
-            },
-            {
-              "date": "2001-01-04",
-              "close": 133.5469
-            },
-            {
-              "date": "2001-01-05",
-              "close": 129.1875
-            },
-            {
-              "date": "2001-01-08",
-              "close": 130.1875
-            },
-            {
-              "date": "2001-01-09",
-              "close": 129.8438
-            },
-            {
-              "date": "2001-01-10",
-              "close": 132.125
-            },
-            {
-              "date": "2001-01-11",
-              "close": 132.25
-            },
-            {
-              "date": "2001-01-12",
-              "close": 132.0
-            },
-            {
-              "date": "2001-01-16",
-              "close": 132.8438
-            },
-            {
-              "date": "2001-01-17",
-              "close": 133.4531
-            },
-            {
-              "date": "2001-01-18",
-              "close": 134.7812
-            },
-            {
-              "date": "2001-01-19",
-              "close": 134.0156
-            },
-            {
-              "date": "2001-01-22",
-              "close": 134.9062
-            },
-            {
-              "date": "2001-01-23",
-              "close": 135.9688
-            },
-            {
-              "date": "2001-01-24",
-              "close": 136.375
-            },
-            {
-              "date": "2001-01-25",
-              "close": 136.0312
-            },
-            {
-              "date": "2001-01-26",
-              "close": 135.875
-            },
-            {
-              "date": "2001-01-29",
-              "close": 136.6
-            },
-            {
-              "date": "2001-01-30",
-              "close": 137.8
-            },
-            {
-              "date": "2001-01-31",
-              "close": 137.02
-            },
-            {
-              "date": "2001-02-01",
-              "close": 137.93
-            },
-            {
-              "date": "2001-02-02",
-              "close": 134.8
-            },
-            {
-              "date": "2001-02-05",
-              "close": 135.79
-            },
-            {
-              "date": "2001-02-06",
-              "close": 135.39
-            },
-            {
-              "date": "2001-02-07",
-              "close": 134.69
-            },
-            {
-              "date": "2001-02-08",
-              "close": 133.12
-            },
-            {
-              "date": "2001-02-09",
-              "close": 131.84
-            }
-          ],
-          "turning_points": {
-            "turning_points": [
-              {
-                "date": "2001-01-05",
-                "type": "trough",
-                "description": "事件后第 2 天录得相对基准 -4.31%，为窗口内最大降幅；印证预测方向。",
-                "days_after_event": 2
-              },
-              {
-                "date": "2001-01-08",
-                "type": "reversion",
-                "description": "事件后第 5 天 3 日滚动收益方向翻转，价格开始回吐前期涨跌。",
-                "days_after_event": 5
-              }
-            ],
-            "time_to_peak_impact_days": 2,
-            "narrative": "事件后 7 天累计 -2.13%，峰值出现在事件后第 2 天 (-4.31%)，第 5 天起回吐。",
             "method": "heuristic"
           },
           "data_source_name": null,

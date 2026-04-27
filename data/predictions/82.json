@@ -1,0 +1,33 @@
+{
+  "id": 82,
+  "made_at": "2026-04-27T12:46:56.668320",
+  "asset": {
+    "symbol": "002415.SZ",
+    "name": "海康威视",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.5,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:46:56.668320",
+  "baseline_price": 33.97,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "中方禁止外资收购Manus项目体现了对关键技术领域的保护政策，这将利好国内AI和机器人龙头企业。海康威视作为国内AI视觉和机器人领域的领军企业，在外资被限制进入的情况下，其市场地位和竞争优势将进一步巩固。此为新发现的因果模式，检索结果中无直接相关链条。",
+  "event": {
+    "id": 202,
+    "summary": "中国禁止外资收购Manus项目",
+    "category": "regulation"
+  },
+  "news": {
+    "title": "中方禁止外资收购Manus项目",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633347357673177138/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633347357673177138%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E6%96%B9%E7%A6%81%E6%AD%A2%E5%A4%96%E8%B5%84%E6%94%B6%E8%B4%ADManus%E9%A1%B9%E7%9B%AE%22%7D&rank=&style_id=40132&topic_id=7633347357673177138",
+    "published_at": "2026-04-27T12:36:50.016522"
+  }
+}

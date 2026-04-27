@@ -1,0 +1,33 @@
+{
+  "id": 97,
+  "made_at": "2026-04-27T12:48:07.131327",
+  "asset": {
+    "symbol": "002100",
+    "name": "天康生物",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.5,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:48:07.131327",
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "我国首次批量克隆牦牛标志着大动物克隆技术的商业化突破。天康生物作为国内畜牧业龙头，在动物育种和生物技术领域有布局，克隆技术突破将提升市场对相关企业技术应用前景的预期。此为新发现的因果模式，检索库中无相关链条。",
+  "event": {
+    "id": 196,
+    "summary": "中国首次实现批量克隆10头牦牛，生物技术领域取得突破",
+    "category": "tech"
+  },
+  "news": {
+    "title": "我国首次实现批量克隆10头牦牛",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633318188621840438/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633318188621840438%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%88%91%E5%9B%BD%E9%A6%96%E6%AC%A1%E5%AE%9E%E7%8E%B0%E6%89%B9%E9%87%8F%E5%85%8B%E9%9A%8610%E5%A4%B4%E7%89%A6%E7%89%9B%22%7D&rank=&style_id=40132&topic_id=7633318188621840438",
+    "published_at": "2026-04-27T12:36:50.016538"
+  }
+}

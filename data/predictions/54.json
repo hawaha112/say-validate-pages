@@ -1,0 +1,33 @@
+{
+  "id": 54,
+  "made_at": "2026-04-27T12:44:07.761419",
+  "asset": {
+    "symbol": "HRL",
+    "name": "荷美尔食品",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 1.8,
+  "horizon_days": 14,
+  "expire_at": "2026-05-11T12:44:07.761419",
+  "baseline_price": 21.549999237060547,
+  "baseline_source": "eod",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "作为美国主要肉制品生产商之一，荷美尔同样会受到政府价格调查的波及。投资者担忧潜在的反垄断行动或价格管制将压缩行业利润空间，股价承压。这属于新发现的政策干预因果链。",
+  "event": {
+    "id": 213,
+    "summary": "特朗普政府调查肉类价格高企问题",
+    "category": "regulation"
+  },
+  "news": {
+    "title": "白宫贸易顾问纳瓦罗：特朗普政府正在调查肉类价格高企问题。",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094993",
+    "published_at": "2026-04-27T11:45:58"
+  }
+}

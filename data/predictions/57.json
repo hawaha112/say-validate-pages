@@ -1,0 +1,33 @@
+{
+  "id": 57,
+  "made_at": "2026-04-27T12:44:28.810427",
+  "asset": {
+    "symbol": "601012",
+    "name": "隆基绿能",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 2.5,
+  "horizon_days": 3,
+  "expire_at": "2026-04-30T12:44:28.810427",
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "阳光电源作为光伏行业龙头业绩大幅下滑，将引发市场对整个光伏产业链盈利能力的担忧。隆基绿能作为光伏硅片龙头，受行业情绪传导影响，短期内可能出现联动下跌。此为新发现的行业联动模式。",
+  "event": {
+    "id": 212,
+    "summary": "阳光电源一季度净利润同比下降40.12%，营收同比下降18.26%",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "阳光电源：一季度净利润22.91亿元，同比下降40.12%",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094992",
+    "published_at": "2026-04-27T11:43:13"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": 103,
+  "made_at": "2026-04-27T12:49:16.340617",
+  "asset": {
+    "symbol": "FXI",
+    "name": "中国大盘股ETF",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 1.5,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:49:16.340617",
+  "baseline_price": 36.86000061035156,
+  "baseline_source": "eod",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "中国海军高调监视美日菲联合军演显示南海地缘对抗升级，国际投资者对中国资产的风险溢价短期上升。FXI作为追踪中国大盘股的主要ETF，在地缘紧张情绪下通常承压。虽然检索到的因果链主要涉及房地产违约，但地缘政治风险同样影响中国风险资产估值，属于新模式。",
+  "event": {
+    "id": 186,
+    "summary": "中国海军监视美日菲联合军演，南海地缘紧张升级",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "中国海军强势“围观”美日菲军演",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633285262159711770/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633285262159711770%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E5%9B%BD%E6%B5%B7%E5%86%9B%E5%BC%BA%E5%8A%BF%E2%80%9C%E5%9B%B4%E8%A7%82%E2%80%9D%E7%BE%8E%E6%97%A5%E8%8F%B2%E5%86%9B%E6%BC%94%22%7D&rank=&style_id=40132&topic_id=7633285262159711770",
+    "published_at": "2026-04-27T12:36:50.016569"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": 85,
+  "made_at": "2026-04-27T12:47:17.191630",
+  "asset": {
+    "symbol": "CL=F",
+    "name": "WTI原油期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.5,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:47:17.191630",
+  "baseline_price": 95.98999786376953,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "俄罗斯与伊朗是全球主要产油国，两国高层会晤讨论中东局势会加剧市场对地缘冲突升级、石油供应中断的担忧。伊朗在霍尔木兹海峡的战略位置使任何紧张升级都可能威胁全球约20%的石油运输。此次会见表明俄伊协调立场，市场倾向于给油价计入地缘风险溢价。检索的因果链未直接覆盖俄伊高层会晤对油价的影响，属新模式。",
+  "event": {
+    "id": 201,
+    "summary": "俄罗斯总统普京会见伊朗外长讨论中东局势",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "俄总统普京27日将在圣彼得堡会见来访的伊朗外长阿拉格齐",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094973",
+    "published_at": "2026-04-27T11:25:58"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": 86,
+  "made_at": "2026-04-27T12:47:17.690459",
+  "asset": {
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.2,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:47:17.690459",
+  "baseline_price": 4719.2001953125,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "俄伊领导人会晤聚焦中东紧张局势，投资者避险情绪升温。黄金作为传统避险资产，在地缘政治不确定性上升时往往获得资金流入。当前中东局势本就脆弱，此次会见被定义为'非常重要'，强化了冲突可能升级的市场预期。检索链未覆盖此类地缘外交事件对黄金的直接影响。",
+  "event": {
+    "id": 201,
+    "summary": "俄罗斯总统普京会见伊朗外长讨论中东局势",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "俄总统普京27日将在圣彼得堡会见来访的伊朗外长阿拉格齐",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094973",
+    "published_at": "2026-04-27T11:25:58"
+  }
+}

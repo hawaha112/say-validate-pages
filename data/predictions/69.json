@@ -1,0 +1,33 @@
+{
+  "id": 69,
+  "made_at": "2026-04-27T12:45:46.352899",
+  "asset": {
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.5,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:45:46.352899",
+  "baseline_price": 4719.7998046875,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "以色列对黎巴嫩真主党发动军事打击，中东地缘政治紧张局势显著升级，可能引发更大范围的区域冲突。这类地缘冲突事件会推动资金流入黄金等避险资产。虽然检索到的因果链是关于美国债务上限的，但避险逻辑相通——地缘政治风险同样会提振黄金需求。",
+  "event": {
+    "id": 207,
+    "summary": "以色列军方开始打击黎巴嫩真主党目标，地缘政治紧张局势升级",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "以色列国防军：开始打击黎巴嫩南部贝卡谷地的真主党目标。",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094981",
+    "published_at": "2026-04-27T11:34:45"
+  }
+}

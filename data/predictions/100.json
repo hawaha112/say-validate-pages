@@ -1,0 +1,33 @@
+{
+  "id": 100,
+  "made_at": "2026-04-27T12:48:29.957837",
+  "asset": {
+    "symbol": "BGNE",
+    "name": "百济神州美股",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.8,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:48:29.957837",
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "作为百济神州主要上市地之一，美股BGNE对公司重大BD交易同样敏感。本次三特异性抗体合作总额达20亿美元，彰显公司持续丰富管线的战略意图，尤其在PD-1赛道竞争白热化背景下，差异化靶点组合有望提升市场估值。美股投资者对创新药BD交易的反应往往迅速，预计短期内股价温和上涨。该模式属新发现。",
+  "event": {
+    "id": 195,
+    "summary": "百济神州全资子公司与华辉安健签订三特异性抗体全球独家开发合作协议，总里程碑款可达20亿美元",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "百济神州：全资子公司与华辉安健签订全球独家开发合作协议",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094969",
+    "published_at": "2026-04-27T11:23:35"
+  }
+}

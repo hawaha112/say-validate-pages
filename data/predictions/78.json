@@ -1,0 +1,33 @@
+{
+  "id": 78,
+  "made_at": "2026-04-27T12:46:27.547311",
+  "asset": {
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.2,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:46:27.547311",
+  "baseline_price": 4720.2998046875,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "朝俄军事合作实质化加剧全球地缘政治不确定性，避险资金将流向黄金。朝鲜正式参与俄乌战争意味着冲突扩大化风险上升，可能引发更广泛的国际紧张局势，支撑金价走高。",
+  "event": {
+    "id": 204,
+    "summary": "金正恩与俄罗斯高官向阵亡朝鲜士兵鞠躬，暗示朝俄军事合作深化",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "金正恩与俄高官向阵亡朝鲜士兵鞠躬",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7632898068169477674/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632898068169477674%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%87%91%E6%AD%A3%E6%81%A9%E4%B8%8E%E4%BF%84%E9%AB%98%E5%AE%98%E5%90%91%E9%98%B5%E4%BA%A1%E6%9C%9D%E9%B2%9C%E5%A3%AB%E5%85%B5%E9%9E%A0%E8%BA%AC%22%7D&rank=&style_id=40132&topic_id=7632898068169477674",
+    "published_at": "2026-04-27T12:36:50.016518"
+  }
+}

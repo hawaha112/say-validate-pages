@@ -1,0 +1,33 @@
+{
+  "id": 60,
+  "made_at": "2026-04-27T12:44:42.755352",
+  "asset": {
+    "symbol": "300418",
+    "name": "昆仑万维",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 2.0,
+  "horizon_days": 3,
+  "expire_at": "2026-04-30T12:44:42.755352",
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "完美世界作为A股游戏板块龙头之一，其业绩大幅下滑可能引发市场对整个游戏行业景气度的担忧，形成板块联动效应。昆仑万维等同行业公司可能受到情绪传染，短期承压。这是行业龙头业绩暴雷带来的板块负面外溢效应。",
+  "event": {
+    "id": 211,
+    "summary": "完美世界一季度业绩大幅下滑，营收和净利润分别同比下降42%和66%",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "完美世界：第一季度净利润1.03亿元，同比下降66.02%",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094988",
+    "published_at": "2026-04-27T11:40:01"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": 63,
+  "made_at": "2026-04-27T12:45:08.514679",
+  "asset": {
+    "symbol": "300750.SZ",
+    "name": "宁德时代",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.0,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:45:08.514679",
+  "baseline_price": 434.88,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "天齐锂业作为上游锂资源龙头业绩暴增，反映锂电产业链景气度高企。宁德时代作为下游电池龙头，产业链联动效应下将受益于市场对锂电板块的重新关注，资金可能从上游向中下游扩散。",
+  "event": {
+    "id": 210,
+    "summary": "天齐锂业一季度净利润18.76亿元，同比暴增1699%",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "天齐锂业：一季度净利润18.76亿元，同比增长1,699.12%",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094987",
+    "published_at": "2026-04-27T11:38:53"
+  }
+}

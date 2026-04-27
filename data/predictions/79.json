@@ -1,0 +1,33 @@
+{
+  "id": 79,
+  "made_at": "2026-04-27T12:46:39.897850",
+  "asset": {
+    "symbol": "FXI",
+    "name": "中国大盘股ETF",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.5,
+  "horizon_days": 3,
+  "expire_at": "2026-04-30T12:46:39.897850",
+  "baseline_price": 36.86000061035156,
+  "baseline_source": "eod",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "欧洲斯托克600指数触及盘中高点反映全球风险偏好回升。根据检索到的因果链(id:62)，全球风险偏好提升时中国相关资产受益。欧洲市场走强通常带动全球股市联动上涨，中国大盘股ETF作为新兴市场风险资产将受到外资流入支撑。",
+  "event": {
+    "id": 203,
+    "summary": "欧洲斯托克600指数上涨触及盘中高点",
+    "category": "macro"
+  },
+  "news": {
+    "title": "欧洲斯托克600指数延续涨势，触及盘中高点。",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094976",
+    "published_at": "2026-04-27T11:28:09"
+  }
+}

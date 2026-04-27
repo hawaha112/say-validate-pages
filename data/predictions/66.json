@@ -1,0 +1,33 @@
+{
+  "id": 66,
+  "made_at": "2026-04-27T12:45:32.549744",
+  "asset": {
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.8,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:45:32.549744",
+  "baseline_price": 4719.39990234375,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "德国总理公开质疑美国在伊朗冲突中缺乏退出战略，暗示中东地缘局势可能长期化甚至升级。这种来自北约核心成员的公开质疑加剧市场对美伊冲突扩大化的担忧，避险资金将流向黄金。历史上中东地缘紧张升级期间黄金通常有1-3%的涨幅。",
+  "event": {
+    "id": 208,
+    "summary": "德国总理默茨称暂未看到美国在伊朗战争中的退出战略",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "德国总理：暂未看到美方在伊朗战争中的退出战略",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094982",
+    "published_at": "2026-04-27T11:35:07"
+  }
+}

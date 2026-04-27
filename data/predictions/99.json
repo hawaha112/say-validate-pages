@@ -1,0 +1,33 @@
+{
+  "id": 99,
+  "made_at": "2026-04-27T12:48:26.162450",
+  "asset": {
+    "symbol": "688235.SH",
+    "name": "百济神州科创板",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.5,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:48:26.162450",
+  "baseline_price": 235.0,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "百济神州与华辉安健签订的三特异性抗体（PD-1/CTLA-4/VEGF-A）全球独家合作协议，总里程碑款高达20亿美元，展示了公司在创新药BD能力和管线拓展上的积极布局。三靶点联合抗体在肿瘤免疫领域属前沿方向，市场对创新药企的License-in交易通常给予正面反应。首付款2000万美元及后续里程碑结构合理，短期内将提振投资者对公司研发管线价值的预期。检索到的因果链未覆盖生物医药BD交易对股价的影响，属新模式。",
+  "event": {
+    "id": 195,
+    "summary": "百济神州全资子公司与华辉安健签订三特异性抗体全球独家开发合作协议，总里程碑款可达20亿美元",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "百济神州：全资子公司与华辉安健签订全球独家开发合作协议",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094969",
+    "published_at": "2026-04-27T11:23:35"
+  }
+}

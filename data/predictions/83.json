@@ -1,0 +1,33 @@
+{
+  "id": 83,
+  "made_at": "2026-04-27T12:47:00.560227",
+  "asset": {
+    "symbol": "300024.SZ",
+    "name": "机器人",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.0,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:47:00.560227",
+  "baseline_price": 14.8,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "Manus是备受关注的AI机器人项目，中方禁止外资收购意味着国内机器人产业将获得更多政策支持和发展空间。机器人（新松机器人）作为A股机器人板块的标杆企业，将直接受益于这一产业保护政策，市场情绪有望推动股价上涨。",
+  "event": {
+    "id": 202,
+    "summary": "中国禁止外资收购Manus项目",
+    "category": "regulation"
+  },
+  "news": {
+    "title": "中方禁止外资收购Manus项目",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633347357673177138/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633347357673177138%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E6%96%B9%E7%A6%81%E6%AD%A2%E5%A4%96%E8%B5%84%E6%94%B6%E8%B4%ADManus%E9%A1%B9%E7%9B%AE%22%7D&rank=&style_id=40132&topic_id=7633347357673177138",
+    "published_at": "2026-04-27T12:36:50.016522"
+  }
+}

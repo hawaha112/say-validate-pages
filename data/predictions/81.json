@@ -1,0 +1,33 @@
+{
+  "id": 81,
+  "made_at": "2026-04-27T12:46:41.747120",
+  "asset": {
+    "symbol": "EURUSD=X",
+    "name": "欧元兑美元",
+    "class": "fx"
+  },
+  "direction": "up",
+  "magnitude_pct": 0.4,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:46:41.747120",
+  "baseline_price": 1.1750881671905518,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "欧洲股市走强反映经济前景乐观和资金流入欧洲，这通常支撑欧元汇率。投资者增持欧洲资产需要买入欧元，形成汇率上行压力。检索结果未包含欧洲股市与欧元汇率的联动关系，属新模式。",
+  "event": {
+    "id": 203,
+    "summary": "欧洲斯托克600指数上涨触及盘中高点",
+    "category": "macro"
+  },
+  "news": {
+    "title": "欧洲斯托克600指数延续涨势，触及盘中高点。",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094976",
+    "published_at": "2026-04-27T11:28:09"
+  }
+}

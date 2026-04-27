@@ -1,0 +1,33 @@
+{
+  "id": 71,
+  "made_at": "2026-04-27T12:45:47.655259",
+  "asset": {
+    "symbol": "TA35.TA",
+    "name": "以色列TA-35指数",
+    "class": "index"
+  },
+  "direction": "down",
+  "magnitude_pct": 2.0,
+  "horizon_days": 3,
+  "expire_at": "2026-04-30T12:45:47.655259",
+  "baseline_price": 4348.080078125,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "以色列扩大对黎巴嫩的军事行动，国内面临战争升级风险，投资者会担忧经济活动受扰、国防开支增加以及潜在的多线作战压力，短期内以色列股市承压。",
+  "event": {
+    "id": 207,
+    "summary": "以色列军方开始打击黎巴嫩真主党目标，地缘政治紧张局势升级",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "以色列国防军：开始打击黎巴嫩南部贝卡谷地的真主党目标。",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094981",
+    "published_at": "2026-04-27T11:34:45"
+  }
+}

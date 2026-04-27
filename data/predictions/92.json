@@ -1,0 +1,33 @@
+{
+  "id": 92,
+  "made_at": "2026-04-27T12:47:44.791850",
+  "asset": {
+    "symbol": "000858",
+    "name": "五粮液",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 0.6,
+  "horizon_days": 3,
+  "expire_at": "2026-04-30T12:47:44.791850",
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "茅台假酒事件会引发市场对整个高端白酒行业流通渠道乱象的担忧，作为高端白酒第二大品牌的五粮液也会受到连带影响，投资者可能担心类似造假问题波及其他品牌，行业情绪整体承压。此为茅台假酒事件的行业传染效应。",
+  "event": {
+    "id": 199,
+    "summary": "38万元购买的百箱茅台全部为假酒，成本仅百元，涉及食品安全和消费者权益问题",
+    "category": "other"
+  },
+  "news": {
+    "title": "38万买百箱茅台全是假酒 成本仅百元",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633292483396452402/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633292483396452402%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%2238%E4%B8%87%E4%B9%B0%E7%99%BE%E7%AE%B1%E8%8C%85%E5%8F%B0%E5%85%A8%E6%98%AF%E5%81%87%E9%85%92+%E6%88%90%E6%9C%AC%E4%BB%85%E7%99%BE%E5%85%83%22%7D&rank=&style_id=40132&topic_id=7633292483396452402",
+    "published_at": "2026-04-27T12:36:50.016531"
+  }
+}

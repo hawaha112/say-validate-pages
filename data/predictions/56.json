@@ -1,0 +1,33 @@
+{
+  "id": 56,
+  "made_at": "2026-04-27T12:44:28.594553",
+  "asset": {
+    "symbol": "300274",
+    "name": "阳光电源",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 4.5,
+  "horizon_days": 3,
+  "expire_at": "2026-04-30T12:44:28.594553",
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "阳光电源一季度净利润同比大幅下降40.12%，营收下降18.26%，业绩显著低于市场预期。光伏逆变器龙头业绩大幅下滑反映行业竞争加剧和毛利率承压，短期内股价将面临业绩杀估值的压力。检索到的因果链均为美国CPI相关，与本次A股个股业绩事件不匹配，属于新模式。",
+  "event": {
+    "id": 212,
+    "summary": "阳光电源一季度净利润同比下降40.12%，营收同比下降18.26%",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "阳光电源：一季度净利润22.91亿元，同比下降40.12%",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094992",
+    "published_at": "2026-04-27T11:43:13"
+  }
+}

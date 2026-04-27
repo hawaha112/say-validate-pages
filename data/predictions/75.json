@@ -1,0 +1,33 @@
+{
+  "id": 75,
+  "made_at": "2026-04-27T12:46:12.806430",
+  "asset": {
+    "symbol": "301117",
+    "name": "协创数据",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 6.0,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:46:12.806430",
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "业绩大幅超预期后，随着更多投资者和机构关注到这一消息，资金流入可能在一周内持续推高股价。343%的净利润增速属于极端正面业绩，市场消化和追涨情绪可能延续至更长时间窗口。",
+  "event": {
+    "id": 205,
+    "summary": "协创数据一季度净利润7.5亿元，同比暴增343%，营收增长193%",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "协创数据：一季度净利润7.5亿元，同比增长343.45%",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094977",
+    "published_at": "2026-04-27T11:28:32"
+  }
+}

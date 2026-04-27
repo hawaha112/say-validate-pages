@@ -1,0 +1,33 @@
+{
+  "id": 62,
+  "made_at": "2026-04-27T12:45:05.271346",
+  "asset": {
+    "symbol": "002466.SZ",
+    "name": "天齐锂业",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 4.5,
+  "horizon_days": 3,
+  "expire_at": "2026-04-30T12:45:05.271346",
+  "baseline_price": 73.65,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "天齐锂业一季度净利润同比暴增1699%，远超市场预期，营收也接近翻倍。如此强劲的业绩释放将直接推动股价上涨，市场通常在财报公布后1-3个交易日内完成对超预期业绩的定价。这是典型的业绩驱动型行情。",
+  "event": {
+    "id": 210,
+    "summary": "天齐锂业一季度净利润18.76亿元，同比暴增1699%",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "天齐锂业：一季度净利润18.76亿元，同比增长1,699.12%",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094987",
+    "published_at": "2026-04-27T11:38:53"
+  }
+}

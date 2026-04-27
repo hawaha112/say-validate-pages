@@ -1,0 +1,33 @@
+{
+  "id": 65,
+  "made_at": "2026-04-27T12:45:19.098230",
+  "asset": {
+    "symbol": "002290",
+    "name": "禾盛新材",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 2.5,
+  "horizon_days": 3,
+  "expire_at": "2026-04-30T12:45:19.098230",
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "禾盛新材主动澄清并非熠知电子控股股东，且强调熠知电子持续亏损、盈利不确定。这种公告通常意味着市场此前对公司参股熠知电子存在过度乐观预期，澄清公告打压投资者情绪，短期内股价承压。此外，关联企业亏损也增加了市场对禾盛新材投资回报的担忧。",
+  "event": {
+    "id": 209,
+    "summary": "禾盛新材澄清与熠知电子关系，熠知电子持续亏损盈利不确定",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "禾盛新材：公司并非熠知电子控股股东，熠知电子处于持续亏损状态，何时实现盈利存在不确定性。",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094984",
+    "published_at": "2026-04-27T11:35:31"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": 70,
+  "made_at": "2026-04-27T12:45:46.900197",
+  "asset": {
+    "symbol": "CL=F",
+    "name": "WTI原油期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.5,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:45:46.900197",
+  "baseline_price": 95.8499984741211,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "以色列打击黎巴嫩贝卡谷地的真主党目标，意味着冲突可能向更广泛的中东地区蔓延。贝卡谷地靠近叙利亚，若冲突扩大涉及伊朗，将威胁霍尔木兹海峡等关键石油运输通道，市场会提前计入供应中断风险溢价。",
+  "event": {
+    "id": 207,
+    "summary": "以色列军方开始打击黎巴嫩真主党目标，地缘政治紧张局势升级",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "以色列国防军：开始打击黎巴嫩南部贝卡谷地的真主党目标。",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094981",
+    "published_at": "2026-04-27T11:34:45"
+  }
+}

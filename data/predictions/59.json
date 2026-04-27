@@ -1,0 +1,33 @@
+{
+  "id": 59,
+  "made_at": "2026-04-27T12:44:42.544485",
+  "asset": {
+    "symbol": "002624",
+    "name": "完美世界",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 5.5,
+  "horizon_days": 3,
+  "expire_at": "2026-04-30T12:44:42.544485",
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "完美世界一季度营收同比下滑42%、净利润暴跌66%，业绩大幅低于市场预期。游戏行业公司发布如此糟糕的季报通常会引发投资者抛售，尤其是在当前A股对成长股盈利质量敏感度较高的背景下。检索到的因果链均与美国宏观数据相关，不适用于本案例，这属于个股基本面恶化的新模式。",
+  "event": {
+    "id": 211,
+    "summary": "完美世界一季度业绩大幅下滑，营收和净利润分别同比下降42%和66%",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "完美世界：第一季度净利润1.03亿元，同比下降66.02%",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094988",
+    "published_at": "2026-04-27T11:40:01"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": 80,
+  "made_at": "2026-04-27T12:46:40.611520",
+  "asset": {
+    "symbol": "EZU",
+    "name": "欧洲市场ETF",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.0,
+  "horizon_days": 3,
+  "expire_at": "2026-04-30T12:46:40.611520",
+  "baseline_price": 66.51000213623047,
+  "baseline_source": "eod",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "欧洲斯托克600指数创盘中新高直接反映欧洲股市动能强劲。EZU作为追踪欧元区大盘股的ETF将同步受益于这一上涨趋势。市场情绪改善和资金流入将在短期内延续涨势。检索结果未覆盖欧洲指数上涨的直接传导，属新模式。",
+  "event": {
+    "id": 203,
+    "summary": "欧洲斯托克600指数上涨触及盘中高点",
+    "category": "macro"
+  },
+  "news": {
+    "title": "欧洲斯托克600指数延续涨势，触及盘中高点。",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3094976",
+    "published_at": "2026-04-27T11:28:09"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": 88,
+  "made_at": "2026-04-27T12:47:32.707226",
+  "asset": {
+    "symbol": "600028.SH",
+    "name": "中国石化",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 2.5,
+  "horizon_days": 7,
+  "expire_at": "2026-05-04T12:47:32.707226",
+  "baseline_price": 5.34,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "reasoning": "美国以涉伊朗为由制裁中国企业，通常涉及能源贸易领域。中国石化作为与伊朗有石油贸易往来的大型央企，面临被列入制裁名单或供应链受阻的风险，市场短期会对其海外业务前景产生担忧。这是基于地缘制裁影响能源企业的新模式判断。",
+  "event": {
+    "id": 200,
+    "summary": "美国以涉伊朗为由制裁中国企业，中方表态反对",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "美国以涉伊朗为由制裁中企 中方表态",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7632821618738167818/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632821618738167818%22%2C%22hot_board_impr_id%22%3A%222026042720364969DB47395899C521C85E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%BE%8E%E5%9B%BD%E4%BB%A5%E6%B6%89%E4%BC%8A%E6%9C%97%E4%B8%BA%E7%94%B1%E5%88%B6%E8%A3%81%E4%B8%AD%E4%BC%81+%E4%B8%AD%E6%96%B9%E8%A1%A8%E6%80%81%22%7D&rank=&style_id=40132&topic_id=7632821618738167818",
+    "published_at": "2026-04-27T12:36:50.016526"
+  }
+}

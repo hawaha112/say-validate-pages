@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": 0.5528897304543048,
   "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "百事作为 XLP 前十大权重股，其股价大涨及对地缘风险的乐观表态会直接拉动 ETF 净值，同时改善市场对必需消费板块整体盈利韧性的评估。短期 3 天内板块情绪外溢有限，涨幅约 0.8%。",
   "stop_loss_price": 80.7389,
   "take_profit": {

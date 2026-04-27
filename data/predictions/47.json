@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": -2.1414800260830678,
   "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "CoreWeave高收益债超额认购并扩容至27.5亿美元，反映投资者对其AI基础设施业务信用和现金流预期强劲，融资成本改善和资本开支可持续性提升将直接利好股价短期表现。检索结果中无直接对应的因果链，此为新模式。",
   "stop_loss_price": 112.9729,
   "take_profit": {

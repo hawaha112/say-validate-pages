@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": 2.794288124520941,
   "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "BitMine作为大型以太坊财库公司单季巨亏38.2亿美元，引发市场对企业级ETH持仓被迫减仓/止损的担忧，且会打击其他机构继续增持ETH作为储备资产的信心。检索到的因果链均未覆盖'加密财库公司巨亏'情景，属新模式。短期情绪面承压，3日内ETH承压下行。",
   "stop_loss_price": 2419.0745,
   "take_profit": {

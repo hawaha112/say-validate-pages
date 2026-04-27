@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": 9.30262339549918,
   "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "新闻直接揭示公司基本面恶化（股价从200美元跌至仙股区间）且管理层治理存在争议——CEO在公司崩溃之际反获加薪并将责任推给消费者，这种治理与公关双重利空将加剧投资者抛售和做空压力。检索到的因果链均不涉及此类『公司治理争议叠加基本面崩塌』模式，故判定为新模式。",
   "stop_loss_price": 0.8466,
   "take_profit": {

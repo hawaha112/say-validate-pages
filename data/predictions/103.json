@@ -18,6 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
+  "current_price": 36.60499954223633,
+  "current_pct": -0.6918097229863346,
+  "current_at": "2026-04-27T00:00:00-04:00",
   "reasoning": "中国海军高调监视美日菲联合军演显示南海地缘对抗升级，国际投资者对中国资产的风险溢价短期上升。FXI作为追踪中国大盘股的主要ETF，在地缘紧张情绪下通常承压。虽然检索到的因果链主要涉及房地产违约，但地缘政治风险同样影响中国风险资产估值，属于新模式。",
   "stop_loss_price": 37.4129,
   "take_profit": {

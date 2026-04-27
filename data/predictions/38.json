@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": -0.5657278559172213,
   "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "百事作为饮料行业风向标释放需求回暖信号，可口可乐作为最直接同业会受益于板块情绪联动，市场会把'消费者回流'外推到整个软饮龙头。属于新模式，因为检索的因果链没有覆盖消费行业同业联动。",
   "stop_loss_price": 73.9981,
   "take_profit": {

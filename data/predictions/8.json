@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": -1.970924415468248,
   "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "GDP超预期显示内需与服务业韧性，利好英国本土周期股与银行股盈利预期，富时100短期风险偏好上行。但由于新闻提及随后爆发美伊战争的外部冲击，涨幅受限，因此给出较温和幅度。该传导未在检索结果中覆盖，属新模式。",
   "stop_loss_price": 10484.0903,
   "take_profit": {

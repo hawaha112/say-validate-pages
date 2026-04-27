@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": -0.3405286432261451,
   "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "大型AI债券发行扩容并被超额认购，反映高收益债市场风险偏好旺盛、利差收窄，HYG作为高收益债代表ETF将小幅受益。检索结果未涉及该因果链，属新模式。",
   "stop_loss_price": 80.3512,
   "take_profit": {

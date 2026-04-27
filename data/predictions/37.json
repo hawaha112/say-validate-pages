@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": -1.8188701687711688,
   "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "百事公布降价及健康化产品策略成功拉回消费者，且管理层表示伊朗战争冲击有限，短期利空被证伪叠加基本面改善，直接利好股价。检索结果中没有消费品龙头正面业绩指引的对应 pattern，属于新模式。",
   "stop_loss_price": 152.2673,
   "take_profit": {

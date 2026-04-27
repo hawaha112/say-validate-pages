@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": 2.279574017737135,
   "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "PEP 是 XLP 的核心权重股，其股价大涨及对消费需求回暖的表态会改善整个必需消费板块的盈利预期，带动 ETF 温和上行。检索结果中没有必需消费板块层面的因果链，标记为新模式。",
   "stop_loss_price": 80.5613,
   "take_profit": {

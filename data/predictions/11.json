@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": 1.5926147957623968,
   "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "英国作为G7成员公开制定战时短缺预案，说明伊朗战争已进入被主流政府严肃评估其长期供应冲击的阶段，霍尔木兹海峡风险溢价会被重新定价。原油作为战争风险最直接的定价标的，通常在政府级预案曝光后一周内有显著上行。检索到的因果链中无伊朗战争相关模式，标记为新模式。",
   "stop_loss_price": 95.1297,
   "take_profit": {

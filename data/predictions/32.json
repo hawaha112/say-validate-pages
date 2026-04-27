@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": 0.5336325975625665,
   "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "1999年以来最大工业IPO首日爆发，短线将点燃工业板块情绪，同业估值比价效应迅速传导至XLI成分股，尤其是HVAC/空气质量/暖通相关龙头。属新模式，无现成因果链匹配。",
   "stop_loss_price": 169.6773,
   "take_profit": {

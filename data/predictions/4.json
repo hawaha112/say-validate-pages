@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": 5.18862979652078,
   "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "美国与以色列对伊朗开战将直接威胁霍尔木兹海峡原油运输通道，伊朗作为OPEC重要产油国供应面临中断风险，地缘溢价快速计入油价。检索到的因果链未覆盖中东战争场景，属于新模式。",
   "stop_loss_price": 84.9666,
   "take_profit": {

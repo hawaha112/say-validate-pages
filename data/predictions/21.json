@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": 30.83760983799805,
   "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "短期内负面舆情发酵（CEO甩锅消费者引发公关危机）将触发散户与机构的恐慌性抛售，股价在3日窗口延续跌势。属于舆情驱动短期崩跌的新模式，检索结果中无对应因果链。",
   "stop_loss_price": 0.8267,
   "take_profit": {

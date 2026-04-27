@@ -18,6 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
+  "current_price": 73.65,
+  "current_pct": 0.0,
+  "current_at": "2026-04-27T13:41:54.446863",
   "reasoning": "天齐锂业一季度净利润同比暴增1699%，远超市场预期，营收也接近翻倍。如此强劲的业绩释放将直接推动股价上涨，市场通常在财报公布后1-3个交易日内完成对超预期业绩的定价。这是典型的业绩驱动型行情。",
   "stop_loss_price": 70.3358,
   "take_profit": {

@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": -0.5657278559172213,
   "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "百事业绩回暖和消费者回流的信号会外溢至同业龙头可口可乐，市场会预期整个软饮板块需求企稳；但可口可乐本身未直接受益，幅度弱于百事。该因果关系未在检索链中，故标记为新模式。",
   "stop_loss_price": 74.2235,
   "take_profit": {

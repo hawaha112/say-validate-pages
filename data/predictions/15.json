@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": 2.3298755686870174,
   "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "百事降价信号表明过去两年靠涨价驱动业绩的美国消费必需品板块进入定价能力衰退阶段，后续各大消费品公司可能被迫跟进促销，压制板块整体盈利预期与估值倍数。检索到的因果链不涵盖此类消费降级/定价权逆转主题，为新模式。",
   "stop_loss_price": 81.9857,
   "take_profit": {

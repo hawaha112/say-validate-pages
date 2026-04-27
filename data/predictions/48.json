@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": 3.8002441314939586,
   "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "CoreWeave债券超募显示AI数据中心资本开支融资通道畅通，作为其最大GPU供应商，英伟达将受益于AI基建持续扩张的资本支出预期。此为检索库中未覆盖的新模式，反映AI债务融资对上游芯片的传导。",
   "stop_loss_price": 196.6321,
   "take_profit": {

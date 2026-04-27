@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": -1.6088893768074537,
   "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "作为亏损主体，38.2亿美元的季度亏损直接重创公司财报与净资产，市场会立刻对其ETH敞口与偿付能力重新定价，股价大概率跳空下跌并在数日内继续承压。检索结果无对应模式，属新模式。",
   "stop_loss_price": 23.6096,
   "take_profit": {

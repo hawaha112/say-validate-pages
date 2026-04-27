@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": 2.29169040442694,
   "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "AMD作为半导体权重股走强会外溢至整个半导体板块，强化AI与数据中心景气主线。检索到的因果链均聚焦A股，未覆盖美股半导体板块联动，故记为新模式。",
   "stop_loss_price": 447.4362,
   "take_profit": {

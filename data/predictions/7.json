@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": -0.2836492337198333,
   "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "英国2月GDP创两年多来最大单月涨幅，经济超预期强劲将削弱英国央行短期降息预期，推升英镑相对美元的利率优势。检索到的因果链主要覆盖中国与美国宏观数据，未直接覆盖英国GDP对英镑的传导，因此标记为新模式。",
   "stop_loss_price": 1.3452,
   "take_profit": {

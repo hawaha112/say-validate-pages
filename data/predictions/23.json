@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": 0.23761326327380994,
   "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "Snap裁员并押注AI提效会强化市场对广告类科技公司走'效率年'路线的预期，作为社交广告同业且AI投入更深的Meta容易获得情绪外溢和估值抬升。此关系不在检索到的因果链中，属于新模式。",
   "stop_loss_price": 663.3284,
   "take_profit": {

@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": -1.821984241174643,
   "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "百事通过降价和健康化新品重新吸引了观望的消费者，同时管理层披露伊朗战争尚未对业务造成实质冲击，双重利好驱动股价当日大涨。短期内盘后情绪和分析师上修预期会延续推动，3 天窗口内有望维持 3% 左右涨幅。",
   "stop_loss_price": 153.0611,
   "take_profit": {

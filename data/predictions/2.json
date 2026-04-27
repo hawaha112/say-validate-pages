@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": -3.4163121747790024,
   "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "欧洲航空煤油供应告急直接冲击欧洲航司：燃料成本飙升、航班可能被迫取消，双重挤压营收与利润。汉莎作为欧洲最大网络航司之一且枢纽位于法兰克福，敞口显著。检索因果链未直接覆盖欧洲航司对航油供应的敏感度，属新模式。",
   "stop_loss_price": 7.8541,
   "take_profit": {

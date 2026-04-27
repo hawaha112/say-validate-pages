@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": 3.4998859016414174,
   "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "REX公布2025财年第四季度业绩大幅超预期，属于典型的业绩超预期利好个股事件。小盘股在财报大超预期后通常在短期内出现显著跳涨，市场会快速重新定价盈利能力。检索到的因果链均不涉及个股业绩超预期模式，故标记为新模式。",
   "stop_loss_price": 40.8242,
   "take_profit": {

@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": -35.655361328060124,
   "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "单日暴涨580%主要由meme式投机和转型AI的炒作驱动，而非基本面支撑。公司剥离核心鞋类业务、尚未验证AI基础设施能力，短期内获利回吐和情绪降温会带来明显回调。检索到的因果链均针对宏观事件，无直接匹配模式，故作为新模式处理。",
   "stop_loss_price": 13.6375,
   "take_profit": {

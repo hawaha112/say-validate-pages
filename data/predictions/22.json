@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": -7.236843137199542,
   "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "公司宣布裁员1000人以应对激进投资者压力并押注AI提效，短期内市场通常将大规模裁员解读为成本削减和利润率改善的积极信号，加上激进投资者介入常推动股价上行。检索到的因果链未覆盖该模式，属于新模式。",
   "stop_loss_price": 5.8064,
   "take_profit": {

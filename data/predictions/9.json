@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": 0.16019781929721016,
   "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "经济数据强于预期会推迟英国央行降息节奏，长端Gilt收益率上行、价格下跌。该因果链与检索到的非农→TLT传导逻辑类似（id 40/42），但标的为英国国债，故作为新模式记录。",
   "stop_loss_price": 10.9221,
   "take_profit": {

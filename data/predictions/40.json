@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": 26.517766878387384,
   "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "新闻直接利好AMD，服务器CPU业务重获投资者青睐，市场情绪推动股价创近二十年最佳走势。检索到的因果链均为中国A股相关，与本则新闻无关，故作为新模式处理。数据中心CPU是AMD高毛利业务，投资者重新定价将在1-2周内持续发酵。",
   "stop_loss_price": 262.5391,
   "take_profit": {

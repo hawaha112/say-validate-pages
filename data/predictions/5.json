@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": -1.85062301850623,
   "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "美以对伊朗开战引发剧烈避险情绪，黄金作为终极避险资产将获资金流入，逻辑与链94（停摆/债务违约推升黄金避险需求）一致，但战争冲击力度更强，因此幅度略高于停摆场景。",
   "stop_loss_price": 4789.8422,
   "take_profit": {

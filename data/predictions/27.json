@@ -26,6 +26,9 @@
   },
   "actual_magnitude_pct": 4.585348302330758,
   "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "尽管亏损主要来自ETH押注，但加密财库公司巨亏会引发对整个机构加密储备模式的质疑，风险偏好回落传导至BTC，短期内BTC跟随加密板块情绪小幅回调。检索链(id 78/12)反映的是利好情形，与本次利空相反，属新模式。",
   "stop_loss_price": 75946.4552,
   "take_profit": {

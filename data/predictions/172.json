@@ -1,0 +1,57 @@
+{
+  "id": 172,
+  "made_at": "2026-04-28T13:54:24.652956",
+  "expire_at": "2026-05-05T13:54:24.652956",
+  "verified_at": null,
+  "asset": {
+    "symbol": "ARM",
+    "name": "Arm控股",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 5.0,
+  "horizon_days": 7,
+  "baseline_price": 199.6300048828125,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 199.5,
+  "current_pct": -0.06512291721317941,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "高通与OpenAI合作开发专用手机芯片的消息引发投资者担忧新芯片可能绕过ARM架构，ARM已连续两日大跌累计超16%。市场正在重新评估ARM在AI手机芯片领域的不可替代性，短期抛售压力可能延续。此为新模式：大客户自研芯片绕过授权架构→架构授权商股价下跌。",
+  "stop_loss_price": 209.6115,
+  "take_profit": {
+    "prices": [
+      184.6578,
+      174.6763,
+      159.704
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 9.9815,
+    "atr": 4.9908
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 439,
+    "summary": "美股开盘分化，科技股大跌，AI相关公司业绩不及预期引发抛售",
+    "category": "tech"
+  },
+  "news": {
+    "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:30:51"
+  }
+}

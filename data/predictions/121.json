@@ -1,0 +1,57 @@
+{
+  "id": 121,
+  "made_at": "2026-04-28T13:49:26.377835",
+  "expire_at": "2026-05-01T13:49:26.377835",
+  "verified_at": null,
+  "asset": {
+    "symbol": "512660.SH",
+    "name": "军工ETF",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.8,
+  "horizon_days": 3,
+  "baseline_price": 1.371,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "作为军工板块的指数基金，军工ETF会直接受益于市场对国防投入增加的预期。美媒的报道实际上是对中国军工技术进步的一种认可，这类消息往往会在短期内推升整个军工板块估值。",
+  "stop_loss_price": 1.3326,
+  "take_profit": {
+    "prices": [
+      1.4286,
+      1.467,
+      1.5246
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.0384,
+    "atr": 0.0192
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 459,
+    "summary": "美媒肯定中国军舰实力，可能提升地缘政治紧张预期",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "美媒肯定中国军舰实力说明什么",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633741304270163462/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633741304270163462%22%2C%22hot_board_impr_id%22%3A%222026042821312396EAE4DC3BFA828D8626%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%BE%8E%E5%AA%92%E8%82%AF%E5%AE%9A%E4%B8%AD%E5%9B%BD%E5%86%9B%E8%88%B0%E5%AE%9E%E5%8A%9B%E8%AF%B4%E6%98%8E%E4%BB%80%E4%B9%88%22%7D&rank=&style_id=40132&topic_id=7633741304270163462",
+    "published_at": "2026-04-28T13:31:23.419646"
+  }
+}

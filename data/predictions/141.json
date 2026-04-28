@@ -1,0 +1,44 @@
+{
+  "id": 141,
+  "made_at": "2026-04-28T13:51:33.428550",
+  "expire_at": "2026-05-28T13:51:33.428550",
+  "verified_at": null,
+  "asset": {
+    "symbol": "688097",
+    "name": "卓然股份",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 15.0,
+  "horizon_days": 30,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "若公司在相应期限内仍无法披露年报，将被实施退市风险警示（*ST），届时股票将面临涨跌幅限制收窄至5%且大量机构被迫减持的双重压力。审计委员会全票反对表明内部矛盾尖锐，短期内解决财务问题的可能性较低，中期来看退市风险溢价将持续压制股价。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 450,
+    "summary": "卓然股份因审计委员会否决年报无法按期披露，面临停牌及退市风险警示",
+    "category": "regulation"
+  },
+  "news": {
+    "title": "卓然股份：预计无法在法定时限内完成2025年年度报告披露工作 公司收上交所监管函",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

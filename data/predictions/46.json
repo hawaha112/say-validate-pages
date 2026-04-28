@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 6.699999809265137,
-  "current_pct": -38.58845185177156,
-  "current_at": "2026-04-27T00:00:00-04:00",
+  "current_price": 7.03000020980835,
+  "current_pct": -35.56370020045518,
+  "current_at": "2026-04-28T00:00:00-04:00",
   "reasoning": "剥离原有鞋类业务后，公司营收几乎归零，而AI基础设施需要长期重资本投入，短期难以兑现业绩。随着炒作热度消退、稀释性融资风险以及可能的监管问询，30天维度估值将大幅回归。该情景不在检索到的宏观因果链内，判定为新模式。",
   "stop_loss_price": 15.274,
   "take_profit": {

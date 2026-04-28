@@ -1,0 +1,57 @@
+{
+  "id": 169,
+  "made_at": "2026-04-28T13:54:11.096341",
+  "expire_at": "2026-05-05T13:54:11.096341",
+  "verified_at": null,
+  "asset": {
+    "symbol": "AMD",
+    "name": "超微半导体",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 5.0,
+  "horizon_days": 7,
+  "baseline_price": 321.4100036621094,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 321.5,
+  "current_pct": 0.02800047816347247,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "AMD今日已跌6.9%，但OpenAI增长未达标的负面影响可能还未完全price in。AMD作为AI芯片市场的第二大玩家，其MI300系列正试图抢占数据中心AI训练市场，OpenAI需求放缓会直接影响市场对AMD在AI领域追赶NVDA的预期，叠加高通与OpenAI合作开发专用芯片的消息，AMD面临双重压力。",
+  "stop_loss_price": 337.4805,
+  "take_profit": {
+    "prices": [
+      297.3043,
+      281.2338,
+      257.128
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 16.0705,
+    "atr": 8.0353
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 440,
+    "summary": "OpenAI用户和营收双双未达标，AI行业增长预期受挫",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:30:51"
+  }
+}

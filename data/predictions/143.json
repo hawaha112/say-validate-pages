@@ -1,0 +1,44 @@
+{
+  "id": 143,
+  "made_at": "2026-04-28T13:51:44.769424",
+  "expire_at": "2026-05-01T13:51:44.769424",
+  "verified_at": null,
+  "asset": {
+    "symbol": "000858",
+    "name": "五粮液",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 2.0,
+  "horizon_days": 3,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "泸州老窖作为白酒行业头部企业业绩大幅下滑，反映整个高端白酒行业需求疲软，市场将担忧五粮液等同业公司面临类似压力，板块联动效应下五粮液股价短期承压。这是白酒板块联动下跌的新模式。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 449,
+    "summary": "泸州老窖2026年Q1净利润同比下降19.25%，营收下降14.19%",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "泸州老窖：第一季度净利润同比下降19.25%",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

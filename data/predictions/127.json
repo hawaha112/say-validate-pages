@@ -1,0 +1,57 @@
+{
+  "id": 127,
+  "made_at": "2026-04-28T13:50:13.338522",
+  "expire_at": "2026-05-01T13:50:13.338522",
+  "verified_at": null,
+  "asset": {
+    "symbol": "000001.SH",
+    "name": "上证指数",
+    "class": "index"
+  },
+  "direction": "up",
+  "magnitude_pct": 0.8,
+  "horizon_days": 3,
+  "baseline_price": 4078.64,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 4078.64,
+  "current_pct": 0.0,
+  "current_at": "2026-04-28T13:54:54.112700",
+  "reasoning": "77只个股涨停显示市场情绪回暖、资金活跃度提升，短期内可能带动指数上行。涨停数量较多通常预示局部行情向好，但该新闻缺乏具体板块信息，影响幅度有限。检索到的因果链与中东地缘政治相关，与本新闻无关，故判定为新模式。",
+  "stop_loss_price": 4046.0109,
+  "take_profit": {
+    "prices": [
+      4127.5837,
+      4160.2128,
+      4209.1565
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 32.6291,
+    "atr": 16.3146
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 455,
+    "summary": "A股市场今日77只个股涨停，显示局部板块活跃",
+    "category": "other"
+  },
+  "news": {
+    "title": "A股今日共77只个股涨停",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633335513469943854/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%224%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633335513469943854%22%2C%22hot_board_impr_id%22%3A%222026042821312396EAE4DC3BFA828D8626%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22A%E8%82%A1%E4%BB%8A%E6%97%A5%E5%85%B177%E5%8F%AA%E4%B8%AA%E8%82%A1%E6%B6%A8%E5%81%9C%22%7D&rank=&style_id=40132&topic_id=7633335513469943854",
+    "published_at": "2026-04-28T13:31:23.419661"
+  }
+}

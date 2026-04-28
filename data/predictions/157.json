@@ -1,0 +1,57 @@
+{
+  "id": 157,
+  "made_at": "2026-04-28T13:52:50.530710",
+  "expire_at": "2026-05-01T13:52:50.530710",
+  "verified_at": null,
+  "asset": {
+    "symbol": "XPEV",
+    "name": "小鹏汽车",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 3.0,
+  "horizon_days": 3,
+  "baseline_price": 16.024999618530273,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 16.079999923706055,
+  "current_pct": 0.3432156410923246,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "小鹏汽车当日已跌4.83%，在中概股普跌的背景下，新能源汽车板块作为高贝塔资产往往波动更大。市场情绪转弱时，高估值成长股通常首当其冲，短期可能继续下探寻找支撑。",
+  "stop_loss_price": 16.5057,
+  "take_profit": {
+    "prices": [
+      15.3039,
+      14.8231,
+      14.102
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.4807,
+    "atr": 0.2404
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 444,
+    "summary": "纳斯达克中国金龙指数跌超1%，中概股普遍下跌",
+    "category": "tech"
+  },
+  "news": {
+    "title": "纳斯达克中国金龙指数跌超1%，金山云跌6.93%，世纪互联跌6.90%，万国数据跌5.21%，小鹏汽车跌4.83%，禾赛科技跌4.10%。",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:31:26"
+  }
+}

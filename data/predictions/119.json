@@ -1,0 +1,90 @@
+{
+  "id": 119,
+  "made_at": "2026-04-28T13:49:15.864352",
+  "expire_at": "2026-05-05T13:49:15.864352",
+  "verified_at": null,
+  "asset": {
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.2,
+  "horizon_days": 7,
+  "baseline_price": 4590.10009765625,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 4598.2998046875,
+  "current_pct": 0.1786389589943115,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "美媒肯定中国军舰实力的报道会强化市场对中美军事竞争加剧的预期，地缘政治紧张情绪上升时，黄金作为传统避险资产往往受到资金流入。参考检索到的避险逻辑，但本次事件更偏向地缘军事而非财政危机，因此幅度相对温和。",
+  "stop_loss_price": 4565.3422,
+  "take_profit": {
+    "prices": [
+      4627.2369,
+      4651.9948,
+      4689.1317
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 24.7579,
+    "atr": 12.3789
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.72,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.72,
+    "log_odds": 0.944,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.4,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 94,
+        "pattern": "美国政府停摆 / 债务上限临近违约",
+        "asset": "GC=F",
+        "dir_hit_rate": 1.0,
+        "n_samples": 5,
+        "log_lr": 1.792,
+        "grade": "A"
+      }
+    ],
+    "note": ""
+  },
+  "cited_link_ids": [
+    94
+  ],
+  "cited_chains": [
+    {
+      "id": 94,
+      "pattern": "美国政府停摆 / 债务上限临近违约",
+      "asset_symbol": "GC=F",
+      "direction": "up",
+      "horizon_days": 7,
+      "magnitude_pct": 2.0,
+      "grade": "A",
+      "retail_edge": "mid"
+    }
+  ],
+  "event": {
+    "id": 459,
+    "summary": "美媒肯定中国军舰实力，可能提升地缘政治紧张预期",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "美媒肯定中国军舰实力说明什么",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633741304270163462/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633741304270163462%22%2C%22hot_board_impr_id%22%3A%222026042821312396EAE4DC3BFA828D8626%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%BE%8E%E5%AA%92%E8%82%AF%E5%AE%9A%E4%B8%AD%E5%9B%BD%E5%86%9B%E8%88%B0%E5%AE%9E%E5%8A%9B%E8%AF%B4%E6%98%8E%E4%BB%80%E4%B9%88%22%7D&rank=&style_id=40132&topic_id=7633741304270163462",
+    "published_at": "2026-04-28T13:31:23.419646"
+  }
+}

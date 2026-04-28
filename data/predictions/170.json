@@ -1,0 +1,57 @@
+{
+  "id": 170,
+  "made_at": "2026-04-28T13:54:11.985991",
+  "expire_at": "2026-05-12T13:54:11.985991",
+  "verified_at": null,
+  "asset": {
+    "symbol": "ARM",
+    "name": "Arm控股",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 6.0,
+  "horizon_days": 14,
+  "baseline_price": 199.22999572753906,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 199.5,
+  "current_pct": 0.1355239061643043,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "ARM连续两日大跌（昨日-8%，今日-8.6%），核心原因是高通与OpenAI合作开发可能不采用ARM架构的专用芯片。这动摇了ARM在移动和AI端侧芯片的垄断地位叙事，若OpenAI这一标杆客户选择非ARM架构，可能引发更多AI芯片厂商重新评估架构选择，ARM的授权费增长预期将面临下调压力。",
+  "stop_loss_price": 211.1838,
+  "take_profit": {
+    "prices": [
+      181.2993,
+      169.3455,
+      151.4148
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 11.9538,
+    "atr": 5.9769
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 440,
+    "summary": "OpenAI用户和营收双双未达标，AI行业增长预期受挫",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:30:51"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": 137,
+  "made_at": "2026-04-28T13:51:20.228060",
+  "expire_at": "2026-05-05T13:51:20.228060",
+  "verified_at": null,
+  "asset": {
+    "symbol": "CL",
+    "name": "WTI原油期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.5,
+  "horizon_days": 7,
+  "baseline_price": 85.15119934082031,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 85.18000030517578,
+  "current_pct": 0.03382332201827481,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "伊朗加强霍尔木兹海峡军事控制能力的报道会引发市场对全球石油供应中断风险的担忧。霍尔木兹海峡承载全球约20%的石油运输量，任何潜在的封锁或冲突风险都会推高原油价格。这是典型的地缘政治风险溢价效应。",
+  "stop_loss_price": 83.0224,
+  "take_profit": {
+    "prices": [
+      88.3444,
+      90.4731,
+      93.6663
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 2.1288,
+    "atr": 1.0644
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 451,
+    "summary": "伊朗加强霍尔木兹海峡军事控制能力，可能影响全球石油供应",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "伊朗“蚊子舰队”如何控制海峡",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7632881081640976430/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632881081640976430%22%2C%22hot_board_impr_id%22%3A%222026042821312396EAE4DC3BFA828D8626%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BC%8A%E6%9C%97%E2%80%9C%E8%9A%8A%E5%AD%90%E8%88%B0%E9%98%9F%E2%80%9D%E5%A6%82%E4%BD%95%E6%8E%A7%E5%88%B6%E6%B5%B7%E5%B3%A1%22%7D&rank=&style_id=40132&topic_id=7632881081640976430",
+    "published_at": "2026-04-28T13:31:23.419684"
+  }
+}

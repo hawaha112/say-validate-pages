@@ -1,0 +1,57 @@
+{
+  "id": 167,
+  "made_at": "2026-04-28T13:53:56.121821",
+  "expire_at": "2026-05-01T13:53:56.121821",
+  "verified_at": null,
+  "asset": {
+    "symbol": "SPOT",
+    "name": "Spotify",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 4.0,
+  "horizon_days": 3,
+  "baseline_price": 427.9750061035156,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 428.7699890136719,
+  "current_pct": 0.185754518095378,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "Spotify Q2营业利润指引逊于预期导致开盘暴跌11.7%，反映市场对其盈利能力改善节奏的担忧。业绩指引不及预期后，分析师下调目标价和卖方情绪恶化通常会在随后几个交易日持续施压股价，短期内难以快速修复。",
+  "stop_loss_price": 445.094,
+  "take_profit": {
+    "prices": [
+      402.2965,
+      385.1775,
+      359.499
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 17.119,
+    "atr": 8.5595
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 441,
+    "summary": "高通与OpenAI合作开发AI芯片可能不采用ARM架构，Arm连续两日暴跌",
+    "category": "tech"
+  },
+  "news": {
+    "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:30:51"
+  }
+}

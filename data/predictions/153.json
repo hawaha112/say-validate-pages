@@ -1,0 +1,57 @@
+{
+  "id": 153,
+  "made_at": "2026-04-28T13:52:22.272573",
+  "expire_at": "2026-05-05T13:52:22.272573",
+  "verified_at": null,
+  "asset": {
+    "symbol": "ORCL",
+    "name": "甲骨文",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 4.0,
+  "horizon_days": 7,
+  "baseline_price": 167.6999969482422,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 166.7949981689453,
+  "current_pct": -0.5396534262169294,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "甲骨文近期大力投资AI云基础设施，与OpenAI有合作关系。OpenAI销售不及预期意味着其云服务需求可能低于此前预期，甲骨文AI业务增长故事受到质疑。当日已跌超6%，后续可能因业绩指引担忧持续承压。",
+  "stop_loss_price": 174.408,
+  "take_profit": {
+    "prices": [
+      157.638,
+      150.93,
+      140.868
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 6.708,
+    "atr": 3.354
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 446,
+    "summary": "美股开盘纳指跌超1%，OpenAI相关股票集体下挫，英伟达跌超3%",
+    "category": "tech"
+  },
+  "news": {
+    "title": "美股纳指低开超1% OpenAI相关股票集体下挫",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

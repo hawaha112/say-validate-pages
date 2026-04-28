@@ -1,0 +1,57 @@
+{
+  "id": 115,
+  "made_at": "2026-04-28T13:48:42.812997",
+  "expire_at": "2026-05-12T13:48:42.812997",
+  "verified_at": null,
+  "asset": {
+    "symbol": "BABA",
+    "name": "阿里巴巴",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.0,
+  "horizon_days": 14,
+  "baseline_price": 130.44500732421875,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 130.6199951171875,
+  "current_pct": 0.13414679224465906,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "整治内卷式竞争意味着行业竞争烈度可能降低，阿里巴巴作为电商龙头，此前在价格战中处于防守地位，政策若遏制恶性竞争，有利于行业利润率修复和龙头估值回升。此为新发现的监管政策与行业格局因果模式。",
+  "stop_loss_price": 127.8361,
+  "take_profit": {
+    "prices": [
+      134.3584,
+      136.9673,
+      140.8806
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 2.6089,
+    "atr": 1.3045
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 462,
+    "summary": "中共中央政治局会议提出深入整治内卷式竞争，可能涉及反垄断和行业监管政策",
+    "category": "regulation"
+  },
+  "news": {
+    "title": "中共中央政治局：深入整治内卷式竞争",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633678852108206099/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633678852108206099%22%2C%22hot_board_impr_id%22%3A%222026042821312396EAE4DC3BFA828D8626%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E5%85%B1%E4%B8%AD%E5%A4%AE%E6%94%BF%E6%B2%BB%E5%B1%80%EF%BC%9A%E6%B7%B1%E5%85%A5%E6%95%B4%E6%B2%BB%E5%86%85%E5%8D%B7%E5%BC%8F%E7%AB%9E%E4%BA%89%22%7D&rank=&style_id=40132&topic_id=7633678852108206099",
+    "published_at": "2026-04-28T13:31:23.419632"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": 163,
+  "made_at": "2026-04-28T13:53:29.573298",
+  "expire_at": "2026-05-05T13:53:29.573298",
+  "verified_at": null,
+  "asset": {
+    "symbol": "515790.SS",
+    "name": "光伏ETF",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 1.8,
+  "horizon_days": 7,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "微导纳米作为光伏设备龙头，其业绩大幅下滑印证了下游光伏行业仍处于阶段性调整期，设备验收推迟反映终端需求疲软。这将加剧市场对光伏产业链整体盈利能力的担忧，拖累光伏板块整体估值。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 442,
+    "summary": "微导纳米一季度净利润大跌75%，光伏业务承压但加码半导体国产化",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "【微导纳米：第一季度净利润2101.78万元，同比下降75.01%】微导纳米公告，2026年第一季度营收为4.82亿元，同比下降5.54%；净利润为2101.7",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:31:05"
+  }
+}

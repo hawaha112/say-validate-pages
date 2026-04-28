@@ -1,0 +1,57 @@
+{
+  "id": 152,
+  "made_at": "2026-04-28T13:52:20.731325",
+  "expire_at": "2026-05-01T13:52:20.731325",
+  "verified_at": null,
+  "asset": {
+    "symbol": "AMD",
+    "name": "超微半导体",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 5.0,
+  "horizon_days": 3,
+  "baseline_price": 322.2049865722656,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 321.5,
+  "current_pct": -0.2188006398552455,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "AMD作为AI芯片第二梯队供应商，同样受益于AI算力需求扩张逻辑。OpenAI增长放缓消息令市场担忧AI资本开支周期提前见顶，AMD当日已跌超6%，在英伟达估值重估的背景下，AMD可能面临更大的相对抛压。",
+  "stop_loss_price": 338.3152,
+  "take_profit": {
+    "prices": [
+      298.0396,
+      281.9294,
+      257.764
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 16.1102,
+    "atr": 8.0551
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 446,
+    "summary": "美股开盘纳指跌超1%，OpenAI相关股票集体下挫，英伟达跌超3%",
+    "category": "tech"
+  },
+  "news": {
+    "title": "美股纳指低开超1% OpenAI相关股票集体下挫",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

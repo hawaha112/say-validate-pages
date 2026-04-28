@@ -1,0 +1,44 @@
+{
+  "id": 113,
+  "made_at": "2026-04-28T13:48:27.186663",
+  "expire_at": "2026-05-01T13:48:27.186663",
+  "verified_at": null,
+  "asset": {
+    "symbol": "000547",
+    "name": "CRO概念ETF/航锦科技",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.0,
+  "horizon_days": 3,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "药明康德作为CRO/CDMO行业龙头涨停，通常会带动整个医药外包板块的市场情绪，凯莱英、康龙化成等同行业个股以及相关ETF可能受到资金联动追捧。龙头效应下板块内其他标的短期内易获得溢出资金关注。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 464,
+    "summary": "药明康德涨停封单超8亿元",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "“药王”药明康德封单超8亿",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633658887477854246/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633658887477854246%22%2C%22hot_board_impr_id%22%3A%222026042821312396EAE4DC3BFA828D8626%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E2%80%9C%E8%8D%AF%E7%8E%8B%E2%80%9D%E8%8D%AF%E6%98%8E%E5%BA%B7%E5%BE%B7%E5%B0%81%E5%8D%95%E8%B6%858%E4%BA%BF%22%7D&rank=&style_id=40132&topic_id=7633658887477854246",
+    "published_at": "2026-04-28T13:31:23.419625"
+  }
+}

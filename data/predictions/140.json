@@ -1,0 +1,44 @@
+{
+  "id": 140,
+  "made_at": "2026-04-28T13:51:32.968348",
+  "expire_at": "2026-04-29T13:51:32.968348",
+  "verified_at": null,
+  "asset": {
+    "symbol": "688097",
+    "name": "卓然股份",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 5.5,
+  "horizon_days": 1,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "公司审计委员会以0:3全票否决年报，这是极为罕见的内部治理失控信号，意味着财务数据可能存在重大问题。按规定公司将在披露期限届满次日停牌，投资者面临流动性丧失风险，复牌前的最后交易日将出现恐慌性抛售。这是典型的年报无法披露导致停牌的负面冲击模式。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 450,
+    "summary": "卓然股份因审计委员会否决年报无法按期披露，面临停牌及退市风险警示",
+    "category": "regulation"
+  },
+  "news": {
+    "title": "卓然股份：预计无法在法定时限内完成2025年年度报告披露工作 公司收上交所监管函",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

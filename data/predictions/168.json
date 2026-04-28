@@ -1,0 +1,57 @@
+{
+  "id": 168,
+  "made_at": "2026-04-28T13:54:10.464147",
+  "expire_at": "2026-05-05T13:54:10.464147",
+  "verified_at": null,
+  "asset": {
+    "symbol": "NVDA",
+    "name": "英伟达",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 4.5,
+  "horizon_days": 7,
+  "baseline_price": 211.67999267578125,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 211.52000427246094,
+  "current_pct": -0.07558031408540251,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "OpenAI作为AI行业最重要的需求方，用户和营收双双未达标直接暗示AI应用变现不及预期，这会传导到上游AI芯片需求预期。英伟达作为AI算力核心供应商，其估值高度依赖AI需求持续高增长的叙事，当下游龙头增长放缓时，市场会重新评估整个AI产业链的增长斜率。",
+  "stop_loss_price": 221.2056,
+  "take_profit": {
+    "prices": [
+      197.3916,
+      187.866,
+      173.5776
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 9.5256,
+    "atr": 4.7628
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 440,
+    "summary": "OpenAI用户和营收双双未达标，AI行业增长预期受挫",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:30:51"
+  }
+}

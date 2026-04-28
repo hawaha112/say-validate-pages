@@ -1,0 +1,44 @@
+{
+  "id": 144,
+  "made_at": "2026-04-28T13:51:45.270990",
+  "expire_at": "2026-05-01T13:51:45.270990",
+  "verified_at": null,
+  "asset": {
+    "symbol": "600519",
+    "name": "贵州茅台",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 1.5,
+  "horizon_days": 3,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "泸州老窖业绩大幅下滑将引发市场对整体白酒消费需求的担忧，作为白酒板块龙头的贵州茅台虽然基本面更稳健，但短期内也将受到板块情绪拖累，出现一定程度回调。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 449,
+    "summary": "泸州老窖2026年Q1净利润同比下降19.25%，营收下降14.19%",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "泸州老窖：第一季度净利润同比下降19.25%",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": 120,
+  "made_at": "2026-04-28T13:49:20.641870",
+  "expire_at": "2026-05-01T13:49:20.641870",
+  "verified_at": null,
+  "asset": {
+    "symbol": "000547.SZ",
+    "name": "航天发展",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.5,
+  "horizon_days": 3,
+  "baseline_price": 23.5,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 23.5,
+  "current_pct": 0.0,
+  "current_at": "2026-04-28T13:55:02.323292",
+  "reasoning": "美媒对中国军舰实力的正面评价会刺激A股市场对国防军工板块的关注和投资热情，投资者预期中国将持续加大军工投入以应对竞争压力，军工概念股短期内容易获得资金追捧。这是一个新的因果模式，检索结果中未涵盖。",
+  "stop_loss_price": 22.6775,
+  "take_profit": {
+    "prices": [
+      24.7338,
+      25.5562,
+      26.79
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.8225,
+    "atr": 0.4113
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 459,
+    "summary": "美媒肯定中国军舰实力，可能提升地缘政治紧张预期",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "美媒肯定中国军舰实力说明什么",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633741304270163462/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633741304270163462%22%2C%22hot_board_impr_id%22%3A%222026042821312396EAE4DC3BFA828D8626%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%BE%8E%E5%AA%92%E8%82%AF%E5%AE%9A%E4%B8%AD%E5%9B%BD%E5%86%9B%E8%88%B0%E5%AE%9E%E5%8A%9B%E8%AF%B4%E6%98%8E%E4%BB%80%E4%B9%88%22%7D&rank=&style_id=40132&topic_id=7633741304270163462",
+    "published_at": "2026-04-28T13:31:23.419646"
+  }
+}

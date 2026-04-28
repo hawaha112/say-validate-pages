@@ -1,0 +1,57 @@
+{
+  "id": 162,
+  "made_at": "2026-04-28T13:53:20.334567",
+  "expire_at": "2026-05-01T13:53:20.334567",
+  "verified_at": null,
+  "asset": {
+    "symbol": "688147.SS",
+    "name": "微导纳米",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 4.5,
+  "horizon_days": 3,
+  "baseline_price": 69.49,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 69.49,
+  "current_pct": 0.0,
+  "current_at": "2026-04-28T13:54:36.553663",
+  "reasoning": "公司一季度净利润同比大跌75%，远超市场预期的业绩下滑幅度。光伏设备收入同比减少30.53%，叠加债务重组损失和汇兑损失等多重负面因素，短期股价将承受显著抛压。虽然公司强调半导体国产化投入，但短期业绩兑现能力受质疑，市场情绪偏空。",
+  "stop_loss_price": 72.617,
+  "take_profit": {
+    "prices": [
+      64.7994,
+      61.6724,
+      56.9818
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 3.127,
+    "atr": 1.5635
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 442,
+    "summary": "微导纳米一季度净利润大跌75%，光伏业务承压但加码半导体国产化",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "【微导纳米：第一季度净利润2101.78万元，同比下降75.01%】微导纳米公告，2026年第一季度营收为4.82亿元，同比下降5.54%；净利润为2101.7",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:31:05"
+  }
+}

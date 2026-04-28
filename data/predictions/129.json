@@ -1,0 +1,57 @@
+{
+  "id": 129,
+  "made_at": "2026-04-28T13:50:35.336084",
+  "expire_at": "2026-05-01T13:50:35.336084",
+  "verified_at": null,
+  "asset": {
+    "symbol": "600916.SH",
+    "name": "中国黄金",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 3.5,
+  "horizon_days": 3,
+  "baseline_price": 8.68,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 8.68,
+  "current_pct": 0.0,
+  "current_at": "2026-04-28T13:54:47.639552",
+  "reasoning": "央视曝光黄金掺假将直接冲击黄金零售企业的品牌信誉和消费者信任。中国黄金作为黄金珠宝龙头企业，即使未被点名，整个行业也将面临信任危机，短期内股价承压明显。投资者担忧销售下滑和潜在监管收紧，抛压较大。",
+  "stop_loss_price": 8.9838,
+  "take_profit": {
+    "prices": [
+      8.2243,
+      7.9205,
+      7.4648
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.3038,
+    "atr": 0.1519
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 454,
+    "summary": "央视曝光黄金市场掺假问题，可能影响黄金投资者信心",
+    "category": "regulation"
+  },
+  "news": {
+    "title": "央视曝光“掺假黄金”",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633210915437051967/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%223%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633210915437051967%22%2C%22hot_board_impr_id%22%3A%222026042821312396EAE4DC3BFA828D8626%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A4%AE%E8%A7%86%E6%9B%9D%E5%85%89%E2%80%9C%E6%8E%BA%E5%81%87%E9%BB%84%E9%87%91%E2%80%9D%22%7D&rank=&style_id=40132&topic_id=7633210915437051967",
+    "published_at": "2026-04-28T13:31:23.419673"
+  }
+}

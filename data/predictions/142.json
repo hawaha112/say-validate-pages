@@ -1,0 +1,44 @@
+{
+  "id": 142,
+  "made_at": "2026-04-28T13:51:44.262984",
+  "expire_at": "2026-05-01T13:51:44.262984",
+  "verified_at": null,
+  "asset": {
+    "symbol": "000568",
+    "name": "泸州老窖",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 3.5,
+  "horizon_days": 3,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "泸州老窖Q1净利润同比下降19.25%，营收下降14.19%，业绩大幅低于市场预期。白酒行业龙头业绩下滑反映消费疲软和行业景气度下行，财报公布后短期内股价将承受较大抛压。这是白酒企业业绩下滑导致股价调整的新模式。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 449,
+    "summary": "泸州老窖2026年Q1净利润同比下降19.25%，营收下降14.19%",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "泸州老窖：第一季度净利润同比下降19.25%",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

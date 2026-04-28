@@ -1,0 +1,57 @@
+{
+  "id": 107,
+  "made_at": "2026-04-28T13:47:55.306339",
+  "expire_at": "2026-05-05T13:47:55.306339",
+  "verified_at": null,
+  "asset": {
+    "symbol": "JPY=X",
+    "name": "美元兑日元",
+    "class": "fx"
+  },
+  "direction": "down",
+  "magnitude_pct": 1.2,
+  "horizon_days": 7,
+  "baseline_price": 159.49099731445312,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 159.49899291992188,
+  "current_pct": 0.005013201750181441,
+  "current_at": "2026-04-28T00:00:00+01:00",
+  "reasoning": "地缘政治紧张通常触发避险情绪，日元作为传统避险货币会获得资金流入。日本自身表态为战争做准备，虽短期可能引发本土风险担忧，但整体亚太紧张局势下日元仍倾向于对美元走强（即美元兑日元下跌）。检索结果未覆盖此地缘避险逻辑。",
+  "stop_loss_price": 161.4049,
+  "take_profit": {
+    "prices": [
+      156.6202,
+      154.7063,
+      151.8354
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 1.9139,
+    "atr": 0.9569
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 468,
+    "summary": "日本表态为长期战争做准备，中方作出回应，地缘政治紧张局势升温",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "中方回应日称“为长期战争做准备”",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633388237955792934/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633388237955792934%22%2C%22hot_board_impr_id%22%3A%222026042821312396EAE4DC3BFA828D8626%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E6%96%B9%E5%9B%9E%E5%BA%94%E6%97%A5%E7%A7%B0%E2%80%9C%E4%B8%BA%E9%95%BF%E6%9C%9F%E6%88%98%E4%BA%89%E5%81%9A%E5%87%86%E5%A4%87%E2%80%9D%22%7D&rank=&style_id=40132&topic_id=7633388237955792934",
+    "published_at": "2026-04-28T13:31:23.419589"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": 156,
+  "made_at": "2026-04-28T13:52:49.640854",
+  "expire_at": "2026-05-01T13:52:49.640854",
+  "verified_at": null,
+  "asset": {
+    "symbol": "KWEB",
+    "name": "中概互联ETF",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 1.5,
+  "horizon_days": 3,
+  "baseline_price": 28.100000381469727,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 28.100000381469727,
+  "current_pct": 0.0,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "纳斯达克中国金龙指数跌超1%，反映市场对中概股整体情绪偏空。KWEB作为追踪中国互联网公司的ETF，与金龙指数高度相关，短期内可能延续下跌趋势。中概股集体下跌往往带有情绪传染效应，预计3日内继续承压。",
+  "stop_loss_price": 28.5215,
+  "take_profit": {
+    "prices": [
+      27.4678,
+      27.0463,
+      26.414
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.4215,
+    "atr": 0.2108
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 444,
+    "summary": "纳斯达克中国金龙指数跌超1%，中概股普遍下跌",
+    "category": "tech"
+  },
+  "news": {
+    "title": "纳斯达克中国金龙指数跌超1%，金山云跌6.93%，世纪互联跌6.90%，万国数据跌5.21%，小鹏汽车跌4.83%，禾赛科技跌4.10%。",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:31:26"
+  }
+}

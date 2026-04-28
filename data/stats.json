@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-28T10:19:18.776268",
+  "generated_at": "2026-04-28T13:55:52.544896",
   "kb_summary": {
-    "n_links_active": 346,
+    "n_links_active": 401,
     "n_strong": 167,
     "n_strong_rigorous": 37,
     "rigor_thresholds": {
@@ -15,7 +15,7 @@
     "n_weak": 8,
     "n_retire_candidate": 0,
     "n_flip_candidate": 0,
-    "n_insufficient_data": 171,
+    "n_insufficient_data": 226,
     "strong_avg_dir_hit_rate": 0.798,
     "n_instances_total": 1937,
     "n_instances_with_price_path": 1903,
@@ -33,12 +33,12 @@
       "crypto_market": 13,
       "financial_stress": 26,
       "market_stress": 2,
-      "other": 46
+      "other": 101
     }
   },
-  "total": 56,
+  "total": 124,
   "verified": 0,
-  "pending": 56,
+  "pending": 124,
   "pending_past_expire": 0,
   "expired_no_data": 0,
   "hit_rate": null,
@@ -87,15 +87,15 @@
     }
   },
   "by_class": {
-    "commodity": 9,
-    "us_stock": 16,
-    "a_stock": 27,
-    "fx": 3,
-    "index": 1
+    "us_stock": 38,
+    "a_stock": 55,
+    "commodity": 19,
+    "index": 6,
+    "fx": 6
   },
   "baseline_source_distribution": {
-    "event_time": 22,
-    "eod": 11,
-    "live_fallback": 23
+    "event_time": 68,
+    "live_fallback": 45,
+    "eod": 11
   }
 }

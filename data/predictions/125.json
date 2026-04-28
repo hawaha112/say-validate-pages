@@ -1,0 +1,57 @@
+{
+  "id": 125,
+  "made_at": "2026-04-28T13:49:53.991961",
+  "expire_at": "2026-05-05T13:49:53.991961",
+  "verified_at": null,
+  "asset": {
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.2,
+  "horizon_days": 7,
+  "baseline_price": 4592.60009765625,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 4598.2998046875,
+  "current_pct": 0.12410632125707487,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "普京公开赞扬伊朗抵抗美国，显示俄伊联盟进一步强化，这将加剧中东地缘政治紧张局势。市场对潜在冲突升级的担忧会推动避险资金流入黄金。该因果模式在检索结果中未能匹配，属于新发现的地缘政治风险溢价传导路径。",
+  "stop_loss_price": 4537.4889,
+  "take_profit": {
+    "prices": [
+      4675.2669,
+      4730.3781,
+      4813.0449
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 55.1112,
+    "atr": 27.5556
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 457,
+    "summary": "普京称赞伊朗抵抗美国，可能加剧地缘政治紧张",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "普京：全世界都钦佩伊朗人民抵抗美国",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7632898398869474879/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632898398869474879%22%2C%22hot_board_impr_id%22%3A%222026042821312396EAE4DC3BFA828D8626%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%99%AE%E4%BA%AC%EF%BC%9A%E5%85%A8%E4%B8%96%E7%95%8C%E9%83%BD%E9%92%A6%E4%BD%A9%E4%BC%8A%E6%9C%97%E4%BA%BA%E6%B0%91%E6%8A%B5%E6%8A%97%E7%BE%8E%E5%9B%BD%22%7D&rank=&style_id=40132&topic_id=7632898398869474879",
+    "published_at": "2026-04-28T13:31:23.419652"
+  }
+}

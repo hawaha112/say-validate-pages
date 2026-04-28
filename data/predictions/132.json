@@ -1,0 +1,57 @@
+{
+  "id": 132,
+  "made_at": "2026-04-28T13:50:54.971793",
+  "expire_at": "2026-05-12T13:50:54.971793",
+  "verified_at": null,
+  "asset": {
+    "symbol": "HII",
+    "name": "亨廷顿英戈尔斯工业",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.0,
+  "horizon_days": 14,
+  "baseline_price": 357.489990234375,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 356.29998779296875,
+  "current_pct": -0.332877136119551,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "亨廷顿英格尔斯是美国最大的军用造船企业，军舰造价高昂的讨论直接聚焦于该公司的核心业务。市场通常将此类讨论解读为政府对海军现代化的重视，而非对造船商的惩罚，因为美国仅有少数企业具备建造大型军舰的能力，形成寡头定价格局。",
+  "stop_loss_price": 350.3402,
+  "take_profit": {
+    "prices": [
+      368.2147,
+      375.3645,
+      386.0892
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 7.1498,
+    "atr": 3.5749
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 453,
+    "summary": "美国军舰造价高昂引发关注，可能影响国防预算与军工产业",
+    "category": "regulation"
+  },
+  "news": {
+    "title": "美国军舰造价为何这么高",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633742637488410154/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633742637488410154%22%2C%22hot_board_impr_id%22%3A%222026042821312396EAE4DC3BFA828D8626%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%BE%8E%E5%9B%BD%E5%86%9B%E8%88%B0%E9%80%A0%E4%BB%B7%E4%B8%BA%E4%BD%95%E8%BF%99%E4%B9%88%E9%AB%98%22%7D&rank=&style_id=40132&topic_id=7633742637488410154",
+    "published_at": "2026-04-28T13:31:23.419676"
+  }
+}

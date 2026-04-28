@@ -1,0 +1,57 @@
+{
+  "id": 173,
+  "made_at": "2026-04-28T13:54:25.203821",
+  "expire_at": "2026-05-05T13:54:25.203821",
+  "verified_at": null,
+  "asset": {
+    "symbol": "SPOT",
+    "name": "Spotify",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 4.0,
+  "horizon_days": 7,
+  "baseline_price": 427.8399963378906,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 428.7699890136719,
+  "current_pct": 0.21736926976008564,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "Spotify Q2营业利润指引逊于预期，开盘即跌11.7%。业绩指引不及预期后，市场通常需要数日消化利空，且可能面临分析师下调目标价的连锁反应。此为新模式：流媒体公司利润指引不及预期→股价短期承压。",
+  "stop_loss_price": 444.9536,
+  "take_profit": {
+    "prices": [
+      402.1696,
+      385.056,
+      359.3856
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 17.1136,
+    "atr": 8.5568
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 439,
+    "summary": "美股开盘分化，科技股大跌，AI相关公司业绩不及预期引发抛售",
+    "category": "tech"
+  },
+  "news": {
+    "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:30:51"
+  }
+}

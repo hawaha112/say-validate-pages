@@ -1,0 +1,57 @@
+{
+  "id": 131,
+  "made_at": "2026-04-28T13:50:53.876404",
+  "expire_at": "2026-05-12T13:50:53.876404",
+  "verified_at": null,
+  "asset": {
+    "symbol": "LMT",
+    "name": "洛克希德·马丁（美国国防股）",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.5,
+  "horizon_days": 14,
+  "baseline_price": 513.6199951171875,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 513.5999755859375,
+  "current_pct": -0.0038977320665704116,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "美国军舰造价高昂的讨论通常引发国防预算审视，但历史上这类关注往往导致国会对军工复合体的支持加强，而非削减。洛克希德·马丁作为美国最大国防承包商，在国防开支讨论升温时往往受益于市场对军工订单持续性的预期。这是一个新的因果模式，检索结果中未涵盖军舰造价与军工股的关联。",
+  "stop_loss_price": 505.9157,
+  "take_profit": {
+    "prices": [
+      525.1764,
+      532.8807,
+      544.4372
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 7.7043,
+    "atr": 3.8521
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 453,
+    "summary": "美国军舰造价高昂引发关注，可能影响国防预算与军工产业",
+    "category": "regulation"
+  },
+  "news": {
+    "title": "美国军舰造价为何这么高",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633742637488410154/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633742637488410154%22%2C%22hot_board_impr_id%22%3A%222026042821312396EAE4DC3BFA828D8626%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%BE%8E%E5%9B%BD%E5%86%9B%E8%88%B0%E9%80%A0%E4%BB%B7%E4%B8%BA%E4%BD%95%E8%BF%99%E4%B9%88%E9%AB%98%22%7D&rank=&style_id=40132&topic_id=7633742637488410154",
+    "published_at": "2026-04-28T13:31:23.419676"
+  }
+}

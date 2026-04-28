@@ -1,0 +1,44 @@
+{
+  "id": 117,
+  "made_at": "2026-04-28T13:49:02.427545",
+  "expire_at": "2026-05-05T13:49:02.427545",
+  "verified_at": null,
+  "asset": {
+    "symbol": "USD/CNY",
+    "name": "美元兑人民币",
+    "class": "fx"
+  },
+  "direction": "up",
+  "magnitude_pct": 0.3,
+  "horizon_days": 7,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "美国拖欠联合国会费并对中国施压的消息反映中美外交紧张加剧。这类地缘政治摩擦通常会导致市场避险情绪升温，资金流向美元避险，同时人民币承压。虽然检索到的因果链主要涉及贸易关税，但外交施压与贸易战具有相似的市场情绪传导机制，预计短期内美元兑人民币小幅走强。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 460,
+    "summary": "美国拖欠联合国会费并试图对中国施压，中方作出回应",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "美拖欠会费还欲施压中国 中方回应",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633760798704123954/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633760798704123954%22%2C%22hot_board_impr_id%22%3A%222026042821312396EAE4DC3BFA828D8626%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%BE%8E%E6%8B%96%E6%AC%A0%E4%BC%9A%E8%B4%B9%E8%BF%98%E6%AC%B2%E6%96%BD%E5%8E%8B%E4%B8%AD%E5%9B%BD+%E4%B8%AD%E6%96%B9%E5%9B%9E%E5%BA%94%22%7D&rank=&style_id=40132&topic_id=7633760798704123954",
+    "published_at": "2026-04-28T13:31:23.419640"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": 149,
+  "made_at": "2026-04-28T13:52:07.313756",
+  "expire_at": "2026-05-01T13:52:07.313756",
+  "verified_at": null,
+  "asset": {
+    "symbol": "000858",
+    "name": "五粮液",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 2.0,
+  "horizon_days": 3,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "泸州老窖作为白酒行业第三梯队龙头，其业绩大幅下滑反映出高端白酒需求疲软的行业性问题。市场通常会将此解读为白酒板块整体承压信号，五粮液作为同行业龙头可能受到情绪传染影响。检索结果中无相关因果链，属于新模式。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 447,
+    "summary": "泸州老窖2025年净利润同比下降19.61%，Q4净利润环比暴跌97%低于预期",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "泸州老窖：2025年净利润108.31亿元 同比下降19.61%",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

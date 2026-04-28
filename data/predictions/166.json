@@ -1,0 +1,57 @@
+{
+  "id": 166,
+  "made_at": "2026-04-28T13:53:55.231395",
+  "expire_at": "2026-05-05T13:53:55.231395",
+  "verified_at": null,
+  "asset": {
+    "symbol": "QCOM",
+    "name": "高通",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.0,
+  "horizon_days": 7,
+  "baseline_price": 146.85000610351562,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 146.75999450683594,
+  "current_pct": -0.06129492198743095,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "高通与OpenAI合作开发AI专用芯片的消息意味着高通在AI手机芯片领域获得重大战略突破，有望摆脱对ARM架构的依赖并切入高增长的端侧AI市场。这强化了高通在AI时代的竞争定位，市场应给予估值溢价。",
+  "stop_loss_price": 142.4445,
+  "take_profit": {
+    "prices": [
+      153.4583,
+      157.8638,
+      164.472
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 4.4055,
+    "atr": 2.2028
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 441,
+    "summary": "高通与OpenAI合作开发AI芯片可能不采用ARM架构，Arm连续两日暴跌",
+    "category": "tech"
+  },
+  "news": {
+    "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:30:51"
+  }
+}

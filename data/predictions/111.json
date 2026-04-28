@@ -1,0 +1,57 @@
+{
+  "id": 111,
+  "made_at": "2026-04-28T13:48:12.716822",
+  "expire_at": "2026-05-05T13:48:12.716822",
+  "verified_at": null,
+  "asset": {
+    "symbol": "USDCNH=X",
+    "name": "美元兑离岸人民币",
+    "class": "fx"
+  },
+  "direction": "down",
+  "magnitude_pct": 0.4,
+  "horizon_days": 7,
+  "baseline_price": 6.83758020401001,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 6.837480068206787,
+  "current_pct": -0.0014644918265665095,
+  "current_at": "2026-04-28T00:00:00+01:00",
+  "reasoning": "外贸顺差屡创新高意味着更多美元流入结汇需求，支撑人民币汇率走强，美元兑离岸人民币汇率承压下行。",
+  "stop_loss_price": 6.8649,
+  "take_profit": {
+    "prices": [
+      6.7966,
+      6.7692,
+      6.7282
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.0274,
+    "atr": 0.0137
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 467,
+    "summary": "中国外贸数据屡创新高，彰显产业链优势",
+    "category": "macro"
+  },
+  "news": {
+    "title": "外贸屡创新高彰显中国产业链优势",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/article/7633697375936053769",
+    "published_at": "2026-04-28T13:31:23.419595"
+  }
+}

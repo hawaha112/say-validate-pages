@@ -1,0 +1,57 @@
+{
+  "id": 161,
+  "made_at": "2026-04-28T13:53:04.477730",
+  "expire_at": "2026-05-12T13:53:04.477730",
+  "verified_at": null,
+  "asset": {
+    "symbol": "LMT",
+    "name": "洛克希德·马丁（美国国防股）",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.8,
+  "horizon_days": 14,
+  "baseline_price": 513.5900268554688,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 513.5999755859375,
+  "current_pct": 0.0019370957278245025,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "美国对伊朗施压暗示可能升级地缘紧张局势，防务股通常在此类环境中受益。洛克希德马丁作为美国最大防务承包商，市场预期中东紧张局势可能带动防务订单增长。",
+  "stop_loss_price": 504.3454,
+  "take_profit": {
+    "prices": [
+      527.457,
+      536.7016,
+      550.5685
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 9.2446,
+    "atr": 4.6223
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 443,
+    "summary": "特朗普评论伊朗领导层问题，暗示可能出现政权变动或内部动荡",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "特朗普：相信伊朗会解决领导层问题。",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:31:19"
+  }
+}

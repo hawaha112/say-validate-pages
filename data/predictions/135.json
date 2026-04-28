@@ -1,0 +1,44 @@
+{
+  "id": 135,
+  "made_at": "2026-04-28T13:51:07.145212",
+  "expire_at": "2026-05-05T13:51:07.145212",
+  "verified_at": null,
+  "asset": {
+    "symbol": "300760",
+    "name": "迈瑞医疗",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.0,
+  "horizon_days": 7,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "迈瑞医疗作为医药生物板块龙头，市值大流动性好，是主力资金布局的首选标的。当板块整体获得大额资金流入时，龙头股往往获得超额配置，涨幅可能高于板块平均水平。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 452,
+    "summary": "主力资金21.06亿元流入医药生物行业",
+    "category": "other"
+  },
+  "news": {
+    "title": "今日21.06亿主力资金潜入医药生物业",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633628880640884755/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633628880640884755%22%2C%22hot_board_impr_id%22%3A%222026042821312396EAE4DC3BFA828D8626%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BB%8A%E6%97%A521.06%E4%BA%BF%E4%B8%BB%E5%8A%9B%E8%B5%84%E9%87%91%E6%BD%9C%E5%85%A5%E5%8C%BB%E8%8D%AF%E7%94%9F%E7%89%A9%E4%B8%9A%22%7D&rank=&style_id=40132&topic_id=7633628880640884755",
+    "published_at": "2026-04-28T13:31:23.419682"
+  }
+}

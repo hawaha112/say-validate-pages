@@ -1,0 +1,44 @@
+{
+  "id": 164,
+  "made_at": "2026-04-28T13:53:40.485293",
+  "expire_at": "2026-05-12T13:53:40.485293",
+  "verified_at": null,
+  "asset": {
+    "symbol": "512480.SS",
+    "name": "半导体ETF",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.2,
+  "horizon_days": 14,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "公司公告明确表示持续推进半导体设备国产化并保持高强度研发投入，体现国产替代战略坚定推进。市场可能将此解读为半导体国产化进程加速的信号，对半导体设备板块形成中期利好支撑。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 442,
+    "summary": "微导纳米一季度净利润大跌75%，光伏业务承压但加码半导体国产化",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "【微导纳米：第一季度净利润2101.78万元，同比下降75.01%】微导纳米公告，2026年第一季度营收为4.82亿元，同比下降5.54%；净利润为2101.7",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:31:05"
+  }
+}

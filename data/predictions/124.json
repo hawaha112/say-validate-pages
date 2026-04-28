@@ -1,0 +1,44 @@
+{
+  "id": 124,
+  "made_at": "2026-04-28T13:49:43.615425",
+  "expire_at": "2026-05-05T13:49:43.615425",
+  "verified_at": null,
+  "asset": {
+    "symbol": "399300",
+    "name": "沪深300",
+    "class": "index"
+  },
+  "direction": "down",
+  "magnitude_pct": 0.8,
+  "horizon_days": 7,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "股王易主频繁叠加资金涌入单一防御板块（医药），显示市场风险偏好下降。沪深300作为大盘蓝筹代表，在市场情绪谨慎、轮动加剧的环境下通常表现疲软，预计短期内小幅承压。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 458,
+    "summary": "A股市场出现股价剧烈波动，股王地位频繁易主，医药白马股（药茅）逆势涨停",
+    "category": "other"
+  },
+  "news": {
+    "title": "“股王”反复易主 “药茅”默默涨停",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633719946857562138/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633719946857562138%22%2C%22hot_board_impr_id%22%3A%222026042821312396EAE4DC3BFA828D8626%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E2%80%9C%E8%82%A1%E7%8E%8B%E2%80%9D%E5%8F%8D%E5%A4%8D%E6%98%93%E4%B8%BB+%E2%80%9C%E8%8D%AF%E8%8C%85%E2%80%9D%E9%BB%98%E9%BB%98%E6%B6%A8%E5%81%9C%22%7D&rank=&style_id=40132&topic_id=7633719946857562138",
+    "published_at": "2026-04-28T13:31:23.419649"
+  }
+}

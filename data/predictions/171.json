@@ -1,0 +1,57 @@
+{
+  "id": 171,
+  "made_at": "2026-04-28T13:54:24.148664",
+  "expire_at": "2026-05-01T13:54:24.148664",
+  "verified_at": null,
+  "asset": {
+    "symbol": "NVDA",
+    "name": "英伟达",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 3.5,
+  "horizon_days": 3,
+  "baseline_price": 211.54379272460938,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 211.52000427246094,
+  "current_pct": -0.011245166706170213,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "OpenAI用户和营收双双未达标，叠加AMD、CoreWeave等AI算力相关公司大跌，显示市场对AI变现能力产生担忧。英伟达作为AI芯片龙头，估值高度依赖AI需求增长预期，短期内将承受情绪传导压力。此为新发现的因果模式：AI应用层公司业绩不及预期→上游算力芯片估值承压。",
+  "stop_loss_price": 218.9478,
+  "take_profit": {
+    "prices": [
+      200.4377,
+      193.0337,
+      181.9277
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 7.404,
+    "atr": 3.702
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 439,
+    "summary": "美股开盘分化，科技股大跌，AI相关公司业绩不及预期引发抛售",
+    "category": "tech"
+  },
+  "news": {
+    "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:30:51"
+  }
+}

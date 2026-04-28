@@ -1,0 +1,57 @@
+{
+  "id": 133,
+  "made_at": "2026-04-28T13:50:56.228611",
+  "expire_at": "2026-05-12T13:50:56.228611",
+  "verified_at": null,
+  "asset": {
+    "symbol": "GD",
+    "name": "通用动力",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.2,
+  "horizon_days": 14,
+  "baseline_price": 309.8900146484375,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 309.8800048828125,
+  "current_pct": -0.003230102666055836,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "通用动力旗下巴斯钢铁造船厂是美国主要驱逐舰建造商，军舰造价讨论将提升市场对其海军订单稳定性的关注。在美中战略竞争背景下，即使成本争议也难以动摇国会对海军扩建的支持，利好军工造船板块。",
+  "stop_loss_price": 306.1713,
+  "take_profit": {
+    "prices": [
+      315.468,
+      319.1867,
+      324.7647
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 3.7187,
+    "atr": 1.8593
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 453,
+    "summary": "美国军舰造价高昂引发关注，可能影响国防预算与军工产业",
+    "category": "regulation"
+  },
+  "news": {
+    "title": "美国军舰造价为何这么高",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633742637488410154/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633742637488410154%22%2C%22hot_board_impr_id%22%3A%222026042821312396EAE4DC3BFA828D8626%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%BE%8E%E5%9B%BD%E5%86%9B%E8%88%B0%E9%80%A0%E4%BB%B7%E4%B8%BA%E4%BD%95%E8%BF%99%E4%B9%88%E9%AB%98%22%7D&rank=&style_id=40132&topic_id=7633742637488410154",
+    "published_at": "2026-04-28T13:31:23.419676"
+  }
+}

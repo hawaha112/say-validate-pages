@@ -1,0 +1,57 @@
+{
+  "id": 160,
+  "made_at": "2026-04-28T13:53:03.681320",
+  "expire_at": "2026-05-05T13:53:03.681320",
+  "verified_at": null,
+  "asset": {
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.2,
+  "horizon_days": 7,
+  "baseline_price": 4601.2998046875,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 4598.2998046875,
+  "current_pct": -0.06519896827726371,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "特朗普对伊朗领导层的评论增加了地缘政治不确定性，投资者通常在此类风险事件中寻求避险资产。黄金作为传统避险工具，在中东局势紧张时往往受到资金流入支撑。",
+  "stop_loss_price": 4546.0842,
+  "take_profit": {
+    "prices": [
+      4684.1232,
+      4739.3388,
+      4822.1622
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 55.2156,
+    "atr": 27.6078
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 443,
+    "summary": "特朗普评论伊朗领导层问题，暗示可能出现政权变动或内部动荡",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "特朗普：相信伊朗会解决领导层问题。",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:31:19"
+  }
+}

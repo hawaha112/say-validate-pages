@@ -1,0 +1,44 @@
+{
+  "id": 145,
+  "made_at": "2026-04-28T13:51:54.569837",
+  "expire_at": "2026-04-29T13:51:54.569837",
+  "verified_at": null,
+  "asset": {
+    "symbol": "600678",
+    "name": "四川金顶",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 4.8,
+  "horizon_days": 1,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "公司因内控审计报告被出具否定意见而被实施ST风险警示，复牌首日市场通常会对此负面信息进行集中定价。ST股票涨跌幅限制收窄至5%，投资者恐慌性抛售叠加流动性折价，预计复牌首日接近跌停。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 448,
+    "summary": "四川金顶因内控审计否定意见被实施ST风险警示，4月30日复牌后简称变更为ST金顶",
+    "category": "regulation"
+  },
+  "news": {
+    "title": "四川金顶：4月30日复牌后将被实施其他风险警示 简称变更为“ST金顶”",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

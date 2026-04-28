@@ -1,0 +1,57 @@
+{
+  "id": 155,
+  "made_at": "2026-04-28T13:52:38.114382",
+  "expire_at": "2026-05-12T13:52:38.114382",
+  "verified_at": null,
+  "asset": {
+    "symbol": "002617.SZ",
+    "name": "露笑科技",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 5.0,
+  "horizon_days": 14,
+  "baseline_price": 7.51,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 7.51,
+  "current_pct": 0.0,
+  "current_at": "2026-04-28T13:54:40.662594",
+  "reasoning": "露笑科技作为碳化硅和光伏领域企业，净利润大幅下滑反映行业竞争加剧或下游需求疲软。市场在消化财报信息后，若后续无利好催化，投资者可能重新评估公司估值，导致中期股价进一步下行。增收不增利的趋势若延续将对估值形成持续压制。",
+  "stop_loss_price": 7.8855,
+  "take_profit": {
+    "prices": [
+      6.9467,
+      6.5713,
+      6.008
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.3755,
+    "atr": 0.1877
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 445,
+    "summary": "露笑科技一季度净利润同比下降27.68%，营收增长11.32%但盈利能力下滑",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "【露笑科技：一季度归母净利润7091.5万元，同比下降27.68%】露笑科技4月28日公告，2026年第一季度实现营业收入9.57亿元，同比增长11.32%；归",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:31:29"
+  }
+}

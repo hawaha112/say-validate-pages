@@ -1,0 +1,57 @@
+{
+  "id": 159,
+  "made_at": "2026-04-28T13:53:03.064242",
+  "expire_at": "2026-05-05T13:53:03.064242",
+  "verified_at": null,
+  "asset": {
+    "symbol": "CL",
+    "name": "WTI原油期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.5,
+  "horizon_days": 7,
+  "baseline_price": 85.08499908447266,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 85.18000030517578,
+  "current_pct": 0.11165448871757933,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "特朗普暗示伊朗可能出现领导层变动，这增加了中东地缘政治不确定性。伊朗是OPEC重要产油国，任何政权动荡都可能影响原油供应预期，推动油价上涨。市场通常对中东政治风险给予风险溢价。",
+  "stop_loss_price": 82.9579,
+  "take_profit": {
+    "prices": [
+      88.2757,
+      90.4028,
+      93.5935
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 2.1271,
+    "atr": 1.0636
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 443,
+    "summary": "特朗普评论伊朗领导层问题，暗示可能出现政权变动或内部动荡",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "特朗普：相信伊朗会解决领导层问题。",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T21:31:19"
+  }
+}

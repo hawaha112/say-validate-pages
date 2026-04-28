@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 4348.169921875,
-  "current_pct": 0.0020662855417957907,
-  "current_at": "2026-04-27T00:00:00+03:00",
+  "current_price": 4345.3701171875,
+  "current_pct": -0.06232546063568825,
+  "current_at": "2026-04-28T00:00:00+03:00",
   "reasoning": "以色列扩大对黎巴嫩的军事行动，国内面临战争升级风险，投资者会担忧经济活动受扰、国防开支增加以及潜在的多线作战压力，短期内以色列股市承压。",
   "stop_loss_price": 4435.0417,
   "take_profit": {

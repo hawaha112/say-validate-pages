@@ -1,6 +1,2881 @@
 {
-  "count": 173,
+  "count": 225,
   "items": [
+    {
+      "id": 225,
+      "made_at": "2026-04-28T14:17:16.038169",
+      "expire_at": "2026-05-12T14:17:16.038169",
+      "verified_at": null,
+      "asset": {
+        "symbol": "ZAR=X",
+        "name": "美元兑南非兰特",
+        "class": "fx"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.2,
+      "horizon_days": 14,
+      "baseline_price": 16.572349548339844,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 16.572269439697266,
+      "current_pct": -0.00048338735762515936,
+      "current_at": "2026-04-28T00:00:00+01:00",
+      "reasoning": "燃油税减免将增加南非财政支出压力或减少财政收入，在当前南非财政状况本就紧张的背景下，可能引发市场对财政可持续性的担忧，导致兰特相对美元走弱（即USD/ZAR上涨）。这是财政刺激政策对新兴市场货币的典型负面影响。",
+      "stop_loss_price": 16.3735,
+      "take_profit": {
+        "prices": [
+          16.8707,
+          17.0695,
+          17.3678
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.1989,
+        "atr": 0.0994
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 550,
+        "summary": "南非延长柴油燃料税零税率至6月2日，汽油税6月起减半",
+        "category": "energy"
+      },
+      "news": {
+        "title": "南非政府表示，柴油燃料税将维持为零，直到6月2日。汽油税将从六月起减半。",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T22:00:01"
+      }
+    },
+    {
+      "id": 224,
+      "made_at": "2026-04-28T14:17:14.933569",
+      "expire_at": "2026-05-05T14:17:14.933569",
+      "verified_at": null,
+      "asset": {
+        "symbol": "USO",
+        "name": "美国石油基金",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 0.8,
+      "horizon_days": 7,
+      "baseline_price": 139.7447052001953,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 139.7447052001953,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "南非降低燃油税实质上是政府补贴消费端，这会在短期内刺激当地燃油消费量，但对国际油价的影响有限。然而，此举反映出新兴市场国家为应对高油价而采取的干预措施正在增多，若形成示范效应，可能抑制全球燃料需求增长预期，对原油价格形成边际压力。",
+      "stop_loss_price": 140.8627,
+      "take_profit": {
+        "prices": [
+          138.0678,
+          136.9498,
+          135.2729
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.118,
+        "atr": 0.559
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 550,
+        "summary": "南非延长柴油燃料税零税率至6月2日，汽油税6月起减半",
+        "category": "energy"
+      },
+      "news": {
+        "title": "南非政府表示，柴油燃料税将维持为零，直到6月2日。汽油税将从六月起减半。",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T22:00:01"
+      }
+    },
+    {
+      "id": 223,
+      "made_at": "2026-04-28T14:17:14.209980",
+      "expire_at": "2026-05-12T14:17:14.209980",
+      "verified_at": null,
+      "asset": {
+        "symbol": "SASOL.JO",
+        "name": "萨索尔",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.5,
+      "horizon_days": 14,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "南非延长柴油税零税率并减半汽油税，将直接削减燃料零售价格，降低南非国内燃油需求的边际利润。萨索尔作为南非最大的合成燃料生产商，其燃料销售利润率将受到政府补贴导致的价格压制影响。这是一个本地政策对本地能源企业的直接冲击。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 550,
+        "summary": "南非延长柴油燃料税零税率至6月2日，汽油税6月起减半",
+        "category": "energy"
+      },
+      "news": {
+        "title": "南非政府表示，柴油燃料税将维持为零，直到6月2日。汽油税将从六月起减半。",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T22:00:01"
+      }
+    },
+    {
+      "id": 222,
+      "made_at": "2026-04-28T14:16:59.582096",
+      "expire_at": "2026-05-01T14:16:59.582096",
+      "verified_at": null,
+      "asset": {
+        "symbol": "000858",
+        "name": "五粮液",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.2,
+      "horizon_days": 3,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "年报延期披露通常引发市场对公司财务状况的担忧，即使官方解释为'完善复核工作'，投资者仍会联想到潜在的业绩问题或审计障碍。白酒行业近年面临消费疲软压力，五粮液作为龙头企业的年报延期会放大市场对行业整体的悲观情绪。短期内预计股价承压，但因仅延期一天且无实质利空披露，跌幅有限。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 551,
+        "summary": "五粮液延期披露2025年报及2026年一季报至4月30日",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "五粮液：延期披露《2025年度报告》及《2026年第一季度报告》至2026年4月30日收市后",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 221,
+      "made_at": "2026-04-28T14:16:35.872529",
+      "expire_at": "2026-05-05T14:16:35.872529",
+      "verified_at": null,
+      "asset": {
+        "symbol": "BIDU",
+        "name": "百度",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.8,
+      "horizon_days": 7,
+      "baseline_price": 126.19999694824219,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 126.20999908447266,
+      "current_pct": 0.007925623195197762,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "百度文心一言及相关AI生成工具在国内市场份额领先，网信部门对竞品的约谈和处罚预示整个行业将面临更严格的内容标识审查。中概股投资者对中国监管敏感度高，此类消息易触发避险抛售。检索结果中无对应因果链，为新模式。",
+      "stop_loss_price": 128.4716,
+      "take_profit": {
+        "prices": [
+          122.7926,
+          120.521,
+          117.1136
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.2716,
+        "atr": 1.1358
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 553,
+        "summary": "网信部门约谈剪映、猫箱App及即梦AI，因未落实AI生成内容标识规定",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 220,
+      "made_at": "2026-04-28T14:16:34.920556",
+      "expire_at": "2026-05-01T14:16:34.920556",
+      "verified_at": null,
+      "asset": {
+        "symbol": "002230.SZ",
+        "name": "科大讯飞",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.0,
+      "horizon_days": 3,
+      "baseline_price": 49.17,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 49.17,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:18.239365",
+      "reasoning": "科大讯飞是国内AI语音和生成式AI的代表企业，旗下产品广泛涉及AI生成内容。此次监管对字节系产品（剪映、即梦AI）的严厉处罚释放信号，市场将对所有AIGC龙头的合规成本和政策风险重新定价。叠加公司一季度仍在亏损，短期情绪偏空。检索结果无相关因果链，属新模式。",
+      "stop_loss_price": 50.1534,
+      "take_profit": {
+        "prices": [
+          47.6949,
+          46.7115,
+          45.2364
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.9834,
+        "atr": 0.4917
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 553,
+        "summary": "网信部门约谈剪映、猫箱App及即梦AI，因未落实AI生成内容标识规定",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 219,
+      "made_at": "2026-04-28T14:16:31.612121",
+      "expire_at": "2026-05-01T14:16:31.612121",
+      "verified_at": null,
+      "asset": {
+        "symbol": "002415.SZ",
+        "name": "海康威视",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.5,
+      "horizon_days": 3,
+      "baseline_price": 34.65,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 34.65,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:21.015828",
+      "reasoning": "网信部门对剪映、猫箱及即梦AI的约谈和处罚表明监管层正加强对AI生成内容标识的执法力度。海康威视作为AI视觉龙头，其AI产品同样涉及内容生成与合成技术，市场将担忧类似监管风险蔓延，短期承压。这是新的监管执法模式，检索结果中未有匹配的因果链。",
+      "stop_loss_price": 35.1698,
+      "take_profit": {
+        "prices": [
+          33.8704,
+          33.3506,
+          32.571
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.5198,
+        "atr": 0.2599
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 553,
+        "summary": "网信部门约谈剪映、猫箱App及即梦AI，因未落实AI生成内容标识规定",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 218,
+      "made_at": "2026-04-28T14:16:14.032550",
+      "expire_at": "2026-05-05T14:16:14.032550",
+      "verified_at": null,
+      "asset": {
+        "symbol": "002236",
+        "name": "大华股份",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.8,
+      "horizon_days": 7,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "工信部智能编程研发和边缘算力建设政策将带动智能安防和AIoT领域投资，大华股份作为行业第二大厂商，在算力网和通信网建设中具备核心设备供应能力，有望分享政策红利。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 554,
+        "summary": "工信部将开展人工智能+软件专项行动，加快智能编程和算力建设",
+        "category": "tech"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 217,
+      "made_at": "2026-04-28T14:16:13.614950",
+      "expire_at": "2026-05-05T14:16:13.614950",
+      "verified_at": null,
+      "asset": {
+        "symbol": "002415",
+        "name": "海康威视",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.0,
+      "horizon_days": 7,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "政治局会议强调加强算力网、新一代通信网建设，工信部推进边缘算力布局，海康威视作为智能物联龙头，其边缘计算和AI视觉产品将受益于新基建投资加速。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 554,
+        "summary": "工信部将开展人工智能+软件专项行动，加快智能编程和算力建设",
+        "category": "tech"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 216,
+      "made_at": "2026-04-28T14:16:13.215889",
+      "expire_at": "2026-05-05T14:16:13.215889",
+      "verified_at": null,
+      "asset": {
+        "symbol": "688256",
+        "name": "寒武纪",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.5,
+      "horizon_days": 7,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "工信部明确开展'人工智能+软件'专项行动并加快算力布局，寒武纪作为国产AI芯片龙头将直接受益于算力基础设施建设需求提升。政策利好叠加公司刚公布高送转分红方案，短期有望获得资金关注。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 554,
+        "summary": "工信部将开展人工智能+软件专项行动，加快智能编程和算力建设",
+        "category": "tech"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 215,
+      "made_at": "2026-04-28T14:16:01.686632",
+      "expire_at": "2026-05-05T14:16:01.686632",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GOOGL",
+        "name": "谷歌",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.8,
+      "horizon_days": 7,
+      "baseline_price": 350.4800109863281,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 350.8500061035156,
+      "current_pct": 0.10556810819146349,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "OpenAI困境反映整个生成式AI赛道商业化挑战，谷歌作为AI竞争者同样面临变现压力审视。财报季前投资者将重新评估所有科技巨头的AI支出回报率，谷歌的AI投入也将被质疑。",
+      "stop_loss_price": 356.7887,
+      "take_profit": {
+        "prices": [
+          341.0171,
+          334.7084,
+          325.2455
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 6.3086,
+        "atr": 3.1543
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 555,
+        "summary": "OpenAI未能实现销售和新增用户目标，引发科技公司支出前景担忧",
+        "category": "tech"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 214,
+      "made_at": "2026-04-28T14:16:01.017335",
+      "expire_at": "2026-05-05T14:16:01.017335",
+      "verified_at": null,
+      "asset": {
+        "symbol": "NVDA",
+        "name": "英伟达",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 3.5,
+      "horizon_days": 7,
+      "baseline_price": 212.94000244140625,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 213.14999389648438,
+      "current_pct": 0.09861531542712713,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "OpenAI增长放缓意味着AI应用端需求可能低于预期，市场担忧科技公司将削减AI基础设施支出。英伟达作为AI算力核心供应商，其高估值建立在持续增长的AI投资预期上，该消息将引发对GPU需求前景的担忧。",
+      "stop_loss_price": 220.3929,
+      "take_profit": {
+        "prices": [
+          201.7607,
+          194.3078,
+          183.1284
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 7.4529,
+        "atr": 3.7265
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 555,
+        "summary": "OpenAI未能实现销售和新增用户目标，引发科技公司支出前景担忧",
+        "category": "tech"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 213,
+      "made_at": "2026-04-28T14:16:00.170803",
+      "expire_at": "2026-05-05T14:16:00.170803",
+      "verified_at": null,
+      "asset": {
+        "symbol": "MSFT",
+        "name": "微软",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.5,
+      "horizon_days": 7,
+      "baseline_price": 425.3399963378906,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 425.4045104980469,
+      "current_pct": 0.015167668385692999,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "OpenAI未达销售和用户增长目标，直接冲击其最大投资方微软。市场将重新评估微软在AI领域的巨额投入回报预期，云业务Azure的AI溢价逻辑受质疑。这是新出现的AI商业化遇阻信号，短期内将压制微软估值。",
+      "stop_loss_price": 435.9735,
+      "take_profit": {
+        "prices": [
+          409.3897,
+          398.7562,
+          382.806
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 10.6335,
+        "atr": 5.3167
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 555,
+        "summary": "OpenAI未能实现销售和新增用户目标，引发科技公司支出前景担忧",
+        "category": "tech"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 212,
+      "made_at": "2026-04-28T14:15:47.368061",
+      "expire_at": "2026-05-12T14:15:47.368061",
+      "verified_at": null,
+      "asset": {
+        "symbol": "2222.SR",
+        "name": "沙特阿美",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 3.8,
+      "horizon_days": 14,
+      "baseline_price": 27.459999084472656,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 27.459999084472656,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T00:00:00+03:00",
+      "reasoning": "阿联酋退出欧佩克+对沙特阿美形成双重利空：一是油价下跌直接压缩收入；二是OPEC+联盟分裂削弱沙特对全球油市的定价权。这是检索链(id:206)中沙特减产逻辑的反面案例——当联盟成员增产破坏协议时，沙特主导的供给管理策略失效，对沙特石油资产构成负面冲击。",
+      "stop_loss_price": 28.2532,
+      "take_profit": {
+        "prices": [
+          26.2703,
+          25.4771,
+          24.2874
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7932,
+        "atr": 0.3966
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.5172,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.5172,
+        "log_odds": 0.069,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.72,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 206,
+            "pattern": "沙特阿拉伯单边自愿减产",
+            "asset": "XLE",
+            "dir_hit_rate": 0.8,
+            "n_samples": 5,
+            "log_lr": 0.916,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "cited_link_ids": [
+        206
+      ],
+      "cited_chains": [
+        {
+          "id": 206,
+          "pattern": "沙特阿拉伯单边自愿减产",
+          "asset_symbol": "XLE",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.448,
+          "grade": "C",
+          "retail_edge": "mid"
+        }
+      ],
+      "event": {
+        "id": 556,
+        "summary": "阿联酋宣布5月1日起退出欧佩克+并将逐步提高石油产量",
+        "category": "energy"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 211,
+      "made_at": "2026-04-28T14:15:46.819134",
+      "expire_at": "2026-05-12T14:15:46.819134",
+      "verified_at": null,
+      "asset": {
+        "symbol": "XLE",
+        "name": "能源板块ETF",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 3.2,
+      "horizon_days": 14,
+      "baseline_price": 57.560001373291016,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 57.5,
+      "current_pct": -0.10424143825482508,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "阿联酋退出欧佩克+并增产，与检索到的沙特减产逻辑(id:206)形成镜像反转。减产推高能源股，增产则打压能源股。阿联酋增产预期将导致原油价格下跌，直接冲击美国能源板块公司的利润预期，XLE作为能源ETF将承受显著下行压力。",
+      "stop_loss_price": 58.3532,
+      "take_profit": {
+        "prices": [
+          56.3703,
+          55.5771,
+          54.3874
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7932,
+        "atr": 0.3966
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.5172,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.5172,
+        "log_odds": 0.069,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.72,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 206,
+            "pattern": "沙特阿拉伯单边自愿减产",
+            "asset": "XLE",
+            "dir_hit_rate": 0.8,
+            "n_samples": 5,
+            "log_lr": 0.916,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "cited_link_ids": [
+        206
+      ],
+      "cited_chains": [
+        {
+          "id": 206,
+          "pattern": "沙特阿拉伯单边自愿减产",
+          "asset_symbol": "XLE",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.448,
+          "grade": "C",
+          "retail_edge": "mid"
+        }
+      ],
+      "event": {
+        "id": 556,
+        "summary": "阿联酋宣布5月1日起退出欧佩克+并将逐步提高石油产量",
+        "category": "energy"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 210,
+      "made_at": "2026-04-28T14:15:46.519514",
+      "expire_at": "2026-05-12T14:15:46.519514",
+      "verified_at": null,
+      "asset": {
+        "symbol": "USO",
+        "name": "美国石油基金",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 4.5,
+      "horizon_days": 14,
+      "baseline_price": 139.90989685058594,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 139.7447052001953,
+      "current_pct": -0.11807002514413846,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "阿联酋宣布退出欧佩克+并逐步提高石油产量，这是对OPEC+减产协议的重大打击。阿联酋是OPEC第三大产油国，其退出意味着供给端将显著增加，打破现有减产平衡。与检索到的沙特减产推高油价的因果链(id:206)形成相反逻辑——成员国退出并增产将压低油价。市场预期全球原油供给过剩，油价承压下行。",
+      "stop_loss_price": 140.7031,
+      "take_profit": {
+        "prices": [
+          138.7202,
+          137.927,
+          136.7373
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7932,
+        "atr": 0.3966
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.5172,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.5172,
+        "log_odds": 0.069,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.72,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 206,
+            "pattern": "沙特阿拉伯单边自愿减产",
+            "asset": "XLE",
+            "dir_hit_rate": 0.8,
+            "n_samples": 5,
+            "log_lr": 0.916,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "cited_link_ids": [
+        206
+      ],
+      "cited_chains": [
+        {
+          "id": 206,
+          "pattern": "沙特阿拉伯单边自愿减产",
+          "asset_symbol": "XLE",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.448,
+          "grade": "C",
+          "retail_edge": "mid"
+        }
+      ],
+      "event": {
+        "id": 556,
+        "summary": "阿联酋宣布5月1日起退出欧佩克+并将逐步提高石油产量",
+        "category": "energy"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 209,
+      "made_at": "2026-04-28T14:15:31.228180",
+      "expire_at": "2026-05-05T14:15:31.228180",
+      "verified_at": null,
+      "asset": {
+        "symbol": "601857.SH",
+        "name": "中国石油",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.5,
+      "horizon_days": 7,
+      "baseline_price": 12.18,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 12.18,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:25.220888",
+      "reasoning": "阿联酋宣布自5月1日起退出欧佩克+并将逐步提高石油产量，这意味着OPEC+减产协议面临瓦解风险，全球原油供应预期增加将压制油价。中国石油作为国内最大油企，其盈利与油价高度相关，油价下行预期将对股价形成压力。",
+      "stop_loss_price": 12.4845,
+      "take_profit": {
+        "prices": [
+          11.7233,
+          11.4187,
+          10.962
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.3045,
+        "atr": 0.1522
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 557,
+        "summary": "比亚迪一季度营收同比下降11.82%，净利润同比大降55.38%",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 208,
+      "made_at": "2026-04-28T14:15:27.822183",
+      "expire_at": "2026-05-01T14:15:27.822183",
+      "verified_at": null,
+      "asset": {
+        "symbol": "300750.SZ",
+        "name": "宁德时代",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.0,
+      "horizon_days": 3,
+      "baseline_price": 427.67,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 427.67,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:28.190240",
+      "reasoning": "比亚迪作为新能源汽车产业链核心企业，其业绩大幅下滑反映出整个新能源车市场价格战激烈、利润空间被压缩。宁德时代作为动力电池龙头，与比亚迪高度关联，市场会担忧电池环节同样面临降价压力，短期内存在联动下跌风险。",
+      "stop_loss_price": 436.2234,
+      "take_profit": {
+        "prices": [
+          414.8399,
+          406.2865,
+          393.4564
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 8.5534,
+        "atr": 4.2767
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 557,
+        "summary": "比亚迪一季度营收同比下降11.82%，净利润同比大降55.38%",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 207,
+      "made_at": "2026-04-28T14:15:24.530040",
+      "expire_at": "2026-05-01T14:15:24.530040",
+      "verified_at": null,
+      "asset": {
+        "symbol": "002594.SZ",
+        "name": "比亚迪A股",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 3.5,
+      "horizon_days": 3,
+      "baseline_price": 101.48,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 101.48,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:32.384833",
+      "reasoning": "比亚迪一季度净利润同比大降55.38%，营收下降11.82%，远低于市场预期。作为新能源汽车龙头，如此大幅度的业绩下滑将引发市场对其价格战影响和盈利能力的担忧。财报公布后短期内股价承压是大概率事件，参考历史上龙头公司业绩大幅低于预期后的市场反应。",
+      "stop_loss_price": 105.0318,
+      "take_profit": {
+        "prices": [
+          96.1523,
+          92.6005,
+          87.2728
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 3.5518,
+        "atr": 1.7759
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 557,
+        "summary": "比亚迪一季度营收同比下降11.82%，净利润同比大降55.38%",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 206,
+      "made_at": "2026-04-28T14:15:06.926866",
+      "expire_at": "2026-05-12T14:15:06.926866",
+      "verified_at": null,
+      "asset": {
+        "symbol": "CL=F",
+        "name": "WTI原油期货",
+        "class": "commodity"
+      },
+      "direction": "down",
+      "magnitude_pct": 4.0,
+      "horizon_days": 14,
+      "baseline_price": 99.91999816894531,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 99.86000061035156,
+      "current_pct": -0.06004559617015382,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "阿联酋宣布自5月1日起退出欧佩克及欧佩克+，并将逐步提高石油产量。这是继卡塔尔之后又一重要产油国退出，将打破欧佩克+的减产协议约束，增加全球原油供应预期。在当前全球经济增长放缓、需求疲软的背景下，供给端扩张将对油价形成显著下行压力。此为新发现的因果模式。",
+      "stop_loss_price": 103.9168,
+      "take_profit": {
+        "prices": [
+          93.9248,
+          89.928,
+          83.9328
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 3.9968,
+        "atr": 1.9984
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 558,
+        "summary": "章建平新进成为北方稀土第四大股东，持股2%",
+        "category": "other"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 205,
+      "made_at": "2026-04-28T14:15:06.234762",
+      "expire_at": "2026-05-01T14:15:06.234762",
+      "verified_at": null,
+      "asset": {
+        "symbol": "002594.SZ",
+        "name": "比亚迪A股",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.5,
+      "horizon_days": 3,
+      "baseline_price": 101.48,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 101.48,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:32.384833",
+      "reasoning": "比亚迪一季度净利润同比大降55.38%，扣非净利润下滑49.24%，营收也同比下降近12%，业绩大幅低于市场预期。虽然比亚迪长期基本面仍被看好，但短期内业绩暴雷将引发机构调仓和散户抛售压力，股价面临回调风险。此为新发现的因果模式。",
+      "stop_loss_price": 104.017,
+      "take_profit": {
+        "prices": [
+          97.6745,
+          95.1375,
+          91.332
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.537,
+        "atr": 1.2685
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 558,
+        "summary": "章建平新进成为北方稀土第四大股东，持股2%",
+        "category": "other"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 204,
+      "made_at": "2026-04-28T14:15:02.765549",
+      "expire_at": "2026-05-05T14:15:02.765549",
+      "verified_at": null,
+      "asset": {
+        "symbol": "601111.SH",
+        "name": "北方稀土",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.5,
+      "horizon_days": 7,
+      "baseline_price": 6.66,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 6.66,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:35.910191",
+      "reasoning": "知名牛散章建平以超7200万股新进成为北方稀土第四大股东，持股比例达2%，这是一个强烈的市场信号。章建平作为A股市场知名游资大佬，其重仓买入行为往往被市场解读为对公司前景的看好。稀土作为战略资源，在中美贸易摩擦背景下具备政策支撑预期，叠加牛散背书效应，短期内将吸引跟风资金入场推高股价。此为新发现的因果模式。",
+      "stop_loss_price": 6.4269,
+      "take_profit": {
+        "prices": [
+          7.0097,
+          7.2428,
+          7.5924
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.2331,
+        "atr": 0.1166
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 558,
+        "summary": "章建平新进成为北方稀土第四大股东，持股2%",
+        "category": "other"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 203,
+      "made_at": "2026-04-28T14:14:43.462989",
+      "expire_at": "2026-05-12T14:14:43.462989",
+      "verified_at": null,
+      "asset": {
+        "symbol": "USOIL",
+        "name": "WTI原油",
+        "class": "commodity"
+      },
+      "direction": "down",
+      "magnitude_pct": 5.0,
+      "horizon_days": 14,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "阿联酋宣布自5月1日起退出欧佩克及欧佩克+并逐步提高石油产量，这将打破OPEC+减产联盟的团结，增加全球原油供给预期。产油国增产通常在中短期内对油价形成下行压力，尤其在当前全球需求增长放缓的背景下。此为新发现的因果模式，检索结果中无直接匹配。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 559,
+        "summary": "多家公司发布一季报：工业富联净利润同比增长102.55%，翔鹭钨业同比增长2917%",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 202,
+      "made_at": "2026-04-28T14:14:38.476083",
+      "expire_at": "2026-05-05T14:14:38.476083",
+      "verified_at": null,
+      "asset": {
+        "symbol": "002842",
+        "name": "翔鹭钨业",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 6.0,
+      "horizon_days": 7,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "翔鹭钨业一季度净利润同比暴增2917%，从低基数实现业绩爆发式增长。钨作为战略稀有金属，在新能源和高端制造领域需求旺盛，叠加稀土概念近期受章建平等大资金关注，有色金属板块情绪偏暖。超预期业绩发布后，市场资金通常会在一周内快速反应。此为新发现的因果模式。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 559,
+        "summary": "多家公司发布一季报：工业富联净利润同比增长102.55%，翔鹭钨业同比增长2917%",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 201,
+      "made_at": "2026-04-28T14:14:38.118223",
+      "expire_at": "2026-05-05T14:14:38.118223",
+      "verified_at": null,
+      "asset": {
+        "symbol": "601138",
+        "name": "工业富联",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 4.5,
+      "horizon_days": 7,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "工业富联一季度净利润同比大增102.55%，达到105.95亿元，业绩超预期增长通常会在短期内带动股价上涨。结合政治局会议强调加强算力网建设、工信部推进人工智能专项行动，工业富联作为AI服务器代工龙头直接受益于算力需求扩张。此为基于业绩与政策双重利好的判断，检索结果中无匹配模式。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 559,
+        "summary": "多家公司发布一季报：工业富联净利润同比增长102.55%，翔鹭钨业同比增长2917%",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 200,
+      "made_at": "2026-04-28T14:14:23.727787",
+      "expire_at": "2026-05-28T14:14:23.727787",
+      "verified_at": null,
+      "asset": {
+        "symbol": "603729",
+        "name": "龙韵股份（ST龙韵）",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 20.0,
+      "horizon_days": 30,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "ST实施后，公司面临融资受限、机构持仓被动减持、退市预期升温等多重压力。30日内市场情绪难以逆转，叠加5%涨跌幅限制下的缓慢出逃，预计累计跌幅可达20%左右。该因果链为A股ST警示的中期影响模式。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 560,
+        "summary": "龙韵股份因内控审计否定意见被实施ST风险警示，涨跌幅限制调整为5%",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "龙韵股份：4月30日起实施其他风险警示 股票简称变更为“ST龙韵”",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 199,
+      "made_at": "2026-04-28T14:14:23.311345",
+      "expire_at": "2026-05-05T14:14:23.311345",
+      "verified_at": null,
+      "asset": {
+        "symbol": "603729",
+        "name": "龙韵股份（ST龙韵）",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 12.0,
+      "horizon_days": 7,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "公司因内控审计被出具否定意见而被实施ST风险警示，这是A股市场明确的负面信号，通常引发机构和风险厌恶型投资者集中抛售。ST股票涨跌幅限制收窄至5%，流动性下降进一步加剧卖压。参考历史规律，ST实施首周往往连续跌停或大幅下挫，预计7日内跌幅约12%。此为A股ST警示的典型因果模式，检索结果中无直接匹配。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 560,
+        "summary": "龙韵股份因内控审计否定意见被实施ST风险警示，涨跌幅限制调整为5%",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "龙韵股份：4月30日起实施其他风险警示 股票简称变更为“ST龙韵”",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 198,
+      "made_at": "2026-04-28T14:14:13.280736",
+      "expire_at": "2026-05-05T14:14:13.280736",
+      "verified_at": null,
+      "asset": {
+        "symbol": "512760",
+        "name": "半导体ETF",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.0,
+      "horizon_days": 7,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "存储芯片作为半导体重要细分领域，普冉股份业绩大超预期反映行业需求旺盛、价格上涨周期延续。这将提振市场对整体半导体板块的信心，带动半导体ETF整体上行。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 561,
+        "summary": "普冉股份Q1净利润同比增长1260%，存储芯片价格上涨带动业绩大幅提升",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "普冉股份：第一季度净利润同比增长1260% 存储芯片产品单价提升",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 197,
+      "made_at": "2026-04-28T14:14:12.863533",
+      "expire_at": "2026-05-05T14:14:12.863533",
+      "verified_at": null,
+      "asset": {
+        "symbol": "603986",
+        "name": "兆易创新",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.0,
+      "horizon_days": 7,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "普冉股份业绩大超预期确认存储芯片行业景气度持续向上，产品单价提升趋势明确。作为国内存储芯片龙头，兆易创新将受益于行业估值重估和市场对存储板块的关注度提升，存在联动上涨机会。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 561,
+        "summary": "普冉股份Q1净利润同比增长1260%，存储芯片价格上涨带动业绩大幅提升",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "普冉股份：第一季度净利润同比增长1260% 存储芯片产品单价提升",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 196,
+      "made_at": "2026-04-28T14:14:12.415676",
+      "expire_at": "2026-05-01T14:14:12.415676",
+      "verified_at": null,
+      "asset": {
+        "symbol": "688766",
+        "name": "普冉股份",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 5.5,
+      "horizon_days": 3,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "普冉股份Q1净利润同比增长1260%，环比增长69%，业绩大幅超预期。存储芯片价格上涨带动毛利率显著修复，规模效应提升净利率。如此强劲的业绩表现将直接刺激股价上涨，市场通常对超预期业绩在短期内给予积极反应。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 561,
+        "summary": "普冉股份Q1净利润同比增长1260%，存储芯片价格上涨带动业绩大幅提升",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "普冉股份：第一季度净利润同比增长1260% 存储芯片产品单价提升",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 195,
+      "made_at": "2026-04-28T14:14:01.817658",
+      "expire_at": "2026-05-05T14:14:01.817658",
+      "verified_at": null,
+      "asset": {
+        "symbol": "688268",
+        "name": "华特气体",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.8,
+      "horizon_days": 7,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "深入分析显示，Q1环比Q4净利润增长106%反映公司经营已触底回升，半导体特种气体需求随下游晶圆厂稼动率回升而改善。营收同比增长13.70%说明市场份额仍在扩张，利润端修复有望在后续季度延续，中期存在估值修复机会。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 562,
+        "summary": "华特气体Q1净利润3388万元同比下降23.70%，但环比增长106%",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "华特气体：第一季度净利润3388万元 同比下降23.70%",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 194,
+      "made_at": "2026-04-28T14:14:01.409429",
+      "expire_at": "2026-05-01T14:14:01.409429",
+      "verified_at": null,
+      "asset": {
+        "symbol": "688268",
+        "name": "华特气体",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.5,
+      "horizon_days": 3,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "华特气体Q1净利润同比下降23.70%，虽然营收增长13.70%，但利润率明显收缩，表明成本压力或竞争加剧。尽管环比Q4增长106%，但Q4本身基数较低（仅0.16亿），市场通常更关注同比表现。业绩低于预期往往导致短期股价承压。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 562,
+        "summary": "华特气体Q1净利润3388万元同比下降23.70%，但环比增长106%",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "华特气体：第一季度净利润3388万元 同比下降23.70%",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 193,
+      "made_at": "2026-04-28T14:13:52.303860",
+      "expire_at": "2026-05-05T14:13:52.303860",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GOOGL",
+        "name": "谷歌",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 0.5,
+      "horizon_days": 7,
+      "baseline_price": 349.9800109863281,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 350.8500061035156,
+      "current_pct": 0.24858423049237693,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "OpenAI进军广告业务对谷歌核心搜索广告业务构成潜在威胁。AI驱动的广告分发可能侵蚀谷歌在数字广告市场的份额，市场会开始计入这一竞争风险。",
+      "stop_loss_price": 351.7299,
+      "take_profit": {
+        "prices": [
+          347.3552,
+          345.6053,
+          342.9804
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.7499,
+        "atr": 0.875
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 563,
+        "summary": "OpenAI回应称企业和广告业务增长，此前被曝未达销售和用户增长目标",
+        "category": "tech"
+      },
+      "news": {
+        "title": "财联社4月28日电，OpenAI表示，企业和广告业务正在增长。此前，有报道称OpenAI近期未能实现销售和新增用户目标。",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 192,
+      "made_at": "2026-04-28T14:13:51.640048",
+      "expire_at": "2026-05-01T14:13:51.640048",
+      "verified_at": null,
+      "asset": {
+        "symbol": "NVDA",
+        "name": "英伟达",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.8,
+      "horizon_days": 3,
+      "baseline_price": 213.34800720214844,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 213.14999389648438,
+      "current_pct": -0.09281235304740568,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "OpenAI企业业务增长意味着AI推理需求持续扩张，英伟达作为AI算力核心供应商将受益于训练和推理芯片需求预期上修。此前市场担忧AI商业化放缓会影响算力采购，OpenAI的正面回应缓解这一担忧。",
+      "stop_loss_price": 211.6412,
+      "take_profit": {
+        "prices": [
+          215.9082,
+          217.615,
+          220.1751
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.7068,
+        "atr": 0.8534
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 563,
+        "summary": "OpenAI回应称企业和广告业务增长，此前被曝未达销售和用户增长目标",
+        "category": "tech"
+      },
+      "news": {
+        "title": "财联社4月28日电，OpenAI表示，企业和广告业务正在增长。此前，有报道称OpenAI近期未能实现销售和新增用户目标。",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 191,
+      "made_at": "2026-04-28T14:13:50.859844",
+      "expire_at": "2026-05-05T14:13:50.859844",
+      "verified_at": null,
+      "asset": {
+        "symbol": "MSFT",
+        "name": "微软",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.2,
+      "horizon_days": 7,
+      "baseline_price": 426.2200012207031,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 425.4045104980469,
+      "current_pct": -0.19133093714998528,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "OpenAI澄清企业业务增长，缓解此前销售目标未达的负面情绪。微软作为OpenAI最大投资方和Azure AI服务深度整合伙伴，OpenAI企业业务增长直接利好Azure云业务和Copilot商业化。这是AI基础设施投资者与下游商业化表现联动的新模式。",
+      "stop_loss_price": 421.1054,
+      "take_profit": {
+        "prices": [
+          433.892,
+          439.0066,
+          446.6786
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 5.1146,
+        "atr": 2.5573
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 563,
+        "summary": "OpenAI回应称企业和广告业务增长，此前被曝未达销售和用户增长目标",
+        "category": "tech"
+      },
+      "news": {
+        "title": "财联社4月28日电，OpenAI表示，企业和广告业务正在增长。此前，有报道称OpenAI近期未能实现销售和新增用户目标。",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 190,
+      "made_at": "2026-04-28T14:13:38.620535",
+      "expire_at": "2026-05-05T14:13:38.620535",
+      "verified_at": null,
+      "asset": {
+        "symbol": "USO",
+        "name": "美国石油基金",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.8,
+      "horizon_days": 7,
+      "baseline_price": 139.8092041015625,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 139.7447052001953,
+      "current_pct": -0.046133515873771194,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "USO直接跟踪WTI原油期货价格。阿联酋油轮打破封锁表明地缘紧张局势可能缓和，此前计入的风险溢价将释放，原油基金将随油价下跌而回落。",
+      "stop_loss_price": 143.7239,
+      "take_profit": {
+        "prices": [
+          133.9372,
+          130.0226,
+          124.1506
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 3.9147,
+        "atr": 1.9573
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 564,
+        "summary": "阿联酋油轮突破美伊双重封锁，可能缓解原油供应紧张",
+        "category": "energy"
+      },
+      "news": {
+        "title": "媒体：已有阿联酋油轮突破美伊双重封锁",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633792873594375730/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633792873594375730%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%AA%92%E4%BD%93%EF%BC%9A%E5%B7%B2%E6%9C%89%E9%98%BF%E8%81%94%E9%85%8B%E6%B2%B9%E8%BD%AE%E7%AA%81%E7%A0%B4%E7%BE%8E%E4%BC%8A%E5%8F%8C%E9%87%8D%E5%B0%81%E9%94%81%22%7D&rank=&style_id=40132&topic_id=7633792873594375730",
+        "published_at": "2026-04-28T14:00:03.173744"
+      }
+    },
+    {
+      "id": 189,
+      "made_at": "2026-04-28T14:13:38.323826",
+      "expire_at": "2026-05-05T14:13:38.323826",
+      "verified_at": null,
+      "asset": {
+        "symbol": "XLE",
+        "name": "能源板块ETF",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.2,
+      "horizon_days": 7,
+      "baseline_price": 57.5,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 57.5,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "油轮突破封锁缓解原油供应紧张预期，与检索到的沙特减产推升XLE的逻辑形成对冲。供应增加将压低油价预期，进而拖累能源股估值。参考id=206的因果链，但方向相反。",
+      "stop_loss_price": 58.2932,
+      "take_profit": {
+        "prices": [
+          56.3103,
+          55.5171,
+          54.3274
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7932,
+        "atr": 0.3966
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.5172,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.5172,
+        "log_odds": 0.069,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.72,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 206,
+            "pattern": "沙特阿拉伯单边自愿减产",
+            "asset": "XLE",
+            "dir_hit_rate": 0.8,
+            "n_samples": 5,
+            "log_lr": 0.916,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "cited_link_ids": [
+        206
+      ],
+      "cited_chains": [
+        {
+          "id": 206,
+          "pattern": "沙特阿拉伯单边自愿减产",
+          "asset_symbol": "XLE",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.448,
+          "grade": "C",
+          "retail_edge": "mid"
+        }
+      ],
+      "event": {
+        "id": 564,
+        "summary": "阿联酋油轮突破美伊双重封锁，可能缓解原油供应紧张",
+        "category": "energy"
+      },
+      "news": {
+        "title": "媒体：已有阿联酋油轮突破美伊双重封锁",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633792873594375730/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633792873594375730%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%AA%92%E4%BD%93%EF%BC%9A%E5%B7%B2%E6%9C%89%E9%98%BF%E8%81%94%E9%85%8B%E6%B2%B9%E8%BD%AE%E7%AA%81%E7%A0%B4%E7%BE%8E%E4%BC%8A%E5%8F%8C%E9%87%8D%E5%B0%81%E9%94%81%22%7D&rank=&style_id=40132&topic_id=7633792873594375730",
+        "published_at": "2026-04-28T14:00:03.173744"
+      }
+    },
+    {
+      "id": 188,
+      "made_at": "2026-04-28T14:13:37.661682",
+      "expire_at": "2026-05-05T14:13:37.661682",
+      "verified_at": null,
+      "asset": {
+        "symbol": "CL=F",
+        "name": "WTI原油期货",
+        "class": "commodity"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.5,
+      "horizon_days": 7,
+      "baseline_price": 100.0199966430664,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 99.86000061035156,
+      "current_pct": -0.15996404527567537,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "阿联酋油轮突破美伊双重封锁意味着中东原油运输通道出现松动，市场此前因封锁担忧的供应风险溢价将部分回落。这与检索到的沙特减产推高油价逻辑相反——供应端出现增量信号，短期内对油价形成下行压力。",
+      "stop_loss_price": 102.5205,
+      "take_profit": {
+        "prices": [
+          96.2692,
+          93.7687,
+          90.018
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.5005,
+        "atr": 1.2502
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 564,
+        "summary": "阿联酋油轮突破美伊双重封锁，可能缓解原油供应紧张",
+        "category": "energy"
+      },
+      "news": {
+        "title": "媒体：已有阿联酋油轮突破美伊双重封锁",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633792873594375730/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633792873594375730%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%AA%92%E4%BD%93%EF%BC%9A%E5%B7%B2%E6%9C%89%E9%98%BF%E8%81%94%E9%85%8B%E6%B2%B9%E8%BD%AE%E7%AA%81%E7%A0%B4%E7%BE%8E%E4%BC%8A%E5%8F%8C%E9%87%8D%E5%B0%81%E9%94%81%22%7D&rank=&style_id=40132&topic_id=7633792873594375730",
+        "published_at": "2026-04-28T14:00:03.173744"
+      }
+    },
+    {
+      "id": 187,
+      "made_at": "2026-04-28T14:13:24.829989",
+      "expire_at": "2026-05-12T14:13:24.829989",
+      "verified_at": null,
+      "asset": {
+        "symbol": "DXY",
+        "name": "美元指数",
+        "class": "fx"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.2,
+      "horizon_days": 14,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "央行抛售黄金后通常会将资金转为美元或美元计价资产，增加对美元的需求。黄金与美元长期呈负相关，金价下跌往往伴随美元走强。此举也可能反映各国央行预期美联储维持较高利率，持有美元的机会成本优势上升。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 566,
+        "summary": "多国央行近期集中抛售黄金储备",
+        "category": "monetary_policy"
+      },
+      "news": {
+        "title": "多国央行为何近期选择抛售黄金",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633715441977789958/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633715441977789958%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A4%9A%E5%9B%BD%E5%A4%AE%E8%A1%8C%E4%B8%BA%E4%BD%95%E8%BF%91%E6%9C%9F%E9%80%89%E6%8B%A9%E6%8A%9B%E5%94%AE%E9%BB%84%E9%87%91%22%7D&rank=&style_id=40132&topic_id=7633715441977789958",
+        "published_at": "2026-04-28T14:00:03.173723"
+      }
+    },
+    {
+      "id": 186,
+      "made_at": "2026-04-28T14:13:23.977755",
+      "expire_at": "2026-05-12T14:13:23.977755",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "down",
+      "magnitude_pct": 3.0,
+      "horizon_days": 14,
+      "baseline_price": 4580.2998046875,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4588.2001953125,
+      "current_pct": 0.17248632102454745,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "国际黄金期货对央行售金消息更为敏感，流动性更高意味着价格调整更快。多国央行同时抛售形成供给冲击，期货市场的投机资金可能加速撤离黄金多头头寸，放大跌幅。历史上央行协调售金（如1999年华盛顿协议前）曾导致金价大幅波动。",
+      "stop_loss_price": 4717.7088,
+      "take_profit": {
+        "prices": [
+          4374.1863,
+          4236.7773,
+          4030.6638
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 137.409,
+        "atr": 68.7045
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 566,
+        "summary": "多国央行近期集中抛售黄金储备",
+        "category": "monetary_policy"
+      },
+      "news": {
+        "title": "多国央行为何近期选择抛售黄金",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633715441977789958/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633715441977789958%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A4%9A%E5%9B%BD%E5%A4%AE%E8%A1%8C%E4%B8%BA%E4%BD%95%E8%BF%91%E6%9C%9F%E9%80%89%E6%8B%A9%E6%8A%9B%E5%94%AE%E9%BB%84%E9%87%91%22%7D&rank=&style_id=40132&topic_id=7633715441977789958",
+        "published_at": "2026-04-28T14:00:03.173723"
+      }
+    },
+    {
+      "id": 185,
+      "made_at": "2026-04-28T14:13:23.406442",
+      "expire_at": "2026-05-12T14:13:23.406442",
+      "verified_at": null,
+      "asset": {
+        "symbol": "AU9999.SH",
+        "name": "上海金Au99.99",
+        "class": "commodity"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.5,
+      "horizon_days": 14,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "多国央行集中抛售黄金将直接增加市场供给，打压金价。央行作为黄金市场重要的长期持有者，其抛售行为往往被市场解读为对黄金避险价值的信心下降，容易引发跟风卖盘。此外，央行抛金通常意味着其转向增持其他储备资产（如美元或国债），反映出对全球经济或利率环境的重新评估。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 566,
+        "summary": "多国央行近期集中抛售黄金储备",
+        "category": "monetary_policy"
+      },
+      "news": {
+        "title": "多国央行为何近期选择抛售黄金",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633715441977789958/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633715441977789958%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A4%9A%E5%9B%BD%E5%A4%AE%E8%A1%8C%E4%B8%BA%E4%BD%95%E8%BF%91%E6%9C%9F%E9%80%89%E6%8B%A9%E6%8A%9B%E5%94%AE%E9%BB%84%E9%87%91%22%7D&rank=&style_id=40132&topic_id=7633715441977789958",
+        "published_at": "2026-04-28T14:00:03.173723"
+      }
+    },
+    {
+      "id": 184,
+      "made_at": "2026-04-28T14:13:01.630619",
+      "expire_at": "2026-05-05T14:13:01.630619",
+      "verified_at": null,
+      "asset": {
+        "symbol": "603165.SS",
+        "name": "荣晟环保",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.8,
+      "horizon_days": 7,
+      "baseline_price": 17.21,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 17.21,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:43.135585",
+      "reasoning": "中国摩托车产业国际化发展将带动上游零部件供应链需求。钱江摩托作为A股上市的主要摩托车整车制造商，参与国际赛事有助于提升品牌溢价和出口订单。此为新因果模式。",
+      "stop_loss_price": 16.9002,
+      "take_profit": {
+        "prices": [
+          17.6747,
+          17.9845,
+          18.4491
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.3098,
+        "atr": 0.1549
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 567,
+        "summary": "重庆沙坪坝区推动中国摩托车产业发展，助力国产摩托车参与国际赛事",
+        "category": "other"
+      },
+      "news": {
+        "title": "重庆沙坪坝助力中国摩托驰骋世界赛场",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633731706092372004/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633731706092372004%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%87%8D%E5%BA%86%E6%B2%99%E5%9D%AA%E5%9D%9D%E5%8A%A9%E5%8A%9B%E4%B8%AD%E5%9B%BD%E6%91%A9%E6%89%98%E9%A9%B0%E9%AA%8B%E4%B8%96%E7%95%8C%E8%B5%9B%E5%9C%BA%22%7D&rank=&style_id=40132&topic_id=7633731706092372004",
+        "published_at": "2026-04-28T14:00:03.173709"
+      }
+    },
+    {
+      "id": 183,
+      "made_at": "2026-04-28T14:12:58.539627",
+      "expire_at": "2026-05-05T14:12:58.539627",
+      "verified_at": null,
+      "asset": {
+        "symbol": "603779.SS",
+        "name": "威龙股份",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.5,
+      "horizon_days": 7,
+      "baseline_price": 7.04,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 7.04,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:45.817178",
+      "reasoning": "重庆沙坪坝作为中国摩托车产业重镇，推动国产摩托参与国际赛事将提升行业整体关注度和品牌价值。隆鑫通用作为重庆本地龙头摩托车企业，有望直接受益于政策支持和国际曝光度提升。此为新模式，检索结果中无直接匹配的因果链。",
+      "stop_loss_price": 6.864,
+      "take_profit": {
+        "prices": [
+          7.304,
+          7.48,
+          7.744
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.176,
+        "atr": 0.088
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 567,
+        "summary": "重庆沙坪坝区推动中国摩托车产业发展，助力国产摩托车参与国际赛事",
+        "category": "other"
+      },
+      "news": {
+        "title": "重庆沙坪坝助力中国摩托驰骋世界赛场",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633731706092372004/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633731706092372004%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%87%8D%E5%BA%86%E6%B2%99%E5%9D%AA%E5%9D%9D%E5%8A%A9%E5%8A%9B%E4%B8%AD%E5%9B%BD%E6%91%A9%E6%89%98%E9%A9%B0%E9%AA%8B%E4%B8%96%E7%95%8C%E8%B5%9B%E5%9C%BA%22%7D&rank=&style_id=40132&topic_id=7633731706092372004",
+        "published_at": "2026-04-28T14:00:03.173709"
+      }
+    },
+    {
+      "id": 182,
+      "made_at": "2026-04-28T14:12:43.509897",
+      "expire_at": "2026-05-12T14:12:43.509897",
+      "verified_at": null,
+      "asset": {
+        "symbol": "2883.HK",
+        "name": "中海油服",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.5,
+      "horizon_days": 14,
+      "baseline_price": 9.329999923706055,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 9.329999923706055,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T00:00:00+08:00",
+      "reasoning": "霍尔木兹海峡紧张局势将促使各国加快能源供应多元化，利好非中东地区的油气开发服务商。中海油服作为亚太区域主要油服公司将间接受益于订单增长预期。",
+      "stop_loss_price": 9.0967,
+      "take_profit": {
+        "prices": [
+          9.6799,
+          9.9131,
+          10.263
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.2332,
+        "atr": 0.1166
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 568,
+        "summary": "伊朗蚊子舰队控制海峡引发地缘政治紧张",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "伊朗“蚊子舰队”如何控制海峡",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7632881081640976430/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632881081640976430%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BC%8A%E6%9C%97%E2%80%9C%E8%9A%8A%E5%AD%90%E8%88%B0%E9%98%9F%E2%80%9D%E5%A6%82%E4%BD%95%E6%8E%A7%E5%88%B6%E6%B5%B7%E5%B3%A1%22%7D&rank=&style_id=40132&topic_id=7632881081640976430",
+        "published_at": "2026-04-28T14:00:03.173706"
+      }
+    },
+    {
+      "id": 181,
+      "made_at": "2026-04-28T14:12:42.617953",
+      "expire_at": "2026-05-12T14:12:42.617953",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.0,
+      "horizon_days": 14,
+      "baseline_price": 4583.10009765625,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4588.2001953125,
+      "current_pct": 0.1112805207736601,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "中东地缘政治紧张局势升级时，黄金作为传统避险资产通常受益。伊朗对海峡控制的报道增加区域冲突风险，推动资金流入黄金避险。",
+      "stop_loss_price": 4491.4381,
+      "take_profit": {
+        "prices": [
+          4720.5931,
+          4812.2551,
+          4949.7481
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 91.662,
+        "atr": 45.831
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 568,
+        "summary": "伊朗蚊子舰队控制海峡引发地缘政治紧张",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "伊朗“蚊子舰队”如何控制海峡",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7632881081640976430/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632881081640976430%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BC%8A%E6%9C%97%E2%80%9C%E8%9A%8A%E5%AD%90%E8%88%B0%E9%98%9F%E2%80%9D%E5%A6%82%E4%BD%95%E6%8E%A7%E5%88%B6%E6%B5%B7%E5%B3%A1%22%7D&rank=&style_id=40132&topic_id=7632881081640976430",
+        "published_at": "2026-04-28T14:00:03.173706"
+      }
+    },
+    {
+      "id": 180,
+      "made_at": "2026-04-28T14:12:41.994805",
+      "expire_at": "2026-05-12T14:12:41.994805",
+      "verified_at": null,
+      "asset": {
+        "symbol": "CL",
+        "name": "WTI原油期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.5,
+      "horizon_days": 14,
+      "baseline_price": 84.77999877929688,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 84.79000091552734,
+      "current_pct": 0.01179775462902136,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "伊朗'蚊子舰队'控制霍尔木兹海峡的报道加剧市场对中东石油运输通道安全的担忧。全球约20%的石油贸易经过该海峡，地缘紧张升温将推高原油风险溢价。这是典型的中东地缘冲突推升油价的模式。",
+      "stop_loss_price": 81.8127,
+      "take_profit": {
+        "prices": [
+          89.2309,
+          92.1982,
+          96.6492
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.9673,
+        "atr": 1.4836
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 568,
+        "summary": "伊朗蚊子舰队控制海峡引发地缘政治紧张",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "伊朗“蚊子舰队”如何控制海峡",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7632881081640976430/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632881081640976430%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BC%8A%E6%9C%97%E2%80%9C%E8%9A%8A%E5%AD%90%E8%88%B0%E9%98%9F%E2%80%9D%E5%A6%82%E4%BD%95%E6%8E%A7%E5%88%B6%E6%B5%B7%E5%B3%A1%22%7D&rank=&style_id=40132&topic_id=7632881081640976430",
+        "published_at": "2026-04-28T14:00:03.173706"
+      }
+    },
+    {
+      "id": 179,
+      "made_at": "2026-04-28T14:12:11.243186",
+      "expire_at": "2026-05-05T14:12:11.243186",
+      "verified_at": null,
+      "asset": {
+        "symbol": "USDILS=X",
+        "name": "美元兑以色列谢克尔",
+        "class": "fx"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.2,
+      "horizon_days": 7,
+      "baseline_price": 2.9619998931884766,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 2.9569900035858154,
+      "current_pct": -0.1691387502809186,
+      "current_at": "2026-04-28T00:00:00+01:00",
+      "reasoning": "俄伊联盟强化对以色列构成间接安全威胁，地区不稳定预期上升时，资金倾向流出中东资产，谢克尔承压贬值，美元兑谢克尔走高。",
+      "stop_loss_price": 2.9265,
+      "take_profit": {
+        "prices": [
+          3.0153,
+          3.0509,
+          3.1042
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0355,
+        "atr": 0.0178
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 574,
+        "summary": "普京公开赞扬伊朗抵抗美国，美伊地缘紧张关系升温",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "普京：全世界都钦佩伊朗人民抵抗美国",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7632898398869474879/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632898398869474879%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%99%AE%E4%BA%AC%EF%BC%9A%E5%85%A8%E4%B8%96%E7%95%8C%E9%83%BD%E9%92%A6%E4%BD%A9%E4%BC%8A%E6%9C%97%E4%BA%BA%E6%B0%91%E6%8A%B5%E6%8A%97%E7%BE%8E%E5%9B%BD%22%7D&rank=&style_id=40132&topic_id=7632898398869474879",
+        "published_at": "2026-04-28T14:00:03.173685"
+      }
+    },
+    {
+      "id": 178,
+      "made_at": "2026-04-28T14:12:10.391251",
+      "expire_at": "2026-05-05T14:12:10.391251",
+      "verified_at": null,
+      "asset": {
+        "symbol": "CL=F",
+        "name": "WTI原油期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.5,
+      "horizon_days": 7,
+      "baseline_price": 99.58000183105469,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 99.86000061035156,
+      "current_pct": 0.2811797290101631,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "伊朗是全球主要产油国，美伊紧张关系升温时市场会担忧霍尔木兹海峡通行风险和潜在供应中断。普京力挺伊朗的表态加剧了对抗预期，推升原油风险溢价。",
+      "stop_loss_price": 96.0947,
+      "take_profit": {
+        "prices": [
+          104.808,
+          108.2933,
+          113.5212
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 3.4853,
+        "atr": 1.7427
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 574,
+        "summary": "普京公开赞扬伊朗抵抗美国，美伊地缘紧张关系升温",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "普京：全世界都钦佩伊朗人民抵抗美国",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7632898398869474879/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632898398869474879%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%99%AE%E4%BA%AC%EF%BC%9A%E5%85%A8%E4%B8%96%E7%95%8C%E9%83%BD%E9%92%A6%E4%BD%A9%E4%BC%8A%E6%9C%97%E4%BA%BA%E6%B0%91%E6%8A%B5%E6%8A%97%E7%BE%8E%E5%9B%BD%22%7D&rank=&style_id=40132&topic_id=7632898398869474879",
+        "published_at": "2026-04-28T14:00:03.173685"
+      }
+    },
+    {
+      "id": 177,
+      "made_at": "2026-04-28T14:12:09.798768",
+      "expire_at": "2026-05-12T14:12:09.798768",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.5,
+      "horizon_days": 14,
+      "baseline_price": 4588.7001953125,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4588.2001953125,
+      "current_pct": -0.010896331830760388,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "普京公开赞扬伊朗抵抗美国，显示俄伊联盟强化，中东地缘紧张局势升温。市场担忧潜在冲突风险，避险资金流入黄金。检索到的因果链与银行危机相关，不适用于此地缘政治事件，故标记为新模式。",
+      "stop_loss_price": 4473.9827,
+      "take_profit": {
+        "prices": [
+          4760.7765,
+          4875.494,
+          5047.5702
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 114.7175,
+        "atr": 57.3588
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 574,
+        "summary": "普京公开赞扬伊朗抵抗美国，美伊地缘紧张关系升温",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "普京：全世界都钦佩伊朗人民抵抗美国",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7632898398869474879/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632898398869474879%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%99%AE%E4%BA%AC%EF%BC%9A%E5%85%A8%E4%B8%96%E7%95%8C%E9%83%BD%E9%92%A6%E4%BD%A9%E4%BC%8A%E6%9C%97%E4%BA%BA%E6%B0%91%E6%8A%B5%E6%8A%97%E7%BE%8E%E5%9B%BD%22%7D&rank=&style_id=40132&topic_id=7632898398869474879",
+        "published_at": "2026-04-28T14:00:03.173685"
+      }
+    },
+    {
+      "id": 176,
+      "made_at": "2026-04-28T14:11:49.103659",
+      "expire_at": "2026-05-05T14:11:49.103659",
+      "verified_at": null,
+      "asset": {
+        "symbol": "USDJPY=X",
+        "name": "美元日元",
+        "class": "fx"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.2,
+      "horizon_days": 7,
+      "baseline_price": 159.57200622558594,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 159.57400512695312,
+      "current_pct": 0.0012526641824391592,
+      "current_at": "2026-04-28T00:00:00+01:00",
+      "reasoning": "地缘紧张时日元作为传统避险货币往往走强（即美元兑日元下跌）。日本官方的备战言论若引发市场对区域冲突的担忧，资金可能回流日元资产，短期内压低美元兑日元汇率。检索链条未涉及日元避险逻辑，此为新模式。",
+      "stop_loss_price": 161.4869,
+      "take_profit": {
+        "prices": [
+          156.6997,
+          154.7848,
+          151.9125
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.9149,
+        "atr": 0.9574
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 577,
+        "summary": "日本称为长期战争做准备，中方作出回应",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "中方回应日称“为长期战争做准备”",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633388237955792934/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633388237955792934%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E6%96%B9%E5%9B%9E%E5%BA%94%E6%97%A5%E7%A7%B0%E2%80%9C%E4%B8%BA%E9%95%BF%E6%9C%9F%E6%88%98%E4%BA%89%E5%81%9A%E5%87%86%E5%A4%87%E2%80%9D%22%7D&rank=&style_id=40132&topic_id=7633388237955792934",
+        "published_at": "2026-04-28T14:00:03.173671"
+      }
+    },
+    {
+      "id": 175,
+      "made_at": "2026-04-28T14:11:48.303357",
+      "expire_at": "2026-05-12T14:11:48.303357",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.8,
+      "horizon_days": 14,
+      "baseline_price": 4589.89990234375,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4588.2001953125,
+      "current_pct": -0.03703146184913695,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "东亚大国间的战争准备言论加剧全球地缘政治不确定性，避险资金通常流向黄金。日本作为美国盟友的备战姿态可能引发市场对台海等热点的担忧升温，推动金价上行。检索结果中无东亚地缘避险链条，属新模式。",
+      "stop_loss_price": 4507.2817,
+      "take_profit": {
+        "prices": [
+          4713.8272,
+          4796.4454,
+          4920.3727
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 82.6182,
+        "atr": 41.3091
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 577,
+        "summary": "日本称为长期战争做准备，中方作出回应",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "中方回应日称“为长期战争做准备”",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633388237955792934/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633388237955792934%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E6%96%B9%E5%9B%9E%E5%BA%94%E6%97%A5%E7%A7%B0%E2%80%9C%E4%B8%BA%E9%95%BF%E6%9C%9F%E6%88%98%E4%BA%89%E5%81%9A%E5%87%86%E5%A4%87%E2%80%9D%22%7D&rank=&style_id=40132&topic_id=7633388237955792934",
+        "published_at": "2026-04-28T14:00:03.173671"
+      }
+    },
+    {
+      "id": 174,
+      "made_at": "2026-04-28T14:11:45.969958",
+      "expire_at": "2026-05-05T14:11:45.969958",
+      "verified_at": null,
+      "asset": {
+        "symbol": "000985.SZ",
+        "name": "中证军工指数",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.5,
+      "horizon_days": 7,
+      "baseline_price": 19.98,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 19.98,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:49.639002",
+      "reasoning": "日本官方表态'为长期战争做准备'暗示东亚地缘紧张升级，市场预期中国将加大国防投入。军工板块作为地缘冲突的直接受益方，历史上在中日关系紧张时期表现强势。检索到的因果链均为中东能源相关，不适用于东亚地缘政治场景，此为新模式。",
+      "stop_loss_price": 19.4805,
+      "take_profit": {
+        "prices": [
+          20.7293,
+          21.2288,
+          21.978
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.4995,
+        "atr": 0.2498
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 577,
+        "summary": "日本称为长期战争做准备，中方作出回应",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "中方回应日称“为长期战争做准备”",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7633388237955792934/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633388237955792934%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E6%96%B9%E5%9B%9E%E5%BA%94%E6%97%A5%E7%A7%B0%E2%80%9C%E4%B8%BA%E9%95%BF%E6%9C%9F%E6%88%98%E4%BA%89%E5%81%9A%E5%87%86%E5%A4%87%E2%80%9D%22%7D&rank=&style_id=40132&topic_id=7633388237955792934",
+        "published_at": "2026-04-28T14:00:03.173671"
+      }
+    },
     {
       "id": 173,
       "made_at": "2026-04-28T13:54:25.203821",
@@ -21,8 +2896,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 429.84100341796875,
-      "current_pct": 0.4676998637822096,
+      "current_price": 441.30499267578125,
+      "current_pct": 3.1472037334388245,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "Spotify Q2营业利润指引逊于预期，开盘即跌11.7%。业绩指引不及预期后，市场通常需要数日消化利空，且可能面临分析师下调目标价的连锁反应。此为新模式：流媒体公司利润指引不及预期→股价短期承压。",
       "stop_loss_price": 444.9536,
@@ -78,8 +2953,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 199.51510620117188,
-      "current_pct": -0.05755581767784518,
+      "current_price": 202.14999389648438,
+      "current_pct": 1.2623297861216642,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "高通与OpenAI合作开发专用手机芯片的消息引发投资者担忧新芯片可能绕过ARM架构，ARM已连续两日大跌累计超16%。市场正在重新评估ARM在AI手机芯片领域的不可替代性，短期抛售压力可能延续。此为新模式：大客户自研芯片绕过授权架构→架构授权商股价下跌。",
       "stop_loss_price": 209.6115,
@@ -135,8 +3010,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 211.2292022705078,
-      "current_pct": -0.1487117395645358,
+      "current_price": 213.14999389648438,
+      "current_pct": 0.7592759641810786,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "OpenAI用户和营收双双未达标，叠加AMD、CoreWeave等AI算力相关公司大跌，显示市场对AI变现能力产生担忧。英伟达作为AI芯片龙头，估值高度依赖AI需求增长预期，短期内将承受情绪传导压力。此为新发现的因果模式：AI应用层公司业绩不及预期→上游算力芯片估值承压。",
       "stop_loss_price": 218.9478,
@@ -192,8 +3067,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 199.51510620117188,
-      "current_pct": 0.14310619873862818,
+      "current_price": 202.14999389648438,
+      "current_pct": 1.4656418368540318,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "ARM连续两日大跌（昨日-8%，今日-8.6%），核心原因是高通与OpenAI合作开发可能不采用ARM架构的专用芯片。这动摇了ARM在移动和AI端侧芯片的垄断地位叙事，若OpenAI这一标杆客户选择非ARM架构，可能引发更多AI芯片厂商重新评估架构选择，ARM的授权费增长预期将面临下调压力。",
       "stop_loss_price": 211.1838,
@@ -249,8 +3124,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 321.0849914550781,
-      "current_pct": -0.10112075023431055,
+      "current_price": 326.5199890136719,
+      "current_pct": 1.5898650612426193,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "AMD今日已跌6.9%，但OpenAI增长未达标的负面影响可能还未完全price in。AMD作为AI芯片市场的第二大玩家，其MI300系列正试图抢占数据中心AI训练市场，OpenAI需求放缓会直接影响市场对AMD在AI领域追赶NVDA的预期，叠加高通与OpenAI合作开发专用芯片的消息，AMD面临双重压力。",
       "stop_loss_price": 337.4805,
@@ -306,8 +3181,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 211.2292022705078,
-      "current_pct": -0.2129584376752548,
+      "current_price": 213.14999389648438,
+      "current_pct": 0.6944450451463526,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "OpenAI作为AI行业最重要的需求方，用户和营收双双未达标直接暗示AI应用变现不及预期，这会传导到上游AI芯片需求预期。英伟达作为AI算力核心供应商，其估值高度依赖AI需求持续高增长的叙事，当下游龙头增长放缓时，市场会重新评估整个AI产业链的增长斜率。",
       "stop_loss_price": 221.2056,
@@ -363,8 +3238,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 429.84100341796875,
-      "current_pct": 0.4360061423778076,
+      "current_price": 441.30499267578125,
+      "current_pct": 3.114664730921567,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "Spotify Q2营业利润指引逊于预期导致开盘暴跌11.7%，反映市场对其盈利能力改善节奏的担忧。业绩指引不及预期后，分析师下调目标价和卖方情绪恶化通常会在随后几个交易日持续施压股价，短期内难以快速修复。",
       "stop_loss_price": 445.094,
@@ -420,8 +3295,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 146.5500030517578,
-      "current_pct": -0.20429216158584168,
+      "current_price": 147.77000427246094,
+      "current_pct": 0.6264883423272037,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "高通与OpenAI合作开发AI专用芯片的消息意味着高通在AI手机芯片领域获得重大战略突破，有望摆脱对ARM架构的依赖并切入高增长的端侧AI市场。这强化了高通在AI时代的竞争定位，市场应给予估值溢价。",
       "stop_loss_price": 142.4445,
@@ -477,8 +3352,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 199.51510620117188,
-      "current_pct": 0.0928632761836202,
+      "current_price": 202.14999389648438,
+      "current_pct": 1.414735383296598,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "高通与OpenAI合作开发专用AI芯片且可能不采用ARM架构，这直接威胁到Arm在移动端和AI芯片领域的授权收入模式。Arm已连续两日分别下跌8%和8.6%，市场正在重新评估其在AI芯片供应链中的核心地位。若高通这一大客户转向自研架构，将对Arm的长期营收增长预期造成实质性冲击，短期内抛压可能延续。",
       "stop_loss_price": 210.2932,
@@ -624,7 +3499,7 @@
       "actual_direction": null,
       "current_price": 69.49,
       "current_pct": 0.0,
-      "current_at": "2026-04-28T13:56:12.935025",
+      "current_at": "2026-04-28T14:18:06.072288",
       "reasoning": "公司一季度净利润同比大跌75%，远超市场预期的业绩下滑幅度。光伏设备收入同比减少30.53%，叠加债务重组损失和汇兑损失等多重负面因素，短期股价将承受显著抛压。虽然公司强调半导体国产化投入，但短期业绩兑现能力受质疑，市场情绪偏空。",
       "stop_loss_price": 72.617,
       "take_profit": {
@@ -679,8 +3554,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 513.97998046875,
-      "current_pct": 0.07592702211699844,
+      "current_price": 511.9599914550781,
+      "current_pct": -0.31738065678003113,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "美国对伊朗施压暗示可能升级地缘紧张局势，防务股通常在此类环境中受益。洛克希德马丁作为美国最大防务承包商，市场预期中东紧张局势可能带动防务订单增长。",
       "stop_loss_price": 504.3454,
@@ -736,8 +3611,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4598.2998046875,
-      "current_pct": -0.06519896827726371,
+      "current_price": 4588.2001953125,
+      "current_pct": -0.2846936720283904,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "特朗普对伊朗领导层的评论增加了地缘政治不确定性，投资者通常在此类风险事件中寻求避险资产。黄金作为传统避险工具，在中东局势紧张时往往受到资金流入支撑。",
       "stop_loss_price": 4546.0842,
@@ -793,8 +3668,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 85.12000274658203,
-      "current_pct": 0.041139639755561674,
+      "current_price": 84.79000091552734,
+      "current_pct": -0.34670996311868957,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "特朗普暗示伊朗可能出现领导层变动，这增加了中东地缘政治不确定性。伊朗是OPEC重要产油国，任何政权动荡都可能影响原油供应预期，推动油价上涨。市场通常对中东政治风险给予风险溢价。",
       "stop_loss_price": 82.9579,
@@ -850,8 +3725,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 42.459999084472656,
-      "current_pct": 0.11789492393407275,
+      "current_price": 42.31999969482422,
+      "current_pct": -0.21221446100378258,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "万国数据当日跌5.21%，作为数据中心概念股，与金山云、世纪互联同属云基础设施板块。中概科技股整体承压时，该板块因对资本支出敏感度高、盈利能力偏弱，往往跌幅居前。短期内市场信心修复需要时间。",
       "stop_loss_price": 43.4702,
@@ -907,8 +3782,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 16.040000915527344,
-      "current_pct": 0.09361183996362647,
+      "current_price": 16.19499969482422,
+      "current_pct": 1.060842935043619,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "小鹏汽车当日已跌4.83%，在中概股普跌的背景下，新能源汽车板块作为高贝塔资产往往波动更大。市场情绪转弱时，高估值成长股通常首当其冲，短期可能继续下探寻找支撑。",
       "stop_loss_price": 16.5057,
@@ -964,8 +3839,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 28.059999465942383,
-      "current_pct": -0.14235201062033426,
+      "current_price": 28.125,
+      "current_pct": 0.08896661277897773,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "纳斯达克中国金龙指数跌超1%，反映市场对中概股整体情绪偏空。KWEB作为追踪中国互联网公司的ETF，与金龙指数高度相关，短期内可能延续下跌趋势。中概股集体下跌往往带有情绪传染效应，预计3日内继续承压。",
       "stop_loss_price": 28.5215,
@@ -1023,7 +3898,7 @@
       "actual_direction": null,
       "current_price": 7.51,
       "current_pct": 0.0,
-      "current_at": "2026-04-28T13:56:17.676957",
+      "current_at": "2026-04-28T14:18:09.929171",
       "reasoning": "露笑科技作为碳化硅和光伏领域企业，净利润大幅下滑反映行业竞争加剧或下游需求疲软。市场在消化财报信息后，若后续无利好催化，投资者可能重新评估公司估值，导致中期股价进一步下行。增收不增利的趋势若延续将对估值形成持续压制。",
       "stop_loss_price": 7.8855,
       "take_profit": {
@@ -1080,7 +3955,7 @@
       "actual_direction": null,
       "current_price": 7.51,
       "current_pct": 0.0,
-      "current_at": "2026-04-28T13:56:17.676957",
+      "current_at": "2026-04-28T14:18:09.929171",
       "reasoning": "露笑科技一季度净利润同比下降27.68%，虽然营收增长11.32%，但盈利能力明显下滑，毛利率或费用控制出现问题。A股市场对业绩不及预期的公司通常在财报公布后的短期内会有负面反应，特别是增收不增利的情况会引发投资者对公司经营效率的担忧。预计短期内股价承压回调。",
       "stop_loss_price": 7.7729,
       "take_profit": {
@@ -1135,8 +4010,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 166.60000610351562,
-      "current_pct": -0.655927766692838,
+      "current_price": 167.3300018310547,
+      "current_pct": -0.22062917347678476,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "甲骨文近期大力投资AI云基础设施，与OpenAI有合作关系。OpenAI销售不及预期意味着其云服务需求可能低于此前预期，甲骨文AI业务增长故事受到质疑。当日已跌超6%，后续可能因业绩指引担忧持续承压。",
       "stop_loss_price": 174.408,
@@ -1192,8 +4067,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 321.0849914550781,
-      "current_pct": -0.34760328482262715,
+      "current_price": 326.5199890136719,
+      "current_pct": 1.3392103230030121,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "AMD作为AI芯片第二梯队供应商，同样受益于AI算力需求扩张逻辑。OpenAI增长放缓消息令市场担忧AI资本开支周期提前见顶，AMD当日已跌超6%，在英伟达估值重估的背景下，AMD可能面临更大的相对抛压。",
       "stop_loss_price": 338.3152,
@@ -1249,8 +4124,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 211.2292022705078,
-      "current_pct": -0.3338280961337369,
+      "current_price": 213.14999389648438,
+      "current_pct": 0.5724762705367601,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "OpenAI未能实现销售和用户增长目标的消息，直接打击市场对AI基础设施需求持续高增长的预期。英伟达作为AI算力芯片的核心供应商，其估值高度依赖AI需求曲线，当下游最重要客户增长放缓时，市场会重新评估GPU采购节奏。当日已跌超3%，短期恐慌情绪可能延续。",
       "stop_loss_price": 221.4739,
@@ -1790,8 +4665,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4598.2998046875,
-      "current_pct": 0.2244944352114211,
+      "current_price": 4588.2001953125,
+      "current_pct": 0.00436345493679163,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "中东地缘政治紧张局势是传统的避险驱动因素。伊朗强化海峡控制能力的报道会刺激投资者增持黄金作为避险资产，尤其是在市场担忧潜在军事冲突或石油供应危机的情况下。",
       "stop_loss_price": 4532.944,
@@ -1847,8 +4722,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 150.0500030517578,
-      "current_pct": -0.08655588651150617,
+      "current_price": 150.3300018310547,
+      "current_pct": 0.09988624489900425,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "霍尔木兹海峡紧张局势升级通常利好大型综合石油公司。油价上涨预期会直接提升埃克森美孚等上游产油企业的盈利前景，同时市场会寻求配置能源板块作为地缘风险对冲。",
       "stop_loss_price": 147.4768,
@@ -1904,8 +4779,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 85.12000274658203,
-      "current_pct": -0.036636705624563094,
+      "current_price": 84.79000091552734,
+      "current_pct": -0.4241847773009759,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "伊朗加强霍尔木兹海峡军事控制能力的报道会引发市场对全球石油供应中断风险的担忧。霍尔木兹海峡承载全球约20%的石油运输量，任何潜在的封锁或冲突风险都会推高原油价格。这是典型的地缘政治风险溢价效应。",
       "stop_loss_price": 83.0224,
@@ -2093,8 +4968,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 310.0849914550781,
-      "current_pct": 0.06291806687021566,
+      "current_price": 307.635009765625,
+      "current_pct": -0.7276791042688958,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "通用动力旗下巴斯钢铁造船厂是美国主要驱逐舰建造商，军舰造价讨论将提升市场对其海军订单稳定性的关注。在美中战略竞争背景下，即使成本争议也难以动摇国会对海军扩建的支持，利好军工造船板块。",
       "stop_loss_price": 306.1713,
@@ -2150,8 +5025,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 357.9800109863281,
-      "current_pct": 0.13707257974743883,
+      "current_price": 354.2099914550781,
+      "current_pct": -0.917507865645823,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "亨廷顿英格尔斯是美国最大的军用造船企业，军舰造价高昂的讨论直接聚焦于该公司的核心业务。市场通常将此类讨论解读为政府对海军现代化的重视，而非对造船商的惩罚，因为美国仅有少数企业具备建造大型军舰的能力，形成寡头定价格局。",
       "stop_loss_price": 350.3402,
@@ -2207,8 +5082,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 513.97998046875,
-      "current_pct": 0.0700878772214399,
+      "current_price": 511.9599914550781,
+      "current_pct": -0.323196853294356,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "美国军舰造价高昂的讨论通常引发国防预算审视，但历史上这类关注往往导致国会对军工复合体的支持加强，而非削减。洛克希德·马丁作为美国最大国防承包商，在国防开支讨论升温时往往受益于市场对军工订单持续性的预期。这是一个新的因果模式，检索结果中未涵盖军舰造价与军工股的关联。",
       "stop_loss_price": 505.9157,
@@ -2266,7 +5141,7 @@
       "actual_direction": null,
       "current_price": 12.16,
       "current_pct": 0.0,
-      "current_at": "2026-04-28T13:56:21.604449",
+      "current_at": "2026-04-28T14:18:14.067609",
       "reasoning": "黄金掺假丑闻曝光后，黄金珠宝零售板块将整体承压。周大生等品牌虽未必直接涉及，但消费者对整个行业的信任度下降会导致短期销售萎缩预期，股价面临回调风险。市场情绪主导下跌幅可能较大。",
       "stop_loss_price": 12.6464,
       "take_profit": {
@@ -2323,7 +5198,7 @@
       "actual_direction": null,
       "current_price": 8.68,
       "current_pct": 0.0,
-      "current_at": "2026-04-28T13:56:24.072429",
+      "current_at": "2026-04-28T14:18:17.157579",
       "reasoning": "央视曝光黄金掺假将直接冲击黄金零售企业的品牌信誉和消费者信任。中国黄金作为黄金珠宝龙头企业，即使未被点名，整个行业也将面临信任危机，短期内股价承压明显。投资者担忧销售下滑和潜在监管收紧，抛压较大。",
       "stop_loss_price": 8.9838,
       "take_profit": {
@@ -2424,7 +5299,7 @@
       "actual_direction": null,
       "current_price": 4078.64,
       "current_pct": 0.0,
-      "current_at": "2026-04-28T13:56:29.791425",
+      "current_at": "2026-04-28T14:18:20.528523",
       "reasoning": "77只个股涨停显示市场情绪回暖、资金活跃度提升，短期内可能带动指数上行。涨停数量较多通常预示局部行情向好，但该新闻缺乏具体板块信息，影响幅度有限。检索到的因果链与中东地缘政治相关，与本新闻无关，故判定为新模式。",
       "stop_loss_price": 4046.0109,
       "take_profit": {
@@ -2479,8 +5354,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 99.0999984741211,
-      "current_pct": -0.3519341225352145,
+      "current_price": 99.86000061035156,
+      "current_pct": 0.41227116610446707,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "普京对伊朗的支持表态暗示俄伊在能源和军事领域合作可能深化，市场将担忧中东局势恶化影响原油供应通道安全，尤其是霍尔木兹海峡。地缘风险溢价将推高油价。检索结果中无匹配模式，这是典型的地缘政治供应风险定价。",
       "stop_loss_price": 96.9637,
@@ -2536,8 +5411,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4598.2998046875,
-      "current_pct": 0.12410632125707487,
+      "current_price": 4588.2001953125,
+      "current_pct": -0.09580416866679531,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "普京公开赞扬伊朗抵抗美国，显示俄伊联盟进一步强化，这将加剧中东地缘政治紧张局势。市场对潜在冲突升级的担忧会推动避险资金流入黄金。该因果模式在检索结果中未能匹配，属于新发现的地缘政治风险溢价传导路径。",
       "stop_loss_price": 4537.4889,
@@ -2639,7 +5514,7 @@
       "actual_direction": null,
       "current_price": 4078.64,
       "current_pct": 0.0,
-      "current_at": "2026-04-28T13:56:29.791425",
+      "current_at": "2026-04-28T14:18:20.528523",
       "reasoning": "股王反复易主反映市场缺乏主线，资金在不同板块间快速轮动，这通常是市场信心不足、方向不明的信号。历史上这种无序轮动往往伴随指数震荡下行或横盘整理，短期内大盘承压概率较高。",
       "stop_loss_price": 4127.5837,
       "take_profit": {
@@ -2797,7 +5672,7 @@
       "actual_direction": null,
       "current_price": 23.5,
       "current_pct": 0.0,
-      "current_at": "2026-04-28T13:56:37.329523",
+      "current_at": "2026-04-28T14:18:29.002961",
       "reasoning": "美媒对中国军舰实力的正面评价会刺激A股市场对国防军工板块的关注和投资热情，投资者预期中国将持续加大军工投入以应对竞争压力，军工概念股短期内容易获得资金追捧。这是一个新的因果模式，检索结果中未涵盖。",
       "stop_loss_price": 22.6775,
       "take_profit": {
@@ -2852,8 +5727,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4598.2998046875,
-      "current_pct": 0.1786389589943115,
+      "current_price": 4588.2001953125,
+      "current_pct": -0.041391305272843806,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "美媒肯定中国军舰实力的报道会强化市场对中美军事竞争加剧的预期，地缘政治紧张情绪上升时，黄金作为传统避险资产往往受到资金流入。参考检索到的避险逻辑，但本次事件更偏向地缘军事而非财政危机，因此幅度相对温和。",
       "stop_loss_price": 4565.3422,
@@ -2942,8 +5817,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4598.2998046875,
-      "current_pct": 0.17428055552778055,
+      "current_price": 4588.2001953125,
+      "current_pct": -0.04574013603329201,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "中美关系紧张信号通常触发全球避险情绪，黄金作为传统避险资产会受到资金青睐。参考检索到的id=291因果链中提到的避险逻辑，地缘政治不确定性上升时黄金往往受益。此次美国施压中国的外交事件虽然冲击力有限，但仍会推动部分避险买盘。",
       "stop_loss_price": 4589.7303,
@@ -3078,7 +5953,7 @@
       "actual_direction": null,
       "current_price": 38.44,
       "current_pct": 0.0,
-      "current_at": "2026-04-28T13:56:43.078548",
+      "current_at": "2026-04-28T14:18:33.884600",
       "reasoning": "家电行业近年价格战激烈，整治内卷式竞争的政策导向有望缓解行业恶性竞争，龙头企业如格力电器可能受益于竞争格局改善和利润率企稳。此为新发现的政策对制造业竞争格局影响的因果模式。",
       "stop_loss_price": 37.8634,
       "take_profit": {
@@ -3133,8 +6008,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 130.39999389648438,
-      "current_pct": -0.034507589564156275,
+      "current_price": 130.61500549316406,
+      "current_pct": 0.13032171367263223,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "整治内卷式竞争意味着行业竞争烈度可能降低，阿里巴巴作为电商龙头，此前在价格战中处于防守地位，政策若遏制恶性竞争，有利于行业利润率修复和龙头估值回升。此为新发现的监管政策与行业格局因果模式。",
       "stop_loss_price": 127.8361,
@@ -3190,8 +6065,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 97.83000183105469,
-      "current_pct": -0.2141973505830487,
+      "current_price": 97.8499984741211,
+      "current_pct": -0.19380093801708428,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "中央政治局提出整治内卷式竞争，拼多多作为低价电商代表，其商业模式高度依赖价格战和对商家的压价策略，是典型的'内卷式竞争'受益者。政策风向转变可能导致监管压力增加，市场对其估值预期下调。此为新发现的政策-资产因果模式。",
       "stop_loss_price": 101.4714,
@@ -3335,8 +6210,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 6.838399887084961,
-      "current_pct": 0.011987911666037285,
+      "current_price": 6.838840007781982,
+      "current_pct": 0.018424701932327227,
       "current_at": "2026-04-28T00:00:00+01:00",
       "reasoning": "外贸顺差屡创新高意味着更多美元流入结汇需求，支撑人民币汇率走强，美元兑离岸人民币汇率承压下行。",
       "stop_loss_price": 6.8649,
@@ -3394,7 +6269,7 @@
       "actual_direction": null,
       "current_price": 16.95,
       "current_pct": 0.0,
-      "current_at": "2026-04-28T13:56:46.587017",
+      "current_at": "2026-04-28T14:18:37.613514",
       "reasoning": "光伏产业是中国出口产业链优势的典型代表，外贸持续向好反映海外对中国光伏组件需求旺盛，龙头企业隆基绿能将直接受益于出口订单增长。",
       "stop_loss_price": 16.5263,
       "take_profit": {
@@ -3451,7 +6326,7 @@
       "actual_direction": null,
       "current_price": 8203.96,
       "current_pct": 0.0,
-      "current_at": "2026-04-28T13:56:49.169254",
+      "current_at": "2026-04-28T14:18:40.714170",
       "reasoning": "外贸数据屡创新高表明中国制造业和出口产业链具有韧性，中证500涵盖大量中盘制造业和出口导向型企业，将受益于外贸景气度提升带来的订单增长和盈利改善预期。",
       "stop_loss_price": 8105.5125,
       "take_profit": {
@@ -3506,8 +6381,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4598.2998046875,
-      "current_pct": 0.08923445215084151,
+      "current_price": 4588.2001953125,
+      "current_pct": -0.13059944593015013,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "中日两大经济体之间的地缘政治紧张言论升级，市场避险情绪上升，黄金作为核心避险资产将获得配置需求。此类地缘冲突言论-黄金上涨的因果关系是经典模式，但检索结果中未包含相关因果链。",
       "stop_loss_price": 4511.5046,
@@ -3563,8 +6438,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 159.50900268554688,
-      "current_pct": 0.011289271116820803,
+      "current_price": 159.57000732421875,
+      "current_pct": 0.0495388524092357,
       "current_at": "2026-04-28T00:00:00+01:00",
       "reasoning": "地缘政治紧张通常触发避险情绪，日元作为传统避险货币会获得资金流入。日本自身表态为战争做准备，虽短期可能引发本土风险担忧，但整体亚太紧张局势下日元仍倾向于对美元走强（即美元兑日元下跌）。检索结果未覆盖此地缘避险逻辑。",
       "stop_loss_price": 161.4049,
@@ -3622,7 +6497,7 @@
       "actual_direction": null,
       "current_price": 19.98,
       "current_pct": 0.0,
-      "current_at": "2026-04-28T13:56:52.172039",
+      "current_at": "2026-04-28T14:17:49.639002",
       "reasoning": "日本表态为长期战争做准备，中方回应表明东亚地缘紧张局势升级。历史上中日关系紧张时期，市场对国防军工板块的预期会提升，防务开支增加预期推动军工股估值上行。这属于地缘政治紧张驱动军工资产的经典模式，检索结果中未覆盖此类因果链。",
       "stop_loss_price": 19.4805,
       "take_profit": {
@@ -3677,8 +6552,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4598.2998046875,
-      "current_pct": -2.5350282992828075,
+      "current_price": 4588.2001953125,
+      "current_pct": -2.749098321624374,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "南海地缘紧张升级触发避险情绪，资金倾向流入黄金等传统避险资产。中国海军围观美日菲军演的强势姿态加剧市场对区域冲突风险的担忧，短期内支撑金价。检索因果链虽提及地区银行危机推动黄金避险，但地缘冲突驱动的避险逻辑为新模式。",
       "stop_loss_price": 4661.2851,
@@ -3734,8 +6609,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 513.97998046875,
-      "current_pct": 0.10321710957620121,
+      "current_price": 511.9599914550781,
+      "current_pct": -0.29019782189669613,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "美日菲联合军演及中国海军强势回应凸显亚太军备竞赛加剧，将推动美国及盟国增加国防开支预期。洛克希德·马丁作为全球最大军工企业，在F-35战斗机及导弹防御系统领域拥有核心地位，地缘紧张直接利好其订单前景。检索因果链未覆盖此模式，属新发现。",
       "stop_loss_price": 503.181,
@@ -3791,8 +6666,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 36.2599983215332,
-      "current_pct": -1.6277869747236466,
+      "current_price": 36.29999923706055,
+      "current_pct": -1.5192657732451254,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "中国海军高调监视美日菲联合军演显示南海地缘对抗升级，国际投资者对中国资产的风险溢价短期上升。FXI作为追踪中国大盘股的主要ETF，在地缘紧张情绪下通常承压。虽然检索到的因果链主要涉及房地产违约，但地缘政治风险同样影响中国风险资产估值，属于新模式。",
       "stop_loss_price": 37.4129,
@@ -3848,8 +6723,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 41.880001068115234,
-      "current_pct": 10.501317630604056,
+      "current_price": 41.9900016784668,
+      "current_pct": 10.791556696363596,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "XOMA提交8-K披露签署重大协议（Item 1.01），对于专注于药物版税收购的小型生物医药版税公司而言，新协议通常意味着未来现金流增加或版税资产组合扩张。市场通常对此类利好消息给予正面反应。由于检索到的因果链与中东能源袭击相关，与本新闻无关，此为新发现的因果模式。",
       "stop_loss_price": 36.5735,
@@ -3995,7 +6870,7 @@
       "actual_direction": null,
       "current_price": 233.01,
       "current_pct": -0.8468085106383018,
-      "current_at": "2026-04-28T13:56:59.961770",
+      "current_at": "2026-04-28T14:18:48.488991",
       "reasoning": "百济神州与华辉安健签订的三特异性抗体（PD-1/CTLA-4/VEGF-A）全球独家合作协议，总里程碑款高达20亿美元，展示了公司在创新药BD能力和管线拓展上的积极布局。三靶点联合抗体在肿瘤免疫领域属前沿方向，市场对创新药企的License-in交易通常给予正面反应。首付款2000万美元及后续里程碑结构合理，短期内将提振投资者对公司研发管线价值的预期。检索到的因果链未覆盖生物医药BD交易对股价的影响，属新模式。",
       "stop_loss_price": 226.775,
       "take_profit": {
@@ -4402,8 +7277,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4598.2998046875,
-      "current_pct": -2.5556824715936695,
+      "current_price": 4588.2001953125,
+      "current_pct": -2.7697071295437947,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "中美制裁摩擦升级属于地缘政治风险事件，通常推动避险资金流入黄金。虽然本次制裁规模有限，但叠加中方表态反对，市场对中美关系的不确定性担忧加剧，黄金短期受到支撑。",
       "stop_loss_price": 4690.5865,
@@ -4459,8 +7334,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 6.838399887084961,
-      "current_pct": 0.2185061303031133,
+      "current_price": 6.838840007781982,
+      "current_pct": 0.2249562121206192,
       "current_at": "2026-04-28T00:00:00+01:00",
       "reasoning": "中美摩擦升级事件通常引发避险情绪，资金流向美元避险，人民币承压贬值。此次制裁虽规模有限，但反映中美关系紧张持续，短期内离岸人民币可能小幅走弱。这是地缘政治风险影响汇率的常见模式。",
       "stop_loss_price": 6.7962,
@@ -4518,7 +7393,7 @@
       "actual_direction": null,
       "current_price": 5.35,
       "current_pct": 0.18726591760299227,
-      "current_at": "2026-04-28T13:57:02.354470",
+      "current_at": "2026-04-28T14:18:51.185706",
       "reasoning": "美国以涉伊朗为由制裁中国企业，通常涉及能源贸易领域。中国石化作为与伊朗有石油贸易往来的大型央企，面临被列入制裁名单或供应链受阻的风险，市场短期会对其海外业务前景产生担忧。这是基于地缘制裁影响能源企业的新模式判断。",
       "stop_loss_price": 5.4735,
       "take_profit": {
@@ -4573,8 +7448,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 7.210000038146973,
-      "current_pct": -0.9887397152112689,
+      "current_price": 7.177999973297119,
+      "current_pct": -1.4281803162120508,
       "current_at": "2026-04-28T00:00:00+02:00",
       "reasoning": "俄伊高层会晤强调中东局势紧张，若局势进一步恶化可能影响海湾地区航油供应与中东航线运营。欧洲航司如汉莎对中东航线依赖度高，航油成本敏感。参考检索到的因果链id=96，海湾燃料供应风险会压制欧洲航司股价，此次地缘紧张信号可能提前触发类似担忧。",
       "stop_loss_price": 7.4364,
@@ -4663,8 +7538,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4598.2998046875,
-      "current_pct": -2.5618830653780753,
+      "current_price": 4588.2001953125,
+      "current_pct": -2.77589410447389,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "俄伊领导人会晤聚焦中东紧张局势，投资者避险情绪升温。黄金作为传统避险资产，在地缘政治不确定性上升时往往获得资金流入。当前中东局势本就脆弱，此次会见被定义为'非常重要'，强化了冲突可能升级的市场预期。检索链未覆盖此类地缘外交事件对黄金的直接影响。",
       "stop_loss_price": 4662.5698,
@@ -4720,8 +7595,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 99.0999984741211,
-      "current_pct": 3.239921533038601,
+      "current_price": 99.86000061035156,
+      "current_pct": 4.03167291666617,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "俄罗斯与伊朗是全球主要产油国，两国高层会晤讨论中东局势会加剧市场对地缘冲突升级、石油供应中断的担忧。伊朗在霍尔木兹海峡的战略位置使任何紧张升级都可能威胁全球约20%的石油运输。此次会见表明俄伊协调立场，市场倾向于给油价计入地缘风险溢价。检索的因果链未直接覆盖俄伊高层会晤对油价的影响，属新模式。",
       "stop_loss_price": 93.5902,
@@ -4777,8 +7652,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 130.39999389648438,
-      "current_pct": -3.9905854332610575,
+      "current_price": 130.61500549316406,
+      "current_pct": -3.8322791565087457,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "中方对外资收购关键AI项目的限制信号可能引发海外投资者对中国科技监管收紧的担忧，中概股短期承压。阿里巴巴作为中概股龙头，对政策敏感度较高，可能面临短期资金流出压力。",
       "stop_loss_price": 137.8573,
@@ -4836,7 +7711,7 @@
       "actual_direction": null,
       "current_price": 14.36,
       "current_pct": -2.9729729729729817,
-      "current_at": "2026-04-28T13:57:05.859671",
+      "current_at": "2026-04-28T14:18:54.330348",
       "reasoning": "Manus是备受关注的AI机器人项目，中方禁止外资收购意味着国内机器人产业将获得更多政策支持和发展空间。机器人（新松机器人）作为A股机器人板块的标杆企业，将直接受益于这一产业保护政策，市场情绪有望推动股价上涨。",
       "stop_loss_price": 14.356,
       "take_profit": {
@@ -4893,7 +7768,7 @@
       "actual_direction": null,
       "current_price": 34.65,
       "current_pct": 2.001766264350897,
-      "current_at": "2026-04-28T13:57:08.468295",
+      "current_at": "2026-04-28T14:17:21.015828",
       "reasoning": "中方禁止外资收购Manus项目体现了对关键技术领域的保护政策，这将利好国内AI和机器人龙头企业。海康威视作为国内AI视觉和机器人领域的领军企业，在外资被限制进入的情况下，其市场地位和竞争优势将进一步巩固。此为新发现的因果模式，检索结果中无直接相关链条。",
       "stop_loss_price": 33.1208,
       "take_profit": {
@@ -5062,8 +7937,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 36.2599983215332,
-      "current_pct": -1.6277869747236466,
+      "current_price": 36.29999923706055,
+      "current_pct": -1.5192657732451254,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "欧洲斯托克600指数触及盘中高点反映全球风险偏好回升。根据检索到的因果链(id:62)，全球风险偏好提升时中国相关资产受益。欧洲市场走强通常带动全球股市联动上涨，中国大盘股ETF作为新兴市场风险资产将受到外资流入支撑。",
       "stop_loss_price": 36.8068,
@@ -5152,8 +8027,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4598.2998046875,
-      "current_pct": -2.584581595407303,
+      "current_price": 4588.2001953125,
+      "current_pct": -2.7985427799272053,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "朝俄军事合作实质化加剧全球地缘政治不确定性，避险资金将流向黄金。朝鲜正式参与俄乌战争意味着冲突扩大化风险上升，可能引发更广泛的国际紧张局势，支撑金价走高。",
       "stop_loss_price": 4663.6562,
@@ -5266,8 +8141,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 1474.81005859375,
-      "current_pct": 0.2583292297739333,
+      "current_price": 1475.010009765625,
+      "current_pct": 0.27192201096152413,
       "current_at": "2026-04-28T00:00:00+01:00",
       "reasoning": "朝俄军事合作深化加剧朝鲜半岛地缘紧张，市场避险情绪升温会导致韩元承压贬值。朝鲜士兵在俄作战并有阵亡确认，意味着朝俄军事同盟进入实质性阶段，韩国面临的安全威胁上升，资本可能流出韩国市场。",
       "stop_loss_price": 1459.2419,
@@ -5411,8 +8286,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 28.059999465942383,
-      "current_pct": -2.6708305924431284,
+      "current_price": 28.125,
+      "current_pct": -2.4453691487052494,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "小红书主动建立AI治理框架，显示中国互联网平台在AI监管方面走向规范化和自律化，这降低了市场对中国科技平台面临突发监管风险的担忧。对整体中概互联网板块形成温和利好，但影响较为间接和有限。此为新发现的市场模式。",
       "stop_loss_price": 28.5994,
@@ -5468,8 +8343,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 97.83000183105469,
-      "current_pct": -0.2040160672575926,
+      "current_price": 97.8499984741211,
+      "current_pct": -0.1836175736174709,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "小红书作为中国领先的社交电商平台，首次系统性发布AI治理框架，展现了平台治理的成熟度和前瞻性。这有助于提升平台内容质量和用户信任度，利好其商业化前景。由于小红书未上市，市场可能通过关联的中概电商股（如PDD等社交电商概念）来反映这一积极信号。此为新模式，未在检索结果中找到匹配的因果链。",
       "stop_loss_price": 96.8536,
@@ -5525,8 +8400,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4332.52001953125,
-      "current_pct": -0.3578604421761221,
+      "current_price": 4322.8701171875,
+      "current_pct": -0.5797952311028081,
       "current_at": "2026-04-28T00:00:00+03:00",
       "reasoning": "以色列扩大对黎巴嫩的军事行动，国内面临战争升级风险，投资者会担忧经济活动受扰、国防开支增加以及潜在的多线作战压力，短期内以色列股市承压。",
       "stop_loss_price": 4435.0417,
@@ -5582,8 +8457,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 99.0999984741211,
-      "current_pct": 3.3907147122985917,
+      "current_price": 99.86000061035156,
+      "current_pct": 4.183622535281672,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "以色列打击黎巴嫩贝卡谷地的真主党目标，意味着冲突可能向更广泛的中东地区蔓延。贝卡谷地靠近叙利亚，若冲突扩大涉及伊朗，将威胁霍尔木兹海峡等关键石油运输通道，市场会提前计入供应中断风险溢价。",
       "stop_loss_price": 92.4952,
@@ -5639,8 +8514,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4598.2998046875,
-      "current_pct": -2.574261727782002,
+      "current_price": 4588.2001953125,
+      "current_pct": -2.7882455786429965,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "以色列对黎巴嫩真主党发动军事打击，中东地缘政治紧张局势显著升级，可能引发更大范围的区域冲突。这类地缘冲突事件会推动资金流入黄金等避险资产。虽然检索到的因果链是关于美国债务上限的，但避险逻辑相通——地缘政治风险同样会提振黄金需求。",
       "stop_loss_price": 4695.0419,
@@ -5729,8 +8604,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 568.760009765625,
-      "current_pct": 1.087728380110246,
+      "current_price": 565.0,
+      "current_pct": 0.41944854438359197,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "德国作为欧洲最大经济体，其总理对美国中东战略的质疑反映欧洲对自身安全的担忧加剧。这将推动欧洲加速国防自主化进程，利好美欧防务承包商。结合欧洲近期增加国防开支的趋势，防务板块有望受益。",
       "stop_loss_price": 555.8883,
@@ -5786,8 +8661,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 99.0999984741211,
-      "current_pct": 3.3691411651223913,
+      "current_price": 99.86000061035156,
+      "current_pct": 4.161883539647424,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "默茨的表态意味着伊朗冲突可能旷日持久，中东原油供应中断风险溢价将持续存在。伊朗作为OPEC重要产油国，任何军事升级都将威胁霍尔木兹海峡通行安全，推升油价。市场将重新定价地缘风险溢价。",
       "stop_loss_price": 93.4733,
@@ -5843,8 +8718,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4598.2998046875,
-      "current_pct": -2.5660062754188138,
+      "current_price": 4588.2001953125,
+      "current_pct": -2.78000825838246,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "德国总理公开质疑美国在伊朗冲突中缺乏退出战略，暗示中东地缘局势可能长期化甚至升级。这种来自北约核心成员的公开质疑加剧市场对美伊冲突扩大化的担忧，避险资金将流向黄金。历史上中东地缘紧张升级期间黄金通常有1-3%的涨幅。",
       "stop_loss_price": 4634.4507,
@@ -5946,7 +8821,7 @@
       "actual_direction": null,
       "current_price": 82.1,
       "current_pct": -2.3897277374866306,
-      "current_at": "2026-04-28T13:57:13.338530",
+      "current_at": "2026-04-28T14:18:58.981163",
       "reasoning": "赣锋锂业与天齐锂业同为锂资源双寡头，天齐锂业业绩暴增将引发市场对赣锋锂业同样实现业绩高增长的预期。板块联动效应下，投资者会对同业公司进行估值重估，推动股价上行。",
       "stop_loss_price": 81.1662,
       "take_profit": {
@@ -6003,7 +8878,7 @@
       "actual_direction": null,
       "current_price": 427.67,
       "current_pct": -1.657928623988222,
-      "current_at": "2026-04-28T13:57:15.864435",
+      "current_at": "2026-04-28T14:17:28.190240",
       "reasoning": "天齐锂业作为上游锂资源龙头业绩暴增，反映锂电产业链景气度高企。宁德时代作为下游电池龙头，产业链联动效应下将受益于市场对锂电板块的重新关注，资金可能从上游向中下游扩散。",
       "stop_loss_price": 426.1824,
       "take_profit": {
@@ -6060,7 +8935,7 @@
       "actual_direction": null,
       "current_price": 72.53,
       "current_pct": -1.5207060420909768,
-      "current_at": "2026-04-28T13:57:18.334190",
+      "current_at": "2026-04-28T14:19:01.934940",
       "reasoning": "天齐锂业一季度净利润同比暴增1699%，远超市场预期，营收也接近翻倍。如此强劲的业绩释放将直接推动股价上涨，市场通常在财报公布后1-3个交易日内完成对超预期业绩的定价。这是典型的业绩驱动型行情。",
       "stop_loss_price": 70.3358,
       "take_profit": {
@@ -6423,8 +9298,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 21.6299991607666,
-      "current_pct": 0.37122935748635694,
+      "current_price": 21.514999389648438,
+      "current_pct": -0.162412290724904,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "作为美国主要肉制品生产商之一，荷美尔同样会受到政府价格调查的波及。投资者担忧潜在的反垄断行动或价格管制将压缩行业利润空间，股价承压。这属于新发现的政策干预因果链。",
       "stop_loss_price": 21.9379,
@@ -6480,8 +9355,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 63.45000076293945,
-      "current_pct": -0.9058223136261488,
+      "current_price": 63.11000061035156,
+      "current_pct": -1.436823655293868,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "白宫正式调查肉类价格高企，意味着政府可能对肉类加工商施压或出台限价措施。泰森食品作为美国最大肉类加工企业，将直接面临监管审查和定价权受限的风险，市场会提前反映利润率压缩预期。这是检索结果中未覆盖的新因果模式。",
       "stop_loss_price": 65.6307,
@@ -6864,8 +9739,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 7.03000020980835,
-      "current_pct": -35.56370020045518,
+      "current_price": 7.09499979019165,
+      "current_pct": -34.96792035359552,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "剥离原有鞋类业务后，公司营收几乎归零，而AI基础设施需要长期重资本投入，短期难以兑现业绩。随着炒作热度消退、稀释性融资风险以及可能的监管问询，30天维度估值将大幅回归。该情景不在检索到的宏观因果链内，判定为新模式。",
       "stop_loss_price": 15.274,
@@ -6986,8 +9861,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 47.3650016784668,
-      "current_pct": 9.06056031692466,
+      "current_price": 47.470001220703125,
+      "current_pct": 9.302327624082185,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "财报超预期的利好效应通常具备持续性，分析师上调盈利预测与机构加仓会在2-3周内推动股价继续走高，即所谓的盈余公告后漂移（PEAD）效应。此模式未在检索结果中出现，故标记为新模式。",
       "stop_loss_price": 41.91,
@@ -7693,8 +10568,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 48.17499923706055,
-      "current_pct": 0.34388761612861524,
+      "current_price": 48.02000045776367,
+      "current_pct": 0.02104007411064171,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "本年度最大IPO成功定价并首日大涨，验证了一级市场承接能力恢复，将刺激后续IPO排队加速发行并提升已上市次新股估值，Renaissance IPO ETF作为新股组合直接受益于IPO窗口重启的情绪与资金流入。检索结果无对应因果模式，属新模式。",
       "stop_loss_price": 46.8097,
@@ -7880,8 +10755,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 2.7109999656677246,
-      "current_pct": 1.8024730353342944,
+      "current_price": 2.7230000495910645,
+      "current_pct": 2.253095770671239,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "馏分油/柴油价格居高不下会促使发电厂在边际上更多使用天然气替代燃油发电，叠加居民电费上行预期，天然气需求面受到提振。与检索到的贸易/政治类因果链无关，属新模式。",
       "stop_loss_price": 2.5565,
@@ -8002,8 +10877,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 46.18000030517578,
-      "current_pct": 0.032490824977743124,
+      "current_price": 46.11009979248047,
+      "current_pct": -0.11892369101721237,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "新闻指出油价的隐性成本(如柴油/馏分油裂解价差、运输与发电燃料成本)创历史新高，将传导至居民电费。公用事业公司短期内受限于费率审批，难以立刻转嫁燃料成本，利润率受挤压，股价承压。检索到的因果链均不涉及能源-电力传导链，属新模式。",
       "stop_loss_price": 46.8575,
@@ -8644,8 +11519,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 1.0990999937057495,
-      "current_pct": -4.426085522404661,
+      "current_price": 1.0850000381469727,
+      "current_pct": -5.65216863989143,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "作为在线学习平台代表，Chegg 受'教育回归纸质'叙事影响更直接：若公共政策开始质疑屏幕学习效果，投资者会下修 EdTech 板块终局规模预期。属于检索结果未覆盖的新因果模式。",
       "stop_loss_price": 1.173,
@@ -8701,8 +11576,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 96.08000183105469,
-      "current_pct": -3.106092897646398,
+      "current_price": 96.44000244140625,
+      "current_pct": -2.7430426787514137,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "罗技教育市场的键鼠、摄像头、平板配件销售对学校 IT 采购敏感。瑞典削减课堂电子设备的政策若被其他北欧国家效仿，将压低教育细分渠道出货预期。此属于'教育去数字化'这一新模式，现有因果链未覆盖。",
       "stop_loss_price": 100.6474,
@@ -8953,8 +11828,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 155.82000732421875,
-      "current_pct": -0.9377226624474886,
+      "current_price": 155.44000244140625,
+      "current_pct": -1.1793100538051906,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "百事通过降价最高15%成功挽回流失的零食消费者，销量回升信号直接缓解此前市场对其量价双杀的担忧。虽然短期毛利率承压，但销量恢复和市场份额企稳通常会被市场视为拐点信号，超级碗旺季验证需求回暖。检索到的因果链均与本新闻主题无关，属于新模式。",
       "stop_loss_price": 154.1491,
@@ -9140,8 +12015,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 640.5,
-      "current_pct": 5.30209617755857,
+      "current_price": 646.5,
+      "current_pct": 6.288532675709001,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "英国政府制定最坏情景预案预警夏季粮食短缺，叠加伊朗战争持续扰乱中东物流与黑海-红海运输通道，市场会提前定价全球粮食供应紧张预期。小麦作为英国主要进口主粮品种，对此类地缘+供应冲击最为敏感，期货价格通常在政府层面公开预警后两周内快速反应。检索到的因果链未覆盖战争叠加粮食安全的模式，故标记为新模式。",
       "stop_loss_price": 580.8787,
@@ -9681,8 +12556,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 239.94000244140625,
-      "current_pct": -0.6295056034940641,
+      "current_price": 239.69000244140625,
+      "current_pct": -0.7330424183075637,
       "current_at": "2026-04-28T00:00:00-04:00",
       "reasoning": "海湾供应断供导致欧洲精炼产品（航油、柴油）紧缺，全球精炼裂解价差走阔，美湾炼厂（瓦莱罗）有望通过出口套利获益。类似#53中炼油毛利被利多的逻辑，但本次是精炼产品短缺而非原油中断，利多更为纯粹且持续时间更长，故选14天窗口。",
       "stop_loss_price": 238.399,

@@ -1,0 +1,44 @@
+{
+  "id": 197,
+  "made_at": "2026-04-28T14:14:12.863533",
+  "expire_at": "2026-05-05T14:14:12.863533",
+  "verified_at": null,
+  "asset": {
+    "symbol": "603986",
+    "name": "兆易创新",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.0,
+  "horizon_days": 7,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "普冉股份业绩大超预期确认存储芯片行业景气度持续向上，产品单价提升趋势明确。作为国内存储芯片龙头，兆易创新将受益于行业估值重估和市场对存储板块的关注度提升，存在联动上涨机会。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 561,
+    "summary": "普冉股份Q1净利润同比增长1260%，存储芯片价格上涨带动业绩大幅提升",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "普冉股份：第一季度净利润同比增长1260% 存储芯片产品单价提升",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": 224,
+  "made_at": "2026-04-28T14:17:14.933569",
+  "expire_at": "2026-05-05T14:17:14.933569",
+  "verified_at": null,
+  "asset": {
+    "symbol": "USO",
+    "name": "美国石油基金",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 0.8,
+  "horizon_days": 7,
+  "baseline_price": 139.7447052001953,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 139.7447052001953,
+  "current_pct": 0.0,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "南非降低燃油税实质上是政府补贴消费端，这会在短期内刺激当地燃油消费量，但对国际油价的影响有限。然而，此举反映出新兴市场国家为应对高油价而采取的干预措施正在增多，若形成示范效应，可能抑制全球燃料需求增长预期，对原油价格形成边际压力。",
+  "stop_loss_price": 140.8627,
+  "take_profit": {
+    "prices": [
+      138.0678,
+      136.9498,
+      135.2729
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 1.118,
+    "atr": 0.559
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 550,
+    "summary": "南非延长柴油燃料税零税率至6月2日，汽油税6月起减半",
+    "category": "energy"
+  },
+  "news": {
+    "title": "南非政府表示，柴油燃料税将维持为零，直到6月2日。汽油税将从六月起减半。",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T22:00:01"
+  }
+}

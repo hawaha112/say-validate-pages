@@ -1,0 +1,57 @@
+{
+  "id": 204,
+  "made_at": "2026-04-28T14:15:02.765549",
+  "expire_at": "2026-05-05T14:15:02.765549",
+  "verified_at": null,
+  "asset": {
+    "symbol": "601111.SH",
+    "name": "北方稀土",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.5,
+  "horizon_days": 7,
+  "baseline_price": 6.66,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 6.66,
+  "current_pct": 0.0,
+  "current_at": "2026-04-28T14:17:35.910191",
+  "reasoning": "知名牛散章建平以超7200万股新进成为北方稀土第四大股东，持股比例达2%，这是一个强烈的市场信号。章建平作为A股市场知名游资大佬，其重仓买入行为往往被市场解读为对公司前景的看好。稀土作为战略资源，在中美贸易摩擦背景下具备政策支撑预期，叠加牛散背书效应，短期内将吸引跟风资金入场推高股价。此为新发现的因果模式。",
+  "stop_loss_price": 6.4269,
+  "take_profit": {
+    "prices": [
+      7.0097,
+      7.2428,
+      7.5924
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.2331,
+    "atr": 0.1166
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 558,
+    "summary": "章建平新进成为北方稀土第四大股东，持股2%",
+    "category": "other"
+  },
+  "news": {
+    "title": "财联社4月28日晚间新闻精选",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

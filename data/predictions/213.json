@@ -1,0 +1,57 @@
+{
+  "id": 213,
+  "made_at": "2026-04-28T14:16:00.170803",
+  "expire_at": "2026-05-05T14:16:00.170803",
+  "verified_at": null,
+  "asset": {
+    "symbol": "MSFT",
+    "name": "微软",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 2.5,
+  "horizon_days": 7,
+  "baseline_price": 425.3399963378906,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 425.4045104980469,
+  "current_pct": 0.015167668385692999,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "OpenAI未达销售和用户增长目标，直接冲击其最大投资方微软。市场将重新评估微软在AI领域的巨额投入回报预期，云业务Azure的AI溢价逻辑受质疑。这是新出现的AI商业化遇阻信号，短期内将压制微软估值。",
+  "stop_loss_price": 435.9735,
+  "take_profit": {
+    "prices": [
+      409.3897,
+      398.7562,
+      382.806
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 10.6335,
+    "atr": 5.3167
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 555,
+    "summary": "OpenAI未能实现销售和新增用户目标，引发科技公司支出前景担忧",
+    "category": "tech"
+  },
+  "news": {
+    "title": "财联社4月28日晚间新闻精选",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

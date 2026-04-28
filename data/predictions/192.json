@@ -1,0 +1,57 @@
+{
+  "id": 192,
+  "made_at": "2026-04-28T14:13:51.640048",
+  "expire_at": "2026-05-01T14:13:51.640048",
+  "verified_at": null,
+  "asset": {
+    "symbol": "NVDA",
+    "name": "英伟达",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 0.8,
+  "horizon_days": 3,
+  "baseline_price": 213.34800720214844,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 213.14999389648438,
+  "current_pct": -0.09281235304740568,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "OpenAI企业业务增长意味着AI推理需求持续扩张，英伟达作为AI算力核心供应商将受益于训练和推理芯片需求预期上修。此前市场担忧AI商业化放缓会影响算力采购，OpenAI的正面回应缓解这一担忧。",
+  "stop_loss_price": 211.6412,
+  "take_profit": {
+    "prices": [
+      215.9082,
+      217.615,
+      220.1751
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 1.7068,
+    "atr": 0.8534
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 563,
+    "summary": "OpenAI回应称企业和广告业务增长，此前被曝未达销售和用户增长目标",
+    "category": "tech"
+  },
+  "news": {
+    "title": "财联社4月28日电，OpenAI表示，企业和广告业务正在增长。此前，有报道称OpenAI近期未能实现销售和新增用户目标。",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

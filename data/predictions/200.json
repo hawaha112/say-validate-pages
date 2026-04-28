@@ -1,0 +1,44 @@
+{
+  "id": 200,
+  "made_at": "2026-04-28T14:14:23.727787",
+  "expire_at": "2026-05-28T14:14:23.727787",
+  "verified_at": null,
+  "asset": {
+    "symbol": "603729",
+    "name": "龙韵股份（ST龙韵）",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 20.0,
+  "horizon_days": 30,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "ST实施后，公司面临融资受限、机构持仓被动减持、退市预期升温等多重压力。30日内市场情绪难以逆转，叠加5%涨跌幅限制下的缓慢出逃，预计累计跌幅可达20%左右。该因果链为A股ST警示的中期影响模式。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 560,
+    "summary": "龙韵股份因内控审计否定意见被实施ST风险警示，涨跌幅限制调整为5%",
+    "category": "regulation"
+  },
+  "news": {
+    "title": "龙韵股份：4月30日起实施其他风险警示 股票简称变更为“ST龙韵”",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

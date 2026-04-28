@@ -1,0 +1,44 @@
+{
+  "id": 216,
+  "made_at": "2026-04-28T14:16:13.215889",
+  "expire_at": "2026-05-05T14:16:13.215889",
+  "verified_at": null,
+  "asset": {
+    "symbol": "688256",
+    "name": "寒武纪",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.5,
+  "horizon_days": 7,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "工信部明确开展'人工智能+软件'专项行动并加快算力布局，寒武纪作为国产AI芯片龙头将直接受益于算力基础设施建设需求提升。政策利好叠加公司刚公布高送转分红方案，短期有望获得资金关注。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 554,
+    "summary": "工信部将开展人工智能+软件专项行动，加快智能编程和算力建设",
+    "category": "tech"
+  },
+  "news": {
+    "title": "财联社4月28日晚间新闻精选",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

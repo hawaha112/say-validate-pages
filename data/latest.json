@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-28T13:57:26.307471",
+  "generated_at": "2026-04-28T14:19:09.911413",
   "stats": {
-    "generated_at": "2026-04-28T13:57:25.801554",
+    "generated_at": "2026-04-28T14:19:09.443311",
     "kb_summary": {
-      "n_links_active": 401,
+      "n_links_active": 444,
       "n_strong": 167,
       "n_strong_rigorous": 37,
       "rigor_thresholds": {
@@ -17,7 +17,7 @@
       "n_weak": 8,
       "n_retire_candidate": 0,
       "n_flip_candidate": 0,
-      "n_insufficient_data": 226,
+      "n_insufficient_data": 269,
       "strong_avg_dir_hit_rate": 0.798,
       "n_instances_total": 1937,
       "n_instances_with_price_path": 1903,
@@ -35,12 +35,12 @@
         "crypto_market": 13,
         "financial_stress": 26,
         "market_stress": 2,
-        "other": 101
+        "other": 144
       }
     },
-    "total": 124,
+    "total": 176,
     "verified": 0,
-    "pending": 124,
+    "pending": 176,
     "pending_past_expire": 0,
     "expired_no_data": 0,
     "hit_rate": null,
@@ -89,658 +89,57 @@
       }
     },
     "by_class": {
-      "us_stock": 38,
-      "a_stock": 55,
-      "commodity": 19,
-      "index": 6,
-      "fx": 6
+      "fx": 10,
+      "us_stock": 53,
+      "a_stock": 78,
+      "commodity": 29,
+      "index": 6
     },
     "baseline_source_distribution": {
-      "event_time": 68,
-      "live_fallback": 45,
+      "event_time": 103,
+      "live_fallback": 62,
       "eod": 11
     }
   },
   "recent_predictions": [
     {
-      "id": 173,
-      "made_at": "2026-04-28T13:54:25.203821",
-      "expire_at": "2026-05-05T13:54:25.203821",
+      "id": 225,
+      "made_at": "2026-04-28T14:17:16.038169",
+      "expire_at": "2026-05-12T14:17:16.038169",
       "verified_at": null,
       "asset": {
-        "symbol": "SPOT",
-        "name": "Spotify",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 4.0,
-      "horizon_days": 7,
-      "baseline_price": 427.8399963378906,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 429.84100341796875,
-      "current_pct": 0.4676998637822096,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "Spotify Q2营业利润指引逊于预期，开盘即跌11.7%。业绩指引不及预期后，市场通常需要数日消化利空，且可能面临分析师下调目标价的连锁反应。此为新模式：流媒体公司利润指引不及预期→股价短期承压。",
-      "stop_loss_price": 444.9536,
-      "take_profit": {
-        "prices": [
-          402.1696,
-          385.056,
-          359.3856
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 17.1136,
-        "atr": 8.5568
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 439,
-        "summary": "美股开盘分化，科技股大跌，AI相关公司业绩不及预期引发抛售",
-        "category": "tech"
-      },
-      "news": {
-        "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:30:51"
-      }
-    },
-    {
-      "id": 172,
-      "made_at": "2026-04-28T13:54:24.652956",
-      "expire_at": "2026-05-05T13:54:24.652956",
-      "verified_at": null,
-      "asset": {
-        "symbol": "ARM",
-        "name": "Arm控股",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 5.0,
-      "horizon_days": 7,
-      "baseline_price": 199.6300048828125,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 199.51510620117188,
-      "current_pct": -0.05755581767784518,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "高通与OpenAI合作开发专用手机芯片的消息引发投资者担忧新芯片可能绕过ARM架构，ARM已连续两日大跌累计超16%。市场正在重新评估ARM在AI手机芯片领域的不可替代性，短期抛售压力可能延续。此为新模式：大客户自研芯片绕过授权架构→架构授权商股价下跌。",
-      "stop_loss_price": 209.6115,
-      "take_profit": {
-        "prices": [
-          184.6578,
-          174.6763,
-          159.704
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 9.9815,
-        "atr": 4.9908
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 439,
-        "summary": "美股开盘分化，科技股大跌，AI相关公司业绩不及预期引发抛售",
-        "category": "tech"
-      },
-      "news": {
-        "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:30:51"
-      }
-    },
-    {
-      "id": 171,
-      "made_at": "2026-04-28T13:54:24.148664",
-      "expire_at": "2026-05-01T13:54:24.148664",
-      "verified_at": null,
-      "asset": {
-        "symbol": "NVDA",
-        "name": "英伟达",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 3.5,
-      "horizon_days": 3,
-      "baseline_price": 211.54379272460938,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 211.2292022705078,
-      "current_pct": -0.1487117395645358,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "OpenAI用户和营收双双未达标，叠加AMD、CoreWeave等AI算力相关公司大跌，显示市场对AI变现能力产生担忧。英伟达作为AI芯片龙头，估值高度依赖AI需求增长预期，短期内将承受情绪传导压力。此为新发现的因果模式：AI应用层公司业绩不及预期→上游算力芯片估值承压。",
-      "stop_loss_price": 218.9478,
-      "take_profit": {
-        "prices": [
-          200.4377,
-          193.0337,
-          181.9277
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 7.404,
-        "atr": 3.702
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 439,
-        "summary": "美股开盘分化，科技股大跌，AI相关公司业绩不及预期引发抛售",
-        "category": "tech"
-      },
-      "news": {
-        "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:30:51"
-      }
-    },
-    {
-      "id": 170,
-      "made_at": "2026-04-28T13:54:11.985991",
-      "expire_at": "2026-05-12T13:54:11.985991",
-      "verified_at": null,
-      "asset": {
-        "symbol": "ARM",
-        "name": "Arm控股",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 6.0,
-      "horizon_days": 14,
-      "baseline_price": 199.22999572753906,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 199.51510620117188,
-      "current_pct": 0.14310619873862818,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "ARM连续两日大跌（昨日-8%，今日-8.6%），核心原因是高通与OpenAI合作开发可能不采用ARM架构的专用芯片。这动摇了ARM在移动和AI端侧芯片的垄断地位叙事，若OpenAI这一标杆客户选择非ARM架构，可能引发更多AI芯片厂商重新评估架构选择，ARM的授权费增长预期将面临下调压力。",
-      "stop_loss_price": 211.1838,
-      "take_profit": {
-        "prices": [
-          181.2993,
-          169.3455,
-          151.4148
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 11.9538,
-        "atr": 5.9769
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 440,
-        "summary": "OpenAI用户和营收双双未达标，AI行业增长预期受挫",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:30:51"
-      }
-    },
-    {
-      "id": 169,
-      "made_at": "2026-04-28T13:54:11.096341",
-      "expire_at": "2026-05-05T13:54:11.096341",
-      "verified_at": null,
-      "asset": {
-        "symbol": "AMD",
-        "name": "超微半导体",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 5.0,
-      "horizon_days": 7,
-      "baseline_price": 321.4100036621094,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 321.0849914550781,
-      "current_pct": -0.10112075023431055,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "AMD今日已跌6.9%，但OpenAI增长未达标的负面影响可能还未完全price in。AMD作为AI芯片市场的第二大玩家，其MI300系列正试图抢占数据中心AI训练市场，OpenAI需求放缓会直接影响市场对AMD在AI领域追赶NVDA的预期，叠加高通与OpenAI合作开发专用芯片的消息，AMD面临双重压力。",
-      "stop_loss_price": 337.4805,
-      "take_profit": {
-        "prices": [
-          297.3043,
-          281.2338,
-          257.128
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 16.0705,
-        "atr": 8.0353
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 440,
-        "summary": "OpenAI用户和营收双双未达标，AI行业增长预期受挫",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:30:51"
-      }
-    },
-    {
-      "id": 168,
-      "made_at": "2026-04-28T13:54:10.464147",
-      "expire_at": "2026-05-05T13:54:10.464147",
-      "verified_at": null,
-      "asset": {
-        "symbol": "NVDA",
-        "name": "英伟达",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 4.5,
-      "horizon_days": 7,
-      "baseline_price": 211.67999267578125,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 211.2292022705078,
-      "current_pct": -0.2129584376752548,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "OpenAI作为AI行业最重要的需求方，用户和营收双双未达标直接暗示AI应用变现不及预期，这会传导到上游AI芯片需求预期。英伟达作为AI算力核心供应商，其估值高度依赖AI需求持续高增长的叙事，当下游龙头增长放缓时，市场会重新评估整个AI产业链的增长斜率。",
-      "stop_loss_price": 221.2056,
-      "take_profit": {
-        "prices": [
-          197.3916,
-          187.866,
-          173.5776
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 9.5256,
-        "atr": 4.7628
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 440,
-        "summary": "OpenAI用户和营收双双未达标，AI行业增长预期受挫",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:30:51"
-      }
-    },
-    {
-      "id": 167,
-      "made_at": "2026-04-28T13:53:56.121821",
-      "expire_at": "2026-05-01T13:53:56.121821",
-      "verified_at": null,
-      "asset": {
-        "symbol": "SPOT",
-        "name": "Spotify",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 4.0,
-      "horizon_days": 3,
-      "baseline_price": 427.9750061035156,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 429.84100341796875,
-      "current_pct": 0.4360061423778076,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "Spotify Q2营业利润指引逊于预期导致开盘暴跌11.7%，反映市场对其盈利能力改善节奏的担忧。业绩指引不及预期后，分析师下调目标价和卖方情绪恶化通常会在随后几个交易日持续施压股价，短期内难以快速修复。",
-      "stop_loss_price": 445.094,
-      "take_profit": {
-        "prices": [
-          402.2965,
-          385.1775,
-          359.499
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 17.119,
-        "atr": 8.5595
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 441,
-        "summary": "高通与OpenAI合作开发AI芯片可能不采用ARM架构，Arm连续两日暴跌",
-        "category": "tech"
-      },
-      "news": {
-        "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:30:51"
-      }
-    },
-    {
-      "id": 166,
-      "made_at": "2026-04-28T13:53:55.231395",
-      "expire_at": "2026-05-05T13:53:55.231395",
-      "verified_at": null,
-      "asset": {
-        "symbol": "QCOM",
-        "name": "高通",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 3.0,
-      "horizon_days": 7,
-      "baseline_price": 146.85000610351562,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 146.5500030517578,
-      "current_pct": -0.20429216158584168,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "高通与OpenAI合作开发AI专用芯片的消息意味着高通在AI手机芯片领域获得重大战略突破，有望摆脱对ARM架构的依赖并切入高增长的端侧AI市场。这强化了高通在AI时代的竞争定位，市场应给予估值溢价。",
-      "stop_loss_price": 142.4445,
-      "take_profit": {
-        "prices": [
-          153.4583,
-          157.8638,
-          164.472
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 4.4055,
-        "atr": 2.2028
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 441,
-        "summary": "高通与OpenAI合作开发AI芯片可能不采用ARM架构，Arm连续两日暴跌",
-        "category": "tech"
-      },
-      "news": {
-        "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:30:51"
-      }
-    },
-    {
-      "id": 165,
-      "made_at": "2026-04-28T13:53:54.174713",
-      "expire_at": "2026-05-05T13:53:54.174713",
-      "verified_at": null,
-      "asset": {
-        "symbol": "ARM",
-        "name": "Arm控股",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 5.5,
-      "horizon_days": 7,
-      "baseline_price": 199.3300018310547,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 199.51510620117188,
-      "current_pct": 0.0928632761836202,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "高通与OpenAI合作开发专用AI芯片且可能不采用ARM架构，这直接威胁到Arm在移动端和AI芯片领域的授权收入模式。Arm已连续两日分别下跌8%和8.6%，市场正在重新评估其在AI芯片供应链中的核心地位。若高通这一大客户转向自研架构，将对Arm的长期营收增长预期造成实质性冲击，短期内抛压可能延续。",
-      "stop_loss_price": 210.2932,
-      "take_profit": {
-        "prices": [
-          182.8853,
-          171.9221,
-          155.4774
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 10.9632,
-        "atr": 5.4816
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 441,
-        "summary": "高通与OpenAI合作开发AI芯片可能不采用ARM架构，Arm连续两日暴跌",
-        "category": "tech"
-      },
-      "news": {
-        "title": "【道指开盘涨0.4%，标普500跌0.5%，纳指跌1.1%】甲骨文跌6.6%，AMD跌6.9%，CoreWeave跌7.6%，OpenAI据报用户和营收双双未达",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:30:51"
-      }
-    },
-    {
-      "id": 164,
-      "made_at": "2026-04-28T13:53:40.485293",
-      "expire_at": "2026-05-12T13:53:40.485293",
-      "verified_at": null,
-      "asset": {
-        "symbol": "512480.SS",
-        "name": "半导体ETF",
-        "class": "a_stock"
+        "symbol": "ZAR=X",
+        "name": "美元兑南非兰特",
+        "class": "fx"
       },
       "direction": "up",
       "magnitude_pct": 1.2,
       "horizon_days": 14,
-      "baseline_price": null,
-      "baseline_source": "live_fallback",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "公司公告明确表示持续推进半导体设备国产化并保持高强度研发投入，体现国产替代战略坚定推进。市场可能将此解读为半导体国产化进程加速的信号，对半导体设备板块形成中期利好支撑。",
-      "stop_loss_price": null,
-      "take_profit": null,
-      "kelly_fraction": null,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 442,
-        "summary": "微导纳米一季度净利润大跌75%，光伏业务承压但加码半导体国产化",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "【微导纳米：第一季度净利润2101.78万元，同比下降75.01%】微导纳米公告，2026年第一季度营收为4.82亿元，同比下降5.54%；净利润为2101.7",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:31:05"
-      }
-    },
-    {
-      "id": 163,
-      "made_at": "2026-04-28T13:53:29.573298",
-      "expire_at": "2026-05-05T13:53:29.573298",
-      "verified_at": null,
-      "asset": {
-        "symbol": "515790.SS",
-        "name": "光伏ETF",
-        "class": "a_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 1.8,
-      "horizon_days": 7,
-      "baseline_price": null,
-      "baseline_source": "live_fallback",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "微导纳米作为光伏设备龙头，其业绩大幅下滑印证了下游光伏行业仍处于阶段性调整期，设备验收推迟反映终端需求疲软。这将加剧市场对光伏产业链整体盈利能力的担忧，拖累光伏板块整体估值。",
-      "stop_loss_price": null,
-      "take_profit": null,
-      "kelly_fraction": null,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 442,
-        "summary": "微导纳米一季度净利润大跌75%，光伏业务承压但加码半导体国产化",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "【微导纳米：第一季度净利润2101.78万元，同比下降75.01%】微导纳米公告，2026年第一季度营收为4.82亿元，同比下降5.54%；净利润为2101.7",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:31:05"
-      }
-    },
-    {
-      "id": 162,
-      "made_at": "2026-04-28T13:53:20.334567",
-      "expire_at": "2026-05-01T13:53:20.334567",
-      "verified_at": null,
-      "asset": {
-        "symbol": "688147.SS",
-        "name": "微导纳米",
-        "class": "a_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 4.5,
-      "horizon_days": 3,
-      "baseline_price": 69.49,
+      "baseline_price": 16.572349548339844,
       "baseline_source": "event_time",
       "status": "pending",
       "hit": null,
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 69.49,
-      "current_pct": 0.0,
-      "current_at": "2026-04-28T13:56:12.935025",
-      "reasoning": "公司一季度净利润同比大跌75%，远超市场预期的业绩下滑幅度。光伏设备收入同比减少30.53%，叠加债务重组损失和汇兑损失等多重负面因素，短期股价将承受显著抛压。虽然公司强调半导体国产化投入，但短期业绩兑现能力受质疑，市场情绪偏空。",
-      "stop_loss_price": 72.617,
+      "current_price": 16.572269439697266,
+      "current_pct": -0.00048338735762515936,
+      "current_at": "2026-04-28T00:00:00+01:00",
+      "reasoning": "燃油税减免将增加南非财政支出压力或减少财政收入，在当前南非财政状况本就紧张的背景下，可能引发市场对财政可持续性的担忧，导致兰特相对美元走弱（即USD/ZAR上涨）。这是财政刺激政策对新兴市场货币的典型负面影响。",
+      "stop_loss_price": 16.3735,
       "take_profit": {
         "prices": [
-          64.7994,
-          61.6724,
-          56.9818
+          16.8707,
+          17.0695,
+          17.3678
         ],
         "r_multiples": [
           1.5,
           2.5,
           4.0
         ],
-        "R": 3.127,
-        "atr": 1.5635
+        "R": 0.1989,
+        "atr": 0.0994
       },
       "kelly_fraction": 0.0,
       "resonance_posterior": null,
@@ -748,113 +147,56 @@
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
-        "id": 442,
-        "summary": "微导纳米一季度净利润大跌75%，光伏业务承压但加码半导体国产化",
-        "category": "earnings"
+        "id": 550,
+        "summary": "南非延长柴油燃料税零税率至6月2日，汽油税6月起减半",
+        "category": "energy"
       },
       "news": {
-        "title": "【微导纳米：第一季度净利润2101.78万元，同比下降75.01%】微导纳米公告，2026年第一季度营收为4.82亿元，同比下降5.54%；净利润为2101.7",
+        "title": "南非政府表示，柴油燃料税将维持为零，直到6月2日。汽油税将从六月起减半。",
         "source": "sina_finance",
         "lang": "zh",
         "url": null,
-        "published_at": "2026-04-28T21:31:05"
+        "published_at": "2026-04-28T22:00:01"
       }
     },
     {
-      "id": 161,
-      "made_at": "2026-04-28T13:53:04.477730",
-      "expire_at": "2026-05-12T13:53:04.477730",
+      "id": 224,
+      "made_at": "2026-04-28T14:17:14.933569",
+      "expire_at": "2026-05-05T14:17:14.933569",
       "verified_at": null,
       "asset": {
-        "symbol": "LMT",
-        "name": "洛克希德·马丁（美国国防股）",
+        "symbol": "USO",
+        "name": "美国石油基金",
         "class": "us_stock"
       },
-      "direction": "up",
-      "magnitude_pct": 1.8,
-      "horizon_days": 14,
-      "baseline_price": 513.5900268554688,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 513.97998046875,
-      "current_pct": 0.07592702211699844,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "美国对伊朗施压暗示可能升级地缘紧张局势，防务股通常在此类环境中受益。洛克希德马丁作为美国最大防务承包商，市场预期中东紧张局势可能带动防务订单增长。",
-      "stop_loss_price": 504.3454,
-      "take_profit": {
-        "prices": [
-          527.457,
-          536.7016,
-          550.5685
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 9.2446,
-        "atr": 4.6223
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 443,
-        "summary": "特朗普评论伊朗领导层问题，暗示可能出现政权变动或内部动荡",
-        "category": "geopolitics"
-      },
-      "news": {
-        "title": "特朗普：相信伊朗会解决领导层问题。",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:31:19"
-      }
-    },
-    {
-      "id": 160,
-      "made_at": "2026-04-28T13:53:03.681320",
-      "expire_at": "2026-05-05T13:53:03.681320",
-      "verified_at": null,
-      "asset": {
-        "symbol": "GC=F",
-        "name": "黄金期货",
-        "class": "commodity"
-      },
-      "direction": "up",
-      "magnitude_pct": 1.2,
+      "direction": "down",
+      "magnitude_pct": 0.8,
       "horizon_days": 7,
-      "baseline_price": 4601.2998046875,
+      "baseline_price": 139.7447052001953,
       "baseline_source": "event_time",
       "status": "pending",
       "hit": null,
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4598.2998046875,
-      "current_pct": -0.06519896827726371,
+      "current_price": 139.7447052001953,
+      "current_pct": 0.0,
       "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "特朗普对伊朗领导层的评论增加了地缘政治不确定性，投资者通常在此类风险事件中寻求避险资产。黄金作为传统避险工具，在中东局势紧张时往往受到资金流入支撑。",
-      "stop_loss_price": 4546.0842,
+      "reasoning": "南非降低燃油税实质上是政府补贴消费端，这会在短期内刺激当地燃油消费量，但对国际油价的影响有限。然而，此举反映出新兴市场国家为应对高油价而采取的干预措施正在增多，若形成示范效应，可能抑制全球燃料需求增长预期，对原油价格形成边际压力。",
+      "stop_loss_price": 140.8627,
       "take_profit": {
         "prices": [
-          4684.1232,
-          4739.3388,
-          4822.1622
+          138.0678,
+          136.9498,
+          135.2729
         ],
         "r_multiples": [
           1.5,
           2.5,
           4.0
         ],
-        "R": 55.2156,
-        "atr": 27.6078
+        "R": 1.118,
+        "atr": 0.559
       },
       "kelly_fraction": 0.0,
       "resonance_posterior": null,
@@ -862,544 +204,31 @@
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
-        "id": 443,
-        "summary": "特朗普评论伊朗领导层问题，暗示可能出现政权变动或内部动荡",
-        "category": "geopolitics"
+        "id": 550,
+        "summary": "南非延长柴油燃料税零税率至6月2日，汽油税6月起减半",
+        "category": "energy"
       },
       "news": {
-        "title": "特朗普：相信伊朗会解决领导层问题。",
+        "title": "南非政府表示，柴油燃料税将维持为零，直到6月2日。汽油税将从六月起减半。",
         "source": "sina_finance",
         "lang": "zh",
         "url": null,
-        "published_at": "2026-04-28T21:31:19"
+        "published_at": "2026-04-28T22:00:01"
       }
     },
     {
-      "id": 159,
-      "made_at": "2026-04-28T13:53:03.064242",
-      "expire_at": "2026-05-05T13:53:03.064242",
+      "id": 223,
+      "made_at": "2026-04-28T14:17:14.209980",
+      "expire_at": "2026-05-12T14:17:14.209980",
       "verified_at": null,
       "asset": {
-        "symbol": "CL",
-        "name": "WTI原油期货",
-        "class": "commodity"
-      },
-      "direction": "up",
-      "magnitude_pct": 2.5,
-      "horizon_days": 7,
-      "baseline_price": 85.08499908447266,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 85.12000274658203,
-      "current_pct": 0.041139639755561674,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "特朗普暗示伊朗可能出现领导层变动，这增加了中东地缘政治不确定性。伊朗是OPEC重要产油国，任何政权动荡都可能影响原油供应预期，推动油价上涨。市场通常对中东政治风险给予风险溢价。",
-      "stop_loss_price": 82.9579,
-      "take_profit": {
-        "prices": [
-          88.2757,
-          90.4028,
-          93.5935
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 2.1271,
-        "atr": 1.0636
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 443,
-        "summary": "特朗普评论伊朗领导层问题，暗示可能出现政权变动或内部动荡",
-        "category": "geopolitics"
-      },
-      "news": {
-        "title": "特朗普：相信伊朗会解决领导层问题。",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:31:19"
-      }
-    },
-    {
-      "id": 158,
-      "made_at": "2026-04-28T13:52:51.481797",
-      "expire_at": "2026-05-01T13:52:51.481797",
-      "verified_at": null,
-      "asset": {
-        "symbol": "GDS",
-        "name": "万国数据",
+        "symbol": "SASOL.JO",
+        "name": "萨索尔",
         "class": "us_stock"
       },
       "direction": "down",
       "magnitude_pct": 2.5,
-      "horizon_days": 3,
-      "baseline_price": 42.40999984741211,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 42.459999084472656,
-      "current_pct": 0.11789492393407275,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "万国数据当日跌5.21%，作为数据中心概念股，与金山云、世纪互联同属云基础设施板块。中概科技股整体承压时，该板块因对资本支出敏感度高、盈利能力偏弱，往往跌幅居前。短期内市场信心修复需要时间。",
-      "stop_loss_price": 43.4702,
-      "take_profit": {
-        "prices": [
-          40.8196,
-          39.7594,
-          38.169
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 1.0602,
-        "atr": 0.5301
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 444,
-        "summary": "纳斯达克中国金龙指数跌超1%，中概股普遍下跌",
-        "category": "tech"
-      },
-      "news": {
-        "title": "纳斯达克中国金龙指数跌超1%，金山云跌6.93%，世纪互联跌6.90%，万国数据跌5.21%，小鹏汽车跌4.83%，禾赛科技跌4.10%。",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:31:26"
-      }
-    },
-    {
-      "id": 157,
-      "made_at": "2026-04-28T13:52:50.530710",
-      "expire_at": "2026-05-01T13:52:50.530710",
-      "verified_at": null,
-      "asset": {
-        "symbol": "XPEV",
-        "name": "小鹏汽车",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 3.0,
-      "horizon_days": 3,
-      "baseline_price": 16.024999618530273,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 16.040000915527344,
-      "current_pct": 0.09361183996362647,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "小鹏汽车当日已跌4.83%，在中概股普跌的背景下，新能源汽车板块作为高贝塔资产往往波动更大。市场情绪转弱时，高估值成长股通常首当其冲，短期可能继续下探寻找支撑。",
-      "stop_loss_price": 16.5057,
-      "take_profit": {
-        "prices": [
-          15.3039,
-          14.8231,
-          14.102
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 0.4807,
-        "atr": 0.2404
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 444,
-        "summary": "纳斯达克中国金龙指数跌超1%，中概股普遍下跌",
-        "category": "tech"
-      },
-      "news": {
-        "title": "纳斯达克中国金龙指数跌超1%，金山云跌6.93%，世纪互联跌6.90%，万国数据跌5.21%，小鹏汽车跌4.83%，禾赛科技跌4.10%。",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:31:26"
-      }
-    },
-    {
-      "id": 156,
-      "made_at": "2026-04-28T13:52:49.640854",
-      "expire_at": "2026-05-01T13:52:49.640854",
-      "verified_at": null,
-      "asset": {
-        "symbol": "KWEB",
-        "name": "中概互联ETF",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 1.5,
-      "horizon_days": 3,
-      "baseline_price": 28.100000381469727,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 28.059999465942383,
-      "current_pct": -0.14235201062033426,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "纳斯达克中国金龙指数跌超1%，反映市场对中概股整体情绪偏空。KWEB作为追踪中国互联网公司的ETF，与金龙指数高度相关，短期内可能延续下跌趋势。中概股集体下跌往往带有情绪传染效应，预计3日内继续承压。",
-      "stop_loss_price": 28.5215,
-      "take_profit": {
-        "prices": [
-          27.4678,
-          27.0463,
-          26.414
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 0.4215,
-        "atr": 0.2108
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 444,
-        "summary": "纳斯达克中国金龙指数跌超1%，中概股普遍下跌",
-        "category": "tech"
-      },
-      "news": {
-        "title": "纳斯达克中国金龙指数跌超1%，金山云跌6.93%，世纪互联跌6.90%，万国数据跌5.21%，小鹏汽车跌4.83%，禾赛科技跌4.10%。",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:31:26"
-      }
-    },
-    {
-      "id": 155,
-      "made_at": "2026-04-28T13:52:38.114382",
-      "expire_at": "2026-05-12T13:52:38.114382",
-      "verified_at": null,
-      "asset": {
-        "symbol": "002617.SZ",
-        "name": "露笑科技",
-        "class": "a_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 5.0,
       "horizon_days": 14,
-      "baseline_price": 7.51,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 7.51,
-      "current_pct": 0.0,
-      "current_at": "2026-04-28T13:56:17.676957",
-      "reasoning": "露笑科技作为碳化硅和光伏领域企业，净利润大幅下滑反映行业竞争加剧或下游需求疲软。市场在消化财报信息后，若后续无利好催化，投资者可能重新评估公司估值，导致中期股价进一步下行。增收不增利的趋势若延续将对估值形成持续压制。",
-      "stop_loss_price": 7.8855,
-      "take_profit": {
-        "prices": [
-          6.9467,
-          6.5713,
-          6.008
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 0.3755,
-        "atr": 0.1877
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 445,
-        "summary": "露笑科技一季度净利润同比下降27.68%，营收增长11.32%但盈利能力下滑",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "【露笑科技：一季度归母净利润7091.5万元，同比下降27.68%】露笑科技4月28日公告，2026年第一季度实现营业收入9.57亿元，同比增长11.32%；归",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:31:29"
-      }
-    },
-    {
-      "id": 154,
-      "made_at": "2026-04-28T13:52:34.983493",
-      "expire_at": "2026-05-01T13:52:34.983493",
-      "verified_at": null,
-      "asset": {
-        "symbol": "002617.SZ",
-        "name": "露笑科技",
-        "class": "a_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 3.5,
-      "horizon_days": 3,
-      "baseline_price": 7.51,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 7.51,
-      "current_pct": 0.0,
-      "current_at": "2026-04-28T13:56:17.676957",
-      "reasoning": "露笑科技一季度净利润同比下降27.68%，虽然营收增长11.32%，但盈利能力明显下滑，毛利率或费用控制出现问题。A股市场对业绩不及预期的公司通常在财报公布后的短期内会有负面反应，特别是增收不增利的情况会引发投资者对公司经营效率的担忧。预计短期内股价承压回调。",
-      "stop_loss_price": 7.7729,
-      "take_profit": {
-        "prices": [
-          7.1157,
-          6.8529,
-          6.4586
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 0.2629,
-        "atr": 0.1314
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 445,
-        "summary": "露笑科技一季度净利润同比下降27.68%，营收增长11.32%但盈利能力下滑",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "【露笑科技：一季度归母净利润7091.5万元，同比下降27.68%】露笑科技4月28日公告，2026年第一季度实现营业收入9.57亿元，同比增长11.32%；归",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T21:31:29"
-      }
-    },
-    {
-      "id": 153,
-      "made_at": "2026-04-28T13:52:22.272573",
-      "expire_at": "2026-05-05T13:52:22.272573",
-      "verified_at": null,
-      "asset": {
-        "symbol": "ORCL",
-        "name": "甲骨文",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 4.0,
-      "horizon_days": 7,
-      "baseline_price": 167.6999969482422,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 166.60000610351562,
-      "current_pct": -0.655927766692838,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "甲骨文近期大力投资AI云基础设施，与OpenAI有合作关系。OpenAI销售不及预期意味着其云服务需求可能低于此前预期，甲骨文AI业务增长故事受到质疑。当日已跌超6%，后续可能因业绩指引担忧持续承压。",
-      "stop_loss_price": 174.408,
-      "take_profit": {
-        "prices": [
-          157.638,
-          150.93,
-          140.868
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 6.708,
-        "atr": 3.354
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 446,
-        "summary": "美股开盘纳指跌超1%，OpenAI相关股票集体下挫，英伟达跌超3%",
-        "category": "tech"
-      },
-      "news": {
-        "title": "美股纳指低开超1% OpenAI相关股票集体下挫",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 152,
-      "made_at": "2026-04-28T13:52:20.731325",
-      "expire_at": "2026-05-01T13:52:20.731325",
-      "verified_at": null,
-      "asset": {
-        "symbol": "AMD",
-        "name": "超微半导体",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 5.0,
-      "horizon_days": 3,
-      "baseline_price": 322.2049865722656,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 321.0849914550781,
-      "current_pct": -0.34760328482262715,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "AMD作为AI芯片第二梯队供应商，同样受益于AI算力需求扩张逻辑。OpenAI增长放缓消息令市场担忧AI资本开支周期提前见顶，AMD当日已跌超6%，在英伟达估值重估的背景下，AMD可能面临更大的相对抛压。",
-      "stop_loss_price": 338.3152,
-      "take_profit": {
-        "prices": [
-          298.0396,
-          281.9294,
-          257.764
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 16.1102,
-        "atr": 8.0551
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 446,
-        "summary": "美股开盘纳指跌超1%，OpenAI相关股票集体下挫，英伟达跌超3%",
-        "category": "tech"
-      },
-      "news": {
-        "title": "美股纳指低开超1% OpenAI相关股票集体下挫",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 151,
-      "made_at": "2026-04-28T13:52:19.779607",
-      "expire_at": "2026-05-01T13:52:19.779607",
-      "verified_at": null,
-      "asset": {
-        "symbol": "NVDA",
-        "name": "英伟达",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 4.5,
-      "horizon_days": 3,
-      "baseline_price": 211.93670654296875,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 211.2292022705078,
-      "current_pct": -0.3338280961337369,
-      "current_at": "2026-04-28T00:00:00-04:00",
-      "reasoning": "OpenAI未能实现销售和用户增长目标的消息，直接打击市场对AI基础设施需求持续高增长的预期。英伟达作为AI算力芯片的核心供应商，其估值高度依赖AI需求曲线，当下游最重要客户增长放缓时，市场会重新评估GPU采购节奏。当日已跌超3%，短期恐慌情绪可能延续。",
-      "stop_loss_price": 221.4739,
-      "take_profit": {
-        "prices": [
-          197.631,
-          188.0938,
-          173.7881
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 9.5372,
-        "atr": 4.7686
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 446,
-        "summary": "美股开盘纳指跌超1%，OpenAI相关股票集体下挫，英伟达跌超3%",
-        "category": "tech"
-      },
-      "news": {
-        "title": "美股纳指低开超1% OpenAI相关股票集体下挫",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 150,
-      "made_at": "2026-04-28T13:52:07.819061",
-      "expire_at": "2026-05-01T13:52:07.819061",
-      "verified_at": null,
-      "asset": {
-        "symbol": "600519",
-        "name": "贵州茅台",
-        "class": "a_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 1.5,
-      "horizon_days": 3,
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -1410,7 +239,7 @@
       "current_price": null,
       "current_pct": null,
       "current_at": null,
-      "reasoning": "泸州老窖Q4业绩断崖式下滑引发市场对白酒消费需求的担忧，作为白酒板块绝对龙头的贵州茅台虽然抗风险能力更强，但板块情绪传染和机构调仓行为可能导致短期跟随调整。检索结果无相关因果链。",
+      "reasoning": "南非延长柴油税零税率并减半汽油税，将直接削减燃料零售价格，降低南非国内燃油需求的边际利润。萨索尔作为南非最大的合成燃料生产商，其燃料销售利润率将受到政府补贴导致的价格压制影响。这是一个本地政策对本地能源企业的直接冲击。",
       "stop_loss_price": null,
       "take_profit": null,
       "kelly_fraction": null,
@@ -1419,22 +248,22 @@
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
-        "id": 447,
-        "summary": "泸州老窖2025年净利润同比下降19.61%，Q4净利润环比暴跌97%低于预期",
-        "category": "earnings"
+        "id": 550,
+        "summary": "南非延长柴油燃料税零税率至6月2日，汽油税6月起减半",
+        "category": "energy"
       },
       "news": {
-        "title": "泸州老窖：2025年净利润108.31亿元 同比下降19.61%",
-        "source": "cailianshe",
+        "title": "南非政府表示，柴油燃料税将维持为零，直到6月2日。汽油税将从六月起减半。",
+        "source": "sina_finance",
         "lang": "zh",
         "url": null,
-        "published_at": "2026-04-28T00:00:00"
+        "published_at": "2026-04-28T22:00:01"
       }
     },
     {
-      "id": 149,
-      "made_at": "2026-04-28T13:52:07.313756",
-      "expire_at": "2026-05-01T13:52:07.313756",
+      "id": 222,
+      "made_at": "2026-04-28T14:16:59.582096",
+      "expire_at": "2026-05-01T14:16:59.582096",
       "verified_at": null,
       "asset": {
         "symbol": "000858",
@@ -1442,7 +271,7 @@
         "class": "a_stock"
       },
       "direction": "down",
-      "magnitude_pct": 2.0,
+      "magnitude_pct": 1.2,
       "horizon_days": 3,
       "baseline_price": null,
       "baseline_source": "live_fallback",
@@ -1454,7 +283,7 @@
       "current_price": null,
       "current_pct": null,
       "current_at": null,
-      "reasoning": "泸州老窖作为白酒行业第三梯队龙头，其业绩大幅下滑反映出高端白酒需求疲软的行业性问题。市场通常会将此解读为白酒板块整体承压信号，五粮液作为同行业龙头可能受到情绪传染影响。检索结果中无相关因果链，属于新模式。",
+      "reasoning": "年报延期披露通常引发市场对公司财务状况的担忧，即使官方解释为'完善复核工作'，投资者仍会联想到潜在的业绩问题或审计障碍。白酒行业近年面临消费疲软压力，五粮液作为龙头企业的年报延期会放大市场对行业整体的悲观情绪。短期内预计股价承压，但因仅延期一天且无实质利空披露，跌幅有限。",
       "stop_loss_price": null,
       "take_profit": null,
       "kelly_fraction": null,
@@ -1463,12 +292,12 @@
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
-        "id": 447,
-        "summary": "泸州老窖2025年净利润同比下降19.61%，Q4净利润环比暴跌97%低于预期",
+        "id": 551,
+        "summary": "五粮液延期披露2025年报及2026年一季报至4月30日",
         "category": "earnings"
       },
       "news": {
-        "title": "泸州老窖：2025年净利润108.31亿元 同比下降19.61%",
+        "title": "五粮液：延期披露《2025年度报告》及《2026年第一季度报告》至2026年4月30日收市后",
         "source": "cailianshe",
         "lang": "zh",
         "url": null,
@@ -1476,18 +305,1104 @@
       }
     },
     {
-      "id": 148,
-      "made_at": "2026-04-28T13:52:06.825025",
-      "expire_at": "2026-05-01T13:52:06.825025",
+      "id": 221,
+      "made_at": "2026-04-28T14:16:35.872529",
+      "expire_at": "2026-05-05T14:16:35.872529",
       "verified_at": null,
       "asset": {
-        "symbol": "000568",
-        "name": "泸州老窖",
+        "symbol": "BIDU",
+        "name": "百度",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.8,
+      "horizon_days": 7,
+      "baseline_price": 126.19999694824219,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 126.20999908447266,
+      "current_pct": 0.007925623195197762,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "百度文心一言及相关AI生成工具在国内市场份额领先，网信部门对竞品的约谈和处罚预示整个行业将面临更严格的内容标识审查。中概股投资者对中国监管敏感度高，此类消息易触发避险抛售。检索结果中无对应因果链，为新模式。",
+      "stop_loss_price": 128.4716,
+      "take_profit": {
+        "prices": [
+          122.7926,
+          120.521,
+          117.1136
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.2716,
+        "atr": 1.1358
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 553,
+        "summary": "网信部门约谈剪映、猫箱App及即梦AI，因未落实AI生成内容标识规定",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 220,
+      "made_at": "2026-04-28T14:16:34.920556",
+      "expire_at": "2026-05-01T14:16:34.920556",
+      "verified_at": null,
+      "asset": {
+        "symbol": "002230.SZ",
+        "name": "科大讯飞",
         "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.0,
+      "horizon_days": 3,
+      "baseline_price": 49.17,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 49.17,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:18.239365",
+      "reasoning": "科大讯飞是国内AI语音和生成式AI的代表企业，旗下产品广泛涉及AI生成内容。此次监管对字节系产品（剪映、即梦AI）的严厉处罚释放信号，市场将对所有AIGC龙头的合规成本和政策风险重新定价。叠加公司一季度仍在亏损，短期情绪偏空。检索结果无相关因果链，属新模式。",
+      "stop_loss_price": 50.1534,
+      "take_profit": {
+        "prices": [
+          47.6949,
+          46.7115,
+          45.2364
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.9834,
+        "atr": 0.4917
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 553,
+        "summary": "网信部门约谈剪映、猫箱App及即梦AI，因未落实AI生成内容标识规定",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 219,
+      "made_at": "2026-04-28T14:16:31.612121",
+      "expire_at": "2026-05-01T14:16:31.612121",
+      "verified_at": null,
+      "asset": {
+        "symbol": "002415.SZ",
+        "name": "海康威视",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.5,
+      "horizon_days": 3,
+      "baseline_price": 34.65,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 34.65,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:21.015828",
+      "reasoning": "网信部门对剪映、猫箱及即梦AI的约谈和处罚表明监管层正加强对AI生成内容标识的执法力度。海康威视作为AI视觉龙头，其AI产品同样涉及内容生成与合成技术，市场将担忧类似监管风险蔓延，短期承压。这是新的监管执法模式，检索结果中未有匹配的因果链。",
+      "stop_loss_price": 35.1698,
+      "take_profit": {
+        "prices": [
+          33.8704,
+          33.3506,
+          32.571
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.5198,
+        "atr": 0.2599
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 553,
+        "summary": "网信部门约谈剪映、猫箱App及即梦AI，因未落实AI生成内容标识规定",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 218,
+      "made_at": "2026-04-28T14:16:14.032550",
+      "expire_at": "2026-05-05T14:16:14.032550",
+      "verified_at": null,
+      "asset": {
+        "symbol": "002236",
+        "name": "大华股份",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.8,
+      "horizon_days": 7,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "工信部智能编程研发和边缘算力建设政策将带动智能安防和AIoT领域投资，大华股份作为行业第二大厂商，在算力网和通信网建设中具备核心设备供应能力，有望分享政策红利。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 554,
+        "summary": "工信部将开展人工智能+软件专项行动，加快智能编程和算力建设",
+        "category": "tech"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 217,
+      "made_at": "2026-04-28T14:16:13.614950",
+      "expire_at": "2026-05-05T14:16:13.614950",
+      "verified_at": null,
+      "asset": {
+        "symbol": "002415",
+        "name": "海康威视",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.0,
+      "horizon_days": 7,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "政治局会议强调加强算力网、新一代通信网建设，工信部推进边缘算力布局，海康威视作为智能物联龙头，其边缘计算和AI视觉产品将受益于新基建投资加速。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 554,
+        "summary": "工信部将开展人工智能+软件专项行动，加快智能编程和算力建设",
+        "category": "tech"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 216,
+      "made_at": "2026-04-28T14:16:13.215889",
+      "expire_at": "2026-05-05T14:16:13.215889",
+      "verified_at": null,
+      "asset": {
+        "symbol": "688256",
+        "name": "寒武纪",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.5,
+      "horizon_days": 7,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "工信部明确开展'人工智能+软件'专项行动并加快算力布局，寒武纪作为国产AI芯片龙头将直接受益于算力基础设施建设需求提升。政策利好叠加公司刚公布高送转分红方案，短期有望获得资金关注。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 554,
+        "summary": "工信部将开展人工智能+软件专项行动，加快智能编程和算力建设",
+        "category": "tech"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 215,
+      "made_at": "2026-04-28T14:16:01.686632",
+      "expire_at": "2026-05-05T14:16:01.686632",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GOOGL",
+        "name": "谷歌",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.8,
+      "horizon_days": 7,
+      "baseline_price": 350.4800109863281,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 350.8500061035156,
+      "current_pct": 0.10556810819146349,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "OpenAI困境反映整个生成式AI赛道商业化挑战，谷歌作为AI竞争者同样面临变现压力审视。财报季前投资者将重新评估所有科技巨头的AI支出回报率，谷歌的AI投入也将被质疑。",
+      "stop_loss_price": 356.7887,
+      "take_profit": {
+        "prices": [
+          341.0171,
+          334.7084,
+          325.2455
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 6.3086,
+        "atr": 3.1543
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 555,
+        "summary": "OpenAI未能实现销售和新增用户目标，引发科技公司支出前景担忧",
+        "category": "tech"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 214,
+      "made_at": "2026-04-28T14:16:01.017335",
+      "expire_at": "2026-05-05T14:16:01.017335",
+      "verified_at": null,
+      "asset": {
+        "symbol": "NVDA",
+        "name": "英伟达",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 3.5,
+      "horizon_days": 7,
+      "baseline_price": 212.94000244140625,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 213.14999389648438,
+      "current_pct": 0.09861531542712713,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "OpenAI增长放缓意味着AI应用端需求可能低于预期，市场担忧科技公司将削减AI基础设施支出。英伟达作为AI算力核心供应商，其高估值建立在持续增长的AI投资预期上，该消息将引发对GPU需求前景的担忧。",
+      "stop_loss_price": 220.3929,
+      "take_profit": {
+        "prices": [
+          201.7607,
+          194.3078,
+          183.1284
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 7.4529,
+        "atr": 3.7265
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 555,
+        "summary": "OpenAI未能实现销售和新增用户目标，引发科技公司支出前景担忧",
+        "category": "tech"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 213,
+      "made_at": "2026-04-28T14:16:00.170803",
+      "expire_at": "2026-05-05T14:16:00.170803",
+      "verified_at": null,
+      "asset": {
+        "symbol": "MSFT",
+        "name": "微软",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.5,
+      "horizon_days": 7,
+      "baseline_price": 425.3399963378906,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 425.4045104980469,
+      "current_pct": 0.015167668385692999,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "OpenAI未达销售和用户增长目标，直接冲击其最大投资方微软。市场将重新评估微软在AI领域的巨额投入回报预期，云业务Azure的AI溢价逻辑受质疑。这是新出现的AI商业化遇阻信号，短期内将压制微软估值。",
+      "stop_loss_price": 435.9735,
+      "take_profit": {
+        "prices": [
+          409.3897,
+          398.7562,
+          382.806
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 10.6335,
+        "atr": 5.3167
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 555,
+        "summary": "OpenAI未能实现销售和新增用户目标，引发科技公司支出前景担忧",
+        "category": "tech"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 212,
+      "made_at": "2026-04-28T14:15:47.368061",
+      "expire_at": "2026-05-12T14:15:47.368061",
+      "verified_at": null,
+      "asset": {
+        "symbol": "2222.SR",
+        "name": "沙特阿美",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 3.8,
+      "horizon_days": 14,
+      "baseline_price": 27.459999084472656,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 27.459999084472656,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T00:00:00+03:00",
+      "reasoning": "阿联酋退出欧佩克+对沙特阿美形成双重利空：一是油价下跌直接压缩收入；二是OPEC+联盟分裂削弱沙特对全球油市的定价权。这是检索链(id:206)中沙特减产逻辑的反面案例——当联盟成员增产破坏协议时，沙特主导的供给管理策略失效，对沙特石油资产构成负面冲击。",
+      "stop_loss_price": 28.2532,
+      "take_profit": {
+        "prices": [
+          26.2703,
+          25.4771,
+          24.2874
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7932,
+        "atr": 0.3966
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.5172,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.5172,
+        "log_odds": 0.069,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.72,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 206,
+            "pattern": "沙特阿拉伯单边自愿减产",
+            "asset": "XLE",
+            "dir_hit_rate": 0.8,
+            "n_samples": 5,
+            "log_lr": 0.916,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "cited_link_ids": [
+        206
+      ],
+      "cited_chains": [
+        {
+          "id": 206,
+          "pattern": "沙特阿拉伯单边自愿减产",
+          "asset_symbol": "XLE",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.448,
+          "grade": "C",
+          "retail_edge": "mid"
+        }
+      ],
+      "event": {
+        "id": 556,
+        "summary": "阿联酋宣布5月1日起退出欧佩克+并将逐步提高石油产量",
+        "category": "energy"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 211,
+      "made_at": "2026-04-28T14:15:46.819134",
+      "expire_at": "2026-05-12T14:15:46.819134",
+      "verified_at": null,
+      "asset": {
+        "symbol": "XLE",
+        "name": "能源板块ETF",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 3.2,
+      "horizon_days": 14,
+      "baseline_price": 57.560001373291016,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 57.5,
+      "current_pct": -0.10424143825482508,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "阿联酋退出欧佩克+并增产，与检索到的沙特减产逻辑(id:206)形成镜像反转。减产推高能源股，增产则打压能源股。阿联酋增产预期将导致原油价格下跌，直接冲击美国能源板块公司的利润预期，XLE作为能源ETF将承受显著下行压力。",
+      "stop_loss_price": 58.3532,
+      "take_profit": {
+        "prices": [
+          56.3703,
+          55.5771,
+          54.3874
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7932,
+        "atr": 0.3966
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.5172,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.5172,
+        "log_odds": 0.069,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.72,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 206,
+            "pattern": "沙特阿拉伯单边自愿减产",
+            "asset": "XLE",
+            "dir_hit_rate": 0.8,
+            "n_samples": 5,
+            "log_lr": 0.916,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "cited_link_ids": [
+        206
+      ],
+      "cited_chains": [
+        {
+          "id": 206,
+          "pattern": "沙特阿拉伯单边自愿减产",
+          "asset_symbol": "XLE",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.448,
+          "grade": "C",
+          "retail_edge": "mid"
+        }
+      ],
+      "event": {
+        "id": 556,
+        "summary": "阿联酋宣布5月1日起退出欧佩克+并将逐步提高石油产量",
+        "category": "energy"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 210,
+      "made_at": "2026-04-28T14:15:46.519514",
+      "expire_at": "2026-05-12T14:15:46.519514",
+      "verified_at": null,
+      "asset": {
+        "symbol": "USO",
+        "name": "美国石油基金",
+        "class": "us_stock"
       },
       "direction": "down",
       "magnitude_pct": 4.5,
+      "horizon_days": 14,
+      "baseline_price": 139.90989685058594,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 139.7447052001953,
+      "current_pct": -0.11807002514413846,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "阿联酋宣布退出欧佩克+并逐步提高石油产量，这是对OPEC+减产协议的重大打击。阿联酋是OPEC第三大产油国，其退出意味着供给端将显著增加，打破现有减产平衡。与检索到的沙特减产推高油价的因果链(id:206)形成相反逻辑——成员国退出并增产将压低油价。市场预期全球原油供给过剩，油价承压下行。",
+      "stop_loss_price": 140.7031,
+      "take_profit": {
+        "prices": [
+          138.7202,
+          137.927,
+          136.7373
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7932,
+        "atr": 0.3966
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.5172,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.5172,
+        "log_odds": 0.069,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.72,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 206,
+            "pattern": "沙特阿拉伯单边自愿减产",
+            "asset": "XLE",
+            "dir_hit_rate": 0.8,
+            "n_samples": 5,
+            "log_lr": 0.916,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "cited_link_ids": [
+        206
+      ],
+      "cited_chains": [
+        {
+          "id": 206,
+          "pattern": "沙特阿拉伯单边自愿减产",
+          "asset_symbol": "XLE",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.448,
+          "grade": "C",
+          "retail_edge": "mid"
+        }
+      ],
+      "event": {
+        "id": 556,
+        "summary": "阿联酋宣布5月1日起退出欧佩克+并将逐步提高石油产量",
+        "category": "energy"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 209,
+      "made_at": "2026-04-28T14:15:31.228180",
+      "expire_at": "2026-05-05T14:15:31.228180",
+      "verified_at": null,
+      "asset": {
+        "symbol": "601857.SH",
+        "name": "中国石油",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.5,
+      "horizon_days": 7,
+      "baseline_price": 12.18,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 12.18,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:25.220888",
+      "reasoning": "阿联酋宣布自5月1日起退出欧佩克+并将逐步提高石油产量，这意味着OPEC+减产协议面临瓦解风险，全球原油供应预期增加将压制油价。中国石油作为国内最大油企，其盈利与油价高度相关，油价下行预期将对股价形成压力。",
+      "stop_loss_price": 12.4845,
+      "take_profit": {
+        "prices": [
+          11.7233,
+          11.4187,
+          10.962
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.3045,
+        "atr": 0.1522
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 557,
+        "summary": "比亚迪一季度营收同比下降11.82%，净利润同比大降55.38%",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 208,
+      "made_at": "2026-04-28T14:15:27.822183",
+      "expire_at": "2026-05-01T14:15:27.822183",
+      "verified_at": null,
+      "asset": {
+        "symbol": "300750.SZ",
+        "name": "宁德时代",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.0,
       "horizon_days": 3,
+      "baseline_price": 427.67,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 427.67,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:28.190240",
+      "reasoning": "比亚迪作为新能源汽车产业链核心企业，其业绩大幅下滑反映出整个新能源车市场价格战激烈、利润空间被压缩。宁德时代作为动力电池龙头，与比亚迪高度关联，市场会担忧电池环节同样面临降价压力，短期内存在联动下跌风险。",
+      "stop_loss_price": 436.2234,
+      "take_profit": {
+        "prices": [
+          414.8399,
+          406.2865,
+          393.4564
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 8.5534,
+        "atr": 4.2767
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 557,
+        "summary": "比亚迪一季度营收同比下降11.82%，净利润同比大降55.38%",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 207,
+      "made_at": "2026-04-28T14:15:24.530040",
+      "expire_at": "2026-05-01T14:15:24.530040",
+      "verified_at": null,
+      "asset": {
+        "symbol": "002594.SZ",
+        "name": "比亚迪A股",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 3.5,
+      "horizon_days": 3,
+      "baseline_price": 101.48,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 101.48,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:32.384833",
+      "reasoning": "比亚迪一季度净利润同比大降55.38%，营收下降11.82%，远低于市场预期。作为新能源汽车龙头，如此大幅度的业绩下滑将引发市场对其价格战影响和盈利能力的担忧。财报公布后短期内股价承压是大概率事件，参考历史上龙头公司业绩大幅低于预期后的市场反应。",
+      "stop_loss_price": 105.0318,
+      "take_profit": {
+        "prices": [
+          96.1523,
+          92.6005,
+          87.2728
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 3.5518,
+        "atr": 1.7759
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 557,
+        "summary": "比亚迪一季度营收同比下降11.82%，净利润同比大降55.38%",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 206,
+      "made_at": "2026-04-28T14:15:06.926866",
+      "expire_at": "2026-05-12T14:15:06.926866",
+      "verified_at": null,
+      "asset": {
+        "symbol": "CL=F",
+        "name": "WTI原油期货",
+        "class": "commodity"
+      },
+      "direction": "down",
+      "magnitude_pct": 4.0,
+      "horizon_days": 14,
+      "baseline_price": 99.91999816894531,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 99.86000061035156,
+      "current_pct": -0.06004559617015382,
+      "current_at": "2026-04-28T00:00:00-04:00",
+      "reasoning": "阿联酋宣布自5月1日起退出欧佩克及欧佩克+，并将逐步提高石油产量。这是继卡塔尔之后又一重要产油国退出，将打破欧佩克+的减产协议约束，增加全球原油供应预期。在当前全球经济增长放缓、需求疲软的背景下，供给端扩张将对油价形成显著下行压力。此为新发现的因果模式。",
+      "stop_loss_price": 103.9168,
+      "take_profit": {
+        "prices": [
+          93.9248,
+          89.928,
+          83.9328
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 3.9968,
+        "atr": 1.9984
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 558,
+        "summary": "章建平新进成为北方稀土第四大股东，持股2%",
+        "category": "other"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 205,
+      "made_at": "2026-04-28T14:15:06.234762",
+      "expire_at": "2026-05-01T14:15:06.234762",
+      "verified_at": null,
+      "asset": {
+        "symbol": "002594.SZ",
+        "name": "比亚迪A股",
+        "class": "a_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.5,
+      "horizon_days": 3,
+      "baseline_price": 101.48,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 101.48,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:32.384833",
+      "reasoning": "比亚迪一季度净利润同比大降55.38%，扣非净利润下滑49.24%，营收也同比下降近12%，业绩大幅低于市场预期。虽然比亚迪长期基本面仍被看好，但短期内业绩暴雷将引发机构调仓和散户抛售压力，股价面临回调风险。此为新发现的因果模式。",
+      "stop_loss_price": 104.017,
+      "take_profit": {
+        "prices": [
+          97.6745,
+          95.1375,
+          91.332
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.537,
+        "atr": 1.2685
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 558,
+        "summary": "章建平新进成为北方稀土第四大股东，持股2%",
+        "category": "other"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 204,
+      "made_at": "2026-04-28T14:15:02.765549",
+      "expire_at": "2026-05-05T14:15:02.765549",
+      "verified_at": null,
+      "asset": {
+        "symbol": "601111.SH",
+        "name": "北方稀土",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.5,
+      "horizon_days": 7,
+      "baseline_price": 6.66,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 6.66,
+      "current_pct": 0.0,
+      "current_at": "2026-04-28T14:17:35.910191",
+      "reasoning": "知名牛散章建平以超7200万股新进成为北方稀土第四大股东，持股比例达2%，这是一个强烈的市场信号。章建平作为A股市场知名游资大佬，其重仓买入行为往往被市场解读为对公司前景的看好。稀土作为战略资源，在中美贸易摩擦背景下具备政策支撑预期，叠加牛散背书效应，短期内将吸引跟风资金入场推高股价。此为新发现的因果模式。",
+      "stop_loss_price": 6.4269,
+      "take_profit": {
+        "prices": [
+          7.0097,
+          7.2428,
+          7.5924
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.2331,
+        "atr": 0.1166
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 558,
+        "summary": "章建平新进成为北方稀土第四大股东，持股2%",
+        "category": "other"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 203,
+      "made_at": "2026-04-28T14:14:43.462989",
+      "expire_at": "2026-05-12T14:14:43.462989",
+      "verified_at": null,
+      "asset": {
+        "symbol": "USOIL",
+        "name": "WTI原油",
+        "class": "commodity"
+      },
+      "direction": "down",
+      "magnitude_pct": 5.0,
+      "horizon_days": 14,
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -1498,7 +1413,7 @@
       "current_price": null,
       "current_pct": null,
       "current_at": null,
-      "reasoning": "泸州老窖2025年净利润同比下降19.61%，更关键的是Q4净利润仅0.68亿元，环比暴跌97%，远低于分析师预期的10.72亿元。白酒龙头业绩大幅低于预期通常引发市场对行业景气度和公司经营能力的担忧，短期内股价承压明显。这是一个新的因果模式，检索结果中无相关白酒/消费股业绩下滑的因果链。",
+      "reasoning": "阿联酋宣布自5月1日起退出欧佩克及欧佩克+并逐步提高石油产量，这将打破OPEC+减产联盟的团结，增加全球原油供给预期。产油国增产通常在中短期内对油价形成下行压力，尤其在当前全球需求增长放缓的背景下。此为新发现的因果模式，检索结果中无直接匹配。",
       "stop_loss_price": null,
       "take_profit": null,
       "kelly_fraction": null,
@@ -1507,12 +1422,12 @@
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
-        "id": 447,
-        "summary": "泸州老窖2025年净利润同比下降19.61%，Q4净利润环比暴跌97%低于预期",
+        "id": 559,
+        "summary": "多家公司发布一季报：工业富联净利润同比增长102.55%，翔鹭钨业同比增长2917%",
         "category": "earnings"
       },
       "news": {
-        "title": "泸州老窖：2025年净利润108.31亿元 同比下降19.61%",
+        "title": "财联社4月28日晚间新闻精选",
         "source": "cailianshe",
         "lang": "zh",
         "url": null,
@@ -1520,17 +1435,105 @@
       }
     },
     {
-      "id": 147,
-      "made_at": "2026-04-28T13:51:55.037597",
-      "expire_at": "2026-05-28T13:51:55.037597",
+      "id": 202,
+      "made_at": "2026-04-28T14:14:38.476083",
+      "expire_at": "2026-05-05T14:14:38.476083",
       "verified_at": null,
       "asset": {
-        "symbol": "600678",
-        "name": "四川金顶",
+        "symbol": "002842",
+        "name": "翔鹭钨业",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 6.0,
+      "horizon_days": 7,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "翔鹭钨业一季度净利润同比暴增2917%，从低基数实现业绩爆发式增长。钨作为战略稀有金属，在新能源和高端制造领域需求旺盛，叠加稀土概念近期受章建平等大资金关注，有色金属板块情绪偏暖。超预期业绩发布后，市场资金通常会在一周内快速反应。此为新发现的因果模式。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 559,
+        "summary": "多家公司发布一季报：工业富联净利润同比增长102.55%，翔鹭钨业同比增长2917%",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 201,
+      "made_at": "2026-04-28T14:14:38.118223",
+      "expire_at": "2026-05-05T14:14:38.118223",
+      "verified_at": null,
+      "asset": {
+        "symbol": "601138",
+        "name": "工业富联",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 4.5,
+      "horizon_days": 7,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "工业富联一季度净利润同比大增102.55%，达到105.95亿元，业绩超预期增长通常会在短期内带动股价上涨。结合政治局会议强调加强算力网建设、工信部推进人工智能专项行动，工业富联作为AI服务器代工龙头直接受益于算力需求扩张。此为基于业绩与政策双重利好的判断，检索结果中无匹配模式。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 559,
+        "summary": "多家公司发布一季报：工业富联净利润同比增长102.55%，翔鹭钨业同比增长2917%",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "财联社4月28日晚间新闻精选",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 200,
+      "made_at": "2026-04-28T14:14:23.727787",
+      "expire_at": "2026-05-28T14:14:23.727787",
+      "verified_at": null,
+      "asset": {
+        "symbol": "603729",
+        "name": "龙韵股份（ST龙韵）",
         "class": "a_stock"
       },
       "direction": "down",
-      "magnitude_pct": 12.0,
+      "magnitude_pct": 20.0,
       "horizon_days": 30,
       "baseline_price": null,
       "baseline_source": "live_fallback",
@@ -1542,7 +1545,7 @@
       "current_price": null,
       "current_pct": null,
       "current_at": null,
-      "reasoning": "被ST后公司融资能力受限、再融资受阻，且需在规定期限内整改内控缺陷，期间不确定性持续压制估值。历史上ST股票在戴帽后一个月内普遍累计下跌10%-20%。",
+      "reasoning": "ST实施后，公司面临融资受限、机构持仓被动减持、退市预期升温等多重压力。30日内市场情绪难以逆转，叠加5%涨跌幅限制下的缓慢出逃，预计累计跌幅可达20%左右。该因果链为A股ST警示的中期影响模式。",
       "stop_loss_price": null,
       "take_profit": null,
       "kelly_fraction": null,
@@ -1551,12 +1554,12 @@
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
-        "id": 448,
-        "summary": "四川金顶因内控审计否定意见被实施ST风险警示，4月30日复牌后简称变更为ST金顶",
+        "id": 560,
+        "summary": "龙韵股份因内控审计否定意见被实施ST风险警示，涨跌幅限制调整为5%",
         "category": "regulation"
       },
       "news": {
-        "title": "四川金顶：4月30日复牌后将被实施其他风险警示 简称变更为“ST金顶”",
+        "title": "龙韵股份：4月30日起实施其他风险警示 股票简称变更为“ST龙韵”",
         "source": "cailianshe",
         "lang": "zh",
         "url": null,
@@ -1564,17 +1567,17 @@
       }
     },
     {
-      "id": 146,
-      "made_at": "2026-04-28T13:51:55.035955",
-      "expire_at": "2026-05-05T13:51:55.035955",
+      "id": 199,
+      "made_at": "2026-04-28T14:14:23.311345",
+      "expire_at": "2026-05-05T14:14:23.311345",
       "verified_at": null,
       "asset": {
-        "symbol": "600678",
-        "name": "四川金顶",
+        "symbol": "603729",
+        "name": "龙韵股份（ST龙韵）",
         "class": "a_stock"
       },
       "direction": "down",
-      "magnitude_pct": 8.5,
+      "magnitude_pct": 12.0,
       "horizon_days": 7,
       "baseline_price": null,
       "baseline_source": "live_fallback",
@@ -1586,7 +1589,7 @@
       "current_price": null,
       "current_pct": null,
       "current_at": null,
-      "reasoning": "ST股票面临机构投资者被动减仓压力，公募基金等受限于投资范围需清仓ST股，短期内持续承压。此外内控否定意见可能暗示公司存在更深层治理问题，市场信心修复需要时间。",
+      "reasoning": "公司因内控审计被出具否定意见而被实施ST风险警示，这是A股市场明确的负面信号，通常引发机构和风险厌恶型投资者集中抛售。ST股票涨跌幅限制收窄至5%，流动性下降进一步加剧卖压。参考历史规律，ST实施首周往往连续跌停或大幅下挫，预计7日内跌幅约12%。此为A股ST警示的典型因果模式，检索结果中无直接匹配。",
       "stop_loss_price": null,
       "take_profit": null,
       "kelly_fraction": null,
@@ -1595,12 +1598,12 @@
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
-        "id": 448,
-        "summary": "四川金顶因内控审计否定意见被实施ST风险警示，4月30日复牌后简称变更为ST金顶",
+        "id": 560,
+        "summary": "龙韵股份因内控审计否定意见被实施ST风险警示，涨跌幅限制调整为5%",
         "category": "regulation"
       },
       "news": {
-        "title": "四川金顶：4月30日复牌后将被实施其他风险警示 简称变更为“ST金顶”",
+        "title": "龙韵股份：4月30日起实施其他风险警示 股票简称变更为“ST龙韵”",
         "source": "cailianshe",
         "lang": "zh",
         "url": null,
@@ -1608,18 +1611,18 @@
       }
     },
     {
-      "id": 145,
-      "made_at": "2026-04-28T13:51:54.569837",
-      "expire_at": "2026-04-29T13:51:54.569837",
+      "id": 198,
+      "made_at": "2026-04-28T14:14:13.280736",
+      "expire_at": "2026-05-05T14:14:13.280736",
       "verified_at": null,
       "asset": {
-        "symbol": "600678",
-        "name": "四川金顶",
+        "symbol": "512760",
+        "name": "半导体ETF",
         "class": "a_stock"
       },
-      "direction": "down",
-      "magnitude_pct": 4.8,
-      "horizon_days": 1,
+      "direction": "up",
+      "magnitude_pct": 2.0,
+      "horizon_days": 7,
       "baseline_price": null,
       "baseline_source": "live_fallback",
       "status": "pending",
@@ -1630,7 +1633,7 @@
       "current_price": null,
       "current_pct": null,
       "current_at": null,
-      "reasoning": "公司因内控审计报告被出具否定意见而被实施ST风险警示，复牌首日市场通常会对此负面信息进行集中定价。ST股票涨跌幅限制收窄至5%，投资者恐慌性抛售叠加流动性折价，预计复牌首日接近跌停。",
+      "reasoning": "存储芯片作为半导体重要细分领域，普冉股份业绩大超预期反映行业需求旺盛、价格上涨周期延续。这将提振市场对整体半导体板块的信心，带动半导体ETF整体上行。",
       "stop_loss_price": null,
       "take_profit": null,
       "kelly_fraction": null,
@@ -1639,12 +1642,12 @@
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
-        "id": 448,
-        "summary": "四川金顶因内控审计否定意见被实施ST风险警示，4月30日复牌后简称变更为ST金顶",
-        "category": "regulation"
+        "id": 561,
+        "summary": "普冉股份Q1净利润同比增长1260%，存储芯片价格上涨带动业绩大幅提升",
+        "category": "earnings"
       },
       "news": {
-        "title": "四川金顶：4月30日复牌后将被实施其他风险警示 简称变更为“ST金顶”",
+        "title": "普冉股份：第一季度净利润同比增长1260% 存储芯片产品单价提升",
         "source": "cailianshe",
         "lang": "zh",
         "url": null,
@@ -1652,17 +1655,61 @@
       }
     },
     {
-      "id": 144,
-      "made_at": "2026-04-28T13:51:45.270990",
-      "expire_at": "2026-05-01T13:51:45.270990",
+      "id": 197,
+      "made_at": "2026-04-28T14:14:12.863533",
+      "expire_at": "2026-05-05T14:14:12.863533",
       "verified_at": null,
       "asset": {
-        "symbol": "600519",
-        "name": "贵州茅台",
+        "symbol": "603986",
+        "name": "兆易创新",
         "class": "a_stock"
       },
-      "direction": "down",
-      "magnitude_pct": 1.5,
+      "direction": "up",
+      "magnitude_pct": 3.0,
+      "horizon_days": 7,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "普冉股份业绩大超预期确认存储芯片行业景气度持续向上，产品单价提升趋势明确。作为国内存储芯片龙头，兆易创新将受益于行业估值重估和市场对存储板块的关注度提升，存在联动上涨机会。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": null,
+      "resonance": null,
+      "cited_link_ids": [],
+      "cited_chains": [],
+      "event": {
+        "id": 561,
+        "summary": "普冉股份Q1净利润同比增长1260%，存储芯片价格上涨带动业绩大幅提升",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "普冉股份：第一季度净利润同比增长1260% 存储芯片产品单价提升",
+        "source": "cailianshe",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-04-28T00:00:00"
+      }
+    },
+    {
+      "id": 196,
+      "made_at": "2026-04-28T14:14:12.415676",
+      "expire_at": "2026-05-01T14:14:12.415676",
+      "verified_at": null,
+      "asset": {
+        "symbol": "688766",
+        "name": "普冉股份",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 5.5,
       "horizon_days": 3,
       "baseline_price": null,
       "baseline_source": "live_fallback",
@@ -1674,7 +1721,7 @@
       "current_price": null,
       "current_pct": null,
       "current_at": null,
-      "reasoning": "泸州老窖业绩大幅下滑将引发市场对整体白酒消费需求的担忧，作为白酒板块龙头的贵州茅台虽然基本面更稳健，但短期内也将受到板块情绪拖累，出现一定程度回调。",
+      "reasoning": "普冉股份Q1净利润同比增长1260%，环比增长69%，业绩大幅超预期。存储芯片价格上涨带动毛利率显著修复，规模效应提升净利率。如此强劲的业绩表现将直接刺激股价上涨，市场通常对超预期业绩在短期内给予积极反应。",
       "stop_loss_price": null,
       "take_profit": null,
       "kelly_fraction": null,
@@ -1683,12 +1730,12 @@
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
-        "id": 449,
-        "summary": "泸州老窖2026年Q1净利润同比下降19.25%，营收下降14.19%",
+        "id": 561,
+        "summary": "普冉股份Q1净利润同比增长1260%，存储芯片价格上涨带动业绩大幅提升",
         "category": "earnings"
       },
       "news": {
-        "title": "泸州老窖：第一季度净利润同比下降19.25%",
+        "title": "普冉股份：第一季度净利润同比增长1260% 存储芯片产品单价提升",
         "source": "cailianshe",
         "lang": "zh",
         "url": null,

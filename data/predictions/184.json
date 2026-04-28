@@ -1,0 +1,57 @@
+{
+  "id": 184,
+  "made_at": "2026-04-28T14:13:01.630619",
+  "expire_at": "2026-05-05T14:13:01.630619",
+  "verified_at": null,
+  "asset": {
+    "symbol": "603165.SS",
+    "name": "荣晟环保",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.8,
+  "horizon_days": 7,
+  "baseline_price": 17.21,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 17.21,
+  "current_pct": 0.0,
+  "current_at": "2026-04-28T14:17:43.135585",
+  "reasoning": "中国摩托车产业国际化发展将带动上游零部件供应链需求。钱江摩托作为A股上市的主要摩托车整车制造商，参与国际赛事有助于提升品牌溢价和出口订单。此为新因果模式。",
+  "stop_loss_price": 16.9002,
+  "take_profit": {
+    "prices": [
+      17.6747,
+      17.9845,
+      18.4491
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.3098,
+    "atr": 0.1549
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 567,
+    "summary": "重庆沙坪坝区推动中国摩托车产业发展，助力国产摩托车参与国际赛事",
+    "category": "other"
+  },
+  "news": {
+    "title": "重庆沙坪坝助力中国摩托驰骋世界赛场",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633731706092372004/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633731706092372004%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%87%8D%E5%BA%86%E6%B2%99%E5%9D%AA%E5%9D%9D%E5%8A%A9%E5%8A%9B%E4%B8%AD%E5%9B%BD%E6%91%A9%E6%89%98%E9%A9%B0%E9%AA%8B%E4%B8%96%E7%95%8C%E8%B5%9B%E5%9C%BA%22%7D&rank=&style_id=40132&topic_id=7633731706092372004",
+    "published_at": "2026-04-28T14:00:03.173709"
+  }
+}

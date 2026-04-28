@@ -1,0 +1,44 @@
+{
+  "id": 217,
+  "made_at": "2026-04-28T14:16:13.614950",
+  "expire_at": "2026-05-05T14:16:13.614950",
+  "verified_at": null,
+  "asset": {
+    "symbol": "002415",
+    "name": "海康威视",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.0,
+  "horizon_days": 7,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "政治局会议强调加强算力网、新一代通信网建设，工信部推进边缘算力布局，海康威视作为智能物联龙头，其边缘计算和AI视觉产品将受益于新基建投资加速。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 554,
+    "summary": "工信部将开展人工智能+软件专项行动，加快智能编程和算力建设",
+    "category": "tech"
+  },
+  "news": {
+    "title": "财联社4月28日晚间新闻精选",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

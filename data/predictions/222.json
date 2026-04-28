@@ -1,0 +1,44 @@
+{
+  "id": 222,
+  "made_at": "2026-04-28T14:16:59.582096",
+  "expire_at": "2026-05-01T14:16:59.582096",
+  "verified_at": null,
+  "asset": {
+    "symbol": "000858",
+    "name": "五粮液",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 1.2,
+  "horizon_days": 3,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "年报延期披露通常引发市场对公司财务状况的担忧，即使官方解释为'完善复核工作'，投资者仍会联想到潜在的业绩问题或审计障碍。白酒行业近年面临消费疲软压力，五粮液作为龙头企业的年报延期会放大市场对行业整体的悲观情绪。短期内预计股价承压，但因仅延期一天且无实质利空披露，跌幅有限。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 551,
+    "summary": "五粮液延期披露2025年报及2026年一季报至4月30日",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "五粮液：延期披露《2025年度报告》及《2026年第一季度报告》至2026年4月30日收市后",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

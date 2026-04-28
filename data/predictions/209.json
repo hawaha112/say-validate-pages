@@ -1,0 +1,57 @@
+{
+  "id": 209,
+  "made_at": "2026-04-28T14:15:31.228180",
+  "expire_at": "2026-05-05T14:15:31.228180",
+  "verified_at": null,
+  "asset": {
+    "symbol": "601857.SH",
+    "name": "中国石油",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 2.5,
+  "horizon_days": 7,
+  "baseline_price": 12.18,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 12.18,
+  "current_pct": 0.0,
+  "current_at": "2026-04-28T14:17:25.220888",
+  "reasoning": "阿联酋宣布自5月1日起退出欧佩克+并将逐步提高石油产量，这意味着OPEC+减产协议面临瓦解风险，全球原油供应预期增加将压制油价。中国石油作为国内最大油企，其盈利与油价高度相关，油价下行预期将对股价形成压力。",
+  "stop_loss_price": 12.4845,
+  "take_profit": {
+    "prices": [
+      11.7233,
+      11.4187,
+      10.962
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.3045,
+    "atr": 0.1522
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 557,
+    "summary": "比亚迪一季度营收同比下降11.82%，净利润同比大降55.38%",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "财联社4月28日晚间新闻精选",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

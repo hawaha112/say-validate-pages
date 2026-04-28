@@ -1,0 +1,57 @@
+{
+  "id": 215,
+  "made_at": "2026-04-28T14:16:01.686632",
+  "expire_at": "2026-05-05T14:16:01.686632",
+  "verified_at": null,
+  "asset": {
+    "symbol": "GOOGL",
+    "name": "谷歌",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 1.8,
+  "horizon_days": 7,
+  "baseline_price": 350.4800109863281,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 350.8500061035156,
+  "current_pct": 0.10556810819146349,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "OpenAI困境反映整个生成式AI赛道商业化挑战，谷歌作为AI竞争者同样面临变现压力审视。财报季前投资者将重新评估所有科技巨头的AI支出回报率，谷歌的AI投入也将被质疑。",
+  "stop_loss_price": 356.7887,
+  "take_profit": {
+    "prices": [
+      341.0171,
+      334.7084,
+      325.2455
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 6.3086,
+    "atr": 3.1543
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 555,
+    "summary": "OpenAI未能实现销售和新增用户目标，引发科技公司支出前景担忧",
+    "category": "tech"
+  },
+  "news": {
+    "title": "财联社4月28日晚间新闻精选",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

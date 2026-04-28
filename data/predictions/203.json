@@ -1,0 +1,44 @@
+{
+  "id": 203,
+  "made_at": "2026-04-28T14:14:43.462989",
+  "expire_at": "2026-05-12T14:14:43.462989",
+  "verified_at": null,
+  "asset": {
+    "symbol": "USOIL",
+    "name": "WTI原油",
+    "class": "commodity"
+  },
+  "direction": "down",
+  "magnitude_pct": 5.0,
+  "horizon_days": 14,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "阿联酋宣布自5月1日起退出欧佩克及欧佩克+并逐步提高石油产量，这将打破OPEC+减产联盟的团结，增加全球原油供给预期。产油国增产通常在中短期内对油价形成下行压力，尤其在当前全球需求增长放缓的背景下。此为新发现的因果模式，检索结果中无直接匹配。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 559,
+    "summary": "多家公司发布一季报：工业富联净利润同比增长102.55%，翔鹭钨业同比增长2917%",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "财联社4月28日晚间新闻精选",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

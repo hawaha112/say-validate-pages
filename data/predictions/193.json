@@ -1,0 +1,57 @@
+{
+  "id": 193,
+  "made_at": "2026-04-28T14:13:52.303860",
+  "expire_at": "2026-05-05T14:13:52.303860",
+  "verified_at": null,
+  "asset": {
+    "symbol": "GOOGL",
+    "name": "谷歌",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 0.5,
+  "horizon_days": 7,
+  "baseline_price": 349.9800109863281,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 350.8500061035156,
+  "current_pct": 0.24858423049237693,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "OpenAI进军广告业务对谷歌核心搜索广告业务构成潜在威胁。AI驱动的广告分发可能侵蚀谷歌在数字广告市场的份额，市场会开始计入这一竞争风险。",
+  "stop_loss_price": 351.7299,
+  "take_profit": {
+    "prices": [
+      347.3552,
+      345.6053,
+      342.9804
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 1.7499,
+    "atr": 0.875
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 563,
+    "summary": "OpenAI回应称企业和广告业务增长，此前被曝未达销售和用户增长目标",
+    "category": "tech"
+  },
+  "news": {
+    "title": "财联社4月28日电，OpenAI表示，企业和广告业务正在增长。此前，有报道称OpenAI近期未能实现销售和新增用户目标。",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

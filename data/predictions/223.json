@@ -1,0 +1,44 @@
+{
+  "id": 223,
+  "made_at": "2026-04-28T14:17:14.209980",
+  "expire_at": "2026-05-12T14:17:14.209980",
+  "verified_at": null,
+  "asset": {
+    "symbol": "SASOL.JO",
+    "name": "萨索尔",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 2.5,
+  "horizon_days": 14,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "南非延长柴油税零税率并减半汽油税，将直接削减燃料零售价格，降低南非国内燃油需求的边际利润。萨索尔作为南非最大的合成燃料生产商，其燃料销售利润率将受到政府补贴导致的价格压制影响。这是一个本地政策对本地能源企业的直接冲击。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 550,
+    "summary": "南非延长柴油燃料税零税率至6月2日，汽油税6月起减半",
+    "category": "energy"
+  },
+  "news": {
+    "title": "南非政府表示，柴油燃料税将维持为零，直到6月2日。汽油税将从六月起减半。",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T22:00:01"
+  }
+}

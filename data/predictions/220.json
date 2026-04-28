@@ -1,0 +1,57 @@
+{
+  "id": 220,
+  "made_at": "2026-04-28T14:16:34.920556",
+  "expire_at": "2026-05-01T14:16:34.920556",
+  "verified_at": null,
+  "asset": {
+    "symbol": "002230.SZ",
+    "name": "科大讯飞",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 2.0,
+  "horizon_days": 3,
+  "baseline_price": 49.17,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 49.17,
+  "current_pct": 0.0,
+  "current_at": "2026-04-28T14:17:18.239365",
+  "reasoning": "科大讯飞是国内AI语音和生成式AI的代表企业，旗下产品广泛涉及AI生成内容。此次监管对字节系产品（剪映、即梦AI）的严厉处罚释放信号，市场将对所有AIGC龙头的合规成本和政策风险重新定价。叠加公司一季度仍在亏损，短期情绪偏空。检索结果无相关因果链，属新模式。",
+  "stop_loss_price": 50.1534,
+  "take_profit": {
+    "prices": [
+      47.6949,
+      46.7115,
+      45.2364
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.9834,
+    "atr": 0.4917
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 553,
+    "summary": "网信部门约谈剪映、猫箱App及即梦AI，因未落实AI生成内容标识规定",
+    "category": "regulation"
+  },
+  "news": {
+    "title": "财联社4月28日晚间新闻精选",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

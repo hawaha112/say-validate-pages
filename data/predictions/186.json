@@ -1,0 +1,57 @@
+{
+  "id": 186,
+  "made_at": "2026-04-28T14:13:23.977755",
+  "expire_at": "2026-05-12T14:13:23.977755",
+  "verified_at": null,
+  "asset": {
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
+  },
+  "direction": "down",
+  "magnitude_pct": 3.0,
+  "horizon_days": 14,
+  "baseline_price": 4580.2998046875,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 4588.2001953125,
+  "current_pct": 0.17248632102454745,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "国际黄金期货对央行售金消息更为敏感，流动性更高意味着价格调整更快。多国央行同时抛售形成供给冲击，期货市场的投机资金可能加速撤离黄金多头头寸，放大跌幅。历史上央行协调售金（如1999年华盛顿协议前）曾导致金价大幅波动。",
+  "stop_loss_price": 4717.7088,
+  "take_profit": {
+    "prices": [
+      4374.1863,
+      4236.7773,
+      4030.6638
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 137.409,
+    "atr": 68.7045
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 566,
+    "summary": "多国央行近期集中抛售黄金储备",
+    "category": "monetary_policy"
+  },
+  "news": {
+    "title": "多国央行为何近期选择抛售黄金",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633715441977789958/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633715441977789958%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A4%9A%E5%9B%BD%E5%A4%AE%E8%A1%8C%E4%B8%BA%E4%BD%95%E8%BF%91%E6%9C%9F%E9%80%89%E6%8B%A9%E6%8A%9B%E5%94%AE%E9%BB%84%E9%87%91%22%7D&rank=&style_id=40132&topic_id=7633715441977789958",
+    "published_at": "2026-04-28T14:00:03.173723"
+  }
+}

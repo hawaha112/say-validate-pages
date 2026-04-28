@@ -1,0 +1,57 @@
+{
+  "id": 214,
+  "made_at": "2026-04-28T14:16:01.017335",
+  "expire_at": "2026-05-05T14:16:01.017335",
+  "verified_at": null,
+  "asset": {
+    "symbol": "NVDA",
+    "name": "英伟达",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 3.5,
+  "horizon_days": 7,
+  "baseline_price": 212.94000244140625,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 213.14999389648438,
+  "current_pct": 0.09861531542712713,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "OpenAI增长放缓意味着AI应用端需求可能低于预期，市场担忧科技公司将削减AI基础设施支出。英伟达作为AI算力核心供应商，其高估值建立在持续增长的AI投资预期上，该消息将引发对GPU需求前景的担忧。",
+  "stop_loss_price": 220.3929,
+  "take_profit": {
+    "prices": [
+      201.7607,
+      194.3078,
+      183.1284
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 7.4529,
+    "atr": 3.7265
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 555,
+    "summary": "OpenAI未能实现销售和新增用户目标，引发科技公司支出前景担忧",
+    "category": "tech"
+  },
+  "news": {
+    "title": "财联社4月28日晚间新闻精选",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

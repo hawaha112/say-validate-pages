@@ -1,0 +1,44 @@
+{
+  "id": 218,
+  "made_at": "2026-04-28T14:16:14.032550",
+  "expire_at": "2026-05-05T14:16:14.032550",
+  "verified_at": null,
+  "asset": {
+    "symbol": "002236",
+    "name": "大华股份",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.8,
+  "horizon_days": 7,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "工信部智能编程研发和边缘算力建设政策将带动智能安防和AIoT领域投资，大华股份作为行业第二大厂商，在算力网和通信网建设中具备核心设备供应能力，有望分享政策红利。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 554,
+    "summary": "工信部将开展人工智能+软件专项行动，加快智能编程和算力建设",
+    "category": "tech"
+  },
+  "news": {
+    "title": "财联社4月28日晚间新闻精选",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

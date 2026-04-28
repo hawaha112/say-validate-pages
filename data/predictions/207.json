@@ -1,0 +1,57 @@
+{
+  "id": 207,
+  "made_at": "2026-04-28T14:15:24.530040",
+  "expire_at": "2026-05-01T14:15:24.530040",
+  "verified_at": null,
+  "asset": {
+    "symbol": "002594.SZ",
+    "name": "比亚迪A股",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 3.5,
+  "horizon_days": 3,
+  "baseline_price": 101.48,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 101.48,
+  "current_pct": 0.0,
+  "current_at": "2026-04-28T14:17:32.384833",
+  "reasoning": "比亚迪一季度净利润同比大降55.38%，营收下降11.82%，远低于市场预期。作为新能源汽车龙头，如此大幅度的业绩下滑将引发市场对其价格战影响和盈利能力的担忧。财报公布后短期内股价承压是大概率事件，参考历史上龙头公司业绩大幅低于预期后的市场反应。",
+  "stop_loss_price": 105.0318,
+  "take_profit": {
+    "prices": [
+      96.1523,
+      92.6005,
+      87.2728
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 3.5518,
+    "atr": 1.7759
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 557,
+    "summary": "比亚迪一季度营收同比下降11.82%，净利润同比大降55.38%",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "财联社4月28日晚间新闻精选",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

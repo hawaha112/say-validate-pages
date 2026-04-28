@@ -1,0 +1,57 @@
+{
+  "id": 178,
+  "made_at": "2026-04-28T14:12:10.391251",
+  "expire_at": "2026-05-05T14:12:10.391251",
+  "verified_at": null,
+  "asset": {
+    "symbol": "CL=F",
+    "name": "WTI原油期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.5,
+  "horizon_days": 7,
+  "baseline_price": 99.58000183105469,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 99.86000061035156,
+  "current_pct": 0.2811797290101631,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "伊朗是全球主要产油国，美伊紧张关系升温时市场会担忧霍尔木兹海峡通行风险和潜在供应中断。普京力挺伊朗的表态加剧了对抗预期，推升原油风险溢价。",
+  "stop_loss_price": 96.0947,
+  "take_profit": {
+    "prices": [
+      104.808,
+      108.2933,
+      113.5212
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 3.4853,
+    "atr": 1.7427
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 574,
+    "summary": "普京公开赞扬伊朗抵抗美国，美伊地缘紧张关系升温",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "普京：全世界都钦佩伊朗人民抵抗美国",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7632898398869474879/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227632898398869474879%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%99%AE%E4%BA%AC%EF%BC%9A%E5%85%A8%E4%B8%96%E7%95%8C%E9%83%BD%E9%92%A6%E4%BD%A9%E4%BC%8A%E6%9C%97%E4%BA%BA%E6%B0%91%E6%8A%B5%E6%8A%97%E7%BE%8E%E5%9B%BD%22%7D&rank=&style_id=40132&topic_id=7632898398869474879",
+    "published_at": "2026-04-28T14:00:03.173685"
+  }
+}

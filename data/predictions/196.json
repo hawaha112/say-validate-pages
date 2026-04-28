@@ -1,0 +1,44 @@
+{
+  "id": 196,
+  "made_at": "2026-04-28T14:14:12.415676",
+  "expire_at": "2026-05-01T14:14:12.415676",
+  "verified_at": null,
+  "asset": {
+    "symbol": "688766",
+    "name": "普冉股份",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 5.5,
+  "horizon_days": 3,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "普冉股份Q1净利润同比增长1260%，环比增长69%，业绩大幅超预期。存储芯片价格上涨带动毛利率显著修复，规模效应提升净利率。如此强劲的业绩表现将直接刺激股价上涨，市场通常对超预期业绩在短期内给予积极反应。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 561,
+    "summary": "普冉股份Q1净利润同比增长1260%，存储芯片价格上涨带动业绩大幅提升",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "普冉股份：第一季度净利润同比增长1260% 存储芯片产品单价提升",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

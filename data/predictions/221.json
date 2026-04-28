@@ -1,0 +1,57 @@
+{
+  "id": 221,
+  "made_at": "2026-04-28T14:16:35.872529",
+  "expire_at": "2026-05-05T14:16:35.872529",
+  "verified_at": null,
+  "asset": {
+    "symbol": "BIDU",
+    "name": "百度",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 1.8,
+  "horizon_days": 7,
+  "baseline_price": 126.19999694824219,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 126.20999908447266,
+  "current_pct": 0.007925623195197762,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "百度文心一言及相关AI生成工具在国内市场份额领先，网信部门对竞品的约谈和处罚预示整个行业将面临更严格的内容标识审查。中概股投资者对中国监管敏感度高，此类消息易触发避险抛售。检索结果中无对应因果链，为新模式。",
+  "stop_loss_price": 128.4716,
+  "take_profit": {
+    "prices": [
+      122.7926,
+      120.521,
+      117.1136
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 2.2716,
+    "atr": 1.1358
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 553,
+    "summary": "网信部门约谈剪映、猫箱App及即梦AI，因未落实AI生成内容标识规定",
+    "category": "regulation"
+  },
+  "news": {
+    "title": "财联社4月28日晚间新闻精选",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

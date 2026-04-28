@@ -1,0 +1,44 @@
+{
+  "id": 194,
+  "made_at": "2026-04-28T14:14:01.409429",
+  "expire_at": "2026-05-01T14:14:01.409429",
+  "verified_at": null,
+  "asset": {
+    "symbol": "688268",
+    "name": "华特气体",
+    "class": "a_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 2.5,
+  "horizon_days": 3,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "华特气体Q1净利润同比下降23.70%，虽然营收增长13.70%，但利润率明显收缩，表明成本压力或竞争加剧。尽管环比Q4增长106%，但Q4本身基数较低（仅0.16亿），市场通常更关注同比表现。业绩低于预期往往导致短期股价承压。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 562,
+    "summary": "华特气体Q1净利润3388万元同比下降23.70%，但环比增长106%",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "华特气体：第一季度净利润3388万元 同比下降23.70%",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

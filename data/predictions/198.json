@@ -1,0 +1,44 @@
+{
+  "id": 198,
+  "made_at": "2026-04-28T14:14:13.280736",
+  "expire_at": "2026-05-05T14:14:13.280736",
+  "verified_at": null,
+  "asset": {
+    "symbol": "512760",
+    "name": "半导体ETF",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.0,
+  "horizon_days": 7,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "存储芯片作为半导体重要细分领域，普冉股份业绩大超预期反映行业需求旺盛、价格上涨周期延续。这将提振市场对整体半导体板块的信心，带动半导体ETF整体上行。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 561,
+    "summary": "普冉股份Q1净利润同比增长1260%，存储芯片价格上涨带动业绩大幅提升",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "普冉股份：第一季度净利润同比增长1260% 存储芯片产品单价提升",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

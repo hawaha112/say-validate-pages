@@ -1,0 +1,44 @@
+{
+  "id": 202,
+  "made_at": "2026-04-28T14:14:38.476083",
+  "expire_at": "2026-05-05T14:14:38.476083",
+  "verified_at": null,
+  "asset": {
+    "symbol": "002842",
+    "name": "翔鹭钨业",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 6.0,
+  "horizon_days": 7,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "翔鹭钨业一季度净利润同比暴增2917%，从低基数实现业绩爆发式增长。钨作为战略稀有金属，在新能源和高端制造领域需求旺盛，叠加稀土概念近期受章建平等大资金关注，有色金属板块情绪偏暖。超预期业绩发布后，市场资金通常会在一周内快速反应。此为新发现的因果模式。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 559,
+    "summary": "多家公司发布一季报：工业富联净利润同比增长102.55%，翔鹭钨业同比增长2917%",
+    "category": "earnings"
+  },
+  "news": {
+    "title": "财联社4月28日晚间新闻精选",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

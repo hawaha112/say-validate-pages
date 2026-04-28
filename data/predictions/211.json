@@ -1,0 +1,90 @@
+{
+  "id": 211,
+  "made_at": "2026-04-28T14:15:46.819134",
+  "expire_at": "2026-05-12T14:15:46.819134",
+  "verified_at": null,
+  "asset": {
+    "symbol": "XLE",
+    "name": "能源板块ETF",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 3.2,
+  "horizon_days": 14,
+  "baseline_price": 57.560001373291016,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 57.5,
+  "current_pct": -0.10424143825482508,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "阿联酋退出欧佩克+并增产，与检索到的沙特减产逻辑(id:206)形成镜像反转。减产推高能源股，增产则打压能源股。阿联酋增产预期将导致原油价格下跌，直接冲击美国能源板块公司的利润预期，XLE作为能源ETF将承受显著下行压力。",
+  "stop_loss_price": 58.3532,
+  "take_profit": {
+    "prices": [
+      56.3703,
+      55.5771,
+      54.3874
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.7932,
+    "atr": 0.3966
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.5172,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.5172,
+    "log_odds": 0.069,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 1.72,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 206,
+        "pattern": "沙特阿拉伯单边自愿减产",
+        "asset": "XLE",
+        "dir_hit_rate": 0.8,
+        "n_samples": 5,
+        "log_lr": 0.916,
+        "grade": "C"
+      }
+    ],
+    "note": ""
+  },
+  "cited_link_ids": [
+    206
+  ],
+  "cited_chains": [
+    {
+      "id": 206,
+      "pattern": "沙特阿拉伯单边自愿减产",
+      "asset_symbol": "XLE",
+      "direction": "up",
+      "horizon_days": 7,
+      "magnitude_pct": 1.448,
+      "grade": "C",
+      "retail_edge": "mid"
+    }
+  ],
+  "event": {
+    "id": 556,
+    "summary": "阿联酋宣布5月1日起退出欧佩克+并将逐步提高石油产量",
+    "category": "energy"
+  },
+  "news": {
+    "title": "财联社4月28日晚间新闻精选",
+    "source": "cailianshe",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-04-28T00:00:00"
+  }
+}

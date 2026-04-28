@@ -1,0 +1,44 @@
+{
+  "id": 185,
+  "made_at": "2026-04-28T14:13:23.406442",
+  "expire_at": "2026-05-12T14:13:23.406442",
+  "verified_at": null,
+  "asset": {
+    "symbol": "AU9999.SH",
+    "name": "上海金Au99.99",
+    "class": "commodity"
+  },
+  "direction": "down",
+  "magnitude_pct": 2.5,
+  "horizon_days": 14,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "多国央行集中抛售黄金将直接增加市场供给，打压金价。央行作为黄金市场重要的长期持有者，其抛售行为往往被市场解读为对黄金避险价值的信心下降，容易引发跟风卖盘。此外，央行抛金通常意味着其转向增持其他储备资产（如美元或国债），反映出对全球经济或利率环境的重新评估。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": null,
+  "resonance": null,
+  "cited_link_ids": [],
+  "cited_chains": [],
+  "event": {
+    "id": 566,
+    "summary": "多国央行近期集中抛售黄金储备",
+    "category": "monetary_policy"
+  },
+  "news": {
+    "title": "多国央行为何近期选择抛售黄金",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633715441977789958/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633715441977789958%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A4%9A%E5%9B%BD%E5%A4%AE%E8%A1%8C%E4%B8%BA%E4%BD%95%E8%BF%91%E6%9C%9F%E9%80%89%E6%8B%A9%E6%8A%9B%E5%94%AE%E9%BB%84%E9%87%91%22%7D&rank=&style_id=40132&topic_id=7633715441977789958",
+    "published_at": "2026-04-28T14:00:03.173723"
+  }
+}

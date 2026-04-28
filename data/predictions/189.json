@@ -1,0 +1,90 @@
+{
+  "id": 189,
+  "made_at": "2026-04-28T14:13:38.323826",
+  "expire_at": "2026-05-05T14:13:38.323826",
+  "verified_at": null,
+  "asset": {
+    "symbol": "XLE",
+    "name": "能源板块ETF",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 1.2,
+  "horizon_days": 7,
+  "baseline_price": 57.5,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 57.5,
+  "current_pct": 0.0,
+  "current_at": "2026-04-28T00:00:00-04:00",
+  "reasoning": "油轮突破封锁缓解原油供应紧张预期，与检索到的沙特减产推升XLE的逻辑形成对冲。供应增加将压低油价预期，进而拖累能源股估值。参考id=206的因果链，但方向相反。",
+  "stop_loss_price": 58.2932,
+  "take_profit": {
+    "prices": [
+      56.3103,
+      55.5171,
+      54.3274
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.7932,
+    "atr": 0.3966
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.5172,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.5172,
+    "log_odds": 0.069,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 1.72,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 206,
+        "pattern": "沙特阿拉伯单边自愿减产",
+        "asset": "XLE",
+        "dir_hit_rate": 0.8,
+        "n_samples": 5,
+        "log_lr": 0.916,
+        "grade": "C"
+      }
+    ],
+    "note": ""
+  },
+  "cited_link_ids": [
+    206
+  ],
+  "cited_chains": [
+    {
+      "id": 206,
+      "pattern": "沙特阿拉伯单边自愿减产",
+      "asset_symbol": "XLE",
+      "direction": "up",
+      "horizon_days": 7,
+      "magnitude_pct": 1.448,
+      "grade": "C",
+      "retail_edge": "mid"
+    }
+  ],
+  "event": {
+    "id": 564,
+    "summary": "阿联酋油轮突破美伊双重封锁，可能缓解原油供应紧张",
+    "category": "energy"
+  },
+  "news": {
+    "title": "媒体：已有阿联酋油轮突破美伊双重封锁",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7633792873594375730/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227633792873594375730%22%2C%22hot_board_impr_id%22%3A%22202604282200029975C5499994D2347929%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%AA%92%E4%BD%93%EF%BC%9A%E5%B7%B2%E6%9C%89%E9%98%BF%E8%81%94%E9%85%8B%E6%B2%B9%E8%BD%AE%E7%AA%81%E7%A0%B4%E7%BE%8E%E4%BC%8A%E5%8F%8C%E9%87%8D%E5%B0%81%E9%94%81%22%7D&rank=&style_id=40132&topic_id=7633792873594375730",
+    "published_at": "2026-04-28T14:00:03.173744"
+  }
+}

@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 1.369,
-  "current_pct": -0.14587892049598847,
-  "current_at": "2026-04-29T02:16:21.687069",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "作为军工板块的指数基金，军工ETF会直接受益于市场对国防投入增加的预期。美媒的报道实际上是对中国军工技术进步的一种认可，这类消息往往会在短期内推升整个军工板块估值。",
   "stop_loss_price": 1.3326,
   "take_profit": {

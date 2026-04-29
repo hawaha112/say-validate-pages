@@ -1,0 +1,2413 @@
+{
+  "summary": {
+    "total_trades": 1897,
+    "final_equity_1pct_risk": 546.2349,
+    "total_return_pct": 54523.49
+  },
+  "overall": {
+    "n": 1897,
+    "win_rate": 0.586,
+    "mean_R": 0.339,
+    "std_R": 1.128,
+    "sharpe_annualized_proxy": 2.17,
+    "profit_factor": 2.06,
+    "max_drawdown_R": 16.02,
+    "outcome_distribution": {
+      "expire": 916,
+      "tp1": 400,
+      "stop": 482,
+      "tp2": 73,
+      "tp3": 26
+    },
+    "avg_baseline_pct": -0.271,
+    "avg_realized_pct": 0.606,
+    "alpha_vs_buyhold_pct": 0.877
+  },
+  "by_asset_class": {
+    "fx": {
+      "n": 296,
+      "win_rate": 0.608,
+      "mean_R": 0.4,
+      "std_R": 1.102,
+      "sharpe_annualized_proxy": 2.62,
+      "profit_factor": 2.47,
+      "max_drawdown_R": 7.27,
+      "outcome_distribution": {
+        "expire": 162,
+        "tp1": 57,
+        "stop": 62,
+        "tp2": 10,
+        "tp3": 5
+      },
+      "avg_baseline_pct": 0.237,
+      "avg_realized_pct": 0.154,
+      "alpha_vs_buyhold_pct": -0.083
+    },
+    "us_stock": {
+      "n": 989,
+      "win_rate": 0.585,
+      "mean_R": 0.332,
+      "std_R": 1.119,
+      "sharpe_annualized_proxy": 2.14,
+      "profit_factor": 2.03,
+      "max_drawdown_R": 19.17,
+      "outcome_distribution": {
+        "tp1": 207,
+        "expire": 476,
+        "stop": 252,
+        "tp2": 44,
+        "tp3": 10
+      },
+      "avg_baseline_pct": -0.171,
+      "avg_realized_pct": 0.655,
+      "alpha_vs_buyhold_pct": 0.826
+    },
+    "commodity": {
+      "n": 348,
+      "win_rate": 0.572,
+      "mean_R": 0.375,
+      "std_R": 1.216,
+      "sharpe_annualized_proxy": 2.23,
+      "profit_factor": 2.08,
+      "max_drawdown_R": 13.76,
+      "outcome_distribution": {
+        "expire": 127,
+        "stop": 104,
+        "tp1": 99,
+        "tp2": 10,
+        "tp3": 8
+      },
+      "avg_baseline_pct": -0.791,
+      "avg_realized_pct": 0.489,
+      "alpha_vs_buyhold_pct": 1.28
+    },
+    "a_stock": {
+      "n": 73,
+      "win_rate": 0.562,
+      "mean_R": 0.222,
+      "std_R": 1.028,
+      "sharpe_annualized_proxy": 1.56,
+      "profit_factor": 1.66,
+      "max_drawdown_R": 5.41,
+      "outcome_distribution": {
+        "expire": 45,
+        "tp2": 4,
+        "tp1": 8,
+        "stop": 16
+      },
+      "avg_baseline_pct": 0.552,
+      "avg_realized_pct": 0.586,
+      "alpha_vs_buyhold_pct": 0.034
+    },
+    "crypto": {
+      "n": 156,
+      "win_rate": 0.577,
+      "mean_R": 0.28,
+      "std_R": 1.126,
+      "sharpe_annualized_proxy": 1.79,
+      "profit_factor": 1.86,
+      "max_drawdown_R": 13.02,
+      "outcome_distribution": {
+        "expire": 83,
+        "tp1": 25,
+        "stop": 40,
+        "tp3": 3,
+        "tp2": 5
+      },
+      "avg_baseline_pct": -0.659,
+      "avg_realized_pct": 1.313,
+      "alpha_vs_buyhold_pct": 1.972
+    },
+    "index": {
+      "n": 19,
+      "win_rate": 0.632,
+      "mean_R": 0.162,
+      "std_R": 0.86,
+      "sharpe_annualized_proxy": 1.36,
+      "profit_factor": 1.6,
+      "max_drawdown_R": 2.0,
+      "outcome_distribution": {
+        "stop": 5,
+        "expire": 11,
+        "tp1": 3
+      },
+      "avg_baseline_pct": -4.285,
+      "avg_realized_pct": 1.753,
+      "alpha_vs_buyhold_pct": 6.038
+    },
+    "eu_stock": {
+      "n": 16,
+      "win_rate": 0.688,
+      "mean_R": 0.165,
+      "std_R": 0.702,
+      "sharpe_annualized_proxy": 1.69,
+      "profit_factor": 1.71,
+      "max_drawdown_R": 1.09,
+      "outcome_distribution": {
+        "expire": 12,
+        "stop": 3,
+        "tp1": 1
+      },
+      "avg_baseline_pct": 0.234,
+      "avg_realized_pct": 0.316,
+      "alpha_vs_buyhold_pct": 0.082
+    }
+  },
+  "by_horizon": {
+    "1": {
+      "n": 567,
+      "win_rate": 0.649,
+      "mean_R": 0.258,
+      "std_R": 0.825,
+      "sharpe_annualized_proxy": 2.26,
+      "profit_factor": 2.35,
+      "max_drawdown_R": 6.96,
+      "outcome_distribution": {
+        "expire": 474,
+        "tp1": 29,
+        "stop": 50,
+        "tp2": 8,
+        "tp3": 6
+      },
+      "avg_baseline_pct": -0.231,
+      "avg_realized_pct": 0.626,
+      "alpha_vs_buyhold_pct": 0.857
+    },
+    "30": {
+      "n": 204,
+      "win_rate": 0.569,
+      "mean_R": 0.421,
+      "std_R": 1.316,
+      "sharpe_annualized_proxy": 2.31,
+      "profit_factor": 1.98,
+      "max_drawdown_R": 9.0,
+      "outcome_distribution": {
+        "tp1": 87,
+        "stop": 88,
+        "tp2": 11,
+        "expire": 16,
+        "tp3": 2
+      },
+      "avg_baseline_pct": -0.624,
+      "avg_realized_pct": 0.908,
+      "alpha_vs_buyhold_pct": 1.532
+    },
+    "3": {
+      "n": 453,
+      "win_rate": 0.567,
+      "mean_R": 0.302,
+      "std_R": 1.117,
+      "sharpe_annualized_proxy": 1.95,
+      "profit_factor": 1.94,
+      "max_drawdown_R": 7.36,
+      "outcome_distribution": {
+        "expire": 252,
+        "tp1": 61,
+        "stop": 112,
+        "tp2": 22,
+        "tp3": 6
+      },
+      "avg_baseline_pct": -0.17,
+      "avg_realized_pct": 0.577,
+      "alpha_vs_buyhold_pct": 0.747
+    },
+    "7": {
+      "n": 356,
+      "win_rate": 0.548,
+      "mean_R": 0.359,
+      "std_R": 1.237,
+      "sharpe_annualized_proxy": 2.09,
+      "profit_factor": 1.92,
+      "max_drawdown_R": 10.92,
+      "outcome_distribution": {
+        "tp1": 105,
+        "expire": 107,
+        "stop": 122,
+        "tp2": 18,
+        "tp3": 4
+      },
+      "avg_baseline_pct": 0.056,
+      "avg_realized_pct": 0.109,
+      "alpha_vs_buyhold_pct": 0.053
+    },
+    "14": {
+      "n": 292,
+      "win_rate": 0.582,
+      "mean_R": 0.527,
+      "std_R": 1.328,
+      "sharpe_annualized_proxy": 2.86,
+      "profit_factor": 2.42,
+      "max_drawdown_R": 9.19,
+      "outcome_distribution": {
+        "stop": 98,
+        "tp1": 116,
+        "expire": 57,
+        "tp2": 13,
+        "tp3": 8
+      },
+      "avg_baseline_pct": -0.775,
+      "avg_realized_pct": 1.184,
+      "alpha_vs_buyhold_pct": 1.959
+    },
+    "5": {
+      "n": 25,
+      "win_rate": 0.24,
+      "mean_R": -0.302,
+      "std_R": 0.944,
+      "sharpe_annualized_proxy": -2.31,
+      "profit_factor": 0.47,
+      "max_drawdown_R": 7.73,
+      "outcome_distribution": {
+        "stop": 12,
+        "expire": 10,
+        "tp1": 2,
+        "tp2": 1
+      },
+      "avg_baseline_pct": 1.09,
+      "avg_realized_pct": -1.473,
+      "alpha_vs_buyhold_pct": -2.563
+    }
+  },
+  "by_direction": {
+    "down": {
+      "n": 716,
+      "win_rate": 0.591,
+      "mean_R": 0.383,
+      "std_R": 1.139,
+      "sharpe_annualized_proxy": 2.42,
+      "profit_factor": 2.3,
+      "max_drawdown_R": 17.0,
+      "outcome_distribution": {
+        "expire": 380,
+        "tp1": 145,
+        "stop": 150,
+        "tp2": 26,
+        "tp3": 15
+      },
+      "avg_baseline_pct": -2.502,
+      "avg_realized_pct": 1.092,
+      "alpha_vs_buyhold_pct": 3.594
+    },
+    "up": {
+      "n": 1181,
+      "win_rate": 0.583,
+      "mean_R": 0.313,
+      "std_R": 1.12,
+      "sharpe_annualized_proxy": 2.01,
+      "profit_factor": 1.94,
+      "max_drawdown_R": 16.14,
+      "outcome_distribution": {
+        "tp1": 255,
+        "expire": 536,
+        "stop": 332,
+        "tp2": 47,
+        "tp3": 11
+      },
+      "avg_baseline_pct": 1.081,
+      "avg_realized_pct": 0.311,
+      "alpha_vs_buyhold_pct": -0.77
+    }
+  },
+  "by_grade": {
+    "ungraded": {
+      "n": 519,
+      "win_rate": 0.441,
+      "mean_R": 0.12,
+      "std_R": 1.163,
+      "sharpe_annualized_proxy": 0.74,
+      "profit_factor": 1.28,
+      "max_drawdown_R": 26.89,
+      "outcome_distribution": {
+        "expire": 242,
+        "tp1": 79,
+        "stop": 168,
+        "tp2": 22,
+        "tp3": 8
+      },
+      "avg_baseline_pct": -0.249,
+      "avg_realized_pct": -0.056,
+      "alpha_vs_buyhold_pct": 0.193
+    },
+    "C": {
+      "n": 865,
+      "win_rate": 0.558,
+      "mean_R": 0.252,
+      "std_R": 1.097,
+      "sharpe_annualized_proxy": 1.66,
+      "profit_factor": 1.75,
+      "max_drawdown_R": 13.21,
+      "outcome_distribution": {
+        "expire": 432,
+        "tp1": 162,
+        "stop": 233,
+        "tp2": 28,
+        "tp3": 10
+      },
+      "avg_baseline_pct": -0.212,
+      "avg_realized_pct": 0.267,
+      "alpha_vs_buyhold_pct": 0.479
+    },
+    "A": {
+      "n": 314,
+      "win_rate": 0.796,
+      "mean_R": 0.8,
+      "std_R": 1.097,
+      "sharpe_annualized_proxy": 5.26,
+      "profit_factor": 5.69,
+      "max_drawdown_R": 3.34,
+      "outcome_distribution": {
+        "stop": 46,
+        "expire": 142,
+        "tp1": 102,
+        "tp2": 16,
+        "tp3": 8
+      },
+      "avg_baseline_pct": -0.726,
+      "avg_realized_pct": 1.95,
+      "alpha_vs_buyhold_pct": 2.676
+    },
+    "B": {
+      "n": 199,
+      "win_rate": 0.754,
+      "mean_R": 0.562,
+      "std_R": 0.96,
+      "sharpe_annualized_proxy": 4.22,
+      "profit_factor": 3.84,
+      "max_drawdown_R": 5.0,
+      "outcome_distribution": {
+        "tp1": 57,
+        "stop": 35,
+        "expire": 100,
+        "tp2": 7
+      },
+      "avg_baseline_pct": 0.136,
+      "avg_realized_pct": 1.684,
+      "alpha_vs_buyhold_pct": 1.549
+    }
+  },
+  "by_retail_edge": {
+    "untagged": {
+      "n": 479,
+      "win_rate": 0.453,
+      "mean_R": 0.146,
+      "std_R": 1.168,
+      "sharpe_annualized_proxy": 0.9,
+      "profit_factor": 1.36,
+      "max_drawdown_R": 22.99,
+      "outcome_distribution": {
+        "expire": 224,
+        "tp1": 77,
+        "stop": 151,
+        "tp2": 19,
+        "tp3": 8
+      },
+      "avg_baseline_pct": -0.223,
+      "avg_realized_pct": 0.012,
+      "alpha_vs_buyhold_pct": 0.235
+    },
+    "high": {
+      "n": 343,
+      "win_rate": 0.566,
+      "mean_R": 0.231,
+      "std_R": 1.066,
+      "sharpe_annualized_proxy": 1.56,
+      "profit_factor": 1.67,
+      "max_drawdown_R": 13.29,
+      "outcome_distribution": {
+        "expire": 175,
+        "tp1": 56,
+        "stop": 97,
+        "tp2": 13,
+        "tp3": 2
+      },
+      "avg_baseline_pct": 0.443,
+      "avg_realized_pct": 0.235,
+      "alpha_vs_buyhold_pct": -0.208
+    },
+    "low": {
+      "n": 144,
+      "win_rate": 0.625,
+      "mean_R": 0.316,
+      "std_R": 0.866,
+      "sharpe_annualized_proxy": 2.63,
+      "profit_factor": 2.48,
+      "max_drawdown_R": 3.64,
+      "outcome_distribution": {
+        "tp1": 18,
+        "expire": 105,
+        "stop": 18,
+        "tp2": 3
+      },
+      "avg_baseline_pct": -0.116,
+      "avg_realized_pct": 0.222,
+      "alpha_vs_buyhold_pct": 0.338
+    },
+    "mid": {
+      "n": 931,
+      "win_rate": 0.656,
+      "mean_R": 0.482,
+      "std_R": 1.146,
+      "sharpe_annualized_proxy": 3.03,
+      "profit_factor": 2.73,
+      "max_drawdown_R": 12.69,
+      "outcome_distribution": {
+        "tp1": 249,
+        "stop": 216,
+        "expire": 412,
+        "tp2": 38,
+        "tp3": 16
+      },
+      "avg_baseline_pct": -0.583,
+      "avg_realized_pct": 1.108,
+      "alpha_vs_buyhold_pct": 1.69
+    }
+  },
+  "equity_series": [
+    [
+      "1998-10-15",
+      1.0
+    ],
+    [
+      "2001-04-18",
+      1.0801508601125371
+    ],
+    [
+      "2007-09-18",
+      1.1149047592853485
+    ],
+    [
+      "2008-01-30",
+      1.1250612074829254
+    ],
+    [
+      "2008-03-17",
+      1.0635538389642458
+    ],
+    [
+      "2008-04-30",
+      1.0379897007758447
+    ],
+    [
+      "2008-09-15",
+      1.030140774934667
+    ],
+    [
+      "2008-09-15",
+      1.009182908263542
+    ],
+    [
+      "2008-09-15",
+      1.0168629906176556
+    ],
+    [
+      "2008-09-25",
+      1.0522851238709772
+    ],
+    [
+      "2008-10-08",
+      1.0012367171800247
+    ],
+    [
+      "2008-12-17",
+      0.9839665824612391
+    ],
+    [
+      "2011-04-18",
+      1.0699817482946965
+    ],
+    [
+      "2011-08-05",
+      1.2211402219614846
+    ],
+    [
+      "2012-02-21",
+      1.3331599934457996
+    ],
+    [
+      "2013-03-25",
+      1.3450174780431603
+    ],
+    [
+      "2013-06-19",
+      1.405835287507673
+    ],
+    [
+      "2014-09-19",
+      1.3868769647274142
+    ],
+    [
+      "2015-08-24",
+      1.4515150780081467
+    ],
+    [
+      "2016-03-16",
+      1.5540328097620393
+    ],
+    [
+      "2016-09-21",
+      1.6382051186328948
+    ],
+    [
+      "2016-11-30",
+      1.7589085491532652
+    ],
+    [
+      "2017-03-15",
+      1.7808255583389274
+    ],
+    [
+      "2017-09-20",
+      1.7491866582986593
+    ],
+    [
+      "2018-05-08",
+      1.8365186483797276
+    ],
+    [
+      "2018-08-23",
+      1.845504905969264
+    ],
+    [
+      "2018-09-26",
+      2.0026936790087744
+    ],
+    [
+      "2018-11-05",
+      1.9960211674707031
+    ],
+    [
+      "2018-12-19",
+      1.9673870216963099
+    ],
+    [
+      "2019-01-25",
+      2.086125839874158
+    ],
+    [
+      "2019-03-20",
+      2.085071275129515
+    ],
+    [
+      "2019-04-25",
+      2.1269188726645747
+    ],
+    [
+      "2019-05-14",
+      2.287988236022714
+    ],
+    [
+      "2019-06-19",
+      2.533780309862713
+    ],
+    [
+      "2019-07-31",
+      2.8921559619842823
+    ],
+    [
+      "2019-08-23",
+      3.1650964335800182
+    ],
+    [
+      "2019-09-16",
+      3.0662429344073145
+    ],
+    [
+      "2019-09-18",
+      3.1772075697369737
+    ],
+    [
+      "2019-10-30",
+      3.290903050046473
+    ],
+    [
+      "2019-11-11",
+      3.590496765897032
+    ],
+    [
+      "2020-01-03",
+      3.699498956717614
+    ],
+    [
+      "2020-02-03",
+      3.7572490576911077
+    ],
+    [
+      "2020-02-20",
+      3.817613549344389
+    ],
+    [
+      "2020-03-03",
+      3.9446184447890906
+    ],
+    [
+      "2020-03-06",
+      4.9935705649407955
+    ],
+    [
+      "2020-03-09",
+      5.758856986228215
+    ],
+    [
+      "2020-03-09",
+      6.255328838689523
+    ],
+    [
+      "2020-03-13",
+      6.309961894884968
+    ],
+    [
+      "2020-03-15",
+      6.02696978789955
+    ],
+    [
+      "2020-03-15",
+      6.14049754350612
+    ],
+    [
+      "2020-04-12",
+      6.150877617319534
+    ],
+    [
+      "2020-04-15",
+      6.038112861902039
+    ],
+    [
+      "2020-04-20",
+      6.157248690366646
+    ],
+    [
+      "2020-05-11",
+      6.422400323521066
+    ],
+    [
+      "2020-06-05",
+      6.930262937528459
+    ],
+    [
+      "2020-08-27",
+      6.917362599955081
+    ],
+    [
+      "2021-04-09",
+      6.817872762161073
+    ],
+    [
+      "2021-07-02",
+      7.02053909221943
+    ],
+    [
+      "2021-08-29",
+      7.320247957823556
+    ],
+    [
+      "2021-09-20",
+      7.515218039036154
+    ],
+    [
+      "2021-09-30",
+      7.792015763748776
+    ],
+    [
+      "2021-10-12",
+      8.237868425202581
+    ],
+    [
+      "2021-11-12",
+      8.752678523067148
+    ],
+    [
+      "2021-12-09",
+      9.389991297098824
+    ],
+    [
+      "2022-01-12",
+      10.102026815244963
+    ],
+    [
+      "2022-01-17",
+      10.221550757166346
+    ],
+    [
+      "2022-01-28",
+      9.92155514514432
+    ],
+    [
+      "2022-02-24",
+      10.828783479307338
+    ],
+    [
+      "2022-02-25",
+      10.608001543306948
+    ],
+    [
+      "2022-03-07",
+      10.263656394248233
+    ],
+    [
+      "2022-03-25",
+      10.495165093033428
+    ],
+    [
+      "2022-04-06",
+      10.948048246899416
+    ],
+    [
+      "2022-04-15",
+      11.114220501927166
+    ],
+    [
+      "2022-05-04",
+      11.992581045992287
+    ],
+    [
+      "2022-05-09",
+      13.424566658973472
+    ],
+    [
+      "2022-05-20",
+      13.882796595535163
+    ],
+    [
+      "2022-06-15",
+      13.848989880083407
+    ],
+    [
+      "2022-06-15",
+      13.5930515614496
+    ],
+    [
+      "2022-07-12",
+      14.267632037912445
+    ],
+    [
+      "2022-07-27",
+      13.518398155529843
+    ],
+    [
+      "2022-07-27",
+      13.243420700667581
+    ],
+    [
+      "2022-08-15",
+      12.799145070990015
+    ],
+    [
+      "2022-08-15",
+      12.361293934634695
+    ],
+    [
+      "2022-08-22",
+      13.702322601596924
+    ],
+    [
+      "2022-09-13",
+      14.55652023816645
+    ],
+    [
+      "2022-09-13",
+      14.924167020599436
+    ],
+    [
+      "2022-09-21",
+      16.0165229529569
+    ],
+    [
+      "2022-09-21",
+      17.306168051844374
+    ],
+    [
+      "2022-09-26",
+      19.27509148310655
+    ],
+    [
+      "2022-10-05",
+      20.153412384336605
+    ],
+    [
+      "2022-10-07",
+      21.06228847914898
+    ],
+    [
+      "2022-10-26",
+      23.12448824405036
+    ],
+    [
+      "2022-11-02",
+      22.357839853288077
+    ],
+    [
+      "2022-11-08",
+      25.131798288651492
+    ],
+    [
+      "2022-11-10",
+      27.301632990761483
+    ],
+    [
+      "2022-11-11",
+      28.260705949665518
+    ],
+    [
+      "2022-11-14",
+      29.094016617984156
+    ],
+    [
+      "2022-11-30",
+      30.58970010464951
+    ],
+    [
+      "2022-12-13",
+      29.416107676307757
+    ],
+    [
+      "2022-12-14",
+      29.541489242429908
+    ],
+    [
+      "2023-01-27",
+      30.589276303065027
+    ],
+    [
+      "2023-02-03",
+      31.11679642733031
+    ],
+    [
+      "2023-02-09",
+      31.765351079259787
+    ],
+    [
+      "2023-02-14",
+      33.87333444288696
+    ],
+    [
+      "2023-03-10",
+      35.94797699877221
+    ],
+    [
+      "2023-03-10",
+      37.90736513545199
+    ],
+    [
+      "2023-03-12",
+      38.84471776326498
+    ],
+    [
+      "2023-03-12",
+      41.665546522953136
+    ],
+    [
+      "2023-03-14",
+      43.054546988342125
+    ],
+    [
+      "2023-03-17",
+      44.44702623776862
+    ],
+    [
+      "2023-03-20",
+      43.26815857963552
+    ],
+    [
+      "2023-04-02",
+      43.62981061058307
+    ],
+    [
+      "2023-04-05",
+      44.599242071026794
+    ],
+    [
+      "2023-05-01",
+      47.25582321716435
+    ],
+    [
+      "2023-05-01",
+      54.098397234071484
+    ],
+    [
+      "2023-06-04",
+      56.49952954504425
+    ],
+    [
+      "2023-06-05",
+      61.13431045928824
+    ],
+    [
+      "2023-06-14",
+      64.78968937620405
+    ],
+    [
+      "2023-06-14",
+      66.40085501032728
+    ],
+    [
+      "2023-06-20",
+      62.44011607998292
+    ],
+    [
+      "2023-07-03",
+      67.38978584373983
+    ],
+    [
+      "2023-07-12",
+      71.88754589241026
+    ],
+    [
+      "2023-07-26",
+      73.91072324028232
+    ],
+    [
+      "2023-08-01",
+      79.54284009769104
+    ],
+    [
+      "2023-08-07",
+      80.7139084797859
+    ],
+    [
+      "2023-08-15",
+      85.70955495348792
+    ],
+    [
+      "2023-08-15",
+      82.86116476400989
+    ],
+    [
+      "2023-08-21",
+      83.13432563741542
+    ],
+    [
+      "2023-08-23",
+      79.47203206131813
+    ],
+    [
+      "2023-09-05",
+      78.84122928151545
+    ],
+    [
+      "2023-09-20",
+      82.84821549615374
+    ],
+    [
+      "2023-10-06",
+      88.48416195518969
+    ],
+    [
+      "2023-10-10",
+      91.8973725431641
+    ],
+    [
+      "2023-10-17",
+      98.71901460321834
+    ],
+    [
+      "2023-10-23",
+      108.11754468172921
+    ],
+    [
+      "2023-11-08",
+      121.82426613551658
+    ],
+    [
+      "2023-11-16",
+      119.2627132121133
+    ],
+    [
+      "2023-11-21",
+      116.9533454727183
+    ],
+    [
+      "2023-11-29",
+      117.14987667826773
+    ],
+    [
+      "2023-12-13",
+      114.24113374246713
+    ],
+    [
+      "2023-12-13",
+      118.87718715235683
+    ],
+    [
+      "2024-01-05",
+      119.01790046483221
+    ],
+    [
+      "2024-01-10",
+      116.476775972328
+    ],
+    [
+      "2024-01-12",
+      119.23964668907007
+    ],
+    [
+      "2024-01-17",
+      119.37033651234101
+    ],
+    [
+      "2024-01-24",
+      122.35353084635224
+    ],
+    [
+      "2024-01-26",
+      120.61519960047532
+    ],
+    [
+      "2024-02-07",
+      128.43384088803063
+    ],
+    [
+      "2024-02-13",
+      122.57448166080971
+    ],
+    [
+      "2024-02-20",
+      131.00740079725378
+    ],
+    [
+      "2024-02-29",
+      140.48979708702143
+    ],
+    [
+      "2024-03-12",
+      144.86028807623342
+    ],
+    [
+      "2024-04-10",
+      146.0514577361063
+    ],
+    [
+      "2024-04-13",
+      149.05679494978133
+    ],
+    [
+      "2024-04-18",
+      140.50652794140527
+    ],
+    [
+      "2024-04-19",
+      146.96812553278482
+    ],
+    [
+      "2024-05-03",
+      149.69323903203264
+    ],
+    [
+      "2024-05-15",
+      156.95305257189588
+    ],
+    [
+      "2024-05-20",
+      156.18459895859831
+    ],
+    [
+      "2024-05-23",
+      161.46728571227786
+    ],
+    [
+      "2024-06-02",
+      167.75521495323298
+    ],
+    [
+      "2024-07-03",
+      168.16357869551874
+    ],
+    [
+      "2024-07-11",
+      167.78692065752972
+    ],
+    [
+      "2024-07-16",
+      172.7969542304255
+    ],
+    [
+      "2024-07-22",
+      164.41226438509054
+    ],
+    [
+      "2024-07-22",
+      155.2129647696393
+    ],
+    [
+      "2024-07-31",
+      155.74625837795693
+    ],
+    [
+      "2024-08-02",
+      157.50445549721584
+    ],
+    [
+      "2024-08-07",
+      156.2454586484795
+    ],
+    [
+      "2024-08-08",
+      163.60223917416377
+    ],
+    [
+      "2024-08-15",
+      167.78631557565112
+    ],
+    [
+      "2024-08-28",
+      171.0229930115222
+    ],
+    [
+      "2024-09-06",
+      178.41774909621182
+    ],
+    [
+      "2024-09-12",
+      181.97959179107056
+    ],
+    [
+      "2024-09-18",
+      187.61432335010088
+    ],
+    [
+      "2024-09-18",
+      207.59584671439333
+    ],
+    [
+      "2024-09-24",
+      196.34691529450268
+    ],
+    [
+      "2024-09-25",
+      201.72384644756644
+    ],
+    [
+      "2024-10-01",
+      211.27696032950828
+    ],
+    [
+      "2024-10-17",
+      220.4439469443554
+    ],
+    [
+      "2024-10-21",
+      218.56385688450473
+    ],
+    [
+      "2024-10-21",
+      224.3454186864715
+    ],
+    [
+      "2024-10-30",
+      220.64569855468852
+    ],
+    [
+      "2024-11-07",
+      226.8702847455864
+    ],
+    [
+      "2024-11-07",
+      226.730335811118
+    ],
+    [
+      "2024-12-02",
+      236.5354739973715
+    ],
+    [
+      "2024-12-11",
+      240.7972043670451
+    ],
+    [
+      "2024-12-12",
+      240.96945990292346
+    ],
+    [
+      "2024-12-18",
+      239.86589261742762
+    ],
+    [
+      "2025-01-30",
+      256.90723019525416
+    ],
+    [
+      "2025-02-01",
+      262.6233639775525
+    ],
+    [
+      "2025-03-06",
+      274.243948358195
+    ],
+    [
+      "2025-03-12",
+      282.31669920138364
+    ],
+    [
+      "2025-04-02",
+      297.8522180727706
+    ],
+    [
+      "2025-04-09",
+      336.8039624707566
+    ],
+    [
+      "2025-04-12",
+      373.98713902546785
+    ],
+    [
+      "2025-05-03",
+      385.91681539874133
+    ],
+    [
+      "2025-05-07",
+      413.43928068604407
+    ],
+    [
+      "2025-05-16",
+      456.0525566303414
+    ],
+    [
+      "2025-05-28",
+      470.59815833434794
+    ],
+    [
+      "2025-06-05",
+      449.9008724671996
+    ],
+    [
+      "2025-07-24",
+      442.742705703628
+    ],
+    [
+      "2025-08-01",
+      448.1089078565486
+    ],
+    [
+      "2025-08-03",
+      472.63342083634643
+    ],
+    [
+      "2025-10-30",
+      480.73821009644854
+    ],
+    [
+      "2026-01-02",
+      507.11630278489406
+    ],
+    [
+      "2026-01-14",
+      556.3085696586794
+    ],
+    [
+      "2026-01-21",
+      552.3257250213726
+    ],
+    [
+      "2026-02-05",
+      550.2407739120836
+    ],
+    [
+      "2026-02-20",
+      564.0918893385416
+    ],
+    [
+      "2026-03-04",
+      535.979066212086
+    ]
+  ],
+  "raw_trades": [
+    {
+      "instance_id": 1033,
+      "chain_id": 366,
+      "asset_symbol": "DX-Y.NYB",
+      "asset_class": "fx",
+      "event_date": "2026-01-02",
+      "direction": "down",
+      "horizon_days": 14,
+      "grade": "C",
+      "retail_edge": "mid",
+      "entry_price": 98.42,
+      "stop_loss": 100.3884,
+      "R_dollar": 1.9684,
+      "atr": 0.9842,
+      "chain_dir_hit_rate": 0.75,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 0.417,
+      "days_held": 14,
+      "realized_pct": 0.833,
+      "baseline_pct": -0.833
+    },
+    {
+      "instance_id": 1037,
+      "chain_id": 367,
+      "asset_symbol": "BTC-USD",
+      "asset_class": "crypto",
+      "event_date": "2026-01-02",
+      "direction": "up",
+      "horizon_days": 7,
+      "grade": "C",
+      "retail_edge": "mid",
+      "entry_price": 89944.6953,
+      "stop_loss": 88591.769,
+      "R_dollar": 1352.9263,
+      "atr": 676.4632,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "tp2",
+      "realized_R": 2.5,
+      "days_held": 3,
+      "realized_pct": 3.76,
+      "baseline_pct": 0.632
+    },
+    {
+      "instance_id": 1058,
+      "chain_id": 374,
+      "asset_symbol": "SOXX",
+      "asset_class": "us_stock",
+      "event_date": "2026-01-14",
+      "direction": "down",
+      "horizon_days": 1,
+      "grade": "C",
+      "retail_edge": "high",
+      "entry_price": 331.9,
+      "stop_loss": 340.896,
+      "R_dollar": 8.996,
+      "atr": 4.498,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": -0.591,
+      "days_held": 1,
+      "realized_pct": -1.603,
+      "baseline_pct": 1.603
+    },
+    {
+      "instance_id": 1062,
+      "chain_id": 375,
+      "asset_symbol": "XLV",
+      "asset_class": "us_stock",
+      "event_date": "2026-01-14",
+      "direction": "down",
+      "horizon_days": 1,
+      "grade": "B",
+      "retail_edge": "high",
+      "entry_price": 157.86,
+      "stop_loss": 159.712,
+      "R_dollar": 1.852,
+      "atr": 0.926,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 0.486,
+      "days_held": 1,
+      "realized_pct": 0.57,
+      "baseline_pct": -0.57
+    },
+    {
+      "instance_id": 1068,
+      "chain_id": 376,
+      "asset_symbol": "QQQ",
+      "asset_class": "us_stock",
+      "event_date": "2026-01-14",
+      "direction": "down",
+      "horizon_days": 3,
+      "grade": "C",
+      "retail_edge": "high",
+      "entry_price": 619.55,
+      "stop_loss": 624.262,
+      "R_dollar": 4.712,
+      "atr": 2.356,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "tp1",
+      "realized_R": 1.5,
+      "days_held": 3,
+      "realized_pct": 1.141,
+      "baseline_pct": -1.855
+    },
+    {
+      "instance_id": 1071,
+      "chain_id": 377,
+      "asset_symbol": "SPY",
+      "asset_class": "us_stock",
+      "event_date": "2026-01-14",
+      "direction": "down",
+      "horizon_days": 3,
+      "grade": "C",
+      "retail_edge": "low",
+      "entry_price": 690.36,
+      "stop_loss": 694.096,
+      "R_dollar": 3.736,
+      "atr": 1.868,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "tp2",
+      "realized_R": 2.5,
+      "days_held": 3,
+      "realized_pct": 1.353,
+      "baseline_pct": -1.851
+    },
+    {
+      "instance_id": 1075,
+      "chain_id": 378,
+      "asset_symbol": "SLX",
+      "asset_class": "us_stock",
+      "event_date": "2026-01-14",
+      "direction": "up",
+      "horizon_days": 7,
+      "grade": "B",
+      "retail_edge": "high",
+      "entry_price": 91.12,
+      "stop_loss": 89.82,
+      "R_dollar": 1.3,
+      "atr": 0.65,
+      "chain_dir_hit_rate": 0.75,
+      "kelly_fraction": 0.02,
+      "outcome": "tp1",
+      "realized_R": 1.5,
+      "days_held": 4,
+      "realized_pct": 2.14,
+      "baseline_pct": 3.413
+    },
+    {
+      "instance_id": 1078,
+      "chain_id": 379,
+      "asset_symbol": "VIXY",
+      "asset_class": "us_stock",
+      "event_date": "2026-01-14",
+      "direction": "up",
+      "horizon_days": 30,
+      "grade": "C",
+      "retail_edge": "high",
+      "entry_price": 26.26,
+      "stop_loss": 25.552,
+      "R_dollar": 0.708,
+      "atr": 0.354,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "stop",
+      "realized_R": -1.0,
+      "days_held": 1,
+      "realized_pct": -2.97,
+      "baseline_pct": 4.341
+    },
+    {
+      "instance_id": 992,
+      "chain_id": 354,
+      "asset_symbol": "SPY",
+      "asset_class": "us_stock",
+      "event_date": "2026-01-20",
+      "direction": "down",
+      "horizon_days": 7,
+      "grade": null,
+      "retail_edge": "high",
+      "entry_price": 677.58,
+      "stop_loss": 681.21,
+      "R_dollar": 3.63,
+      "atr": 1.815,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "stop",
+      "realized_R": -1.0,
+      "days_held": 1,
+      "realized_pct": -1.154,
+      "baseline_pct": 2.429
+    },
+    {
+      "instance_id": 994,
+      "chain_id": 355,
+      "asset_symbol": "QQQ",
+      "asset_class": "us_stock",
+      "event_date": "2026-01-20",
+      "direction": "down",
+      "horizon_days": 7,
+      "grade": null,
+      "retail_edge": "high",
+      "entry_price": 608.06,
+      "stop_loss": 613.245,
+      "R_dollar": 5.185,
+      "atr": 2.5925,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "stop",
+      "realized_R": -1.0,
+      "days_held": 1,
+      "realized_pct": -1.352,
+      "baseline_pct": 3.514
+    },
+    {
+      "instance_id": 998,
+      "chain_id": 356,
+      "asset_symbol": "IWM",
+      "asset_class": "us_stock",
+      "event_date": "2026-01-20",
+      "direction": "down",
+      "horizon_days": 14,
+      "grade": null,
+      "retail_edge": "high",
+      "entry_price": 262.58,
+      "stop_loss": 264.86,
+      "R_dollar": 2.28,
+      "atr": 1.14,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "stop",
+      "realized_R": -1.0,
+      "days_held": 1,
+      "realized_pct": -1.984,
+      "baseline_pct": 1.638
+    },
+    {
+      "instance_id": 1000,
+      "chain_id": 357,
+      "asset_symbol": "TLT",
+      "asset_class": "us_stock",
+      "event_date": "2026-01-20",
+      "direction": "up",
+      "horizon_days": 1,
+      "grade": "B",
+      "retail_edge": "mid",
+      "entry_price": 86.65,
+      "stop_loss": 86.055,
+      "R_dollar": 0.595,
+      "atr": 0.2975,
+      "chain_dir_hit_rate": 0.75,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 1.109,
+      "days_held": 1,
+      "realized_pct": 0.762,
+      "baseline_pct": 0.762
+    },
+    {
+      "instance_id": 1004,
+      "chain_id": 358,
+      "asset_symbol": "GC=F",
+      "asset_class": "commodity",
+      "event_date": "2026-01-20",
+      "direction": "up",
+      "horizon_days": 14,
+      "grade": "B",
+      "retail_edge": "mid",
+      "entry_price": 4759.6001,
+      "stop_loss": 4714.5505,
+      "R_dollar": 45.0495,
+      "atr": 22.5248,
+      "chain_dir_hit_rate": 0.75,
+      "kelly_fraction": 0.02,
+      "outcome": "tp1",
+      "realized_R": 1.5,
+      "days_held": 1,
+      "realized_pct": 1.42,
+      "baseline_pct": 6.12
+    },
+    {
+      "instance_id": 1007,
+      "chain_id": 359,
+      "asset_symbol": "BTC-USD",
+      "asset_class": "crypto",
+      "event_date": "2026-01-20",
+      "direction": "down",
+      "horizon_days": 3,
+      "grade": null,
+      "retail_edge": "mid",
+      "entry_price": 88310.9062,
+      "stop_loss": 91200.0691,
+      "R_dollar": 2889.1629,
+      "atr": 1444.5815,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": -0.413,
+      "days_held": 3,
+      "realized_pct": -1.351,
+      "baseline_pct": 1.351
+    },
+    {
+      "instance_id": 1010,
+      "chain_id": 360,
+      "asset_symbol": "DX-Y.NYB",
+      "asset_class": "fx",
+      "event_date": "2026-01-20",
+      "direction": "up",
+      "horizon_days": 1,
+      "grade": "C",
+      "retail_edge": "low",
+      "entry_price": 98.64,
+      "stop_loss": 98.375,
+      "R_dollar": 0.265,
+      "atr": 0.1325,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 0.453,
+      "days_held": 1,
+      "realized_pct": 0.122,
+      "baseline_pct": 0.122
+    },
+    {
+      "instance_id": 1014,
+      "chain_id": 361,
+      "asset_symbol": "SPY",
+      "asset_class": "us_stock",
+      "event_date": "2026-01-21",
+      "direction": "up",
+      "horizon_days": 14,
+      "grade": "C",
+      "retail_edge": "high",
+      "entry_price": 685.4,
+      "stop_loss": 675.425,
+      "R_dollar": 9.975,
+      "atr": 4.9875,
+      "chain_dir_hit_rate": 0.6,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 0.674,
+      "days_held": 14,
+      "realized_pct": 0.98,
+      "baseline_pct": 0.98
+    },
+    {
+      "instance_id": 1018,
+      "chain_id": 362,
+      "asset_symbol": "QQQ",
+      "asset_class": "us_stock",
+      "event_date": "2026-01-21",
+      "direction": "up",
+      "horizon_days": 14,
+      "grade": "C",
+      "retail_edge": "high",
+      "entry_price": 616.28,
+      "stop_loss": 604.96,
+      "R_dollar": 11.32,
+      "atr": 5.66,
+      "chain_dir_hit_rate": 0.6,
+      "kelly_fraction": 0.02,
+      "outcome": "stop",
+      "realized_R": -1.0,
+      "days_held": 11,
+      "realized_pct": -3.124,
+      "baseline_pct": -0.78
+    },
+    {
+      "instance_id": 1022,
+      "chain_id": 363,
+      "asset_symbol": "IWM",
+      "asset_class": "us_stock",
+      "event_date": "2026-01-21",
+      "direction": "up",
+      "horizon_days": 30,
+      "grade": "B",
+      "retail_edge": "high",
+      "entry_price": 267.79,
+      "stop_loss": 263.995,
+      "R_dollar": 3.795,
+      "atr": 1.8975,
+      "chain_dir_hit_rate": 0.8,
+      "kelly_fraction": 0.02,
+      "outcome": "stop",
+      "realized_R": -1.0,
+      "days_held": 3,
+      "realized_pct": -1.423,
+      "baseline_pct": -2.382
+    },
+    {
+      "instance_id": 1026,
+      "chain_id": 364,
+      "asset_symbol": "XRT",
+      "asset_class": "us_stock",
+      "event_date": "2026-01-21",
+      "direction": "up",
+      "horizon_days": 30,
+      "grade": "C",
+      "retail_edge": "high",
+      "entry_price": 90.39,
+      "stop_loss": 88.505,
+      "R_dollar": 1.885,
+      "atr": 0.9425,
+      "chain_dir_hit_rate": 0.8,
+      "kelly_fraction": 0.02,
+      "outcome": "stop",
+      "realized_R": -1.0,
+      "days_held": 4,
+      "realized_pct": -2.179,
+      "baseline_pct": -3.773
+    },
+    {
+      "instance_id": 1030,
+      "chain_id": 365,
+      "asset_symbol": "TLT",
+      "asset_class": "us_stock",
+      "event_date": "2026-01-21",
+      "direction": "down",
+      "horizon_days": 7,
+      "grade": "C",
+      "retail_edge": "high",
+      "entry_price": 87.31,
+      "stop_loss": 88.405,
+      "R_dollar": 1.095,
+      "atr": 0.5475,
+      "chain_dir_hit_rate": 0.6,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 0.164,
+      "days_held": 7,
+      "realized_pct": 0.206,
+      "baseline_pct": -0.206
+    },
+    {
+      "instance_id": 1034,
+      "chain_id": 366,
+      "asset_symbol": "DX-Y.NYB",
+      "asset_class": "fx",
+      "event_date": "2026-01-21",
+      "direction": "down",
+      "horizon_days": 14,
+      "grade": "C",
+      "retail_edge": "mid",
+      "entry_price": 98.76,
+      "stop_loss": 99.265,
+      "R_dollar": 0.505,
+      "atr": 0.2525,
+      "chain_dir_hit_rate": 0.6,
+      "kelly_fraction": 0.02,
+      "outcome": "tp1",
+      "realized_R": 1.5,
+      "days_held": 2,
+      "realized_pct": 0.767,
+      "baseline_pct": -1.985
+    },
+    {
+      "instance_id": 1038,
+      "chain_id": 367,
+      "asset_symbol": "BTC-USD",
+      "asset_class": "crypto",
+      "event_date": "2026-01-21",
+      "direction": "up",
+      "horizon_days": 7,
+      "grade": "C",
+      "retail_edge": "mid",
+      "entry_price": 89376.9609,
+      "stop_loss": 86455.2555,
+      "R_dollar": 2921.7054,
+      "atr": 1460.8527,
+      "chain_dir_hit_rate": 0.6,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": -0.066,
+      "days_held": 7,
+      "realized_pct": -0.215,
+      "baseline_pct": -0.215
+    },
+    {
+      "instance_id": 1109,
+      "chain_id": 384,
+      "asset_symbol": "EURUSD=X",
+      "asset_class": "fx",
+      "event_date": "2026-02-05",
+      "direction": "up",
+      "horizon_days": 7,
+      "grade": "C",
+      "retail_edge": "mid",
+      "entry_price": 1.1802,
+      "stop_loss": 1.1708,
+      "R_dollar": 0.0094,
+      "atr": 0.0047,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 0.689,
+      "days_held": 7,
+      "realized_pct": 0.551,
+      "baseline_pct": 0.551
+    },
+    {
+      "instance_id": 1114,
+      "chain_id": 385,
+      "asset_symbol": "DX-Y.NYB",
+      "asset_class": "fx",
+      "event_date": "2026-02-05",
+      "direction": "down",
+      "horizon_days": 3,
+      "grade": "C",
+      "retail_edge": "low",
+      "entry_price": 97.82,
+      "stop_loss": 98.56,
+      "R_dollar": 0.74,
+      "atr": 0.37,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 1.378,
+      "days_held": 3,
+      "realized_pct": 1.043,
+      "baseline_pct": -1.043
+    },
+    {
+      "instance_id": 1121,
+      "chain_id": 386,
+      "asset_symbol": "FEZ",
+      "asset_class": "eu_stock",
+      "event_date": "2026-02-05",
+      "direction": "down",
+      "horizon_days": 3,
+      "grade": "C",
+      "retail_edge": "mid",
+      "entry_price": 66.16,
+      "stop_loss": 66.888,
+      "R_dollar": 0.728,
+      "atr": 0.364,
+      "chain_dir_hit_rate": 0.667,
+      "kelly_fraction": 0.02,
+      "outcome": "stop",
+      "realized_R": -1.0,
+      "days_held": 1,
+      "realized_pct": -2.025,
+      "baseline_pct": 3.053
+    },
+    {
+      "instance_id": 1127,
+      "chain_id": 387,
+      "asset_symbol": "TLT",
+      "asset_class": "us_stock",
+      "event_date": "2026-02-05",
+      "direction": "down",
+      "horizon_days": 1,
+      "grade": "C",
+      "retail_edge": "mid",
+      "entry_price": 87.48,
+      "stop_loss": 88.088,
+      "R_dollar": 0.608,
+      "atr": 0.304,
+      "chain_dir_hit_rate": 0.667,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": -0.099,
+      "days_held": 1,
+      "realized_pct": -0.069,
+      "baseline_pct": 0.069
+    },
+    {
+      "instance_id": 1133,
+      "chain_id": 388,
+      "asset_symbol": "GC=F",
+      "asset_class": "commodity",
+      "event_date": "2026-02-05",
+      "direction": "down",
+      "horizon_days": 1,
+      "grade": "C",
+      "retail_edge": "mid",
+      "entry_price": 4861.3999,
+      "stop_loss": 5265.6397,
+      "R_dollar": 404.2398,
+      "atr": 202.1199,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": -0.222,
+      "days_held": 1,
+      "realized_pct": -1.847,
+      "baseline_pct": 1.847
+    },
+    {
+      "instance_id": 1060,
+      "chain_id": 374,
+      "asset_symbol": "SOXX",
+      "asset_class": "us_stock",
+      "event_date": "2026-02-18",
+      "direction": "down",
+      "horizon_days": 1,
+      "grade": "C",
+      "retail_edge": "high",
+      "entry_price": 357.92,
+      "stop_loss": 368.515,
+      "R_dollar": 10.595,
+      "atr": 5.2975,
+      "chain_dir_hit_rate": 0.4,
+      "kelly_fraction": 0.0,
+      "outcome": "expire",
+      "realized_R": 0.196,
+      "days_held": 1,
+      "realized_pct": 0.581,
+      "baseline_pct": -0.581
+    },
+    {
+      "instance_id": 1064,
+      "chain_id": 375,
+      "asset_symbol": "XLV",
+      "asset_class": "us_stock",
+      "event_date": "2026-02-18",
+      "direction": "down",
+      "horizon_days": 1,
+      "grade": "B",
+      "retail_edge": "high",
+      "entry_price": 157.67,
+      "stop_loss": 159.24,
+      "R_dollar": 1.57,
+      "atr": 0.785,
+      "chain_dir_hit_rate": 0.6,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 0.261,
+      "days_held": 1,
+      "realized_pct": 0.26,
+      "baseline_pct": -0.26
+    },
+    {
+      "instance_id": 1067,
+      "chain_id": 376,
+      "asset_symbol": "QQQ",
+      "asset_class": "us_stock",
+      "event_date": "2026-02-18",
+      "direction": "down",
+      "horizon_days": 3,
+      "grade": "C",
+      "retail_edge": "high",
+      "entry_price": 605.79,
+      "stop_loss": 613.795,
+      "R_dollar": 8.005,
+      "atr": 4.0025,
+      "chain_dir_hit_rate": 0.6,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 0.547,
+      "days_held": 3,
+      "realized_pct": 0.723,
+      "baseline_pct": -0.723
+    },
+    {
+      "instance_id": 1072,
+      "chain_id": 377,
+      "asset_symbol": "SPY",
+      "asset_class": "us_stock",
+      "event_date": "2026-02-18",
+      "direction": "down",
+      "horizon_days": 3,
+      "grade": "C",
+      "retail_edge": "low",
+      "entry_price": 686.29,
+      "stop_loss": 692.505,
+      "R_dollar": 6.215,
+      "atr": 3.1075,
+      "chain_dir_hit_rate": 0.6,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 0.628,
+      "days_held": 3,
+      "realized_pct": 0.568,
+      "baseline_pct": -0.568
+    },
+    {
+      "instance_id": 1074,
+      "chain_id": 378,
+      "asset_symbol": "SLX",
+      "asset_class": "us_stock",
+      "event_date": "2026-02-18",
+      "direction": "up",
+      "horizon_days": 7,
+      "grade": "B",
+      "retail_edge": "high",
+      "entry_price": 98.65,
+      "stop_loss": 95.17,
+      "R_dollar": 3.48,
+      "atr": 1.74,
+      "chain_dir_hit_rate": 0.8,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 0.698,
+      "days_held": 7,
+      "realized_pct": 2.463,
+      "baseline_pct": 2.463
+    },
+    {
+      "instance_id": 1080,
+      "chain_id": 379,
+      "asset_symbol": "VIXY",
+      "asset_class": "us_stock",
+      "event_date": "2026-02-18",
+      "direction": "up",
+      "horizon_days": 30,
+      "grade": "C",
+      "retail_edge": "high",
+      "entry_price": 27.37,
+      "stop_loss": 25.78,
+      "R_dollar": 1.59,
+      "atr": 0.795,
+      "chain_dir_hit_rate": 0.6,
+      "kelly_fraction": 0.02,
+      "outcome": "tp1",
+      "realized_R": 1.5,
+      "days_held": 11,
+      "realized_pct": 8.714,
+      "baseline_pct": 39.678
+    },
+    {
+      "instance_id": 1039,
+      "chain_id": 368,
+      "asset_symbol": "SPY",
+      "asset_class": "us_stock",
+      "event_date": "2026-02-20",
+      "direction": "up",
+      "horizon_days": 1,
+      "grade": null,
+      "retail_edge": "low",
+      "entry_price": 689.43,
+      "stop_loss": 686.015,
+      "R_dollar": 3.415,
+      "atr": 1.7075,
+      "chain_dir_hit_rate": 0.667,
+      "kelly_fraction": 0.02,
+      "outcome": "stop",
+      "realized_R": -1.0,
+      "days_held": 1,
+      "realized_pct": -1.021,
+      "baseline_pct": -1.021
+    },
+    {
+      "instance_id": 1042,
+      "chain_id": 369,
+      "asset_symbol": "XRT",
+      "asset_class": "us_stock",
+      "event_date": "2026-02-20",
+      "direction": "up",
+      "horizon_days": 7,
+      "grade": null,
+      "retail_edge": "high",
+      "entry_price": 88.66,
+      "stop_loss": 87.385,
+      "R_dollar": 1.275,
+      "atr": 0.6375,
+      "chain_dir_hit_rate": 0.667,
+      "kelly_fraction": 0.02,
+      "outcome": "stop",
+      "realized_R": -1.0,
+      "days_held": 1,
+      "realized_pct": -2.087,
+      "baseline_pct": -3.395
+    },
+    {
+      "instance_id": 1047,
+      "chain_id": 370,
+      "asset_symbol": "IYT",
+      "asset_class": "us_stock",
+      "event_date": "2026-02-20",
+      "direction": "up",
+      "horizon_days": 14,
+      "grade": null,
+      "retail_edge": "high",
+      "entry_price": 82.4,
+      "stop_loss": 80.775,
+      "R_dollar": 1.625,
+      "atr": 0.8125,
+      "chain_dir_hit_rate": 0.667,
+      "kelly_fraction": 0.02,
+      "outcome": "stop",
+      "realized_R": -1.0,
+      "days_held": 1,
+      "realized_pct": -2.9,
+      "baseline_pct": -11.153
+    },
+    {
+      "instance_id": 1049,
+      "chain_id": 371,
+      "asset_symbol": "TLT",
+      "asset_class": "us_stock",
+      "event_date": "2026-02-20",
+      "direction": "up",
+      "horizon_days": 1,
+      "grade": "C",
+      "retail_edge": "mid",
+      "entry_price": 89.41,
+      "stop_loss": 88.875,
+      "R_dollar": 0.535,
+      "atr": 0.2675,
+      "chain_dir_hit_rate": 0.667,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 0.617,
+      "days_held": 1,
+      "realized_pct": 0.369,
+      "baseline_pct": 0.369
+    },
+    {
+      "instance_id": 1052,
+      "chain_id": 372,
+      "asset_symbol": "DX-Y.NYB",
+      "asset_class": "fx",
+      "event_date": "2026-02-20",
+      "direction": "down",
+      "horizon_days": 1,
+      "grade": "C",
+      "retail_edge": "low",
+      "entry_price": 97.8,
+      "stop_loss": 98.35,
+      "R_dollar": 0.55,
+      "atr": 0.275,
+      "chain_dir_hit_rate": 0.667,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 0.182,
+      "days_held": 1,
+      "realized_pct": 0.102,
+      "baseline_pct": -0.102
+    },
+    {
+      "instance_id": 1055,
+      "chain_id": 373,
+      "asset_symbol": "FXI",
+      "asset_class": "us_stock",
+      "event_date": "2026-02-20",
+      "direction": "up",
+      "horizon_days": 3,
+      "grade": "C",
+      "retail_edge": "high",
+      "entry_price": 38.81,
+      "stop_loss": 38.395,
+      "R_dollar": 0.415,
+      "atr": 0.2075,
+      "chain_dir_hit_rate": 0.667,
+      "kelly_fraction": 0.02,
+      "outcome": "stop",
+      "realized_R": -1.0,
+      "days_held": 2,
+      "realized_pct": -1.134,
+      "baseline_pct": -1.005
+    },
+    {
+      "instance_id": 1041,
+      "chain_id": 368,
+      "asset_symbol": "SPY",
+      "asset_class": "us_stock",
+      "event_date": "2026-03-04",
+      "direction": "up",
+      "horizon_days": 1,
+      "grade": null,
+      "retail_edge": "low",
+      "entry_price": 685.13,
+      "stop_loss": 677.37,
+      "R_dollar": 7.76,
+      "atr": 3.88,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": -0.492,
+      "days_held": 1,
+      "realized_pct": -0.558,
+      "baseline_pct": -0.558
+    },
+    {
+      "instance_id": 1044,
+      "chain_id": 369,
+      "asset_symbol": "XRT",
+      "asset_class": "us_stock",
+      "event_date": "2026-03-04",
+      "direction": "up",
+      "horizon_days": 7,
+      "grade": null,
+      "retail_edge": "high",
+      "entry_price": 85.94,
+      "stop_loss": 84.464,
+      "R_dollar": 1.476,
+      "atr": 0.738,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "stop",
+      "realized_R": -1.0,
+      "days_held": 2,
+      "realized_pct": -3.34,
+      "baseline_pct": -6.889
+    },
+    {
+      "instance_id": 1046,
+      "chain_id": 370,
+      "asset_symbol": "IYT",
+      "asset_class": "us_stock",
+      "event_date": "2026-03-04",
+      "direction": "up",
+      "horizon_days": 14,
+      "grade": null,
+      "retail_edge": "high",
+      "entry_price": 81.6,
+      "stop_loss": 80.372,
+      "R_dollar": 1.228,
+      "atr": 0.614,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "stop",
+      "realized_R": -1.0,
+      "days_held": 1,
+      "realized_pct": -3.235,
+      "baseline_pct": -9.24
+    },
+    {
+      "instance_id": 1050,
+      "chain_id": 371,
+      "asset_symbol": "TLT",
+      "asset_class": "us_stock",
+      "event_date": "2026-03-04",
+      "direction": "up",
+      "horizon_days": 1,
+      "grade": "C",
+      "retail_edge": "mid",
+      "entry_price": 89.15,
+      "stop_loss": 88.226,
+      "R_dollar": 0.924,
+      "atr": 0.462,
+      "chain_dir_hit_rate": 0.75,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": -0.39,
+      "days_held": 1,
+      "realized_pct": -0.404,
+      "baseline_pct": -0.404
+    },
+    {
+      "instance_id": 1053,
+      "chain_id": 372,
+      "asset_symbol": "DX-Y.NYB",
+      "asset_class": "fx",
+      "event_date": "2026-03-04",
+      "direction": "down",
+      "horizon_days": 1,
+      "grade": "C",
+      "retail_edge": "low",
+      "entry_price": 98.77,
+      "stop_loss": 99.526,
+      "R_dollar": 0.756,
+      "atr": 0.378,
+      "chain_dir_hit_rate": 0.75,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": -0.728,
+      "days_held": 1,
+      "realized_pct": -0.557,
+      "baseline_pct": 0.557
+    },
+    {
+      "instance_id": 1056,
+      "chain_id": 373,
+      "asset_symbol": "FXI",
+      "asset_class": "us_stock",
+      "event_date": "2026-03-04",
+      "direction": "up",
+      "horizon_days": 3,
+      "grade": "C",
+      "retail_edge": "high",
+      "entry_price": 36.21,
+      "stop_loss": 35.246,
+      "R_dollar": 0.964,
+      "atr": 0.482,
+      "chain_dir_hit_rate": 0.5,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 0.28,
+      "days_held": 3,
+      "realized_pct": 0.746,
+      "baseline_pct": 0.746
+    },
+    {
+      "instance_id": 1110,
+      "chain_id": 384,
+      "asset_symbol": "EURUSD=X",
+      "asset_class": "fx",
+      "event_date": "2026-03-19",
+      "direction": "up",
+      "horizon_days": 7,
+      "grade": "C",
+      "retail_edge": "mid",
+      "entry_price": 1.1464,
+      "stop_loss": 1.1352,
+      "R_dollar": 0.0112,
+      "atr": 0.0056,
+      "chain_dir_hit_rate": 0.571,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 0.25,
+      "days_held": 7,
+      "realized_pct": 0.244,
+      "baseline_pct": 0.244
+    },
+    {
+      "instance_id": 1116,
+      "chain_id": 385,
+      "asset_symbol": "DX-Y.NYB",
+      "asset_class": "fx",
+      "event_date": "2026-03-19",
+      "direction": "down",
+      "horizon_days": 3,
+      "grade": "C",
+      "retail_edge": "low",
+      "entry_price": 99.23,
+      "stop_loss": 100.198,
+      "R_dollar": 0.968,
+      "atr": 0.484,
+      "chain_dir_hit_rate": 0.571,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": -0.207,
+      "days_held": 3,
+      "realized_pct": -0.202,
+      "baseline_pct": 0.202
+    },
+    {
+      "instance_id": 1122,
+      "chain_id": 386,
+      "asset_symbol": "FEZ",
+      "asset_class": "eu_stock",
+      "event_date": "2026-03-19",
+      "direction": "down",
+      "horizon_days": 3,
+      "grade": "C",
+      "retail_edge": "mid",
+      "entry_price": 62.16,
+      "stop_loss": 63.992,
+      "R_dollar": 1.832,
+      "atr": 0.916,
+      "chain_dir_hit_rate": 0.571,
+      "kelly_fraction": 0.02,
+      "outcome": "expire",
+      "realized_R": 0.557,
+      "days_held": 3,
+      "realized_pct": 1.641,
+      "baseline_pct": -1.641
+    },
+    {
+      "instance_id": 1128,
+      "chain_id": 387,
+      "asset_symbol": "TLT",
+      "asset_class": "us_stock",
+      "event_date": "2026-03-19",
+      "direction": "down",
+      "horizon_days": 1,
+      "grade": "C",
+      "retail_edge": "mid",
+      "entry_price": 87.49,
+      "stop_loss": 88.29,
+      "R_dollar": 0.8,
+      "atr": 0.4,
+      "chain_dir_hit_rate": 0.571,
+      "kelly_fraction": 0.02,
+      "outcome": "tp1",
+      "realized_R": 1.5,
+      "days_held": 1,
+      "realized_pct": 1.372,
+      "baseline_pct": -1.897
+    },
+    {
+      "instance_id": 1134,
+      "chain_id": 388,
+      "asset_symbol": "GC=F",
+      "asset_class": "commodity",
+      "event_date": "2026-03-19",
+      "direction": "down",
+      "horizon_days": 1,
+      "grade": "C",
+      "retail_edge": "mid",
+      "entry_price": 4600.7002,
+      "stop_loss": 4717.3002,
+      "R_dollar": 116.6,
+      "atr": 58.3,
+      "chain_dir_hit_rate": 0.429,
+      "kelly_fraction": 0.0119,
+      "outcome": "expire",
+      "realized_R": 0.26,
+      "days_held": 1,
+      "realized_pct": 0.659,
+      "baseline_pct": -0.659
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-29T12:23:52.918826",
+  "generated_at": "2026-04-29T12:35:31.895972",
   "kb_summary": {
-    "n_links_active": 444,
+    "n_links_active": 466,
     "n_strong": 167,
     "n_strong_rigorous": 37,
     "rigor_thresholds": {
@@ -15,7 +15,7 @@
     "n_weak": 8,
     "n_retire_candidate": 0,
     "n_flip_candidate": 0,
-    "n_insufficient_data": 269,
+    "n_insufficient_data": 291,
     "strong_avg_dir_hit_rate": 0.798,
     "n_instances_total": 1937,
     "n_instances_with_price_path": 1903,
@@ -33,7 +33,7 @@
       "crypto_market": 13,
       "financial_stress": 26,
       "market_stress": 2,
-      "other": 144
+      "other": 166
     }
   },
   "total": 176,

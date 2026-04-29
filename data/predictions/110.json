@@ -20,7 +20,7 @@
   "actual_direction": null,
   "current_price": 16.95,
   "current_pct": 0.0,
-  "current_at": "2026-04-29T02:18:29.277263",
+  "current_at": "2026-04-29T04:39:07.768894",
   "reasoning": "光伏产业是中国出口产业链优势的典型代表，外贸持续向好反映海外对中国光伏组件需求旺盛，龙头企业隆基绿能将直接受益于出口订单增长。",
   "stop_loss_price": 16.5263,
   "take_profit": {
@@ -40,6 +40,9 @@
   "kelly_fraction": 0.0,
   "resonance_posterior": null,
   "resonance": null,
+  "tags": [
+    "ungrounded"
+  ],
   "cited_link_ids": [],
   "cited_chains": [],
   "event": {

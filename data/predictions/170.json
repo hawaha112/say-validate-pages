@@ -40,6 +40,10 @@
   "kelly_fraction": 0.0,
   "resonance_posterior": null,
   "resonance": null,
+  "tags": [
+    "ungrounded",
+    "extreme"
+  ],
   "cited_link_ids": [],
   "cited_chains": [],
   "event": {

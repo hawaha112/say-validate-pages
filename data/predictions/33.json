@@ -18,8 +18,8 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 47.55160140991211,
-  "current_pct": -0.9545900693551718,
+  "current_price": 47.54999923706055,
+  "current_pct": -0.9579272412307268,
   "current_at": "2026-04-28T00:00:00-04:00",
   "reasoning": "本年度最大IPO成功定价并首日大涨，验证了一级市场承接能力恢复，将刺激后续IPO排队加速发行并提升已上市次新股估值，Renaissance IPO ETF作为新股组合直接受益于IPO窗口重启的情绪与资金流入。检索结果无对应因果模式，属新模式。",
   "stop_loss_price": 46.8097,
@@ -40,6 +40,9 @@
   "kelly_fraction": 0.0,
   "resonance_posterior": null,
   "resonance": null,
+  "tags": [
+    "ungrounded"
+  ],
   "cited_link_ids": [],
   "cited_chains": [],
   "event": {

@@ -77,6 +77,9 @@
     ],
     "note": "⚠ 证据同类别重叠 r̄=1.00，已折扣 (n=2 → n_eff=1.0)"
   },
+  "tags": [
+    "low_grade_chain"
+  ],
   "cited_link_ids": [
     40,
     42

@@ -18,8 +18,8 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": NaN,
-  "current_pct": NaN,
+  "current_price": 7.145999908447266,
+  "current_pct": -1.8676209172128324,
   "current_at": "2026-04-28T00:00:00+02:00",
   "reasoning": "俄伊高层会晤强调中东局势紧张，若局势进一步恶化可能影响海湾地区航油供应与中东航线运营。欧洲航司如汉莎对中东航线依赖度高，航油成本敏感。参考检索到的因果链id=96，海湾燃料供应风险会压制欧洲航司股价，此次地缘紧张信号可能提前触发类似担忧。",
   "stop_loss_price": 7.4364,
@@ -60,6 +60,9 @@
     ],
     "note": ""
   },
+  "tags": [
+    "low_grade_chain"
+  ],
   "cited_link_ids": [
     96
   ],

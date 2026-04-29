@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 4614.0,
-  "current_pct": -2.202248977180181,
-  "current_at": "2026-04-28T00:00:00-04:00",
+  "current_price": 4612.7998046875,
+  "current_pct": -2.227688162778497,
+  "current_at": "2026-04-29T00:00:00-04:00",
   "reasoning": "南海地缘紧张升级触发避险情绪，资金倾向流入黄金等传统避险资产。中国海军围观美日菲军演的强势姿态加剧市场对区域冲突风险的担忧，短期内支撑金价。检索因果链虽提及地区银行危机推动黄金避险，但地缘冲突驱动的避险逻辑为新模式。",
   "stop_loss_price": 4661.2851,
   "take_profit": {
@@ -40,6 +40,10 @@
   "kelly_fraction": 0.0,
   "resonance_posterior": null,
   "resonance": null,
+  "tags": [
+    "ungrounded",
+    "asset_repeat"
+  ],
   "cited_link_ids": [],
   "cited_chains": [],
   "event": {

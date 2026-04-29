@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 4614.0,
-  "current_pct": -2.2519714654975695,
-  "current_at": "2026-04-28T00:00:00-04:00",
+  "current_price": 4612.7998046875,
+  "current_pct": -2.277397717264632,
+  "current_at": "2026-04-29T00:00:00-04:00",
   "reasoning": "朝俄军事合作实质化加剧全球地缘政治不确定性，避险资金将流向黄金。朝鲜正式参与俄乌战争意味着冲突扩大化风险上升，可能引发更广泛的国际紧张局势，支撑金价走高。",
   "stop_loss_price": 4663.6562,
   "take_profit": {
@@ -40,6 +40,9 @@
   "kelly_fraction": 0.0,
   "resonance_posterior": null,
   "resonance": null,
+  "tags": [
+    "ungrounded"
+  ],
   "cited_link_ids": [],
   "cited_chains": [],
   "event": {

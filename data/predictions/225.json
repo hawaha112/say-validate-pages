@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": null,
-  "current_pct": null,
-  "current_at": null,
+  "current_price": 16.55068016052246,
+  "current_pct": -0.1307562802376056,
+  "current_at": "2026-04-29T00:00:00+01:00",
   "reasoning": "燃油税减免将增加南非财政支出压力或减少财政收入，在当前南非财政状况本就紧张的背景下，可能引发市场对财政可持续性的担忧，导致兰特相对美元走弱（即USD/ZAR上涨）。这是财政刺激政策对新兴市场货币的典型负面影响。",
   "stop_loss_price": 16.3735,
   "take_profit": {
@@ -40,6 +40,9 @@
   "kelly_fraction": 0.0,
   "resonance_posterior": null,
   "resonance": null,
+  "tags": [
+    "ungrounded"
+  ],
   "cited_link_ids": [],
   "cited_chains": [],
   "event": {

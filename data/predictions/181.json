@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 4614.0,
-  "current_pct": 0.674213996756298,
-  "current_at": "2026-04-28T00:00:00-04:00",
+  "current_price": 4612.7998046875,
+  "current_pct": 0.6480265845914673,
+  "current_at": "2026-04-29T00:00:00-04:00",
   "reasoning": "中东地缘政治紧张局势升级时，黄金作为传统避险资产通常受益。伊朗对海峡控制的报道增加区域冲突风险，推动资金流入黄金避险。",
   "stop_loss_price": 4491.4381,
   "take_profit": {
@@ -40,6 +40,10 @@
   "kelly_fraction": 0.0,
   "resonance_posterior": null,
   "resonance": null,
+  "tags": [
+    "ungrounded",
+    "asset_repeat"
+  ],
   "cited_link_ids": [],
   "cited_chains": [],
   "event": {

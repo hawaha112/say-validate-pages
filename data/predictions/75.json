@@ -31,6 +31,8 @@
     "ungrounded",
     "extreme"
   ],
+  "retired_at": null,
+  "retired_reason": null,
   "cited_link_ids": [],
   "cited_chains": [],
   "event": {

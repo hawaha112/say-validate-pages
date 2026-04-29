@@ -63,6 +63,8 @@
   "tags": [
     "low_grade_chain"
   ],
+  "retired_at": null,
+  "retired_reason": null,
   "cited_link_ids": [
     53
   ],

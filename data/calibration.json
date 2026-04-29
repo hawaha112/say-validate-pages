@@ -1,0 +1,9 @@
+{
+  "n_buckets": 10,
+  "n_total": 0,
+  "buckets": [],
+  "brier_score": null,
+  "ece": null,
+  "is_well_calibrated": null,
+  "note": "no verified predictions with resonance"
+}

@@ -20,7 +20,7 @@
   "actual_direction": null,
   "current_price": 445.0,
   "current_pct": 2.3270787343635035,
-  "current_at": "2026-04-29T11:55:38.196750",
+  "current_at": "2026-04-29T12:22:18.199181",
   "reasoning": "天齐锂业作为上游锂资源龙头业绩暴增，反映锂电产业链景气度高企。宁德时代作为下游电池龙头，产业链联动效应下将受益于市场对锂电板块的重新关注，资金可能从上游向中下游扩散。",
   "stop_loss_price": 426.1824,
   "take_profit": {
@@ -43,6 +43,8 @@
   "tags": [
     "ungrounded"
   ],
+  "retired_at": null,
+  "retired_reason": null,
   "cited_link_ids": [],
   "cited_chains": [],
   "event": {

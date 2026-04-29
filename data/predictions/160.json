@@ -18,8 +18,8 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 4578.2998046875,
-  "current_pct": -0.4998587567923551,
+  "current_price": 4577.39990234375,
+  "current_pct": -0.5194163249132856,
   "current_at": "2026-04-29T00:00:00-04:00",
   "reasoning": "特朗普对伊朗领导层的评论增加了地缘政治不确定性，投资者通常在此类风险事件中寻求避险资产。黄金作为传统避险工具，在中东局势紧张时往往受到资金流入支撑。",
   "stop_loss_price": 4546.0842,
@@ -44,6 +44,8 @@
     "ungrounded",
     "asset_repeat"
   ],
+  "retired_at": null,
+  "retired_reason": null,
   "cited_link_ids": [],
   "cited_chains": [],
   "event": {

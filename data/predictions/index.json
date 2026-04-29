@@ -21,8 +21,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 16.594240188598633,
-      "current_pct": 0.1320913500824751,
+      "current_price": 16.594120025634766,
+      "current_pct": 0.13136626904603735,
       "current_at": "2026-04-29T00:00:00+01:00",
       "reasoning": "燃油税减免将增加南非财政支出压力或减少财政收入，在当前南非财政状况本就紧张的背景下，可能引发市场对财政可持续性的担忧，导致兰特相对美元走弱（即USD/ZAR上涨）。这是财政刺激政策对新兴市场货币的典型负面影响。",
       "stop_loss_price": 16.3735,
@@ -46,6 +46,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -106,6 +108,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -153,6 +157,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -200,6 +206,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -260,6 +268,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -297,7 +307,7 @@
       "actual_direction": null,
       "current_price": 48.06,
       "current_pct": -2.257474069554605,
-      "current_at": "2026-04-29T11:55:27.822978",
+      "current_at": "2026-04-29T12:22:06.348001",
       "reasoning": "科大讯飞是国内AI语音和生成式AI的代表企业，旗下产品广泛涉及AI生成内容。此次监管对字节系产品（剪映、即梦AI）的严厉处罚释放信号，市场将对所有AIGC龙头的合规成本和政策风险重新定价。叠加公司一季度仍在亏损，短期情绪偏空。检索结果无相关因果链，属新模式。",
       "stop_loss_price": 50.1534,
       "take_profit": {
@@ -320,6 +330,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -357,7 +369,7 @@
       "actual_direction": null,
       "current_price": 34.81,
       "current_pct": 0.4617604617604724,
-      "current_at": "2026-04-29T11:55:30.853339",
+      "current_at": "2026-04-29T12:22:11.357346",
       "reasoning": "网信部门对剪映、猫箱及即梦AI的约谈和处罚表明监管层正加强对AI生成内容标识的执法力度。海康威视作为AI视觉龙头，其AI产品同样涉及内容生成与合成技术，市场将担忧类似监管风险蔓延，短期承压。这是新的监管执法模式，检索结果中未有匹配的因果链。",
       "stop_loss_price": 35.1698,
       "take_profit": {
@@ -380,6 +392,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -427,6 +441,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -474,6 +490,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -521,6 +539,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -581,6 +601,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -642,6 +664,8 @@
         "ungrounded",
         "asset_repeat"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -702,6 +726,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -782,6 +808,8 @@
       "tags": [
         "low_grade_chain"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [
         206
       ],
@@ -875,6 +903,8 @@
       "tags": [
         "low_grade_chain"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [
         206
       ],
@@ -968,6 +998,8 @@
       "tags": [
         "low_grade_chain"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [
         206
       ],
@@ -1018,7 +1050,7 @@
       "actual_direction": null,
       "current_price": 12.25,
       "current_pct": 0.5747126436781632,
-      "current_at": "2026-04-29T11:55:34.979681",
+      "current_at": "2026-04-29T12:22:15.385705",
       "reasoning": "阿联酋宣布自5月1日起退出欧佩克+并将逐步提高石油产量，这意味着OPEC+减产协议面临瓦解风险，全球原油供应预期增加将压制油价。中国石油作为国内最大油企，其盈利与油价高度相关，油价下行预期将对股价形成压力。",
       "stop_loss_price": 12.4845,
       "take_profit": {
@@ -1041,6 +1073,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1078,7 +1112,7 @@
       "actual_direction": null,
       "current_price": 445.0,
       "current_pct": 4.05218977248813,
-      "current_at": "2026-04-29T11:55:38.196750",
+      "current_at": "2026-04-29T12:22:18.199181",
       "reasoning": "比亚迪作为新能源汽车产业链核心企业，其业绩大幅下滑反映出整个新能源车市场价格战激烈、利润空间被压缩。宁德时代作为动力电池龙头，与比亚迪高度关联，市场会担忧电池环节同样面临降价压力，短期内存在联动下跌风险。",
       "stop_loss_price": 436.2234,
       "take_profit": {
@@ -1101,6 +1135,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1138,7 +1174,7 @@
       "actual_direction": null,
       "current_price": 105.4,
       "current_pct": 3.8628301143082395,
-      "current_at": "2026-04-29T11:55:40.804465",
+      "current_at": "2026-04-29T12:22:21.205382",
       "reasoning": "比亚迪一季度净利润同比大降55.38%，营收下降11.82%，远低于市场预期。作为新能源汽车龙头，如此大幅度的业绩下滑将引发市场对其价格战影响和盈利能力的担忧。财报公布后短期内股价承压是大概率事件，参考历史上龙头公司业绩大幅低于预期后的市场反应。",
       "stop_loss_price": 105.0318,
       "take_profit": {
@@ -1161,6 +1197,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1196,8 +1234,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 102.9800033569336,
-      "current_pct": 3.062455208230095,
+      "current_price": 103.19999694824219,
+      "current_pct": 3.2826249393550166,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "阿联酋宣布自5月1日起退出欧佩克及欧佩克+，并将逐步提高石油产量。这是继卡塔尔之后又一重要产油国退出，将打破欧佩克+的减产协议约束，增加全球原油供应预期。在当前全球经济增长放缓、需求疲软的背景下，供给端扩张将对油价形成显著下行压力。此为新发现的因果模式。",
       "stop_loss_price": 103.9168,
@@ -1221,6 +1259,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1258,7 +1298,7 @@
       "actual_direction": null,
       "current_price": 105.4,
       "current_pct": 3.8628301143082395,
-      "current_at": "2026-04-29T11:55:40.804465",
+      "current_at": "2026-04-29T12:22:21.205382",
       "reasoning": "比亚迪一季度净利润同比大降55.38%，扣非净利润下滑49.24%，营收也同比下降近12%，业绩大幅低于市场预期。虽然比亚迪长期基本面仍被看好，但短期内业绩暴雷将引发机构调仓和散户抛售压力，股价面临回调风险。此为新发现的因果模式。",
       "stop_loss_price": 104.017,
       "take_profit": {
@@ -1281,6 +1321,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1318,7 +1360,7 @@
       "actual_direction": null,
       "current_price": 6.72,
       "current_pct": 0.900900900900895,
-      "current_at": "2026-04-29T11:55:43.948318",
+      "current_at": "2026-04-29T12:22:24.249044",
       "reasoning": "知名牛散章建平以超7200万股新进成为北方稀土第四大股东，持股比例达2%，这是一个强烈的市场信号。章建平作为A股市场知名游资大佬，其重仓买入行为往往被市场解读为对公司前景的看好。稀土作为战略资源，在中美贸易摩擦背景下具备政策支撑预期，叠加牛散背书效应，短期内将吸引跟风资金入场推高股价。此为新发现的因果模式。",
       "stop_loss_price": 6.4269,
       "take_profit": {
@@ -1341,6 +1383,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1388,6 +1432,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1436,6 +1482,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1483,6 +1531,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1531,6 +1581,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1579,6 +1631,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1626,6 +1680,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1673,6 +1729,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1721,6 +1779,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1768,6 +1828,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1815,6 +1877,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1875,6 +1939,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1935,6 +2001,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -1995,6 +2063,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -2055,6 +2125,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -2135,6 +2207,8 @@
       "tags": [
         "low_grade_chain"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [
         206
       ],
@@ -2183,8 +2257,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 102.9800033569336,
-      "current_pct": 2.959414930226736,
+      "current_price": 103.19999694824219,
+      "current_pct": 3.1793645389971386,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "阿联酋油轮突破美伊双重封锁意味着中东原油运输通道出现松动，市场此前因封锁担忧的供应风险溢价将部分回落。这与检索到的沙特减产推高油价逻辑相反——供应端出现增量信号，短期内对油价形成下行压力。",
       "stop_loss_price": 102.5205,
@@ -2208,6 +2282,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -2255,6 +2331,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -2290,8 +2368,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4578.2998046875,
-      "current_pct": -0.043665263962703725,
+      "current_price": 4577.39990234375,
+      "current_pct": -0.06331250065295348,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "国际黄金期货对央行售金消息更为敏感，流动性更高意味着价格调整更快。多国央行同时抛售形成供给冲击，期货市场的投机资金可能加速撤离黄金多头头寸，放大跌幅。历史上央行协调售金（如1999年华盛顿协议前）曾导致金价大幅波动。",
       "stop_loss_price": 4717.7088,
@@ -2315,6 +2393,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -2362,6 +2442,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -2399,7 +2481,7 @@
       "actual_direction": null,
       "current_price": 17.2,
       "current_pct": -0.058105752469503565,
-      "current_at": "2026-04-29T11:55:52.608146",
+      "current_at": "2026-04-29T12:22:33.732403",
       "reasoning": "中国摩托车产业国际化发展将带动上游零部件供应链需求。钱江摩托作为A股上市的主要摩托车整车制造商，参与国际赛事有助于提升品牌溢价和出口订单。此为新因果模式。",
       "stop_loss_price": 16.9002,
       "take_profit": {
@@ -2422,6 +2504,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -2459,7 +2543,7 @@
       "actual_direction": null,
       "current_price": 6.95,
       "current_pct": -1.2784090909090888,
-      "current_at": "2026-04-29T11:55:55.119510",
+      "current_at": "2026-04-29T12:22:36.292741",
       "reasoning": "重庆沙坪坝作为中国摩托车产业重镇，推动国产摩托参与国际赛事将提升行业整体关注度和品牌价值。隆鑫通用作为重庆本地龙头摩托车企业，有望直接受益于政策支持和国际曝光度提升。此为新模式，检索结果中无直接匹配的因果链。",
       "stop_loss_price": 6.864,
       "take_profit": {
@@ -2482,6 +2566,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -2542,6 +2628,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -2577,8 +2665,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4578.2998046875,
-      "current_pct": -0.10473899470807588,
+      "current_price": 4577.39990234375,
+      "current_pct": -0.12437422685607545,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "中东地缘政治紧张局势升级时，黄金作为传统避险资产通常受益。伊朗对海峡控制的报道增加区域冲突风险，推动资金流入黄金避险。",
       "stop_loss_price": 4491.4381,
@@ -2603,6 +2691,8 @@
         "ungrounded",
         "asset_repeat"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -2663,6 +2753,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -2698,8 +2790,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 2.959160089492798,
-      "current_pct": -0.0958745374099853,
+      "current_price": 2.9584200382232666,
+      "current_pct": -0.12085938873402145,
       "current_at": "2026-04-29T00:00:00+01:00",
       "reasoning": "俄伊联盟强化对以色列构成间接安全威胁，地区不稳定预期上升时，资金倾向流出中东资产，谢克尔承压贬值，美元兑谢克尔走高。",
       "stop_loss_price": 2.9265,
@@ -2723,6 +2815,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -2758,8 +2852,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 102.9800033569336,
-      "current_pct": 3.414341698494118,
+      "current_price": 103.19999694824219,
+      "current_pct": 3.6352631558785333,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "伊朗是全球主要产油国，美伊紧张关系升温时市场会担忧霍尔木兹海峡通行风险和潜在供应中断。普京力挺伊朗的表态加剧了对抗预期，推升原油风险溢价。",
       "stop_loss_price": 96.0947,
@@ -2783,6 +2877,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -2818,8 +2914,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4578.2998046875,
-      "current_pct": -0.22665221483905884,
+      "current_price": 4577.39990234375,
+      "current_pct": -0.24626348394461683,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "普京公开赞扬伊朗抵抗美国，显示俄伊联盟强化，中东地缘紧张局势升温。市场担忧潜在冲突风险，避险资金流入黄金。检索到的因果链与银行危机相关，不适用于此地缘政治事件，故标记为新模式。",
       "stop_loss_price": 4473.9827,
@@ -2844,6 +2940,8 @@
         "ungrounded",
         "asset_repeat"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -2879,8 +2977,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 159.85000610351562,
-      "current_pct": 0.17421594457907663,
+      "current_price": 159.8459930419922,
+      "current_pct": 0.17170105389219495,
       "current_at": "2026-04-29T00:00:00+01:00",
       "reasoning": "地缘紧张时日元作为传统避险货币往往走强（即美元兑日元下跌）。日本官方的备战言论若引发市场对区域冲突的担忧，资金可能回流日元资产，短期内压低美元兑日元汇率。检索链条未涉及日元避险逻辑，此为新模式。",
       "stop_loss_price": 161.4869,
@@ -2904,6 +3002,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -2939,8 +3039,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4578.2998046875,
-      "current_pct": -0.2527309506319869,
+      "current_price": 4577.39990234375,
+      "current_pct": -0.27233709374832116,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "东亚大国间的战争准备言论加剧全球地缘政治不确定性，避险资金通常流向黄金。日本作为美国盟友的备战姿态可能引发市场对台海等热点的担忧升温，推动金价上行。检索结果中无东亚地缘避险链条，属新模式。",
       "stop_loss_price": 4507.2817,
@@ -2965,6 +3065,8 @@
         "ungrounded",
         "asset_repeat"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3002,7 +3104,7 @@
       "actual_direction": null,
       "current_price": 20.29,
       "current_pct": 1.551551551551545,
-      "current_at": "2026-04-29T11:55:59.113062",
+      "current_at": "2026-04-29T12:22:40.008423",
       "reasoning": "日本官方表态'为长期战争做准备'暗示东亚地缘紧张升级，市场预期中国将加大国防投入。军工板块作为地缘冲突的直接受益方，历史上在中日关系紧张时期表现强势。检索到的因果链均为中东能源相关，不适用于东亚地缘政治场景，此为新模式。",
       "stop_loss_price": 19.4805,
       "take_profit": {
@@ -3025,6 +3127,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3085,6 +3189,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3145,6 +3251,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3205,6 +3313,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3266,6 +3376,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3326,6 +3438,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3386,6 +3500,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3446,6 +3562,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3506,6 +3624,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3567,6 +3687,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3614,6 +3736,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3661,6 +3785,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3698,7 +3824,7 @@
       "actual_direction": null,
       "current_price": 73.06,
       "current_pct": 5.137429846021021,
-      "current_at": "2026-04-29T11:56:11.684614",
+      "current_at": "2026-04-29T12:22:52.719143",
       "reasoning": "公司一季度净利润同比大跌75%，远超市场预期的业绩下滑幅度。光伏设备收入同比减少30.53%，叠加债务重组损失和汇兑损失等多重负面因素，短期股价将承受显著抛压。虽然公司强调半导体国产化投入，但短期业绩兑现能力受质疑，市场情绪偏空。",
       "stop_loss_price": 72.617,
       "take_profit": {
@@ -3721,6 +3847,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3781,6 +3909,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3816,8 +3946,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4578.2998046875,
-      "current_pct": -0.4998587567923551,
+      "current_price": 4577.39990234375,
+      "current_pct": -0.5194163249132856,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "特朗普对伊朗领导层的评论增加了地缘政治不确定性，投资者通常在此类风险事件中寻求避险资产。黄金作为传统避险工具，在中东局势紧张时往往受到资金流入支撑。",
       "stop_loss_price": 4546.0842,
@@ -3842,6 +3972,8 @@
         "ungrounded",
         "asset_repeat"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3902,6 +4034,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -3962,6 +4096,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4022,6 +4158,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4082,6 +4220,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4119,7 +4259,7 @@
       "actual_direction": null,
       "current_price": 7.65,
       "current_pct": 1.8641810918775044,
-      "current_at": "2026-04-29T11:56:16.299440",
+      "current_at": "2026-04-29T12:22:56.326270",
       "reasoning": "露笑科技作为碳化硅和光伏领域企业，净利润大幅下滑反映行业竞争加剧或下游需求疲软。市场在消化财报信息后，若后续无利好催化，投资者可能重新评估公司估值，导致中期股价进一步下行。增收不增利的趋势若延续将对估值形成持续压制。",
       "stop_loss_price": 7.8855,
       "take_profit": {
@@ -4142,6 +4282,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4179,7 +4321,7 @@
       "actual_direction": null,
       "current_price": 7.65,
       "current_pct": 1.8641810918775044,
-      "current_at": "2026-04-29T11:56:16.299440",
+      "current_at": "2026-04-29T12:22:56.326270",
       "reasoning": "露笑科技一季度净利润同比下降27.68%，虽然营收增长11.32%，但盈利能力明显下滑，毛利率或费用控制出现问题。A股市场对业绩不及预期的公司通常在财报公布后的短期内会有负面反应，特别是增收不增利的情况会引发投资者对公司经营效率的担忧。预计短期内股价承压回调。",
       "stop_loss_price": 7.7729,
       "take_profit": {
@@ -4202,6 +4344,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4262,6 +4406,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4322,6 +4468,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4382,6 +4530,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4429,6 +4579,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4476,6 +4628,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4523,6 +4677,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4571,6 +4727,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4619,6 +4777,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4666,6 +4826,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4713,6 +4875,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4760,6 +4924,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4807,6 +4973,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4855,6 +5023,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4903,6 +5073,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -4938,8 +5110,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4578.2998046875,
-      "current_pct": -0.21142535554707934,
+      "current_price": 4577.39990234375,
+      "current_pct": -0.23103961761660854,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "中东地缘政治紧张局势是传统的避险驱动因素。伊朗强化海峡控制能力的报道会刺激投资者增持黄金作为避险资产，尤其是在市场担忧潜在军事冲突或石油供应危机的情况下。",
       "stop_loss_price": 4532.944,
@@ -4964,6 +5136,8 @@
         "ungrounded",
         "asset_repeat"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5024,6 +5198,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5084,6 +5260,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5131,6 +5309,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5178,6 +5358,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5225,6 +5407,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5285,6 +5469,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5345,6 +5531,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5405,6 +5593,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5442,7 +5632,7 @@
       "actual_direction": null,
       "current_price": 13.38,
       "current_pct": 10.03289473684211,
-      "current_at": "2026-04-29T11:56:20.277549",
+      "current_at": "2026-04-29T12:23:00.245040",
       "reasoning": "黄金掺假丑闻曝光后，黄金珠宝零售板块将整体承压。周大生等品牌虽未必直接涉及，但消费者对整个行业的信任度下降会导致短期销售萎缩预期，股价面临回调风险。市场情绪主导下跌幅可能较大。",
       "stop_loss_price": 12.6464,
       "take_profit": {
@@ -5465,6 +5655,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5502,7 +5694,7 @@
       "actual_direction": null,
       "current_price": 8.93,
       "current_pct": 2.880184331797235,
-      "current_at": "2026-04-29T11:56:23.252599",
+      "current_at": "2026-04-29T12:23:02.787956",
       "reasoning": "央视曝光黄金掺假将直接冲击黄金零售企业的品牌信誉和消费者信任。中国黄金作为黄金珠宝龙头企业，即使未被点名，整个行业也将面临信任危机，短期内股价承压明显。投资者担忧销售下滑和潜在监管收紧，抛压较大。",
       "stop_loss_price": 8.9838,
       "take_profit": {
@@ -5525,6 +5717,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5572,6 +5766,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5609,7 +5805,7 @@
       "actual_direction": null,
       "current_price": 4107.51,
       "current_pct": 0.707833983876987,
-      "current_at": "2026-04-29T11:56:25.742825",
+      "current_at": "2026-04-29T12:23:05.079360",
       "reasoning": "77只个股涨停显示市场情绪回暖、资金活跃度提升，短期内可能带动指数上行。涨停数量较多通常预示局部行情向好，但该新闻缺乏具体板块信息，影响幅度有限。检索到的因果链与中东地缘政治相关，与本新闻无关，故判定为新模式。",
       "stop_loss_price": 4046.0109,
       "take_profit": {
@@ -5632,6 +5828,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5667,8 +5865,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 102.9800033569336,
-      "current_pct": 3.5495289261080267,
+      "current_price": 103.19999694824219,
+      "current_pct": 3.7707391805669452,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "普京对伊朗的支持表态暗示俄伊在能源和军事领域合作可能深化，市场将担忧中东局势恶化影响原油供应通道安全，尤其是霍尔木兹海峡。地缘风险溢价将推高油价。检索结果中无匹配模式，这是典型的地缘政治供应风险定价。",
       "stop_loss_price": 96.9637,
@@ -5692,6 +5890,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5727,8 +5927,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4578.2998046875,
-      "current_pct": -0.3113768380584213,
+      "current_price": 4577.39990234375,
+      "current_pct": -0.33097145384500476,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "普京公开赞扬伊朗抵抗美国，显示俄伊联盟进一步强化，这将加剧中东地缘政治紧张局势。市场对潜在冲突升级的担忧会推动避险资金流入黄金。该因果模式在检索结果中未能匹配，属于新发现的地缘政治风险溢价传导路径。",
       "stop_loss_price": 4537.4889,
@@ -5753,6 +5953,8 @@
         "ungrounded",
         "asset_repeat"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5800,6 +6002,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5837,7 +6041,7 @@
       "actual_direction": null,
       "current_price": 4107.51,
       "current_pct": 0.707833983876987,
-      "current_at": "2026-04-29T11:56:25.742825",
+      "current_at": "2026-04-29T12:23:05.079360",
       "reasoning": "股王反复易主反映市场缺乏主线，资金在不同板块间快速轮动，这通常是市场信心不足、方向不明的信号。历史上这种无序轮动往往伴随指数震荡下行或横盘整理，短期内大盘承压概率较高。",
       "stop_loss_price": 4127.5837,
       "take_profit": {
@@ -5860,6 +6064,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5907,6 +6113,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -5967,6 +6175,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -6004,7 +6214,7 @@
       "actual_direction": null,
       "current_price": 24.06,
       "current_pct": 2.38297872340425,
-      "current_at": "2026-04-29T11:56:32.738207",
+      "current_at": "2026-04-29T12:23:12.694604",
       "reasoning": "美媒对中国军舰实力的正面评价会刺激A股市场对国防军工板块的关注和投资热情，投资者预期中国将持续加大军工投入以应对竞争压力，军工概念股短期内容易获得资金追捧。这是一个新的因果模式，检索结果中未涵盖。",
       "stop_loss_price": 22.6775,
       "take_profit": {
@@ -6027,6 +6237,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -6062,8 +6274,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4578.2998046875,
-      "current_pct": -0.2570813864119291,
+      "current_price": 4577.39990234375,
+      "current_pct": -0.2766866744144609,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "美媒肯定中国军舰实力的报道会强化市场对中美军事竞争加剧的预期，地缘政治紧张情绪上升时，黄金作为传统避险资产往往受到资金流入。参考检索到的避险逻辑，但本次事件更偏向地缘军事而非财政危机，因此幅度相对温和。",
       "stop_loss_price": 4565.3422,
@@ -6105,6 +6317,8 @@
         "note": ""
       },
       "tags": [],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [
         94
       ],
@@ -6153,8 +6367,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4578.2998046875,
-      "current_pct": -0.26142083329167076,
+      "current_price": 4577.39990234375,
+      "current_pct": -0.2810252683403585,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "中美关系紧张信号通常触发全球避险情绪，黄金作为传统避险资产会受到资金青睐。参考检索到的id=291因果链中提到的避险逻辑，地缘政治不确定性上升时黄金往往受益。此次美国施压中国的外交事件虽然冲击力有限，但仍会推动部分避险买盘。",
       "stop_loss_price": 4589.7303,
@@ -6196,6 +6410,8 @@
         "note": ""
       },
       "tags": [],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [
         291
       ],
@@ -6256,6 +6472,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -6293,7 +6511,7 @@
       "actual_direction": null,
       "current_price": 40.47,
       "current_pct": 5.280957336108224,
-      "current_at": "2026-04-29T11:56:37.330814",
+      "current_at": "2026-04-29T12:23:17.344285",
       "reasoning": "家电行业近年价格战激烈，整治内卷式竞争的政策导向有望缓解行业恶性竞争，龙头企业如格力电器可能受益于竞争格局改善和利润率企稳。此为新发现的政策对制造业竞争格局影响的因果模式。",
       "stop_loss_price": 37.8634,
       "take_profit": {
@@ -6316,6 +6534,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -6376,6 +6596,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -6436,6 +6658,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -6483,6 +6707,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -6530,6 +6756,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -6565,8 +6793,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 6.83650016784668,
-      "current_pct": -0.01579559041511021,
+      "current_price": 6.835360050201416,
+      "current_pct": -0.032469875926160324,
       "current_at": "2026-04-29T00:00:00+01:00",
       "reasoning": "外贸顺差屡创新高意味着更多美元流入结汇需求，支撑人民币汇率走强，美元兑离岸人民币汇率承压下行。",
       "stop_loss_price": 6.8649,
@@ -6590,6 +6818,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -6627,7 +6857,7 @@
       "actual_direction": null,
       "current_price": 16.55,
       "current_pct": -2.3598820058996965,
-      "current_at": "2026-04-29T11:56:40.966567",
+      "current_at": "2026-04-29T12:23:21.420081",
       "reasoning": "光伏产业是中国出口产业链优势的典型代表，外贸持续向好反映海外对中国光伏组件需求旺盛，龙头企业隆基绿能将直接受益于出口订单增长。",
       "stop_loss_price": 16.5263,
       "take_profit": {
@@ -6650,6 +6880,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -6687,7 +6919,7 @@
       "actual_direction": null,
       "current_price": 8342.42,
       "current_pct": 1.6877215393541773,
-      "current_at": "2026-04-29T11:56:43.925281",
+      "current_at": "2026-04-29T12:23:24.076057",
       "reasoning": "外贸数据屡创新高表明中国制造业和出口产业链具有韧性，中证500涵盖大量中盘制造业和出口导向型企业，将受益于外贸景气度提升带来的订单增长和盈利改善预期。",
       "stop_loss_price": 8105.5125,
       "take_profit": {
@@ -6710,6 +6942,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -6745,8 +6979,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4578.2998046875,
-      "current_pct": -0.3460970342829922,
+      "current_price": 4577.39990234375,
+      "current_pct": -0.36568482553049114,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "中日两大经济体之间的地缘政治紧张言论升级，市场避险情绪上升，黄金作为核心避险资产将获得配置需求。此类地缘冲突言论-黄金上涨的因果关系是经典模式，但检索结果中未包含相关因果链。",
       "stop_loss_price": 4511.5046,
@@ -6770,6 +7004,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -6805,8 +7041,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 159.84800720214844,
-      "current_pct": 0.22384328501716638,
+      "current_price": 159.83599853515625,
+      "current_pct": 0.21631391521298166,
       "current_at": "2026-04-29T00:00:00+01:00",
       "reasoning": "地缘政治紧张通常触发避险情绪，日元作为传统避险货币会获得资金流入。日本自身表态为战争做准备，虽短期可能引发本土风险担忧，但整体亚太紧张局势下日元仍倾向于对美元走强（即美元兑日元下跌）。检索结果未覆盖此地缘避险逻辑。",
       "stop_loss_price": 161.4049,
@@ -6830,6 +7066,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -6867,7 +7105,7 @@
       "actual_direction": null,
       "current_price": 20.29,
       "current_pct": 1.551551551551545,
-      "current_at": "2026-04-29T11:55:59.113062",
+      "current_at": "2026-04-29T12:22:40.008423",
       "reasoning": "日本表态为长期战争做准备，中方回应表明东亚地缘紧张局势升级。历史上中日关系紧张时期，市场对国防军工板块的预期会提升，防务开支增加预期推动军工股估值上行。这属于地缘政治紧张驱动军工资产的经典模式，检索结果中未覆盖此类因果链。",
       "stop_loss_price": 19.4805,
       "take_profit": {
@@ -6890,6 +7128,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -6925,8 +7165,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4578.2998046875,
-      "current_pct": -2.958945728943925,
+      "current_price": 4577.39990234375,
+      "current_pct": -2.978019943369351,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "南海地缘紧张升级触发避险情绪，资金倾向流入黄金等传统避险资产。中国海军围观美日菲军演的强势姿态加剧市场对区域冲突风险的担忧，短期内支撑金价。检索因果链虽提及地区银行危机推动黄金避险，但地缘冲突驱动的避险逻辑为新模式。",
       "stop_loss_price": 4661.2851,
@@ -6951,6 +7191,8 @@
         "ungrounded",
         "asset_repeat"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7011,6 +7253,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7071,6 +7315,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7131,6 +7377,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7178,6 +7426,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7225,6 +7475,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7262,7 +7514,7 @@
       "actual_direction": null,
       "current_price": 236.31,
       "current_pct": 0.5574468085106392,
-      "current_at": "2026-04-29T11:56:50.612254",
+      "current_at": "2026-04-29T12:23:31.390738",
       "reasoning": "百济神州与华辉安健签订的三特异性抗体（PD-1/CTLA-4/VEGF-A）全球独家合作协议，总里程碑款高达20亿美元，展示了公司在创新药BD能力和管线拓展上的积极布局。三靶点联合抗体在肿瘤免疫领域属前沿方向，市场对创新药企的License-in交易通常给予正面反应。首付款2000万美元及后续里程碑结构合理，短期内将提振投资者对公司研发管线价值的预期。检索到的因果链未覆盖生物医药BD交易对股价的影响，属新模式。",
       "stop_loss_price": 226.775,
       "take_profit": {
@@ -7285,6 +7537,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7332,6 +7586,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7379,6 +7635,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7426,6 +7684,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7473,6 +7733,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7520,6 +7782,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7567,6 +7831,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7614,6 +7880,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7661,6 +7929,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7696,8 +7966,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4578.2998046875,
-      "current_pct": -2.9795100673022907,
+      "current_price": 4577.39990234375,
+      "current_pct": -2.9985802396384966,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "中美制裁摩擦升级属于地缘政治风险事件，通常推动避险资金流入黄金。虽然本次制裁规模有限，但叠加中方表态反对，市场对中美关系的不确定性担忧加剧，黄金短期受到支撑。",
       "stop_loss_price": 4690.5865,
@@ -7722,6 +7992,8 @@
         "ungrounded",
         "asset_repeat"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7757,8 +8029,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 6.83650016784668,
-      "current_pct": 0.19066525710599155,
+      "current_price": 6.835360050201416,
+      "current_pct": 0.17395654028512855,
       "current_at": "2026-04-29T00:00:00+01:00",
       "reasoning": "中美摩擦升级事件通常引发避险情绪，资金流向美元避险，人民币承压贬值。此次制裁虽规模有限，但反映中美关系紧张持续，短期内离岸人民币可能小幅走弱。这是地缘政治风险影响汇率的常见模式。",
       "stop_loss_price": 6.7962,
@@ -7782,6 +8054,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7819,7 +8093,7 @@
       "actual_direction": null,
       "current_price": 5.42,
       "current_pct": 1.4981273408239715,
-      "current_at": "2026-04-29T11:56:53.126071",
+      "current_at": "2026-04-29T12:23:34.324844",
       "reasoning": "美国以涉伊朗为由制裁中国企业，通常涉及能源贸易领域。中国石化作为与伊朗有石油贸易往来的大型央企，面临被列入制裁名单或供应链受阻的风险，市场短期会对其海外业务前景产生担忧。这是基于地缘制裁影响能源企业的新模式判断。",
       "stop_loss_price": 5.4735,
       "take_profit": {
@@ -7842,6 +8116,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -7877,8 +8153,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 7.127999782562256,
-      "current_pct": -2.11480748305614,
+      "current_price": 7.124000072479248,
+      "current_pct": -2.1697334655800122,
       "current_at": "2026-04-29T00:00:00+02:00",
       "reasoning": "俄伊高层会晤强调中东局势紧张，若局势进一步恶化可能影响海湾地区航油供应与中东航线运营。欧洲航司如汉莎对中东航线依赖度高，航油成本敏感。参考检索到的因果链id=96，海湾燃料供应风险会压制欧洲航司股价，此次地缘紧张信号可能提前触发类似担忧。",
       "stop_loss_price": 7.4364,
@@ -7922,6 +8198,8 @@
       "tags": [
         "low_grade_chain"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [
         96
       ],
@@ -7970,8 +8248,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4578.2998046875,
-      "current_pct": -2.9856836920153107,
+      "current_price": 4577.39990234375,
+      "current_pct": -3.004752650874989,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "俄伊领导人会晤聚焦中东紧张局势，投资者避险情绪升温。黄金作为传统避险资产，在地缘政治不确定性上升时往往获得资金流入。当前中东局势本就脆弱，此次会见被定义为'非常重要'，强化了冲突可能升级的市场预期。检索链未覆盖此类地缘外交事件对黄金的直接影响。",
       "stop_loss_price": 4662.5698,
@@ -7996,6 +8274,8 @@
         "ungrounded",
         "asset_repeat"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -8031,8 +8311,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 102.9800033569336,
-      "current_pct": 7.282014427257708,
+      "current_price": 103.19999694824219,
+      "current_pct": 7.5111982966237765,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "俄罗斯与伊朗是全球主要产油国，两国高层会晤讨论中东局势会加剧市场对地缘冲突升级、石油供应中断的担忧。伊朗在霍尔木兹海峡的战略位置使任何紧张升级都可能威胁全球约20%的石油运输。此次会见表明俄伊协调立场，市场倾向于给油价计入地缘风险溢价。检索的因果链未直接覆盖俄伊高层会晤对油价的影响，属新模式。",
       "stop_loss_price": 93.5902,
@@ -8056,6 +8336,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -8116,6 +8398,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -8153,7 +8437,7 @@
       "actual_direction": null,
       "current_price": 14.65,
       "current_pct": -1.0135135135135158,
-      "current_at": "2026-04-29T11:56:56.173176",
+      "current_at": "2026-04-29T12:23:37.676956",
       "reasoning": "Manus是备受关注的AI机器人项目，中方禁止外资收购意味着国内机器人产业将获得更多政策支持和发展空间。机器人（新松机器人）作为A股机器人板块的标杆企业，将直接受益于这一产业保护政策，市场情绪有望推动股价上涨。",
       "stop_loss_price": 14.356,
       "take_profit": {
@@ -8176,6 +8460,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -8213,7 +8499,7 @@
       "actual_direction": null,
       "current_price": 34.81,
       "current_pct": 2.4727700912570016,
-      "current_at": "2026-04-29T11:55:30.853339",
+      "current_at": "2026-04-29T12:22:11.357346",
       "reasoning": "中方禁止外资收购Manus项目体现了对关键技术领域的保护政策，这将利好国内AI和机器人龙头企业。海康威视作为国内AI视觉和机器人领域的领军企业，在外资被限制进入的情况下，其市场地位和竞争优势将进一步巩固。此为新发现的因果模式，检索结果中无直接相关链条。",
       "stop_loss_price": 33.1208,
       "take_profit": {
@@ -8236,6 +8522,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -8271,8 +8559,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 1.170548915863037,
-      "current_pct": -0.38629027627495166,
+      "current_price": 1.1710972785949707,
+      "current_pct": -0.33962460920040005,
       "current_at": "2026-04-29T00:00:00+01:00",
       "reasoning": "欧洲股市走强反映经济前景乐观和资金流入欧洲，这通常支撑欧元汇率。投资者增持欧洲资产需要买入欧元，形成汇率上行压力。检索结果未包含欧洲股市与欧元汇率的联动关系，属新模式。",
       "stop_loss_price": 1.1704,
@@ -8296,6 +8584,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -8356,6 +8646,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -8436,6 +8728,8 @@
       "tags": [
         "low_grade_chain"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [
         62
       ],
@@ -8484,8 +8778,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4578.2998046875,
-      "current_pct": -3.008283496293746,
+      "current_price": 4577.39990234375,
+      "current_pct": -3.0273480129766983,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "朝俄军事合作实质化加剧全球地缘政治不确定性，避险资金将流向黄金。朝鲜正式参与俄乌战争意味着冲突扩大化风险上升，可能引发更广泛的国际紧张局势，支撑金价走高。",
       "stop_loss_price": 4663.6562,
@@ -8509,6 +8803,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -8569,6 +8865,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -8604,8 +8902,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 1478.31005859375,
-      "current_pct": 0.4962609893652669,
+      "current_price": 1478.1800537109375,
+      "current_pct": 0.48742319207296886,
       "current_at": "2026-04-29T00:00:00+01:00",
       "reasoning": "朝俄军事合作深化加剧朝鲜半岛地缘紧张，市场避险情绪升温会导致韩元承压贬值。朝鲜士兵在俄作战并有阵亡确认，意味着朝俄军事同盟进入实质性阶段，韩国面临的安全威胁上升，资本可能流出韩国市场。",
       "stop_loss_price": 1459.2419,
@@ -8629,6 +8927,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -8677,6 +8977,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -8724,6 +9026,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -8784,6 +9088,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -8844,6 +9150,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -8879,8 +9187,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4368.83984375,
-      "current_pct": 0.4774467179075535,
+      "current_price": 4372.93017578125,
+      "current_pct": 0.5715188591228978,
       "current_at": "2026-04-29T00:00:00+03:00",
       "reasoning": "以色列扩大对黎巴嫩的军事行动，国内面临战争升级风险，投资者会担忧经济活动受扰、国防开支增加以及潜在的多线作战压力，短期内以色列股市承压。",
       "stop_loss_price": 4435.0417,
@@ -8904,6 +9212,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -8939,8 +9249,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 102.9800033569336,
-      "current_pct": 7.438711524588659,
+      "current_price": 103.19999694824219,
+      "current_pct": 7.668230142022953,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "以色列打击黎巴嫩贝卡谷地的真主党目标，意味着冲突可能向更广泛的中东地区蔓延。贝卡谷地靠近叙利亚，若冲突扩大涉及伊朗，将威胁霍尔木兹海峡等关键石油运输通道，市场会提前计入供应中断风险溢价。",
       "stop_loss_price": 92.4952,
@@ -8964,6 +9274,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -8999,8 +9311,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4578.2998046875,
-      "current_pct": -2.998008514248175,
+      "current_price": 4577.39990234375,
+      "current_pct": -3.0170750505630473,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "以色列对黎巴嫩真主党发动军事打击，中东地缘政治紧张局势显著升级，可能引发更大范围的区域冲突。这类地缘冲突事件会推动资金流入黄金等避险资产。虽然检索到的因果链是关于美国债务上限的，但避险逻辑相通——地缘政治风险同样会提振黄金需求。",
       "stop_loss_price": 4695.0419,
@@ -9042,6 +9354,8 @@
         "note": ""
       },
       "tags": [],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [
         94
       ],
@@ -9115,6 +9429,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -9150,8 +9466,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 102.9800033569336,
-      "current_pct": 7.416293320806282,
+      "current_price": 103.19999694824219,
+      "current_pct": 7.645764046795635,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "默茨的表态意味着伊朗冲突可能旷日持久，中东原油供应中断风险溢价将持续存在。伊朗作为OPEC重要产油国，任何军事升级都将威胁霍尔木兹海峡通行安全，推升油价。市场将重新定价地缘风险溢价。",
       "stop_loss_price": 93.4733,
@@ -9175,6 +9491,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -9210,8 +9528,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4578.2998046875,
-      "current_pct": -2.989788968427465,
+      "current_price": 4577.39990234375,
+      "current_pct": -3.008857120361424,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "德国总理公开质疑美国在伊朗冲突中缺乏退出战略，暗示中东地缘局势可能长期化甚至升级。这种来自北约核心成员的公开质疑加剧市场对美伊冲突扩大化的担忧，避险资金将流向黄金。历史上中东地缘紧张升级期间黄金通常有1-3%的涨幅。",
       "stop_loss_price": 4634.4507,
@@ -9235,6 +9553,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -9282,6 +9602,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -9319,7 +9641,7 @@
       "actual_direction": null,
       "current_price": 86.9,
       "current_pct": 3.3170847699441284,
-      "current_at": "2026-04-29T11:57:00.528745",
+      "current_at": "2026-04-29T12:23:42.500709",
       "reasoning": "赣锋锂业与天齐锂业同为锂资源双寡头，天齐锂业业绩暴增将引发市场对赣锋锂业同样实现业绩高增长的预期。板块联动效应下，投资者会对同业公司进行估值重估，推动股价上行。",
       "stop_loss_price": 81.1662,
       "take_profit": {
@@ -9342,6 +9664,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -9379,7 +9703,7 @@
       "actual_direction": null,
       "current_price": 445.0,
       "current_pct": 2.3270787343635035,
-      "current_at": "2026-04-29T11:55:38.196750",
+      "current_at": "2026-04-29T12:22:18.199181",
       "reasoning": "天齐锂业作为上游锂资源龙头业绩暴增，反映锂电产业链景气度高企。宁德时代作为下游电池龙头，产业链联动效应下将受益于市场对锂电板块的重新关注，资金可能从上游向中下游扩散。",
       "stop_loss_price": 426.1824,
       "take_profit": {
@@ -9402,6 +9726,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -9439,7 +9765,7 @@
       "actual_direction": null,
       "current_price": 75.52,
       "current_pct": 2.5390359809911613,
-      "current_at": "2026-04-29T11:57:03.232493",
+      "current_at": "2026-04-29T12:23:45.251233",
       "reasoning": "天齐锂业一季度净利润同比暴增1699%，远超市场预期，营收也接近翻倍。如此强劲的业绩释放将直接推动股价上涨，市场通常在财报公布后1-3个交易日内完成对超预期业绩的定价。这是典型的业绩驱动型行情。",
       "stop_loss_price": 70.3358,
       "take_profit": {
@@ -9462,6 +9788,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -9509,6 +9837,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -9556,6 +9886,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -9604,6 +9936,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -9651,6 +9985,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -9698,6 +10034,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -9745,6 +10083,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -9792,6 +10132,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -9852,6 +10194,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -9912,6 +10256,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -9959,6 +10305,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -10006,6 +10354,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -10053,6 +10403,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -10121,6 +10473,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -10189,6 +10543,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -10257,6 +10613,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -10318,6 +10676,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -10387,6 +10747,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -10447,6 +10809,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -10516,6 +10880,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -10584,6 +10950,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -10652,6 +11020,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -10720,6 +11090,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -10788,6 +11160,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -10856,6 +11230,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -10924,6 +11300,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -10992,6 +11370,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -11060,6 +11440,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -11128,6 +11510,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -11188,6 +11572,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -11256,6 +11642,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -11324,6 +11712,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -11359,8 +11749,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 2.6610000133514404,
-      "current_pct": -0.07510677355840475,
+      "current_price": 2.6519999504089355,
+      "current_pct": -0.4130738250611133,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "馏分油/柴油价格居高不下会促使发电厂在边际上更多使用天然气替代燃油发电，叠加居民电费上行预期，天然气需求面受到提振。与检索到的贸易/政治类因果链无关，属新模式。",
       "stop_loss_price": 2.5565,
@@ -11384,6 +11774,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -11452,6 +11844,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -11512,6 +11906,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -11580,6 +11976,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -11649,6 +12047,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -11717,6 +12117,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -11785,6 +12187,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -11853,6 +12257,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -11921,6 +12327,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -11989,6 +12397,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -12057,6 +12467,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -12126,6 +12538,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -12186,6 +12600,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -12246,6 +12662,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -12314,6 +12732,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -12382,6 +12802,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -12450,6 +12872,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -12510,6 +12934,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -12578,6 +13004,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -12646,6 +13074,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -12681,8 +13111,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 663.25,
-      "current_pct": 9.042334566378955,
+      "current_price": 664.75,
+      "current_pct": 9.288943690916565,
       "current_at": "2026-04-29T00:00:00-04:00",
       "reasoning": "英国政府制定最坏情景预案预警夏季粮食短缺，叠加伊朗战争持续扰乱中东物流与黑海-红海运输通道，市场会提前定价全球粮食供应紧张预期。小麦作为英国主要进口主粮品种，对此类地缘+供应冲击最为敏感，期货价格通常在政府层面公开预警后两周内快速反应。检索到的因果链未覆盖战争叠加粮食安全的模式，故标记为新模式。",
       "stop_loss_price": 580.8787,
@@ -12706,6 +13136,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -12803,6 +13235,8 @@
       "tags": [
         "low_grade_chain"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [
         40,
         42
@@ -12895,6 +13329,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -12963,6 +13399,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -13024,6 +13462,8 @@
         "note": ""
       },
       "tags": [],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [
         95
       ],
@@ -13123,6 +13563,8 @@
         "note": ""
       },
       "tags": [],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [
         94
       ],
@@ -13205,6 +13647,8 @@
         "ungrounded",
         "extreme"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -13285,6 +13729,8 @@
       "tags": [
         "low_grade_chain"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [
         53
       ],
@@ -13366,6 +13812,8 @@
       "tags": [
         "ungrounded"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [],
       "cited_chains": [],
       "event": {
@@ -13454,6 +13902,8 @@
       "tags": [
         "low_grade_chain"
       ],
+      "retired_at": null,
+      "retired_reason": null,
       "cited_link_ids": [
         53
       ],

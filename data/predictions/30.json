@@ -18,8 +18,8 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 2.6610000133514404,
-  "current_pct": -0.07510677355840475,
+  "current_price": 2.6519999504089355,
+  "current_pct": -0.4130738250611133,
   "current_at": "2026-04-29T00:00:00-04:00",
   "reasoning": "馏分油/柴油价格居高不下会促使发电厂在边际上更多使用天然气替代燃油发电，叠加居民电费上行预期，天然气需求面受到提振。与检索到的贸易/政治类因果链无关，属新模式。",
   "stop_loss_price": 2.5565,
@@ -43,6 +43,8 @@
   "tags": [
     "ungrounded"
   ],
+  "retired_at": null,
+  "retired_reason": null,
   "cited_link_ids": [],
   "cited_chains": [],
   "event": {

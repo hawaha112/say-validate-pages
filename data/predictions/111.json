@@ -18,8 +18,8 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 6.83650016784668,
-  "current_pct": -0.01579559041511021,
+  "current_price": 6.835360050201416,
+  "current_pct": -0.032469875926160324,
   "current_at": "2026-04-29T00:00:00+01:00",
   "reasoning": "外贸顺差屡创新高意味着更多美元流入结汇需求，支撑人民币汇率走强，美元兑离岸人民币汇率承压下行。",
   "stop_loss_price": 6.8649,
@@ -43,6 +43,8 @@
   "tags": [
     "ungrounded"
   ],
+  "retired_at": null,
+  "retired_reason": null,
   "cited_link_ids": [],
   "cited_chains": [],
   "event": {

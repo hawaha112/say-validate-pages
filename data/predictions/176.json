@@ -18,8 +18,8 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 159.85000610351562,
-  "current_pct": 0.17421594457907663,
+  "current_price": 159.8459930419922,
+  "current_pct": 0.17170105389219495,
   "current_at": "2026-04-29T00:00:00+01:00",
   "reasoning": "地缘紧张时日元作为传统避险货币往往走强（即美元兑日元下跌）。日本官方的备战言论若引发市场对区域冲突的担忧，资金可能回流日元资产，短期内压低美元兑日元汇率。检索链条未涉及日元避险逻辑，此为新模式。",
   "stop_loss_price": 161.4869,
@@ -43,6 +43,8 @@
   "tags": [
     "ungrounded"
   ],
+  "retired_at": null,
+  "retired_reason": null,
   "cited_link_ids": [],
   "cited_chains": [],
   "event": {

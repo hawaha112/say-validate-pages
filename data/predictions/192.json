@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 200.27000427246094,
-  "current_pct": -6.129892236254177,
-  "current_at": "2026-04-30T00:00:00-04:00",
+  "current_price": 199.22999572753906,
+  "current_pct": -6.617362711634087,
+  "current_at": "2026-05-01T00:00:00-04:00",
   "reasoning": "OpenAI企业业务增长意味着AI推理需求持续扩张，英伟达作为AI算力核心供应商将受益于训练和推理芯片需求预期上修。此前市场担忧AI商业化放缓会影响算力采购，OpenAI的正面回应缓解这一担忧。",
   "stop_loss_price": 211.6412,
   "take_profit": {

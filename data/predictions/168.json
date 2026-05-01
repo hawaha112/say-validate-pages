@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 200.27000427246094,
-  "current_pct": -5.390206348313878,
-  "current_at": "2026-04-30T00:00:00-04:00",
+  "current_price": 199.22999572753906,
+  "current_pct": -5.881518036194933,
+  "current_at": "2026-05-01T00:00:00-04:00",
   "reasoning": "OpenAI作为AI行业最重要的需求方，用户和营收双双未达标直接暗示AI应用变现不及预期，这会传导到上游AI芯片需求预期。英伟达作为AI算力核心供应商，其估值高度依赖AI需求持续高增长的叙事，当下游龙头增长放缓时，市场会重新评估整个AI产业链的增长斜率。",
   "stop_loss_price": 221.2056,
   "take_profit": {

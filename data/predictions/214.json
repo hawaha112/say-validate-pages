@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 200.27000427246094,
-  "current_pct": -5.950031944998995,
-  "current_at": "2026-04-30T00:00:00-04:00",
+  "current_price": 199.22999572753906,
+  "current_pct": -6.438436440630599,
+  "current_at": "2026-05-01T00:00:00-04:00",
   "reasoning": "OpenAI增长放缓意味着AI应用端需求可能低于预期，市场担忧科技公司将削减AI基础设施支出。英伟达作为AI算力核心供应商，其高估值建立在持续增长的AI投资预期上，该消息将引发对GPU需求前景的担忧。",
   "stop_loss_price": 220.3929,
   "take_profit": {

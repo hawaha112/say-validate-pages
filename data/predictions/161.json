@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 517.969970703125,
-  "current_pct": 0.8528093651804547,
-  "current_at": "2026-04-30T00:00:00-04:00",
+  "current_price": 512.7050170898438,
+  "current_pct": -0.1723183316162901,
+  "current_at": "2026-05-01T00:00:00-04:00",
   "reasoning": "美国对伊朗施压暗示可能升级地缘紧张局势，防务股通常在此类环境中受益。洛克希德马丁作为美国最大防务承包商，市场预期中东紧张局势可能带动防务订单增长。",
   "stop_loss_price": 504.3454,
   "take_profit": {

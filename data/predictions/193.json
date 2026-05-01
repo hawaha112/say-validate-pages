@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 377.0899963378906,
-  "current_pct": 7.74615249458391,
-  "current_at": "2026-04-30T00:00:00-04:00",
+  "current_price": 385.1449890136719,
+  "current_pct": 10.047710418729446,
+  "current_at": "2026-05-01T00:00:00-04:00",
   "reasoning": "OpenAI进军广告业务对谷歌核心搜索广告业务构成潜在威胁。AI驱动的广告分发可能侵蚀谷歌在数字广告市场的份额，市场会开始计入这一竞争风险。",
   "stop_loss_price": 351.7299,
   "take_profit": {

@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 126.52999877929688,
-  "current_pct": 0.2614911561289733,
-  "current_at": "2026-04-30T00:00:00-04:00",
+  "current_price": 126.58999633789062,
+  "current_pct": 0.3090328043418148,
+  "current_at": "2026-05-01T00:00:00-04:00",
   "reasoning": "百度文心一言及相关AI生成工具在国内市场份额领先，网信部门对竞品的约谈和处罚预示整个行业将面临更严格的内容标识审查。中概股投资者对中国监管敏感度高，此类消息易触发避险抛售。检索结果中无对应因果链，为新模式。",
   "stop_loss_price": 128.4716,
   "take_profit": {

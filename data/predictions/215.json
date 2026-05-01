@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 377.0899963378906,
-  "current_pct": 7.592440229808292,
-  "current_at": "2026-04-30T00:00:00-04:00",
+  "current_price": 385.1449890136719,
+  "current_pct": 9.890714717164283,
+  "current_at": "2026-05-01T00:00:00-04:00",
   "reasoning": "OpenAI困境反映整个生成式AI赛道商业化挑战，谷歌作为AI竞争者同样面临变现压力审视。财报季前投资者将重新评估所有科技巨头的AI支出回报率，谷歌的AI投入也将被质疑。",
   "stop_loss_price": 356.7887,
   "take_profit": {

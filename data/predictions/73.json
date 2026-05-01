@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 28.770000457763672,
-  "current_pct": -0.20811469337898622,
-  "current_at": "2026-04-30T00:00:00-04:00",
+  "current_price": 28.84000015258789,
+  "current_pct": 0.0346868848709675,
+  "current_at": "2026-05-01T00:00:00-04:00",
   "reasoning": "小红书主动建立AI治理框架，显示中国互联网平台在AI监管方面走向规范化和自律化，这降低了市场对中国科技平台面临突发监管风险的担忧。对整体中概互联网板块形成温和利好，但影响较为间接和有限。此为新发现的市场模式。",
   "stop_loss_price": 28.5994,
   "take_profit": {

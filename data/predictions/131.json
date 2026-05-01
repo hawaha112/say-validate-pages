@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 517.969970703125,
-  "current_pct": 0.846924891416077,
-  "current_at": "2026-04-30T00:00:00-04:00",
+  "current_price": 512.7050170898438,
+  "current_pct": -0.17814299210352755,
+  "current_at": "2026-05-01T00:00:00-04:00",
   "reasoning": "美国军舰造价高昂的讨论通常引发国防预算审视，但历史上这类关注往往导致国会对军工复合体的支持加强，而非削减。洛克希德·马丁作为美国最大国防承包商，在国防开支讨论升温时往往受益于市场对军工订单持续性的预期。这是一个新的因果模式，检索结果中未涵盖军舰造价与军工股的关联。",
   "stop_loss_price": 505.9157,
   "take_profit": {

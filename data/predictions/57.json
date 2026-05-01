@@ -2,7 +2,7 @@
   "id": 57,
   "made_at": "2026-04-27T12:44:28.810427",
   "expire_at": "2026-04-30T12:44:28.810427",
-  "verified_at": null,
+  "verified_at": "2026-04-30T14:25:15.122872",
   "asset": {
     "symbol": "601012",
     "name": "隆基绿能",
@@ -13,7 +13,7 @@
   "horizon_days": 3,
   "baseline_price": null,
   "baseline_source": "live_fallback",
-  "status": "pending",
+  "status": "expired_no_data",
   "hit": null,
   "hit_breakdown": null,
   "actual_magnitude_pct": null,

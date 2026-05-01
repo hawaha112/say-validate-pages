@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 85.66999816894531,
-  "current_pct": 0.6875466777544034,
-  "current_at": "2026-04-28T00:00:00-04:00",
+  "current_price": 85.36000061035156,
+  "current_pct": 0.32320800239520936,
+  "current_at": "2026-04-30T00:00:00-04:00",
   "reasoning": "特朗普暗示伊朗可能出现领导层变动，这增加了中东地缘政治不确定性。伊朗是OPEC重要产油国，任何政权动荡都可能影响原油供应预期，推动油价上涨。市场通常对中东政治风险给予风险溢价。",
   "stop_loss_price": 82.9579,
   "take_profit": {

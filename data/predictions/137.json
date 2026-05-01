@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 85.66999816894531,
-  "current_pct": 0.6092677873490562,
-  "current_at": "2026-04-28T00:00:00-04:00",
+  "current_price": 85.36000061035156,
+  "current_pct": 0.24521236476719072,
+  "current_at": "2026-04-30T00:00:00-04:00",
   "reasoning": "伊朗加强霍尔木兹海峡军事控制能力的报道会引发市场对全球石油供应中断风险的担忧。霍尔木兹海峡承载全球约20%的石油运输量，任何潜在的封锁或冲突风险都会推高原油价格。这是典型的地缘政治风险溢价效应。",
   "stop_loss_price": 83.0224,
   "take_profit": {

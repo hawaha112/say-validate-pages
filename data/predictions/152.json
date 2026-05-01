@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 323.2099914550781,
-  "current_pct": 0.31191475138361735,
-  "current_at": "2026-04-28T00:00:00-04:00",
+  "current_price": 354.489990234375,
+  "current_pct": 10.02001986548037,
+  "current_at": "2026-04-30T00:00:00-04:00",
   "reasoning": "AMD作为AI芯片第二梯队供应商，同样受益于AI算力需求扩张逻辑。OpenAI增长放缓消息令市场担忧AI资本开支周期提前见顶，AMD当日已跌超6%，在英伟达估值重估的背景下，AMD可能面临更大的相对抛压。",
   "stop_loss_price": 338.3152,
   "take_profit": {

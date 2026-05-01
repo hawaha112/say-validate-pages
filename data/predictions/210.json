@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 139.60000610351562,
-  "current_pct": -0.22149308522559655,
-  "current_at": "2026-04-28T00:00:00-04:00",
+  "current_price": 146.88999938964844,
+  "current_pct": 4.988998416971721,
+  "current_at": "2026-04-30T00:00:00-04:00",
   "reasoning": "阿联酋宣布退出欧佩克+并逐步提高石油产量，这是对OPEC+减产协议的重大打击。阿联酋是OPEC第三大产油国，其退出意味着供给端将显著增加，打破现有减产平衡。与检索到的沙特减产推高油价的因果链(id:206)形成相反逻辑——成员国退出并增产将压低油价。市场预期全球原油供给过剩，油价承压下行。",
   "stop_loss_price": 140.7031,
   "take_profit": {

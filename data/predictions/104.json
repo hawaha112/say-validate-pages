@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 512.2899780273438,
-  "current_pct": -0.22592933140680416,
-  "current_at": "2026-04-28T00:00:00-04:00",
+  "current_price": 517.969970703125,
+  "current_pct": 0.8803113036583647,
+  "current_at": "2026-04-30T00:00:00-04:00",
   "reasoning": "美日菲联合军演及中国海军强势回应凸显亚太军备竞赛加剧，将推动美国及盟国增加国防开支预期。洛克希德·马丁作为全球最大军工企业，在F-35战斗机及导弹防御系统领域拥有核心地位，地缘紧张直接利好其订单前景。检索因果链未覆盖此模式，属新发现。",
   "stop_loss_price": 503.181,
   "take_profit": {

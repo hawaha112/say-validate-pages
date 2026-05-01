@@ -1,9 +1,19 @@
 {
   "n_buckets": 10,
-  "n_total": 0,
-  "buckets": [],
-  "brier_score": null,
-  "ece": null,
-  "is_well_calibrated": null,
-  "note": "no verified predictions with resonance"
+  "n_total": 1,
+  "n_bucketized": 1,
+  "buckets": [
+    {
+      "bucket_min": 0.5,
+      "bucket_max": 0.6,
+      "n": 1,
+      "mean_predicted": 0.517,
+      "actual_hit_rate": 0.0,
+      "abs_error": 0.517
+    }
+  ],
+  "brier_score": 0.2675,
+  "ece": 0.5172,
+  "is_well_calibrated": false,
+  "note": "ECE = expected calibration error (avg |predicted - actual| weighted by bucket size). <0.10 = well calibrated. Brier = squared-error scoring rule (lower better)."
 }

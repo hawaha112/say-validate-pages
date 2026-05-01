@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 41.810001373291016,
-  "current_pct": -1.4147570768211313,
-  "current_at": "2026-04-28T00:00:00-04:00",
+  "current_price": 42.279998779296875,
+  "current_pct": -0.3065339980734924,
+  "current_at": "2026-04-30T00:00:00-04:00",
   "reasoning": "万国数据当日跌5.21%，作为数据中心概念股，与金山云、世纪互联同属云基础设施板块。中概科技股整体承压时，该板块因对资本支出敏感度高、盈利能力偏弱，往往跌幅居前。短期内市场信心修复需要时间。",
   "stop_loss_price": 43.4702,
   "take_profit": {

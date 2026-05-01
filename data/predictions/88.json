@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 5.42,
-  "current_pct": 1.4981273408239715,
-  "current_at": "2026-04-29T12:35:14.214195",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "美国以涉伊朗为由制裁中国企业，通常涉及能源贸易领域。中国石化作为与伊朗有石油贸易往来的大型央企，面临被列入制裁名单或供应链受阻的风险，市场短期会对其海外业务前景产生担忧。这是基于地缘制裁影响能源企业的新模式判断。",
   "stop_loss_price": 5.4735,
   "take_profit": {

@@ -93317,873 +93317,6 @@
     ]
   },
   {
-    "id": 62,
-    "pattern": "美中高层会晤/贸易谈判取得进展",
-    "asset_symbol": "510300.SS",
-    "asset_name": "沪深300ETF",
-    "asset_class": "a_stock",
-    "macro_category": "politics_geo",
-    "direction": "up",
-    "magnitude_pct": 1.2,
-    "magnitude_pct_stddev": 0.0,
-    "horizon_days": 3,
-    "confidence": 0.5714285714285714,
-    "grade": "C",
-    "retail_edge": "mid",
-    "support_count": 3,
-    "refute_count": 2,
-    "source": "seed",
-    "rationale": "缓和信号提振中概股与全球风险偏好",
-    "explanation": {
-      "causal_chain": [
-        {
-          "step": 1,
-          "trigger": "美中高层会晤/贸易谈判传出进展消息（如官方公告、媒体报道双方达成部分共识）",
-          "mechanism": "地缘政治不确定性下降：市场对中美关系恶化（如关税升级、技术封锁加码）的尾部风险预期减弱，全球供应链断裂的概率下调",
-          "assumption": "会晤进展是实质性的（非仅礼节性表态），且市场此前已将中美摩擦升级定价为主要风险",
-          "confidence": "high"
-        },
-        {
-          "step": 2,
-          "trigger": "地缘风险溢价回落后，全球风险偏好（risk-on sentiment）修复",
-          "mechanism": "机构投资者重新配置新兴市场资产：美中缓和意味着中国经济增长预期改善（出口、外资流入环境优化），资金从避险资产（美债、黄金）流向高贝塔股票市场",
-          "assumption": "全球流动性环境支持风险资产（如美联储未同步收紧、美元未大幅走强），且中国国内政策面无重大负面冲击",
-          "confidence": "medium"
-        },
-        {
-          "step": 3,
-          "trigger": "外资北向资金加速流入A股市场（特别是沪深300成分股）",
-          "mechanism": "沪深300作为A股核心宽基指数，成分股多为金融、消费、科技龙头，外资持仓占比高；缓和信号下，QFII/陆股通资金对估值修复的敏感度上升，ETF被动配置盘跟随流入",
-          "assumption": "人民币汇率稳定（外资无汇兑损失担忧），且国内监管政策对外资友好（无突发限制措施）",
-          "confidence": "high"
-        },
-        {
-          "step": 4,
-          "trigger": "沪深300ETF（510300.SS）作为场内最大流动性工具承接资金流入",
-          "mechanism": "ETF实物申赎机制：大额资金涌入触发做市商买入成分股并创设ETF份额，推升标的指数；同时场内交易活跃度提升（溢价套利盘入场），形成短期价格正反馈",
-          "assumption": "ETF市场流动性充足（无极端波动导致停牌），且成分股集中度未因个股利空而拖累指数",
-          "confidence": "medium"
-        },
-        {
-          "step": 5,
-          "trigger": "消息发酵窗口期（3个交易日内）尚未被后续负面事件冲淡",
-          "mechanism": "利好消息的定价周期通常为2-5个交易日：首日情绪驱动急涨，次日基本面交易员验证后持续跟进，第三日若无新催化剂则进入获利回吐期；3日窗口捕捉主升浪",
-          "assumption": "3日内无重大宏观数据意外（如中国PMI大幅不及预期）、美股无系统性暴跌、美中无新冲突表态",
-          "confidence": "medium"
-        }
-      ],
-      "mechanism_summary": "美中缓和→地缘风险溢价回落→外资风险偏好修复→北向资金流入A股龙头→沪深300ETF被动配置推升",
-      "asset_logic": "沪深300ETF是外资配置A股的首选工具（高流动性、低跟踪误差），其成分股（金融、消费、科技权重股）对外资情绪最敏感。相比个股，ETF受益于被动资金的机械性买盘，且风险分散。1.2%的涨幅对应外资单日净流入50-100亿人民币的量级（历史上缓和消息常触发此规模），属于温和但显著的修复行情。",
-      "horizon_logic": "3日窗口设定基于：(1) 利好消息的市场消化周期通常2-3日（首日情绪交易，次日基本面验证，第三日开始need new catalyst）；(2) 若缓和进展无后续实质措施跟进，市场会迅速转向观望；(3) 避开更长周期内其他宏观变量（如美联储会议、中国经济数据）的干扰。",
-      "key_risks": "失败场景包括：(1) 会晤进展被后续官方表态否认或降级为'建设性对话'（无实质成果）；(2) 同期美股因自身因素（如通胀数据、财报季利空）大跌，拖累全球风险偏好；(3) 人民币突然贬值（如央行干预失效）导致外资撤离；(4) 国内出台紧缩政策（如地产融资收紧、平台监管加码）对冲利好效应；(5) 成交量萎缩显示资金观望而非真实买盘。",
-      "historical_examples": [
-        {
-          "date": "2019-10-11",
-          "summary": "中美第十三轮贸易谈判达成第一阶段协议框架，沪深300当日涨1.39%，次日持续上涨0.68%（3日累计+2.1%）"
-        },
-        {
-          "date": "2023-11-15",
-          "summary": "中美元首旧金山会晤后发表联合声明恢复军事沟通，沪深300ETF三日涨幅0.9%（受国内地产政策预期不足拖累）"
-        },
-        {
-          "date": "2020-01-15",
-          "summary": "中美签署第一阶段贸易协议，沪深300开盘跳涨1.1%，但午后获利盘涌出收涨0.3%（疫情前夕资金谨慎）"
-        }
-      ]
-    },
-    "failure_conditions": [
-      "失败场景包括：(1) 会晤进展被后续官方表态否认或降级为'建设性对话'（无实质成果）",
-      "(2) 同期美股因自身因素（如通胀数据、财报季利空）大跌，拖累全球风险偏好",
-      "(3) 人民币突然贬值（如央行干预失效）导致外资撤离",
-      "(4) 国内出台紧缩政策（如地产融资收紧、平台监管加码）对冲利好效应",
-      "(5) 成交量萎缩显示资金观望而非真实买盘。"
-    ],
-    "historical_instances": [
-      {
-        "event_date": "2024-11-16",
-        "event_note": "Biden-Xi meeting at APEC Lima, agreed to maintain military dialogue and AI safety talks",
-        "baseline_price": 4.038,
-        "end_price": 4.058,
-        "actual_pct": 0.5,
-        "actual_direction": "up",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=100%",
-        "skipped_reason": null,
-        "price_path": [
-          {
-            "date": "2024-11-08",
-            "close": 4.194
-          },
-          {
-            "date": "2024-11-11",
-            "close": 4.215
-          },
-          {
-            "date": "2024-11-12",
-            "close": 4.169
-          },
-          {
-            "date": "2024-11-13",
-            "close": 4.195
-          },
-          {
-            "date": "2024-11-14",
-            "close": 4.124
-          },
-          {
-            "date": "2024-11-15",
-            "close": 4.055
-          },
-          {
-            "date": "2024-11-18",
-            "close": 4.038
-          },
-          {
-            "date": "2024-11-19",
-            "close": 4.058
-          },
-          {
-            "date": "2024-11-20",
-            "close": 4.068
-          },
-          {
-            "date": "2024-11-21",
-            "close": 4.073
-          },
-          {
-            "date": "2024-11-22",
-            "close": 3.953
-          },
-          {
-            "date": "2024-11-25",
-            "close": 3.931
-          },
-          {
-            "date": "2024-11-26",
-            "close": 3.923
-          },
-          {
-            "date": "2024-11-27",
-            "close": 3.987
-          },
-          {
-            "date": "2024-11-28",
-            "close": 3.958
-          },
-          {
-            "date": "2024-11-29",
-            "close": 4.001
-          },
-          {
-            "date": "2024-12-02",
-            "close": 4.031
-          },
-          {
-            "date": "2024-12-03",
-            "close": 4.035
-          },
-          {
-            "date": "2024-12-04",
-            "close": 4.014
-          },
-          {
-            "date": "2024-12-05",
-            "close": 4.007
-          },
-          {
-            "date": "2024-12-06",
-            "close": 4.057
-          },
-          {
-            "date": "2024-12-09",
-            "close": 4.054
-          },
-          {
-            "date": "2024-12-10",
-            "close": 4.085
-          },
-          {
-            "date": "2024-12-11",
-            "close": 4.075
-          },
-          {
-            "date": "2024-12-12",
-            "close": 4.117
-          },
-          {
-            "date": "2024-12-13",
-            "close": 4.02
-          },
-          {
-            "date": "2024-12-16",
-            "close": 3.996
-          },
-          {
-            "date": "2024-12-17",
-            "close": 4.007
-          },
-          {
-            "date": "2024-12-18",
-            "close": 4.024
-          },
-          {
-            "date": "2024-12-19",
-            "close": 4.03
-          },
-          {
-            "date": "2024-12-20",
-            "close": 4.018
-          },
-          {
-            "date": "2024-12-23",
-            "close": 4.022
-          }
-        ],
-        "turning_points": {
-          "turning_points": [
-            {
-              "date": "2024-11-26",
-              "type": "trough",
-              "description": "事件后第 10 天录得相对基准 -2.85%，为窗口内最大降幅；与预测方向相反。",
-              "days_after_event": 10
-            }
-          ],
-          "time_to_peak_impact_days": 10,
-          "narrative": "事件后 3 天累计 +0.50%，峰值出现在事件后第 10 天 (-2.85%)，第 5 天起回吐。",
-          "method": "heuristic"
-        },
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      },
-      {
-        "event_date": "2023-11-15",
-        "event_note": "Biden-Xi summit in San Francisco at APEC, restored military communications and fentanyl cooperation",
-        "baseline_price": 3.675,
-        "end_price": 3.645,
-        "actual_pct": -0.82,
-        "actual_direction": "down",
-        "dir_hit": false,
-        "strict_hit": false,
-        "mag_err_bucket": "<=50%",
-        "skipped_reason": null,
-        "price_path": [
-          {
-            "date": "2023-11-07",
-            "close": 3.69
-          },
-          {
-            "date": "2023-11-08",
-            "close": 3.679
-          },
-          {
-            "date": "2023-11-09",
-            "close": 3.682
-          },
-          {
-            "date": "2023-11-10",
-            "close": 3.655
-          },
-          {
-            "date": "2023-11-13",
-            "close": 3.65
-          },
-          {
-            "date": "2023-11-14",
-            "close": 3.65
-          },
-          {
-            "date": "2023-11-15",
-            "close": 3.675
-          },
-          {
-            "date": "2023-11-16",
-            "close": 3.639
-          },
-          {
-            "date": "2023-11-17",
-            "close": 3.634
-          },
-          {
-            "date": "2023-11-20",
-            "close": 3.645
-          },
-          {
-            "date": "2023-11-21",
-            "close": 3.65
-          },
-          {
-            "date": "2023-11-22",
-            "close": 3.611
-          },
-          {
-            "date": "2023-11-23",
-            "close": 3.63
-          },
-          {
-            "date": "2023-11-24",
-            "close": 3.605
-          },
-          {
-            "date": "2023-11-27",
-            "close": 3.581
-          },
-          {
-            "date": "2023-11-28",
-            "close": 3.585
-          },
-          {
-            "date": "2023-11-29",
-            "close": 3.558
-          },
-          {
-            "date": "2023-11-30",
-            "close": 3.562
-          },
-          {
-            "date": "2023-12-01",
-            "close": 3.548
-          },
-          {
-            "date": "2023-12-04",
-            "close": 3.524
-          },
-          {
-            "date": "2023-12-05",
-            "close": 3.458
-          },
-          {
-            "date": "2023-12-06",
-            "close": 3.463
-          },
-          {
-            "date": "2023-12-07",
-            "close": 3.454
-          },
-          {
-            "date": "2023-12-08",
-            "close": 3.461
-          },
-          {
-            "date": "2023-12-11",
-            "close": 3.485
-          },
-          {
-            "date": "2023-12-12",
-            "close": 3.493
-          },
-          {
-            "date": "2023-12-13",
-            "close": 3.435
-          },
-          {
-            "date": "2023-12-14",
-            "close": 3.419
-          },
-          {
-            "date": "2023-12-15",
-            "close": 3.412
-          },
-          {
-            "date": "2023-12-18",
-            "close": 3.398
-          },
-          {
-            "date": "2023-12-19",
-            "close": 3.4
-          },
-          {
-            "date": "2023-12-20",
-            "close": 3.369
-          },
-          {
-            "date": "2023-12-21",
-            "close": 3.4
-          },
-          {
-            "date": "2023-12-22",
-            "close": 3.406
-          }
-        ],
-        "turning_points": {
-          "turning_points": [
-            {
-              "date": "2023-12-20",
-              "type": "trough",
-              "description": "事件后第 35 天录得相对基准 -8.33%，为窗口内最大降幅；与预测方向相反。",
-              "days_after_event": 35
-            }
-          ],
-          "time_to_peak_impact_days": 35,
-          "narrative": "事件后 3 天累计 -0.82%，峰值出现在事件后第 35 天 (-8.33%)，第 22 天起回吐。",
-          "method": "heuristic"
-        },
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      },
-      {
-        "event_date": "2022-11-14",
-        "event_note": "Biden-Xi meeting at G20 Bali, first face-to-face as leaders, eased tensions post-Pelosi Taiwan visit",
-        "baseline_price": 3.85,
-        "end_price": 3.879,
-        "actual_pct": 0.75,
-        "actual_direction": "up",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=50%",
-        "skipped_reason": null,
-        "price_path": [
-          {
-            "date": "2022-11-07",
-            "close": 3.834
-          },
-          {
-            "date": "2022-11-08",
-            "close": 3.811
-          },
-          {
-            "date": "2022-11-09",
-            "close": 3.771
-          },
-          {
-            "date": "2022-11-10",
-            "close": 3.75
-          },
-          {
-            "date": "2022-11-11",
-            "close": 3.848
-          },
-          {
-            "date": "2022-11-14",
-            "close": 3.85
-          },
-          {
-            "date": "2022-11-15",
-            "close": 3.925
-          },
-          {
-            "date": "2022-11-16",
-            "close": 3.896
-          },
-          {
-            "date": "2022-11-17",
-            "close": 3.879
-          },
-          {
-            "date": "2022-11-18",
-            "close": 3.866
-          },
-          {
-            "date": "2022-11-21",
-            "close": 3.833
-          },
-          {
-            "date": "2022-11-22",
-            "close": 3.831
-          },
-          {
-            "date": "2022-11-23",
-            "close": 3.834
-          },
-          {
-            "date": "2022-11-24",
-            "close": 3.816
-          },
-          {
-            "date": "2022-11-25",
-            "close": 3.837
-          },
-          {
-            "date": "2022-11-28",
-            "close": 3.792
-          },
-          {
-            "date": "2022-11-29",
-            "close": 3.908
-          },
-          {
-            "date": "2022-11-30",
-            "close": 3.911
-          },
-          {
-            "date": "2022-12-01",
-            "close": 3.956
-          },
-          {
-            "date": "2022-12-02",
-            "close": 3.933
-          },
-          {
-            "date": "2022-12-05",
-            "close": 4.004
-          },
-          {
-            "date": "2022-12-06",
-            "close": 4.027
-          },
-          {
-            "date": "2022-12-07",
-            "close": 4.015
-          },
-          {
-            "date": "2022-12-08",
-            "close": 4.024
-          },
-          {
-            "date": "2022-12-09",
-            "close": 4.058
-          },
-          {
-            "date": "2022-12-12",
-            "close": 4.016
-          },
-          {
-            "date": "2022-12-13",
-            "close": 4.005
-          },
-          {
-            "date": "2022-12-14",
-            "close": 4.015
-          },
-          {
-            "date": "2022-12-15",
-            "close": 4.013
-          },
-          {
-            "date": "2022-12-16",
-            "close": 4.017
-          },
-          {
-            "date": "2022-12-19",
-            "close": 3.959
-          },
-          {
-            "date": "2022-12-20",
-            "close": 3.896
-          },
-          {
-            "date": "2022-12-21",
-            "close": 3.893
-          }
-        ],
-        "turning_points": {
-          "turning_points": [
-            {
-              "date": "2022-12-09",
-              "type": "peak",
-              "description": "事件后第 25 天录得相对基准 +5.40%，为窗口内最大升幅；印证预测方向。",
-              "days_after_event": 25
-            }
-          ],
-          "time_to_peak_impact_days": 25,
-          "narrative": "事件后 3 天累计 +0.75%，峰值出现在事件后第 25 天 (+5.40%)，第 3 天起回吐。",
-          "method": "heuristic"
-        },
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      },
-      {
-        "event_date": "2020-01-15",
-        "event_note": "US-China Phase One trade deal signed at White House, Trump and Liu He ceremony",
-        "baseline_price": 4.152,
-        "end_price": 4.181,
-        "actual_pct": 0.7,
-        "actual_direction": "up",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=50%",
-        "skipped_reason": null,
-        "price_path": [
-          {
-            "date": "2020-01-07",
-            "close": 4.155
-          },
-          {
-            "date": "2020-01-08",
-            "close": 4.114
-          },
-          {
-            "date": "2020-01-09",
-            "close": 4.158
-          },
-          {
-            "date": "2020-01-10",
-            "close": 4.157
-          },
-          {
-            "date": "2020-01-13",
-            "close": 4.202
-          },
-          {
-            "date": "2020-01-14",
-            "close": 4.184
-          },
-          {
-            "date": "2020-01-15",
-            "close": 4.152
-          },
-          {
-            "date": "2020-01-16",
-            "close": 4.146
-          },
-          {
-            "date": "2020-01-17",
-            "close": 4.151
-          },
-          {
-            "date": "2020-01-20",
-            "close": 4.181
-          },
-          {
-            "date": "2020-01-21",
-            "close": 4.105
-          },
-          {
-            "date": "2020-01-22",
-            "close": 4.119
-          },
-          {
-            "date": "2020-01-23",
-            "close": 3.996
-          },
-          {
-            "date": "2020-02-03",
-            "close": 3.659
-          },
-          {
-            "date": "2020-02-04",
-            "close": 3.77
-          },
-          {
-            "date": "2020-02-05",
-            "close": 3.807
-          },
-          {
-            "date": "2020-02-06",
-            "close": 3.897
-          },
-          {
-            "date": "2020-02-07",
-            "close": 3.888
-          },
-          {
-            "date": "2020-02-10",
-            "close": 3.901
-          },
-          {
-            "date": "2020-02-11",
-            "close": 3.943
-          },
-          {
-            "date": "2020-02-12",
-            "close": 3.971
-          },
-          {
-            "date": "2020-02-13",
-            "close": 3.95
-          },
-          {
-            "date": "2020-02-14",
-            "close": 3.977
-          },
-          {
-            "date": "2020-02-17",
-            "close": 4.064
-          },
-          {
-            "date": "2020-02-18",
-            "close": 4.039
-          },
-          {
-            "date": "2020-02-19",
-            "close": 4.04
-          },
-          {
-            "date": "2020-02-20",
-            "close": 4.131
-          },
-          {
-            "date": "2020-02-21",
-            "close": 4.145
-          }
-        ],
-        "turning_points": {
-          "turning_points": [
-            {
-              "date": "2020-02-03",
-              "type": "trough",
-              "description": "事件后第 19 天录得相对基准 -11.87%，为窗口内最大降幅；与预测方向相反。",
-              "days_after_event": 19
-            }
-          ],
-          "time_to_peak_impact_days": 19,
-          "narrative": "事件后 3 天累计 +0.70%，峰值出现在事件后第 19 天 (-11.87%)。",
-          "method": "heuristic"
-        },
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      },
-      {
-        "event_date": "2019-12-13",
-        "event_note": "US-China agreed on Phase One deal text, suspended Dec 15 tariffs, boosted market sentiment",
-        "baseline_price": 3.968,
-        "end_price": 3.98,
-        "actual_pct": 0.3,
-        "actual_direction": "up",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=100%",
-        "skipped_reason": null,
-        "price_path": [
-          {
-            "date": "2019-12-05",
-            "close": 3.942
-          },
-          {
-            "date": "2019-12-06",
-            "close": 3.967
-          },
-          {
-            "date": "2019-12-09",
-            "close": 3.953
-          },
-          {
-            "date": "2019-12-10",
-            "close": 3.956
-          },
-          {
-            "date": "2019-12-11",
-            "close": 3.901
-          },
-          {
-            "date": "2019-12-12",
-            "close": 3.887
-          },
-          {
-            "date": "2019-12-13",
-            "close": 3.968
-          },
-          {
-            "date": "2019-12-16",
-            "close": 3.98
-          },
-          {
-            "date": "2019-12-17",
-            "close": 4.042
-          },
-          {
-            "date": "2019-12-18",
-            "close": 4.026
-          },
-          {
-            "date": "2019-12-19",
-            "close": 4.021
-          },
-          {
-            "date": "2019-12-20",
-            "close": 4.016
-          },
-          {
-            "date": "2019-12-23",
-            "close": 3.964
-          },
-          {
-            "date": "2019-12-24",
-            "close": 3.985
-          },
-          {
-            "date": "2019-12-25",
-            "close": 3.992
-          },
-          {
-            "date": "2019-12-26",
-            "close": 4.021
-          },
-          {
-            "date": "2019-12-27",
-            "close": 4.017
-          },
-          {
-            "date": "2019-12-30",
-            "close": 4.075
-          },
-          {
-            "date": "2019-12-31",
-            "close": 4.096
-          },
-          {
-            "date": "2020-01-02",
-            "close": 4.149
-          },
-          {
-            "date": "2020-01-03",
-            "close": 4.14
-          },
-          {
-            "date": "2020-01-06",
-            "close": 4.123
-          },
-          {
-            "date": "2020-01-07",
-            "close": 4.155
-          },
-          {
-            "date": "2020-01-08",
-            "close": 4.114
-          },
-          {
-            "date": "2020-01-09",
-            "close": 4.158
-          },
-          {
-            "date": "2020-01-10",
-            "close": 4.157
-          },
-          {
-            "date": "2020-01-13",
-            "close": 4.202
-          },
-          {
-            "date": "2020-01-14",
-            "close": 4.184
-          },
-          {
-            "date": "2020-01-15",
-            "close": 4.152
-          },
-          {
-            "date": "2020-01-16",
-            "close": 4.146
-          },
-          {
-            "date": "2020-01-17",
-            "close": 4.151
-          }
-        ],
-        "turning_points": {
-          "turning_points": [
-            {
-              "date": "2020-01-13",
-              "type": "peak",
-              "description": "事件后第 31 天录得相对基准 +5.90%，为窗口内最大升幅；印证预测方向。",
-              "days_after_event": 31
-            }
-          ],
-          "time_to_peak_impact_days": 31,
-          "narrative": "事件后 3 天累计 +0.30%，峰值出现在事件后第 31 天 (+5.90%)，第 5 天起回吐。",
-          "method": "heuristic"
-        },
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      }
-    ]
-  },
-  {
     "id": 88,
     "pattern": "中国财政大规模刺激（特别国债/基建加码）",
     "asset_symbol": "510300.SS",
@@ -255309,7 +254442,7 @@
     "horizon_days": 3,
     "confidence": 0.75,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255331,7 +254464,7 @@
     "horizon_days": 3,
     "confidence": 0.75,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255353,7 +254486,7 @@
     "horizon_days": 5,
     "confidence": 0.75,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255375,7 +254508,7 @@
     "horizon_days": 7,
     "confidence": 0.7,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255397,7 +254530,7 @@
     "horizon_days": 3,
     "confidence": 0.7,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255419,7 +254552,7 @@
     "horizon_days": 5,
     "confidence": 0.7,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255441,7 +254574,7 @@
     "horizon_days": 3,
     "confidence": 0.7,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255463,7 +254596,7 @@
     "horizon_days": 5,
     "confidence": 0.65,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255485,7 +254618,7 @@
     "horizon_days": 3,
     "confidence": 0.65,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255507,7 +254640,7 @@
     "horizon_days": 3,
     "confidence": 0.65,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255529,7 +254662,7 @@
     "horizon_days": 3,
     "confidence": 0.65,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255551,7 +254684,7 @@
     "horizon_days": 3,
     "confidence": 0.65,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255573,7 +254706,7 @@
     "horizon_days": 3,
     "confidence": 0.65,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "low",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255595,7 +254728,7 @@
     "horizon_days": 5,
     "confidence": 0.6,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255617,7 +254750,7 @@
     "horizon_days": 3,
     "confidence": 0.6,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255639,7 +254772,7 @@
     "horizon_days": 3,
     "confidence": 0.6,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255661,7 +254794,7 @@
     "horizon_days": 3,
     "confidence": 0.6,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255683,7 +254816,7 @@
     "horizon_days": 3,
     "confidence": 0.6,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255705,7 +254838,7 @@
     "horizon_days": 3,
     "confidence": 0.6,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255727,7 +254860,7 @@
     "horizon_days": 3,
     "confidence": 0.55,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "low",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255749,7 +254882,7 @@
     "horizon_days": 3,
     "confidence": 0.55,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -255771,7 +254904,7 @@
     "horizon_days": 7,
     "confidence": 0.55,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "seed",
@@ -256096,7 +255229,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256118,7 +255251,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256140,7 +255273,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256162,7 +255295,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256184,7 +255317,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256206,7 +255339,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256228,7 +255361,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256250,7 +255383,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256272,7 +255405,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256294,7 +255427,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256316,7 +255449,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256338,7 +255471,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256360,7 +255493,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256382,7 +255515,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256404,7 +255537,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256426,7 +255559,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256448,7 +255581,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256470,7 +255603,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256492,7 +255625,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256514,7 +255647,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256536,7 +255669,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256558,7 +255691,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256580,7 +255713,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256602,7 +255735,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256624,7 +255757,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256646,7 +255779,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256668,7 +255801,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256690,7 +255823,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256712,7 +255845,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256734,7 +255867,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256756,7 +255889,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256778,7 +255911,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256800,7 +255933,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256822,7 +255955,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256844,7 +255977,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256866,7 +255999,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256888,7 +256021,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256910,7 +256043,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256932,7 +256065,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256954,7 +256087,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256976,7 +256109,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -256998,7 +256131,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257020,7 +256153,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257042,7 +256175,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257064,7 +256197,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257086,7 +256219,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257108,7 +256241,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257130,7 +256263,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257152,7 +256285,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257174,7 +256307,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257196,7 +256329,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257218,7 +256351,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257240,7 +256373,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257262,7 +256395,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257284,7 +256417,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257306,7 +256439,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257328,7 +256461,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257350,7 +256483,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257372,7 +256505,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257394,7 +256527,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257416,7 +256549,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257438,7 +256571,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257460,7 +256593,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257482,7 +256615,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257504,7 +256637,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257526,7 +256659,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257548,7 +256681,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257570,7 +256703,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257592,7 +256725,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257614,7 +256747,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257636,7 +256769,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257658,7 +256791,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257680,7 +256813,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257702,7 +256835,7 @@
     "horizon_days": 1,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257724,7 +256857,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257746,7 +256879,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257768,7 +256901,7 @@
     "horizon_days": 1,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257790,7 +256923,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257812,7 +256945,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257834,7 +256967,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257856,7 +256989,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257878,7 +257011,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257900,7 +257033,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257922,7 +257055,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257944,7 +257077,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257966,7 +257099,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -257988,7 +257121,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258010,7 +257143,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258032,7 +257165,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258054,7 +257187,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258076,7 +257209,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258098,7 +257231,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258120,7 +257253,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258142,7 +257275,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258164,7 +257297,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258186,7 +257319,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258208,7 +257341,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258230,7 +257363,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258252,7 +257385,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258274,7 +257407,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258296,7 +257429,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258318,7 +257451,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258340,7 +257473,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258362,7 +257495,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258384,7 +257517,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258406,7 +257539,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258428,7 +257561,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258450,7 +257583,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258472,7 +257605,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258494,7 +257627,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258516,7 +257649,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258538,7 +257671,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258560,7 +257693,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258582,7 +257715,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "high",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258604,7 +257737,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258626,7 +257759,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258648,7 +257781,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258670,7 +257803,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258692,7 +257825,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258714,7 +257847,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258736,7 +257869,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258758,7 +257891,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258780,7 +257913,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258802,7 +257935,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258824,7 +257957,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258846,7 +257979,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258868,7 +258001,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258890,7 +258023,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258912,7 +258045,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258934,7 +258067,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258956,7 +258089,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -258978,7 +258111,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -259000,7 +258133,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -259022,7 +258155,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -259044,7 +258177,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -259066,7 +258199,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -259088,7 +258221,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -259110,7 +258243,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -259132,7 +258265,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -259154,7 +258287,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -259176,7 +258309,7 @@
     "horizon_days": 3,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -259198,7 +258331,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -259220,7 +258353,7 @@
     "horizon_days": 7,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",
@@ -259242,7 +258375,7 @@
     "horizon_days": 14,
     "confidence": 0.45,
     "grade": null,
-    "retail_edge": null,
+    "retail_edge": "mid",
     "support_count": 0,
     "refute_count": 0,
     "source": "online",

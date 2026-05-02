@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T20:09:20.502671",
+  "generated_at": "2026-05-02T01:11:31.263236",
   "kb_summary": {
     "n_links_active": 465,
     "n_strong": 166,
@@ -37,38 +37,39 @@
     }
   },
   "total": 176,
-  "verified": 7,
+  "verified": 27,
   "pending": 121,
-  "pending_past_expire": 33,
-  "expired_no_data": 15,
+  "pending_past_expire": 0,
+  "expired_no_data": 28,
   "retired": 0,
-  "hit_rate": 0.2857142857142857,
-  "hit_rate_strict": 0.2857142857142857,
-  "hit_rate_honest": 0.03636363636363636,
+  "hit_rate": 0.3333333333333333,
+  "hit_rate_strict": 0.3333333333333333,
+  "hit_rate_honest": 0.16363636363636364,
   "hit_rate_denominator": {
-    "strict": 7,
+    "strict": 27,
     "honest": 55,
     "note": "strict counts only verified predictions; honest treats expired_no_data and past-expire pending as misses (they're predictions the system couldn't score, not omissions)"
   },
   "hit_breakdown_summary": {
-    "n": 7,
-    "dir_hit_rate": 0.5714285714285714,
-    "mag_hit_rate": 0.5714285714285714,
-    "strict_hit_rate": 0.2857142857142857,
+    "n": 27,
+    "dir_hit_rate": 0.4074074074074074,
+    "mag_hit_rate": 0.6666666666666666,
+    "strict_hit_rate": 0.3333333333333333,
     "mag_err_bucket_counts": {
-      ">100%": 2,
-      "<=100%": 3,
-      "<=50%": 1,
-      "<=25%": 1
+      "<=50%": 7,
+      ">100%": 7,
+      "<=10%": 2,
+      "<=100%": 8,
+      "<=25%": 3
     }
   },
   "hit_rate_vs_random": {
     "lookback_days": 30,
-    "n_verified": 45,
-    "actual_dir_hit_rate": 0.4666666666666667,
-    "random_dir_hit_rate": 0.4666666666666667,
-    "actual_strict_hit_rate": 0.35555555555555557,
-    "random_strict_hit_rate": 0.24444444444444444
+    "n_verified": 73,
+    "actual_dir_hit_rate": 0.4657534246575342,
+    "random_dir_hit_rate": 0.5342465753424658,
+    "actual_strict_hit_rate": 0.3698630136986301,
+    "random_strict_hit_rate": 0.3561643835616438
   },
   "kb_vs_random": {
     "n_instances": 1912,
@@ -87,8 +88,8 @@
       "note": "built before KB freeze; treat as training/in-sample"
     },
     "post_freeze": {
-      "n_verified": 7,
-      "hit_rate_strict": 0.2857142857142857,
+      "n_verified": 27,
+      "hit_rate_strict": 0.3333333333333333,
       "note": "verified predictions made after KB freeze — this is the number you can actually trust. Grows as live predictions accumulate."
     }
   },

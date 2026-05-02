@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": null,
-  "current_pct": null,
-  "current_at": null,
+  "current_price": 177.00999450683594,
+  "current_pct": 20.53795515817706,
+  "current_at": "2026-05-01T00:00:00-04:00",
   "reasoning": "高通与OpenAI合作开发AI专用芯片的消息意味着高通在AI手机芯片领域获得重大战略突破，有望摆脱对ARM架构的依赖并切入高增长的端侧AI市场。这强化了高通在AI时代的竞争定位，市场应给予估值溢价。",
   "stop_loss_price": 142.4445,
   "take_profit": {

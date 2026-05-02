@@ -2,7 +2,7 @@
   "id": 148,
   "made_at": "2026-04-28T13:52:06.825025",
   "expire_at": "2026-05-01T13:52:06.825025",
-  "verified_at": null,
+  "verified_at": "2026-05-02T01:09:34.388497",
   "asset": {
     "symbol": "000568",
     "name": "泸州老窖",
@@ -13,7 +13,7 @@
   "horizon_days": 3,
   "baseline_price": null,
   "baseline_source": "live_fallback",
-  "status": "pending",
+  "status": "expired_no_data",
   "hit": null,
   "hit_breakdown": null,
   "actual_magnitude_pct": null,

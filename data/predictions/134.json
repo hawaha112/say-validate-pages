@@ -2,7 +2,7 @@
   "id": 134,
   "made_at": "2026-04-28T13:51:06.633702",
   "expire_at": "2026-05-01T13:51:06.633702",
-  "verified_at": null,
+  "verified_at": "2026-05-02T01:09:34.388497",
   "asset": {
     "symbol": "BK0465",
     "name": "医药生物板块",
@@ -13,7 +13,7 @@
   "horizon_days": 3,
   "baseline_price": null,
   "baseline_source": "live_fallback",
-  "status": "pending",
+  "status": "expired_no_data",
   "hit": null,
   "hit_breakdown": null,
   "actual_magnitude_pct": null,

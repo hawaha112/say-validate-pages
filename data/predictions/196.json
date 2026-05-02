@@ -2,7 +2,7 @@
   "id": 196,
   "made_at": "2026-04-28T14:14:12.415676",
   "expire_at": "2026-05-01T14:14:12.415676",
-  "verified_at": null,
+  "verified_at": "2026-05-02T01:09:34.388497",
   "asset": {
     "symbol": "688766",
     "name": "普冉股份",
@@ -13,7 +13,7 @@
   "horizon_days": 3,
   "baseline_price": null,
   "baseline_source": "live_fallback",
-  "status": "pending",
+  "status": "expired_no_data",
   "hit": null,
   "hit_breakdown": null,
   "actual_magnitude_pct": null,

@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": null,
-  "current_pct": null,
-  "current_at": null,
+  "current_price": 441.510009765625,
+  "current_pct": 3.195122836748146,
+  "current_at": "2026-05-01T00:00:00-04:00",
   "reasoning": "Spotify Q2营业利润指引逊于预期，开盘即跌11.7%。业绩指引不及预期后，市场通常需要数日消化利空，且可能面临分析师下调目标价的连锁反应。此为新模式：流媒体公司利润指引不及预期→股价短期承压。",
   "stop_loss_price": 444.9536,
   "take_profit": {

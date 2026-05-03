@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 27.760000228881836,
-  "current_pct": 1.092502383143983,
-  "current_at": "2026-04-30T00:00:00+03:00",
+  "current_price": 27.579999923706055,
+  "current_pct": 0.4370023424409118,
+  "current_at": "2026-05-03T00:00:00+03:00",
   "reasoning": "阿联酋退出欧佩克+对沙特阿美形成双重利空：一是油价下跌直接压缩收入；二是OPEC+联盟分裂削弱沙特对全球油市的定价权。这是检索链(id:206)中沙特减产逻辑的反面案例——当联盟成员增产破坏协议时，沙特主导的供给管理策略失效，对沙特石油资产构成负面冲击。",
   "stop_loss_price": 28.2532,
   "take_profit": {

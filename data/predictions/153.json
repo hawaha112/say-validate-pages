@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 171.8300018310547,
-  "current_pct": 2.4627340238337374,
-  "current_at": "2026-05-01T00:00:00-04:00",
+  "current_price": 181.8699951171875,
+  "current_pct": 8.449611465001187,
+  "current_at": "2026-05-04T00:00:00-04:00",
   "reasoning": "甲骨文近期大力投资AI云基础设施，与OpenAI有合作关系。OpenAI销售不及预期意味着其云服务需求可能低于此前预期，甲骨文AI业务增长故事受到质疑。当日已跌超6%，后续可能因业绩指引担忧持续承压。",
   "stop_loss_price": 174.408,
   "take_profit": {

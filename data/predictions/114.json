@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 99.72000122070312,
-  "current_pct": 1.7135865865844833,
-  "current_at": "2026-05-01T00:00:00-04:00",
+  "current_price": 97.83499908447266,
+  "current_pct": -0.20910019292158105,
+  "current_at": "2026-05-04T00:00:00-04:00",
   "reasoning": "中央政治局提出整治内卷式竞争，拼多多作为低价电商代表，其商业模式高度依赖价格战和对商家的压价策略，是典型的'内卷式竞争'受益者。政策风向转变可能导致监管压力增加，市场对其估值预期下调。此为新发现的政策-资产因果模式。",
   "stop_loss_price": 101.4714,
   "take_profit": {

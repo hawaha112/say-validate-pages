@@ -2,7 +2,7 @@
   "id": 52,
   "made_at": "2026-04-27T12:43:50.287383",
   "expire_at": "2026-05-04T12:43:50.287383",
-  "verified_at": null,
+  "verified_at": "2026-05-04T15:53:41.066874",
   "asset": {
     "symbol": "601618",
     "name": "中国中冶",
@@ -13,7 +13,7 @@
   "horizon_days": 7,
   "baseline_price": null,
   "baseline_source": "live_fallback",
-  "status": "pending",
+  "status": "expired_no_data",
   "hit": null,
   "hit_breakdown": null,
   "actual_magnitude_pct": null,

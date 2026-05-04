@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 4644.5,
-  "current_pct": 1.4016592373887233,
-  "current_at": "2026-05-01T00:00:00-04:00",
+  "current_price": 4521.2998046875,
+  "current_pct": -1.28812528689976,
+  "current_at": "2026-05-04T00:00:00-04:00",
   "reasoning": "国际黄金期货对央行售金消息更为敏感，流动性更高意味着价格调整更快。多国央行同时抛售形成供给冲击，期货市场的投机资金可能加速撤离黄金多头头寸，放大跌幅。历史上央行协调售金（如1999年华盛顿协议前）曾导致金价大幅波动。",
   "stop_loss_price": 4717.7088,
   "take_profit": {

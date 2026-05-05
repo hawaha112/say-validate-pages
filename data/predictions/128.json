@@ -2,7 +2,7 @@
   "id": 128,
   "made_at": "2026-04-28T13:50:32.387280",
   "expire_at": "2026-05-05T13:50:32.387280",
-  "verified_at": null,
+  "verified_at": "2026-05-05T14:17:52.313683",
   "asset": {
     "symbol": "AU9999.SH",
     "name": "上海金Au99.99",
@@ -13,7 +13,7 @@
   "horizon_days": 7,
   "baseline_price": null,
   "baseline_source": "live_fallback",
-  "status": "pending",
+  "status": "expired_no_data",
   "hit": null,
   "hit_breakdown": null,
   "actual_magnitude_pct": null,

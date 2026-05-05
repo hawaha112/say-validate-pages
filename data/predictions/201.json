@@ -2,7 +2,7 @@
   "id": 201,
   "made_at": "2026-04-28T14:14:38.118223",
   "expire_at": "2026-05-05T14:14:38.118223",
-  "verified_at": null,
+  "verified_at": "2026-05-05T14:17:52.313683",
   "asset": {
     "symbol": "601138",
     "name": "工业富联",
@@ -13,7 +13,7 @@
   "horizon_days": 7,
   "baseline_price": null,
   "baseline_source": "live_fallback",
-  "status": "pending",
+  "status": "expired_no_data",
   "hit": null,
   "hit_breakdown": null,
   "actual_magnitude_pct": null,

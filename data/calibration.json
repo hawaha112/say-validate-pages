@@ -1,7 +1,7 @@
 {
   "n_buckets": 10,
-  "n_total": 3,
-  "n_bucketized": 3,
+  "n_total": 6,
+  "n_bucketized": 6,
   "buckets": [
     {
       "bucket_min": 0.3,
@@ -12,9 +12,17 @@
       "abs_error": 0.3
     },
     {
+      "bucket_min": 0.4,
+      "bucket_max": 0.5,
+      "n": 1,
+      "mean_predicted": 0.462,
+      "actual_hit_rate": 0.0,
+      "abs_error": 0.462
+    },
+    {
       "bucket_min": 0.5,
       "bucket_max": 0.6,
-      "n": 1,
+      "n": 2,
       "mean_predicted": 0.517,
       "actual_hit_rate": 0.0,
       "abs_error": 0.517
@@ -22,14 +30,14 @@
     {
       "bucket_min": 0.7,
       "bucket_max": 0.8,
-      "n": 1,
+      "n": 2,
       "mean_predicted": 0.72,
       "actual_hit_rate": 0.0,
       "abs_error": 0.72
     }
   ],
-  "brier_score": 0.292,
-  "ece": 0.5124,
+  "brier_score": 0.3125,
+  "ece": 0.5393,
   "is_well_calibrated": false,
   "note": "ECE = expected calibration error (avg |predicted - actual| weighted by bucket size). <0.10 = well calibrated. Brier = squared-error scoring rule (lower better)."
 }

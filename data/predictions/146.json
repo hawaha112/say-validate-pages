@@ -2,7 +2,7 @@
   "id": 146,
   "made_at": "2026-04-28T13:51:55.035955",
   "expire_at": "2026-05-05T13:51:55.035955",
-  "verified_at": null,
+  "verified_at": "2026-05-05T14:17:52.313683",
   "asset": {
     "symbol": "600678",
     "name": "四川金顶",
@@ -13,7 +13,7 @@
   "horizon_days": 7,
   "baseline_price": null,
   "baseline_source": "live_fallback",
-  "status": "pending",
+  "status": "expired_no_data",
   "hit": null,
   "hit_breakdown": null,
   "actual_magnitude_pct": null,

@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": null,
-  "current_pct": null,
-  "current_at": null,
+  "current_price": 133.88499450683594,
+  "current_pct": 2.6371167844447743,
+  "current_at": "2026-05-05T00:00:00-04:00",
   "reasoning": "整治内卷式竞争意味着行业竞争烈度可能降低，阿里巴巴作为电商龙头，此前在价格战中处于防守地位，政策若遏制恶性竞争，有利于行业利润率修复和龙头估值回升。此为新发现的监管政策与行业格局因果模式。",
   "stop_loss_price": 127.8361,
   "take_profit": {

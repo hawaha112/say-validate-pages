@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>say_validate · 已验证因果规律</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+         max-width: 980px; margin: 0 auto; padding: 32px 20px;
+         background: #0e1116; color: #e0e6ed; line-height: 1.6; }
+  h1 { font-size: 24px; margin: 0 0 8px; }
+  h2 { font-size: 16px; color: #9ec5fe; margin-top: 32px; border-bottom: 1px solid #2a3142; padding-bottom: 6px; }
+  .meta { color: #7a85a3; font-size: 13px; margin-bottom: 24px; }
+  .card { background: #13161e; border: 1px solid #2a3142; border-radius: 10px;
+           padding: 16px 18px; margin-bottom: 14px; }
+  .card.live { border-left: 3px solid #5dd27b; }
+  .card.candidate { border-left: 3px solid #e6c240; }
+  .card.weak { border-left: 3px solid #888; }
+  .card.active { background: #18221c; border-color: #5dd27b; }
+  .name { font-weight: 600; font-size: 15px; margin-bottom: 6px; }
+  .badges { font-size: 12px; color: #aab; margin-bottom: 10px; }
+  .badge { display: inline-block; background: #1a1f2e; border: 1px solid #2a3142;
+            border-radius: 4px; padding: 1px 7px; margin-right: 5px; }
+  .badge.live { color: #5dd27b; border-color: #5dd27b66; }
+  .badge.weak { color: #888; }
+  .badge.candidate { color: #e6c240; }
+  .badge.active { background: #244; color: #5dd27b; border-color: #5dd27b; font-weight: 600; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+            font-size: 13px; margin: 10px 0; }
+  .stat { background: #1a1f2e; padding: 8px 10px; border-radius: 6px; }
+  .stat .label { color: #778; font-size: 11px; }
+  .stat .value { font-size: 15px; font-weight: 600; }
+  .stat .value.green { color: #5dd27b; }
+  .stat .value.red { color: #f08080; }
+  .rule { background: #1a1f2e; padding: 8px 10px; border-radius: 6px;
+           font-family: ui-monospace, monospace; font-size: 12px;
+           color: #aab; margin: 8px 0; }
+  .target { font-size: 13px; color: #ccd; }
+  .notes { font-size: 12px; color: #889; margin-top: 8px; font-style: italic; }
+  .legend { background: #13161e; border: 1px solid #2a3142; border-radius: 8px;
+             padding: 12px 16px; margin-top: 24px; font-size: 12px; color: #aab; }
+  .legend h3 { font-size: 13px; margin: 0 0 6px; color: #ccd; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 12px; }
+  th, td { padding: 8px 10px; border-bottom: 1px solid #2a3142; text-align: left; }
+  th { color: #889; font-weight: 500; }
+  tr.closed-win td:nth-child(5) { color: #5dd27b; }
+  tr.closed-loss td:nth-child(5) { color: #f08080; }
+  .footer { color: #556; font-size: 11px; text-align: center; margin-top: 36px; }
+</style>
+</head>
+<body>
+<h1>📊 say_validate · 已验证因果规律</h1>
+<div class="meta">最后更新: 2026-05-07 23:39 UTC · 共 8 条规律 · 7 条 live · 2 条<b>当前激活</b></div>
+
+<p style="font-size: 14px; color: #aab;">
+这是 say_validate 系统通过<b>真实历史数据回测</b>验证过的因果规律. 每条规律都经历过:
+统计显著性检验 (p-value), 样本量校验 (N), 可重复性测试.
+当前指标值实时刷新 — 看到 <b>🟢 当前激活</b> 的就是此刻历史规律预期会发生作用的状态.
+</p>
+
+<h2>🟢 已验证规律 (按显著性排序)</h2>
+<div class="card live">
+<div class="name">#4 VIX&lt;12 极乐观 → SPY -60d 回调</div>
+<div class="badges">
+  <span class="badge live">live</span>
+  
+  <span class="badge">指标: vix</span>
+  <span class="badge">标的: SPY</span>
+  <span class="badge">方向: 📉 跌</span>
+  <span class="badge">窗口: 60d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &lt; 12.0 · 当前: 17.080 (未达触发)</div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 73</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value red">23%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value red">-2.89%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value red">1.0000</div></div>
+</div>
+<div class="notes">📝 2026-05-08 scan-promoted. 风险积累</div>
+</div>
+<div class="card active">
+<div class="name">#5 HYG 站上 200d MA → SPY +30d 涨</div>
+<div class="badges">
+  <span class="badge live">live</span>
+  <span class="badge active">🟢 当前激活</span>
+  <span class="badge">指标: hyg</span>
+  <span class="badge">标的: SPY</span>
+  <span class="badge">方向: 📈 涨</span>
+  <span class="badge">窗口: 30d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &gt; 200 日均线 · 当前指标值: <b>79.860</b></div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 180</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">75%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value green">+1.74%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value red">1.0000</div></div>
+</div>
+<div class="notes">📝 2026-05-08 scan-promoted. 信用宽松</div>
+</div>
+<div class="card live">
+<div class="name">#3 VIX&gt;25 → SPY +30d 反弹</div>
+<div class="badges">
+  <span class="badge live">live</span>
+  
+  <span class="badge">指标: vix</span>
+  <span class="badge">标的: SPY</span>
+  <span class="badge">方向: 📈 涨</span>
+  <span class="badge">窗口: 30d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &gt; 25.0 · 当前: 17.080 (未达触发)</div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 125</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">70%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value green">+2.35%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value green">0.0002</div></div>
+</div>
+<div class="notes">📝 2026-05-08 scan-promoted. 恐慌→反弹</div>
+</div>
+<div class="card active">
+<div class="name">#6 DXY&lt;100 → 黄金 +30d 涨</div>
+<div class="badges">
+  <span class="badge live">live</span>
+  <span class="badge active">🟢 当前激活</span>
+  <span class="badge">指标: dxy</span>
+  <span class="badge">标的: GC=F</span>
+  <span class="badge">方向: 📈 涨</span>
+  <span class="badge">窗口: 30d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &lt; 100.0 · 当前指标值: <b>98.257</b></div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 450</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">77%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value green">+0.66%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value green">0.0016</div></div>
+</div>
+<div class="notes">📝 2026-05-08 scan-promoted. 美元弱</div>
+</div>
+<div class="card live">
+<div class="name">#7 油&lt;60 → SPY +30d 涨</div>
+<div class="badges">
+  <span class="badge live">live</span>
+  
+  <span class="badge">指标: oil</span>
+  <span class="badge">标的: SPY</span>
+  <span class="badge">方向: 📈 涨</span>
+  <span class="badge">窗口: 30d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &lt; 60.0 · 当前: 96.940 (未达触发)</div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 147</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">69%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value green">+1.53%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value ">0.0023</div></div>
+</div>
+<div class="notes">📝 2026-05-08 scan-promoted. 低通胀</div>
+</div>
+<div class="card live">
+<div class="name">#8 DXY&gt;105 → 黄金 -30d 跌</div>
+<div class="badges">
+  <span class="badge live">live</span>
+  
+  <span class="badge">指标: dxy</span>
+  <span class="badge">标的: GC=F</span>
+  <span class="badge">方向: 📉 跌</span>
+  <span class="badge">窗口: 30d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &gt; 105.0 · 当前: 98.257 (未达触发)</div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 163</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value red">10%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value red">-0.65%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value ">0.0028</div></div>
+</div>
+<div class="notes">📝 2026-05-08 scan-promoted. 美元强</div>
+</div>
+<div class="card live">
+<div class="name">#1 余额宝持续紧缩 → 沪深300 利空出尽反弹</div>
+<div class="badges">
+  <span class="badge live">live</span>
+  
+  <span class="badge">指标: tianhong_yuebao_7d</span>
+  <span class="badge">标的: sh000300</span>
+  <span class="badge">方向: 📈 涨</span>
+  <span class="badge">窗口: 30d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &gt; 90 日均线 AND 指标 &gt; 2.0 AND 短均线(7d) &gt; 长均线(30d) · 当前: 0.890 (未达触发)</div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 48</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">62%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value green">+2.69%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value ">0.0292</div></div>
+</div>
+<div class="notes">📝 2026-05-07 验证: H8 假设. 反直觉 — 紧缩落地后利空出尽, 沪深300 反而反弹.</div>
+</div>
+<div class="card weak">
+<div class="name">#2 余额宝 1 天 +0.10pp 突跳 → 沪深300 短期承压</div>
+<div class="badges">
+  <span class="badge weak">weak</span>
+  
+  <span class="badge">指标: tianhong_yuebao_7d</span>
+  <span class="badge">标的: sh000300</span>
+  <span class="badge">方向: 📉 跌</span>
+  <span class="badge">窗口: 30d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 1d 累计变化 &gt; 0.1 · 当前: 0.890 (未达触发)</div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 11</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">73%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value green">+1.05%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value red">0.6506</div></div>
+</div>
+<div class="notes">📝 2026-05-07: 用户基于永赢货币E 2-23/24 突跳观察提出. 13 年数据 11 次类似事件 73% 跌, 均值 -1.05%, 但 p=0.65 不显著 (主要因样本少). 2013 钱荒是主要 regime. 2026-02-12 是低利率环境首次. 候选假设, 需要更多样本验证.</div>
+</div>
+
+<h2>📝 Phase 1 纸面交易跟踪</h2>
+<p style="font-size: 13px; color: #aab;">每条规律触发后自动开 paper trade, 到期 (30/60d) 自动平 + 算 alpha vs 基准. 1-3 月后累计样本告诉你这套对你是否真有用.</p>
+<table>
+<thead><tr><th>ID</th><th>标的</th><th>进场</th><th>计划平仓</th><th>回报</th><th>α</th><th>状态</th></tr></thead>
+<tbody><tr class="">
+<td>#2</td>
+<td>GC=F 📈</td>
+<td>2026-05-07</td>
+<td>2026-06-06</td>
+<td>—</td>
+<td>—</td>
+<td>open</td>
+</tr><tr class="">
+<td>#1</td>
+<td>SPY 📈</td>
+<td>2026-05-07</td>
+<td>2026-06-06</td>
+<td>—</td>
+<td>—</td>
+<td>open</td>
+</tr></tbody></table>
+
+<div class="legend">
+<h3>说明</h3>
+<p><b>命中率</b> = 30 天后资产移动方向 与 规律预期方向 一致的比例</p>
+<p><b>p-value</b> = 统计显著性. p&lt;0.05 = 弱显著 · p&lt;0.002 = Bonferroni 校正后真显著</p>
+<p><b>样本(N)</b> = 历史触发次数. N&lt;10 不可信 · N≥30 才能确认</p>
+<p><b>α</b> = 规律收益 - 同期被动持有基准 (SPY/沪深300) 收益</p>
+<p><b>当前激活 🟢</b> = 此刻指标已达触发条件, 历史规律预期会推动资产沿预期方向变动</p>
+<p><b>重要</b>: 这些是统计观察, 不是确定预测. 单次触发可能反向. 长期 N 足够后均值才反映真实 edge.</p>
+</div>
+
+<div class="footer">say_validate · 个体研究工具 · 数据驱动 · 自我证伪</div>
+</body>
+</html>

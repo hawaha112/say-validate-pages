@@ -50,7 +50,7 @@
 </head>
 <body>
 <h1>📊 say_validate · 已验证因果规律</h1>
-<div class="meta">最后更新: 2026-05-08 13:11 UTC · 共 10 条规律 · 7 条 live · 2 条<b>当前激活</b></div>
+<div class="meta">最后更新: 2026-05-08 13:46 UTC · 共 20 条规律 · 11 条 live · 5 条<b>当前激活</b></div>
 
 <p style="font-size: 14px; color: #aab;">
 这是 say_validate 系统通过<b>真实历史数据回测</b>验证过的因果规律. 每条规律都经历过:
@@ -69,7 +69,7 @@
   <span class="badge">方向: 📉 跌</span>
   <span class="badge">窗口: 60d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 &lt; 12.0 · 当前: 16.950 (未达触发)</div>
+<div class="rule">📐 触发条件: 指标 &lt; 12.0 · 当前: 17.080 (未达触发)</div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 73</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value red">23%</div></div>
@@ -88,7 +88,7 @@
   <span class="badge">方向: 📈 涨</span>
   <span class="badge">窗口: 30d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 &gt; 200 日均线 · 当前指标值: <b>79.860</b></div>
+<div class="rule">📐 触发条件: 指标 &gt; 200 日均线 · 当前指标值: <b>80.035</b></div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 180</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">75%</div></div>
@@ -96,6 +96,63 @@
   <div class="stat"><div class="label">p-value</div><div class="value red">1.0000</div></div>
 </div>
 <div class="notes">📝 2026-05-08 scan-promoted. 信用宽松</div>
+</div>
+<div class="card active">
+<div class="name">#11 美10Y &lt; 3% (yield curve flat) → SPY 6 月后跌</div>
+<div class="badges">
+  <span class="badge weak">weak</span>
+  <span class="badge active">🟢 当前激活</span>
+  <span class="badge">指标: us_10y_yield</span>
+  <span class="badge">标的: SPY</span>
+  <span class="badge">方向: 📉 跌</span>
+  <span class="badge">窗口: 180d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &lt; 30.0 · 当前指标值: <b>4.356</b></div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 764</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value red">10%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value red">-4.44%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value red">1.0000</div></div>
+</div>
+<div class="notes">📝 Canonical (skip-rerun safe). 出处: Estrella &amp; Mishkin (1998). 长期低利率反映经济疲软预期; 12 月窗口捕捉衰退传导到股市的滞后</div>
+</div>
+<div class="card active">
+<div class="name">#13 美 3M T-bill 跌破 3% → SPY +60d 涨 (宽松周期股市)</div>
+<div class="badges">
+  <span class="badge live">live</span>
+  <span class="badge active">🟢 当前激活</span>
+  <span class="badge">指标: us_3m_yield</span>
+  <span class="badge">标的: SPY</span>
+  <span class="badge">方向: 📈 涨</span>
+  <span class="badge">窗口: 60d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &lt; 30.0 · 当前指标值: <b>3.595</b></div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 794</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">86%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value green">+1.39%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value red">1.0000</div></div>
+</div>
+<div class="notes">📝 Canonical (skip-rerun safe). 出处: Bernanke &amp; Kuttner (2005). 短端利率走低 = 货币政策转松 → 风险资产估值扩张</div>
+</div>
+<div class="card live">
+<div class="name">#18 TLT 跌破 50d MA → SPY 30d 涨 (利率上 + 风险资产跑赢)</div>
+<div class="badges">
+  <span class="badge live">live</span>
+  
+  <span class="badge">指标: tlt</span>
+  <span class="badge">标的: SPY</span>
+  <span class="badge">方向: 📈 涨</span>
+  <span class="badge">窗口: 30d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &gt; 50 日均线 · 当前: 86.270 (未达触发)</div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 207</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">72%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value green">+1.81%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value red">1.0000</div></div>
+</div>
+<div class="notes">📝 Canonical (skip-rerun safe). 出处: Risk-on rotation literature. 债券走强 → 资金从股转债 → SPY 受压 (反过来则 SPY 涨)</div>
 </div>
 <div class="card live">
 <div class="name">#9 HYG站上短期均线 + LQD走平 → QQQ涨</div>
@@ -107,7 +164,7 @@
   <span class="badge">方向: 📈 涨</span>
   <span class="badge">窗口: 14d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 &gt; 20 日均线 AND 短均线(5d) &gt; 长均线(20d) · 当前: 79.860 (未达触发)</div>
+<div class="rule">📐 触发条件: 指标 &gt; 20 日均线 AND 短均线(5d) &gt; 长均线(20d) · 当前: 80.035 (未达触发)</div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 183</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">70%</div></div>
@@ -126,7 +183,7 @@
   <span class="badge">方向: 📈 涨</span>
   <span class="badge">窗口: 30d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 &gt; 25.0 · 当前: 16.950 (未达触发)</div>
+<div class="rule">📐 触发条件: 指标 &gt; 25.0 · 当前: 17.080 (未达触发)</div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 125</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">70%</div></div>
@@ -134,6 +191,44 @@
   <div class="stat"><div class="label">p-value</div><div class="value green">0.0002</div></div>
 </div>
 <div class="notes">📝 2026-05-08 scan-promoted. 恐慌→反弹</div>
+</div>
+<div class="card live">
+<div class="name">#15 VIX &lt; 15 (低 vol regime) → SPY 30d 趋势延续涨</div>
+<div class="badges">
+  <span class="badge live">live</span>
+  
+  <span class="badge">指标: vix</span>
+  <span class="badge">标的: SPY</span>
+  <span class="badge">方向: 📈 涨</span>
+  <span class="badge">窗口: 30d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &lt; 15.0 · 当前: 17.080 (未达触发)</div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 189</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">72%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value green">+1.04%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value green">0.0002</div></div>
+</div>
+<div class="notes">📝 Canonical (skip-rerun safe). 出处: Bollerslev autocorrelation; Christoffersen &amp; Diebold. 低 vol 状态有持续性 (vol clustering 反向), 且通常对应温和上涨</div>
+</div>
+<div class="card live">
+<div class="name">#19 BTC 站上 200d MA → SPY 30d 涨 (全市场风险偏好)</div>
+<div class="badges">
+  <span class="badge live">live</span>
+  
+  <span class="badge">指标: btc</span>
+  <span class="badge">标的: SPY</span>
+  <span class="badge">方向: 📈 涨</span>
+  <span class="badge">窗口: 30d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &gt; 200 日均线 · 当前: 79554.180 (未达触发)</div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 92</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">73%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value green">+1.81%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value green">0.0007</div></div>
+</div>
+<div class="notes">📝 Canonical (skip-rerun safe). 出处: Hu, Liu &amp; Wang (2019) on crypto-equity correlation. BTC 强势 = 全市场风险偏好溢出, BTC 通常是风险资产的领先指标</div>
 </div>
 <div class="card active">
 <div class="name">#6 DXY&lt;100 → 黄金 +30d 涨</div>
@@ -145,7 +240,7 @@
   <span class="badge">方向: 📈 涨</span>
   <span class="badge">窗口: 30d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 &lt; 100.0 · 当前指标值: <b>97.925</b></div>
+<div class="rule">📐 触发条件: 指标 &lt; 100.0 · 当前指标值: <b>97.840</b></div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 450</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">77%</div></div>
@@ -164,7 +259,7 @@
   <span class="badge">方向: 📈 涨</span>
   <span class="badge">窗口: 30d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 &lt; 60.0 · 当前: 95.080 (未达触发)</div>
+<div class="rule">📐 触发条件: 指标 &lt; 60.0 · 当前: 94.150 (未达触发)</div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 147</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">69%</div></div>
@@ -183,7 +278,7 @@
   <span class="badge">方向: 📉 跌</span>
   <span class="badge">窗口: 30d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 &gt; 105.0 · 当前: 97.928 (未达触发)</div>
+<div class="rule">📐 触发条件: 指标 &gt; 105.0 · 当前: 97.839 (未达触发)</div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 163</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value red">10%</div></div>
@@ -202,7 +297,7 @@
   <span class="badge">方向: 📈 涨</span>
   <span class="badge">窗口: 30d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 &gt; 50 日均线 AND 短均线(10d) / 长均线(30d) &gt; 1.02 · 当前: 6.304 (未达触发)</div>
+<div class="rule">📐 触发条件: 指标 &gt; 50 日均线 AND 短均线(10d) / 长均线(30d) &gt; 1.02 · 当前: 6.297 (未达触发)</div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 125</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">67%</div></div>
@@ -221,7 +316,7 @@
   <span class="badge">方向: 📈 涨</span>
   <span class="badge">窗口: 30d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 &gt; 90 日均线 AND 指标 &gt; 2.0 AND 短均线(7d) &gt; 长均线(30d) · 当前: 0.890 (未达触发)</div>
+<div class="rule">📐 触发条件: 指标 &gt; 90 日均线 AND 指标 &gt; 2.0 AND 短均线(7d) &gt; 长均线(30d) · 当前: 0.889 (未达触发)</div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 48</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">62%</div></div>
@@ -229,6 +324,63 @@
   <div class="stat"><div class="label">p-value</div><div class="value ">0.0292</div></div>
 </div>
 <div class="notes">📝 2026-05-07 验证: H8 假设. 反直觉 — 紧缩落地后利空出尽, 沪深300 反而反弹.</div>
+</div>
+<div class="card weak">
+<div class="name">#16 DXY 突破 105 → 沪深300 30d 跌 (美元强 → EM 资本流出)</div>
+<div class="badges">
+  <span class="badge weak">weak</span>
+  
+  <span class="badge">指标: dxy</span>
+  <span class="badge">标的: sh000300</span>
+  <span class="badge">方向: 📉 跌</span>
+  <span class="badge">窗口: 30d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &gt; 105.0 · 当前: 97.838 (未达触发)</div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 163</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value red">13%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value green">+0.44%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value red">0.0593</div></div>
+</div>
+<div class="notes">📝 Canonical (skip-rerun safe). 出处: Bruno &amp; Shin (2015). 美元强势 → EM 资本外流 → 北向减持 → A股压力</div>
+</div>
+<div class="card active">
+<div class="name">#17 油价 &gt; 90 → TLT 30d 跌 (通胀担忧打压长债)</div>
+<div class="badges">
+  <span class="badge weak">weak</span>
+  <span class="badge active">🟢 当前激活</span>
+  <span class="badge">指标: oil</span>
+  <span class="badge">标的: TLT</span>
+  <span class="badge">方向: 📉 跌</span>
+  <span class="badge">窗口: 30d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &gt; 90.0 · 当前指标值: <b>94.140</b></div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 66</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value ">42%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value red">-0.47%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value red">0.4451</div></div>
+</div>
+<div class="notes">📝 Canonical (skip-rerun safe). 出处: Hamilton (2009). 油价高 → 通胀预期上行 → 长端收益率上行 → TLT 价格跌</div>
+</div>
+<div class="card weak">
+<div class="name">#14 VIX &gt; 35 (危机模式) → 黄金 30d 涨</div>
+<div class="badges">
+  <span class="badge weak">weak</span>
+  
+  <span class="badge">指标: vix</span>
+  <span class="badge">标的: GC=F</span>
+  <span class="badge">方向: 📈 涨</span>
+  <span class="badge">窗口: 30d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &gt; 35.0 · 当前: 17.090 (未达触发)</div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 35</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value ">51%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value green">+0.54%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value red">0.6462</div></div>
+</div>
+<div class="notes">📝 Canonical (skip-rerun safe). 出处: Cboe research, classic flight-to-safety. 极端恐慌 → 资金涌入黄金避险, 历史上 2008/2020 都是如此</div>
 </div>
 <div class="card weak">
 <div class="name">#2 余额宝 1 天 +0.10pp 突跳 → 沪深300 短期承压</div>
@@ -240,7 +392,7 @@
   <span class="badge">方向: 📉 跌</span>
   <span class="badge">窗口: 30d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 1d 累计变化 &gt; 0.1 · 当前: 0.890 (未达触发)</div>
+<div class="rule">📐 触发条件: 指标 1d 累计变化 &gt; 0.1 · 当前: 0.889 (未达触发)</div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 11</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">73%</div></div>
@@ -248,6 +400,44 @@
   <div class="stat"><div class="label">p-value</div><div class="value red">0.6506</div></div>
 </div>
 <div class="notes">📝 2026-05-07: 用户基于永赢货币E 2-23/24 突跳观察提出. 13 年数据 11 次类似事件 73% 跌, 均值 -1.05%, 但 p=0.65 不显著 (主要因样本少). 2013 钱荒是主要 regime. 2026-02-12 是低利率环境首次. 候选假设, 需要更多样本验证.</div>
+</div>
+<div class="card weak">
+<div class="name">#12 美10Y &gt; 4.5% → 长债 (TLT) 30d 内承压 (久期惩罚)</div>
+<div class="badges">
+  <span class="badge weak">weak</span>
+  
+  <span class="badge">指标: us_10y_yield</span>
+  <span class="badge">标的: TLT</span>
+  <span class="badge">方向: 📉 跌</span>
+  <span class="badge">窗口: 30d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &gt; 45.0 · 当前: 4.354 (未达触发)</div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 0</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value red">0%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value red">-0.00%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value red">1.0000</div></div>
+</div>
+<div class="notes">📝 Canonical (skip-rerun safe). 出处: Macaulay duration 1938. 收益率上行直接打压久期 ETF 价格,数学关系 (与久期成反比)</div>
+</div>
+<div class="card weak">
+<div class="name">#20 BTC 30 天 +30k 美元 (狂热) → SPY 仍 30d 涨 (溢出)</div>
+<div class="badges">
+  <span class="badge weak">weak</span>
+  
+  <span class="badge">指标: btc</span>
+  <span class="badge">标的: SPY</span>
+  <span class="badge">方向: 📈 涨</span>
+  <span class="badge">窗口: 30d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 30d 累计变化 &gt; 30000.0 · 当前: 79553.281 (未达触发)</div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 1</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">100%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value green">+0.62%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value red">1.0000</div></div>
+</div>
+<div class="notes">📝 Canonical (skip-rerun safe). 出处: Empirical observation (2020-2024 cycles). BTC 急涨期间风险偏好极高, SPY 通常跟随, 但持续性差</div>
 </div>
 
 <h2>📝 Phase 1 纸面交易跟踪</h2>

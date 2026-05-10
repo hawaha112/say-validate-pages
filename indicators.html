@@ -50,7 +50,7 @@
 </head>
 <body>
 <h1>📊 say_validate · 已验证因果规律</h1>
-<div class="meta">最后更新: 2026-05-10 00:50 UTC · 共 35 条规律 · 10 条 live · 15 条<b>当前激活</b></div>
+<div class="meta">最后更新: 2026-05-10 04:20 UTC · 共 36 条规律 · 11 条 live · 15 条<b>当前激活</b></div>
 
 <p style="font-size: 14px; color: #aab;">
 这是 say_validate 系统通过<b>真实历史数据回测</b>验证过的因果规律. 每条规律都经历过:
@@ -202,7 +202,7 @@
   <span class="badge">方向: 📈 涨</span>
   <span class="badge">窗口: 30d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 252d 累计变化 &gt; 5.0 · 当前指标值: <b>4720.400</b></div>
+<div class="rule">📐 触发条件: 指标 252d 累计变化 &gt; 5.0 · 当前指标值: <b>4730.700</b></div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 235</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value ">59%</div></div>
@@ -297,7 +297,7 @@
   <span class="badge">方向: 📈 涨</span>
   <span class="badge">窗口: 60d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 &gt; 200 日均线 AND 指标 30d 累计变化 &gt; 5 · 当前指标值: <b>4720.400</b></div>
+<div class="rule">📐 触发条件: 指标 &gt; 200 日均线 AND 指标 30d 累计变化 &gt; 5 · 当前指标值: <b>4730.700</b></div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 197</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">66%</div></div>
@@ -316,7 +316,7 @@
   <span class="badge">方向: 📈 涨</span>
   <span class="badge">窗口: 30d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 14d 累计变化 &lt; -7 AND 指标 7d 累计变化 &lt; -3 · 当前: 4720.400 (未达触发)</div>
+<div class="rule">📐 触发条件: 指标 14d 累计变化 &lt; -7 AND 指标 7d 累计变化 &lt; -3 · 当前: 4730.700 (未达触发)</div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 185</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value ">57%</div></div>
@@ -354,7 +354,7 @@
   <span class="badge">方向: 📈 涨</span>
   <span class="badge">窗口: 60d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 &gt; 50 日均线 AND 指标 30d 累计变化 &gt; -0.05 · 当前: 4720.400 (未达触发)</div>
+<div class="rule">📐 触发条件: 指标 &gt; 50 日均线 AND 指标 30d 累计变化 &gt; -0.05 · 当前: 4730.700 (未达触发)</div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 219</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">67%</div></div>
@@ -362,6 +362,25 @@
   <div class="stat"><div class="label">p-value</div><div class="value green">0.0000</div></div>
 </div>
 <div class="notes">📝 discovery 2026-05-08: BullionVault (2024) Annual Gold Price Pattern 和 Quantpedia Commodity Seasonality 研究显示黄金 8-11 月季节性上涨(珠宝业圣诞备货)，50 日均线上方确认趋势启动 domain:seasonality | retired_degenerate_trigger_rate</div>
+</div>
+<div class="card live">
+<div class="name">#36 VIX低位且油价低位双低环境HYG信用利差压缩</div>
+<div class="badges">
+  <span class="badge live">live</span>
+  
+  <span class="badge">指标: vix</span>
+  <span class="badge">标的: HYG</span>
+  <span class="badge">方向: 📈 涨</span>
+  <span class="badge">窗口: 30d</span>
+</div>
+<div class="rule">📐 触发条件: 指标 &lt; 18.0 AND 指标 &gt; 50 日均线 · 当前: 17.190 (未达触发)</div>
+<div class="stats">
+  <div class="stat"><div class="label">历史样本</div><div class="value">N = 156</div></div>
+  <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">83%</div></div>
+  <div class="stat"><div class="label">均值收益</div><div class="value green">+0.85%</div></div>
+  <div class="stat"><div class="label">p-value</div><div class="value green">0.0000</div></div>
+</div>
+<div class="notes">📝 discovery 2026-05-10: Feldhütter-Schaefer (2018) 显示IG可由Black-Cox匹配, 低波动环境下HY流动性溢价(占gap ~200bps)压缩; carry环境延续. oos:n=18,hit=78,mean=+1.25 path:n_stop=25/156,hit=79,mean=+0.79</div>
 </div>
 <div class="card live">
 <div class="name">#3 VIX&gt;25 → SPY +30d 反弹</div>
@@ -430,7 +449,7 @@
   <span class="badge">方向: 📈 涨</span>
   <span class="badge">窗口: 60d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 &gt; 100 日均线 AND 短均线(20d) &gt; 长均线(50d) · 当前指标值: <b>6.249</b></div>
+<div class="rule">📐 触发条件: 指标 &gt; 100 日均线 AND 短均线(20d) &gt; 长均线(50d) · 当前指标值: <b>6.297</b></div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 178</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value ">58%</div></div>
@@ -449,7 +468,7 @@
   <span class="badge">方向: 📈 涨</span>
   <span class="badge">窗口: 30d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 &gt; 200 日均线 · 当前: 80668.000 (未达触发)</div>
+<div class="rule">📐 触发条件: 指标 &gt; 200 日均线 · 当前: 80768.438 (未达触发)</div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 92</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">72%</div></div>
@@ -506,7 +525,7 @@
   <span class="badge">方向: 📈 涨</span>
   <span class="badge">窗口: 30d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 &gt; 50 日均线 AND 短均线(10d) / 长均线(30d) &gt; 1.02 · 当前: 6.249 (未达触发)</div>
+<div class="rule">📐 触发条件: 指标 &gt; 50 日均线 AND 短均线(10d) / 长均线(30d) &gt; 1.02 · 当前: 6.297 (未达触发)</div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 125</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">65%</div></div>
@@ -715,7 +734,7 @@
   <span class="badge">方向: 📈 涨</span>
   <span class="badge">窗口: 30d</span>
 </div>
-<div class="rule">📐 触发条件: 指标 30d 累计变化 &gt; 30000.0 · 当前: 80640.023 (未达触发)</div>
+<div class="rule">📐 触发条件: 指标 30d 累计变化 &gt; 30000.0 · 当前: 80763.930 (未达触发)</div>
 <div class="stats">
   <div class="stat"><div class="label">历史样本</div><div class="value">N = 1</div></div>
   <div class="stat"><div class="label">胜率(对齐方向)</div><div class="value green">100%</div></div>

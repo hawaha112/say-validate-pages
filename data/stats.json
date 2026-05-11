@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-05T14:19:54.166520",
+  "generated_at": "2026-05-11T14:50:10.757464",
   "kb_summary": {
-    "n_links_active": 461,
+    "n_links_active": 320,
     "n_strong": 164,
     "n_strong_rigorous": 36,
     "rigor_thresholds": {
@@ -15,64 +15,66 @@
     "n_weak": 8,
     "n_retire_candidate": 0,
     "n_flip_candidate": 0,
-    "n_insufficient_data": 289,
+    "n_insufficient_data": 148,
     "strong_avg_dir_hit_rate": 0.797,
-    "n_instances_total": 1937,
+    "n_instances_total": 2238,
     "n_instances_with_price_path": 1903,
     "n_instances_with_turning_points": 1903,
-    "n_instances_classified": 1912,
-    "n_links_with_causal_chain": 270,
+    "n_instances_classified": 2213,
+    "n_links_with_causal_chain": 205,
     "by_macro_category": {
-      "monetary_policy": 75,
-      "macro_data": 41,
-      "energy_commodity": 36,
-      "politics_geo": 34,
-      "regulation": 35,
-      "tech_breakthrough": 4,
-      "corporate_sector": 30,
-      "crypto_market": 13,
-      "financial_stress": 25,
-      "market_stress": 2,
-      "other": 166
+      "monetary_policy": 79,
+      "macro_data": 49,
+      "energy_commodity": 24,
+      "politics_geo": 43,
+      "regulation": 21,
+      "tech_breakthrough": 29,
+      "corporate_sector": 25,
+      "financial_stress": 24,
+      "market_stress": 4,
+      "crypto_market": 4,
+      "other": 18
     }
   },
-  "total": 0,
-  "verified": 0,
-  "pending": 0,
+  "total": 20,
+  "verified": 1,
+  "pending": 19,
   "pending_past_expire": 0,
   "expired_no_data": 0,
   "retired": 0,
-  "hit_rate": null,
-  "hit_rate_strict": null,
-  "hit_rate_honest": null,
+  "hit_rate": 1.0,
+  "hit_rate_strict": 1.0,
+  "hit_rate_honest": 1.0,
   "hit_rate_denominator": {
-    "strict": 0,
-    "honest": 0,
+    "strict": 1,
+    "honest": 1,
     "note": "strict counts only verified predictions; honest treats expired_no_data and past-expire pending as misses (they're predictions the system couldn't score, not omissions)"
   },
   "hit_breakdown_summary": {
-    "n": 0,
-    "dir_hit_rate": null,
-    "mag_hit_rate": null,
-    "strict_hit_rate": null,
-    "mag_err_bucket_counts": {}
+    "n": 1,
+    "dir_hit_rate": 1.0,
+    "mag_hit_rate": 1.0,
+    "strict_hit_rate": 1.0,
+    "mag_err_bucket_counts": {
+      "<=100%": 1
+    }
   },
   "hit_rate_vs_random": {
     "lookback_days": 30,
-    "n_verified": 130,
-    "actual_dir_hit_rate": 0.46923076923076923,
-    "random_dir_hit_rate": 0.5,
-    "actual_strict_hit_rate": 0.3384615384615385,
-    "random_strict_hit_rate": 0.3076923076923077
+    "n_verified": 136,
+    "actual_dir_hit_rate": 0.47058823529411764,
+    "random_dir_hit_rate": 0.49264705882352944,
+    "actual_strict_hit_rate": 0.33088235294117646,
+    "random_strict_hit_rate": 0.3088235294117647
   },
   "kb_vs_random": {
-    "n_instances": 1912,
-    "actual_dir_hit_rate": 0.664,
-    "random_dir_hit_rate": 0.515,
-    "actual_strict_hit_rate": 0.458,
-    "random_strict_hit_rate": 0.36,
-    "edge_dir": 0.15,
-    "edge_strict": 0.098
+    "n_instances": 2213,
+    "actual_dir_hit_rate": 0.643,
+    "random_dir_hit_rate": 0.511,
+    "actual_strict_hit_rate": 0.441,
+    "random_strict_hit_rate": 0.357,
+    "edge_dir": 0.132,
+    "edge_strict": 0.084
   },
   "freeze": {
     "date": "2026-04-19",
@@ -82,11 +84,19 @@
       "note": "built before KB freeze; treat as training/in-sample"
     },
     "post_freeze": {
-      "n_verified": 0,
-      "hit_rate_strict": null,
+      "n_verified": 1,
+      "hit_rate_strict": 1.0,
       "note": "verified predictions made after KB freeze — this is the number you can actually trust. Grows as live predictions accumulate."
     }
   },
-  "by_class": {},
-  "baseline_source_distribution": {}
+  "by_class": {
+    "us_stock": 7,
+    "commodity": 11,
+    "a_stock": 1,
+    "fx": 1
+  },
+  "baseline_source_distribution": {
+    "event_time": 19,
+    "live_fallback": 1
+  }
 }

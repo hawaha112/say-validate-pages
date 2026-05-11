@@ -1,0 +1,133 @@
+{
+  "id": 242,
+  "made_at": "2026-05-11T14:42:44.498392",
+  "expire_at": "2026-05-14T14:42:44.498392",
+  "verified_at": null,
+  "asset": {
+    "symbol": "CL=F",
+    "name": "WTI原油期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.35,
+  "horizon_days": 3,
+  "baseline_price": 97.68000030517578,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 97.44000244140625,
+  "current_pct": -0.24569805796449662,
+  "current_at": "2026-05-11T00:00:00-04:00",
+  "reasoning": "参考链 #229（以色列与伊朗直接军事交火）的机制：中东军事冲突引发霍尔木兹海峡供给中断担忧，推升油价。本次卡塔尔附近海域（波斯湾）货船遭袭击，虽非国家间直接交火，但同样威胁波斯湾航运安全，触发类似的供给担忧逻辑。与链 #642/#643 停火协议导致风险溢价回吐的机制相反，本次是风险事件升级，应推升地缘溢价。",
+  "stop_loss_price": 58.6484,
+  "take_profit": {
+    "prices": [
+      156.2274,
+      195.2589,
+      253.8063
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 39.0316,
+    "atr": 19.5158
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": 0.6624,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.6624,
+    "log_odds": 0.674,
+    "effective_n": 1.0,
+    "r_bar": 1.0,
+    "uplift": 2.21,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 229,
+        "pattern": "以色列与伊朗直接军事交火",
+        "asset": "GC=F",
+        "dir_hit_rate": 1.0,
+        "n_samples": 5,
+        "log_lr": 1.792,
+        "grade": "A"
+      },
+      {
+        "link_id": 642,
+        "pattern": "以色列与哈马斯加沙重大停火/人质交换协议达成",
+        "asset": "BZ=F",
+        "dir_hit_rate": 1.0,
+        "n_samples": 3,
+        "log_lr": 1.386,
+        "grade": "B"
+      },
+      {
+        "link_id": 643,
+        "pattern": "以色列与哈马斯加沙重大停火/人质交换协议达成",
+        "asset": "CL=F",
+        "dir_hit_rate": 1.0,
+        "n_samples": 3,
+        "log_lr": 1.386,
+        "grade": "B"
+      }
+    ],
+    "note": "⚠ 证据同类别重叠 r̄=1.00，已折扣 (n=3 → n_eff=1.0)"
+  },
+  "tags": [],
+  "retired_at": null,
+  "retired_reason": null,
+  "cited_link_ids": [
+    229,
+    642,
+    643
+  ],
+  "cited_chains": [
+    {
+      "id": 229,
+      "pattern": "以色列与伊朗直接军事交火",
+      "asset_symbol": "GC=F",
+      "direction": "up",
+      "horizon_days": 30,
+      "magnitude_pct": 2.04,
+      "grade": "A",
+      "retail_edge": "high"
+    },
+    {
+      "id": 642,
+      "pattern": "以色列与哈马斯加沙重大停火/人质交换协议达成",
+      "asset_symbol": "BZ=F",
+      "direction": "down",
+      "horizon_days": 3,
+      "magnitude_pct": 1.7,
+      "grade": "B",
+      "retail_edge": null
+    },
+    {
+      "id": 643,
+      "pattern": "以色列与哈马斯加沙重大停火/人质交换协议达成",
+      "asset_symbol": "CL=F",
+      "direction": "down",
+      "horizon_days": 3,
+      "magnitude_pct": 2.0,
+      "grade": "B",
+      "retail_edge": null
+    }
+  ],
+  "event": {
+    "id": 1107,
+    "summary": "卡塔尔附近海域货船遭不明飞行物袭击起火，地缘政治风险上升",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "一货船在卡塔尔附近海域被击中起火",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3101111",
+    "published_at": "2026-05-10T06:14:57"
+  }
+}

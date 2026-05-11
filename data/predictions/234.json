@@ -1,0 +1,93 @@
+{
+  "id": 234,
+  "made_at": "2026-05-11T14:37:03.659182",
+  "expire_at": "2026-05-18T14:37:03.659182",
+  "verified_at": null,
+  "asset": {
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 0.36000000000000004,
+  "horizon_days": 7,
+  "baseline_price": 4737.89990234375,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 4737.10009765625,
+  "current_pct": -0.016880995883943255,
+  "current_at": "2026-05-11T00:00:00-04:00",
+  "reasoning": "参考链 #229 (以色列与伊朗直接军事交火) 的机制：中东地缘冲突引发避险需求支撑黄金。当前新闻显示伊朗冲突持续影响国际航空客流，表明地缘紧张局势仍在延续。但本新闻为滞后数据（4月客流量报告），非新升级消息，且未披露下降幅度，对黄金的边际推动非常有限。",
+  "stop_loss_price": 4698.8683,
+  "take_profit": {
+    "prices": [
+      4796.4473,
+      4835.4788,
+      4894.0262
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 39.0316,
+    "atr": 19.5158
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.72,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.72,
+    "log_odds": 0.944,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.4,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 229,
+        "pattern": "以色列与伊朗直接军事交火",
+        "asset": "GC=F",
+        "dir_hit_rate": 1.0,
+        "n_samples": 5,
+        "log_lr": 1.792,
+        "grade": "A"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [],
+  "retired_at": null,
+  "retired_reason": null,
+  "cited_link_ids": [
+    229
+  ],
+  "cited_chains": [
+    {
+      "id": 229,
+      "pattern": "以色列与伊朗直接军事交火",
+      "asset_symbol": "GC=F",
+      "direction": "up",
+      "horizon_days": 30,
+      "magnitude_pct": 2.04,
+      "grade": "A",
+      "retail_edge": "high"
+    }
+  ],
+  "event": {
+    "id": 1141,
+    "summary": "希斯罗机场因伊朗冲突导致客流量下降，4月旅客数为670万人次",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "Heathrow sees passenger dip amid Iran conflict",
+    "source": "bbc",
+    "lang": "en",
+    "url": "https://www.bbc.com/news/articles/cx21r2vj27jo?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-05-11T11:43:37"
+  }
+}

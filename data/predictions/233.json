@@ -1,0 +1,95 @@
+{
+  "id": 233,
+  "made_at": "2026-05-11T14:33:35.517438",
+  "expire_at": "2026-05-18T14:33:35.517438",
+  "verified_at": null,
+  "asset": {
+    "symbol": "MSFT",
+    "name": "微软",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 0.7200000000000001,
+  "horizon_days": 7,
+  "baseline_price": 409.9100036621094,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 409.9800109863281,
+  "current_pct": 0.01707870595821256,
+  "current_at": "2026-05-11T00:00:00-04:00",
+  "reasoning": "参考链 #92（大型科技公司遭重大法律裁决不利→科技板块承压）的机制。当前新闻虽为诉讼提起而非裁决，但微软作为OpenAI最大股东（投资超130亿美元）会受负面情绪传导。差异点：仅诉讼阶段且产品责任诉讼胜诉门槛高于反垄断，影响幅度应远小于裁决场景。",
+  "stop_loss_price": 420.5153,
+  "take_profit": {
+    "prices": [
+      394.0021,
+      383.3968,
+      367.489
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 10.6053,
+    "atr": 5.3026
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": 0.3636,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.3636,
+    "log_odds": -0.56,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 1.21,
+    "signal_grade": "💤 D",
+    "evidence": [
+      {
+        "link_id": 92,
+        "pattern": "美国大型科技公司遭反垄断重大裁决不利",
+        "asset": "QQQ",
+        "dir_hit_rate": 0.6,
+        "n_samples": 5,
+        "log_lr": 0.288,
+        "grade": "C"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "low_grade_chain"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "cited_link_ids": [
+    92
+  ],
+  "cited_chains": [
+    {
+      "id": 92,
+      "pattern": "美国大型科技公司遭反垄断重大裁决不利",
+      "asset_symbol": "QQQ",
+      "direction": "down",
+      "horizon_days": 14,
+      "magnitude_pct": 0.8,
+      "grade": "C",
+      "retail_edge": "mid"
+    }
+  ],
+  "event": {
+    "id": 1159,
+    "summary": "OpenAI因ChatGPT涉嫌在佛州校园枪击案中提供战术指导而面临联邦诉讼，引发AI公司法律责任问题",
+    "category": "regulation"
+  },
+  "news": {
+    "title": "OpenAI Faces Federal Lawsuit Over ChatGPT's Alleged Role in FSU Mass Shooting",
+    "source": "decrypt",
+    "lang": "en",
+    "url": "https://decrypt.co/367380/openai-faces-federal-lawsuit-over-chatgpts-alleged-role-in-fsu-mass-shooting",
+    "published_at": "2026-05-11T11:19:29"
+  }
+}

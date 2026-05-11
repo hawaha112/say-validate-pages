@@ -1,0 +1,95 @@
+{
+  "id": 243,
+  "made_at": "2026-05-11T14:42:44.767081",
+  "expire_at": "2026-05-18T14:42:44.767081",
+  "verified_at": null,
+  "asset": {
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 0.7200000000000001,
+  "horizon_days": 7,
+  "baseline_price": 4729.39990234375,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 4737.10009765625,
+  "current_pct": 0.16281548339111718,
+  "current_at": "2026-05-11T00:00:00-04:00",
+  "reasoning": "参考链 #229（以色列与伊朗直接军事交火）的机制：中东地缘冲突升级时黄金作为避险资产受益。本次波斯湾货船遇袭事件规模较小（火势已扑灭、无人员伤亡），但不明飞行物袭击性质增加地缘不确定性，避险需求小幅上升。幅度预期低于链 #229 的2%，因事件烈度明显较低。",
+  "stop_loss_price": 4690.3683,
+  "take_profit": {
+    "prices": [
+      4787.9473,
+      4826.9788,
+      4885.5262
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 39.0316,
+    "atr": 19.5158
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.72,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.72,
+    "log_odds": 0.944,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.4,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 229,
+        "pattern": "以色列与伊朗直接军事交火",
+        "asset": "GC=F",
+        "dir_hit_rate": 1.0,
+        "n_samples": 5,
+        "log_lr": 1.792,
+        "grade": "A"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "asset_repeat"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "cited_link_ids": [
+    229
+  ],
+  "cited_chains": [
+    {
+      "id": 229,
+      "pattern": "以色列与伊朗直接军事交火",
+      "asset_symbol": "GC=F",
+      "direction": "up",
+      "horizon_days": 30,
+      "magnitude_pct": 2.04,
+      "grade": "A",
+      "retail_edge": "high"
+    }
+  ],
+  "event": {
+    "id": 1107,
+    "summary": "卡塔尔附近海域货船遭不明飞行物袭击起火，地缘政治风险上升",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "一货船在卡塔尔附近海域被击中起火",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3101111",
+    "published_at": "2026-05-10T06:14:57"
+  }
+}

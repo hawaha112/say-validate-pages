@@ -1,0 +1,113 @@
+{
+  "id": 241,
+  "made_at": "2026-05-11T14:42:14.388431",
+  "expire_at": "2026-05-14T14:42:14.388431",
+  "verified_at": null,
+  "asset": {
+    "symbol": "BZ=F",
+    "name": "布伦特原油期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 0.9,
+  "horizon_days": 3,
+  "baseline_price": 104.2300033569336,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 103.7699966430664,
+  "current_pct": -0.44133809752639414,
+  "current_at": "2026-05-11T00:00:00-04:00",
+  "reasoning": "参考链 #637 (霍尔木兹海峡通航受阻) 的机制：布伦特对中东地缘事件更敏感，波斯湾航运袭击直接影响其定价区域。与 #642 停火协议降低溢价的逻辑相反，本次袭击事件将重新注入地缘风险溢价，但因单一事件且无伤亡，幅度有限。",
+  "stop_loss_price": 103.2919,
+  "take_profit": {
+    "prices": [
+      105.6371,
+      106.5752,
+      107.9823
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.9381,
+    "atr": 0.469
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.548,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.548,
+    "log_odds": 0.192,
+    "effective_n": 1.0,
+    "r_bar": 1.0,
+    "uplift": 1.83,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 637,
+        "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+        "asset": "SPY",
+        "dir_hit_rate": 0.75,
+        "n_samples": 4,
+        "log_lr": 0.693,
+        "grade": "C"
+      },
+      {
+        "link_id": 642,
+        "pattern": "以色列与哈马斯加沙重大停火/人质交换协议达成",
+        "asset": "BZ=F",
+        "dir_hit_rate": 1.0,
+        "n_samples": 3,
+        "log_lr": 1.386,
+        "grade": "B"
+      }
+    ],
+    "note": "⚠ 证据同类别重叠 r̄=1.00，已折扣 (n=2 → n_eff=1.0)"
+  },
+  "tags": [],
+  "retired_at": null,
+  "retired_reason": null,
+  "cited_link_ids": [
+    637,
+    642
+  ],
+  "cited_chains": [
+    {
+      "id": 637,
+      "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+      "asset_symbol": "SPY",
+      "direction": "down",
+      "horizon_days": 3,
+      "magnitude_pct": 1.0,
+      "grade": "C",
+      "retail_edge": null
+    },
+    {
+      "id": 642,
+      "pattern": "以色列与哈马斯加沙重大停火/人质交换协议达成",
+      "asset_symbol": "BZ=F",
+      "direction": "down",
+      "horizon_days": 3,
+      "magnitude_pct": 1.7,
+      "grade": "B",
+      "retail_edge": null
+    }
+  ],
+  "event": {
+    "id": 1111,
+    "summary": "卡塔尔附近海域悬挂美国国旗货船遭不明飞行物击中起火，火势已扑灭暂无伤亡",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "伊媒称在卡塔尔附近海域起火货船悬挂美国国旗",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3101122",
+    "published_at": "2026-05-10T08:15:24"
+  }
+}

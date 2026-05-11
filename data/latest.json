@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-05T14:19:54.689751",
+  "generated_at": "2026-05-11T14:50:11.163741",
   "stats": {
-    "generated_at": "2026-05-05T14:19:54.166520",
+    "generated_at": "2026-05-11T14:50:10.757464",
     "kb_summary": {
-      "n_links_active": 461,
+      "n_links_active": 320,
       "n_strong": 164,
       "n_strong_rigorous": 36,
       "rigor_thresholds": {
@@ -17,64 +17,66 @@
       "n_weak": 8,
       "n_retire_candidate": 0,
       "n_flip_candidate": 0,
-      "n_insufficient_data": 289,
+      "n_insufficient_data": 148,
       "strong_avg_dir_hit_rate": 0.797,
-      "n_instances_total": 1937,
+      "n_instances_total": 2238,
       "n_instances_with_price_path": 1903,
       "n_instances_with_turning_points": 1903,
-      "n_instances_classified": 1912,
-      "n_links_with_causal_chain": 270,
+      "n_instances_classified": 2213,
+      "n_links_with_causal_chain": 205,
       "by_macro_category": {
-        "monetary_policy": 75,
-        "macro_data": 41,
-        "energy_commodity": 36,
-        "politics_geo": 34,
-        "regulation": 35,
-        "tech_breakthrough": 4,
-        "corporate_sector": 30,
-        "crypto_market": 13,
-        "financial_stress": 25,
-        "market_stress": 2,
-        "other": 166
+        "monetary_policy": 79,
+        "macro_data": 49,
+        "energy_commodity": 24,
+        "politics_geo": 43,
+        "regulation": 21,
+        "tech_breakthrough": 29,
+        "corporate_sector": 25,
+        "financial_stress": 24,
+        "market_stress": 4,
+        "crypto_market": 4,
+        "other": 18
       }
     },
-    "total": 0,
-    "verified": 0,
-    "pending": 0,
+    "total": 20,
+    "verified": 1,
+    "pending": 19,
     "pending_past_expire": 0,
     "expired_no_data": 0,
     "retired": 0,
-    "hit_rate": null,
-    "hit_rate_strict": null,
-    "hit_rate_honest": null,
+    "hit_rate": 1.0,
+    "hit_rate_strict": 1.0,
+    "hit_rate_honest": 1.0,
     "hit_rate_denominator": {
-      "strict": 0,
-      "honest": 0,
+      "strict": 1,
+      "honest": 1,
       "note": "strict counts only verified predictions; honest treats expired_no_data and past-expire pending as misses (they're predictions the system couldn't score, not omissions)"
     },
     "hit_breakdown_summary": {
-      "n": 0,
-      "dir_hit_rate": null,
-      "mag_hit_rate": null,
-      "strict_hit_rate": null,
-      "mag_err_bucket_counts": {}
+      "n": 1,
+      "dir_hit_rate": 1.0,
+      "mag_hit_rate": 1.0,
+      "strict_hit_rate": 1.0,
+      "mag_err_bucket_counts": {
+        "<=100%": 1
+      }
     },
     "hit_rate_vs_random": {
       "lookback_days": 30,
-      "n_verified": 130,
-      "actual_dir_hit_rate": 0.46923076923076923,
-      "random_dir_hit_rate": 0.5,
-      "actual_strict_hit_rate": 0.3384615384615385,
-      "random_strict_hit_rate": 0.3076923076923077
+      "n_verified": 136,
+      "actual_dir_hit_rate": 0.47058823529411764,
+      "random_dir_hit_rate": 0.49264705882352944,
+      "actual_strict_hit_rate": 0.33088235294117646,
+      "random_strict_hit_rate": 0.3088235294117647
     },
     "kb_vs_random": {
-      "n_instances": 1912,
-      "actual_dir_hit_rate": 0.664,
-      "random_dir_hit_rate": 0.515,
-      "actual_strict_hit_rate": 0.458,
-      "random_strict_hit_rate": 0.36,
-      "edge_dir": 0.15,
-      "edge_strict": 0.098
+      "n_instances": 2213,
+      "actual_dir_hit_rate": 0.643,
+      "random_dir_hit_rate": 0.511,
+      "actual_strict_hit_rate": 0.441,
+      "random_strict_hit_rate": 0.357,
+      "edge_dir": 0.132,
+      "edge_strict": 0.084
     },
     "freeze": {
       "date": "2026-04-19",
@@ -84,15 +86,2031 @@
         "note": "built before KB freeze; treat as training/in-sample"
       },
       "post_freeze": {
-        "n_verified": 0,
-        "hit_rate_strict": null,
+        "n_verified": 1,
+        "hit_rate_strict": 1.0,
         "note": "verified predictions made after KB freeze — this is the number you can actually trust. Grows as live predictions accumulate."
       }
     },
-    "by_class": {},
-    "baseline_source_distribution": {}
+    "by_class": {
+      "us_stock": 7,
+      "commodity": 11,
+      "a_stock": 1,
+      "fx": 1
+    },
+    "baseline_source_distribution": {
+      "event_time": 19,
+      "live_fallback": 1
+    }
   },
   "recent_predictions": [
+    {
+      "id": 245,
+      "made_at": "2026-05-11T14:44:03.099713",
+      "expire_at": "2026-05-18T14:44:03.099713",
+      "verified_at": null,
+      "asset": {
+        "symbol": "DJT",
+        "name": "特朗普媒体科技集团",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 14.4,
+      "horizon_days": 7,
+      "baseline_price": 8.944999694824219,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 8.979999542236328,
+      "current_pct": 0.39127835222130963,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #135 (小市值投机股非核心业务曝险后回调) 的机制。DJT 同为 meme 股性质，此次 4.06 亿美元未实现亏损来自去年高点买入的 BTC 和 CRO 代币，暴露了公司在非核心加密资产上的激进配置和时机失误。与 #135 中 BIRD 转型后暴涨回调类似，meme 股投机者在负面基本面催化剂后倾向于快速获利了结，情绪降温将带来明显抛压。",
+      "stop_loss_price": 9.3166,
+      "take_profit": {
+        "prices": [
+          8.3876,
+          8.0161,
+          7.4587
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.3716,
+        "atr": 0.1858
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 135,
+            "pattern": "小市值公司宣布剥离主业转型AI概念后单日暴涨>100%",
+            "asset": "BIRD",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        135
+      ],
+      "cited_chains": [
+        {
+          "id": 135,
+          "pattern": "小市值公司宣布剥离主业转型AI概念后单日暴涨>100%",
+          "asset_symbol": "BIRD",
+          "direction": "down",
+          "horizon_days": 30,
+          "magnitude_pct": 25.0,
+          "grade": "B",
+          "retail_edge": "mid"
+        }
+      ],
+      "event": {
+        "id": 1105,
+        "summary": "特朗普媒体公司报告季度亏损4.06亿美元，主要因加密货币投资失败",
+        "category": "earnings"
+      },
+      "news": {
+        "title": "Trump Media posts $406M quarterly loss as crypto bets turn sour",
+        "source": "cointelegraph",
+        "lang": "en",
+        "url": "https://cointelegraph.com/news/trump-media-posts-406m-quarterly-loss-as-crypto-bets-turn-sour?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "published_at": "2026-05-10T08:23:43"
+      }
+    },
+    {
+      "id": 244,
+      "made_at": "2026-05-11T14:42:45.034641",
+      "expire_at": "2026-05-14T14:42:45.034641",
+      "verified_at": null,
+      "asset": {
+        "symbol": "BZ=F",
+        "name": "布伦特原油期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.62,
+      "horizon_days": 3,
+      "baseline_price": 103.9800033569336,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 103.7699966430664,
+      "current_pct": -0.20196836611583338,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #642（停火协议导致布伦特下跌）的反向机制：停火缓解航运担忧→油价下跌，则航运遇袭事件→风险溢价上升。布伦特作为国际基准对中东地缘事件更敏感，波斯湾货船遇袭直接影响该区域出口通道预期，幅度略高于WTI。",
+      "stop_loss_price": 64.9484,
+      "take_profit": {
+        "prices": [
+          162.5274,
+          201.559,
+          260.1063
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 39.0316,
+        "atr": 19.5158
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": 0.6774,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6774,
+        "log_odds": 0.742,
+        "effective_n": 1.0,
+        "r_bar": 1.0,
+        "uplift": 2.26,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 642,
+            "pattern": "以色列与哈马斯加沙重大停火/人质交换协议达成",
+            "asset": "BZ=F",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          },
+          {
+            "link_id": 229,
+            "pattern": "以色列与伊朗直接军事交火",
+            "asset": "GC=F",
+            "dir_hit_rate": 1.0,
+            "n_samples": 5,
+            "log_lr": 1.792,
+            "grade": "A"
+          }
+        ],
+        "note": "⚠ 证据同类别重叠 r̄=1.00，已折扣 (n=2 → n_eff=1.0)"
+      },
+      "tags": [],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        642,
+        229
+      ],
+      "cited_chains": [
+        {
+          "id": 642,
+          "pattern": "以色列与哈马斯加沙重大停火/人质交换协议达成",
+          "asset_symbol": "BZ=F",
+          "direction": "down",
+          "horizon_days": 3,
+          "magnitude_pct": 1.7,
+          "grade": "B",
+          "retail_edge": null
+        },
+        {
+          "id": 229,
+          "pattern": "以色列与伊朗直接军事交火",
+          "asset_symbol": "GC=F",
+          "direction": "up",
+          "horizon_days": 30,
+          "magnitude_pct": 2.04,
+          "grade": "A",
+          "retail_edge": "high"
+        }
+      ],
+      "event": {
+        "id": 1107,
+        "summary": "卡塔尔附近海域货船遭不明飞行物袭击起火，地缘政治风险上升",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "一货船在卡塔尔附近海域被击中起火",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3101111",
+        "published_at": "2026-05-10T06:14:57"
+      }
+    },
+    {
+      "id": 243,
+      "made_at": "2026-05-11T14:42:44.767081",
+      "expire_at": "2026-05-18T14:42:44.767081",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.7200000000000001,
+      "horizon_days": 7,
+      "baseline_price": 4729.39990234375,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4737.10009765625,
+      "current_pct": 0.16281548339111718,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #229（以色列与伊朗直接军事交火）的机制：中东地缘冲突升级时黄金作为避险资产受益。本次波斯湾货船遇袭事件规模较小（火势已扑灭、无人员伤亡），但不明飞行物袭击性质增加地缘不确定性，避险需求小幅上升。幅度预期低于链 #229 的2%，因事件烈度明显较低。",
+      "stop_loss_price": 4690.3683,
+      "take_profit": {
+        "prices": [
+          4787.9473,
+          4826.9788,
+          4885.5262
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 39.0316,
+        "atr": 19.5158
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.72,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.72,
+        "log_odds": 0.944,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.4,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 229,
+            "pattern": "以色列与伊朗直接军事交火",
+            "asset": "GC=F",
+            "dir_hit_rate": 1.0,
+            "n_samples": 5,
+            "log_lr": 1.792,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "asset_repeat"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        229
+      ],
+      "cited_chains": [
+        {
+          "id": 229,
+          "pattern": "以色列与伊朗直接军事交火",
+          "asset_symbol": "GC=F",
+          "direction": "up",
+          "horizon_days": 30,
+          "magnitude_pct": 2.04,
+          "grade": "A",
+          "retail_edge": "high"
+        }
+      ],
+      "event": {
+        "id": 1107,
+        "summary": "卡塔尔附近海域货船遭不明飞行物袭击起火，地缘政治风险上升",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "一货船在卡塔尔附近海域被击中起火",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3101111",
+        "published_at": "2026-05-10T06:14:57"
+      }
+    },
+    {
+      "id": 242,
+      "made_at": "2026-05-11T14:42:44.498392",
+      "expire_at": "2026-05-14T14:42:44.498392",
+      "verified_at": null,
+      "asset": {
+        "symbol": "CL=F",
+        "name": "WTI原油期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.35,
+      "horizon_days": 3,
+      "baseline_price": 97.68000030517578,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 97.44000244140625,
+      "current_pct": -0.24569805796449662,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #229（以色列与伊朗直接军事交火）的机制：中东军事冲突引发霍尔木兹海峡供给中断担忧，推升油价。本次卡塔尔附近海域（波斯湾）货船遭袭击，虽非国家间直接交火，但同样威胁波斯湾航运安全，触发类似的供给担忧逻辑。与链 #642/#643 停火协议导致风险溢价回吐的机制相反，本次是风险事件升级，应推升地缘溢价。",
+      "stop_loss_price": 58.6484,
+      "take_profit": {
+        "prices": [
+          156.2274,
+          195.2589,
+          253.8063
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 39.0316,
+        "atr": 19.5158
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": 0.6624,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6624,
+        "log_odds": 0.674,
+        "effective_n": 1.0,
+        "r_bar": 1.0,
+        "uplift": 2.21,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 229,
+            "pattern": "以色列与伊朗直接军事交火",
+            "asset": "GC=F",
+            "dir_hit_rate": 1.0,
+            "n_samples": 5,
+            "log_lr": 1.792,
+            "grade": "A"
+          },
+          {
+            "link_id": 642,
+            "pattern": "以色列与哈马斯加沙重大停火/人质交换协议达成",
+            "asset": "BZ=F",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          },
+          {
+            "link_id": 643,
+            "pattern": "以色列与哈马斯加沙重大停火/人质交换协议达成",
+            "asset": "CL=F",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": "⚠ 证据同类别重叠 r̄=1.00，已折扣 (n=3 → n_eff=1.0)"
+      },
+      "tags": [],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        229,
+        642,
+        643
+      ],
+      "cited_chains": [
+        {
+          "id": 229,
+          "pattern": "以色列与伊朗直接军事交火",
+          "asset_symbol": "GC=F",
+          "direction": "up",
+          "horizon_days": 30,
+          "magnitude_pct": 2.04,
+          "grade": "A",
+          "retail_edge": "high"
+        },
+        {
+          "id": 642,
+          "pattern": "以色列与哈马斯加沙重大停火/人质交换协议达成",
+          "asset_symbol": "BZ=F",
+          "direction": "down",
+          "horizon_days": 3,
+          "magnitude_pct": 1.7,
+          "grade": "B",
+          "retail_edge": null
+        },
+        {
+          "id": 643,
+          "pattern": "以色列与哈马斯加沙重大停火/人质交换协议达成",
+          "asset_symbol": "CL=F",
+          "direction": "down",
+          "horizon_days": 3,
+          "magnitude_pct": 2.0,
+          "grade": "B",
+          "retail_edge": null
+        }
+      ],
+      "event": {
+        "id": 1107,
+        "summary": "卡塔尔附近海域货船遭不明飞行物袭击起火，地缘政治风险上升",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "一货船在卡塔尔附近海域被击中起火",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3101111",
+        "published_at": "2026-05-10T06:14:57"
+      }
+    },
+    {
+      "id": 241,
+      "made_at": "2026-05-11T14:42:14.388431",
+      "expire_at": "2026-05-14T14:42:14.388431",
+      "verified_at": null,
+      "asset": {
+        "symbol": "BZ=F",
+        "name": "布伦特原油期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.9,
+      "horizon_days": 3,
+      "baseline_price": 104.2300033569336,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 103.7699966430664,
+      "current_pct": -0.44133809752639414,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #637 (霍尔木兹海峡通航受阻) 的机制：布伦特对中东地缘事件更敏感，波斯湾航运袭击直接影响其定价区域。与 #642 停火协议降低溢价的逻辑相反，本次袭击事件将重新注入地缘风险溢价，但因单一事件且无伤亡，幅度有限。",
+      "stop_loss_price": 103.2919,
+      "take_profit": {
+        "prices": [
+          105.6371,
+          106.5752,
+          107.9823
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.9381,
+        "atr": 0.469
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.548,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.548,
+        "log_odds": 0.192,
+        "effective_n": 1.0,
+        "r_bar": 1.0,
+        "uplift": 1.83,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 637,
+            "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+            "asset": "SPY",
+            "dir_hit_rate": 0.75,
+            "n_samples": 4,
+            "log_lr": 0.693,
+            "grade": "C"
+          },
+          {
+            "link_id": 642,
+            "pattern": "以色列与哈马斯加沙重大停火/人质交换协议达成",
+            "asset": "BZ=F",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": "⚠ 证据同类别重叠 r̄=1.00，已折扣 (n=2 → n_eff=1.0)"
+      },
+      "tags": [],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        637,
+        642
+      ],
+      "cited_chains": [
+        {
+          "id": 637,
+          "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+          "asset_symbol": "SPY",
+          "direction": "down",
+          "horizon_days": 3,
+          "magnitude_pct": 1.0,
+          "grade": "C",
+          "retail_edge": null
+        },
+        {
+          "id": 642,
+          "pattern": "以色列与哈马斯加沙重大停火/人质交换协议达成",
+          "asset_symbol": "BZ=F",
+          "direction": "down",
+          "horizon_days": 3,
+          "magnitude_pct": 1.7,
+          "grade": "B",
+          "retail_edge": null
+        }
+      ],
+      "event": {
+        "id": 1111,
+        "summary": "卡塔尔附近海域悬挂美国国旗货船遭不明飞行物击中起火，火势已扑灭暂无伤亡",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "伊媒称在卡塔尔附近海域起火货船悬挂美国国旗",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3101122",
+        "published_at": "2026-05-10T08:15:24"
+      }
+    },
+    {
+      "id": 240,
+      "made_at": "2026-05-11T14:42:14.121483",
+      "expire_at": "2026-05-14T14:42:14.121483",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.7200000000000001,
+      "horizon_days": 3,
+      "baseline_price": 4725.2998046875,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4737.10009765625,
+      "current_pct": 0.2497258048482787,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #229 (以色列与伊朗军事交火) 的机制：伊朗媒体主动报道美国船只遇袭细节，暗示可能为胡塞武装或伊朗关联势力所为，市场会将此解读为美伊紧张升级信号，触发避险资金流入黄金。事件本身规模有限，溢价幅度预计温和。",
+      "stop_loss_price": 4686.2682,
+      "take_profit": {
+        "prices": [
+          4783.8472,
+          4822.8788,
+          4881.4261
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 39.0316,
+        "atr": 19.5158
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.72,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.72,
+        "log_odds": 0.944,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.4,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 229,
+            "pattern": "以色列与伊朗直接军事交火",
+            "asset": "GC=F",
+            "dir_hit_rate": 1.0,
+            "n_samples": 5,
+            "log_lr": 1.792,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        229
+      ],
+      "cited_chains": [
+        {
+          "id": 229,
+          "pattern": "以色列与伊朗直接军事交火",
+          "asset_symbol": "GC=F",
+          "direction": "up",
+          "horizon_days": 30,
+          "magnitude_pct": 2.04,
+          "grade": "A",
+          "retail_edge": "high"
+        }
+      ],
+      "event": {
+        "id": 1111,
+        "summary": "卡塔尔附近海域悬挂美国国旗货船遭不明飞行物击中起火，火势已扑灭暂无伤亡",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "伊媒称在卡塔尔附近海域起火货船悬挂美国国旗",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3101122",
+        "published_at": "2026-05-10T08:15:24"
+      }
+    },
+    {
+      "id": 239,
+      "made_at": "2026-05-11T14:42:13.855610",
+      "expire_at": "2026-05-14T14:42:13.855610",
+      "verified_at": null,
+      "asset": {
+        "symbol": "CL=F",
+        "name": "WTI原油期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.08,
+      "horizon_days": 3,
+      "baseline_price": 97.87000274658203,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 97.44000244140625,
+      "current_pct": -0.43935863196938385,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #637 (霍尔木兹海峡通航受阻) 的机制：卡塔尔海域与霍尔木兹同属波斯湾核心航运区，美国国旗船只遭袭将推高海运保险费率、触发供应中断尾部风险定价。本次事件规模有限（火势扑灭、无伤亡），但目标为美国船只具有地缘敏感性，预计风险溢价温和上行。",
+      "stop_loss_price": 96.813,
+      "take_profit": {
+        "prices": [
+          99.4555,
+          100.5125,
+          102.098
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.057,
+        "atr": 0.5285
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.4615,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.4615,
+        "log_odds": -0.154,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.54,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 637,
+            "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+            "asset": "SPY",
+            "dir_hit_rate": 0.75,
+            "n_samples": 4,
+            "log_lr": 0.693,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "low_grade_chain"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        637
+      ],
+      "cited_chains": [
+        {
+          "id": 637,
+          "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+          "asset_symbol": "SPY",
+          "direction": "down",
+          "horizon_days": 3,
+          "magnitude_pct": 1.0,
+          "grade": "C",
+          "retail_edge": null
+        }
+      ],
+      "event": {
+        "id": 1111,
+        "summary": "卡塔尔附近海域悬挂美国国旗货船遭不明飞行物击中起火，火势已扑灭暂无伤亡",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "伊媒称在卡塔尔附近海域起火货船悬挂美国国旗",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3101122",
+        "published_at": "2026-05-10T08:15:24"
+      }
+    },
+    {
+      "id": 238,
+      "made_at": "2026-05-11T14:41:34.818732",
+      "expire_at": "2026-05-14T14:41:34.818732",
+      "verified_at": null,
+      "asset": {
+        "symbol": "SPY",
+        "name": "标普500ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.7200000000000001,
+      "horizon_days": 3,
+      "baseline_price": 738.8298950195312,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 738.7550048828125,
+      "current_pct": -0.010136316522055492,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #637 (霍尔木兹海峡通航受阻→标普下挫) 的反向机制。该链指出海峡封锁威胁导致能源成本上升预期压制股市；当前通航恢复信号缓解地缘风险定价，风险偏好边际回升利好美股。但单一船只通航的信号强度有限，且市场已消化大部分冲击，预期反弹幅度较小。",
+      "stop_loss_price": 733.5103,
+      "take_profit": {
+        "prices": [
+          746.8093,
+          752.1288,
+          760.1082
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 5.3196,
+        "atr": 2.6598
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.4615,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.4615,
+        "log_odds": -0.154,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.54,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 637,
+            "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+            "asset": "SPY",
+            "dir_hit_rate": 0.75,
+            "n_samples": 4,
+            "log_lr": 0.693,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "low_grade_chain"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        637
+      ],
+      "cited_chains": [
+        {
+          "id": 637,
+          "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+          "asset_symbol": "SPY",
+          "direction": "down",
+          "horizon_days": 3,
+          "magnitude_pct": 1.0,
+          "grade": "C",
+          "retail_edge": null
+        }
+      ],
+      "event": {
+        "id": 1112,
+        "summary": "卡塔尔液化天然气运输船70天来首次通过霍尔木兹海峡，地缘紧张局势缓和",
+        "category": "energy"
+      },
+      "news": {
+        "title": "卡塔尔液化天然气运输船时隔约70天首次通过霍尔木兹海峡",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3101126",
+        "published_at": "2026-05-10T09:01:56"
+      }
+    },
+    {
+      "id": 237,
+      "made_at": "2026-05-11T14:41:34.498326",
+      "expire_at": "2026-05-18T14:41:34.498326",
+      "verified_at": null,
+      "asset": {
+        "symbol": "CL=F",
+        "name": "WTI原油期货",
+        "class": "commodity"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.08,
+      "horizon_days": 7,
+      "baseline_price": 97.23999786376953,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 97.44000244140625,
+      "current_pct": 0.20568138834897906,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #636 (霍尔木兹海峡通航受阻→能源股上涨) 的底层机制：海峡承载全球约20%石油及LNG供应，封锁威胁导致Brent/WTI跳涨。当前LNG船成功通航并使用伊朗新航道，信号意义在于供应中断的尾部风险定价需要下修，原油风险溢价收窄。但70天封锁期市场已部分适应，预期幅度温和。",
+      "stop_loss_price": 98.2902,
+      "take_profit": {
+        "prices": [
+          95.6647,
+          94.6145,
+          93.0392
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.0502,
+        "atr": 0.5251
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": 0.3,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.3,
+        "log_odds": -0.847,
+        "effective_n": 1.0,
+        "r_bar": 1.0,
+        "uplift": 1.0,
+        "signal_grade": "💤 D",
+        "evidence": [
+          {
+            "link_id": 635,
+            "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+            "asset": "GC=F",
+            "dir_hit_rate": 0.5,
+            "n_samples": 4,
+            "log_lr": 0.0,
+            "grade": "C"
+          },
+          {
+            "link_id": 636,
+            "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+            "asset": "XLE",
+            "dir_hit_rate": 0.5,
+            "n_samples": 4,
+            "log_lr": 0.0,
+            "grade": "C"
+          }
+        ],
+        "note": "⚠ 证据同类别重叠 r̄=1.00，已折扣 (n=2 → n_eff=1.0)"
+      },
+      "tags": [
+        "low_grade_chain"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        635,
+        636
+      ],
+      "cited_chains": [
+        {
+          "id": 635,
+          "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+          "asset_symbol": "GC=F",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.5,
+          "grade": "C",
+          "retail_edge": null
+        },
+        {
+          "id": 636,
+          "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+          "asset_symbol": "XLE",
+          "direction": "up",
+          "horizon_days": 3,
+          "magnitude_pct": 2.0,
+          "grade": "C",
+          "retail_edge": null
+        }
+      ],
+      "event": {
+        "id": 1112,
+        "summary": "卡塔尔液化天然气运输船70天来首次通过霍尔木兹海峡，地缘紧张局势缓和",
+        "category": "energy"
+      },
+      "news": {
+        "title": "卡塔尔液化天然气运输船时隔约70天首次通过霍尔木兹海峡",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3101126",
+        "published_at": "2026-05-10T09:01:56"
+      }
+    },
+    {
+      "id": 236,
+      "made_at": "2026-05-11T14:41:34.225927",
+      "expire_at": "2026-05-14T14:41:34.225927",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "down",
+      "magnitude_pct": 0.7200000000000001,
+      "horizon_days": 3,
+      "baseline_price": 4736.39990234375,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4737.10009765625,
+      "current_pct": 0.014783281119347985,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #635 (霍尔木兹海峡通航受阻→黄金上涨) 的反向机制。该链指出海峡封锁威胁触发避险买盘推升金价；当前新闻显示卡塔尔LNG船70天来首次顺利通过海峡且使用伊朗新航道，表明地缘紧张边际缓和，避险需求相应回落，黄金承压。但因仅为单艘船通航而非全面恢复，影响幅度有限。",
+      "stop_loss_price": 4770.502,
+      "take_profit": {
+        "prices": [
+          4685.2468,
+          4651.1447,
+          4599.9916
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 34.1021,
+        "atr": 17.051
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": 0.3,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.3,
+        "log_odds": -0.847,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.0,
+        "signal_grade": "💤 D",
+        "evidence": [
+          {
+            "link_id": 635,
+            "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+            "asset": "GC=F",
+            "dir_hit_rate": 0.5,
+            "n_samples": 4,
+            "log_lr": 0.0,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "low_grade_chain"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        635
+      ],
+      "cited_chains": [
+        {
+          "id": 635,
+          "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+          "asset_symbol": "GC=F",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.5,
+          "grade": "C",
+          "retail_edge": null
+        }
+      ],
+      "event": {
+        "id": 1112,
+        "summary": "卡塔尔液化天然气运输船70天来首次通过霍尔木兹海峡，地缘紧张局势缓和",
+        "category": "energy"
+      },
+      "news": {
+        "title": "卡塔尔液化天然气运输船时隔约70天首次通过霍尔木兹海峡",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3101126",
+        "published_at": "2026-05-10T09:01:56"
+      }
+    },
+    {
+      "id": 235,
+      "made_at": "2026-05-11T14:39:00.155875",
+      "expire_at": "2026-05-14T14:39:00.155875",
+      "verified_at": null,
+      "asset": {
+        "symbol": "TLT",
+        "name": "20+年期美债ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.7,
+      "horizon_days": 3,
+      "baseline_price": 85.7249984741211,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 85.73500061035156,
+      "current_pct": 0.011667700680669272,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #83（银行挤兑→TLT上涨）的避险机制 → 伊朗对阿联酋发射弹道导弹升级中东军事冲突，虽触发因素不同（地缘政治风险 vs 金融系统风险），但核心传导相同：系统性风险预期推升避险资产需求，资金流向美国国债。霍尔木兹海峡附近直接军事交火近年罕见，风险溢价或迅速price in。",
+      "stop_loss_price": 84.3745,
+      "take_profit": {
+        "prices": [
+          87.7508,
+          89.1013,
+          91.1271
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.3505,
+        "atr": 0.6753
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.5172,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.5172,
+        "log_odds": 0.069,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.72,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 83,
+            "pattern": "大型银行倒闭 / 挤兑 / 存款集中流出事件",
+            "asset": "TLT",
+            "dir_hit_rate": 0.8,
+            "n_samples": 5,
+            "log_lr": 0.916,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "low_grade_chain"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        83
+      ],
+      "cited_chains": [
+        {
+          "id": 83,
+          "pattern": "大型银行倒闭 / 挤兑 / 存款集中流出事件",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 3.0,
+          "grade": "C",
+          "retail_edge": "mid"
+        }
+      ],
+      "event": {
+        "id": 1121,
+        "summary": "阿联酋拦截来自伊朗的导弹和无人机，中东地缘政治紧张升级",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "阿联酋称拦截伊朗导弹和无人机",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3101133",
+        "published_at": "2026-05-10T11:00:56"
+      }
+    },
+    {
+      "id": 234,
+      "made_at": "2026-05-11T14:37:03.659182",
+      "expire_at": "2026-05-18T14:37:03.659182",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.36000000000000004,
+      "horizon_days": 7,
+      "baseline_price": 4737.89990234375,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4737.10009765625,
+      "current_pct": -0.016880995883943255,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #229 (以色列与伊朗直接军事交火) 的机制：中东地缘冲突引发避险需求支撑黄金。当前新闻显示伊朗冲突持续影响国际航空客流，表明地缘紧张局势仍在延续。但本新闻为滞后数据（4月客流量报告），非新升级消息，且未披露下降幅度，对黄金的边际推动非常有限。",
+      "stop_loss_price": 4698.8683,
+      "take_profit": {
+        "prices": [
+          4796.4473,
+          4835.4788,
+          4894.0262
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 39.0316,
+        "atr": 19.5158
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.72,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.72,
+        "log_odds": 0.944,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.4,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 229,
+            "pattern": "以色列与伊朗直接军事交火",
+            "asset": "GC=F",
+            "dir_hit_rate": 1.0,
+            "n_samples": 5,
+            "log_lr": 1.792,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        229
+      ],
+      "cited_chains": [
+        {
+          "id": 229,
+          "pattern": "以色列与伊朗直接军事交火",
+          "asset_symbol": "GC=F",
+          "direction": "up",
+          "horizon_days": 30,
+          "magnitude_pct": 2.04,
+          "grade": "A",
+          "retail_edge": "high"
+        }
+      ],
+      "event": {
+        "id": 1141,
+        "summary": "希斯罗机场因伊朗冲突导致客流量下降，4月旅客数为670万人次",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "Heathrow sees passenger dip amid Iran conflict",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/cx21r2vj27jo?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-05-11T11:43:37"
+      }
+    },
+    {
+      "id": 233,
+      "made_at": "2026-05-11T14:33:35.517438",
+      "expire_at": "2026-05-18T14:33:35.517438",
+      "verified_at": null,
+      "asset": {
+        "symbol": "MSFT",
+        "name": "微软",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 0.7200000000000001,
+      "horizon_days": 7,
+      "baseline_price": 409.9100036621094,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 409.9800109863281,
+      "current_pct": 0.01707870595821256,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #92（大型科技公司遭重大法律裁决不利→科技板块承压）的机制。当前新闻虽为诉讼提起而非裁决，但微软作为OpenAI最大股东（投资超130亿美元）会受负面情绪传导。差异点：仅诉讼阶段且产品责任诉讼胜诉门槛高于反垄断，影响幅度应远小于裁决场景。",
+      "stop_loss_price": 420.5153,
+      "take_profit": {
+        "prices": [
+          394.0021,
+          383.3968,
+          367.489
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 10.6053,
+        "atr": 5.3026
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": 0.3636,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.3636,
+        "log_odds": -0.56,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.21,
+        "signal_grade": "💤 D",
+        "evidence": [
+          {
+            "link_id": 92,
+            "pattern": "美国大型科技公司遭反垄断重大裁决不利",
+            "asset": "QQQ",
+            "dir_hit_rate": 0.6,
+            "n_samples": 5,
+            "log_lr": 0.288,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "low_grade_chain"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        92
+      ],
+      "cited_chains": [
+        {
+          "id": 92,
+          "pattern": "美国大型科技公司遭反垄断重大裁决不利",
+          "asset_symbol": "QQQ",
+          "direction": "down",
+          "horizon_days": 14,
+          "magnitude_pct": 0.8,
+          "grade": "C",
+          "retail_edge": "mid"
+        }
+      ],
+      "event": {
+        "id": 1159,
+        "summary": "OpenAI因ChatGPT涉嫌在佛州校园枪击案中提供战术指导而面临联邦诉讼，引发AI公司法律责任问题",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "OpenAI Faces Federal Lawsuit Over ChatGPT's Alleged Role in FSU Mass Shooting",
+        "source": "decrypt",
+        "lang": "en",
+        "url": "https://decrypt.co/367380/openai-faces-federal-lawsuit-over-chatgpts-alleged-role-in-fsu-mass-shooting",
+        "published_at": "2026-05-11T11:19:29"
+      }
+    },
+    {
+      "id": 232,
+      "made_at": "2026-05-11T13:43:13.674513",
+      "expire_at": "2026-05-12T13:43:13.674513",
+      "verified_at": null,
+      "asset": {
+        "symbol": "SPY",
+        "name": "标普500ETF",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 0.36000000000000004,
+      "horizon_days": 1,
+      "baseline_price": 737.9749755859375,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 738.7550048828125,
+      "current_pct": 0.10569861074973066,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #637 (霍尔木兹海峡通航受阻→SPY下挫) 的机制：中东海上安全事件触发地缘风险溢价。本次事件规模极小、损失可控、未涉及石油运输核心航道，对美股风险偏好冲击非常有限，预计仅边际承压0.2%左右。",
+      "stop_loss_price": 740.6317,
+      "take_profit": {
+        "prices": [
+          733.9899,
+          731.3332,
+          727.3481
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.6567,
+        "atr": 1.3284
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.4615,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.4615,
+        "log_odds": -0.154,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.54,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 637,
+            "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+            "asset": "SPY",
+            "dir_hit_rate": 0.75,
+            "n_samples": 4,
+            "log_lr": 0.693,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "low_grade_chain"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        637
+      ],
+      "cited_chains": [
+        {
+          "id": 637,
+          "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+          "asset_symbol": "SPY",
+          "direction": "down",
+          "horizon_days": 3,
+          "magnitude_pct": 1.0,
+          "grade": "C",
+          "retail_edge": null
+        }
+      ],
+      "event": {
+        "id": 1134,
+        "summary": "阿联酋货船在卡塔尔领海遭无人机袭击，中东海上运输安全受关注",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "【一艘阿联酋货船在卡塔尔领海遭袭】阿联酋通讯社10日援引卡塔尔国防部的声明报道，一艘从阿联酋阿布扎比出发的商用货船当天上午在卡塔尔领海遭无人机袭击。声明说，袭击",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-05-10T21:47:54"
+      }
+    },
+    {
+      "id": 231,
+      "made_at": "2026-05-11T13:43:13.365555",
+      "expire_at": "2026-05-14T13:43:13.365555",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.36000000000000004,
+      "horizon_days": 3,
+      "baseline_price": 4745.0,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4737.10009765625,
+      "current_pct": -0.16648898511591148,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #637 (霍尔木兹海峡通航威胁) 机制中提及'黄金抢避险'，同时参考链 #61 (地缘升级→黄金上行) 的避险逻辑。本次袭击事件较轻微（无伤亡、火势受控），避险情绪推升有限，预计小幅上涨0.4%左右。",
+      "stop_loss_price": 4701.0315,
+      "take_profit": {
+        "prices": [
+          4810.9527,
+          4854.9212,
+          4920.8739
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 43.9685,
+        "atr": 21.9842
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": 0.4117,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.4117,
+        "log_odds": -0.357,
+        "effective_n": 1.0,
+        "r_bar": 1.0,
+        "uplift": 1.37,
+        "signal_grade": "💤 D",
+        "evidence": [
+          {
+            "link_id": 637,
+            "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+            "asset": "SPY",
+            "dir_hit_rate": 0.75,
+            "n_samples": 4,
+            "log_lr": 0.693,
+            "grade": "C"
+          },
+          {
+            "link_id": 61,
+            "pattern": "台海局势显著升级（军事动作/高层访台）",
+            "asset": "GC=F",
+            "dir_hit_rate": 0.6,
+            "n_samples": 5,
+            "log_lr": 0.288,
+            "grade": "C"
+          }
+        ],
+        "note": "⚠ 证据同类别重叠 r̄=1.00，已折扣 (n=2 → n_eff=1.0)"
+      },
+      "tags": [
+        "low_grade_chain"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        637,
+        61
+      ],
+      "cited_chains": [
+        {
+          "id": 637,
+          "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+          "asset_symbol": "SPY",
+          "direction": "down",
+          "horizon_days": 3,
+          "magnitude_pct": 1.0,
+          "grade": "C",
+          "retail_edge": null
+        },
+        {
+          "id": 61,
+          "pattern": "台海局势显著升级（军事动作/高层访台）",
+          "asset_symbol": "GC=F",
+          "direction": "up",
+          "horizon_days": 3,
+          "magnitude_pct": 1.5,
+          "grade": "C",
+          "retail_edge": "high"
+        }
+      ],
+      "event": {
+        "id": 1134,
+        "summary": "阿联酋货船在卡塔尔领海遭无人机袭击，中东海上运输安全受关注",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "【一艘阿联酋货船在卡塔尔领海遭袭】阿联酋通讯社10日援引卡塔尔国防部的声明报道，一艘从阿联酋阿布扎比出发的商用货船当天上午在卡塔尔领海遭无人机袭击。声明说，袭击",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-05-10T21:47:54"
+      }
+    },
+    {
+      "id": 230,
+      "made_at": "2026-05-11T13:43:13.066215",
+      "expire_at": "2026-05-14T13:43:13.066215",
+      "verified_at": null,
+      "asset": {
+        "symbol": "CL=F",
+        "name": "WTI原油期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.7200000000000001,
+      "horizon_days": 3,
+      "baseline_price": 96.87999725341797,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 97.44000244140625,
+      "current_pct": 0.5780400535349148,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #637 (霍尔木兹海峡通航受阻威胁) 的机制：波斯湾海上安全事件→供应中断风险定价→原油上行。当前情况差异：本次是货船而非油轮，火灾可控且无伤亡，船只继续航行，严重程度远低于霍尔木兹封锁威胁，因此幅度大幅缩减至约0.8%。",
+      "stop_loss_price": 96.1825,
+      "take_profit": {
+        "prices": [
+          97.9263,
+          98.6238,
+          99.6701
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.6975,
+        "atr": 0.3488
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.4615,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.4615,
+        "log_odds": -0.154,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.54,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 637,
+            "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+            "asset": "SPY",
+            "dir_hit_rate": 0.75,
+            "n_samples": 4,
+            "log_lr": 0.693,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "low_grade_chain"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        637
+      ],
+      "cited_chains": [
+        {
+          "id": 637,
+          "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+          "asset_symbol": "SPY",
+          "direction": "down",
+          "horizon_days": 3,
+          "magnitude_pct": 1.0,
+          "grade": "C",
+          "retail_edge": null
+        }
+      ],
+      "event": {
+        "id": 1134,
+        "summary": "阿联酋货船在卡塔尔领海遭无人机袭击，中东海上运输安全受关注",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "【一艘阿联酋货船在卡塔尔领海遭袭】阿联酋通讯社10日援引卡塔尔国防部的声明报道，一艘从阿联酋阿布扎比出发的商用货船当天上午在卡塔尔领海遭无人机袭击。声明说，袭击",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-05-10T21:47:54"
+      }
+    },
+    {
+      "id": 229,
+      "made_at": "2026-05-07T21:34:43.155693",
+      "expire_at": "2026-05-14T21:34:43.155693",
+      "verified_at": null,
+      "asset": {
+        "symbol": "510300.SS",
+        "name": "沪深300ETF",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.8,
+      "horizon_days": 7,
+      "baseline_price": 4.912,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4.966,
+      "current_pct": 1.09934853420196,
+      "current_at": "2026-05-11T14:49:32.386663",
+      "reasoning": "参考链#88（中国财政刺激→沪深300受益）的机制，本次五一假期消费数据强劲——新能源汽车充电量同比+52.8%、消费销售收入+14.3%、银联支付笔数+23.45%——同样指向中国内需活力回暖。与链#88不同的是，本次是消费端需求实际表现而非政策supply-side刺激，市场敏感度较低，预期涨幅相应调减。",
+      "stop_loss_price": 4.8276,
+      "take_profit": {
+        "prices": [
+          5.0386,
+          5.1231,
+          5.2497
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0844,
+        "atr": 0.0422
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.5172,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.5172,
+        "log_odds": 0.069,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.72,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 88,
+            "pattern": "中国财政大规模刺激（特别国债/基建加码）",
+            "asset": "510300.SS",
+            "dir_hit_rate": 0.8,
+            "n_samples": 5,
+            "log_lr": 0.916,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        88
+      ],
+      "cited_chains": [
+        {
+          "id": 88,
+          "pattern": "中国财政大规模刺激（特别国债/基建加码）",
+          "asset_symbol": "510300.SS",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.5,
+          "grade": "A",
+          "retail_edge": "mid"
+        }
+      ],
+      "event": {
+        "id": 813,
+        "summary": "五一假期新能源汽车充电量同比增长52.8%，需求强劲增长",
+        "category": "tech"
+      },
+      "news": {
+        "title": "除了头版内容，今天《人民日报》涉及财经的主要内容还包括：\n1、贵州榕江持续把赛事流量转化为经济增量 全域协作，“村超”消费链越“链”越长（“十五五”首季数据微视",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-05-07T07:10:16"
+      }
+    },
+    {
+      "id": 228,
+      "made_at": "2026-05-05T17:42:10.608254",
+      "expire_at": "2026-05-12T17:42:10.608254",
+      "verified_at": null,
+      "asset": {
+        "symbol": "EWU",
+        "name": "iShares英国ETF",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 2.16,
+      "horizon_days": 7,
+      "baseline_price": 46.415000915527344,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 46.72999954223633,
+      "current_pct": 0.678656943866626,
+      "current_at": "2026-05-11T00:00:00-04:00",
+      "reasoning": "参考链 #357 的政治不确定性冲击风险资产的逻辑。英国长端利率飙升将直接推高企业融资成本，压缩估值空间；大选前政策不确定性进一步抑制风险偏好。英国股市面临双重压力，外资可能阶段性减持。",
+      "stop_loss_price": 47.1845,
+      "take_profit": {
+        "prices": [
+          45.2608,
+          44.4913,
+          43.3371
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7695,
+        "atr": 0.3847
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 357,
+            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        357
+      ],
+      "cited_chains": [
+        {
+          "id": 357,
+          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "B",
+          "retail_edge": "mid"
+        }
+      ],
+      "event": {
+        "id": 587,
+        "summary": "英国长期借贷成本达到28年高点，大选前债市波动加剧",
+        "category": "macro"
+      },
+      "news": {
+        "title": "UK long-term borrowing costs reach 28-year high",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/c936qn69016o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-05-05T16:30:23"
+      }
+    },
+    {
+      "id": 227,
+      "made_at": "2026-05-05T17:42:09.417990",
+      "expire_at": "2026-05-12T17:42:09.417990",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GBPUSD=X",
+        "name": "英镑兑美元",
+        "class": "fx"
+      },
+      "direction": "down",
+      "magnitude_pct": 0.8,
+      "horizon_days": 7,
+      "baseline_price": 1.3552706241607666,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 1.3623793125152588,
+      "current_pct": 0.5245216879760932,
+      "current_at": "2026-05-11T00:00:00+01:00",
+      "reasoning": "参考链 #357 的政治事件→债市→资本流动机制，但传导方向相反。#357中美国关税威胁引发避险资金流入美债；当前英国债务成本28年高点叠加大选不确定性，投资者抛售英债而非买入，收益率飙升反映对英国财政可持续性的担忧，资本外流压力将传导至英镑。",
+      "stop_loss_price": 2.1247,
+      "take_profit": {
+        "prices": [
+          0.2011,
+          0.01,
+          0.01
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7695,
+        "atr": 0.3847
+      },
+      "kelly_fraction": 0.0,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 357,
+            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        357
+      ],
+      "cited_chains": [
+        {
+          "id": 357,
+          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "B",
+          "retail_edge": "mid"
+        }
+      ],
+      "event": {
+        "id": 587,
+        "summary": "英国长期借贷成本达到28年高点，大选前债市波动加剧",
+        "category": "macro"
+      },
+      "news": {
+        "title": "UK long-term borrowing costs reach 28-year high",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/c936qn69016o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-05-05T16:30:23"
+      }
+    },
+    {
+      "id": 226,
+      "made_at": "2026-05-05T17:37:52.538519",
+      "expire_at": "2026-05-08T17:37:52.538519",
+      "verified_at": "2026-05-11T14:49:22.142636",
+      "asset": {
+        "symbol": "TLT",
+        "name": "20+年期美债ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 0.9,
+      "horizon_days": 3,
+      "baseline_price": 85.3949966430664,
+      "baseline_source": "event_time",
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.5423881922216178,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": 0.411850627000544,
+      "actual_direction": "up",
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "参考链#357（风险事件→避险资金流向美债）的机制。英国借贷成本触及28年高点叠加大选不确定性构成欧洲市场风险事件，虽触发因素异于关税威胁，但「市场风险厌恶升温→资金流向美债避险」的传导路径相似。幅度相对温和因冲击主要集中于英国本土。",
+      "stop_loss_price": 84.6255,
+      "take_profit": {
+        "prices": [
+          86.5492,
+          87.3187,
+          88.4729
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7695,
+        "atr": 0.3847
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 357,
+            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [],
+      "retired_at": null,
+      "retired_reason": null,
+      "cited_link_ids": [
+        357
+      ],
+      "cited_chains": [
+        {
+          "id": 357,
+          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "B",
+          "retail_edge": "mid"
+        }
+      ],
+      "event": {
+        "id": 587,
+        "summary": "英国长期借贷成本达到28年高点，大选前债市波动加剧",
+        "category": "macro"
+      },
+      "news": {
+        "title": "UK long-term borrowing costs reach 28-year high",
+        "source": "bbc",
+        "lang": "en",
+        "url": "https://www.bbc.com/news/articles/c936qn69016o?at_medium=RSS&at_campaign=rss",
+        "published_at": "2026-05-05T16:30:23"
+      }
+    },
     {
       "id": 225,
       "made_at": "2026-04-28T14:17:16.038169",
@@ -113,9 +2131,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 16.663700103759766,
-      "current_pct": 0.5512227168118901,
-      "current_at": "2026-05-05T00:00:00+01:00",
+      "current_price": 16.36244010925293,
+      "current_pct": -1.2666244968743252,
+      "current_at": "2026-05-11T00:00:00+01:00",
       "reasoning": "燃油税减免将增加南非财政支出压力或减少财政收入，在当前南非财政状况本就紧张的背景下，可能引发市场对财政可持续性的担忧，导致兰特相对美元走弱（即USD/ZAR上涨）。这是财政刺激政策对新兴市场货币的典型负面影响。",
       "stop_loss_price": 16.3735,
       "take_profit": {
@@ -674,1310 +2692,6 @@
       },
       "news": {
         "title": "财联社4月28日晚间新闻精选",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 215,
-      "made_at": "2026-04-28T14:16:01.686632",
-      "expire_at": "2026-05-05T14:16:01.686632",
-      "verified_at": "2026-05-05T14:17:52.313683",
-      "asset": {
-        "symbol": "GOOGL",
-        "name": "谷歌",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 1.8,
-      "horizon_days": 7,
-      "baseline_price": 350.4800109863281,
-      "baseline_source": "event_time",
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": false,
-        "strict_hit": false,
-        "mag_err_rel": 4.717551750610659,
-        "mag_err_bucket": ">100%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": 10.291593151099187,
-      "actual_direction": "up",
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "OpenAI困境反映整个生成式AI赛道商业化挑战，谷歌作为AI竞争者同样面临变现压力审视。财报季前投资者将重新评估所有科技巨头的AI支出回报率，谷歌的AI投入也将被质疑。",
-      "stop_loss_price": 356.7887,
-      "take_profit": {
-        "prices": [
-          341.0171,
-          334.7084,
-          325.2455
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 6.3086,
-        "atr": 3.1543
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 555,
-        "summary": "OpenAI未能实现销售和新增用户目标，引发科技公司支出前景担忧",
-        "category": "tech"
-      },
-      "news": {
-        "title": "财联社4月28日晚间新闻精选",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 214,
-      "made_at": "2026-04-28T14:16:01.017335",
-      "expire_at": "2026-05-05T14:16:01.017335",
-      "verified_at": "2026-05-05T14:17:52.313683",
-      "asset": {
-        "symbol": "NVDA",
-        "name": "英伟达",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 3.5,
-      "horizon_days": 7,
-      "baseline_price": 212.94000244140625,
-      "baseline_source": "event_time",
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": true,
-        "mag_hit": false,
-        "strict_hit": false,
-        "mag_err_rel": 1.052892548717915,
-        "mag_err_bucket": ">100%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": -7.185123920512702,
-      "actual_direction": "down",
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "OpenAI增长放缓意味着AI应用端需求可能低于预期，市场担忧科技公司将削减AI基础设施支出。英伟达作为AI算力核心供应商，其高估值建立在持续增长的AI投资预期上，该消息将引发对GPU需求前景的担忧。",
-      "stop_loss_price": 220.3929,
-      "take_profit": {
-        "prices": [
-          201.7607,
-          194.3078,
-          183.1284
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 7.4529,
-        "atr": 3.7265
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded",
-        "asset_repeat"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 555,
-        "summary": "OpenAI未能实现销售和新增用户目标，引发科技公司支出前景担忧",
-        "category": "tech"
-      },
-      "news": {
-        "title": "财联社4月28日晚间新闻精选",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 213,
-      "made_at": "2026-04-28T14:16:00.170803",
-      "expire_at": "2026-05-05T14:16:00.170803",
-      "verified_at": "2026-05-05T14:17:52.313683",
-      "asset": {
-        "symbol": "MSFT",
-        "name": "微软",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 2.5,
-      "horizon_days": 7,
-      "baseline_price": 425.3399963378906,
-      "baseline_source": "event_time",
-      "status": "verified",
-      "hit": true,
-      "hit_breakdown": {
-        "dir_hit": true,
-        "mag_hit": true,
-        "strict_hit": true,
-        "mag_err_rel": 0.48116801952367344,
-        "mag_err_bucket": "<=50%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": -3.7029200488091836,
-      "actual_direction": "down",
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "OpenAI未达销售和用户增长目标，直接冲击其最大投资方微软。市场将重新评估微软在AI领域的巨额投入回报预期，云业务Azure的AI溢价逻辑受质疑。这是新出现的AI商业化遇阻信号，短期内将压制微软估值。",
-      "stop_loss_price": 435.9735,
-      "take_profit": {
-        "prices": [
-          409.3897,
-          398.7562,
-          382.806
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 10.6335,
-        "atr": 5.3167
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 555,
-        "summary": "OpenAI未能实现销售和新增用户目标，引发科技公司支出前景担忧",
-        "category": "tech"
-      },
-      "news": {
-        "title": "财联社4月28日晚间新闻精选",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 212,
-      "made_at": "2026-04-28T14:15:47.368061",
-      "expire_at": "2026-05-12T14:15:47.368061",
-      "verified_at": null,
-      "asset": {
-        "symbol": "2222.SR",
-        "name": "沙特阿美",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 3.8,
-      "horizon_days": 14,
-      "baseline_price": 27.459999084472656,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 27.780000686645508,
-      "current_pct": 1.1653372645369005,
-      "current_at": "2026-05-05T00:00:00+03:00",
-      "reasoning": "阿联酋退出欧佩克+对沙特阿美形成双重利空：一是油价下跌直接压缩收入；二是OPEC+联盟分裂削弱沙特对全球油市的定价权。这是检索链(id:206)中沙特减产逻辑的反面案例——当联盟成员增产破坏协议时，沙特主导的供给管理策略失效，对沙特石油资产构成负面冲击。",
-      "stop_loss_price": 28.2532,
-      "take_profit": {
-        "prices": [
-          26.2703,
-          25.4771,
-          24.2874
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 0.7932,
-        "atr": 0.3966
-      },
-      "kelly_fraction": 0.02,
-      "resonance_posterior": 0.5172,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.5172,
-        "log_odds": 0.069,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 1.72,
-        "signal_grade": "👀 C",
-        "evidence": [
-          {
-            "link_id": 206,
-            "pattern": "沙特阿拉伯单边自愿减产",
-            "asset": "XLE",
-            "dir_hit_rate": 0.8,
-            "n_samples": 5,
-            "log_lr": 0.916,
-            "grade": "C"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [
-        "low_grade_chain"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [
-        206
-      ],
-      "cited_chains": [
-        {
-          "id": 206,
-          "pattern": "沙特阿拉伯单边自愿减产",
-          "asset_symbol": "XLE",
-          "direction": "up",
-          "horizon_days": 7,
-          "magnitude_pct": 1.448,
-          "grade": "C",
-          "retail_edge": "mid"
-        }
-      ],
-      "event": {
-        "id": 556,
-        "summary": "阿联酋宣布5月1日起退出欧佩克+并将逐步提高石油产量",
-        "category": "energy"
-      },
-      "news": {
-        "title": "财联社4月28日晚间新闻精选",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 211,
-      "made_at": "2026-04-28T14:15:46.819134",
-      "expire_at": "2026-05-12T14:15:46.819134",
-      "verified_at": null,
-      "asset": {
-        "symbol": "XLE",
-        "name": "能源板块ETF",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 3.2,
-      "horizon_days": 14,
-      "baseline_price": 57.560001373291016,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 59.59000015258789,
-      "current_pct": 3.526752485865705,
-      "current_at": "2026-05-05T00:00:00-04:00",
-      "reasoning": "阿联酋退出欧佩克+并增产，与检索到的沙特减产逻辑(id:206)形成镜像反转。减产推高能源股，增产则打压能源股。阿联酋增产预期将导致原油价格下跌，直接冲击美国能源板块公司的利润预期，XLE作为能源ETF将承受显著下行压力。",
-      "stop_loss_price": 58.3532,
-      "take_profit": {
-        "prices": [
-          56.3703,
-          55.5771,
-          54.3874
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 0.7932,
-        "atr": 0.3966
-      },
-      "kelly_fraction": 0.02,
-      "resonance_posterior": 0.5172,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.5172,
-        "log_odds": 0.069,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 1.72,
-        "signal_grade": "👀 C",
-        "evidence": [
-          {
-            "link_id": 206,
-            "pattern": "沙特阿拉伯单边自愿减产",
-            "asset": "XLE",
-            "dir_hit_rate": 0.8,
-            "n_samples": 5,
-            "log_lr": 0.916,
-            "grade": "C"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [
-        "low_grade_chain"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [
-        206
-      ],
-      "cited_chains": [
-        {
-          "id": 206,
-          "pattern": "沙特阿拉伯单边自愿减产",
-          "asset_symbol": "XLE",
-          "direction": "up",
-          "horizon_days": 7,
-          "magnitude_pct": 1.448,
-          "grade": "C",
-          "retail_edge": "mid"
-        }
-      ],
-      "event": {
-        "id": 556,
-        "summary": "阿联酋宣布5月1日起退出欧佩克+并将逐步提高石油产量",
-        "category": "energy"
-      },
-      "news": {
-        "title": "财联社4月28日晚间新闻精选",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 210,
-      "made_at": "2026-04-28T14:15:46.519514",
-      "expire_at": "2026-05-12T14:15:46.519514",
-      "verified_at": null,
-      "asset": {
-        "symbol": "USO",
-        "name": "美国石油基金",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 4.5,
-      "horizon_days": 14,
-      "baseline_price": 139.90989685058594,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 144.25900268554688,
-      "current_pct": 3.1085047826212615,
-      "current_at": "2026-05-05T00:00:00-04:00",
-      "reasoning": "阿联酋宣布退出欧佩克+并逐步提高石油产量，这是对OPEC+减产协议的重大打击。阿联酋是OPEC第三大产油国，其退出意味着供给端将显著增加，打破现有减产平衡。与检索到的沙特减产推高油价的因果链(id:206)形成相反逻辑——成员国退出并增产将压低油价。市场预期全球原油供给过剩，油价承压下行。",
-      "stop_loss_price": 140.7031,
-      "take_profit": {
-        "prices": [
-          138.7202,
-          137.927,
-          136.7373
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 0.7932,
-        "atr": 0.3966
-      },
-      "kelly_fraction": 0.02,
-      "resonance_posterior": 0.5172,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.5172,
-        "log_odds": 0.069,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 1.72,
-        "signal_grade": "👀 C",
-        "evidence": [
-          {
-            "link_id": 206,
-            "pattern": "沙特阿拉伯单边自愿减产",
-            "asset": "XLE",
-            "dir_hit_rate": 0.8,
-            "n_samples": 5,
-            "log_lr": 0.916,
-            "grade": "C"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [
-        "low_grade_chain"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [
-        206
-      ],
-      "cited_chains": [
-        {
-          "id": 206,
-          "pattern": "沙特阿拉伯单边自愿减产",
-          "asset_symbol": "XLE",
-          "direction": "up",
-          "horizon_days": 7,
-          "magnitude_pct": 1.448,
-          "grade": "C",
-          "retail_edge": "mid"
-        }
-      ],
-      "event": {
-        "id": 556,
-        "summary": "阿联酋宣布5月1日起退出欧佩克+并将逐步提高石油产量",
-        "category": "energy"
-      },
-      "news": {
-        "title": "财联社4月28日晚间新闻精选",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 209,
-      "made_at": "2026-04-28T14:15:31.228180",
-      "expire_at": "2026-05-05T14:15:31.228180",
-      "verified_at": "2026-05-05T14:17:52.313683",
-      "asset": {
-        "symbol": "601857.SH",
-        "name": "中国石油",
-        "class": "a_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 2.5,
-      "horizon_days": 7,
-      "baseline_price": 12.18,
-      "baseline_source": "event_time",
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": false,
-        "strict_hit": false,
-        "mag_err_rel": 0.8686371100164173,
-        "mag_err_bucket": "<=100%",
-        "tol_used": 0.86,
-        "asset_class": "a_stock"
-      },
-      "actual_magnitude_pct": 0.3284072249589567,
-      "actual_direction": "up",
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "阿联酋宣布自5月1日起退出欧佩克+并将逐步提高石油产量，这意味着OPEC+减产协议面临瓦解风险，全球原油供应预期增加将压制油价。中国石油作为国内最大油企，其盈利与油价高度相关，油价下行预期将对股价形成压力。",
-      "stop_loss_price": 12.4845,
-      "take_profit": {
-        "prices": [
-          11.7233,
-          11.4187,
-          10.962
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 0.3045,
-        "atr": 0.1522
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 557,
-        "summary": "比亚迪一季度营收同比下降11.82%，净利润同比大降55.38%",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "财联社4月28日晚间新闻精选",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 208,
-      "made_at": "2026-04-28T14:15:27.822183",
-      "expire_at": "2026-05-01T14:15:27.822183",
-      "verified_at": "2026-05-02T01:09:34.388497",
-      "asset": {
-        "symbol": "300750.SZ",
-        "name": "宁德时代",
-        "class": "a_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 2.0,
-      "horizon_days": 3,
-      "baseline_price": 427.67,
-      "baseline_source": "event_time",
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": true,
-        "strict_hit": false,
-        "mag_err_rel": 0.026118268758624108,
-        "mag_err_bucket": "<=10%",
-        "tol_used": 0.86,
-        "asset_class": "a_stock"
-      },
-      "actual_magnitude_pct": 1.9477634624827518,
-      "actual_direction": "up",
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "比亚迪作为新能源汽车产业链核心企业，其业绩大幅下滑反映出整个新能源车市场价格战激烈、利润空间被压缩。宁德时代作为动力电池龙头，与比亚迪高度关联，市场会担忧电池环节同样面临降价压力，短期内存在联动下跌风险。",
-      "stop_loss_price": 436.2234,
-      "take_profit": {
-        "prices": [
-          414.8399,
-          406.2865,
-          393.4564
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 8.5534,
-        "atr": 4.2767
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 557,
-        "summary": "比亚迪一季度营收同比下降11.82%，净利润同比大降55.38%",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "财联社4月28日晚间新闻精选",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 207,
-      "made_at": "2026-04-28T14:15:24.530040",
-      "expire_at": "2026-05-01T14:15:24.530040",
-      "verified_at": "2026-05-02T01:09:34.388497",
-      "asset": {
-        "symbol": "002594.SZ",
-        "name": "比亚迪A股",
-        "class": "a_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 3.5,
-      "horizon_days": 3,
-      "baseline_price": 101.48,
-      "baseline_source": "event_time",
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": true,
-        "strict_hit": false,
-        "mag_err_rel": 0.5776789233628019,
-        "mag_err_bucket": "<=100%",
-        "tol_used": 0.86,
-        "asset_class": "a_stock"
-      },
-      "actual_magnitude_pct": 1.478123768230193,
-      "actual_direction": "up",
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "比亚迪一季度净利润同比大降55.38%，营收下降11.82%，远低于市场预期。作为新能源汽车龙头，如此大幅度的业绩下滑将引发市场对其价格战影响和盈利能力的担忧。财报公布后短期内股价承压是大概率事件，参考历史上龙头公司业绩大幅低于预期后的市场反应。",
-      "stop_loss_price": 105.0318,
-      "take_profit": {
-        "prices": [
-          96.1523,
-          92.6005,
-          87.2728
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 3.5518,
-        "atr": 1.7759
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 557,
-        "summary": "比亚迪一季度营收同比下降11.82%，净利润同比大降55.38%",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "财联社4月28日晚间新闻精选",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 206,
-      "made_at": "2026-04-28T14:15:06.926866",
-      "expire_at": "2026-05-12T14:15:06.926866",
-      "verified_at": null,
-      "asset": {
-        "symbol": "CL=F",
-        "name": "WTI原油期货",
-        "class": "commodity"
-      },
-      "direction": "down",
-      "magnitude_pct": 4.0,
-      "horizon_days": 14,
-      "baseline_price": 99.91999816894531,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 101.45999908447266,
-      "current_pct": 1.5412339308928942,
-      "current_at": "2026-05-05T00:00:00-04:00",
-      "reasoning": "阿联酋宣布自5月1日起退出欧佩克及欧佩克+，并将逐步提高石油产量。这是继卡塔尔之后又一重要产油国退出，将打破欧佩克+的减产协议约束，增加全球原油供应预期。在当前全球经济增长放缓、需求疲软的背景下，供给端扩张将对油价形成显著下行压力。此为新发现的因果模式。",
-      "stop_loss_price": 103.9168,
-      "take_profit": {
-        "prices": [
-          93.9248,
-          89.928,
-          83.9328
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 3.9968,
-        "atr": 1.9984
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 558,
-        "summary": "章建平新进成为北方稀土第四大股东，持股2%",
-        "category": "other"
-      },
-      "news": {
-        "title": "财联社4月28日晚间新闻精选",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 205,
-      "made_at": "2026-04-28T14:15:06.234762",
-      "expire_at": "2026-05-01T14:15:06.234762",
-      "verified_at": "2026-05-02T01:09:34.388497",
-      "asset": {
-        "symbol": "002594.SZ",
-        "name": "比亚迪A股",
-        "class": "a_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 2.5,
-      "horizon_days": 3,
-      "baseline_price": 101.48,
-      "baseline_source": "event_time",
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": true,
-        "strict_hit": false,
-        "mag_err_rel": 0.40875049270792274,
-        "mag_err_bucket": "<=50%",
-        "tol_used": 0.86,
-        "asset_class": "a_stock"
-      },
-      "actual_magnitude_pct": 1.478123768230193,
-      "actual_direction": "up",
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "比亚迪一季度净利润同比大降55.38%，扣非净利润下滑49.24%，营收也同比下降近12%，业绩大幅低于市场预期。虽然比亚迪长期基本面仍被看好，但短期内业绩暴雷将引发机构调仓和散户抛售压力，股价面临回调风险。此为新发现的因果模式。",
-      "stop_loss_price": 104.017,
-      "take_profit": {
-        "prices": [
-          97.6745,
-          95.1375,
-          91.332
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 2.537,
-        "atr": 1.2685
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 558,
-        "summary": "章建平新进成为北方稀土第四大股东，持股2%",
-        "category": "other"
-      },
-      "news": {
-        "title": "财联社4月28日晚间新闻精选",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 204,
-      "made_at": "2026-04-28T14:15:02.765549",
-      "expire_at": "2026-05-05T14:15:02.765549",
-      "verified_at": "2026-05-05T14:17:52.313683",
-      "asset": {
-        "symbol": "601111.SH",
-        "name": "北方稀土",
-        "class": "a_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 3.5,
-      "horizon_days": 7,
-      "baseline_price": 6.66,
-      "baseline_source": "event_time",
-      "status": "verified",
-      "hit": true,
-      "hit_breakdown": {
-        "dir_hit": true,
-        "mag_hit": true,
-        "strict_hit": true,
-        "mag_err_rel": 0.6996996996996986,
-        "mag_err_bucket": "<=100%",
-        "tol_used": 0.86,
-        "asset_class": "a_stock"
-      },
-      "actual_magnitude_pct": 1.0510510510510553,
-      "actual_direction": "up",
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "知名牛散章建平以超7200万股新进成为北方稀土第四大股东，持股比例达2%，这是一个强烈的市场信号。章建平作为A股市场知名游资大佬，其重仓买入行为往往被市场解读为对公司前景的看好。稀土作为战略资源，在中美贸易摩擦背景下具备政策支撑预期，叠加牛散背书效应，短期内将吸引跟风资金入场推高股价。此为新发现的因果模式。",
-      "stop_loss_price": 6.4269,
-      "take_profit": {
-        "prices": [
-          7.0097,
-          7.2428,
-          7.5924
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 0.2331,
-        "atr": 0.1166
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 558,
-        "summary": "章建平新进成为北方稀土第四大股东，持股2%",
-        "category": "other"
-      },
-      "news": {
-        "title": "财联社4月28日晚间新闻精选",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 203,
-      "made_at": "2026-04-28T14:14:43.462989",
-      "expire_at": "2026-05-12T14:14:43.462989",
-      "verified_at": null,
-      "asset": {
-        "symbol": "USOIL",
-        "name": "WTI原油",
-        "class": "commodity"
-      },
-      "direction": "down",
-      "magnitude_pct": 5.0,
-      "horizon_days": 14,
-      "baseline_price": null,
-      "baseline_source": "live_fallback",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "阿联酋宣布自5月1日起退出欧佩克及欧佩克+并逐步提高石油产量，这将打破OPEC+减产联盟的团结，增加全球原油供给预期。产油国增产通常在中短期内对油价形成下行压力，尤其在当前全球需求增长放缓的背景下。此为新发现的因果模式，检索结果中无直接匹配。",
-      "stop_loss_price": null,
-      "take_profit": null,
-      "kelly_fraction": null,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 559,
-        "summary": "多家公司发布一季报：工业富联净利润同比增长102.55%，翔鹭钨业同比增长2917%",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "财联社4月28日晚间新闻精选",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 202,
-      "made_at": "2026-04-28T14:14:38.476083",
-      "expire_at": "2026-05-05T14:14:38.476083",
-      "verified_at": "2026-05-05T14:17:52.313683",
-      "asset": {
-        "symbol": "002842",
-        "name": "翔鹭钨业",
-        "class": "a_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 6.0,
-      "horizon_days": 7,
-      "baseline_price": null,
-      "baseline_source": "live_fallback",
-      "status": "expired_no_data",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "翔鹭钨业一季度净利润同比暴增2917%，从低基数实现业绩爆发式增长。钨作为战略稀有金属，在新能源和高端制造领域需求旺盛，叠加稀土概念近期受章建平等大资金关注，有色金属板块情绪偏暖。超预期业绩发布后，市场资金通常会在一周内快速反应。此为新发现的因果模式。",
-      "stop_loss_price": null,
-      "take_profit": null,
-      "kelly_fraction": null,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded",
-        "extreme"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 559,
-        "summary": "多家公司发布一季报：工业富联净利润同比增长102.55%，翔鹭钨业同比增长2917%",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "财联社4月28日晚间新闻精选",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 201,
-      "made_at": "2026-04-28T14:14:38.118223",
-      "expire_at": "2026-05-05T14:14:38.118223",
-      "verified_at": "2026-05-05T14:17:52.313683",
-      "asset": {
-        "symbol": "601138",
-        "name": "工业富联",
-        "class": "a_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 4.5,
-      "horizon_days": 7,
-      "baseline_price": null,
-      "baseline_source": "live_fallback",
-      "status": "expired_no_data",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "工业富联一季度净利润同比大增102.55%，达到105.95亿元，业绩超预期增长通常会在短期内带动股价上涨。结合政治局会议强调加强算力网建设、工信部推进人工智能专项行动，工业富联作为AI服务器代工龙头直接受益于算力需求扩张。此为基于业绩与政策双重利好的判断，检索结果中无匹配模式。",
-      "stop_loss_price": null,
-      "take_profit": null,
-      "kelly_fraction": null,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 559,
-        "summary": "多家公司发布一季报：工业富联净利润同比增长102.55%，翔鹭钨业同比增长2917%",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "财联社4月28日晚间新闻精选",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 200,
-      "made_at": "2026-04-28T14:14:23.727787",
-      "expire_at": "2026-05-28T14:14:23.727787",
-      "verified_at": null,
-      "asset": {
-        "symbol": "603729",
-        "name": "龙韵股份（ST龙韵）",
-        "class": "a_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 20.0,
-      "horizon_days": 30,
-      "baseline_price": null,
-      "baseline_source": "live_fallback",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "ST实施后，公司面临融资受限、机构持仓被动减持、退市预期升温等多重压力。30日内市场情绪难以逆转，叠加5%涨跌幅限制下的缓慢出逃，预计累计跌幅可达20%左右。该因果链为A股ST警示的中期影响模式。",
-      "stop_loss_price": null,
-      "take_profit": null,
-      "kelly_fraction": null,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded",
-        "extreme"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 560,
-        "summary": "龙韵股份因内控审计否定意见被实施ST风险警示，涨跌幅限制调整为5%",
-        "category": "regulation"
-      },
-      "news": {
-        "title": "龙韵股份：4月30日起实施其他风险警示 股票简称变更为“ST龙韵”",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 199,
-      "made_at": "2026-04-28T14:14:23.311345",
-      "expire_at": "2026-05-05T14:14:23.311345",
-      "verified_at": "2026-05-05T14:17:52.313683",
-      "asset": {
-        "symbol": "603729",
-        "name": "龙韵股份（ST龙韵）",
-        "class": "a_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 12.0,
-      "horizon_days": 7,
-      "baseline_price": null,
-      "baseline_source": "live_fallback",
-      "status": "expired_no_data",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "公司因内控审计被出具否定意见而被实施ST风险警示，这是A股市场明确的负面信号，通常引发机构和风险厌恶型投资者集中抛售。ST股票涨跌幅限制收窄至5%，流动性下降进一步加剧卖压。参考历史规律，ST实施首周往往连续跌停或大幅下挫，预计7日内跌幅约12%。此为A股ST警示的典型因果模式，检索结果中无直接匹配。",
-      "stop_loss_price": null,
-      "take_profit": null,
-      "kelly_fraction": null,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded",
-        "extreme"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 560,
-        "summary": "龙韵股份因内控审计否定意见被实施ST风险警示，涨跌幅限制调整为5%",
-        "category": "regulation"
-      },
-      "news": {
-        "title": "龙韵股份：4月30日起实施其他风险警示 股票简称变更为“ST龙韵”",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 198,
-      "made_at": "2026-04-28T14:14:13.280736",
-      "expire_at": "2026-05-05T14:14:13.280736",
-      "verified_at": "2026-05-05T14:17:52.313683",
-      "asset": {
-        "symbol": "512760",
-        "name": "半导体ETF",
-        "class": "a_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 2.0,
-      "horizon_days": 7,
-      "baseline_price": null,
-      "baseline_source": "live_fallback",
-      "status": "expired_no_data",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "存储芯片作为半导体重要细分领域，普冉股份业绩大超预期反映行业需求旺盛、价格上涨周期延续。这将提振市场对整体半导体板块的信心，带动半导体ETF整体上行。",
-      "stop_loss_price": null,
-      "take_profit": null,
-      "kelly_fraction": null,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 561,
-        "summary": "普冉股份Q1净利润同比增长1260%，存储芯片价格上涨带动业绩大幅提升",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "普冉股份：第一季度净利润同比增长1260% 存储芯片产品单价提升",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 197,
-      "made_at": "2026-04-28T14:14:12.863533",
-      "expire_at": "2026-05-05T14:14:12.863533",
-      "verified_at": "2026-05-05T14:17:52.313683",
-      "asset": {
-        "symbol": "603986",
-        "name": "兆易创新",
-        "class": "a_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 3.0,
-      "horizon_days": 7,
-      "baseline_price": null,
-      "baseline_source": "live_fallback",
-      "status": "expired_no_data",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "普冉股份业绩大超预期确认存储芯片行业景气度持续向上，产品单价提升趋势明确。作为国内存储芯片龙头，兆易创新将受益于行业估值重估和市场对存储板块的关注度提升，存在联动上涨机会。",
-      "stop_loss_price": null,
-      "take_profit": null,
-      "kelly_fraction": null,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 561,
-        "summary": "普冉股份Q1净利润同比增长1260%，存储芯片价格上涨带动业绩大幅提升",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "普冉股份：第一季度净利润同比增长1260% 存储芯片产品单价提升",
-        "source": "cailianshe",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T00:00:00"
-      }
-    },
-    {
-      "id": 196,
-      "made_at": "2026-04-28T14:14:12.415676",
-      "expire_at": "2026-05-01T14:14:12.415676",
-      "verified_at": "2026-05-02T01:09:34.388497",
-      "asset": {
-        "symbol": "688766",
-        "name": "普冉股份",
-        "class": "a_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 5.5,
-      "horizon_days": 3,
-      "baseline_price": null,
-      "baseline_source": "live_fallback",
-      "status": "expired_no_data",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "普冉股份Q1净利润同比增长1260%，环比增长69%，业绩大幅超预期。存储芯片价格上涨带动毛利率显著修复，规模效应提升净利率。如此强劲的业绩表现将直接刺激股价上涨，市场通常对超预期业绩在短期内给予积极反应。",
-      "stop_loss_price": null,
-      "take_profit": null,
-      "kelly_fraction": null,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded",
-        "extreme"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 561,
-        "summary": "普冉股份Q1净利润同比增长1260%，存储芯片价格上涨带动业绩大幅提升",
-        "category": "earnings"
-      },
-      "news": {
-        "title": "普冉股份：第一季度净利润同比增长1260% 存储芯片产品单价提升",
         "source": "cailianshe",
         "lang": "zh",
         "url": null,
@@ -3520,61 +4234,68 @@
       "source": "researched",
       "rationale": "7天逆回购利率自2024年起为主要政策利率，下调直接传导至短端，对离岸人民币短期承压，对A股偏正面。",
       "explanation": {
+        "tldr": "央行下调7天逆回购利率→短期流动性宽松→A股估值修复→FXI上涨",
+        "preconditions": [
+          {
+            "condition": "市场处于流动性敏感阶段，而非基本面主导阶段",
+            "why_matters": "若投资者关注盈利下修或地产/债务风险，流动性宽松无法扭转悲观预期"
+          },
+          {
+            "condition": "人民币贬值压力可控（美元兑人民币<7.3或资本外流未加速）",
+            "why_matters": "若逆回购下调引发汇率恐慌，外资会从FXI撤出，抵消政策利好"
+          },
+          {
+            "condition": "无重大政策不确定性事件（如监管整顿、地缘冲突升级）",
+            "why_matters": "政策宽松信号易被更大不确定性淹没，资金观望而非入场"
+          }
+        ],
+        "regime_context": "适用于经济软着陆+市场情绪中性偏悲观+无系统性风险的环境。在经济硬着陆预期或资本管制担忧上升时，单一降息难以提振离岸中概股，甚至被解读为政策无力信号。",
         "causal_chain": [
           {
             "step": 1,
-            "trigger": "央行公告下调7天逆回购操作利率（例如从1.80%降至1.70%）",
-            "mechanism": "7天逆回购是央行向银行体系注入流动性的主要工具，其利率是货币市场短端基准。下调该利率直接降低银行从央行获取资金的成本，向市场释放明确的宽松信号",
-            "assumption": "央行实际执行降息操作，且市场解读为货币政策转向宽松（而非技术性调整）",
+            "trigger": "央行下调7天逆回购利率10-20bp",
+            "mechanism": "政策利率下调→银行间市场短端利率下行→货币市场流动性宽松预期",
+            "assumption": "市场相信这是宽松周期的开始，而非一次性操作",
             "confidence": "high"
           },
           {
             "step": 2,
-            "trigger": "银行间短期利率（如Shibor隔夜、7天）跟随下行",
-            "mechanism": "逆回购利率是政策走廊上限，下调后银行可以更低成本从央行获得资金,银行间市场利率会迅速向新的政策利率水平收敛。这降低了整个金融体系的短期融资成本",
-            "assumption": "银行体系流动性传导顺畅，无系统性信用风险事件阻断利率传导",
-            "confidence": "high"
+            "trigger": "短端利率下行信号确认",
+            "mechanism": "流动性宽松→降低A股无风险利率→股票估值折现率下降",
+            "assumption": "A股估值对利率敏感（金融、地产、基建等周期板块占比高）",
+            "confidence": "medium"
           },
           {
             "step": 3,
-            "trigger": "短期融资成本下降传导至企业端，同时市场预期中长期贷款利率也将下调",
-            "mechanism": "企业短期融资（票据、短期贷款）成本降低，改善现金流；市场预期LPR（贷款市场报价利率）将跟随下调，提升企业中长期投资意愿。同时降息通常对应经济增长目标下调或稳增长加码，股市折现率下降",
-            "assumption": "企业融资需求存在（非流动性陷阱），且降息未被市场提前完全定价",
-            "confidence": "medium"
+            "trigger": "A股估值吸引力提升",
+            "mechanism": "内资配置盘增持+外资边际流入→A股指数上涨",
+            "assumption": "资金风险偏好未恶化，且无资本外流压力抵消流入",
+            "confidence": "low"
           },
           {
             "step": 4,
-            "trigger": "A股市场（尤其沪深300成分股）受益于估值重估和流动性改善预期",
-            "mechanism": "大盘蓝筹股对利率敏感度高（金融、地产、基建等权重板块），降息降低折现率提升估值；宽松预期吸引增量资金（包括北向资金、境内机构）配置A股",
-            "assumption": "无重大风险事件（如地缘冲突、监管收紧）同时发生；市场处于可交易窗口（非极端悲观情绪）",
-            "confidence": "medium"
-          },
-          {
-            "step": 5,
-            "trigger": "A股上涨通过跨境套利和情绪传导推动离岸中国资产（如FXI）走强",
-            "mechanism": "FXI持仓主要为在港上市的中国大盘股（腾讯、阿里、工行等），其估值与A股同类标的高度相关。A股上涨→AH股溢价收窄或H股补涨→FXI净值上升。同时降息改善中国经济预期，提升海外投资者对中国资产风险偏好",
-            "assumption": "美元流动性未同步收紧（否则离岸资金回流美国），人民币汇率贬值压力可控（否则抵消股价涨幅）",
-            "confidence": "medium"
+            "trigger": "A股上涨带动",
+            "mechanism": "A股主要成分股（工行、茅台、宁德等）上涨→FXI持仓对应股票价格上升→FXI净值增长",
+            "assumption": "FXI跟踪的离岸中国大盘股与在岸A股联动正常（无重大溢价折价）",
+            "confidence": "high"
           }
         ],
-        "mechanism_summary": "降息→短端利率下行→企业融资成本降低+估值折现率下降→A股大盘股上涨→离岸ETF跟涨",
-        "asset_logic": "FXI是跟踪在港上市中国大盘股的ETF,其成分股（金融、能源、科技巨头）对利率变化敏感度高,降息直接改善这些企业的融资环境和估值水平。相比中小盘或主题ETF,大盘股在降息周期中受益更直接(融资成本占比高、机构配置优先),因此选择FXI而非其他中国资产。预测2.3%涨幅基于历史降息后3日平均反应(考虑1.23%标准差的不确定性),幅度适中反映了支持/反驳证据接近均衡(5:4)的现实",
-        "horizon_logic": "3日窗口对应政策利率调整的短期脉冲反应期。第1日市场消化降息事实,第2-3日观察银行间利率实际变化和机构调仓行为。超过5日后会被其他宏观数据(PMI、信贷等)和外部事件(美联储表态、地缘风险)稀释,降息的边际影响难以分离。历史上此类政策调整的价格发现多在3-5个交易日内完成",
-        "key_risks": "1)同期若美联储释放鹰派信号或美元大幅走强,离岸资金回流美国会抵消降息利好,FXI可能不涨反跌;2)若降息伴随经济数据超预期恶化(如PMI跌破荣枯线),市场可能解读为'衰退式降息',风险偏好下降压制股价;3)若人民币即期汇率因降息快速贬值超过1%,外资可能因汇兑损失担忧抛售中国资产,削弱FXI涨幅;4)A股若处于重大监管整顿期(如2021年教育、互联网整顿),政策利好会被监管风险对冲",
-        "historical_examples": [
-          {
-            "date": "2024-07-22",
-            "summary": "央行下调7天逆回购利率10bp至1.70%,FXI当日涨1.8%,3日累计涨2.1%,符合预期但幅度略低于本次预测"
-          },
-          {
-            "date": "2024-09-24",
-            "summary": "7天逆回购利率下调10bp配合全面降准,FXI单日暴涨7.2%(受一揽子刺激政策叠加),远超单一降息效应"
-          },
-          {
-            "date": "2023-08-15",
-            "summary": "逆回购利率下调10bp但同期人民币贬值1.2%,FXI仅涨0.5%,汇率压力抵消了大部分降息利好"
-          }
-        ]
+        "asset_logic": "FXI是离岸中国大盘股ETF，成分股与沪深300高度重合，理论上受益于流动性宽松对大盘蓝筹的估值提振。但2.3%涨幅假设可能高估：FXI受美元流动性和外资风险偏好影响更大，单一国内政策利率调整对离岸资产传导衰减明显，且6次反驳vs3次支持表明历史上该机制常失效。",
+        "horizon_logic": "30天窗口假设政策宣布后市场需2-4周消化并反映至股价。但过短窗口易受噪音干扰（如美股波动、地缘新闻），过长窗口则其他变量（如经济数据、盈利季）会主导走势。30天是政策效应与噪音的妥协期。",
+        "failure_conditions": [
+          "人民币兑美元在窗口内贬值超1.5%（市场将政策宽松解读为汇率压力信号，引发资本外流担忧）",
+          "同期公布的经济数据显著弱于预期（如PMI<48或出口负增长加速），基本面悲观压倒政策利好",
+          "美联储同期收紧政策或美元指数大幅走强（外资从新兴市场撤离，FXI被动卖出）",
+          "国内监管政策突发收紧（如地产融资再限、平台企业整顿），抵消流动性宽松预期",
+          "VIX>30或A50波动率飙升（全球风险厌恶主导，政策信号被忽略）"
+        ],
+        "evidence_quality": {
+          "sample_size_assessment": "9次历史实例（3次支持、6次反驳）统计上不足以确立因果关系；36.4%置信度表明这条链在多数情况下不成立，目前仅为'存在反例但非主流路径'",
+          "selection_bias_risk": "high — 6次反驳提示可能存在未观察的混淆变量（如汇率、外资情绪、经济周期位置）主导了结果，单独降息信号可能不足以驱动FXI",
+          "regime_diversity": "需验证9次实例是否跨越不同宏观环境：若集中在2015-2016贬值压力期或2018贸易战期，结论会系统性偏向反驳；若包含2020-2021宽松有效期，则需解释为何当前机制失效"
+        },
+        "related_chains": [],
+        "historical_examples": []
       },
       "failure_conditions": [
         "1)同期若美联储释放鹰派信号或美元大幅走强,离岸资金回流美国会抵消降息利好,FXI可能不涨反跌",
@@ -16419,54 +17140,67 @@
       "source": "researched",
       "rationale": "符合预期的加息利空已定价，当日反应有限，但确立紧缩轨迹，持续5日推升美元",
       "explanation": {
+        "tldr": "符合预期的加息确立紧缩轨迹→美元走强→长债收益率上行→TLT承压",
+        "preconditions": [
+          {
+            "condition": "市场已充分定价本次25bp加息（期货隐含概率>90%）",
+            "why_matters": "若未充分定价，当日会有剧烈反应并消耗后续动能，3日延迟效应消失"
+          },
+          {
+            "condition": "Fed处于紧缩周期初中期，尚未释放pivot信号",
+            "why_matters": "紧缩末期时，即使加息市场也会定价宽松转向，美元反而走弱"
+          },
+          {
+            "condition": "美元指数低于近3个月高点，有上行空间",
+            "why_matters": "若美元已在技术高位，利差扩大也难推动汇率，传导链断裂"
+          }
+        ],
+        "regime_context": "适用于Fed紧缩周期中段、通胀预期尚未完全锚定、市场对加息路径终点仍有分歧的环境。在衰退预期主导或Fed已明确pivot的环境下，同样加息会触发降息定价，机制反向。",
         "causal_chain": [
           {
             "step": 1,
-            "trigger": "美联储宣布加息25bp，声明和点阵图释放相对鹰派信号（如维持更高终点利率或延长加息周期）",
-            "mechanism": "市场在会前已通过Fed Funds期货充分定价25bp加息，但对后续路径（terminal rate和降息时点）存在分歧；若点阵图或鲍威尔讲话传递'利率将在更高水平停留更久'的信号，市场会上修长期利率预期",
-            "assumption": "点阵图或会后声明确实偏鹰（如上调2024年终点利率中位数或删除'disinflation进展'措辞）；若完全中性或偏鸽，该环节不成立",
-            "confidence": "medium"
+            "trigger": "Fed宣布符合预期的25bp加息",
+            "mechanism": "已定价事件导致当日市场反应平静，无剧烈波动",
+            "assumption": "期货市场此前已隐含>90%加息概率",
+            "confidence": "high"
           },
           {
             "step": 2,
-            "trigger": "长期利率预期上修，10年期及以上美债收益率曲线上行",
-            "mechanism": "长端收益率=短期利率路径预期+期限溢价；鹰派信号推高短期利率路径上限，同时增加久期风险溢价（投资者要求更高补偿持有长债）",
-            "assumption": "市场流动性正常，长债供需平衡未被QT或财政部发债节奏严重扭曲；通胀预期未同步大幅下行抵消名义利率上行",
-            "confidence": "high"
+            "trigger": "加息落地+声明/点阵图确认后续紧缩路径",
+            "mechanism": "市场从'观望'转为'确认'模式，美债-其他国债利差预期扩大",
+            "assumption": "Fed声明不包含鸽派转向信号，紧缩轨迹延续",
+            "confidence": "medium"
           },
           {
             "step": 3,
-            "trigger": "10年期以上美债收益率上行5-10bp（典型鹰派会议反应幅度）",
-            "mechanism": "TLT持仓为20+年期美债，久期约17-18年；收益率每上行1bp，TLT净值下跌约(久期×0.01%)≈0.17-0.18%；5-10bp上行对应0.85-1.8%的资本损失",
-            "assumption": "TLT作为被动ETF，其净值机械跟随标的债券价格（即收益率倒数关系）；无大规模赎回导致的流动性折价",
-            "confidence": "high"
+            "trigger": "利差预期驱动跨境资本流动",
+            "mechanism": "美元指数3日内走强0.5-1%，全球资金流入美元资产",
+            "assumption": "无重大风险事件干扰（银行危机、地缘冲突）",
+            "confidence": "medium"
           },
           {
             "step": 4,
-            "trigger": "TLT在会议后1-5日内累计下跌约0.74%（中位数预测）",
-            "mechanism": "市场需要1-2日消化FOMC声明和记者会全文，机构调仓集中在会后2-3个交易日；若无其他重大事件干扰，收益率调整在5日内基本完成，TLT净值同步反映",
-            "assumption": "5日窗口内无其他重大宏观事件（如非农、CPI意外、地缘冲突）覆盖FOMC影响；市场对鹰派信号的反应不会因'已在会前提前交易'而钝化",
-            "confidence": "medium"
+            "trigger": "美元走强压制以美元计价的全球资产",
+            "mechanism": "长债收益率被动上行（价格下跌），因美元走强收紧全球金融条件",
+            "assumption": "长债市场对美元敏感度高于对加息本身的敏感度（因加息已定价）",
+            "confidence": "low"
           }
         ],
-        "mechanism_summary": "符合预期加息本身已定价,关键看点阵图和讲话鹰派程度→推高长端利率→TLT久期损失",
-        "asset_logic": "选择TLT而非短债ETF(如SHY)是因为长债对利率路径预期最敏感,20+年久期放大收益率微小变动的价格效应;下跌方向源于鹰派倾斜推升长端收益率,与债券价格反向;0.74%幅度对应典型FOMC会议后5-10bp收益率调整×17年久期,历史上此类会议TLT反应集中在±0.5-1.5%区间",
-        "horizon_logic": "5日窗口覆盖会议当日+后续2-3个交易日的机构调仓高峰;过短(如1日)无法捕捉全部反应(部分基金T+1才调整),过长(如20日)则会被下一个宏观数据(如非农、CPI)或美联储官员讲话稀释信号",
-        "key_risks": "若会后通胀数据意外回落或就业大幅走弱,市场会忽略FOMC鹰派转向鸽派预期,长债反而上涨;若同期地缘风险激化(如中东冲突升级)触发避险买盘,TLT会因safe-haven需求抵消利率上行压力;预测隐含历史样本中鹰派会议占多数,但当前样本支持度仅44.4%,表明'符合预期加息'情景下市场反应分化较大",
-        "historical_examples": [
-          {
-            "date": "2023-03-22",
-            "summary": "加息25bp符合预期但声明删除'持续加息appropriate'措辞,市场解读偏鸽,TLT当周涨1.2%(与本预测方向相反)"
-          },
-          {
-            "date": "2022-11-02",
-            "summary": "加息75bp符合预期但鲍威尔暗示放缓节奏,10年期美债收益率回落12bp,TLT 5日涨2.1%(鸽派例外)"
-          },
-          {
-            "date": "2023-07-26",
-            "summary": "加息25bp+点阵图维持鹰派,会后10年期美债收益率上行8bp,TLT 5日跌1.4%(符合本预测方向和幅度)"
-          }
-        ]
+        "asset_logic": "选择TLT（20+年美债ETF）因其久期最长（约18年），对利率曲线长端最敏感。相比短债或中债，长债对'紧缩周期延续'这一预期变化的反应更滞后且幅度更大。但注意rationale中提到的是'推升美元'，这对TLT的传导路径较间接（通过金融条件而非直接利率）。",
+        "horizon_logic": "3天窗口是因为'符合预期'事件的延迟效应：当日定价已完成，但确认紧缩轨迹对美元的推动需要2-3个交易日通过衍生品市场和现货市场传导。若选5日以上，外生新闻（就业数据、CPI等）的干扰概率大幅上升。",
+        "failure_conditions": [
+          "Fed在加息声明或新闻发布会中释放鸽派转向信号（如'考虑暂停'、'通胀降温超预期'），导致市场重新定价宽松",
+          "同窗口内出现系统性风险事件（如硅谷银行式危机、主权债务违约），避险情绪主导，美元走强但资金涌入国债，TLT反而上涨",
+          "美元指数已接近前期高点或技术阻力位（如105以上），即使利差扩大也难推动汇率上行",
+          "同窗口内公布的经济数据（就业、通胀、零售）意外疲弱，市场重新定价衰退风险，压倒加息影响"
+        ],
+        "evidence_quality": {
+          "sample_size_assessment": "7次历史实例中1次支持6次反驳，成功率仅14%，置信度0.6。这是一个**证据负面**的假设，数据不支持因果机制存在。7次样本量对统计检验尚可，但方向一致性极差，表明该机制可能不成立或遗漏关键调节变量。",
+          "selection_bias_risk": "high — 该假设可能源于对单一成功案例的过度解读，而忽略了6次失败案例的系统性原因。需检查是否因后视偏差选择了特定时期的案例。",
+          "regime_diversity": "需验证7次实例是否跨越不同宏观环境（紧缩初期vs末期、高通胀vs低通胀、衰退预期vs扩张预期）。若6次反驳集中在紧缩末期或衰退预期环境，说明preconditions未充分限定适用范围。"
+        },
+        "related_chains": [],
+        "historical_examples": []
       },
       "failure_conditions": [
         "若会后通胀数据意外回落或就业大幅走弱,市场会忽略FOMC鹰派转向鸽派预期,长债反而上涨",
@@ -17637,61 +18371,72 @@
       "source": "researched",
       "rationale": "符合市场预期的 25bp 加息已被 Fed Funds 期货充分定价，主要反应来自点阵图和记者会的相对鹰/鸽倾向；美元和短端利率小幅走高，风险资产震荡。",
       "explanation": {
+        "tldr": "Fed 符合预期加息 → 点阵图/记者会鹰派 → 美元小幅走强",
+        "preconditions": [
+          {
+            "condition": "市场已充分定价本次加息 (Fed Funds 期货隐含概率 >85%)",
+            "why_matters": "若加息本身是意外, 美元反应会远超 0.68%; 符合预期时市场焦点才转向前瞻指引"
+          },
+          {
+            "condition": "点阵图或记者会释放偏鹰信号 (上调未来加息路径或强调通胀)",
+            "why_matters": "若前瞻指引偏鸽, 美元可能不涨反跌; 该假设依赖'相对鹰派'的微妙差异"
+          },
+          {
+            "condition": "美元指数未处技术性超买 (RSI < 70)",
+            "why_matters": "美元若已在高位, 即使基本面支撑也可能因获利了结而横盘或回调"
+          },
+          {
+            "condition": "同窗口无更大风险事件 (地缘冲突/银行危机/就业数据意外)",
+            "why_matters": "更大新闻会淹没 Fed 微妙信号, 美元走势由其他主导因素决定"
+          }
+        ],
+        "regime_context": "理论上适用于 Fed 渐进紧缩周期中段, 市场已适应加息节奏但仍对终点利率敏感. 但 0/7 的证据显示: 实际中'符合预期'事件对美元推动极弱, 或样本期内点阵图/记者会多偏鸽导致假设反向.",
         "causal_chain": [
           {
             "step": 1,
-            "trigger": "美联储宣布加息 25bp，与 Fed Funds 期货隐含预期完全一致",
-            "mechanism": "资产价格提前反映预期（price-in）机制：市场参与者在决议前已通过期货、期权调整头寸，决议落地本身信息增量接近零，价格冲击因此极小。",
-            "assumption": "加息幅度与市场共识完全吻合，无 surprise component；若实际加息 50bp 或暂停，整条链逻辑将完全改变。",
+            "trigger": "Fed 宣布加息 25bp, 符合市场预期",
+            "mechanism": "加息本身已被 Fed Funds 期货定价, 市场关注点立即转向 FOMC 声明/点阵图/记者会的前瞻指引",
+            "assumption": "市场确实已充分定价 (否则会有加息本身的冲击反应)",
             "confidence": "high"
           },
           {
             "step": 2,
-            "trigger": "加息决定落地后，市场焦点立即切换至点阵图（Dot Plot）和 FOMC 声明措辞",
-            "mechanism": "点阵图展示委员们对未来利率路径的中位预测，若点阵图中位数上移或声明删去'充分限制性'等鸽派措辞，则传递鹰派信号，市场对终端利率（terminal rate）预期随之上修。",
-            "assumption": "本次点阵图或声明确实含有相对此前更鹰派的表述；若措辞中性或偏鸽，美元可能不升反跌。",
-            "confidence": "medium"
+            "trigger": "点阵图上调未来加息路径, 或鲍威尔记者会强调通胀风险",
+            "mechanism": "市场预期未来政策路径比会前预期更紧, 终点利率上移或维持高位时间延长",
+            "assumption": "前瞻指引确实偏鹰 (而非中性或偏鸽) - 这是整条链的核心变量",
+            "confidence": "low"
           },
           {
             "step": 3,
-            "trigger": "终端利率预期上修，2Y 美债收益率小幅上行",
-            "mechanism": "短端利率对政策预期最为敏感（久期短、与政策利率锚定紧）。终端利率预期每上移 5-10bp，2Y 收益率通常同向跟进，推升美元资产相对收益率。",
-            "assumption": "市场处于正常流动性状态，利率传导机制未被风险规避情绪打断；若同期出现系统性风险事件（如银行危机），美债可能因避险需求反向走强而扭曲。",
-            "confidence": "high"
+            "trigger": "未来利率路径预期上移",
+            "mechanism": "美元实际利率预期上升 → 美元资产相对其他货币吸引力增加 → 资本流入美元",
+            "assumption": "其他央行未同步释放更鹰信号 (否则利差优势不明显)",
+            "confidence": "medium"
           },
           {
             "step": 4,
-            "trigger": "美元短端利差相对非美货币（欧元、日元、英镑）走阔",
-            "mechanism": "利率平价机制（uncovered interest parity）：持有美元计价资产的套息吸引力上升，全球资金倾向于将资金从低息货币区（尤其日元）转向美元，形成美元买盘。",
-            "assumption": "非美央行（ECB、BOJ、BOE）在同一窗口内无更强的政策冲击对冲；若欧央行同期意外鹰派，利差优势收窄，美元涨幅压缩。",
-            "confidence": "medium"
-          },
-          {
-            "step": 5,
-            "trigger": "全球外汇市场美元净买盘增加",
-            "mechanism": "DXY 是以欧元（57.6%权重）为主的一篮子货币加权指数。美元对欧元、日元、英镑同步走强时，DXY 被动上行；3 日窗口内主要通过即期汇率和短期外汇远期反映，幅度被初始定价程度天花板限制。",
-            "assumption": "市场未出现大规模风险资产抛售导致的'美元荒'或反向'去美元化'操作；头寸结构上 DXY 多头未过度拥挤到需要止盈的程度。",
-            "confidence": "medium"
+            "trigger": "美元需求上升",
+            "mechanism": "美元指数 (DXY) 在 30 天窗口内累计上涨 ~0.68%",
+            "assumption": "无其他更大因素对冲 (如风险偏好回升导致资金流出避险美元)",
+            "confidence": "low"
           }
         ],
-        "mechanism_summary": "符合预期的加息本身影响有限，美元走向取决于点阵图和记者会释放的利率路径信号是否比市场定价更鹰派。",
-        "asset_logic": "DXY 直接反映美元相对一篮子货币的综合强弱，是美联储政策预期变化的最直接汇率载体。加息推升短端利差，利差走阔驱动资金流向美元，方向向上；但因事件已充分定价，幅度极小（0.68%，低于典型 surprise 加息的 1-2%），且标准差（0.38%）相对均值较大，实际反应方向本身存在高度不确定性。",
-        "horizon_logic": "3 日窗口覆盖决议当日至记者会后第二个交易日，足以消化初始点位调整和隔夜仓位重置；超过 3 日后，下一批经济数据（CPI、非农）会主导走势，FOMC 冲击逐渐被覆盖。",
-        "key_risks": "最大风险是点阵图/声明偏鸽（步骤 2 假设不成立），历史上此类'鸽派 surprise'曾导致 DXY 在加息后反跌 0.5-1.5%。其次，同期若出现地缘风险或信用事件，避险资金会驱动日元、黄金走强而非美元，打断利差传导链。此外，evidence 数据显示支持案例仅 1/7（置信度 0.222），表明这一方向在历史实例中并不稳健，实际预测价值有限。",
-        "historical_examples": [
-          {
-            "date": "2023-05-03",
-            "summary": "美联储加息 25bp 符合预期，但鲍威尔记者会暗示暂停周期临近，DXY 当日收跌约 0.5%，与'符合预期加息→美元走高'逻辑相悖，印证点阵图/措辞方向比加息幅度本身更关键。"
-          },
-          {
-            "date": "2022-11-02",
-            "summary": "美联储加息 75bp 符合预期，但声明加入'累计紧缩效果'措辞（市场解读为鸽派转向信号），DXY 两日内下跌逾 1.5%，再次验证'符合预期加息'本身不足以驱动美元单边上行。"
-          },
-          {
-            "date": "2023-07-26",
-            "summary": "加息 25bp 完全符合预期，点阵图维持鹰派、无明显鸽派信号，DXY 3 日内小幅收涨约 0.4%，与本预测方向一致但幅度偏低，体现定价充分后的钝化效应。"
-          }
-        ]
+        "asset_logic": "美元指数对 Fed 利率预期最直接敏感 (通过实际利率和利差). 相比之下: 美债收益率会涨但受久期和通胀预期复杂影响; 黄金对实际利率敏感但方向相反; 股市受盈利预期和流动性双重拖累反应更复杂. 美元是'纯粹利率预期'的最干净标的.",
+        "horizon_logic": "30 天窗口假设市场需 2-4 周消化前瞻指引并反映到汇率. 更短 (如 7 天) 可能只捕捉会后即时反应易受噪音干扰; 更长 (如 90 天) 会混入下次 FOMC 或非农数据的影响.",
+        "failure_conditions": [
+          "点阵图实际下调未来加息路径, 或鲍威尔记者会释放'接近终点'的鸽派信号",
+          "同窗口内出现更大新闻主导市场 (银行业风险/就业数据意外/地缘冲突)",
+          "美元指数在会前已因其他因素 (如欧元区利率预期上升) 处于超买, 技术性回调压力抵消基本面支撑",
+          "市场已过度定价鹰派情景, 即使点阵图鹰派也符合预期导致'利好出尽'",
+          "风险偏好在窗口内明显回升 (VIX 下降 >20%), 避险美元需求减弱"
+        ],
+        "evidence_quality": {
+          "sample_size_assessment": "0 次支持 vs 7 次反驳, 置信度仅 11.1% - 该假设在历史样本中大概率不成立. 可能原因: ① '符合预期'加息本身对美元推动极弱 (noise 水平); ② 样本期内多数会议点阵图/记者会实际偏鸽; ③ 0.68% 的预测幅度接近美元指数日常波动, 难以与随机游走区分. 这是'已被数据证伪'而非'证据不足'的假设.",
+          "selection_bias_risk": "high - 该假设可能基于理论推导 (利率↑→美元↑) 而非历史归纳; 若回测时只挑选'鹰派会议'会得出相反结论",
+          "regime_diversity": "需检查 7 次反驳样本是否集中在特定时期 (如 2022-2023 银行业风险期); 若跨越多个周期仍全部反驳, 则假设根本性失效"
+        },
+        "related_chains": [],
+        "historical_examples": []
       },
       "failure_conditions": [
         "最大风险是点阵图/声明偏鸽（步骤 2 假设不成立），历史上此类'鸽派 surprise'曾导致 DXY 在加息后反跌 0.5-1.5%。其次，同期若出现地缘风险或信用事件，避险资金会驱动日元、黄金走强而非美元，打断利差传导链。此外，evidence 数据显示支持案例仅 1/7（置信度 0.222），表明这一方向在历史实例中并不稳健，实际预测价值有限。"
@@ -19886,61 +20631,72 @@
       "source": "researched",
       "rationale": "QT 上限提升或加速缩表等于收紧长端流动性，长债收益率上行，美元走强，风险资产承压。",
       "explanation": {
+        "tldr": "美联储加速缩表 → 长端流动性收紧 → 长债收益率上行 → TLT承压",
+        "preconditions": [
+          {
+            "condition": "Fed 处于正常化周期, 非危机模式或紧急宽松阶段",
+            "why_matters": "若 Fed 同时释放其他宽松信号 (如停止加息/暗示降息), QT 加速的紧缩效果会被对冲甚至反向"
+          },
+          {
+            "condition": "长端利率尚未极度倒挂或处于历史高位 (如 10年期 < 5.5%)",
+            "why_matters": "若长债收益率已经很高, 市场可能已 price-in 缩表预期, 边际影响减弱"
+          },
+          {
+            "condition": "市场流动性正常, 美债交易深度充足",
+            "why_matters": "流动性危机时 (如 2020年3月) 美债反而成为避险资产, QT 加速可能引发抢购而非抛售"
+          },
+          {
+            "condition": "通胀预期稳定或上行, 非通缩预期环境",
+            "why_matters": "若市场转向通缩预期, 长债会因避险和降息预期而走强, 与 QT 紧缩逻辑冲突"
+          }
+        ],
+        "regime_context": "适用于 Fed 正常化紧缩周期 (如 2017-2019, 2022-2023), 通胀可控但非通缩预期, 市场流动性正常. 危机模式 (2008, 2020) 或 Fed 政策转向期间机制失效甚至反向.",
         "causal_chain": [
           {
             "step": 1,
-            "trigger": "美联储官方宣布提高 QT 每月缩表上限，或由被动到期不续转变为主动出售国债",
-            "mechanism": "QT 的本质是美联储将其持有的国债归还给私人市场：到期不再续投等于减少再需求，主动出售则直接增加净供给。两者都扩大了私人市场须自行消化的国债存量。",
-            "assumption": "宣布内容为真正的加速信号（而非措辞微调），且市场参与者相信美联储会切实执行",
+            "trigger": "美联储公告提升 QT 上限或加快缩表节奏",
+            "mechanism": "市场预期 Fed 资产负债表收缩加速, 长端国债供给相对需求上升 (Fed 不再续作到期债券)",
+            "assumption": "市场认为 Fed 会执行到位, 且无其他重大政策对冲",
             "confidence": "high"
           },
           {
             "step": 2,
-            "trigger": "私人市场面临更大规模的长期国债净供给压力",
-            "mechanism": "国债市场由价格出清：当供给增加而需求方（银行、养老金、海外央行）短期吸收能力有限时，市场需要更高收益率（即更低价格）来吸引边际买家。这是标准的供需定价机制。",
-            "assumption": "财政部同期国债发行节奏不减速（即供给端没有对冲），且需求方弹性有限（非价格不敏感的强制买家）",
-            "confidence": "high"
-          },
-          {
-            "step": 3,
-            "trigger": "债券边际买家要求更高收益率才愿意承接额外供给",
-            "mechanism": "长期限国债的期限溢价（Term Premium）上升：持有 20 年期国债的投资者承担更多利率风险和流动性风险，在供给扩大时会要求额外补偿。10 年期以上品种对 QT 节奏变化最为敏感，因为其久期最长，供给边际变动的冲击被放大。",
-            "assumption": "市场处于正常利率传导状态（非零利率下限约束）；海外央行没有大规模增持抵消供给压力",
+            "trigger": "QT 加速预期形成",
+            "mechanism": "长端美债供需平衡倾向供给端 (私人部门需吸收更多债券), 长债收益率上行以吸引买盘",
+            "assumption": "私人需求非无限弹性; 外资和银行配置意愿未大幅增加",
             "confidence": "medium"
           },
           {
-            "step": 4,
-            "trigger": "20 年期以上国债收益率上行（债券价格下跌）",
-            "mechanism": "债券价格与收益率反向运动，且久期越长、价格对收益率的敏感性（Modified Duration）越高。TLT 持仓平均久期约 16–17 年，收益率每上行 10 个基点，净值约下跌 1.6–1.7%。这是纯数学关系，无需额外假设。",
-            "assumption": "收益率曲线长端确实移动（而非短端主导、长端锚定），即呈熊平或熊陡走势",
+            "step": 3,
+            "trigger": "长债收益率上行",
+            "mechanism": "债券价格与收益率反向, TLT 持仓的 20+ 年期债券久期极长 (久期约 17-18), 收益率上行对价格冲击放大",
+            "assumption": "收益率上行幅度足够 (如 10-20bps), 且非短期波动",
             "confidence": "high"
           },
           {
-            "step": 5,
-            "trigger": "TLT 持仓的底层债券价格下跌，ETF 净值（NAV）随之下降",
-            "mechanism": "TLT 为实物复制型 ETF，每日按持仓市值计算 NAV；做市商套利机制确保二级市场价格紧跟 NAV。长端收益率上行 → 底层债券价格下跌 → TLT 价格同步下跌，幅度与组合久期和收益率变动乘积高度吻合。",
-            "assumption": "ETF 流动性正常、做市商功能未受极端市场冲击（如 2020 年 3 月短暂折价的极端情形）",
+            "step": 4,
+            "trigger": "TLT 成分债券估值下跌",
+            "mechanism": "ETF 净值按标的债券市值计价, 直接反映在 TLT 二级市场价格",
+            "assumption": "无重大申赎失衡导致溢价/折价扭曲",
             "confidence": "high"
           }
         ],
-        "mechanism_summary": "QT 加速 → 长债净供给上升 → 期限溢价扩张 → 长端收益率上行 → TLT 高久期持仓价格下跌",
-        "asset_logic": "TLT 专注于 20 年以上国债，在全市场固定收益产品中久期最长（约 16–17 年），对收益率变动的价格敏感性最高，是 QT 加速预期最直接的负面受益者。相比之下，短债 ETF（如 SHY）受 QT 影响极小，因短端定价主要锚定政策利率预期而非供给。预测方向为下跌、幅度约 1.54% 与 QT 初次加速时长端收益率通常上行 8–12bps 的历史均值基本吻合（久期 ~16 × 0.10% ≈ 1.6%）。",
-        "horizon_logic": "7 天窗口对应市场消化公告并重新定价的典型周期：宣布后 1–2 天出现初始冲击，3–7 天内机构投资者调仓和期货对冲完成价格重置。超过 2 周则受后续经济数据和其他央行动态干扰，难以归因于单一事件。",
-        "key_risks": "若同期公布的经济数据意外走弱（如非农大幅不及预期），市场会转向押注 QT 不可持续甚至再度 QE，反而推动长债走强抵消 QT 效应。此外，若地缘风险或股市大跌引发避险资金大量涌入美债，也会压制收益率上行空间。当前预测置信度仅 0.5（支持与反对证据各 3 条），说明宏观背景存在明显分歧，结果双向风险较大。",
-        "historical_examples": [
-          {
-            "date": "2022-06-01",
-            "summary": "美联储启动本轮 QT 并设置 475 亿美元/月上限，TLT 随后 7 个交易日累计下跌约 3.5%，长端收益率从 2.85% 一路向 3.2% 逼近。"
-          },
-          {
-            "date": "2022-09-21",
-            "summary": "美联储将 QT 上限翻倍至 950 亿美元/月，叠加激进加息，TLT 当周下跌约 4.2%，10 年期收益率突破 3.7%。"
-          },
-          {
-            "date": "2018-10-03",
-            "summary": "鲍威尔表示 QT 处于'自动驾驶'且无意放缓，引发长端利率飙升，TLT 7 日内跌逾 2%，30 年期收益率触及 3.4% 阶段高点。"
-          }
-        ]
+        "asset_logic": "TLT 是久期最长的主流美债 ETF (持仓 20+ 年期国债), 对长端利率变动最敏感. QT 主要影响长端流动性 (Fed 持仓集中在中长期债券), 短债 (如 SHY) 受影响小. 1.54% 跌幅对应约 8-10bps 收益率上行, 与历史 QT 调整幅度一致.",
+        "horizon_logic": "7天窗口捕捉初期市场反应: QT 公告后 1-2 日收益率曲线重定价, 3-5 日 ETF 跟随标的债券调整. 更长窗口 (30天+) 会混入其他货币政策信号和宏观数据, 因果链被稀释.",
+        "failure_conditions": [
+          "Fed 同时释放鸽派信号 (如'缩表不影响降息时点'或'缩表可逆'), 市场将 QT 加速解读为技术性操作而非紧缩意图",
+          "VIX > 30 或系统性风险事件 (如银行业危机, 地缘冲突升级), 避险资金涌入美债, 压低收益率, 与 QT 逻辑反向",
+          "同一窗口内出现更强的收益率驱动因素: 如非农就业大幅不及预期 (降息预期升温) 或通胀数据意外下行",
+          "外资或主权基金大举增持美债 (如日本央行政策调整释放配置需求), 抵消 Fed 退出的供给压力",
+          "美元大幅走弱 (如因其他央行更鹰派), 海外投资者汇率对冲成本下降, 增持美债抵消 QT 影响"
+        ],
+        "evidence_quality": {
+          "sample_size_assessment": "6 次历史实例 (3 支持 3 反驳) 样本量极小, 统计显著性不足. 置信度 0.5 意味着该链当前为'未验证假设', 非'已证实规律'. 需至少 15-20 个独立样本才能初步判断.",
+          "selection_bias_risk": "high — 若 6 个样本集中在 2022-2023 单一紧缩周期, 可能高估效应; 若样本由'记忆中 QT 相关事件'选出, 存在后视偏差 (事后归因).",
+          "regime_diversity": "未知 — 若样本未覆盖 2017-2019 渐进式 QT 和 2022-2023 激进紧缩两种模式, 结论外推性弱. 需检查样本是否跨越低波动/高波动环境."
+        },
+        "related_chains": [],
+        "historical_examples": []
       },
       "failure_conditions": [
         "若同期公布的经济数据意外走弱（如非农大幅不及预期），市场会转向押注 QT 不可持续甚至再度 QE，反而推动长债走强抵消 QT 效应。此外，若地缘风险或股市大跌引发避险资金大量涌入美债，也会压制收益率上行空间。当前预测置信度仅 0.5（支持与反对证据各 3 条），说明宏观背景存在明显分歧，结果双向风险较大。"
@@ -20941,61 +21697,75 @@
       "source": "researched",
       "rationale": "地区银行挤兑与倒闭触发同业信用恐慌，存款外流蔓延，KRE 与 XLF 大幅下挫，资金涌向黄金与长债避险。",
       "explanation": {
+        "tldr": "大型地区银行倒闭→同业挤兑恐慌→存款外流→KRE 暴跌 13%",
+        "preconditions": [
+          {
+            "condition": "利率处于高位或快速上升期（如 Fed 基金利率 > 4%）",
+            "why_matters": "高利率导致银行持有的长期债券/MBS 产生大量未实现亏损，挤兑时被迫抛售实现亏损，侵蚀资本"
+          },
+          {
+            "condition": "倒闭原因与行业共性问题相关（如资产负债期限错配、大量企业存款）",
+            "why_matters": "若是孤立事件（如欺诈、单一行业集中度过高），市场不会认为风险会蔓延至其他地区银行"
+          },
+          {
+            "condition": "倒闭银行资产规模 > 1000 亿美元",
+            "why_matters": "小型银行倒闭不会引发系统性恐慌；大型银行倒闭才会让市场质疑监管有效性和同业健康度"
+          }
+        ],
+        "regime_context": "适用于加息周期后期+地区银行资产负债表脆弱期（如 2023 年 SVB 危机环境）。若 Fed 在倒闭后 48 小时内启动全面存款担保或 BTFP 类紧急流动性工具，恐慌会被遏制，KRE 跌幅会大幅缩小至个位数。",
         "causal_chain": [
           {
             "step": 1,
-            "trigger": "一家大型地区银行宣布倒闭或被接管",
-            "mechanism": "市场立即评估该银行的资产负债表问题（如未实现亏损、存款集中度、流动性缺口）是否在其他地区银行中普遍存在",
-            "assumption": "倒闭原因涉及行业共性问题（如利率上升导致债券组合浮亏、非保险存款占比高），而非单一银行的孤立风险",
+            "trigger": "大型地区银行宣布倒闭或被 FDIC 接管",
+            "mechanism": "市场开始质疑其他持有类似资产（如长期国债/MBS 浮亏）的地区银行的资本充足率",
+            "assumption": "倒闭原因与行业共性问题相关（如利率风险管理不当），而非孤立事件",
             "confidence": "high"
           },
           {
             "step": 2,
-            "trigger": "投资者和储户开始审视其他地区银行的相似脆弱性",
-            "mechanism": "对手方风险溢价飙升：银行间市场利差扩大，未保险存款持有人（企业、高净值客户）启动预防性转移，社交媒体和新闻放大挤兑担忧",
-            "assumption": "市场处于风险规避模式，流动性紧张时储户优先考虑本金安全而非收益率",
+            "trigger": "储户（尤其是企业和高净值客户）对其他地区银行信心崩溃",
+            "mechanism": "社交媒体和新闻放大恐慌，FDIC 保险上限（25 万美元）使大客户不安，开始大规模提取存款",
+            "assumption": "Fed 和监管机构未立即宣布无上限存款担保",
             "confidence": "high"
           },
           {
             "step": 3,
-            "trigger": "存款外流从单一银行蔓延至同类银行群体",
-            "mechanism": "地区银行被迫抛售流动性资产（国债、MBS）锁定浮亏以满足提款需求，资本充足率下降；部分银行暂停贷款发放以保存流动性，进一步削弱盈利前景",
-            "assumption": "监管机构（FDIC/Fed）的救助措施未能在 7 天内完全恢复市场信心，或救助本身暴露了系统脆弱性的广度",
+            "trigger": "同业拆借市场冻结，地区银行流动性枯竭",
+            "mechanism": "其他银行和货币市场基金拒绝向地区银行提供隔夜流动性，地区银行被迫向 Fed 贴现窗口借款或抛售资产",
+            "assumption": "Fed 未立即启动类似 BTFP 的紧急流动性工具，或贴现窗口条件苛刻",
             "confidence": "medium"
           },
           {
             "step": 4,
-            "trigger": "地区银行板块的盈利预期和资本回报预期被大幅下调",
-            "mechanism": "分析师下调 EPS 预测（贷款增长停滞、信贷成本上升、净息差压缩），机构投资者根据风险模型重新分配权重，触发程序化抛售和期权对冲（买入看跌期权或做空 KRE）",
-            "assumption": "市场采用'先卖出再问问题'的危机模式，流动性需求导致无差别抛售优质和劣质地区银行股票",
+            "trigger": "地区银行被迫抛售持有的国债/MBS 以应对挤兑",
+            "mechanism": "抛售导致账面浮亏实现，进一步侵蚀资本金，部分银行资本充足率跌破监管红线",
+            "assumption": "银行持有大量浮亏资产（加息周期中买入的长期债券），且缺乏其他流动性来源",
             "confidence": "high"
           },
           {
             "step": 5,
-            "trigger": "KRE（SPDR 标普地区银行 ETF）持有的 ~140 只地区银行股票遭遇集体下跌",
-            "mechanism": "ETF 净值随成分股下跌，赎回压力迫使 ETF 管理人按比例抛售持仓，进一步压低成分股价格（负反馈循环）；KRE 期权市场的波动率飙升（VIX 效应）加剧现货抛压",
-            "assumption": "事件发生在交易时段或临近周末，市场流动性不足以吸收大规模抛售，导致价格超调",
-            "confidence": "medium"
+            "trigger": "KRE 成分股（地区银行）股价暴跌，ETF 净值随之下挫",
+            "mechanism": "投资者恐慌性赎回 KRE，触发 ETF 被动卖出成分股，进一步加剧跌幅",
+            "assumption": "市场对地区银行板块进行无差别抛售，即使部分银行基本面稳健",
+            "confidence": "high"
           }
         ],
-        "mechanism_summary": "银行倒闭→同业信用恐慌→存款挤兑蔓延→地区银行被迫抛售资产并削减贷款→板块盈利预期崩塌→ETF 遭遇赎回与程序化抛售",
-        "asset_logic": "KRE 是纯粹的地区银行敞口（不含大型系统性银行如 JPM/BAC），其成分股资产规模通常在 100-500 亿美元区间，对存款流动性和利率环境高度敏感。当单一大型地区银行倒闭时，市场会对整个 KRE 池进行'传染定价'而非逐一甄别，导致 ETF 整体大幅下挫。13% 的跌幅反映了历史上类似危机（如 2023 年硅谷银行事件）中观察到的恐慌性抛售量级，但实际幅度取决于倒闭银行的规模和监管响应速度。",
-        "horizon_logic": "7 天窗口对应危机初期的'信息消化期'：第 1-3 天市场评估传染范围，第 4-5 天机构调整持仓，第 6-7 天监管声明或救助措施落地。如果监管机构在 48 小时内宣布全面存款担保或流动性支持工具，跌幅可能在第 3-4 天触底；若救助迟缓或不足，抛售会持续整周并可能延续至下周。",
-        "key_risks": "预测失败的三大情形：（1）监管机构在倒闭当日同步宣布系统性救助（如 FDIC 无限担保、Fed 开启紧急贷款窗口），立即切断传染链；（2）倒闭银行的问题被证实为孤立事件（如欺诈而非行业性利率风险），市场在初步恐慌后 48 小时内恢复理性；（3）同期出现更强势的风险偏好事件（如超预期降息、重大财政刺激），资金快速回流风险资产稀释银行板块跌幅。此外，若事件发生在周五收盘后，周末监管协调可能削弱周一开盘的抛压。",
-        "historical_examples": [
-          {
-            "date": "2023-03-10",
-            "summary": "硅谷银行倒闭后 7 天内 KRE 暴跌 26.8%，触发 Signature Bank 和 First Republic 连锁危机，直到 Fed 推出 BTFP 流动性工具才止跌"
-          },
-          {
-            "date": "2008-09-25",
-            "summary": "华盛顿互惠银行倒闭（美国史上最大储蓄机构破产），KRE 当周跌 18.3%，随后雷曼危机全面爆发加剧银行板块崩盘"
-          },
-          {
-            "date": "2020-03-09",
-            "summary": "虽非银行倒闭但 COVID 恐慌导致流动性危机，KRE 单周跌 19.2%，此次由美联储无限 QE 和财政刺激在两周内逆转"
-          }
-        ]
+        "asset_logic": "KRE 是追踪 SPDR S&P Regional Banking ETF 的地区银行指数基金，对地区银行系统性风险暴露度最高。相比 XLF（包含大型银行如摩根大通，享有'大而不倒'隐性担保）或单一银行股（可能被并购托底），KRE 对同业挤兑恐慌最敏感。13% 的跌幅量级反映了从信心危机→流动性枯竭→资本侵蚀的全链条冲击，历史上 SVB 事件期间 KRE 曾单月跌超 25%。",
+        "horizon_logic": "30 天窗口涵盖了从首次倒闭公告→市场评估蔓延风险→Fed 政策响应→市场消化政策的完整周期。更短窗口（如 7 天）只能捕捉初始恐慌，可能遗漏后续多米诺骨牌效应；更长窗口（如 90 天）则会包含政策救助后的反弹和市场重新定价，稀释信号。",
+        "failure_conditions": [
+          "Fed 在倒闭后 48 小时内宣布无上限存款担保或启动类似 BTFP 的紧急流动性工具（如 2023 年 3 月 SVB 后的政策）",
+          "倒闭银行被大型银行（如摩根大通、美国银行）在一周内快速并购，市场视为孤立事件而非系统性风险",
+          "VIX < 20 且其他宏观数据强劲（如非农就业、GDP 增长超预期），市场风险偏好足以吸收冲击",
+          "同一时间窗内出现更大的宏观新闻（如 Fed 紧急降息 50bp、地缘战争、主权债务危机）掩盖银行事件影响",
+          "倒闭银行被证实为欺诈或管理不善导致的孤立案例（如 2001 年安然事件），而非行业共性问题"
+        ],
+        "evidence_quality": {
+          "sample_size_assessment": "6 次实例（3 支持 3 反驳，置信度 0.5）对统计显著性远远不足；这是'五五开'的随机游走，目前不具备预测价值，仅是'值得监控但未证实'的假设",
+          "selection_bias_risk": "high — 样本极可能由 2023 年银行业危机期间（SVB、Signature、First Republic）的极端案例后视性选出，缺乏跨周期验证；需验证在不同利率环境和 Fed 反应速度下的稳健性",
+          "regime_diversity": "若 6 次样本集中在 2023 年 3-5 月单一事件窗口，则完全缺乏环境多样性；需补充 2008 年金融危机、1980-90 年代储贷危机等不同 regime 下的案例"
+        },
+        "related_chains": [],
+        "historical_examples": []
       },
       "failure_conditions": [
         "预测失败的三大情形：（1）监管机构在倒闭当日同步宣布系统性救助（如 FDIC 无限担保、Fed 开启紧急贷款窗口），立即切断传染链",

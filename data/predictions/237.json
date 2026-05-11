@@ -1,0 +1,115 @@
+{
+  "id": 237,
+  "made_at": "2026-05-11T14:41:34.498326",
+  "expire_at": "2026-05-18T14:41:34.498326",
+  "verified_at": null,
+  "asset": {
+    "symbol": "CL=F",
+    "name": "WTI原油期货",
+    "class": "commodity"
+  },
+  "direction": "down",
+  "magnitude_pct": 1.08,
+  "horizon_days": 7,
+  "baseline_price": 97.23999786376953,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 97.44000244140625,
+  "current_pct": 0.20568138834897906,
+  "current_at": "2026-05-11T00:00:00-04:00",
+  "reasoning": "参考链 #636 (霍尔木兹海峡通航受阻→能源股上涨) 的底层机制：海峡承载全球约20%石油及LNG供应，封锁威胁导致Brent/WTI跳涨。当前LNG船成功通航并使用伊朗新航道，信号意义在于供应中断的尾部风险定价需要下修，原油风险溢价收窄。但70天封锁期市场已部分适应，预期幅度温和。",
+  "stop_loss_price": 98.2902,
+  "take_profit": {
+    "prices": [
+      95.6647,
+      94.6145,
+      93.0392
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 1.0502,
+    "atr": 0.5251
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": 0.3,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.3,
+    "log_odds": -0.847,
+    "effective_n": 1.0,
+    "r_bar": 1.0,
+    "uplift": 1.0,
+    "signal_grade": "💤 D",
+    "evidence": [
+      {
+        "link_id": 635,
+        "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+        "asset": "GC=F",
+        "dir_hit_rate": 0.5,
+        "n_samples": 4,
+        "log_lr": 0.0,
+        "grade": "C"
+      },
+      {
+        "link_id": 636,
+        "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+        "asset": "XLE",
+        "dir_hit_rate": 0.5,
+        "n_samples": 4,
+        "log_lr": 0.0,
+        "grade": "C"
+      }
+    ],
+    "note": "⚠ 证据同类别重叠 r̄=1.00，已折扣 (n=2 → n_eff=1.0)"
+  },
+  "tags": [
+    "low_grade_chain"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "cited_link_ids": [
+    635,
+    636
+  ],
+  "cited_chains": [
+    {
+      "id": 635,
+      "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+      "asset_symbol": "GC=F",
+      "direction": "up",
+      "horizon_days": 7,
+      "magnitude_pct": 1.5,
+      "grade": "C",
+      "retail_edge": null
+    },
+    {
+      "id": 636,
+      "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+      "asset_symbol": "XLE",
+      "direction": "up",
+      "horizon_days": 3,
+      "magnitude_pct": 2.0,
+      "grade": "C",
+      "retail_edge": null
+    }
+  ],
+  "event": {
+    "id": 1112,
+    "summary": "卡塔尔液化天然气运输船70天来首次通过霍尔木兹海峡，地缘紧张局势缓和",
+    "category": "energy"
+  },
+  "news": {
+    "title": "卡塔尔液化天然气运输船时隔约70天首次通过霍尔木兹海峡",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3101126",
+    "published_at": "2026-05-10T09:01:56"
+  }
+}

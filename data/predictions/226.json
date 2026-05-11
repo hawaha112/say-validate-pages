@@ -1,0 +1,101 @@
+{
+  "id": 226,
+  "made_at": "2026-05-05T17:37:52.538519",
+  "expire_at": "2026-05-08T17:37:52.538519",
+  "verified_at": "2026-05-11T14:49:22.142636",
+  "asset": {
+    "symbol": "TLT",
+    "name": "20+年期美债ETF",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 0.9,
+  "horizon_days": 3,
+  "baseline_price": 85.3949966430664,
+  "baseline_source": "event_time",
+  "status": "verified",
+  "hit": true,
+  "hit_breakdown": {
+    "dir_hit": true,
+    "mag_hit": true,
+    "strict_hit": true,
+    "mag_err_rel": 0.5423881922216178,
+    "mag_err_bucket": "<=100%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": 0.411850627000544,
+  "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "参考链#357（风险事件→避险资金流向美债）的机制。英国借贷成本触及28年高点叠加大选不确定性构成欧洲市场风险事件，虽触发因素异于关税威胁，但「市场风险厌恶升温→资金流向美债避险」的传导路径相似。幅度相对温和因冲击主要集中于英国本土。",
+  "stop_loss_price": 84.6255,
+  "take_profit": {
+    "prices": [
+      86.5492,
+      87.3187,
+      88.4729
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.7695,
+    "atr": 0.3847
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.6316,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.6316,
+    "log_odds": 0.539,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.11,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 357,
+        "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+        "asset": "TLT",
+        "dir_hit_rate": 1.0,
+        "n_samples": 3,
+        "log_lr": 1.386,
+        "grade": "B"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [],
+  "retired_at": null,
+  "retired_reason": null,
+  "cited_link_ids": [
+    357
+  ],
+  "cited_chains": [
+    {
+      "id": 357,
+      "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+      "asset_symbol": "TLT",
+      "direction": "up",
+      "horizon_days": 1,
+      "magnitude_pct": 0.8,
+      "grade": "B",
+      "retail_edge": "mid"
+    }
+  ],
+  "event": {
+    "id": 587,
+    "summary": "英国长期借贷成本达到28年高点，大选前债市波动加剧",
+    "category": "macro"
+  },
+  "news": {
+    "title": "UK long-term borrowing costs reach 28-year high",
+    "source": "bbc",
+    "lang": "en",
+    "url": "https://www.bbc.com/news/articles/c936qn69016o?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-05-05T16:30:23"
+  }
+}

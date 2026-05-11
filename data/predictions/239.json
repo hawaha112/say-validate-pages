@@ -1,0 +1,95 @@
+{
+  "id": 239,
+  "made_at": "2026-05-11T14:42:13.855610",
+  "expire_at": "2026-05-14T14:42:13.855610",
+  "verified_at": null,
+  "asset": {
+    "symbol": "CL=F",
+    "name": "WTI原油期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.08,
+  "horizon_days": 3,
+  "baseline_price": 97.87000274658203,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 97.44000244140625,
+  "current_pct": -0.43935863196938385,
+  "current_at": "2026-05-11T00:00:00-04:00",
+  "reasoning": "参考链 #637 (霍尔木兹海峡通航受阻) 的机制：卡塔尔海域与霍尔木兹同属波斯湾核心航运区，美国国旗船只遭袭将推高海运保险费率、触发供应中断尾部风险定价。本次事件规模有限（火势扑灭、无伤亡），但目标为美国船只具有地缘敏感性，预计风险溢价温和上行。",
+  "stop_loss_price": 96.813,
+  "take_profit": {
+    "prices": [
+      99.4555,
+      100.5125,
+      102.098
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 1.057,
+    "atr": 0.5285
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.4615,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.4615,
+    "log_odds": -0.154,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 1.54,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 637,
+        "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+        "asset": "SPY",
+        "dir_hit_rate": 0.75,
+        "n_samples": 4,
+        "log_lr": 0.693,
+        "grade": "C"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "low_grade_chain"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "cited_link_ids": [
+    637
+  ],
+  "cited_chains": [
+    {
+      "id": 637,
+      "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+      "asset_symbol": "SPY",
+      "direction": "down",
+      "horizon_days": 3,
+      "magnitude_pct": 1.0,
+      "grade": "C",
+      "retail_edge": null
+    }
+  ],
+  "event": {
+    "id": 1111,
+    "summary": "卡塔尔附近海域悬挂美国国旗货船遭不明飞行物击中起火，火势已扑灭暂无伤亡",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "伊媒称在卡塔尔附近海域起火货船悬挂美国国旗",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3101122",
+    "published_at": "2026-05-10T08:15:24"
+  }
+}

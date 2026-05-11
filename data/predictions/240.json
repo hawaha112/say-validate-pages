@@ -1,0 +1,93 @@
+{
+  "id": 240,
+  "made_at": "2026-05-11T14:42:14.121483",
+  "expire_at": "2026-05-14T14:42:14.121483",
+  "verified_at": null,
+  "asset": {
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 0.7200000000000001,
+  "horizon_days": 3,
+  "baseline_price": 4725.2998046875,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 4737.10009765625,
+  "current_pct": 0.2497258048482787,
+  "current_at": "2026-05-11T00:00:00-04:00",
+  "reasoning": "参考链 #229 (以色列与伊朗军事交火) 的机制：伊朗媒体主动报道美国船只遇袭细节，暗示可能为胡塞武装或伊朗关联势力所为，市场会将此解读为美伊紧张升级信号，触发避险资金流入黄金。事件本身规模有限，溢价幅度预计温和。",
+  "stop_loss_price": 4686.2682,
+  "take_profit": {
+    "prices": [
+      4783.8472,
+      4822.8788,
+      4881.4261
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 39.0316,
+    "atr": 19.5158
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.72,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.72,
+    "log_odds": 0.944,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.4,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 229,
+        "pattern": "以色列与伊朗直接军事交火",
+        "asset": "GC=F",
+        "dir_hit_rate": 1.0,
+        "n_samples": 5,
+        "log_lr": 1.792,
+        "grade": "A"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [],
+  "retired_at": null,
+  "retired_reason": null,
+  "cited_link_ids": [
+    229
+  ],
+  "cited_chains": [
+    {
+      "id": 229,
+      "pattern": "以色列与伊朗直接军事交火",
+      "asset_symbol": "GC=F",
+      "direction": "up",
+      "horizon_days": 30,
+      "magnitude_pct": 2.04,
+      "grade": "A",
+      "retail_edge": "high"
+    }
+  ],
+  "event": {
+    "id": 1111,
+    "summary": "卡塔尔附近海域悬挂美国国旗货船遭不明飞行物击中起火，火势已扑灭暂无伤亡",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "伊媒称在卡塔尔附近海域起火货船悬挂美国国旗",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3101122",
+    "published_at": "2026-05-10T08:15:24"
+  }
+}

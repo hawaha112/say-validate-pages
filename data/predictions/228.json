@@ -1,0 +1,93 @@
+{
+  "id": 228,
+  "made_at": "2026-05-05T17:42:10.608254",
+  "expire_at": "2026-05-12T17:42:10.608254",
+  "verified_at": null,
+  "asset": {
+    "symbol": "EWU",
+    "name": "iShares英国ETF",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 2.16,
+  "horizon_days": 7,
+  "baseline_price": 46.415000915527344,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 46.72999954223633,
+  "current_pct": 0.678656943866626,
+  "current_at": "2026-05-11T00:00:00-04:00",
+  "reasoning": "参考链 #357 的政治不确定性冲击风险资产的逻辑。英国长端利率飙升将直接推高企业融资成本，压缩估值空间；大选前政策不确定性进一步抑制风险偏好。英国股市面临双重压力，外资可能阶段性减持。",
+  "stop_loss_price": 47.1845,
+  "take_profit": {
+    "prices": [
+      45.2608,
+      44.4913,
+      43.3371
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.7695,
+    "atr": 0.3847
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.6316,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.6316,
+    "log_odds": 0.539,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.11,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 357,
+        "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+        "asset": "TLT",
+        "dir_hit_rate": 1.0,
+        "n_samples": 3,
+        "log_lr": 1.386,
+        "grade": "B"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [],
+  "retired_at": null,
+  "retired_reason": null,
+  "cited_link_ids": [
+    357
+  ],
+  "cited_chains": [
+    {
+      "id": 357,
+      "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+      "asset_symbol": "TLT",
+      "direction": "up",
+      "horizon_days": 1,
+      "magnitude_pct": 0.8,
+      "grade": "B",
+      "retail_edge": "mid"
+    }
+  ],
+  "event": {
+    "id": 587,
+    "summary": "英国长期借贷成本达到28年高点，大选前债市波动加剧",
+    "category": "macro"
+  },
+  "news": {
+    "title": "UK long-term borrowing costs reach 28-year high",
+    "source": "bbc",
+    "lang": "en",
+    "url": "https://www.bbc.com/news/articles/c936qn69016o?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-05-05T16:30:23"
+  }
+}

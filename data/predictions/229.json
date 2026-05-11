@@ -1,0 +1,93 @@
+{
+  "id": 229,
+  "made_at": "2026-05-07T21:34:43.155693",
+  "expire_at": "2026-05-14T21:34:43.155693",
+  "verified_at": null,
+  "asset": {
+    "symbol": "510300.SS",
+    "name": "沪深300ETF",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 0.8,
+  "horizon_days": 7,
+  "baseline_price": 4.912,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 4.966,
+  "current_pct": 1.09934853420196,
+  "current_at": "2026-05-11T14:49:32.386663",
+  "reasoning": "参考链#88（中国财政刺激→沪深300受益）的机制，本次五一假期消费数据强劲——新能源汽车充电量同比+52.8%、消费销售收入+14.3%、银联支付笔数+23.45%——同样指向中国内需活力回暖。与链#88不同的是，本次是消费端需求实际表现而非政策supply-side刺激，市场敏感度较低，预期涨幅相应调减。",
+  "stop_loss_price": 4.8276,
+  "take_profit": {
+    "prices": [
+      5.0386,
+      5.1231,
+      5.2497
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.0844,
+    "atr": 0.0422
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.5172,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.5172,
+    "log_odds": 0.069,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 1.72,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 88,
+        "pattern": "中国财政大规模刺激（特别国债/基建加码）",
+        "asset": "510300.SS",
+        "dir_hit_rate": 0.8,
+        "n_samples": 5,
+        "log_lr": 0.916,
+        "grade": "A"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [],
+  "retired_at": null,
+  "retired_reason": null,
+  "cited_link_ids": [
+    88
+  ],
+  "cited_chains": [
+    {
+      "id": 88,
+      "pattern": "中国财政大规模刺激（特别国债/基建加码）",
+      "asset_symbol": "510300.SS",
+      "direction": "up",
+      "horizon_days": 7,
+      "magnitude_pct": 1.5,
+      "grade": "A",
+      "retail_edge": "mid"
+    }
+  ],
+  "event": {
+    "id": 813,
+    "summary": "五一假期新能源汽车充电量同比增长52.8%，需求强劲增长",
+    "category": "tech"
+  },
+  "news": {
+    "title": "除了头版内容，今天《人民日报》涉及财经的主要内容还包括：\n1、贵州榕江持续把赛事流量转化为经济增量 全域协作，“村超”消费链越“链”越长（“十五五”首季数据微视",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-05-07T07:10:16"
+  }
+}

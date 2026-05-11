@@ -1,0 +1,93 @@
+{
+  "id": 227,
+  "made_at": "2026-05-05T17:42:09.417990",
+  "expire_at": "2026-05-12T17:42:09.417990",
+  "verified_at": null,
+  "asset": {
+    "symbol": "GBPUSD=X",
+    "name": "英镑兑美元",
+    "class": "fx"
+  },
+  "direction": "down",
+  "magnitude_pct": 0.8,
+  "horizon_days": 7,
+  "baseline_price": 1.3552706241607666,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 1.3623793125152588,
+  "current_pct": 0.5245216879760932,
+  "current_at": "2026-05-11T00:00:00+01:00",
+  "reasoning": "参考链 #357 的政治事件→债市→资本流动机制，但传导方向相反。#357中美国关税威胁引发避险资金流入美债；当前英国债务成本28年高点叠加大选不确定性，投资者抛售英债而非买入，收益率飙升反映对英国财政可持续性的担忧，资本外流压力将传导至英镑。",
+  "stop_loss_price": 2.1247,
+  "take_profit": {
+    "prices": [
+      0.2011,
+      0.01,
+      0.01
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.7695,
+    "atr": 0.3847
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": 0.6316,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.6316,
+    "log_odds": 0.539,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.11,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 357,
+        "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+        "asset": "TLT",
+        "dir_hit_rate": 1.0,
+        "n_samples": 3,
+        "log_lr": 1.386,
+        "grade": "B"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [],
+  "retired_at": null,
+  "retired_reason": null,
+  "cited_link_ids": [
+    357
+  ],
+  "cited_chains": [
+    {
+      "id": 357,
+      "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+      "asset_symbol": "TLT",
+      "direction": "up",
+      "horizon_days": 1,
+      "magnitude_pct": 0.8,
+      "grade": "B",
+      "retail_edge": "mid"
+    }
+  ],
+  "event": {
+    "id": 587,
+    "summary": "英国长期借贷成本达到28年高点，大选前债市波动加剧",
+    "category": "macro"
+  },
+  "news": {
+    "title": "UK long-term borrowing costs reach 28-year high",
+    "source": "bbc",
+    "lang": "en",
+    "url": "https://www.bbc.com/news/articles/c936qn69016o?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-05-05T16:30:23"
+  }
+}

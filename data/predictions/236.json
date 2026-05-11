@@ -1,0 +1,95 @@
+{
+  "id": 236,
+  "made_at": "2026-05-11T14:41:34.225927",
+  "expire_at": "2026-05-14T14:41:34.225927",
+  "verified_at": null,
+  "asset": {
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
+  },
+  "direction": "down",
+  "magnitude_pct": 0.7200000000000001,
+  "horizon_days": 3,
+  "baseline_price": 4736.39990234375,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 4737.10009765625,
+  "current_pct": 0.014783281119347985,
+  "current_at": "2026-05-11T00:00:00-04:00",
+  "reasoning": "参考链 #635 (霍尔木兹海峡通航受阻→黄金上涨) 的反向机制。该链指出海峡封锁威胁触发避险买盘推升金价；当前新闻显示卡塔尔LNG船70天来首次顺利通过海峡且使用伊朗新航道，表明地缘紧张边际缓和，避险需求相应回落，黄金承压。但因仅为单艘船通航而非全面恢复，影响幅度有限。",
+  "stop_loss_price": 4770.502,
+  "take_profit": {
+    "prices": [
+      4685.2468,
+      4651.1447,
+      4599.9916
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 34.1021,
+    "atr": 17.051
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": 0.3,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.3,
+    "log_odds": -0.847,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 1.0,
+    "signal_grade": "💤 D",
+    "evidence": [
+      {
+        "link_id": 635,
+        "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+        "asset": "GC=F",
+        "dir_hit_rate": 0.5,
+        "n_samples": 4,
+        "log_lr": 0.0,
+        "grade": "C"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "low_grade_chain"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "cited_link_ids": [
+    635
+  ],
+  "cited_chains": [
+    {
+      "id": 635,
+      "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+      "asset_symbol": "GC=F",
+      "direction": "up",
+      "horizon_days": 7,
+      "magnitude_pct": 1.5,
+      "grade": "C",
+      "retail_edge": null
+    }
+  ],
+  "event": {
+    "id": 1112,
+    "summary": "卡塔尔液化天然气运输船70天来首次通过霍尔木兹海峡，地缘紧张局势缓和",
+    "category": "energy"
+  },
+  "news": {
+    "title": "卡塔尔液化天然气运输船时隔约70天首次通过霍尔木兹海峡",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3101126",
+    "published_at": "2026-05-10T09:01:56"
+  }
+}

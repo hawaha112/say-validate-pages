@@ -72,7 +72,7 @@
 </head>
 <body>
 <h1>📡 say_validate · 知识与监测看板</h1>
-<div class="small">最后刷新: <strong>2026-05-15 14:24 UTC</strong> · 由 4h launchd 流水线自动更新。高把握信号触发时直接 Telegram 推送。</div>
+<div class="small">最后刷新: <strong>2026-05-15 15:00 UTC</strong> · 由 4h launchd 流水线自动更新。高把握信号触发时直接 Telegram 推送。</div>
 
 <nav>
   <a href="#summary">📊 总览</a>
@@ -84,16 +84,16 @@
 
 <h2 id="summary">📊 总览</h2>
 <div class="stats">
-  <div class="stat"><span class="n">31</span><div class="lbl">live 规则</div></div>
+  <div class="stat"><span class="n">37</span><div class="lbl">live 规则</div></div>
   <div class="stat"><span class="n">4</span><div class="lbl">复合假设</div></div>
-  <div class="stat"><span class="n">8</span><div class="lbl">🟢 今日激活</div></div>
-  <div class="stat"><span class="n">9</span><div class="lbl">监测指标</div></div>
-  <div class="stat"><span class="n">7</span><div class="lbl">覆盖资产</div></div>
+  <div class="stat"><span class="n">11</span><div class="lbl">🟢 今日激活</div></div>
+  <div class="stat"><span class="n">13</span><div class="lbl">监测指标</div></div>
+  <div class="stat"><span class="n">10</span><div class="lbl">覆盖资产</div></div>
 </div>
 <h3>知识来源分布</h3>
-<div class="stats"><div class="stat"><span class="n">14</span><div class="lbl"><span class="tag tag-research">research</span></div></div><div class="stat"><span class="n">14</span><div class="lbl"><span class="tag tag-playbook">playbook</span></div></div><div class="stat"><span class="n">2</span><div class="lbl"><span class="tag tag-scan">scan</span></div></div><div class="stat"><span class="n">1</span><div class="lbl"><span class="tag tag-canon">canon</span></div></div></div>
+<div class="stats"><div class="stat"><span class="n">20</span><div class="lbl"><span class="tag tag-playbook">playbook</span></div></div><div class="stat"><span class="n">14</span><div class="lbl"><span class="tag tag-research">research</span></div></div><div class="stat"><span class="n">2</span><div class="lbl"><span class="tag tag-scan">scan</span></div></div><div class="stat"><span class="n">1</span><div class="lbl"><span class="tag tag-canon">canon</span></div></div></div>
 
-<h2 id="active">🟢 今日激活 · 8 条</h2>
+<h2 id="active">🟢 今日激活 · 11 条</h2>
 <table>
 <thead><tr><th></th><th>IH</th><th>规则</th><th>指标(当前值)</th><th>目标</th><th class="num">期限</th><th class="num">命中率</th><th class="num">N</th><th class="num">均值收益</th><th class="num">p</th></tr></thead>
 <tbody>
@@ -101,7 +101,7 @@
   <td><span class="tag-active">触发</span></td>
   <td>#21</td>
   <td><strong>SPY经典12月动量效应</strong> <span class="tag tag-research">research</span><div class="rationale">过去12个月强势资产未来1-6个月继续上涨，经典动量异象 (Jegadeesh &amp; Titman, 1993)</div></td>
-  <td>spy<br><span class="small">= 742.11</span></td>
+  <td>spy<br><span class="small">= 741.03</span></td>
   <td class="dir-up">SPY ↑</td>
   <td class="num">30d</td>
   <td class="num">67.4%</td>
@@ -114,7 +114,7 @@
   <td><strong>SPY 12月动量延续 → 30d 续涨</strong> <span class="tag tag-playbook">playbook</span><div class="rationale">SPY 过去 252 个交易日累计涨幅 &gt; 15% 时,经典 12 月动量因子开启 正反馈循环:趋势跟随策略加仓、被动指数继续吸金、机构再平衡 推升估值。190 次历史触发中 30d 内继续上行均值 +1.3%, 方向命中 67.4%. 这是金融学最稳定的横截面 + 时序异象之一,在 1927-至今的几乎所有 子样本里都成立。
 
 失效条件: VIX 单日跳升 &gt; 50% 或突破 30 — 动量崩塌信号。或 SPY 跌破 50d MA 超过 2 天 — 趋势确认反转,动量假设失效。</div></td>
-  <td>spy<br><span class="small">= 742.11</span></td>
+  <td>spy<br><span class="small">= 741.03</span></td>
   <td class="dir-up">SPY ↑</td>
   <td class="num">30d</td>
   <td class="num">67.4%</td>
@@ -125,7 +125,7 @@
   <td><span class="tag-active">触发</span></td>
   <td>#30</td>
   <td><strong>黄金连续暴跌恐慌反转</strong> <span class="tag tag-research">research</span><div class="rationale">黄金两周跌&gt;7%且加速下跌反映情绪恐慌过度，提供反向买入点 (来源: 新兴市场贵金属情绪过度反应文献)</div></td>
-  <td>gold<br><span class="small">= 4549.20</span></td>
+  <td>gold<br><span class="small">= 4552.90</span></td>
   <td class="dir-up">GC=F ↑</td>
   <td class="num">30d</td>
   <td class="num">57.3%</td>
@@ -138,7 +138,7 @@
   <td><strong>黄金深度回调 (14d-7% &amp; 7d-3%) → 30d 反弹</strong> <span class="tag tag-playbook">playbook</span><div class="rationale">黄金在 14 个交易日内跌 &gt; 7% 且最近 7d 加速下跌 &gt; 3% 通常是 杠杆头寸被清洗的标志:CTA / managed-money 净多头被强制减仓, ETF 资金流出,COMEX 投机净持仓快速降低。一旦清洗结束,买盘 会从央行储备 + 实物消费 + 战略配置回流,30d 中位数反弹 +1.74% (历史 185 次触发, p&lt;0.0001)。 不需要预测宏观,只需识别&quot;超卖 + 加速下跌&quot;的技术形态。
 
 失效条件: 实际利率(TIPS yield)同期单边上行 &gt; 50bp — 黄金对冲价值实质性 减弱,反弹假设失效。或央行(尤其新兴市场)被报道净卖出黄金。</div></td>
-  <td>gold<br><span class="small">= 4549.20</span></td>
+  <td>gold<br><span class="small">= 4552.90</span></td>
   <td class="dir-up">GC=F ↑</td>
   <td class="num">30d</td>
   <td class="num">57.3%</td>
@@ -149,7 +149,7 @@
   <td><span class="tag-active">触发</span></td>
   <td>#24</td>
   <td><strong>QQQ中期动量配合趋势确认</strong> <span class="tag tag-research">research</span><div class="rationale">排除短期反转噪音，6月动量配合趋势过滤提升稳定性 (Jegadeesh &amp; Titman, 1993)</div></td>
-  <td>qqq<br><span class="small">= 711.87</span></td>
+  <td>qqq<br><span class="small">= 710.39</span></td>
   <td class="dir-up">QQQ ↑</td>
   <td class="num">30d</td>
   <td class="num">69.7%</td>
@@ -162,7 +162,7 @@
   <td><strong>QQQ 6m 涨幅 &gt; 8% + 站上 50dMA → 30d 续涨</strong> <span class="tag tag-playbook">playbook</span><div class="rationale">QQQ 过去 126 个交易日(6 个月)累计涨幅 &gt; 8%, 且当前价位于 50dMA 之上 —— 双重过滤排除&quot;短期反弹但中期未确立&quot;的噪音,只在中期 动量与短期趋势同时正向时入场。142 次历史触发 30d 均值 +2.35%, 方向命中 69.7%. QQQ 较 SPY 对动量信号更敏感(成长股 beta 高),所以同样规则 下的 alpha 比 SPY 大。
 
 失效条件: QQQ 跌破 50dMA 超过 2 个交易日 或 VIX 突破 25 — 动量崩盘的 早期信号,立即平仓避免动量股的 fat tail loss。</div></td>
-  <td>qqq<br><span class="small">= 711.87</span></td>
+  <td>qqq<br><span class="small">= 710.39</span></td>
   <td class="dir-up">QQQ ↑</td>
   <td class="num">30d</td>
   <td class="num">69.7%</td>
@@ -171,9 +171,22 @@
   <td class="num small">p=0.0000</td>
 </tr><tr>
   <td><span class="tag-active">触发</span></td>
+  <td>#68</td>
+  <td><strong>沪深300 站上 200dMA + 30d 累计 &gt; 5% → 30d 续涨</strong> <span class="tag tag-playbook">playbook</span><div class="rationale">沪深 300 站上 200 日均线 + 最近一个月累计涨幅 &gt; 5%, 是 A 股 bull regime 转换的标志:   (1) 北向资金净流入持续   (2) 公募基金仓位提升   (3) 政策面利好叙事建立 A 股趋势性强(国家队 + 机构主导),一旦确立中长期上行,30 天内续涨概率显著高于个股。 关键: 200dMA 是长期 regime 分界线,月度涨幅是趋势加速度, 两者叠加比单一信号更稳定。
+
+失效条件: DXY 单边突破 105 + 持续 — 强美元抽离新兴市场流动性,A 股 跟跌。或 hs300 跌破 50dMA 超过 2 个交易日 — 短期趋势破坏。</div></td>
+  <td>hs300<br><span class="small">= 4859.59</span></td>
+  <td class="dir-up">sh000300 ↑</td>
+  <td class="num">30d</td>
+  <td class="num">56.0%</td>
+  <td class="num">134</td>
+  <td class="num">+2.80%</td>
+  <td class="num small">p=0.0041</td>
+</tr><tr>
+  <td><span class="tag-active">触发</span></td>
   <td>#10</td>
   <td><strong>铜金比上升 → SMH上涨</strong> <span class="tag tag-research">research</span><div class="rationale">铜走强反映全球制造业和半导体需求回暖，铜是芯片生产的关键原材料</div></td>
-  <td>copper<br><span class="small">= 6.31</span></td>
+  <td>copper<br><span class="small">= 6.28</span></td>
   <td class="dir-up">SMH ↑</td>
   <td class="num">30d</td>
   <td class="num">64.8%</td>
@@ -186,84 +199,134 @@
   <td><strong>铜价突破 + 趋势确认 → SMH 30d 续涨</strong> <span class="tag tag-playbook">playbook</span><div class="rationale">铜是工业景气的实时温度计,中国制造 PMI / 全球资本开支景气一旦确认, 铜价站上 50 日均线 + 10/30 日均线比率 &gt; 1.02 (短期均线明显上拐), 意味着工业需求边际改善正在进行。半导体作为资本开支链条最敏感的 下游,30 日内会跟随上行 (历史 125 次 N, p=0.0031, mean +2.42%)。 关键是双重确认 (绝对水平 + 趋势速度), 单一条件容易抓到假信号。
 
 失效条件: 铜价单日跌破 50dMA 或 10/30 ratio 跌回 &lt; 1.0 — 工业需求拐头, 上行假设破裂。同时若 NVDA / AMD 出现财报负面 catalyst,半导体 可能脱钩铜价独立下跌,需提前止盈。</div></td>
-  <td>copper<br><span class="small">= 6.31</span></td>
+  <td>copper<br><span class="small">= 6.28</span></td>
   <td class="dir-up">SMH ↑</td>
   <td class="num">30d</td>
   <td class="num">64.8%</td>
   <td class="num">125</td>
   <td class="num">+2.42%</td>
   <td class="num small">p=0.0031</td>
+</tr><tr>
+  <td><span class="tag-active">触发</span></td>
+  <td>#69</td>
+  <td><strong>创业板指 站上 50dMA + 30d 累计 &gt; 8% → 30d 续涨</strong> <span class="tag tag-playbook">playbook</span><div class="rationale">创业板指 (sz399006) 站上 50dMA 且月度涨幅 &gt; 8%, 意味着:   (1) 高 beta 成长股 risk-on 模式启动   (2) 公募新基金发行火爆 → 资金推动   (3) 主题(半导体、新能源、AI、医药等)轮动赛道兑现 A 股小盘 + 成长股有更强的散户跟风 + 主题溢价,趋势一旦 确立持续性优于大盘。30 天内续涨幅度大于沪深 300。 但波动也更大: 单日跌幅可达 5%+, 要严格止损 + 减仓。
+
+失效条件: VIX 突破 25 + DXY 单日 + 1% — 全球 risk-off,高 beta 资产 首当其冲。或创业板 5d 跌幅 &gt; 7% — 趋势破坏。</div></td>
+  <td>chinext<br><span class="small">= 3929.06</span></td>
+  <td class="dir-up">sz399006 ↑</td>
+  <td class="num">30d</td>
+  <td class="num">49.2%</td>
+  <td class="num">118</td>
+  <td class="num">+2.25%</td>
+  <td class="num small">p=0.0571</td>
+</tr><tr>
+  <td><span class="tag-active">触发</span></td>
+  <td>#66</td>
+  <td><strong>黄金 50d 上穿 200d MA → 60d 续涨</strong> <span class="tag tag-playbook">playbook</span><div class="rationale">黄金 50d 均线上穿 200d 均线(经典金叉)是大宗商品趋势翻转 的最稳定信号之一。出现金叉通常意味着:   (1) 实际利率周期性见顶(黄金对冲属性激活)   (2) 央行储备增持(包括新兴市场央行)   (3) 通胀预期持续高位 历史上黄金金叉后 60 天内,中位数涨幅 +3-5%,胜率约 65%。 金叉是慢但稳的信号,对长期持仓友好。
+
+失效条件: 实际利率 (TIPS) 单月上行 &gt; 50bp — 黄金对冲价值被实际利率吃掉, 金叉信号被压制。或 DXY 单边突破 + 长期持续 — 美元强势压制 所有大宗商品。</div></td>
+  <td>gold<br><span class="small">= 4552.90</span></td>
+  <td class="dir-up">GC=F ↑</td>
+  <td class="num">60d</td>
+  <td class="num">57.1%</td>
+  <td class="num">77</td>
+  <td class="num">+3.28%</td>
+  <td class="num small">p=0.0010</td>
 </tr>
 </tbody>
 </table>
 
-<h2 id="indicators">⚡ 监测指标 · 9 个</h2>
+<h2 id="indicators">⚡ 监测指标 · 13 个</h2>
 <p class="small">每个指标的最新读数 + 有多少条 live 规则依赖它 + 今日有多少条被它触发激活</p>
 <table>
 <thead><tr><th>指标</th><th class="num">最新值</th><th>日期</th><th class="num">依赖规则数</th><th>今日激活</th></tr></thead>
 <tbody>
 <tr>
   <td><strong>vix</strong></td>
-  <td class="num">18.780</td>
+  <td class="num">18.290</td>
   <td class="small">2026-05-15</td>
-  <td class="num">12</td>
+  <td class="num">13</td>
   <td></td>
 </tr><tr>
+  <td><strong>gold</strong></td>
+  <td class="num">4552.900</td>
+  <td class="small">2026-05-15</td>
+  <td class="num">4</td>
+  <td> <span class="tag-active">3 激活</span></td>
+</tr><tr>
   <td><strong>dxy</strong></td>
-  <td class="num">99.230</td>
+  <td class="num">99.255</td>
   <td class="small">2026-05-15</td>
   <td class="num">4</td>
   <td></td>
 </tr><tr>
-  <td><strong>gold</strong></td>
-  <td class="num">4549.200</td>
-  <td class="small">2026-05-15</td>
-  <td class="num">3</td>
-  <td> <span class="tag-active">2 激活</span></td>
-</tr><tr>
-  <td><strong>copper</strong></td>
-  <td class="num">6.306</td>
-  <td class="small">2026-05-15</td>
-  <td class="num">2</td>
-  <td> <span class="tag-active">2 激活</span></td>
-</tr><tr>
   <td><strong>oil</strong></td>
-  <td class="num">99.420</td>
-  <td class="small">2026-05-15</td>
-  <td class="num">2</td>
-  <td></td>
-</tr><tr>
-  <td><strong>us_10y_yield</strong></td>
-  <td class="num">4.572</td>
-  <td class="small">2026-05-15</td>
-  <td class="num">2</td>
-  <td></td>
-</tr><tr>
-  <td><strong>hyg</strong></td>
-  <td class="num">79.665</td>
+  <td class="num">100.390</td>
   <td class="small">2026-05-15</td>
   <td class="num">2</td>
   <td></td>
 </tr><tr>
   <td><strong>qqq</strong></td>
-  <td class="num">711.870</td>
+  <td class="num">710.390</td>
   <td class="small">2026-05-15</td>
   <td class="num">2</td>
   <td> <span class="tag-active">2 激活</span></td>
 </tr><tr>
+  <td><strong>hyg</strong></td>
+  <td class="num">79.605</td>
+  <td class="small">2026-05-15</td>
+  <td class="num">2</td>
+  <td></td>
+</tr><tr>
   <td><strong>spy</strong></td>
-  <td class="num">742.112</td>
+  <td class="num">741.030</td>
   <td class="small">2026-05-15</td>
   <td class="num">2</td>
   <td> <span class="tag-active">2 激活</span></td>
+</tr><tr>
+  <td><strong>us_10y_yield</strong></td>
+  <td class="num">4.569</td>
+  <td class="small">2026-05-15</td>
+  <td class="num">2</td>
+  <td></td>
+</tr><tr>
+  <td><strong>copper</strong></td>
+  <td class="num">6.285</td>
+  <td class="small">2026-05-15</td>
+  <td class="num">2</td>
+  <td> <span class="tag-active">2 激活</span></td>
+</tr><tr>
+  <td><strong>btc</strong></td>
+  <td class="num">79129.227</td>
+  <td class="small">2026-05-15</td>
+  <td class="num">1</td>
+  <td></td>
+</tr><tr>
+  <td><strong>hs300</strong></td>
+  <td class="num">4859.593</td>
+  <td class="small">2026-05-15</td>
+  <td class="num">1</td>
+  <td> <span class="tag-active">1 激活</span></td>
+</tr><tr>
+  <td><strong>chinext</strong></td>
+  <td class="num">3929.064</td>
+  <td class="small">2026-05-15</td>
+  <td class="num">1</td>
+  <td> <span class="tag-active">1 激活</span></td>
+</tr><tr>
+  <td><strong>us_3m_yield</strong></td>
+  <td class="num">3.593</td>
+  <td class="small">2026-05-15</td>
+  <td class="num">1</td>
+  <td></td>
 </tr>
 </tbody>
 </table>
 
-<h2 id="knowledge">📚 知识库 · 31 条 live 规则</h2>
+<h2 id="knowledge">📚 知识库 · 37 条 live 规则</h2>
 <p class="small">每条规则带"怎么读"白话总结 + 最近 8 次触发的实际表现,让你看到这条知识是怎么被数据验证的。</p>
 
-<h3><span class="tag tag-playbook">playbook</span> · 14 条</h3>
+<h3><span class="tag tag-playbook">playbook</span> · 20 条</h3>
 <table>
 <thead><tr><th>IH</th><th>规则 + 验证证据</th><th>指标</th><th>目标</th><th class="num">期限</th><th class="num">方向命中</th><th class="num">N</th><th class="num">均值</th><th class="num">p</th></tr></thead>
 <tbody>
@@ -656,6 +719,96 @@
   <td class="num">75.3%</td>
   <td class="num">275</td>
   <td class="num">+4.07%</td>
+  <td class="num small">0.0000</td>
+</tr><tr>
+  <td>#71</td>
+  <td>
+    <strong>3m 收益率 &gt; 10y(倒挂) → TLT 60d 走强</strong>
+    <div class="rationale">美国 3 月期短端收益率高于 10 年期长端收益率(收益率曲线 &quot;深度倒挂&quot;),是历史上最稳定的衰退前兆 — 自 1960 年起 所有 7 次 NBER 衰退前 6-18 月都出现过。 在倒挂期间 + 之后的早期衰退阶段:   (1) 长端避险买盘持续 → TLT 走强   (2) Fed 终将转向降息 → TLT 折现获益   (3) 信用利差扩张 → flight-to-quality 进国债 60 天窗口对应&quot;早期衰退 + 政策预期重定价&quot;阶段。
+
+失效条件: Fed 突然鹰派加码加息 — 短端继续涨,长端跟涨,TLT 跌。或 通胀超预期反弹 + 政策预期重新鹰化。</div>
+    
+<div class="evidence">
+  <div class="summary">📖 <b>怎么读这条规则:</b> 过去 <b>206</b> 次 [美国 3 月期短债收益率] 满足触发条件后,有 <b>195</b> 次 [20+年美债 ETF] 在 <b>60 天</b>内上涨——方向命中率 <b>94.7%</b>(比抛硬币高 +44.7pp),平均上涨幅度 <b>+4.90%</b>。系统每天监测 [美国 3 月期短债收益率],再次出现 [美国 3 月期短债收益率 高于 4.5] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <details class="detail" open>
+    <summary>📅 最近 8 次触发明细(共 206 次历史触发)</summary>
+    <table class="triggers">
+      <thead><tr><th>触发日</th><th class="num">美国 3 月期短债收益率 当时值</th><th class="num">20+年美债 ETF 触发当日</th><th class="num">60d 后</th><th class="num">变化</th><th>结果</th></tr></thead>
+      <tbody>
+<tr>
+  <td>2024-09-09</td>
+  <td class="num">4.89</td>
+  <td class="num">93.67</td>
+  <td class="num">87.88</td>
+  <td class="num loss">-6.18%</td>
+  <td><span class="loss">✗ 落空</span></td>
+</tr><tr>
+  <td>2024-07-09</td>
+  <td class="num">5.22</td>
+  <td class="num">85.61</td>
+  <td class="num">88.65</td>
+  <td class="num win">+3.55%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2024-05-10</td>
+  <td class="num">5.24</td>
+  <td class="num">82.95</td>
+  <td class="num">89.58</td>
+  <td class="num win">+7.99%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2024-03-11</td>
+  <td class="num">5.24</td>
+  <td class="num">86.52</td>
+  <td class="num">83.73</td>
+  <td class="num loss">-3.22%</td>
+  <td><span class="loss">✗ 落空</span></td>
+</tr><tr>
+  <td>2024-01-09</td>
+  <td class="num">5.23</td>
+  <td class="num">87.14</td>
+  <td class="num">84.38</td>
+  <td class="num loss">-3.17%</td>
+  <td><span class="loss">✗ 落空</span></td>
+</tr><tr>
+  <td>2023-11-10</td>
+  <td class="num">5.25</td>
+  <td class="num">79.04</td>
+  <td class="num">85.41</td>
+  <td class="num win">+8.06%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2023-09-11</td>
+  <td class="num">5.29</td>
+  <td class="num">84.28</td>
+  <td class="num">85.21</td>
+  <td class="num win">+1.10%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2023-07-11</td>
+  <td class="num">5.24</td>
+  <td class="num">89.67</td>
+  <td class="num">77.76</td>
+  <td class="num loss">-13.28%</td>
+  <td><span class="loss">✗ 落空</span></td>
+</tr>
+      </tbody>
+    </table>
+  </details>
+</div>
+
+    <details class="detail"><summary>rule_spec JSON</summary><pre>{
+  &quot;type&quot;: &quot;level&quot;,
+  &quot;op&quot;: &quot;&gt;&quot;,
+  &quot;threshold&quot;: 4.5
+}</pre></details>
+  </td>
+  <td class="small">us_3m_yield</td>
+  <td class="dir-up">TLT ↑</td>
+  <td class="num">60d</td>
+  <td class="num">94.7%</td>
+  <td class="num">206</td>
+  <td class="num">+4.90%</td>
   <td class="num small">0.0000</td>
 </tr><tr>
   <td>#51</td>
@@ -1320,6 +1473,106 @@
   <td class="num">+2.35%</td>
   <td class="num small">0.0000</td>
 </tr><tr>
+  <td>#68</td>
+  <td>
+    <strong>沪深300 站上 200dMA + 30d 累计 &gt; 5% → 30d 续涨</strong>
+    <div class="rationale">沪深 300 站上 200 日均线 + 最近一个月累计涨幅 &gt; 5%, 是 A 股 bull regime 转换的标志:   (1) 北向资金净流入持续   (2) 公募基金仓位提升   (3) 政策面利好叙事建立 A 股趋势性强(国家队 + 机构主导),一旦确立中长期上行,30 天内续涨概率显著高于个股。 关键: 200dMA 是长期 regime 分界线,月度涨幅是趋势加速度, 两者叠加比单一信号更稳定。
+
+失效条件: DXY 单边突破 105 + 持续 — 强美元抽离新兴市场流动性,A 股 跟跌。或 hs300 跌破 50dMA 超过 2 个交易日 — 短期趋势破坏。</div>
+    
+<div class="evidence">
+  <div class="summary">📖 <b>怎么读这条规则:</b> 过去 <b>134</b> 次 [沪深 300 指数] 满足触发条件后,有 <b>75</b> 次 [沪深 300 指数] 在 <b>30 天</b>内上涨——方向命中率 <b>56.0%</b>(比抛硬币高 +6.0pp),平均上涨幅度 <b>+2.80%</b>。系统每天监测 [沪深 300 指数],再次出现 [沪深 300 指数 高于自己的 200 日均线 且 沪深 300 指数 过去 30 日累计变化 大于 5] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <details class="detail" open>
+    <summary>📅 最近 8 次触发明细(共 134 次历史触发)</summary>
+    <table class="triggers">
+      <thead><tr><th>触发日</th><th class="num">沪深 300 指数 当时值</th><th class="num">沪深 300 指数 触发当日</th><th class="num">30d 后</th><th class="num">变化</th><th>结果</th></tr></thead>
+      <tbody>
+<tr>
+  <td>2026-01-26</td>
+  <td class="num">4706.96</td>
+  <td class="num">4705.69</td>
+  <td class="num">4669.14</td>
+  <td class="num loss">-0.78%</td>
+  <td><span class="loss">✗ 落空</span></td>
+</tr><tr>
+  <td>2025-12-26</td>
+  <td class="num">4657.24</td>
+  <td class="num">4639.37</td>
+  <td class="num">4719.58</td>
+  <td class="num win">+1.73%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2025-11-12</td>
+  <td class="num">4645.91</td>
+  <td class="num">4702.07</td>
+  <td class="num">4639.37</td>
+  <td class="num loss">-1.33%</td>
+  <td><span class="loss">✗ 落空</span></td>
+</tr><tr>
+  <td>2025-10-13</td>
+  <td class="num">4593.98</td>
+  <td class="num">4539.06</td>
+  <td class="num">4526.66</td>
+  <td class="num loss">-0.27%</td>
+  <td><span class="loss">✗ 落空</span></td>
+</tr><tr>
+  <td>2025-09-12</td>
+  <td class="num">4522.00</td>
+  <td class="num">4533.06</td>
+  <td class="num">4709.91</td>
+  <td class="num win">+3.90%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2025-08-13</td>
+  <td class="num">4176.58</td>
+  <td class="num">4173.31</td>
+  <td class="num">4620.05</td>
+  <td class="num win">+10.70%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2025-07-14</td>
+  <td class="num">4017.67</td>
+  <td class="num">4019.06</td>
+  <td class="num">4496.76</td>
+  <td class="num win">+11.89%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2025-06-13</td>
+  <td class="num">3864.18</td>
+  <td class="num">3873.80</td>
+  <td class="num">4075.59</td>
+  <td class="num win">+5.21%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr>
+      </tbody>
+    </table>
+  </details>
+</div>
+
+    <details class="detail"><summary>rule_spec JSON</summary><pre>{
+  &quot;type&quot;: &quot;and&quot;,
+  &quot;conditions&quot;: [
+    {
+      &quot;type&quot;: &quot;above_ma&quot;,
+      &quot;window&quot;: 200
+    },
+    {
+      &quot;type&quot;: &quot;change&quot;,
+      &quot;lookback&quot;: 30,
+      &quot;op&quot;: &quot;&gt;&quot;,
+      &quot;threshold&quot;: 5
+    }
+  ]
+}</pre></details>
+  </td>
+  <td class="small">hs300</td>
+  <td class="dir-up">sh000300 ↑</td>
+  <td class="num">30d</td>
+  <td class="num">56.0%</td>
+  <td class="num">134</td>
+  <td class="num">+2.80%</td>
+  <td class="num small">0.0041</td>
+</tr><tr>
   <td>#44</td>
   <td>
     <strong>铜价突破 + 趋势确认 → SMH 30d 续涨</strong>
@@ -1420,6 +1673,106 @@
   <td class="num">125</td>
   <td class="num">+2.42%</td>
   <td class="num small">0.0031</td>
+</tr><tr>
+  <td>#69</td>
+  <td>
+    <strong>创业板指 站上 50dMA + 30d 累计 &gt; 8% → 30d 续涨</strong>
+    <div class="rationale">创业板指 (sz399006) 站上 50dMA 且月度涨幅 &gt; 8%, 意味着:   (1) 高 beta 成长股 risk-on 模式启动   (2) 公募新基金发行火爆 → 资金推动   (3) 主题(半导体、新能源、AI、医药等)轮动赛道兑现 A 股小盘 + 成长股有更强的散户跟风 + 主题溢价,趋势一旦 确立持续性优于大盘。30 天内续涨幅度大于沪深 300。 但波动也更大: 单日跌幅可达 5%+, 要严格止损 + 减仓。
+
+失效条件: VIX 突破 25 + DXY 单日 + 1% — 全球 risk-off,高 beta 资产 首当其冲。或创业板 5d 跌幅 &gt; 7% — 趋势破坏。</div>
+    
+<div class="evidence">
+  <div class="summary">📖 <b>怎么读这条规则:</b> 过去 <b>118</b> 次 [创业板指] 满足触发条件后,有 <b>58</b> 次 [创业板指] 在 <b>30 天</b>内上涨——方向命中率 <b>49.2%</b>(比抛硬币高 -0.8pp),平均上涨幅度 <b>+2.25%</b>。系统每天监测 [创业板指],再次出现 [创业板指 高于自己的 50 日均线 且 创业板指 过去 30 日累计变化 大于 8] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <details class="detail" open>
+    <summary>📅 最近 8 次触发明细(共 118 次历史触发)</summary>
+    <table class="triggers">
+      <thead><tr><th>触发日</th><th class="num">创业板指 当时值</th><th class="num">创业板指 触发当日</th><th class="num">30d 后</th><th class="num">变化</th><th>结果</th></tr></thead>
+      <tbody>
+<tr>
+  <td>2026-02-24</td>
+  <td class="num">3308.26</td>
+  <td class="num">3354.82</td>
+  <td class="num">3476.44</td>
+  <td class="num win">+3.63%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2026-01-16</td>
+  <td class="num">3361.02</td>
+  <td class="num">3337.61</td>
+  <td class="num">3216.94</td>
+  <td class="num loss">-3.62%</td>
+  <td><span class="loss">✗ 落空</span></td>
+</tr><tr>
+  <td>2025-12-17</td>
+  <td class="num">3175.91</td>
+  <td class="num">3107.07</td>
+  <td class="num">3264.11</td>
+  <td class="num win">+5.05%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2025-10-24</td>
+  <td class="num">3171.57</td>
+  <td class="num">3234.45</td>
+  <td class="num">3163.68</td>
+  <td class="num loss">-2.19%</td>
+  <td><span class="loss">✗ 落空</span></td>
+</tr><tr>
+  <td>2025-09-24</td>
+  <td class="num">3185.57</td>
+  <td class="num">3235.76</td>
+  <td class="num">3178.83</td>
+  <td class="num loss">-1.76%</td>
+  <td><span class="loss">✗ 落空</span></td>
+</tr><tr>
+  <td>2025-08-25</td>
+  <td class="num">2762.99</td>
+  <td class="num">2742.13</td>
+  <td class="num">3113.26</td>
+  <td class="num win">+13.53%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2025-07-25</td>
+  <td class="num">2340.06</td>
+  <td class="num">2362.60</td>
+  <td class="num">3053.75</td>
+  <td class="num win">+29.25%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2025-06-25</td>
+  <td class="num">2128.39</td>
+  <td class="num">2114.43</td>
+  <td class="num">2379.82</td>
+  <td class="num win">+12.55%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr>
+      </tbody>
+    </table>
+  </details>
+</div>
+
+    <details class="detail"><summary>rule_spec JSON</summary><pre>{
+  &quot;type&quot;: &quot;and&quot;,
+  &quot;conditions&quot;: [
+    {
+      &quot;type&quot;: &quot;above_ma&quot;,
+      &quot;window&quot;: 50
+    },
+    {
+      &quot;type&quot;: &quot;change&quot;,
+      &quot;lookback&quot;: 30,
+      &quot;op&quot;: &quot;&gt;&quot;,
+      &quot;threshold&quot;: 8
+    }
+  ]
+}</pre></details>
+  </td>
+  <td class="small">chinext</td>
+  <td class="dir-up">sz399006 ↑</td>
+  <td class="num">30d</td>
+  <td class="num">49.2%</td>
+  <td class="num">118</td>
+  <td class="num">+2.25%</td>
+  <td class="num small">0.0571</td>
 </tr><tr>
   <td>#59</td>
   <td>
@@ -1522,6 +1875,196 @@
   <td class="num">+1.24%</td>
   <td class="num small">0.0003</td>
 </tr><tr>
+  <td>#65</td>
+  <td>
+    <strong>BTC 站上 200dMA + 30d &gt; 10% → QQQ 30d 顺风</strong>
+    <div class="rationale">BTC 长期 200d MA 是 crypto bull/bear regime 的硬分割线。 BTC 站上 200dMA 且最近 30d 涨幅 &gt; 10%,意味着:   (1) 全球高 beta 风险资产 risk-on 周期启动   (2) 流动性宽松格局形成   (3) 散户 + 机构都在加仓成长资产 纳指 100 (QQQ) 作为高 beta 成长股代表,在这种 risk-on + 流动性环境下,30 天内倾向继续走强。
+
+失效条件: BTC 单日跌破 200dMA — bull regime 破裂。或 VIX 跳升 &gt; 25 同期 — risk-on 转向。两者同时出现 → 立即止盈。</div>
+    
+<div class="evidence">
+  <div class="summary">📖 <b>怎么读这条规则:</b> 过去 <b>78</b> 次 [比特币] 满足触发条件后,有 <b>57</b> 次 [纳指 100 ETF (QQQ)] 在 <b>30 天</b>内上涨——方向命中率 <b>73.1%</b>(比抛硬币高 +23.1pp),平均上涨幅度 <b>+3.26%</b>。系统每天监测 [比特币],再次出现 [比特币 高于自己的 200 日均线 且 比特币 过去 30 日累计变化 大于 10] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <details class="detail" open>
+    <summary>📅 最近 8 次触发明细(共 78 次历史触发)</summary>
+    <table class="triggers">
+      <thead><tr><th>触发日</th><th class="num">比特币 当时值</th><th class="num">纳指 100 ETF (QQQ) 触发当日</th><th class="num">30d 后</th><th class="num">变化</th><th>结果</th></tr></thead>
+      <tbody>
+<tr>
+  <td>2025-10-25</td>
+  <td class="num">111641.73</td>
+  <td class="num">626.49</td>
+  <td class="num">623.99</td>
+  <td class="num loss">-0.40%</td>
+  <td><span class="loss">✗ 落空</span></td>
+</tr><tr>
+  <td>2025-09-17</td>
+  <td class="num">116468.51</td>
+  <td class="num">593.12</td>
+  <td class="num">630.47</td>
+  <td class="num win">+6.30%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2025-07-28</td>
+  <td class="num">117924.48</td>
+  <td class="num">565.16</td>
+  <td class="num">584.49</td>
+  <td class="num win">+3.42%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2025-06-28</td>
+  <td class="num">107327.70</td>
+  <td class="num">549.60</td>
+  <td class="num">577.74</td>
+  <td class="num win">+5.12%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2025-05-22</td>
+  <td class="num">111673.28</td>
+  <td class="num">506.79</td>
+  <td class="num">549.99</td>
+  <td class="num win">+8.52%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2025-04-22</td>
+  <td class="num">93441.89</td>
+  <td class="num">452.37</td>
+  <td class="num">528.14</td>
+  <td class="num win">+16.75%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2025-01-24</td>
+  <td class="num">104819.48</td>
+  <td class="num">510.97</td>
+  <td class="num">465.39</td>
+  <td class="num loss">-8.92%</td>
+  <td><span class="loss">✗ 落空</span></td>
+</tr><tr>
+  <td>2024-12-25</td>
+  <td class="num">99299.20</td>
+  <td class="num">526.26</td>
+  <td class="num">525.92</td>
+  <td class="num loss">-0.07%</td>
+  <td><span class="loss">✗ 落空</span></td>
+</tr>
+      </tbody>
+    </table>
+  </details>
+</div>
+
+    <details class="detail"><summary>rule_spec JSON</summary><pre>{
+  &quot;type&quot;: &quot;and&quot;,
+  &quot;conditions&quot;: [
+    {
+      &quot;type&quot;: &quot;above_ma&quot;,
+      &quot;window&quot;: 200
+    },
+    {
+      &quot;type&quot;: &quot;change&quot;,
+      &quot;lookback&quot;: 30,
+      &quot;op&quot;: &quot;&gt;&quot;,
+      &quot;threshold&quot;: 10
+    }
+  ]
+}</pre></details>
+  </td>
+  <td class="small">btc</td>
+  <td class="dir-up">QQQ ↑</td>
+  <td class="num">30d</td>
+  <td class="num">73.1%</td>
+  <td class="num">78</td>
+  <td class="num">+3.26%</td>
+  <td class="num small">0.0000</td>
+</tr><tr>
+  <td>#66</td>
+  <td>
+    <strong>黄金 50d 上穿 200d MA → 60d 续涨</strong>
+    <div class="rationale">黄金 50d 均线上穿 200d 均线(经典金叉)是大宗商品趋势翻转 的最稳定信号之一。出现金叉通常意味着:   (1) 实际利率周期性见顶(黄金对冲属性激活)   (2) 央行储备增持(包括新兴市场央行)   (3) 通胀预期持续高位 历史上黄金金叉后 60 天内,中位数涨幅 +3-5%,胜率约 65%。 金叉是慢但稳的信号,对长期持仓友好。
+
+失效条件: 实际利率 (TIPS) 单月上行 &gt; 50bp — 黄金对冲价值被实际利率吃掉, 金叉信号被压制。或 DXY 单边突破 + 长期持续 — 美元强势压制 所有大宗商品。</div>
+    
+<div class="evidence">
+  <div class="summary">📖 <b>怎么读这条规则:</b> 过去 <b>77</b> 次 [黄金期货] 满足触发条件后,有 <b>44</b> 次 [黄金期货] 在 <b>60 天</b>内上涨——方向命中率 <b>57.1%</b>(比抛硬币高 +7.1pp),平均上涨幅度 <b>+3.28%</b>。系统每天监测 [黄金期货],再次出现 [黄金期货 短期(50日)均线 上穿 长期(200日)均线] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <details class="detail" open>
+    <summary>📅 最近 8 次触发明细(共 77 次历史触发)</summary>
+    <table class="triggers">
+      <thead><tr><th>触发日</th><th class="num">黄金期货 当时值</th><th class="num">黄金期货 触发当日</th><th class="num">60d 后</th><th class="num">变化</th><th>结果</th></tr></thead>
+      <tbody>
+<tr>
+  <td>2025-11-24</td>
+  <td class="num">4091.90</td>
+  <td class="num">4139.20</td>
+  <td class="num">5204.70</td>
+  <td class="num win">+25.74%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2025-08-25</td>
+  <td class="num">3373.80</td>
+  <td class="num">3388.60</td>
+  <td class="num">4091.90</td>
+  <td class="num win">+20.75%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2025-05-27</td>
+  <td class="num">3299.10</td>
+  <td class="num">3293.60</td>
+  <td class="num">3388.60</td>
+  <td class="num win">+2.88%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2025-02-24</td>
+  <td class="num">2947.90</td>
+  <td class="num">2904.50</td>
+  <td class="num">3299.10</td>
+  <td class="num win">+13.59%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2024-11-25</td>
+  <td class="num">2616.80</td>
+  <td class="num">2620.30</td>
+  <td class="num">2947.90</td>
+  <td class="num win">+12.50%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2024-08-26</td>
+  <td class="num">2517.70</td>
+  <td class="num">2516.00</td>
+  <td class="num">2616.80</td>
+  <td class="num win">+4.01%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2024-05-28</td>
+  <td class="num">2355.20</td>
+  <td class="num">2340.30</td>
+  <td class="num">2516.00</td>
+  <td class="num win">+7.51%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2024-02-28</td>
+  <td class="num">2033.00</td>
+  <td class="num">2045.70</td>
+  <td class="num">2340.30</td>
+  <td class="num win">+14.40%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr>
+      </tbody>
+    </table>
+  </details>
+</div>
+
+    <details class="detail"><summary>rule_spec JSON</summary><pre>{
+  &quot;type&quot;: &quot;ma_above&quot;,
+  &quot;short&quot;: 50,
+  &quot;long&quot;: 200
+}</pre></details>
+  </td>
+  <td class="small">gold</td>
+  <td class="dir-up">GC=F ↑</td>
+  <td class="num">60d</td>
+  <td class="num">57.1%</td>
+  <td class="num">77</td>
+  <td class="num">+3.28%</td>
+  <td class="num small">0.0010</td>
+</tr><tr>
   <td>#41</td>
   <td>
     <strong>强美元周期 → 中证500 60d 承压</strong>
@@ -1620,6 +2163,96 @@
   <td class="num">64</td>
   <td class="num">+7.38%</td>
   <td class="num small">0.0000</td>
+</tr><tr>
+  <td>#63</td>
+  <td>
+    <strong>VIX 突破 30(极度恐慌)→ SPY 60d 深度反弹</strong>
+    <div class="rationale">VIX 突破 30 是经典的 &quot;全面恐慌&quot; 信号: 隐含波动率 50%+ 年化, put/call ratio 飙升,protective put 被疯抢。这种状态在历史上 短暂出现(每年 1-3 次),通常对应:   (1) 系统性杠杆基金被迫平仓(强制供给)   (2) 散户恐慌出逃(情绪买点)   (3) 央行流动性 backstop 启动(政策买点) 60 天回看视角下 SPY 均值反弹幅度 +6-10%(标普500 历次危机 后 2 个月的恢复速度)。 比 30d 视角(已有 PB)更长,对应&quot;危机后修复&quot;,不是&quot;短期反弹&quot;。
+
+失效条件: VIX 持续 &gt; 30 超过 15 个交易日 — 进入持续熊市,不只是恐慌 高峰。或 SPY 跌穿 200dMA 后又跌 &gt; 5% — 趋势性下行,反弹空间 会被结构性抛售压制。</div>
+    
+<div class="evidence">
+  <div class="summary">📖 <b>怎么读这条规则:</b> 过去 <b>45</b> 次 [VIX 恐慌指数] 满足触发条件后,有 <b>33</b> 次 [标普 500 ETF (SPY)] 在 <b>60 天</b>内上涨——方向命中率 <b>73.3%</b>(比抛硬币高 +23.3pp),平均上涨幅度 <b>+4.17%</b>。系统每天监测 [VIX 恐慌指数],再次出现 [VIX 恐慌指数 高于 30.0] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <details class="detail" open>
+    <summary>📅 最近 8 次触发明细(共 45 次历史触发)</summary>
+    <table class="triggers">
+      <thead><tr><th>触发日</th><th class="num">VIX 恐慌指数 当时值</th><th class="num">标普 500 ETF (SPY) 触发当日</th><th class="num">60d 后</th><th class="num">变化</th><th>结果</th></tr></thead>
+      <tbody>
+<tr>
+  <td>2025-04-03</td>
+  <td class="num">30.02</td>
+  <td class="num">499.55</td>
+  <td class="num">620.08</td>
+  <td class="num win">+24.13%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2024-08-05</td>
+  <td class="num">38.57</td>
+  <td class="num">511.39</td>
+  <td class="num">559.78</td>
+  <td class="num win">+9.46%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2022-09-26</td>
+  <td class="num">32.26</td>
+  <td class="num">346.76</td>
+  <td class="num">365.63</td>
+  <td class="num win">+5.44%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2022-04-26</td>
+  <td class="num">33.52</td>
+  <td class="num">394.85</td>
+  <td class="num">371.49</td>
+  <td class="num loss">-5.92%</td>
+  <td><span class="loss">✗ 落空</span></td>
+</tr><tr>
+  <td>2022-02-23</td>
+  <td class="num">31.02</td>
+  <td class="num">404.03</td>
+  <td class="num">376.02</td>
+  <td class="num loss">-6.93%</td>
+  <td><span class="loss">✗ 落空</span></td>
+</tr><tr>
+  <td>2021-12-01</td>
+  <td class="num">31.12</td>
+  <td class="num">429.97</td>
+  <td class="num">413.08</td>
+  <td class="num loss">-3.93%</td>
+  <td><span class="loss">✗ 落空</span></td>
+</tr><tr>
+  <td>2021-01-27</td>
+  <td class="num">37.21</td>
+  <td class="num">351.55</td>
+  <td class="num">389.84</td>
+  <td class="num win">+10.89%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr><tr>
+  <td>2020-11-02</td>
+  <td class="num">37.13</td>
+  <td class="num">311.49</td>
+  <td class="num">350.25</td>
+  <td class="num win">+12.44%</td>
+  <td><span class="win">✓ 应验</span></td>
+</tr>
+      </tbody>
+    </table>
+  </details>
+</div>
+
+    <details class="detail"><summary>rule_spec JSON</summary><pre>{
+  &quot;type&quot;: &quot;level&quot;,
+  &quot;op&quot;: &quot;&gt;&quot;,
+  &quot;threshold&quot;: 30.0
+}</pre></details>
+  </td>
+  <td class="small">vix</td>
+  <td class="dir-up">SPY ↑</td>
+  <td class="num">60d</td>
+  <td class="num">73.3%</td>
+  <td class="num">45</td>
+  <td class="num">+4.17%</td>
+  <td class="num small">0.0071</td>
 </tr>
 </tbody>
 </table>

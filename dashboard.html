@@ -111,7 +111,7 @@
 </head>
 <body>
 <h1>📡 say_validate · 知识与监测看板</h1>
-<div class="small">最后刷新: <strong>2026-05-16 12:10 北京</strong> · 由 4h launchd 流水线自动更新。高把握信号触发时直接 Telegram 推送。</div>
+<div class="small">最后刷新: <strong>2026-05-16 14:01 北京</strong> · 由 4h launchd 流水线自动更新。高把握信号触发时直接 Telegram 推送。</div>
 
 <nav>
   <a href="#summary">📊 总览</a>
@@ -146,6 +146,56 @@
 <p class="small">每个 LLM-driven supervisor 跑完后写入这里(不推 TG)。最近一次时间 + 状态 + 摘要 + 可展开详情。</p>
 
 <div class="sup-card ok">
+  <h4>🔬 研究产出审计 (24h)</h4>
+  <div class="sup-meta">05-16 14:01 北京 · status=ok  · runs_24h=14 · total_candidates=276 · live_added=21 · yield_pct=7.6 · hung_runs=0 · avg_duration_min=19 · zero_yield_runs=5</div>
+  <div class="sup-summary">跑 14 次,0 卡死;候选 276 个,live 新增 21 条(含 auto-tune),yield 7.6%</div>
+  
+  <details class="detail">
+    <summary>展开详情</summary>
+    <div class="sup-details-md">## 24h 内 research 跑次 (R-0027 → R-0040, 共 14 次)
+
+| Run | 子主题 | 候选 | live | rej | 时长 |
+|-----|--------|------|------|-----|------|
+| R-0027 | AAII 散户调查 | 20 | 0 | 19 | 13m |
+| R-0028 | 节假日效应 | 20 | 0 | 20 | 14m |
+| R-0029 | 配对交易 | 20 | 0 | 20 | 21m |
+| R-0030 | 美元微笑理论 | 20 | 5 | 15 | 25m |
+| R-0031 | 因子动量 | 20 | 1 | 18 | 18m |
+| R-0032 | 铜博士 vs 工业生产 | 20 | 0 | 20 | 19m |
+| R-0033 | 美元 funding 紧张 | 20 | 1 | 19 | 19m |
+| R-0034 | 中介机构杠杆 | 20 | 1 | 19 | 20m |
+| R-0035 | 新闻文本情绪 | 19 | 0 | 19 | 18m |
+| R-0036 | 黄金 vs 实际利率 | 20 | 0 | 20 | 16m |
+| R-0037 | 实际利率 vs 名义利率 | 20 | 1 | 19 | 22m |
+| R-0038 | Fed 决议日反应 | 17 | 3 | 13 | 25m |
+| R-0039 | 时序动量 | 20 | 1 | 19 | 17m |
+| R-0040 | 行业动量轮动 | 20 | 0 | 20 | 20m |
+| **合计** | | **276** | **13** | **260** | **平均 19m** |
+
+&gt; 注:n_added_live 列(13)是研究档案直接验证通过数;**auto-tune 路径额外**入库 live 8 条,合计 24h 内打标 `[AUTO-TUNED` 的 live=21。
+
+## yield 分析
+
+- 候选总数: 276
+- 24h 内新增 live(auto-tuned 含): **21 条** → yield = **7.6%**
+- 仅算研究档案直接添加: 13/276 = 4.7%
+- DB 24h 内新增 hypothesis 分布: live=39, weak=13, retired=4, candidate=2(其中 39 live 含来自更早候选回扫的)
+- 拒绝率: 94%(260/276),正常水平,说明 LLM 候选筛选偏严
+
+## 异常
+
+- ✅ 全部 14 次 `status=completed`,**0 卡死 / 0 失败**
+- ✅ 时长 13–25 分钟,无异常拉长
+- ✅ 节奏稳定:平均每 ~1.7h 一次,KB 探索覆盖 14 个不同 subtopic
+- ⚠️ R-0027/0028/0032/0036/0040 全军覆没(live=0),AAII/节假日/铜博士/黄金-实际利率/行业动量这些经典主题难产 — 不算异常但值得关注:可能候选生成器对&quot;经典老主题&quot;的差异化不够,撞到 dedup
+
+## 结论
+
+研究产线健康,auto-tune 接入后 yield 从历史 ~3% 抬升到 7.6%,**1× 阈值达成**。</div>
+  </details>
+</div>
+
+<div class="sup-card ok">
   <h4>⚖️ 高把握闸门自调节建议</h4>
   <div class="sup-meta">05-16 12:10 北京 · status=ok  · n_pushed=0 · n_closed=0 · realized_hit_pct=None · realized_alpha_pct=None · recommendations_count=0</div>
   <div class="sup-summary">上周 TG 推送 0 条, 闭环 0 条 — 样本太少, 无调参建议</div>
@@ -174,56 +224,6 @@ _无_
 - HIGH_CONVICTION_MIN_MEAN_PCT
 
 按建议值更新, 重启流水线即生效。</div>
-  </details>
-</div>
-
-<div class="sup-card ok">
-  <h4>🔬 研究产出审计 (24h)</h4>
-  <div class="sup-meta">05-16 11:14 北京 · status=ok  · runs_24h=12 · total_candidates=236 · live_added=32 · live_auto_tuned=14 · yield_pct=13.6 · yield_auto_tuned_pct=5.9 · hung_runs=0 · avg_duration_min=19</div>
-  <div class="sup-summary">12 次 research, 候选 236, live 新增 32 (auto-tuned 14), yield 13.6%, 无 hang</div>
-  
-  <details class="detail">
-    <summary>展开详情</summary>
-    <div class="sup-details-md">## 24h 内 research 跑次 (R-0027 → R-0038, 12 次)
-
-| Run | 时刻 | 子主题 | 候选 | 状态分布 | 时长 |
-|-----|------|--------|------|---------|------|
-| R-0027 | 05-15 19:36 | AAII 散户调查 | 20 | rejected=19, dup=1 | 13m |
-| R-0028 | 05-15 20:51 | 节假日效应 | 20 | rejected=20 | 14m |
-| R-0029 | 05-15 22:14 | 配对交易 | 20 | unknown=9, rejected=11 | 21m |
-| R-0030 | 05-15 23:41 | 美元微笑理论 | 20 | unknown=16, rejected=4 | 25m |
-| R-0031 | 05-16 01:01 | 因子动量 | 20 | unknown=10, rejected=10 | 18m |
-| R-0032 | 05-16 02:21 | 铜博士 vs 工业生产 | 20 | rejected=18, unknown=2 | 19m |
-| R-0033 | 05-16 03:42 | 美元 funding 紧张 | 20 | unknown=15, rejected=5 | 19m |
-| R-0034 | 05-16 05:04 | 中介机构杠杆 | 20 | unknown=15, rejected=5 | 20m |
-| R-0035 | 05-16 06:23 | 新闻文本情绪 | 19 | unknown=13, rejected=6 | 18m |
-| R-0036 | 05-16 07:41 | 黄金 vs 实际利率 | 20 | unknown=9, rejected=11 | 16m |
-| R-0037 | 05-16 09:05 | 实际利率 vs 名义利率 | 20 | unknown=16, rejected=4 | 22m |
-| R-0038 | 05-16 10:32 | Fed 决议日反应 | 17 | unknown=14, rejected=3 | 25m |
-
-## yield 分析
-
-- 总候选: **236**
-- DB 中 24h 新增 live: **32 条** → 总 yield = **13.6%**
-- 其中 auto-tuned live: **14 条** → auto-tune yield = **5.9%**
-- 节奏: 12 次 / 24h ≈ 每 2h 一次,稳定
-- 时长: 13–25 分钟,均匀分布,无超时
-- &#x27;unknown&#x27; 比例显著上升 (R-0029 之后):验证流程在归档时未完成,但后续 DB 已被填充为 live,属于正常异步行为
-
-## 候选 → live 转化样例
-- `黄金 1h 涨 + 站上 12h MA → 4h 续涨` (R-0036)
-- `10Y 收益率冲高 → LQD 30d 跌 [direction_flipped]` (auto-tune)
-- `3M T-bill 高位 + 倒挂 → IWM 60d 跌 [direction_flipped]` (auto-tune)
-- `VIX 高位 + FOMC 周 → SPY pre-FOMC drift [threshold_tuned]` (auto-tune)
-
-## 异常
-- **24h 窗口内: 无卡死、无失败**
-- 历史参考: R-0026 (05-14 商品 backwardation) 曾 hang 1500 分钟 (≈25h),已在窗口外,但需注意复发可能
-
-## 结论
-- yield 13.6% 远超 ok 门槛 (3%)
-- auto-tune 接入后稳定产出 (14/24h),direction_flipped + threshold_tuned 双优化在生效
-- 主要风险点是 R-0026 那次 hang 的根因是否定位,建议下一步看看 hang detector</div>
   </details>
 </div>
 
@@ -436,11 +436,11 @@ _无_
   <td class="num">4</td>
   <td> <span class="tag-active">3 激活</span></td>
 </tr><tr>
-  <td><strong>qqq</strong></td>
-  <td class="num">708.930</td>
+  <td><strong>hyg</strong></td>
+  <td class="num">79.460</td>
   <td class="small">2026-05-15</td>
   <td class="num">2</td>
-  <td> <span class="tag-active">2 激活</span></td>
+  <td></td>
 </tr><tr>
   <td><strong>yield_curve_10y2y</strong></td>
   <td class="num">0.337</td>
@@ -454,23 +454,17 @@ _无_
   <td class="num">2</td>
   <td></td>
 </tr><tr>
+  <td><strong>qqq</strong></td>
+  <td class="num">708.930</td>
+  <td class="small">2026-05-15</td>
+  <td class="num">2</td>
+  <td> <span class="tag-active">2 激活</span></td>
+</tr><tr>
   <td><strong>spy</strong></td>
   <td class="num">739.170</td>
   <td class="small">2026-05-15</td>
   <td class="num">2</td>
   <td> <span class="tag-active">2 激活</span></td>
-</tr><tr>
-  <td><strong>copper</strong></td>
-  <td class="num">6.252</td>
-  <td class="small">2026-05-15</td>
-  <td class="num">2</td>
-  <td> <span class="tag-active">2 激活</span></td>
-</tr><tr>
-  <td><strong>hyg</strong></td>
-  <td class="num">79.460</td>
-  <td class="small">2026-05-15</td>
-  <td class="num">2</td>
-  <td></td>
 </tr><tr>
   <td><strong>oil</strong></td>
   <td class="num">105.420</td>
@@ -478,17 +472,17 @@ _无_
   <td class="num">2</td>
   <td></td>
 </tr><tr>
+  <td><strong>copper</strong></td>
+  <td class="num">6.252</td>
+  <td class="small">2026-05-15</td>
+  <td class="num">2</td>
+  <td> <span class="tag-active">2 激活</span></td>
+</tr><tr>
   <td><strong>btc</strong></td>
-  <td class="num">79015.992</td>
+  <td class="num">78998.000</td>
   <td class="small">2026-05-16</td>
   <td class="num">1</td>
   <td></td>
-</tr><tr>
-  <td><strong>chinext</strong></td>
-  <td class="num">3929.064</td>
-  <td class="small">2026-05-15</td>
-  <td class="num">1</td>
-  <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
   <td><strong>hs300</strong></td>
   <td class="num">4859.593</td>
@@ -496,11 +490,11 @@ _无_
   <td class="num">1</td>
   <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
-  <td><strong>us_2y_yield</strong></td>
-  <td class="num">4.258</td>
+  <td><strong>chinext</strong></td>
+  <td class="num">3929.064</td>
   <td class="small">2026-05-15</td>
   <td class="num">1</td>
-  <td></td>
+  <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
   <td><strong>iwm</strong></td>
   <td class="num">277.600</td>
@@ -510,6 +504,12 @@ _无_
 </tr><tr>
   <td><strong>gold_1h</strong></td>
   <td class="num">4543.600</td>
+  <td class="small">2026-05-15</td>
+  <td class="num">1</td>
+  <td></td>
+</tr><tr>
+  <td><strong>us_2y_yield</strong></td>
+  <td class="num">4.258</td>
   <td class="small">2026-05-15</td>
   <td class="num">1</td>
   <td></td>
@@ -2690,14 +2690,153 @@ _无_
   <div class="stat"><span class="n">373</span><div class="lbl">候选总数</div></div>
   <div class="stat"><span class="n">0</span><div class="lbl">进 live</div></div>
   <div class="stat"><span class="n">0</span><div class="lbl">进 candidate</div></div>
-  <div class="stat"><span class="n">243</span><div class="lbl">被拒</div></div>
+  <div class="stat"><span class="n">235</span><div class="lbl">被拒</div></div>
   <div class="stat"><span class="n">0.0%</span><div class="lbl">live yield</div></div>
 </div>
 
 <h3>系统主要在哪些站点取材(累计抓取次数)</h3>
-<p><span class="domain-pill">papers.ssrn.com · 45</span> <span class="domain-pill">www.bis.org · 38</span> <span class="domain-pill">www.federalreserve.gov · 34</span> <span class="domain-pill">arxiv.org · 31</span> <span class="domain-pill">www.nber.org · 31</span> <span class="domain-pill">alphaarchitect.com · 16</span> <span class="domain-pill">quantpedia.com · 15</span> <span class="domain-pill">www.quantseeker.com · 12</span> <span class="domain-pill">www.sciencedirect.com · 12</span> <span class="domain-pill">www.aqr.com · 10</span></p>
+<p><span class="domain-pill">papers.ssrn.com · 41</span> <span class="domain-pill">www.bis.org · 38</span> <span class="domain-pill">arxiv.org · 31</span> <span class="domain-pill">www.federalreserve.gov · 27</span> <span class="domain-pill">www.nber.org · 25</span> <span class="domain-pill">quantpedia.com · 21</span> <span class="domain-pill">alphaarchitect.com · 19</span> <span class="domain-pill">www.quantseeker.com · 12</span> <span class="domain-pill">www.sciencedirect.com · 12</span> <span class="domain-pill">onlinelibrary.wiley.com · 10</span></p>
 
 <h3>逐次研究明细(点开看 20 个候选 + 拒绝原因)</h3>
+
+<details class="run-card">
+  <summary>
+    <strong>R-0040</strong> ·
+    行业动量轮动 ·
+    <span class="status-chip status-rejected">12 rejected</span>
+  </summary>
+  <div class="run-meta">
+    05-16 12:54 北京 ·
+    20m9s ·
+    8 subagents ·
+    128 searches ·
+    50 fetches ·
+    44 unique sources ·
+    domain: <code>momentum</code>
+  </div>
+  <div class="small">主要抓取域: <span class="domain-pill">quantpedia.com · 6</span> <span class="domain-pill">alphaarchitect.com · 3</span> <span class="domain-pill">www.msci.com · 3</span></div>
+  <table class="cands"><thead><tr><th>IH</th><th>状态</th><th>名称</th><th>规则</th><th>原因</th></tr></thead><tbody><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>QQQ 12个月强动量+趋势确认延续上涨</td>
+  <td class="small">qqq→QQQ (u) 60d</td>
+  <td class="reject-reason">auto-tune: no variant survives minimal gate</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>XLK 强动量+SPY多头共振延续</td>
+  <td class="small">spy→XLK (u) 30d</td>
+  <td class="reject-reason">auto-tune: no variant survives minimal gate</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>XLE 油价上行驱动能源板块跑赢</td>
+  <td class="small">oil→XLE (u) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>DXY 强势压制能源板块</td>
+  <td class="small">dxy→XLE (d) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>10Y收益率快速上行打压公用事业XLU</td>
+  <td class="small">us_10y_yield→XLU (d) 30d</td>
+  <td class="reject-reason">OOS fail: OOS N=3 &lt; 5</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>10Y收益率回落利好公用事业XLU</td>
+  <td class="small">us_10y_yield→XLU (u) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>3M T-bill破3%宽松周期利好金融XLF</td>
+  <td class="small">us_3m_yield→XLF (u) 60d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX恐慌后科技动量股反弹SMH</td>
+  <td class="small">vix→SMH (u) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX极低+动量已强需警惕反转</td>
+  <td class="small">vix→QQQ (d) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>黄金强势配合避险情绪推动GDX</td>
+  <td class="small">gold→GDX (u) 30d</td>
+  <td class="reject-reason">auto-tune: no variant survives minimal gate</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>铜金比上行确认风险偏好利好IWM</td>
+  <td class="small">copper_gold_ratio→IWM (u) 30d</td>
+  <td class="reject-reason">auto-tune: no variant survives minimal gate</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>HYG强势风险偏好利好金融XLF</td>
+  <td class="small">hyg→XLF (u) 30d</td>
+  <td class="reject-reason">auto-tune: no variant survives minimal gate</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>TLT趋势下行+SPY多头利好科技XLK</td>
+  <td class="small">tlt→XLK (u) 30d</td>
+  <td class="reject-reason">auto-tune: no variant survives minimal gate</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>沪深300中期动量+趋势确认延续</td>
+  <td class="small">hs300→sh000300 (u) 30d</td>
+  <td class="reject-reason">auto-tune: no variant survives minimal gate</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>纳指中期反弹溢出推动中证500</td>
+  <td class="small">qqq→sh000905 (u) 14d</td>
+  <td class="reject-reason">auto-tune: no variant survives minimal gate</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>MOVE指数飙升预警XLF回调</td>
+  <td class="small">move→XLF (d) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>BTC强势风险偏好溢出至SMH</td>
+  <td class="small">btc→SMH (u) 30d</td>
+  <td class="reject-reason">auto-tune: no variant survives minimal gate</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>美元弱势利好新兴+科技QQQ</td>
+  <td class="small">dxy→QQQ (u) 60d</td>
+  <td class="reject-reason">auto-tune: no variant survives minimal gate</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>黄金油比上行衰退信号利好长债TLT</td>
+  <td class="small">gold_oil_ratio→TLT (u) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>公用事业XLU强动量防御信号利好TLT</td>
+  <td class="small">us_2y_yield→TLT (u) 60d</td>
+  <td class="reject-reason">OOS fail: OOS aligned hit 10% &lt; 50%</td>
+</tr></tbody></table>
+</details>
 
 <details class="run-card">
   <summary>
@@ -5175,145 +5314,6 @@ _无_
   <td>BTC 站稳长期均线后, 风险偏好溢出至 QQQ(1 月)</td>
   <td class="small">btc→QQQ (u) 30d</td>
   <td class="reject-reason">degenerate fire rate 41.7% &gt; 30%</td>
-</tr></tbody></table>
-</details>
-
-<details class="run-card">
-  <summary>
-    <strong>R-0020</strong> ·
-    中介机构约束 → 信用价差 ·
-    <span class="status-chip status-rejected">20 rejected</span>
-  </summary>
-  <div class="run-meta">
-    05-13 00:25 北京 ·
-    12m47s ·
-    8 subagents ·
-    138 searches ·
-    48 fetches ·
-    39 unique sources ·
-    domain: <code>credit_spread</code>
-  </div>
-  <div class="small">主要抓取域: <span class="domain-pill">www.federalreserve.gov · 7</span> <span class="domain-pill">www.nber.org · 6</span> <span class="domain-pill">zhiguohe.net · 4</span></div>
-  <table class="cands"><thead><tr><th>IH</th><th>状态</th><th>名称</th><th>规则</th><th>原因</th></tr></thead><tbody><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>HYG跌破200日均线+VIX高企→LQD反弹</td>
-  <td class="small">hyg→LQD (u) 30d</td>
-  <td class="reject-reason">OOS fail: OOS aligned hit 38% &lt; 50%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>VIX极高(&gt;35)→LQD 30天反弹</td>
-  <td class="small">vix→LQD (u) 30d</td>
-  <td class="reject-reason">OOS fail: OOS N=4 &lt; 5</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>VIX极高+HYG深跌→HYG30天反弹</td>
-  <td class="small">vix→HYG (u) 30d</td>
-  <td class="reject-reason">OOS fail: OOS N=1 &lt; 5</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>MOVE指数飙升→LQD承压</td>
-  <td class="small">move→LQD (d) 14d</td>
-  <td class="reject-reason">OOS fail: OOS aligned mean -0.71% ≤ 0</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>MOVE飙升+VIX高→TLT短期承压</td>
-  <td class="small">move→TLT (d) 14d</td>
-  <td class="reject-reason">stats below threshold</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>美10Y&gt;4.5%+MOVE高→HYG承压</td>
-  <td class="small">us_10y_yield→HYG (d) 30d</td>
-  <td class="reject-reason">too rare fire rate 0.00% &lt; 0.5%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>LQD跌破200日均线→HYG30天再跌</td>
-  <td class="small">lqd→HYG (d) 30d</td>
-  <td class="reject-reason">OOS fail: OOS aligned hit 36% &lt; 50%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>DXY强势+VIX抬升→LQD承压</td>
-  <td class="small">dxy→LQD (d) 30d</td>
-  <td class="reject-reason">OOS fail: OOS aligned hit 32% &lt; 50%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>HYG跌破短期均线→SPY 14天承压</td>
-  <td class="small">hyg→SPY (d) 14d</td>
-  <td class="reject-reason">degenerate fire rate 34.0% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>HYG强势上行→SPY动量延续</td>
-  <td class="small">hyg→SPY (u) 30d</td>
-  <td class="reject-reason">degenerate fire rate 57.3% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>LQD反弹突破200MA→SPY30天涨</td>
-  <td class="small">lqd→SPY (u) 30d</td>
-  <td class="reject-reason">degenerate fire rate 70.7% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>VIX极低+HYG强→QQQ趋势延续</td>
-  <td class="small">vix→QQQ (u) 30d</td>
-  <td class="reject-reason">path-aware fail: hit 28% mean -0.00% (stopped_out 63/88)</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>MOVE极高→LQD 14天反弹</td>
-  <td class="small">move→LQD (u) 14d</td>
-  <td class="reject-reason">OOS fail: OOS N=2 &lt; 5</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>美2Y骤跌→LQD30天涨</td>
-  <td class="small">us_2y_yield→LQD (u) 30d</td>
-  <td class="reject-reason">OOS fail: OOS aligned hit 40% &lt; 50%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>美10Y&gt;5%极端→HYG30天反弹</td>
-  <td class="small">us_10y_yield→HYG (u) 30d</td>
-  <td class="reject-reason">degenerate fire rate 53.8% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>HYG深跌+VIX高→HYG14天反弹</td>
-  <td class="small">hyg→HYG (u) 14d</td>
-  <td class="reject-reason">degenerate fire rate 33.9% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>DXY强+美10Y高→LQD承压</td>
-  <td class="small">us_10y_yield→LQD (d) 30d</td>
-  <td class="reject-reason">too rare fire rate 0.00% &lt; 0.5%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>VIX低位+LQD趋势→HYG跟涨</td>
-  <td class="small">lqd→HYG (u) 30d</td>
-  <td class="reject-reason">degenerate fire rate 57.1% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>美3M骤降→LQD30天涨</td>
-  <td class="small">us_3m_yield→LQD (u) 30d</td>
-  <td class="reject-reason">OOS fail: OOS N=1 &lt; 5</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>VIX+MOVE双高→HYG承压</td>
-  <td class="small">vix→HYG (d) 14d</td>
-  <td class="reject-reason">OOS fail: OOS aligned hit 44% &lt; 50%</td>
 </tr></tbody></table>
 </details>
 

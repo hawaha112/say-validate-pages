@@ -111,7 +111,7 @@
 </head>
 <body>
 <h1>📡 say_validate · 知识与监测看板</h1>
-<div class="small">最后刷新: <strong>2026-05-16 14:01 北京</strong> · 由 4h launchd 流水线自动更新。高把握信号触发时直接 Telegram 推送。</div>
+<div class="small">最后刷新: <strong>2026-05-16 16:03 北京</strong> · 由 4h launchd 流水线自动更新。高把握信号触发时直接 Telegram 推送。</div>
 
 <nav>
   <a href="#summary">📊 总览</a>
@@ -125,7 +125,7 @@
 
 <h2 id="summary">📊 总览</h2>
 <div class="stats">
-  <div class="stat"><span class="n">61</span><div class="lbl">live 规则</div></div>
+  <div class="stat"><span class="n">64</span><div class="lbl">live 规则</div></div>
   <div class="stat"><span class="n">17</span><div class="lbl">复合假设</div></div>
   <div class="stat"><span class="n">14</span><div class="lbl">🟢 今日激活</div></div>
   <div class="stat"><span class="n">17</span><div class="lbl">监测指标</div></div>
@@ -140,10 +140,92 @@
 </div>
 
 <h3>知识来源分布</h3>
-<div class="stats"><div class="stat"><span class="n">34</span><div class="lbl"><span class="tag tag-research">research</span></div></div><div class="stat"><span class="n">24</span><div class="lbl"><span class="tag tag-playbook">playbook</span></div></div><div class="stat"><span class="n">2</span><div class="lbl"><span class="tag tag-scan">scan</span></div></div><div class="stat"><span class="n">1</span><div class="lbl"><span class="tag tag-canon">canon</span></div></div></div>
+<div class="stats"><div class="stat"><span class="n">37</span><div class="lbl"><span class="tag tag-research">research</span></div></div><div class="stat"><span class="n">24</span><div class="lbl"><span class="tag tag-playbook">playbook</span></div></div><div class="stat"><span class="n">2</span><div class="lbl"><span class="tag tag-scan">scan</span></div></div><div class="stat"><span class="n">1</span><div class="lbl"><span class="tag tag-canon">canon</span></div></div></div>
 
-<h2 id="supervised">🧠 LLM 监督观察 · 2 个 supervisor</h2>
+<h2 id="supervised">🧠 LLM 监督观察 · 3 个 supervisor</h2>
 <p class="small">每个 LLM-driven supervisor 跑完后写入这里(不推 TG)。最近一次时间 + 状态 + 摘要 + 可展开详情。</p>
+
+<div class="sup-card warn">
+  <h4>⚠️ 规则矛盾 / 冗余 / 覆盖审查</h4>
+  <div class="sup-meta">05-16 16:03 北京 · status=warn  · conflict_count_active_today=0 · conflict_count_structural=2 · redundant_exact_pairs=4 · redundant_near_duplicate_pairs=7 · redundant_cluster_size_sh000905_dxy_down=7 · redundant_cluster_size_HYG_dxy_up=4 · gap_count=6 · live_total=62</div>
+  <div class="sup-summary">0 条今日激活方向矛盾;15 条冗余/近重复 (含 4 EXACT 重复 + dxy→sh000905 down 7条同质集群);6 大覆盖空洞 (CSI500 up / TLT down / Gold down / BTC直撑 / 板块ETF / 港股)</div>
+  <div class="sup-actions"><div><b>建议:</b><ul><li>[EXACT 重复] Retire IH#44 (= IH#10 copper SMH up)</li><li>[EXACT 重复] Retire IH#56 (= IH#7 oil SPY up)</li><li>[EXACT 重复] Retire IH#51 (= IH#21 spy SPY up)</li><li>[EXACT 重复] Retire IH#48 (= IH#40 us_10y XLF up, IH#40 hit 略高)</li><li>[近重复] Retire IH#35 (IH#42 vix SPY 更优)</li><li>[近重复] Retire IH#63 (IH#3 vix SPY 更优)</li><li>[近重复] Retire IH#58 (IH#26 vix&gt;28 SPY 更优)</li><li>[近重复] Retire IH#55 (IH#36 vix HYG 更优)</li><li>[近重复] Retire IH#43 (IH#30 gold deep pullback 更优)</li><li>[近重复] Retire IH#57 (IH#24 qqq 趋势更优)</li><li>[近重复] Retire IH#86 (IH#95 us_10y LQD 更优)</li><li>[集群瘦身] dxy→sh000905 down: 保留 IH#39 (严) + IH#41 (宽,今日激活), retire IH#37/81/103/104/105</li><li>[低质集群] dxy→HYG up (IH#100/101/102/87) 全 hit&lt;5%, 建议整组 retire 或重训</li><li>[新写 playbook] sh000905 (CSI500) up: 例如 &#x27;dxy 周线下穿 MA50 + 北向资金 5d 净流入 → CSI500 30d 反弹&#x27;</li><li>[新写 playbook] TLT down: 例如 &#x27;10y yield &gt; 4.5% + 30d 加速上行 → TLT 60d 承压&#x27;</li><li>[新写 playbook] GC=F down: 例如 &#x27;实际利率 (10y - 通胀预期) &gt; 2.0% + dxy 强势 → 黄金 60d 回调&#x27;</li><li>[新写 playbook] BTC 直接 target: 例如 &#x27;BTC 周线 RSI&lt;35 + MVRV 极低 → BTC 90d 反弹&#x27;</li><li>[新写 playbook] 板块轮动 (XLE/XLU/XLP/XLI): 例如 &#x27;油价 60d 突破 + 趋势 above MA50 → XLE up&#x27;</li></ul></div></div>
+  <details class="detail">
+    <summary>展开详情</summary>
+    <div class="sup-details-md">## 方向矛盾(同 target + timeframe 同时存在 up / down 规则)
+
+⚠️ 结构性对冲存在,但**今日没有同时激活**(只有 IH#41 dxy→sh000905 down 新激活,对侧无 up 规则触发),所以不升级 alert。
+
+| target | up 规则 | down 规则 | 触发条件 |
+|---|---|---|---|
+| SPY (daily) | IH#42/35/91/3/63/15/106/52/26/58 (vix*多), IH#21/51 spy, IH#7/56 oil, IH#47/59 hyg, IH#73 yield_curve | **IH#108 dxy→SPY down 87.0% n=154 mean=-0.76** | up=vix低/oil低/趋势 vs down=强美元;**指标不同,可作场景区分,非真正矛盾** |
+| sz399006 (daily) | IH#69 chinext→sz399006 up 50.8% n=118 | IH#89 vix→down 79.2% n=96, IH#82 vix→down 79.1% n=139 | 同上,不同指标驱动,**结构相容** |
+| GC=F / TLT | 仅 up,**0 down** | — | 缺失反向规则(见覆盖空洞) |
+
+→ **结论:无激活态方向矛盾,但 SPY/sz399006 多 up vs 单 down 偏置严重,长期会牺牲 down 场景命中。**
+
+## 冗余规则(rule_spec 几乎相同 / 阈值差 &lt; 5%)
+
+### A. EXACT 重复 (rule_spec_json 一字不差)
+
+| 保留 | 重复 | 指标·target·方向 | 备注 |
+|---|---|---|---|
+| **IH#10** | IH#44 | copper · SMH · up · 35.2% | 完全一致 |
+| **IH#7** | IH#56 | oil · SPY · up · 29.3% | level&lt;60 完全一致 |
+| **IH#21** | IH#51 | spy · SPY · up · 32.6% | change(252)&gt;15 完全一致 |
+| **IH#40** | IH#48 | us_10y_yield · XLF · up · 14.5%/14.0% | ma_ratio&lt;0.98 + level&gt;3.5 完全一致 |
+
+### B. 近重复 (同逻辑,阈值微调,效果几乎一样)
+
+| 保留 (hit 高) | 退役建议 | 备注 |
+|---|---|---|
+| **IH#42** (vix SPY up 41.6%, n=380) | IH#35 (37.1%) | vix&lt;16 + below_ma 30,IH#35 阈值 &quot;16&quot; 与 &quot;16.0&quot; 文字差异 |
+| **IH#3** (vix SPY up, vix&gt;25.0) | IH#63 (vix&gt;25.5) | 同 28.8%,IH#3 n=125 vs IH#63 n=73 |
+| **IH#26** (vix&gt;28, hit 34.5%) | IH#58 (vix&gt;27, hit 23.4%) | 重叠 trigger 区间,IH#26 更紧致更优 |
+| **IH#36** (vix HYG up 16.7%) | IH#55 (15.8%) | vix&lt;18 vs vix&lt;23.4,后者太宽 |
+| **IH#30** (gold deep pullback hit 42.7%) | IH#43 (40.8%) | -7% vs -4%,IH#30 触发更稀但更准 |
+| **IH#24** (qqq&gt;+8%, 30.3%) | IH#57 (&gt;+10%, 30.1%) | 同逻辑窄阈值差 |
+| **IH#95** (us_10y LQD up 5.6%) | IH#86 (4.9%) | 同逻辑顺序换 |
+
+### C. dxy→sh000905 down 高度同质化集群(7 条 live,逻辑全为 &quot;dxy &gt; X + above_ma50&quot;,阈值 96-106)
+
+| 保留 | 退役建议 | hit% | 阈值 |
+|---|---|---|---|
+| **IH#39** | — | 97.3% | dxy&gt;105.0 + ma |
+| | IH#37 | 96.0% | dxy&gt;106 + ma |
+| | IH#81 | 94.9% | dxy&gt;103 + 30d change |
+| | IH#104 | 92.1% | dxy&gt;102.06 + ma |
+| | IH#103 | 92.0% | dxy&gt;102.38 + ma |
+| | IH#105 | 89.3% | dxy&gt;98.17 + ma |
+| | IH#41 | 87.7% | dxy&gt;96.6 + ma (**今日激活**,该条目前正在推 → 慎退) |
+
+→ 7 条本质同一假设,**只是不同阈值采样**。IH#39 最高命中是最严版本,但触发稀(110 触发);IH#41 阈值最宽常激活但 hit 偏低。**建议保留 IH#39 + IH#41 (一严一宽),退役中间 5 条**。
+
+### D. dxy→HYG up 集群(4 条 live, hit 全 &lt; 5%)
+
+IH#100/101/102/87 — 均为 &quot;dxy&gt;X (98-107)+其他 level&quot;,hit 2-4%,统计上等同噪声。建议**整组退役或重测**。
+
+## 覆盖空洞(主流 target/horizon 无 live 规则)
+
+| 缺口 | 影响 | 建议 |
+|---|---|---|
+| **sh000905 (CSI500) up** | 0 live up 规则 vs 7 down | A股反弹完全没信号,系统永远只能喊空 |
+| **TLT down** | 0 (全 up) | 加息周期完全失声 |
+| **GC=F (黄金) down** | 0 (全 up) | 强美元 + 实际利率上行场景缺失 |
+| **BTC/ETH 直接 target** | 仅 IH#65 btc→QQQ 间接 | 加密信号本体缺失 |
+| **XLE/XLU/XLP/XLI 板块** | 完全 0 | 板块轮动场景空白 |
+| **HSI / 港股** | 0 | 大中华区只有 A 股 |
+
+## 健康度小结
+
+- live 总数: 62
+- EXACT 重复对: 4 (浪费 4 条预算)
+- 近重复对: 7
+- 同质化集群: dxy→sh000905 down (7 → 建议 2), dxy→HYG up (4 → 0 或重训)
+- 方向覆盖空洞: 6 大类
+- **若执行所有退役建议,live 缩减至 ~45 条,信噪比应明显改善**</div>
+  </details>
+</div>
 
 <div class="sup-card ok">
   <h4>🔬 研究产出审计 (24h)</h4>
@@ -415,13 +497,13 @@ _无_
   <td><strong>vix</strong></td>
   <td class="num">18.430</td>
   <td class="small">2026-05-15</td>
-  <td class="num">16</td>
+  <td class="num">18</td>
   <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
   <td><strong>dxy</strong></td>
   <td class="num">99.270</td>
   <td class="small">2026-05-15</td>
-  <td class="num">15</td>
+  <td class="num">16</td>
   <td> <span class="tag-active">2 激活</span></td>
 </tr><tr>
   <td><strong>us_10y_yield</strong></td>
@@ -442,11 +524,17 @@ _无_
   <td class="num">2</td>
   <td></td>
 </tr><tr>
-  <td><strong>yield_curve_10y2y</strong></td>
-  <td class="num">0.337</td>
+  <td><strong>oil</strong></td>
+  <td class="num">105.420</td>
   <td class="small">2026-05-15</td>
   <td class="num">2</td>
   <td></td>
+</tr><tr>
+  <td><strong>copper</strong></td>
+  <td class="num">6.252</td>
+  <td class="small">2026-05-15</td>
+  <td class="num">2</td>
+  <td> <span class="tag-active">2 激活</span></td>
 </tr><tr>
   <td><strong>us_3m_yield</strong></td>
   <td class="num">3.588</td>
@@ -466,21 +554,15 @@ _无_
   <td class="num">2</td>
   <td> <span class="tag-active">2 激活</span></td>
 </tr><tr>
-  <td><strong>oil</strong></td>
-  <td class="num">105.420</td>
+  <td><strong>yield_curve_10y2y</strong></td>
+  <td class="num">0.337</td>
   <td class="small">2026-05-15</td>
   <td class="num">2</td>
   <td></td>
 </tr><tr>
-  <td><strong>copper</strong></td>
-  <td class="num">6.252</td>
+  <td><strong>us_2y_yield</strong></td>
+  <td class="num">4.258</td>
   <td class="small">2026-05-15</td>
-  <td class="num">2</td>
-  <td> <span class="tag-active">2 激活</span></td>
-</tr><tr>
-  <td><strong>btc</strong></td>
-  <td class="num">78998.000</td>
-  <td class="small">2026-05-16</td>
   <td class="num">1</td>
   <td></td>
 </tr><tr>
@@ -496,6 +578,12 @@ _无_
   <td class="num">1</td>
   <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
+  <td><strong>btc</strong></td>
+  <td class="num">78356.422</td>
+  <td class="small">2026-05-16</td>
+  <td class="num">1</td>
+  <td></td>
+</tr><tr>
   <td><strong>iwm</strong></td>
   <td class="num">277.600</td>
   <td class="small">2026-05-15</td>
@@ -507,17 +595,11 @@ _无_
   <td class="small">2026-05-15</td>
   <td class="num">1</td>
   <td></td>
-</tr><tr>
-  <td><strong>us_2y_yield</strong></td>
-  <td class="num">4.258</td>
-  <td class="small">2026-05-15</td>
-  <td class="num">1</td>
-  <td></td>
 </tr>
 </tbody>
 </table>
 
-<h2 id="knowledge">📚 知识库 · 61 条 live 规则</h2>
+<h2 id="knowledge">📚 知识库 · 64 条 live 规则</h2>
 <p class="small">每条规则带"怎么读"白话总结 + 最近 8 次触发的实际表现,让你看到这条知识是怎么被数据验证的。</p>
 
 <h3><span class="tag tag-playbook">playbook</span> · 24 条</h3>
@@ -1287,7 +1369,7 @@ _无_
 </tbody>
 </table>
 
-<h3><span class="tag tag-research">research</span> · 34 条</h3>
+<h3><span class="tag tag-research">research</span> · 37 条</h3>
 <table>
 <thead><tr><th>IH</th><th>规则 + 验证证据</th><th>指标</th><th>目标</th><th class="num">期限</th><th class="num">方向命中</th><th class="num">N</th><th class="num">均值</th><th class="num">p</th></tr></thead>
 <tbody>
@@ -1394,6 +1476,41 @@ _无_
   <td class="num">95.3%</td>
   <td class="num">235</td>
   <td class="num">+8.20%</td>
+  <td class="num small">0.0000</td>
+</tr><tr>
+  <td>#107</td>
+  <td>
+    <strong>VIX 单周急升后 IWM 小盘反弹更大 [threshold_tuned]</strong> <span class="tf-daily">daily</span>
+    <div class="rationale">[AUTO-TUNED: threshold_tuned] Jayaraman/Bhattacharya 框架显示极端下跌后 Day 1 +1.77%/Day 2 +2.20%, 高波动股反弹更快更大, 而 IWM 比 SPY 含更多高 idio-vol 个股。</div>
+    
+<div class="evidence">
+  <div class="summary">📖 过去 <b>218</b> 次 [VIX 恐慌指数] 满足触发条件后,有 <b>152</b> 次 [罗素 2000 ETF (IWM)] 在 <b>14 天</b>内上涨——方向命中率 <b>69.7%</b>(比抛硬币高 +19.7pp),平均上涨幅度 <b>+3.77%</b>。系统每天监测 [VIX 恐慌指数],再次出现 [VIX 恐慌指数 高于 19.6 且 VIX 恐慌指数 过去 5 日累计变化 大于 0.3] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
+</div>
+
+    <details class="detail"><summary>rule_spec JSON</summary><pre>{
+  &quot;type&quot;: &quot;and&quot;,
+  &quot;conditions&quot;: [
+    {
+      &quot;type&quot;: &quot;level&quot;,
+      &quot;op&quot;: &quot;&gt;&quot;,
+      &quot;threshold&quot;: 19.6
+    },
+    {
+      &quot;type&quot;: &quot;change&quot;,
+      &quot;lookback&quot;: 5,
+      &quot;op&quot;: &quot;&gt;&quot;,
+      &quot;threshold&quot;: 0.3
+    }
+  ]
+}</pre></details>
+  </td>
+  <td class="small">vix</td>
+  <td class="dir-up">IWM ↑</td>
+  <td class="num">14d</td>
+  <td class="num">69.7%</td>
+  <td class="num">218</td>
+  <td class="num">+3.77%</td>
   <td class="num small">0.0000</td>
 </tr><tr>
   <td>#35</td>
@@ -1600,6 +1717,39 @@ _无_
   <td class="num">85.5%</td>
   <td class="num">193</td>
   <td class="num">+1.75%</td>
+  <td class="num small">0.0000</td>
+</tr><tr>
+  <td>#106</td>
+  <td>
+    <strong>VIX&lt;12极乐观且HYG跌破50d→SPY 30d回调 [threshold_tuned+direction_flipped]</strong> <span class="tf-daily">daily</span>
+    <div class="rationale">[AUTO-TUNED: threshold_tuned+direction_flipped] Goyal-Welch-Zafirov(2024)警告VRP在低VIX样本期统计支持下降,叠加信用恶化是反转信号。引用Goyal, Welch, Zafirov (2024) RFS。</div>
+    
+<div class="evidence">
+  <div class="summary">📖 过去 <b>193</b> 次 [VIX 恐慌指数] 满足触发条件后,有 <b>144</b> 次 [标普 500 ETF (SPY)] 在 <b>30 天</b>内上涨——方向命中率 <b>74.6%</b>(比抛硬币高 +24.6pp),平均上涨幅度 <b>+1.39%</b>。系统每天监测 [VIX 恐慌指数],再次出现 [VIX 恐慌指数 低于 15.6 且 VIX 恐慌指数 低于自己的 50 日均线] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
+</div>
+
+    <details class="detail"><summary>rule_spec JSON</summary><pre>{
+  &quot;type&quot;: &quot;and&quot;,
+  &quot;conditions&quot;: [
+    {
+      &quot;type&quot;: &quot;level&quot;,
+      &quot;op&quot;: &quot;&lt;&quot;,
+      &quot;threshold&quot;: 15.6
+    },
+    {
+      &quot;type&quot;: &quot;below_ma&quot;,
+      &quot;window&quot;: 50
+    }
+  ]
+}</pre></details>
+  </td>
+  <td class="small">vix</td>
+  <td class="dir-up">SPY ↑</td>
+  <td class="num">30d</td>
+  <td class="num">74.6%</td>
+  <td class="num">193</td>
+  <td class="num">+1.39%</td>
   <td class="num small">0.0000</td>
 </tr><tr>
   <td>#101</td>
@@ -1936,6 +2086,41 @@ _无_
   <td class="num">156</td>
   <td class="num">+0.60%</td>
   <td class="num small">0.0000</td>
+</tr><tr>
+  <td>#108</td>
+  <td>
+    <strong>DXY 急升后 SPY 短期超卖反弹 [threshold_tuned+direction_flipped]</strong> <span class="tf-daily">daily</span>
+    <div class="rationale">[AUTO-TUNED: threshold_tuned+direction_flipped] Velasquez (2024) post-2000 复现显示大盘反转 alpha 已弱化, 但极端美元冲击触发的流动性恐慌仍符合 Nagel (2012) VIX &gt; 25 高条件 Sharpe 制度。</div>
+    
+<div class="evidence">
+  <div class="summary">📖 过去 <b>154</b> 次 [美元指数 DXY] 满足触发条件后,有 <b>134</b> 次 [标普 500 ETF (SPY)] 在 <b>14 天</b>内下跌——方向命中率 <b>87.0%</b>(比抛硬币高 +37.0pp),平均下跌幅度 <b>+0.76%</b>。系统每天监测 [美元指数 DXY],再次出现 [美元指数 DXY 过去 20 日累计变化 大于 -2.96 且 美元指数 DXY 高于 105.0] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
+</div>
+
+    <details class="detail"><summary>rule_spec JSON</summary><pre>{
+  &quot;type&quot;: &quot;and&quot;,
+  &quot;conditions&quot;: [
+    {
+      &quot;type&quot;: &quot;change&quot;,
+      &quot;lookback&quot;: 20,
+      &quot;op&quot;: &quot;&gt;&quot;,
+      &quot;threshold&quot;: -2.96
+    },
+    {
+      &quot;type&quot;: &quot;level&quot;,
+      &quot;op&quot;: &quot;&gt;&quot;,
+      &quot;threshold&quot;: 105.0
+    }
+  ]
+}</pre></details>
+  </td>
+  <td class="small">dxy</td>
+  <td class="dir-down">SPY ↓</td>
+  <td class="num">14d</td>
+  <td class="num">87.0%</td>
+  <td class="num">154</td>
+  <td class="num">+0.76%</td>
+  <td class="num small">0.0003</td>
 </tr><tr>
   <td>#87</td>
   <td>
@@ -2687,17 +2872,289 @@ _无_
 
 <div class="stats">
   <div class="stat"><span class="n">20</span><div class="lbl">研究跑次</div></div>
-  <div class="stat"><span class="n">373</span><div class="lbl">候选总数</div></div>
+  <div class="stat"><span class="n">375</span><div class="lbl">候选总数</div></div>
   <div class="stat"><span class="n">0</span><div class="lbl">进 live</div></div>
   <div class="stat"><span class="n">0</span><div class="lbl">进 candidate</div></div>
-  <div class="stat"><span class="n">235</span><div class="lbl">被拒</div></div>
+  <div class="stat"><span class="n">208</span><div class="lbl">被拒</div></div>
   <div class="stat"><span class="n">0.0%</span><div class="lbl">live yield</div></div>
 </div>
 
 <h3>系统主要在哪些站点取材(累计抓取次数)</h3>
-<p><span class="domain-pill">papers.ssrn.com · 41</span> <span class="domain-pill">www.bis.org · 38</span> <span class="domain-pill">arxiv.org · 31</span> <span class="domain-pill">www.federalreserve.gov · 27</span> <span class="domain-pill">www.nber.org · 25</span> <span class="domain-pill">quantpedia.com · 21</span> <span class="domain-pill">alphaarchitect.com · 19</span> <span class="domain-pill">www.quantseeker.com · 12</span> <span class="domain-pill">www.sciencedirect.com · 12</span> <span class="domain-pill">onlinelibrary.wiley.com · 10</span></p>
+<p><span class="domain-pill">papers.ssrn.com · 41</span> <span class="domain-pill">www.bis.org · 38</span> <span class="domain-pill">www.federalreserve.gov · 30</span> <span class="domain-pill">www.nber.org · 28</span> <span class="domain-pill">arxiv.org · 23</span> <span class="domain-pill">alphaarchitect.com · 21</span> <span class="domain-pill">quantpedia.com · 16</span> <span class="domain-pill">www.aqr.com · 14</span> <span class="domain-pill">www.quantseeker.com · 12</span> <span class="domain-pill">www.sciencedirect.com · 11</span></p>
 
 <h3>逐次研究明细(点开看 20 个候选 + 拒绝原因)</h3>
+
+<details class="run-card">
+  <summary>
+    <strong>R-0042</strong> ·
+    极端跌后反弹 ·
+    <span class="status-chip status-rejected">9 rejected</span>
+  </summary>
+  <div class="run-meta">
+    05-16 15:37 北京 ·
+    20m33s ·
+    8 subagents ·
+    129 searches ·
+    58 fetches ·
+    55 unique sources ·
+    domain: <code>mean_reversion</code>
+  </div>
+  <div class="small">主要抓取域: <span class="domain-pill">alphaarchitect.com · 4</span> <span class="domain-pill">alvarezquanttrading.com · 3</span> <span class="domain-pill">www.nber.org · 3</span></div>
+  <table class="cands"><thead><tr><th>IH</th><th>状态</th><th>名称</th><th>规则</th><th>原因</th></tr></thead><tbody><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX 极端飙升后 SPY 中期均值回归反弹</td>
+  <td class="small">vix→SPY (u) 60d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX 高位且 HYG 跌破 200 日均线后 SPY 反弹</td>
+  <td class="small">vix→SPY (u) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX 单周急升后 IWM 小盘反弹更大</td>
+  <td class="small">vix→IWM (u) 14d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>MOVE 指数飙升 + VIX 高位后 TLT 反弹</td>
+  <td class="small">move→TLT (u) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>BTC 急跌深度回撤后 1-2 周反弹</td>
+  <td class="small">btc→BTC-USD (u) 14d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>ETH 急跌后短期反弹强于 BTC</td>
+  <td class="small">eth→ETH-USD (u) 7d</td>
+  <td class="reject-reason">auto-tune: no variant survives minimal gate</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>ETH/BTC 比值急跌后均值回归</td>
+  <td class="small">eth_btc_ratio→ETH-USD (u) 30d</td>
+  <td class="reject-reason">auto-tune: no variant survives minimal gate</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>QQQ 急跌 + VIX 高 → QQQ 反弹</td>
+  <td class="small">qqq→QQQ (u) 14d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>IWM 深度超卖后小盘反弹</td>
+  <td class="small">iwm→IWM (u) 14d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>高收益债 HYG 暴跌后反弹</td>
+  <td class="small">hyg→HYG (u) 30d</td>
+  <td class="reject-reason">stats below threshold</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>黄金急跌后短期反弹 (恐慌冲洗后)</td>
+  <td class="small">gold→GC=F (u) 14d</td>
+  <td class="reject-reason">path-aware fail: hit 44% mean +0.81% (stopped_out 92/191)</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>铜价急跌后中期反弹 (周期股代理)</td>
+  <td class="small">copper→HG=F (u) 30d</td>
+  <td class="reject-reason">path-aware fail: hit 25% mean +0.85% (stopped_out 91/122)</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>油价急跌后短期反弹</td>
+  <td class="small">oil→CL=F (u) 14d</td>
+  <td class="reject-reason">auto-tune: no variant survives minimal gate</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>沪深300 急跌 + 余额宝紧缩 → 反弹</td>
+  <td class="small">hs300→sh000300 (u) 30d</td>
+  <td class="reject-reason">auto-tune: no variant survives minimal gate</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>创业板深度超卖后反弹</td>
+  <td class="small">chinext→sz399006 (u) 30d</td>
+  <td class="reject-reason">auto-tune: no variant survives minimal gate</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>DXY 急升后 SPY 短期超卖反弹</td>
+  <td class="small">dxy→SPY (u) 14d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX 期限结构倒挂代理 (vix 急升) → SPY 反弹</td>
+  <td class="small">vix_1h→SPY (u) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>长期反转衰减 — Russell 小盘深度低迷后年度反弹</td>
+  <td class="small">iwm→IWM (u) 60d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>TLT 急跌后中期反弹 (久期超卖)</td>
+  <td class="small">tlt→TLT (u) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>BTC 60 日深度回撤 + 200d MA 下方 → 长期反弹</td>
+  <td class="small">btc→BTC-USD (u) 60d</td>
+  <td class="reject-reason">OOS fail: OOS aligned hit 48% &lt; 50%</td>
+</tr></tbody></table>
+</details>
+
+<details class="run-card">
+  <summary>
+    <strong>R-0041</strong> ·
+    方差风险溢价 (VRP) ·
+    <span class="status-chip status-rejected">1 rejected</span>
+  </summary>
+  <div class="run-meta">
+    05-16 14:15 北京 ·
+    20m2s ·
+    8 subagents ·
+    134 searches ·
+    53 fetches ·
+    43 unique sources ·
+    domain: <code>volatility</code>
+  </div>
+  <div class="small">主要抓取域: <span class="domain-pill">sjpyun.github.io · 5</span> <span class="domain-pill">papers.ssrn.com · 4</span> <span class="domain-pill">www.aqr.com · 4</span></div>
+  <table class="cands"><thead><tr><th>IH</th><th>状态</th><th>名称</th><th>规则</th><th>原因</th></tr></thead><tbody><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX极高(&gt;35)危机模式预示SPY+60d反弹</td>
+  <td class="small">vix→SPY (u) 60d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX低位(&lt;13)且SPY站上200d → SPY动量延续30d</td>
+  <td class="small">vix→SPY (u) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX/VIX3M形态:VIX&gt;30(短端深backwardation代理)→SPY 14d回调延续</td>
+  <td class="small">vix→SPY (d) 14d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>MOVE&gt;120(债券恐慌)→TLT 30d反弹(避险与超调修复)</td>
+  <td class="small">move→TLT (u) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>MOVE&lt;80且VIX&lt;15(双低波动率)→SPY 30d继续涨</td>
+  <td class="small">move→SPY (u) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX 30天暴涨&gt;80%(尾部冲击)→QQQ 60d反弹</td>
+  <td class="small">vix→QQQ (u) 60d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX&lt;12极乐观且HYG跌破50d→SPY 30d回调</td>
+  <td class="small">vix→SPY (d) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX&gt;25且铜金比下行(经济疲软共振)→GLD/GC=F 30d涨</td>
+  <td class="small">vix→GC=F (u) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX&lt;15且IWM站上200d(全风险偏好)→IWM 30d延续</td>
+  <td class="small">vix→IWM (u) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX 7日跌幅&gt;30%(恐慌消退)→SPY 14d反弹</td>
+  <td class="small">vix→SPY (u) 14d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX&gt;25且DXY&lt;102(美元疲弱+恐慌)→GC=F 60d涨</td>
+  <td class="small">vix→GC=F (u) 60d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-rejected">rejected</span></td>
+  <td>VIX&gt;30且US10Y&lt;3.5%(经济衰退恐慌)→TLT 30d涨</td>
+  <td class="small">vix→TLT (u) 30d</td>
+  <td class="reject-reason">auto-tune: no variant survives minimal gate</td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX&lt;14且QQQ短长均线金叉→QQQ 30d涨</td>
+  <td class="small">vix→QQQ (u) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX&gt;40(极端尾部)→SMH 60d反弹(高beta板块超调修复)</td>
+  <td class="small">vix→SMH (u) 60d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX&lt;13且HYG站上200d(信用与vol双确认)→SPY 60d涨</td>
+  <td class="small">vix→SPY (u) 60d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX&gt;25(EM传染窗口)→沪深300 30d跌</td>
+  <td class="small">vix→sh000300 (d) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX 30天涨&gt;50%且US10Y冲高&gt;4.5%(双重压力)→QQQ 30d跌</td>
+  <td class="small">vix→QQQ (d) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>MOVE&gt;140(债券极端恐慌)→SPY 30d跌(风险传染)</td>
+  <td class="small">move→SPY (d) 30d</td>
+  <td class="reject-reason"></td>
+</tr><tr>
+  <td>—</td>
+  <td><span class="status-chip status-unknown">unknown</span></td>
+  <td>VIX&lt;15且铜&gt;50d MA(增长共振)→XLF 30d涨</td>
+  <td class="small">vix→XLF (u) 30d</td>
+  <td class="reject-reason"></td>
+</tr></tbody></table>
+</details>
 
 <details class="run-card">
   <summary>
@@ -5054,266 +5511,6 @@ _无_
   <td>美2Y与10Y同步下行(深度bull steepener)→IWM小盘股受益</td>
   <td class="small">us_2y_yield→IWM (u) 30d</td>
   <td class="reject-reason">path-aware fail: hit 31% mean +1.10% (stopped_out 46/67)</td>
-</tr></tbody></table>
-</details>
-
-<details class="run-card">
-  <summary>
-    <strong>R-0022</strong> ·
-    加密 fear/greed 指数 ·
-    <span class="status-chip status-rejected">17 rejected</span>
-  </summary>
-  <div class="run-meta">
-    05-13 02:50 北京 ·
-    15m49s ·
-    8 subagents ·
-    119 searches ·
-    48 fetches ·
-    40 unique sources ·
-    domain: <code>sentiment</code>
-  </div>
-  <div class="small">主要抓取域: <span class="domain-pill">arxiv.org · 8</span> <span class="domain-pill">link.springer.com · 5</span> <span class="domain-pill">www.sciencedirect.com · 4</span></div>
-  <table class="cands"><thead><tr><th>IH</th><th>状态</th><th>名称</th><th>规则</th><th>原因</th></tr></thead><tbody><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>BTC 30天暴跌 → 60天恐慌反转上涨</td>
-  <td class="small">btc→BTC-USD (u) 60d</td>
-  <td class="reject-reason">degenerate fire rate 43.0% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>VIX&gt;30 危机模式 → BTC 30天反转上涨</td>
-  <td class="small">vix→BTC-USD (u) 30d</td>
-  <td class="reject-reason">path-aware fail: hit 3% mean -1.52% (stopped_out 66/68)</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>VIX&lt;13 低波动健康市 → BTC 60天顺势上涨</td>
-  <td class="small">vix→BTC-USD (u) 60d</td>
-  <td class="reject-reason">path-aware fail: hit 6% mean +1.39% (stopped_out 112/119)</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>DXY&lt;100 弱美元 → BTC 30天上涨</td>
-  <td class="small">dxy→BTC-USD (u) 30d</td>
-  <td class="reject-reason">degenerate fire rate 65.3% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>DXY&gt;105 强美元 → BTC 30天承压</td>
-  <td class="small">dxy→BTC-USD (d) 30d</td>
-  <td class="reject-reason">OOS fail: OOS aligned hit 32% &lt; 50%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>HYG 站上 200d MA 风险偏好回归 → BTC 30天上涨</td>
-  <td class="small">hyg→BTC-USD (u) 30d</td>
-  <td class="reject-reason">degenerate fire rate 74.4% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>BTC 上行趋势+60d强动量 → 30天延续上涨</td>
-  <td class="small">btc→BTC-USD (u) 30d</td>
-  <td class="reject-reason">degenerate fire rate 48.9% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>BTC 30天过热 (&gt;30%) → 14天回调</td>
-  <td class="small">btc→BTC-USD (d) 14d</td>
-  <td class="reject-reason">degenerate fire rate 56.2% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>美10Y&gt;4.5% → BTC 30天跌 (久期惩罚溢出)</td>
-  <td class="small">us_10y_yield→BTC-USD (d) 30d</td>
-  <td class="reject-reason">degenerate fire rate 60.3% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>美 3M T-bill&lt;3% 宽松周期 → BTC 60天上涨</td>
-  <td class="small">us_3m_yield→BTC-USD (u) 60d</td>
-  <td class="reject-reason">degenerate fire rate 33.7% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>MOVE&gt;120 利率波动高 → BTC 30天承压</td>
-  <td class="small">move→BTC-USD (d) 30d</td>
-  <td class="reject-reason">OOS fail: OOS aligned hit 46% &lt; 50%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>黄金站上 200d MA → BTC 30天上涨 (双重抗法币)</td>
-  <td class="small">gold→BTC-USD (u) 30d</td>
-  <td class="reject-reason">degenerate fire rate 70.6% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>BTC 站上 200d MA → ETH 30天跟涨</td>
-  <td class="small">btc→ETH-USD (u) 30d</td>
-  <td class="reject-reason">degenerate fire rate 59.1% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>BTC 7天急涨 → ETH 14天 alt season 跟涨</td>
-  <td class="small">btc→ETH-USD (u) 14d</td>
-  <td class="reject-reason">degenerate fire rate 54.4% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>BTC 30天暴跌 → ETH 60天反弹 (alt 复苏更大)</td>
-  <td class="small">btc→ETH-USD (u) 60d</td>
-  <td class="reject-reason">degenerate fire rate 43.0% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>油价&lt;60 低通胀+宽松预期 → BTC 30天上涨</td>
-  <td class="small">oil→BTC-USD (u) 30d</td>
-  <td class="reject-reason">degenerate fire rate 43.4% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>BTC 50/200 双均线金叉 → BTC 30天上涨</td>
-  <td class="small">btc→BTC-USD (u) 30d</td>
-  <td class="reject-reason">degenerate fire rate 59.3% &gt; 30%</td>
-</tr></tbody></table>
-</details>
-
-<details class="run-card">
-  <summary>
-    <strong>R-0021</strong> ·
-    January effect ·
-    <span class="status-chip status-rejected">20 rejected</span>
-  </summary>
-  <div class="run-meta">
-    05-13 01:38 北京 ·
-    11m43s ·
-    8 subagents ·
-    127 searches ·
-    46 fetches ·
-    36 unique sources ·
-    domain: <code>seasonality</code>
-  </div>
-  <div class="small">主要抓取域: <span class="domain-pill">quantpedia.com · 5</span> <span class="domain-pill">www.efmaefm.org · 4</span> <span class="domain-pill">papers.ssrn.com · 4</span></div>
-  <table class="cands"><thead><tr><th>IH</th><th>状态</th><th>名称</th><th>规则</th><th>原因</th></tr></thead><tbody><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>1月小盘动量反例:IWM 跑输 SPY 后 30 天延续弱势</td>
-  <td class="small">spy→IWM (d) 30d</td>
-  <td class="reject-reason">degenerate fire rate 60.3% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>极低 VIX + SPY 趋势内,1 月小盘动量难持续</td>
-  <td class="small">vix→IWM (d) 30d</td>
-  <td class="reject-reason">OOS fail: OOS N=0 &lt; 5</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>美元强势触发新兴市场年初资本外流,CSI500 承压</td>
-  <td class="small">dxy→sh000905 (d) 30d</td>
-  <td class="reject-reason">OOS fail: OOS aligned hit 40% &lt; 50%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>春节前现金需求:USDCNY 走升伴随 CSI300 节前疲软</td>
-  <td class="small">usdcnh→sh000300 (d) 14d</td>
-  <td class="reject-reason">too rare fire rate 0.00% &lt; 0.5%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>春节后流动性回流:节后 4 周 CSI300 反弹</td>
-  <td class="small">tianhong_yuebao_7d→sh000300 (u) 30d</td>
-  <td class="reject-reason">degenerate fire rate 30.3% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>高 VIX 后 BTC 出现 turn-of-year 税损反弹</td>
-  <td class="small">vix→BTC-USD (u) 30d</td>
-  <td class="reject-reason">OOS fail: OOS aligned hit 40% &lt; 50%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>BTC 大跌后中期均值回归(turn-of-year 反弹)</td>
-  <td class="small">btc→BTC-USD (u) 30d</td>
-  <td class="reject-reason">path-aware fail: hit 13% mean +2.68% (stopped_out 46/53)</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>DXY 走弱伴随黄金 1 月避险延续</td>
-  <td class="small">dxy→GC=F (u) 30d</td>
-  <td class="reject-reason">degenerate fire rate 37.4% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>高收益债走强信号配 SPY 1 月 barometer 形态</td>
-  <td class="small">hyg→SPY (u) 60d</td>
-  <td class="reject-reason">degenerate fire rate 59.5% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>10Y 收益率高位令 IWM 小盘承压(年初融资敏感)</td>
-  <td class="small">us_10y_yield→IWM (d) 30d</td>
-  <td class="reject-reason">OOS fail: OOS aligned hit 40% &lt; 50%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>MOVE 高位 + 长债弱势,黄金 1 月延续避险</td>
-  <td class="small">move→GC=F (u) 30d</td>
-  <td class="reject-reason">OOS fail: OOS aligned hit 44% &lt; 50%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>Russell Reconstitution 前置:11 月小盘强势 → 1 月 IWM 弱</td>
-  <td class="small">vix→IWM (d) 14d</td>
-  <td class="reject-reason">OOS fail: OOS aligned hit 44% &lt; 50%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>美元走弱触发 BTC 风险资产年初反弹</td>
-  <td class="small">dxy→BTC-USD (u) 30d</td>
-  <td class="reject-reason">degenerate fire rate 38.4% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>3 月效应:印度财年截止前避险撤资令铜价承压</td>
-  <td class="small">us_10y_yield→HG=F (d) 30d</td>
-  <td class="reject-reason">OOS fail: OOS aligned hit 35% &lt; 50%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>VIX 极低 + SPY 长期趋势,QQQ 1 月动量延续</td>
-  <td class="small">vix→QQQ (u) 30d</td>
-  <td class="reject-reason">OOS fail: OOS N=3 &lt; 5</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>TLT 跌破长期均线后,SPY 年初风险资产跑赢</td>
-  <td class="small">tlt→SPY (u) 30d</td>
-  <td class="reject-reason">path-aware fail: hit 43% mean +0.69% (stopped_out 63/111)</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>高 HYG + 低 VIX:微盘 1 月效应被套利吃掉,IWM 弱</td>
-  <td class="small">hyg→IWM (d) 14d</td>
-  <td class="reject-reason">degenerate fire rate 61.6% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>黄金 1 月避险:DXY 中性 + 10Y 走高时 GLD 仍受支撑</td>
-  <td class="small">us_10y_yield→GC=F (u) 14d</td>
-  <td class="reject-reason">path-aware fail: hit 8% mean -1.27% (stopped_out 13/220)</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>铜价突破均线,1 月工业周期 → SMH 顺周期</td>
-  <td class="small">copper→SMH (u) 30d</td>
-  <td class="reject-reason">degenerate fire rate 39.9% &gt; 30%</td>
-</tr><tr>
-  <td>—</td>
-  <td><span class="status-chip status-rejected">rejected</span></td>
-  <td>BTC 站稳长期均线后, 风险偏好溢出至 QQQ(1 月)</td>
-  <td class="small">btc→QQQ (u) 30d</td>
-  <td class="reject-reason">degenerate fire rate 41.7% &gt; 30%</td>
 </tr></tbody></table>
 </details>
 

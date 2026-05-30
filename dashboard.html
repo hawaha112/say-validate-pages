@@ -111,7 +111,7 @@
 </head>
 <body>
 <h1>📡 say_validate · 知识与监测看板</h1>
-<div class="small">最后刷新: <strong>2026-05-30 11:19 北京</strong> · 由 4h launchd 流水线自动更新。高把握信号触发时直接 Telegram 推送。</div>
+<div class="small">最后刷新: <strong>2026-05-30 11:20 北京</strong> · 由 4h launchd 流水线自动更新。高把握信号触发时直接 Telegram 推送。</div>
 
 <nav>
   <a href="#summary">📊 总览</a>
@@ -144,6 +144,70 @@
 
 <h2 id="supervised">🧠 LLM 监督观察 · 6 个 supervisor</h2>
 <p class="small">每个 LLM-driven supervisor 跑完后写入这里(不推 TG)。最近一次时间 + 状态 + 摘要 + 可展开详情。</p>
+
+<div class="sup-card warn">
+  <h4>⚠️ 规则矛盾 / 冗余 / 覆盖审查</h4>
+  <div class="sup-meta">05-30 11:20 北京 · status=warn  · conflict_count_today_active=0 · conflict_count_latent=3 · redundant_exact_clones=5 · redundant_overcrowded_groups=4 · weak_or_buggy_rules=4 · coverage_gaps=6 · total_live_rules_reviewed=63</div>
+  <div class="sup-summary">3 处潜在方向冲突(今日未同时激活), ~20 条冗余/废规则可清理, 6 大覆盖空洞(尤其加密币 target / 主流指数 down 规则缺失)</div>
+  <div class="sup-actions"><div><b>建议:</b><ul><li>Retire 完全克隆: IH#44 (≡#10), IH#51 (≡#21), IH#56 (≡#7), IH#35 (≡#42), IH#89 (≡#82)</li><li>Retire dxy→HYG up 整组废规则: IH#87, IH#100, IH#101, IH#102 (hit ≤ 4.2%)</li><li>Retire 弱 vix→SPY up: IH#52, IH#15, IH#106, IH#58, IH#63 (hit 23-28%, 留 #42/#91/#60/#26 即可)</li><li>Retire dxy→sh000905 down 冗余: 保 #39 + #81, 收缩 #37 #41 #103 #104 #105</li><li>Retire 反直觉/全错: IH#71 (hit=0), IH#94 (hit=2.8%), IH#109 (dxy→铜 up 反直觉), IH#83 (hit=6.5%)</li><li>新写 playbook: BTC/ETH 作为 target 的 up/down 规则 (当前 0 覆盖)</li><li>新写 playbook: SPY/QQQ down 规则 (整个 KB 只有 1 条 SPY down, QQQ down 完全缺失)</li><li>新写 playbook: yield 飙升 → TLT down (利率敏感板块下行覆盖)</li><li>调查 IH#108 dxy→SPY down (hit=87%) 与众多 SPY up 规则的潜在对冲冲突 — 强 dxy 日加上 vix 低/oil 低时会同时发反向信号</li></ul></div></div>
+  <details class="detail">
+    <summary>展开详情</summary>
+    <div class="sup-details-md">## 方向矛盾(同 target + 同 timeframe 上下并存)
+
+&gt; 今日实际触发(adaptive-monitor): 只有 #41(dxy→sh000905 down)和 #85(dxy→IWM up)激活,无对冲冲突。
+&gt; 以下为&quot;潜在冲突&quot;——未来某天可能同向引爆相反信号。
+
+| target | up 方 | down 方 | 风险 |
+|---|---|---|---|
+| SPY (daily) | vix/oil/hyg/spy 等 ~15 条 up | #108 dxy→SPY down (hit=87%, n=154) | dxy 强势时若同时 vix 低/oil 低,会同时发出&quot;看多 SPY&quot;和&quot;看空 SPY&quot;,自相打架 |
+| XLF (daily) | #88/40/48 us_yield→XLF up (hit 14-15%) | #80 yield_curve→XLF down (hit=93.5%, n=46) | 高斜率 yield + steepening 同发 → 方向不一致 |
+| sz399006 (daily) | #69 chinext→sz399006 up (hit=50.8%, n=118) | #89/#82 vix→sz399006 down (hit=79%, n=96/139) | vix 高位 + chinext 自身强势时,信号互斥 |
+
+## 冗余规则(同 indicator+target+direction+timeframe, 阈值或样本几乎一致)
+
+**接近&quot;完全克隆&quot;——优先合并:**
+- IH#10 ⇄ IH#44 (copper→SMH up): hit=35.2%, n=125, horizon 完全一致 → 保 #10, retire #44
+- IH#21 ⇄ IH#51 (spy→SPY up): hit=32.6%, n=190, 完全一致 → 保 #21, retire #51
+- IH#7 ⇄ IH#56 (oil→SPY up): hit=29.3%, n=147, 完全一致 → 保 #7, retire #56
+- IH#35 ⇄ IH#42 (vix→SPY up, 阈值 16 vs 16.0): hit=37.1%, n=202 → 保 #42 (浮点阈值更标准)
+- IH#82 ⇄ IH#89 (vix→sz399006 down): hit 79.1 vs 79.2, n=139 vs 96 → 保 #82(样本更大)
+
+**vix→SPY up 拥挤(11 条 live!)按 hit 排序低于 30% 的可考虑 retire 一批:**
+- 保留: #42 (hit 37.1, n=202), #91 (hit 34.6, n=272), #60 (hit 34.0, n=156), #26 (hit 34.5, n=87)
+- 候选 retire: #52 #15 #106 #58 #63 (hit 23-28%,贡献边际信息少)
+
+**dxy→HYG up 整组都没用(hit 全部 ≤ 4.2%, 几乎=噪声):**
+- IH#87 #100 #101 #102 全部建议 retire(留着只会增加误报)
+
+**dxy→sh000905 down 7 条 live,hit 都很高但阈值高度重叠(96-107 区间):**
+- 保留最锋利的:#39 (hit=97.3%, threshold 105, horizon 60d) + #81 (hit=94.9%, n=178 — 唯一 30d horizon 的)
+- 其余 #37 #41 #103 #104 #105 可考虑收缩,留高 hit 一组即可
+
+**其它小冗余:**
+- IH#30 ⇄ IH#43 (gold→GC=F up daily): hit 42.7 vs 40.8 → 保 #30
+- IH#40 ⇄ IH#48 (us_10y_yield→XLF up): hit 14.5 vs 14.0,阈值接近 → 保 #40
+- IH#84 ⇄ IH#85 (dxy→IWM up): hit 17.8 vs 13.4 → 保 #84
+- IH#86 ⇄ IH#95 (us_10y_yield→LQD up): hit 4.9 vs 5.6 → 都很弱,可整组 retire
+- IH#24 ⇄ IH#57 (qqq→QQQ up): hit 30.3 vs 30.1 → 保 #24
+
+## 覆盖空洞(主流组合缺 live 规则)
+
+| 空洞 | 说明 |
+|---|---|
+| 加密币作为 target | 0 条!btc/eth 只当指标用,无 BTC→up/down 规则 |
+| SPY/QQQ down | 整个表里&quot;SPY down&quot;只有 #108 dxy→SPY down 一条,QQQ down 完全缺失 |
+| 短线 hourly | 仅 #98 gold_1h, 总数 1 条;无 spy_1h/qqq_1h/vix_1h 的 live(只在 playbook check 显示,未 live) |
+| 中国 A 股 up | 仅 #68 hs300 up + #69 chinext up;缺 vix 低位时的 A 股 up 规则 |
+| 大宗商品 target | 仅 GC=F (黄金);无 silver/oil/copper 自身作为 target 的清晰规则(HG=F 那 2 条 hit 太低且与直觉相反) |
+| 利率敏感板块下行 | TLT 全是 up(#90 #99 #71),缺 yield 大幅上行时的 TLT down |
+
+## 怪规则(可能是数据/逻辑 bug,不是冗余)
+- IH#109 dxy→HG=F up (hit=14.9%): 强美元利好铜?违反直觉,建议人工复核 rule_spec
+- IH#83 us_10y_yield→HG=F up (hit=6.5%): hit 太低,大概率噪声
+- IH#71 us_3m_yield→TLT up (hit=0.0%, n=110): hit=0 但还 live?
+- IH#94 us_3m_yield→IWM up (hit=2.8%): 几乎全错,应 retire</div>
+  </details>
+</div>
 
 <div class="sup-card warn">
   <h4>🌅 美股 EOD 复盘</h4>
@@ -315,88 +379,6 @@
 1. **优先排查调度器**:研究循环 14 天没触发,先看 cron / 守护进程 / 是否被人手停掉,或上游依赖(LLM key、数据源)失效报错把循环 kill 掉。
 2. **验证器 yield = 0% 是结构性问题**:即使重启 pipeline,unknown 占多数说明 validation_status 没被推到终态。检查 validator 是否实际打分,还是空跑就归档。
 3. **auto-tune 接入零产出**:24h(以及 14 天)0 条 [AUTO-TUNED] live。要么 auto-tune 没接上,要么 unknown 阻塞了升级路径 — 需要核对。</div>
-  </details>
-</div>
-
-<div class="sup-card warn">
-  <h4>⚠️ 规则矛盾 / 冗余 / 覆盖审查</h4>
-  <div class="sup-meta">05-16 16:03 北京 · status=warn  · conflict_count_active_today=0 · conflict_count_structural=2 · redundant_exact_pairs=4 · redundant_near_duplicate_pairs=7 · redundant_cluster_size_sh000905_dxy_down=7 · redundant_cluster_size_HYG_dxy_up=4 · gap_count=6 · live_total=62</div>
-  <div class="sup-summary">0 条今日激活方向矛盾;15 条冗余/近重复 (含 4 EXACT 重复 + dxy→sh000905 down 7条同质集群);6 大覆盖空洞 (CSI500 up / TLT down / Gold down / BTC直撑 / 板块ETF / 港股)</div>
-  <div class="sup-actions"><div><b>建议:</b><ul><li>[EXACT 重复] Retire IH#44 (= IH#10 copper SMH up)</li><li>[EXACT 重复] Retire IH#56 (= IH#7 oil SPY up)</li><li>[EXACT 重复] Retire IH#51 (= IH#21 spy SPY up)</li><li>[EXACT 重复] Retire IH#48 (= IH#40 us_10y XLF up, IH#40 hit 略高)</li><li>[近重复] Retire IH#35 (IH#42 vix SPY 更优)</li><li>[近重复] Retire IH#63 (IH#3 vix SPY 更优)</li><li>[近重复] Retire IH#58 (IH#26 vix&gt;28 SPY 更优)</li><li>[近重复] Retire IH#55 (IH#36 vix HYG 更优)</li><li>[近重复] Retire IH#43 (IH#30 gold deep pullback 更优)</li><li>[近重复] Retire IH#57 (IH#24 qqq 趋势更优)</li><li>[近重复] Retire IH#86 (IH#95 us_10y LQD 更优)</li><li>[集群瘦身] dxy→sh000905 down: 保留 IH#39 (严) + IH#41 (宽,今日激活), retire IH#37/81/103/104/105</li><li>[低质集群] dxy→HYG up (IH#100/101/102/87) 全 hit&lt;5%, 建议整组 retire 或重训</li><li>[新写 playbook] sh000905 (CSI500) up: 例如 &#x27;dxy 周线下穿 MA50 + 北向资金 5d 净流入 → CSI500 30d 反弹&#x27;</li><li>[新写 playbook] TLT down: 例如 &#x27;10y yield &gt; 4.5% + 30d 加速上行 → TLT 60d 承压&#x27;</li><li>[新写 playbook] GC=F down: 例如 &#x27;实际利率 (10y - 通胀预期) &gt; 2.0% + dxy 强势 → 黄金 60d 回调&#x27;</li><li>[新写 playbook] BTC 直接 target: 例如 &#x27;BTC 周线 RSI&lt;35 + MVRV 极低 → BTC 90d 反弹&#x27;</li><li>[新写 playbook] 板块轮动 (XLE/XLU/XLP/XLI): 例如 &#x27;油价 60d 突破 + 趋势 above MA50 → XLE up&#x27;</li></ul></div></div>
-  <details class="detail">
-    <summary>展开详情</summary>
-    <div class="sup-details-md">## 方向矛盾(同 target + timeframe 同时存在 up / down 规则)
-
-⚠️ 结构性对冲存在,但**今日没有同时激活**(只有 IH#41 dxy→sh000905 down 新激活,对侧无 up 规则触发),所以不升级 alert。
-
-| target | up 规则 | down 规则 | 触发条件 |
-|---|---|---|---|
-| SPY (daily) | IH#42/35/91/3/63/15/106/52/26/58 (vix*多), IH#21/51 spy, IH#7/56 oil, IH#47/59 hyg, IH#73 yield_curve | **IH#108 dxy→SPY down 87.0% n=154 mean=-0.76** | up=vix低/oil低/趋势 vs down=强美元;**指标不同,可作场景区分,非真正矛盾** |
-| sz399006 (daily) | IH#69 chinext→sz399006 up 50.8% n=118 | IH#89 vix→down 79.2% n=96, IH#82 vix→down 79.1% n=139 | 同上,不同指标驱动,**结构相容** |
-| GC=F / TLT | 仅 up,**0 down** | — | 缺失反向规则(见覆盖空洞) |
-
-→ **结论:无激活态方向矛盾,但 SPY/sz399006 多 up vs 单 down 偏置严重,长期会牺牲 down 场景命中。**
-
-## 冗余规则(rule_spec 几乎相同 / 阈值差 &lt; 5%)
-
-### A. EXACT 重复 (rule_spec_json 一字不差)
-
-| 保留 | 重复 | 指标·target·方向 | 备注 |
-|---|---|---|---|
-| **IH#10** | IH#44 | copper · SMH · up · 35.2% | 完全一致 |
-| **IH#7** | IH#56 | oil · SPY · up · 29.3% | level&lt;60 完全一致 |
-| **IH#21** | IH#51 | spy · SPY · up · 32.6% | change(252)&gt;15 完全一致 |
-| **IH#40** | IH#48 | us_10y_yield · XLF · up · 14.5%/14.0% | ma_ratio&lt;0.98 + level&gt;3.5 完全一致 |
-
-### B. 近重复 (同逻辑,阈值微调,效果几乎一样)
-
-| 保留 (hit 高) | 退役建议 | 备注 |
-|---|---|---|
-| **IH#42** (vix SPY up 41.6%, n=380) | IH#35 (37.1%) | vix&lt;16 + below_ma 30,IH#35 阈值 &quot;16&quot; 与 &quot;16.0&quot; 文字差异 |
-| **IH#3** (vix SPY up, vix&gt;25.0) | IH#63 (vix&gt;25.5) | 同 28.8%,IH#3 n=125 vs IH#63 n=73 |
-| **IH#26** (vix&gt;28, hit 34.5%) | IH#58 (vix&gt;27, hit 23.4%) | 重叠 trigger 区间,IH#26 更紧致更优 |
-| **IH#36** (vix HYG up 16.7%) | IH#55 (15.8%) | vix&lt;18 vs vix&lt;23.4,后者太宽 |
-| **IH#30** (gold deep pullback hit 42.7%) | IH#43 (40.8%) | -7% vs -4%,IH#30 触发更稀但更准 |
-| **IH#24** (qqq&gt;+8%, 30.3%) | IH#57 (&gt;+10%, 30.1%) | 同逻辑窄阈值差 |
-| **IH#95** (us_10y LQD up 5.6%) | IH#86 (4.9%) | 同逻辑顺序换 |
-
-### C. dxy→sh000905 down 高度同质化集群(7 条 live,逻辑全为 &quot;dxy &gt; X + above_ma50&quot;,阈值 96-106)
-
-| 保留 | 退役建议 | hit% | 阈值 |
-|---|---|---|---|
-| **IH#39** | — | 97.3% | dxy&gt;105.0 + ma |
-| | IH#37 | 96.0% | dxy&gt;106 + ma |
-| | IH#81 | 94.9% | dxy&gt;103 + 30d change |
-| | IH#104 | 92.1% | dxy&gt;102.06 + ma |
-| | IH#103 | 92.0% | dxy&gt;102.38 + ma |
-| | IH#105 | 89.3% | dxy&gt;98.17 + ma |
-| | IH#41 | 87.7% | dxy&gt;96.6 + ma (**今日激活**,该条目前正在推 → 慎退) |
-
-→ 7 条本质同一假设,**只是不同阈值采样**。IH#39 最高命中是最严版本,但触发稀(110 触发);IH#41 阈值最宽常激活但 hit 偏低。**建议保留 IH#39 + IH#41 (一严一宽),退役中间 5 条**。
-
-### D. dxy→HYG up 集群(4 条 live, hit 全 &lt; 5%)
-
-IH#100/101/102/87 — 均为 &quot;dxy&gt;X (98-107)+其他 level&quot;,hit 2-4%,统计上等同噪声。建议**整组退役或重测**。
-
-## 覆盖空洞(主流 target/horizon 无 live 规则)
-
-| 缺口 | 影响 | 建议 |
-|---|---|---|
-| **sh000905 (CSI500) up** | 0 live up 规则 vs 7 down | A股反弹完全没信号,系统永远只能喊空 |
-| **TLT down** | 0 (全 up) | 加息周期完全失声 |
-| **GC=F (黄金) down** | 0 (全 up) | 强美元 + 实际利率上行场景缺失 |
-| **BTC/ETH 直接 target** | 仅 IH#65 btc→QQQ 间接 | 加密信号本体缺失 |
-| **XLE/XLU/XLP/XLI 板块** | 完全 0 | 板块轮动场景空白 |
-| **HSI / 港股** | 0 | 大中华区只有 A 股 |
-
-## 健康度小结
-
-- live 总数: 62
-- EXACT 重复对: 4 (浪费 4 条预算)
-- 近重复对: 7
-- 同质化集群: dxy→sh000905 down (7 → 建议 2), dxy→HYG up (4 → 0 或重训)
-- 方向覆盖空洞: 6 大类
-- **若执行所有退役建议,live 缩减至 ~45 条,信噪比应明显改善**</div>
   </details>
 </div>
 
@@ -621,14 +603,14 @@ _无_
   <td class="num">2</td>
   <td></td>
 </tr><tr>
-  <td><strong>hyg</strong></td>
-  <td class="num">80.310</td>
-  <td class="small">2026-05-29</td>
-  <td class="num">2</td>
-  <td></td>
-</tr><tr>
   <td><strong>qqq</strong></td>
   <td class="num">738.310</td>
+  <td class="small">2026-05-29</td>
+  <td class="num">2</td>
+  <td> <span class="tag-active">2 激活</span></td>
+</tr><tr>
+  <td><strong>spy</strong></td>
+  <td class="num">756.480</td>
   <td class="small">2026-05-29</td>
   <td class="num">2</td>
   <td> <span class="tag-active">2 激活</span></td>
@@ -639,20 +621,14 @@ _无_
   <td class="num">2</td>
   <td></td>
 </tr><tr>
-  <td><strong>spy</strong></td>
-  <td class="num">756.480</td>
+  <td><strong>hyg</strong></td>
+  <td class="num">80.310</td>
   <td class="small">2026-05-29</td>
   <td class="num">2</td>
-  <td> <span class="tag-active">2 激活</span></td>
-</tr><tr>
-  <td><strong>iwm</strong></td>
-  <td class="num">290.430</td>
-  <td class="small">2026-05-29</td>
-  <td class="num">1</td>
   <td></td>
 </tr><tr>
   <td><strong>btc</strong></td>
-  <td class="num">73631.430</td>
+  <td class="num">73656.656</td>
   <td class="small">2026-05-30</td>
   <td class="num">1</td>
   <td></td>
@@ -663,14 +639,20 @@ _无_
   <td class="num">1</td>
   <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
-  <td><strong>us_2y_yield</strong></td>
-  <td class="num">4.149</td>
+  <td><strong>iwm</strong></td>
+  <td class="num">290.430</td>
   <td class="small">2026-05-29</td>
   <td class="num">1</td>
   <td></td>
 </tr><tr>
   <td><strong>us_3m_yield</strong></td>
   <td class="num">3.588</td>
+  <td class="small">2026-05-29</td>
+  <td class="num">1</td>
+  <td></td>
+</tr><tr>
+  <td><strong>us_2y_yield</strong></td>
+  <td class="num">4.149</td>
   <td class="small">2026-05-29</td>
   <td class="num">1</td>
   <td></td>

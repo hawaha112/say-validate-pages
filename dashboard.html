@@ -111,7 +111,7 @@
 </head>
 <body>
 <h1>📡 say_validate · 知识与监测看板</h1>
-<div class="small">最后刷新: <strong>2026-05-30 11:20 北京</strong> · 由 4h launchd 流水线自动更新。高把握信号触发时直接 Telegram 推送。</div>
+<div class="small">最后刷新: <strong>2026-05-30 11:21 北京</strong> · 由 4h launchd 流水线自动更新。高把握信号触发时直接 Telegram 推送。</div>
 
 <nav>
   <a href="#summary">📊 总览</a>
@@ -142,8 +142,92 @@
 <h3>知识来源分布</h3>
 <div class="stats"><div class="stat"><span class="n">38</span><div class="lbl"><span class="tag tag-research">research</span></div></div><div class="stat"><span class="n">19</span><div class="lbl"><span class="tag tag-playbook">playbook</span></div></div><div class="stat"><span class="n">2</span><div class="lbl"><span class="tag tag-scan">scan</span></div></div><div class="stat"><span class="n">1</span><div class="lbl"><span class="tag tag-canon">canon</span></div></div></div>
 
-<h2 id="supervised">🧠 LLM 监督观察 · 6 个 supervisor</h2>
+<h2 id="supervised">🧠 LLM 监督观察 · 7 个 supervisor</h2>
 <p class="small">每个 LLM-driven supervisor 跑完后写入这里(不推 TG)。最近一次时间 + 状态 + 摘要 + 可展开详情。</p>
+
+<div class="sup-card ok">
+  <h4>🌃 美股盘前预期 (周末休市 → 周一开盘准备)</h4>
+  <div class="sup-meta">05-30 11:21 北京 · status=ok  · likely_trigger_count=4 · vix=15.32 · dxy=98.94 · us10y=4.45 · spy=756.48 · qqq=738.31 · iwm=290.43 · gold=4569.9 · market_open_tonight=False · next_session=2026-06-01 21:30 CST</div>
+  <div class="sup-summary">今晚周六休市,下次开盘 周一 2026-06-01 21:30;预计可推 4 条 daily(#85 IWM 81.6%、#41 sh000905 82.2%、#24 QQQ、#21 SPY),关键指标 VIX 15.32 距 #106 阈值 (-22%) 远未触发</div>
+  
+  <details class="detail">
+    <summary>展开详情</summary>
+    <div class="sup-details-md">## ⚠️ 日历校准
+- 北京时间 2026-05-30 周六 → **美股周末休市**,今晚 21:30 无开盘
+- 下一个交易时段 = **周一 2026-06-01 21:30 (美东 09:30)**
+- 本报告按&quot;下一开盘日&quot;准备,周日盘前再做最终复盘
+
+---
+
+## 预计触发(按当前状态延展到下次开盘)
+
+### 高把握 · 已 ON 且 cadence 期满,周一可推
+| # | 标的 | 方向 | h | 把握 | 历史均值 | 状态 |
+|---|------|------|---|------|----------|------|
+| 85 | IWM | 📈 | 30d | **81.6%** | +10.79% (N=201) | newly_active,从未推过 |
+| 41 | sh000905 | 📉 | 60d | **82.2%** | +5.63% (N=227) | newly_active(A 股,周一直接生效) |
+| 24 | QQQ | 📈 | 30d | 64.7% | +2.35% (N=142) | ON,上次推送 492h 前,72h cadence 已满 |
+| 21 | SPY | 📈 | 30d | — | — | ON,从未推过 |
+
+### 已活跃但本周末非推送窗口
+- **#66 GC=F 📈 60d** — 把握 57.2%,金价 +1.57% 强势但 cadence(7d)未到
+- **#29 黄金突破** — ON,上次推送 492h 前,周一可重推
+- **#58 / #64 复合(GC=F 📈)** — ON,从未推过
+
+### 远未触发(看明天会不会变)
+- **#106 SPY 📉 30d** — 需 **VIX &lt; 12**,当前 **15.32**,距离约 -22% 才能命中;短期不太可能触发
+
+---
+
+## 关键指标当前值
+
+| 指标 | 值 | 当日 | 临界距离 |
+|------|-----|------|----------|
+| VIX | **15.32** | -2.67% | 距 #106 阈值 (&lt;12) 还有 -21.7% |
+| DXY | **98.94** | -0.08% | 已支持 #41 / #85(美元突破) |
+| 10y | **4.45** | -0.04% | 平稳,无利率冲击预期 |
+| SPY | 756.48 | +0.25% | #21/#106 入场参考 756.48 |
+| QQQ | 738.31 | +0.37% | #24 入场参考 738.31 |
+| IWM | **290.43** | **-0.55%** | #85 入场 290.43(小盘走弱坐实条件) |
+| GC=F | 4569.90 | **+1.57%** | #66/#29 入场 4569.90 |
+| HYG | 80.31 | +0.10% | #106 还需 HYG 跌破 50d MA |
+
+---
+
+## 今夜事件日历
+- 周六周日**无主要美国宏观数据**
+- 本周关键(下周一开始):
+  - 周一 2026-06-01 ISM 制造业 PMI(影响 IWM/SPY)
+  - 周三 ADP 非农 + ISM Services
+  - **周五 NFP 非农就业**(VIX 波动催化剂,可能触发 #106 / #85 反转)
+- earnings 真空期(Q1 季报基本结束)
+
+---
+
+## 操作建议(周一开盘可能推送)
+
+**最高确信度 — 优先关注:**
+1. **#85 IWM 📈 30d**(把握 81.6%,从未推过)
+   - 入场 290.43 / 止盈 312.21 (+7.5%) / 止损 284.62 (-2.0%)
+   - 逻辑:美元突破 + 小盘极度弱势 → 30d 内右尾反弹
+   - 如周一开盘 IWM 跳空缺口,建议在 290–292 区间分批入场
+
+2. **#24 QQQ 📈 30d**(把握 64.7%,中期动量)
+   - 入场 738.31 / 止盈 750.12 (+1.6%) / 止损 723.54 (-2.0%)
+   - 风报比偏低,适合作 SPY/QQQ 多头加仓位
+
+**A 股侧:**
+3. **#41 sh000905 📉 60d**(把握 82.2%)— 周一 A 股开盘前已可执行,入场 8359.56
+
+**对冲监控:**
+- VIX 一旦冲到 18+,可启动 #106 反转剧本;当前距离尚远
+- DXY 跌破 98 → #85 / #41 信号可能失效,需要止损保护
+
+**周日复盘清单:**
+- 重跑 opportunities + adaptive-monitor,确认 #85/#24 仍激活
+- 检查 GC=F 周一跳空,#29/#66/#66 是否窗口期内</div>
+  </details>
+</div>
 
 <div class="sup-card warn">
   <h4>⚠️ 规则矛盾 / 冗余 / 覆盖审查</h4>
@@ -597,8 +681,20 @@ _无_
   <td class="num">4</td>
   <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
+  <td><strong>hyg</strong></td>
+  <td class="num">80.310</td>
+  <td class="small">2026-05-29</td>
+  <td class="num">2</td>
+  <td></td>
+</tr><tr>
   <td><strong>oil</strong></td>
   <td class="num">87.760</td>
+  <td class="small">2026-05-29</td>
+  <td class="num">2</td>
+  <td></td>
+</tr><tr>
+  <td><strong>copper</strong></td>
+  <td class="num">6.394</td>
   <td class="small">2026-05-29</td>
   <td class="num">2</td>
   <td></td>
@@ -615,21 +711,21 @@ _无_
   <td class="num">2</td>
   <td> <span class="tag-active">2 激活</span></td>
 </tr><tr>
-  <td><strong>copper</strong></td>
-  <td class="num">6.394</td>
-  <td class="small">2026-05-29</td>
-  <td class="num">2</td>
-  <td></td>
-</tr><tr>
-  <td><strong>hyg</strong></td>
-  <td class="num">80.310</td>
-  <td class="small">2026-05-29</td>
-  <td class="num">2</td>
-  <td></td>
-</tr><tr>
   <td><strong>btc</strong></td>
-  <td class="num">73656.656</td>
+  <td class="num">73648.969</td>
   <td class="small">2026-05-30</td>
+  <td class="num">1</td>
+  <td></td>
+</tr><tr>
+  <td><strong>us_2y_yield</strong></td>
+  <td class="num">4.149</td>
+  <td class="small">2026-05-29</td>
+  <td class="num">1</td>
+  <td></td>
+</tr><tr>
+  <td><strong>us_3m_yield</strong></td>
+  <td class="num">3.588</td>
+  <td class="small">2026-05-29</td>
   <td class="num">1</td>
   <td></td>
 </tr><tr>
@@ -641,18 +737,6 @@ _无_
 </tr><tr>
   <td><strong>iwm</strong></td>
   <td class="num">290.430</td>
-  <td class="small">2026-05-29</td>
-  <td class="num">1</td>
-  <td></td>
-</tr><tr>
-  <td><strong>us_3m_yield</strong></td>
-  <td class="num">3.588</td>
-  <td class="small">2026-05-29</td>
-  <td class="num">1</td>
-  <td></td>
-</tr><tr>
-  <td><strong>us_2y_yield</strong></td>
-  <td class="num">4.149</td>
   <td class="small">2026-05-29</td>
   <td class="num">1</td>
   <td></td>

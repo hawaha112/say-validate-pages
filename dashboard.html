@@ -111,7 +111,7 @@
 </head>
 <body>
 <h1>📡 say_validate · 知识与监测看板</h1>
-<div class="small">最后刷新: <strong>2026-05-30 11:17 北京</strong> · 由 4h launchd 流水线自动更新。高把握信号触发时直接 Telegram 推送。</div>
+<div class="small">最后刷新: <strong>2026-05-30 11:19 北京</strong> · 由 4h launchd 流水线自动更新。高把握信号触发时直接 Telegram 推送。</div>
 
 <nav>
   <a href="#summary">📊 总览</a>
@@ -125,11 +125,11 @@
 
 <h2 id="summary">📊 总览</h2>
 <div class="stats">
-  <div class="stat"><span class="n">64</span><div class="lbl">live 规则</div></div>
+  <div class="stat"><span class="n">60</span><div class="lbl">live 规则</div></div>
   <div class="stat"><span class="n">17</span><div class="lbl">复合假设</div></div>
-  <div class="stat"><span class="n">13</span><div class="lbl">🟢 今日激活</div></div>
-  <div class="stat"><span class="n">17</span><div class="lbl">监测指标</div></div>
-  <div class="stat"><span class="n">13</span><div class="lbl">覆盖资产</div></div>
+  <div class="stat"><span class="n">12</span><div class="lbl">🟢 今日激活</div></div>
+  <div class="stat"><span class="n">15</span><div class="lbl">监测指标</div></div>
+  <div class="stat"><span class="n">12</span><div class="lbl">覆盖资产</div></div>
 </div>
 
 <h3>🧬 进化闭环(Tier 1 — 实战 outcome 追踪)</h3>
@@ -140,10 +140,101 @@
 </div>
 
 <h3>知识来源分布</h3>
-<div class="stats"><div class="stat"><span class="n">38</span><div class="lbl"><span class="tag tag-research">research</span></div></div><div class="stat"><span class="n">23</span><div class="lbl"><span class="tag tag-playbook">playbook</span></div></div><div class="stat"><span class="n">2</span><div class="lbl"><span class="tag tag-scan">scan</span></div></div><div class="stat"><span class="n">1</span><div class="lbl"><span class="tag tag-canon">canon</span></div></div></div>
+<div class="stats"><div class="stat"><span class="n">38</span><div class="lbl"><span class="tag tag-research">research</span></div></div><div class="stat"><span class="n">19</span><div class="lbl"><span class="tag tag-playbook">playbook</span></div></div><div class="stat"><span class="n">2</span><div class="lbl"><span class="tag tag-scan">scan</span></div></div><div class="stat"><span class="n">1</span><div class="lbl"><span class="tag tag-canon">canon</span></div></div></div>
 
-<h2 id="supervised">🧠 LLM 监督观察 · 4 个 supervisor</h2>
+<h2 id="supervised">🧠 LLM 监督观察 · 6 个 supervisor</h2>
 <p class="small">每个 LLM-driven supervisor 跑完后写入这里(不推 TG)。最近一次时间 + 状态 + 摘要 + 可展开详情。</p>
+
+<div class="sup-card warn">
+  <h4>🌅 美股 EOD 复盘</h4>
+  <div class="sup-meta">05-30 11:19 北京 · status=warn  · pushed_count=0 · hit_count=0 · miss_count=0 · expired_count=4 · should_push_pending=2 · open_paper_trades=2 · days_pipeline_silent=7</div>
+  <div class="sup-summary">昨夜推 0 条 (TG 流水线 7d 静默), 命中/落空均无,4 条黄金相关信号 expired</div>
+  
+  <details class="detail">
+    <summary>展开详情</summary>
+    <div class="sup-details-md">## 昨夜推过的 high-conviction
+- **无**。过去 24h 内 `indicator_hypotheses.last_triggered_at` 全部为 NULL — 没有任何 live 规则触发过推送。
+- 本周累计 TG 推送 = **0 条**(参见 weekly_health 03:17 报告),pipeline 仍处停摆状态。
+- 仅存的两笔 paper_trade(#1 SPY up / #2 GC=F up,均开仓于 2026-05-07,持仓 23d)仍 `status=open` 且 `return_pct=NULL` — exit 监控同样未跑。
+
+## 当前 adaptive-monitor 输出(本次手跑)
+- 检查 65 单 + 58 复合;**应推送 2 条**(未实推,铁律禁 TG):
+  - #41 强美元周期 → 中证500 60d 承压(newly_active, h=60d)
+  - #85 美元突破+小盘弱势:右尾 exceptionalism 极端(newly_active, h=30d)
+- **失效信号 4 条(expired,均为黄金方向)**:
+  - #29 黄金突破长期趋势延续(h=60d)
+  - #98 黄金 1h 涨 &gt; 0.8% + 站上 12h 均线 → 4h intraday 续涨(h=4d)
+  - #58 组合 #43 ⨯ #66 → GC=F up(h=60d)
+  - #64 组合 #30 ⨯ #66 → GC=F up(h=60d)
+- 信号 = 黄金中长期续涨预期被市场否定(60d horizon 到期未达 +%),GC=F 多头连环失败 → 黄金动量结构需要重新校验。
+
+## 未命中 / 未验证(实际市场反应缺数据)
+- 由于 7d 内无 TG 推送、无新 paper_trade 开仓,**无法做&quot;预测 vs 实际&quot;对账**。
+- predictions 表只有 5/7 两条,outcome 字段为空 — 早间简报 / 盘前 prep 的推断都没有落到可追踪的记录。
+
+## 今日 A 股开盘前重点
+1. **黄金主题降权**:4 条黄金规则集体到期失效 → 早间简报谨慎再给&quot;GC=F 续涨&quot;叙事,等 KB 重训。
+2. **强美元 / 小盘弱势**(#41、#85)是 newly_active,opportunity 池里 #106 VIX&lt;12 + HYG 跌破 50d → SPY 30d 回调(把握 69.6%, N=193)与之共振 — 美股动能转弱的剧本最值得跟。
+3. **沪深300 / 中证500 隐含承压**:#41 直接指向 sh000905 60d 看跌,而 opportunities 仍显示 #68 沪深300 站上 200dMA + 30d &gt; 5% → 30d 续涨(把握 51%, N=134),两个 horizon 冲突,A 股盘前需注意短多 vs 中空的分歧。
+4. **最高优先级修复**:`pipeline` 静默已 7+ 天,FRED/Yahoo 抓取未恢复,VIX/DXY/T10Y2Y/T10Y3M 均未入库 — 不修就无 EOD 可复盘。</div>
+  </details>
+</div>
+
+<div class="sup-card warn">
+  <h4>上周信号复盘 (2026-05-23 -&gt; 2026-05-30)</h4>
+  <div class="sup-meta">05-30 11:19 北京 · status=warn  · pushed_count=0 · hit_count=0 · hit_rate_pct=None · weeks_silent=3 · live_ih_count=65 · ih_with_last_triggered_at=0 · open_paper_trades=2</div>
+  <div class="sup-summary">上周 TG 推送 0 条,连续 3 周无新触发;闸门未变,推断市场进入盘整 regime,同时发现 last_triggered_at 与 paper_trades 写入链路疑似断裂。</div>
+  <div class="sup-actions"><div><b>建议:</b><ul><li>P0: 排查 indicator_hypotheses.last_triggered_at 写入(65 条 live IH 全部 NULL,疑似 bug)</li><li>P0: 排查 alert_state.json 触发后是否自动写 paper_trades(目前只有 2 笔,但 5/9 alert 状态显示 6 个 IH active)</li><li>P1: 引入 market_regime-aware 阈值,盘整期降低闸门或激活回归均值类 IH</li><li>P1: 新增『横盘突破/区间回归』类 IH 模板,补盘整期信号空白</li><li>P2: 2026-06-08 起首批 5/9 推送到期,启动 outcome -&gt; mutation 闭环回填 realized_* 指标</li></ul></div></div>
+  <details class="detail">
+    <summary>展开详情</summary>
+    <div class="sup-details-md">## 上周触发概览 (2026-05-23 → 2026-05-30)
+
+| IH | 标的 | 方向 | 触发时间 | 实际表现 | 评级 |
+|----|------|------|--------|--------|------|
+| — | — | — | — | — | — |
+
+**过去 7 天 TG 推送 0 条。** 没有任何 IH 越过触发阈值 + 高把握闸门 + 冷却期。
+
+参考:最近 30 天仅有 6 条 TG 推送,且全部集中在 2026-05-09(三周前),分别是:
+- single:5  HYG 站上 200d MA → SPY +30d 涨
+- single:13 美 3M T-bill 跌破 3% → SPY +60d 涨
+- single:24 QQQ 中期动量配合趋势确认
+- single:29 黄金突破长期趋势延续
+- single:33 铜建筑季备货 12 月底至 3 月上涨
+- composite:19 #25 ⨯ #34 → SPY up
+
+这 6 条均为 30-60d 持仓窗口,尚未到期,无法判定胜负;且 paper_trades 表只有 2 笔(IH#5、IH#6 于 2026-05-07 入场,均未平仓),与 alert_state 不对齐,说明 TG 推送链路与 paper_trade 写入存在脱节。
+
+## ✅ 命中明星
+- 无(上周 0 推送)
+
+## ❌ 落空
+- 无(上周 0 推送)
+
+## 🎯 高把握闸门评估
+- 当前闸门:prob≥70,N≥50,Kelly≥1%
+- 上周通过率 **0%**,推送数 0
+- **连续 3 周 (5/9 之后) 闸门完全无触发**,这不是&quot;质量提升&quot;,而是&quot;信号源枯竭&quot;
+- 65 个 live IH 中:
+  - 0 个有 `last_triggered_at` 时间戳(字段疑似未被维护)
+  - 仅 6 个在过去 30 天通过 TG 推送
+- **建议**:
+  1. **不要进一步收紧闸门**,反而要排查推送链路是否健康
+  2. 排查 `last_triggered_at` 字段写入逻辑(疑似 bug:65 个 live IH 全部 NULL)
+  3. 排查 alert_state.json vs paper_trades 不一致(alert 触发后是否应自动写 paper_trade?)
+  4. 若闸门未变而触发频率断崖,说明市场进入&quot;无明显信号&quot;的中性 regime,需引入 regime 判别后差异化阈值
+
+## 学习
+- **市场 regime**:从 5/9 到 5/30 持续 3 周无新触发,推断市场进入低波动/盘整 regime(VIX、DXY、HYG 等阈值均未跨)
+- **系统盲点**:当前所有 live IH 都是&quot;阈值穿越型&quot;,在盘整期天然失效;应补充**回归均值型**和**横盘突破型**两类信号源以增强 regime 覆盖
+- **数据闭环缺口**:5/9 推送的 6 条到 6/8-7/8 之间陆续到期,届时应是首批可统计的真实结果;在那之前 hit_rate 都是回测值,不是 realized
+
+## 建议优先级
+1. **P0**:排查 last_triggered_at + paper_trades 写入链路(系统观测性问题)
+2. **P1**:补充 regime-aware 信号源(盘整期填补)
+3. **P2**:6/8 起开始收集 5/9 推送的真实兑现数据,首次形成 outcome→mutation 闭环</div>
+  </details>
+</div>
 
 <div class="sup-card warn">
   <h4>📅 本周 say_validate 体检</h4>
@@ -342,7 +433,7 @@ _无_
 </div>
 
 
-<h2 id="active">🟢 今日激活 · 13 条</h2>
+<h2 id="active">🟢 今日激活 · 12 条</h2>
 <table>
 <thead><tr><th></th><th>IH</th><th>规则</th><th>指标(当前值)</th><th>目标</th><th class="num">期限</th><th class="num">命中率</th><th class="num">N</th><th class="num">均值收益</th><th class="num">p</th></tr></thead>
 <tbody>
@@ -352,12 +443,25 @@ _无_
   <td><strong>强美元周期 → 中证500 60d 承压</strong> <span class="tag tag-playbook">playbook</span><div class="rationale">美元指数突破 105 且站上 50 日均线,说明强势美元周期正在持续: 外资从新兴市场净流出、北向资金转向流出方向、美中实际利差扩大。 历史上 110 次满足该条件的 60 日内,中证 500 中位数下跌 -6.8%, 平均下跌 -7.45%, 方向性命中率 97.3% (n=110)。 属于宏观周期级别的稳定信号,适合在仓位上做明显的减仓 + 对冲。
 
 失效条件: DXY 跌破 100 或跌穿 50d MA, 或 Fed 暗示降息节奏明显加快 (e.g. 单次 50bp+ 降息或暂停加息周期的鲍威尔讲话) — 强美元叙事破裂,信号 预期不再成立,已建仓应平仓退出。</div></td>
-  <td>dxy<br><span class="small">= 98.91</span></td>
+  <td>dxy<br><span class="small">= 98.94</span></td>
   <td class="dir-down">sh000905 ↓</td>
   <td class="num">60d</td>
   <td class="num">87.2%</td>
   <td class="num">227</td>
   <td class="num">+5.63%</td>
+  <td class="num small">p=0.0000</td>
+</tr><tr>
+  <td><span class="tag-active">触发</span></td>
+  <td>#66</td>
+  <td><strong>黄金 50d 上穿 200d MA → 60d 续涨</strong> <span class="tag tag-playbook">playbook</span><div class="rationale">黄金 50d 均线上穿 200d 均线(经典金叉)是大宗商品趋势翻转 的最稳定信号之一。出现金叉通常意味着:   (1) 实际利率周期性见顶(黄金对冲属性激活)   (2) 央行储备增持(包括新兴市场央行)   (3) 通胀预期持续高位 历史上黄金金叉后 60 天内,中位数涨幅 +3-5%,胜率约 65%。 金叉是慢但稳的信号,对长期持仓友好。
+
+失效条件: 实际利率 (TIPS) 单月上行 &gt; 50bp — 黄金对冲价值被实际利率吃掉, 金叉信号被压制。或 DXY 单边突破 + 长期持续 — 美元强势压制 所有大宗商品。</div></td>
+  <td>gold<br><span class="small">= 4569.90</span></td>
+  <td class="dir-up">GC=F ↑</td>
+  <td class="num">60d</td>
+  <td class="num">62.2%</td>
+  <td class="num">225</td>
+  <td class="num">+3.25%</td>
   <td class="num small">p=0.0000</td>
 </tr><tr>
   <td><span class="tag-active">触发</span></td>
@@ -387,18 +491,18 @@ _无_
   <td><span class="tag-active">触发</span></td>
   <td>#85</td>
   <td><strong>美元突破+小盘弱势:右尾exceptionalism极端 [threshold_tuned+direction_flipped]</strong> <span class="tag tag-research">research</span><div class="rationale">[AUTO-TUNED: threshold_tuned+direction_flipped] Fed FEDS Note(May 2024)2021/9-2024/4 DXY+13%中约一半来自Fed政策surprise,小盘对实际利率敏感度高;Stephen Jen估美元overvalued~20%,反向积累。</div></td>
-  <td>dxy<br><span class="small">= 98.91</span></td>
+  <td>dxy<br><span class="small">= 98.94</span></td>
   <td class="dir-up">IWM ↑</td>
   <td class="num">30d</td>
   <td class="num">86.6%</td>
-  <td class="num">201</td>
-  <td class="num">+10.79%</td>
+  <td class="num">202</td>
+  <td class="num">+10.80%</td>
   <td class="num small">p=0.0000</td>
 </tr><tr>
   <td><span class="tag-active">触发</span></td>
   <td>#105</td>
   <td><strong>DXY破105+美10Y高位施压新兴市场 [mut/threshold] [threshold_tuned]</strong> <span class="tag tag-research">research</span><div class="rationale">[AUTO-TUNED: threshold_tuned] Threshold mutation of IH#39</div></td>
-  <td>dxy<br><span class="small">= 98.91</span></td>
+  <td>dxy<br><span class="small">= 98.94</span></td>
   <td class="dir-down">sh000905 ↓</td>
   <td class="num">60d</td>
   <td class="num">89.3%</td>
@@ -436,9 +540,9 @@ _无_
   <td>spy<br><span class="small">= 756.48</span></td>
   <td class="dir-up">SPY ↑</td>
   <td class="num">30d</td>
-  <td class="num">67.4%</td>
-  <td class="num">190</td>
-  <td class="num">+1.30%</td>
+  <td class="num">67.5%</td>
+  <td class="num">191</td>
+  <td class="num">+1.35%</td>
   <td class="num small">p=0.0001</td>
 </tr><tr>
   <td><span class="tag-active">触发</span></td>
@@ -451,19 +555,6 @@ _无_
   <td class="num">143</td>
   <td class="num">+2.45%</td>
   <td class="num small">p=0.0000</td>
-</tr><tr>
-  <td><span class="tag-active">触发</span></td>
-  <td>#68</td>
-  <td><strong>沪深300 站上 200dMA + 30d 累计 &gt; 5% → 30d 续涨</strong> <span class="tag tag-playbook">playbook</span><div class="rationale">沪深 300 站上 200 日均线 + 最近一个月累计涨幅 &gt; 5%, 是 A 股 bull regime 转换的标志:   (1) 北向资金净流入持续   (2) 公募基金仓位提升   (3) 政策面利好叙事建立 A 股趋势性强(国家队 + 机构主导),一旦确立中长期上行,30 天内续涨概率显著高于个股。 关键: 200dMA 是长期 regime 分界线,月度涨幅是趋势加速度, 两者叠加比单一信号更稳定。
-
-失效条件: DXY 单边突破 105 + 持续 — 强美元抽离新兴市场流动性,A 股 跟跌。或 hs300 跌破 50dMA 超过 2 个交易日 — 短期趋势破坏。</div></td>
-  <td>hs300<br><span class="small">= 4892.12</span></td>
-  <td class="dir-up">sh000300 ↑</td>
-  <td class="num">30d</td>
-  <td class="num">56.0%</td>
-  <td class="num">134</td>
-  <td class="num">+2.80%</td>
-  <td class="num small">p=0.0041</td>
 </tr><tr>
   <td><span class="tag-active">触发</span></td>
   <td>#57</td>
@@ -486,28 +577,15 @@ _无_
   <td>chinext<br><span class="small">= 4037.95</span></td>
   <td class="dir-up">sz399006 ↑</td>
   <td class="num">30d</td>
-  <td class="num">49.2%</td>
-  <td class="num">118</td>
-  <td class="num">+2.25%</td>
-  <td class="num small">p=0.0571</td>
-</tr><tr>
-  <td><span class="tag-active">触发</span></td>
-  <td>#66</td>
-  <td><strong>黄金 50d 上穿 200d MA → 60d 续涨</strong> <span class="tag tag-playbook">playbook</span><div class="rationale">黄金 50d 均线上穿 200d 均线(经典金叉)是大宗商品趋势翻转 的最稳定信号之一。出现金叉通常意味着:   (1) 实际利率周期性见顶(黄金对冲属性激活)   (2) 央行储备增持(包括新兴市场央行)   (3) 通胀预期持续高位 历史上黄金金叉后 60 天内,中位数涨幅 +3-5%,胜率约 65%。 金叉是慢但稳的信号,对长期持仓友好。
-
-失效条件: 实际利率 (TIPS) 单月上行 &gt; 50bp — 黄金对冲价值被实际利率吃掉, 金叉信号被压制。或 DXY 单边突破 + 长期持续 — 美元强势压制 所有大宗商品。</div></td>
-  <td>gold<br><span class="small">= 4569.90</span></td>
-  <td class="dir-up">GC=F ↑</td>
-  <td class="num">60d</td>
-  <td class="num">57.1%</td>
-  <td class="num">77</td>
-  <td class="num">+3.28%</td>
-  <td class="num small">p=0.0010</td>
+  <td class="num">49.6%</td>
+  <td class="num">119</td>
+  <td class="num">+2.40%</td>
+  <td class="num small">p=0.0421</td>
 </tr>
 </tbody>
 </table>
 
-<h2 id="indicators">⚡ 监测指标 · 17 个</h2>
+<h2 id="indicators">⚡ 监测指标 · 15 个</h2>
 <p class="small">每个指标的最新读数 + 有多少条 live 规则依赖它 + 今日有多少条被它触发激活</p>
 <table>
 <thead><tr><th>指标</th><th class="num">最新值</th><th>日期</th><th class="num">依赖规则数</th><th>今日激活</th></tr></thead>
@@ -520,7 +598,7 @@ _无_
   <td> <span class="tag-active">3 激活</span></td>
 </tr><tr>
   <td><strong>dxy</strong></td>
-  <td class="num">98.910</td>
+  <td class="num">98.942</td>
   <td class="small">2026-05-29</td>
   <td class="num">16</td>
   <td> <span class="tag-active">3 激活</span></td>
@@ -543,12 +621,6 @@ _无_
   <td class="num">2</td>
   <td></td>
 </tr><tr>
-  <td><strong>oil</strong></td>
-  <td class="num">87.760</td>
-  <td class="small">2026-05-29</td>
-  <td class="num">2</td>
-  <td></td>
-</tr><tr>
   <td><strong>qqq</strong></td>
   <td class="num">738.310</td>
   <td class="small">2026-05-29</td>
@@ -561,34 +633,16 @@ _无_
   <td class="num">2</td>
   <td> <span class="tag-active">2 激活</span></td>
 </tr><tr>
-  <td><strong>us_3m_yield</strong></td>
-  <td class="num">3.588</td>
-  <td class="small">2026-05-29</td>
-  <td class="num">2</td>
-  <td></td>
-</tr><tr>
-  <td><strong>yield_curve_10y2y</strong></td>
-  <td class="num">0.304</td>
-  <td class="small">2026-05-29</td>
-  <td class="num">2</td>
-  <td></td>
-</tr><tr>
   <td><strong>hyg</strong></td>
   <td class="num">80.310</td>
   <td class="small">2026-05-29</td>
   <td class="num">2</td>
   <td></td>
 </tr><tr>
-  <td><strong>chinext</strong></td>
-  <td class="num">4037.951</td>
+  <td><strong>oil</strong></td>
+  <td class="num">87.760</td>
   <td class="small">2026-05-29</td>
-  <td class="num">1</td>
-  <td> <span class="tag-active">1 激活</span></td>
-</tr><tr>
-  <td><strong>us_2y_yield</strong></td>
-  <td class="num">4.149</td>
-  <td class="small">2026-05-29</td>
-  <td class="num">1</td>
+  <td class="num">2</td>
   <td></td>
 </tr><tr>
   <td><strong>iwm</strong></td>
@@ -597,20 +651,32 @@ _无_
   <td class="num">1</td>
   <td></td>
 </tr><tr>
-  <td><strong>btc</strong></td>
-  <td class="num">73631.812</td>
-  <td class="small">2026-05-30</td>
+  <td><strong>us_3m_yield</strong></td>
+  <td class="num">3.588</td>
+  <td class="small">2026-05-29</td>
   <td class="num">1</td>
   <td></td>
 </tr><tr>
-  <td><strong>hs300</strong></td>
-  <td class="num">4892.121</td>
+  <td><strong>chinext</strong></td>
+  <td class="num">4037.951</td>
   <td class="small">2026-05-29</td>
   <td class="num">1</td>
   <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
-  <td><strong>gold_1h</strong></td>
-  <td class="num">4569.900</td>
+  <td><strong>btc</strong></td>
+  <td class="num">73632.219</td>
+  <td class="small">2026-05-30</td>
+  <td class="num">1</td>
+  <td></td>
+</tr><tr>
+  <td><strong>us_2y_yield</strong></td>
+  <td class="num">4.149</td>
+  <td class="small">2026-05-29</td>
+  <td class="num">1</td>
+  <td></td>
+</tr><tr>
+  <td><strong>yield_curve_10y2y</strong></td>
+  <td class="num">0.304</td>
   <td class="small">2026-05-29</td>
   <td class="num">1</td>
   <td></td>
@@ -618,50 +684,14 @@ _无_
 </tbody>
 </table>
 
-<h2 id="knowledge">📚 知识库 · 64 条 live 规则</h2>
+<h2 id="knowledge">📚 知识库 · 60 条 live 规则</h2>
 <p class="small">每条规则带"怎么读"白话总结 + 最近 8 次触发的实际表现,让你看到这条知识是怎么被数据验证的。</p>
 
-<h3><span class="tag tag-playbook">playbook</span> · 23 条</h3>
+<h3><span class="tag tag-playbook">playbook</span> · 19 条</h3>
 <table>
 <thead><tr><th>IH</th><th>规则 + 验证证据</th><th>指标</th><th>目标</th><th class="num">期限</th><th class="num">方向命中</th><th class="num">N</th><th class="num">均值</th><th class="num">p</th></tr></thead>
 <tbody>
 <tr>
-  <td>#98</td>
-  <td>
-    <strong>黄金 1h 涨 &gt; 0.8% + 站上 12 小时均线 → 4h intraday 续涨</strong> <span class="tf-hourly">hourly</span>
-    <div class="rationale">黄金小时级急涨(单 bar &gt; 0.8%)通常对应:   (1) 突发宏观新闻(地缘冲突 / 央行决议)   (2) 美元短时走弱   (3) 系统化 vol-arb 对冲需求触发买盘 历史上一旦小时级 momentum 启动并站稳 12 小时均线,intraday 4 小时内 继续走强概率显著(机构 + 算法持续买入,反映滞后)。 与日级黄金 playbook (gold_deep_pullback / gold_golden_cross) 互补, 这条只在交易时段内活跃。
-
-失效条件: DXY 1h 跳涨 &gt; 0.5% 同期 — 美元强势重新主导,黄金 momentum 反转。 或黄金后续 1h 内回吐 &gt; 0.5% — 单 bar 假突破。</div>
-    
-<div class="evidence">
-  <div class="summary">📖 过去 <b>1102</b> 次 [GOLD_1H] 满足触发条件后,有 <b>598</b> 次 [黄金期货] 在 <b>4 天</b>内上涨——方向命中率 <b>54.3%</b>(比抛硬币高 +4.3pp),平均上涨幅度 <b>+0.03%</b>。系统每天监测 [GOLD_1H],再次出现 [GOLD_1H 过去 1 日累计变化 大于 2.8 且 GOLD_1H 高于自己的 12 日均线] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
-  <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
-</div>
-
-    <details class="detail"><summary>rule_spec JSON</summary><pre>{
-  &quot;type&quot;: &quot;and&quot;,
-  &quot;conditions&quot;: [
-    {
-      &quot;type&quot;: &quot;change&quot;,
-      &quot;lookback&quot;: 1,
-      &quot;op&quot;: &quot;&gt;&quot;,
-      &quot;threshold&quot;: 2.8
-    },
-    {
-      &quot;type&quot;: &quot;above_ma&quot;,
-      &quot;window&quot;: 12
-    }
-  ]
-}</pre></details>
-  </td>
-  <td class="small">gold_1h</td>
-  <td class="dir-up">GC=F ↑</td>
-  <td class="num">4h</td>
-  <td class="num">54.3%</td>
-  <td class="num">1102</td>
-  <td class="num">+0.03%</td>
-  <td class="num small">0.0345</td>
-</tr><tr>
   <td>#55</td>
   <td>
     <strong>VIX 平稳低位 + 缓步抬升 → HYG 30d 续涨</strong> <span class="tf-daily">daily</span>
@@ -730,6 +760,32 @@ _无_
   <td class="num">87.2%</td>
   <td class="num">227</td>
   <td class="num">+5.63%</td>
+  <td class="num small">0.0000</td>
+</tr><tr>
+  <td>#66</td>
+  <td>
+    <strong>黄金 50d 上穿 200d MA → 60d 续涨</strong> <span class="tf-daily">daily</span>
+    <div class="rationale">黄金 50d 均线上穿 200d 均线(经典金叉)是大宗商品趋势翻转 的最稳定信号之一。出现金叉通常意味着:   (1) 实际利率周期性见顶(黄金对冲属性激活)   (2) 央行储备增持(包括新兴市场央行)   (3) 通胀预期持续高位 历史上黄金金叉后 60 天内,中位数涨幅 +3-5%,胜率约 65%。 金叉是慢但稳的信号,对长期持仓友好。
+
+失效条件: 实际利率 (TIPS) 单月上行 &gt; 50bp — 黄金对冲价值被实际利率吃掉, 金叉信号被压制。或 DXY 单边突破 + 长期持续 — 美元强势压制 所有大宗商品。</div>
+    
+<div class="evidence">
+  <div class="summary">📖 过去 <b>225</b> 次 [黄金期货] 满足触发条件后,有 <b>140</b> 次 [黄金期货] 在 <b>60 天</b>内上涨——方向命中率 <b>62.2%</b>(比抛硬币高 +12.2pp),平均上涨幅度 <b>+3.25%</b>。系统每天监测 [黄金期货],再次出现 [黄金期货 短期(50日)均线 上穿 长期(200日)均线] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
+</div>
+
+    <details class="detail"><summary>rule_spec JSON</summary><pre>{
+  &quot;type&quot;: &quot;ma_above&quot;,
+  &quot;short&quot;: 50,
+  &quot;long&quot;: 200
+}</pre></details>
+  </td>
+  <td class="small">gold</td>
+  <td class="dir-up">GC=F ↑</td>
+  <td class="num">60d</td>
+  <td class="num">62.2%</td>
+  <td class="num">225</td>
+  <td class="num">+3.25%</td>
   <td class="num small">0.0000</td>
 </tr><tr>
   <td>#42</td>
@@ -851,7 +907,7 @@ _无_
 失效条件: VIX 单日跳升 &gt; 50% 或突破 30 — 动量崩塌信号。或 SPY 跌破 50d MA 超过 2 天 — 趋势确认反转,动量假设失效。</div>
     
 <div class="evidence">
-  <div class="summary">📖 过去 <b>190</b> 次 [标普 500 ETF (SPY)] 满足触发条件后,有 <b>128</b> 次 [标普 500 ETF (SPY)] 在 <b>30 天</b>内上涨——方向命中率 <b>67.4%</b>(比抛硬币高 +17.4pp),平均上涨幅度 <b>+1.30%</b>。系统每天监测 [标普 500 ETF (SPY)],再次出现 [标普 500 ETF (SPY) 过去 252 日累计变化 大于 15.0] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <div class="summary">📖 过去 <b>191</b> 次 [标普 500 ETF (SPY)] 满足触发条件后,有 <b>129</b> 次 [标普 500 ETF (SPY)] 在 <b>30 天</b>内上涨——方向命中率 <b>67.5%</b>(比抛硬币高 +17.5pp),平均上涨幅度 <b>+1.35%</b>。系统每天监测 [标普 500 ETF (SPY)],再次出现 [标普 500 ETF (SPY) 过去 252 日累计变化 大于 15.0] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
   <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
 </div>
 
@@ -865,10 +921,36 @@ _无_
   <td class="small">spy</td>
   <td class="dir-up">SPY ↑</td>
   <td class="num">30d</td>
-  <td class="num">67.4%</td>
-  <td class="num">190</td>
-  <td class="num">+1.30%</td>
+  <td class="num">67.5%</td>
+  <td class="num">191</td>
+  <td class="num">+1.35%</td>
   <td class="num small">0.0001</td>
+</tr><tr>
+  <td>#73</td>
+  <td>
+    <strong>收益率曲线倒挂(10y - 2y &amp;lt; 0)→ SPY 90d 趋势承压</strong> <span class="tf-daily">daily</span>
+    <div class="rationale">10y - 2y 国债收益率差为负(曲线倒挂)是 1960 年以来每次衰退 前 6-18 个月都出现的最稳定信号。在曲线深度倒挂期(&lt; -0.5%), 衰退概率显著上升:   (1) Fed 货币政策&quot;过于紧缩&quot;被市场计入   (2) 银行净息差收缩 → 信贷条件收紧   (3) 企业资本开支放缓 SPY 在曲线倒挂后的 90 天内,虽然短期可能继续上涨,但中长期 累计回报显著低于历史均值,部分时期出现明显回撤。
+
+失效条件: Fed 突然鸽派转向 + 大幅降息 — 曲线倒挂逆转,衰退预期重置。 或非农就业 / GDP 数据连续超预期 — 经济韧性,衰退推迟。</div>
+    
+<div class="evidence">
+  <div class="summary">📖 过去 <b>177</b> 次 [YIELD_CURVE_10Y2Y] 满足触发条件后,有 <b>166</b> 次 [标普 500 ETF (SPY)] 在 <b>90 天</b>内上涨——方向命中率 <b>93.8%</b>(比抛硬币高 +43.8pp),平均上涨幅度 <b>+3.05%</b>。系统每天监测 [YIELD_CURVE_10Y2Y],再次出现 [YIELD_CURVE_10Y2Y 低于 0] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
+</div>
+
+    <details class="detail"><summary>rule_spec JSON</summary><pre>{
+  &quot;type&quot;: &quot;level&quot;,
+  &quot;op&quot;: &quot;&lt;&quot;,
+  &quot;threshold&quot;: 0
+}</pre></details>
+  </td>
+  <td class="small">yield_curve_10y2y</td>
+  <td class="dir-up">SPY ↑</td>
+  <td class="num">90d</td>
+  <td class="num">93.8%</td>
+  <td class="num">177</td>
+  <td class="num">+3.05%</td>
+  <td class="num small">0.0000</td>
 </tr><tr>
   <td>#52</td>
   <td>
@@ -921,68 +1003,6 @@ _无_
   <td class="num">147</td>
   <td class="num">+1.26%</td>
   <td class="num small">0.0073</td>
-</tr><tr>
-  <td>#68</td>
-  <td>
-    <strong>沪深300 站上 200dMA + 30d 累计 &gt; 5% → 30d 续涨</strong> <span class="tf-daily">daily</span>
-    <div class="rationale">沪深 300 站上 200 日均线 + 最近一个月累计涨幅 &gt; 5%, 是 A 股 bull regime 转换的标志:   (1) 北向资金净流入持续   (2) 公募基金仓位提升   (3) 政策面利好叙事建立 A 股趋势性强(国家队 + 机构主导),一旦确立中长期上行,30 天内续涨概率显著高于个股。 关键: 200dMA 是长期 regime 分界线,月度涨幅是趋势加速度, 两者叠加比单一信号更稳定。
-
-失效条件: DXY 单边突破 105 + 持续 — 强美元抽离新兴市场流动性,A 股 跟跌。或 hs300 跌破 50dMA 超过 2 个交易日 — 短期趋势破坏。</div>
-    
-<div class="evidence">
-  <div class="summary">📖 过去 <b>134</b> 次 [沪深 300 指数] 满足触发条件后,有 <b>75</b> 次 [沪深 300 指数] 在 <b>30 天</b>内上涨——方向命中率 <b>56.0%</b>(比抛硬币高 +6.0pp),平均上涨幅度 <b>+2.80%</b>。系统每天监测 [沪深 300 指数],再次出现 [沪深 300 指数 高于自己的 200 日均线 且 沪深 300 指数 过去 30 日累计变化 大于 5] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
-  <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
-</div>
-
-    <details class="detail"><summary>rule_spec JSON</summary><pre>{
-  &quot;type&quot;: &quot;and&quot;,
-  &quot;conditions&quot;: [
-    {
-      &quot;type&quot;: &quot;above_ma&quot;,
-      &quot;window&quot;: 200
-    },
-    {
-      &quot;type&quot;: &quot;change&quot;,
-      &quot;lookback&quot;: 30,
-      &quot;op&quot;: &quot;&gt;&quot;,
-      &quot;threshold&quot;: 5
-    }
-  ]
-}</pre></details>
-  </td>
-  <td class="small">hs300</td>
-  <td class="dir-up">sh000300 ↑</td>
-  <td class="num">30d</td>
-  <td class="num">56.0%</td>
-  <td class="num">134</td>
-  <td class="num">+2.80%</td>
-  <td class="num small">0.0041</td>
-</tr><tr>
-  <td>#58</td>
-  <td>
-    <strong>VIX &gt; 25 恐慌跳升 → SPY 30d 均值回归</strong> <span class="tf-daily">daily</span>
-    <div class="rationale">VIX 突破 25 是高度恐慌的明确标志,通常意味着:   (1) 跨资产 risk-off,系统性减仓压力释放   (2) put/call 比飙升,卖空力量已经表达   (3) 杠杆基金被强制减仓完成 125 次历史触发显示 SPY 30d 内反弹均值 +2.39%, 方向命中 71.2%. 与短期反弹剧本(VIX&gt;28 / 7d)互补:这条是中期均值回归, 关注 30d 修复幅度而非 7d 急反弹。可以叠加进场。
-
-失效条件: VIX 持续 25+ 超过 10 个交易日 — 可能进入熊市 regime,均值回归 假设失效。或 SPY 跌破 200dMA — 趋势性下行,反弹空间有限。</div>
-    
-<div class="evidence">
-  <div class="summary">📖 过去 <b>128</b> 次 [VIX 恐慌指数] 满足触发条件后,有 <b>98</b> 次 [标普 500 ETF (SPY)] 在 <b>30 天</b>内上涨——方向命中率 <b>76.6%</b>(比抛硬币高 +26.6pp),平均上涨幅度 <b>+3.18%</b>。系统每天监测 [VIX 恐慌指数],再次出现 [VIX 恐慌指数 高于 27.0] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
-  <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
-</div>
-
-    <details class="detail"><summary>rule_spec JSON</summary><pre>{
-  &quot;type&quot;: &quot;level&quot;,
-  &quot;op&quot;: &quot;&gt;&quot;,
-  &quot;threshold&quot;: 27.0
-}</pre></details>
-  </td>
-  <td class="small">vix</td>
-  <td class="dir-up">SPY ↑</td>
-  <td class="num">30d</td>
-  <td class="num">76.6%</td>
-  <td class="num">128</td>
-  <td class="num">+3.18%</td>
-  <td class="num small">0.0000</td>
 </tr><tr>
   <td>#44</td>
   <td>
@@ -1065,7 +1085,7 @@ _无_
 失效条件: VIX 突破 25 + DXY 单日 + 1% — 全球 risk-off,高 beta 资产 首当其冲。或创业板 5d 跌幅 &gt; 7% — 趋势破坏。</div>
     
 <div class="evidence">
-  <div class="summary">📖 过去 <b>118</b> 次 [创业板指] 满足触发条件后,有 <b>58</b> 次 [创业板指] 在 <b>30 天</b>内上涨——方向命中率 <b>49.2%</b>(比抛硬币高 -0.8pp),平均上涨幅度 <b>+2.25%</b>。系统每天监测 [创业板指],再次出现 [创业板指 高于自己的 50 日均线 且 创业板指 过去 30 日累计变化 大于 8] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <div class="summary">📖 过去 <b>119</b> 次 [创业板指] 满足触发条件后,有 <b>59</b> 次 [创业板指] 在 <b>30 天</b>内上涨——方向命中率 <b>49.6%</b>(比抛硬币高 -0.4pp),平均上涨幅度 <b>+2.40%</b>。系统每天监测 [创业板指],再次出现 [创业板指 高于自己的 50 日均线 且 创业板指 过去 30 日累计变化 大于 8] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
   <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
 </div>
 
@@ -1088,35 +1108,35 @@ _无_
   <td class="small">chinext</td>
   <td class="dir-up">sz399006 ↑</td>
   <td class="num">30d</td>
-  <td class="num">49.2%</td>
-  <td class="num">118</td>
-  <td class="num">+2.25%</td>
-  <td class="num small">0.0571</td>
+  <td class="num">49.6%</td>
+  <td class="num">119</td>
+  <td class="num">+2.40%</td>
+  <td class="num small">0.0421</td>
 </tr><tr>
-  <td>#71</td>
+  <td>#63</td>
   <td>
-    <strong>3m 收益率 &gt; 10y(倒挂) → TLT 60d 走强</strong> <span class="tf-daily">daily</span>
-    <div class="rationale">美国 3 月期短端收益率高于 10 年期长端收益率(收益率曲线 &quot;深度倒挂&quot;),是历史上最稳定的衰退前兆 — 自 1960 年起 所有 7 次 NBER 衰退前 6-18 月都出现过。 在倒挂期间 + 之后的早期衰退阶段:   (1) 长端避险买盘持续 → TLT 走强   (2) Fed 终将转向降息 → TLT 折现获益   (3) 信用利差扩张 → flight-to-quality 进国债 60 天窗口对应&quot;早期衰退 + 政策预期重定价&quot;阶段。
+    <strong>VIX 突破 30(极度恐慌)→ SPY 60d 深度反弹</strong> <span class="tf-daily">daily</span>
+    <div class="rationale">VIX 突破 30 是经典的 &quot;全面恐慌&quot; 信号: 隐含波动率 50%+ 年化, put/call ratio 飙升,protective put 被疯抢。这种状态在历史上 短暂出现(每年 1-3 次),通常对应:   (1) 系统性杠杆基金被迫平仓(强制供给)   (2) 散户恐慌出逃(情绪买点)   (3) 央行流动性 backstop 启动(政策买点) 60 天回看视角下 SPY 均值反弹幅度 +6-10%(标普500 历次危机 后 2 个月的恢复速度)。 比 30d 视角(已有 PB)更长,对应&quot;危机后修复&quot;,不是&quot;短期反弹&quot;。
 
-失效条件: Fed 突然鹰派加码加息 — 短端继续涨,长端跟涨,TLT 跌。或 通胀超预期反弹 + 政策预期重新鹰化。</div>
+失效条件: VIX 持续 &gt; 30 超过 15 个交易日 — 进入持续熊市,不只是恐慌 高峰。或 SPY 跌穿 200dMA 后又跌 &gt; 5% — 趋势性下行,反弹空间 会被结构性抛售压制。</div>
     
 <div class="evidence">
-  <div class="summary">📖 过去 <b>110</b> 次 [美国 3 月期短债收益率] 满足触发条件后,有 <b>110</b> 次 [20+年美债 ETF] 在 <b>60 天</b>内上涨——方向命中率 <b>100.0%</b>(比抛硬币高 +50.0pp),平均上涨幅度 <b>+5.44%</b>。系统每天监测 [美国 3 月期短债收益率],再次出现 [美国 3 月期短债收益率 高于 5.85] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <div class="summary">📖 过去 <b>116</b> 次 [VIX 恐慌指数] 满足触发条件后,有 <b>87</b> 次 [标普 500 ETF (SPY)] 在 <b>60 天</b>内上涨——方向命中率 <b>75.0%</b>(比抛硬币高 +25.0pp),平均上涨幅度 <b>+4.44%</b>。系统每天监测 [VIX 恐慌指数],再次出现 [VIX 恐慌指数 高于 25.5] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
   <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
 </div>
 
     <details class="detail"><summary>rule_spec JSON</summary><pre>{
   &quot;type&quot;: &quot;level&quot;,
   &quot;op&quot;: &quot;&gt;&quot;,
-  &quot;threshold&quot;: 5.85
+  &quot;threshold&quot;: 25.5
 }</pre></details>
   </td>
-  <td class="small">us_3m_yield</td>
-  <td class="dir-up">TLT ↑</td>
+  <td class="small">vix</td>
+  <td class="dir-up">SPY ↑</td>
   <td class="num">60d</td>
-  <td class="num">100.0%</td>
-  <td class="num">110</td>
-  <td class="num">+5.44%</td>
+  <td class="num">75.0%</td>
+  <td class="num">116</td>
+  <td class="num">+4.44%</td>
   <td class="num small">0.0000</td>
 </tr><tr>
   <td>#45</td>
@@ -1145,42 +1165,31 @@ _无_
   <td class="num">+4.20%</td>
   <td class="num small">0.0000</td>
 </tr><tr>
-  <td>#59</td>
+  <td>#58</td>
   <td>
-    <strong>HYG 站上 50dMA + 短期动量 → SPY 14d 跟随</strong> <span class="tf-daily">daily</span>
-    <div class="rationale">HYG (高收益债 ETF) 价格站上 50dMA 且 5/20 日均线比 &gt; 1.01: 信用市场对风险定价开始转向乐观,信用利差收窄。高收益债的风险 偏好属性 + 流动性高,通常领先股市 5-10 个交易日。62 次历史触发 SPY 14d 内跟随上行均值 +1.28%, 方向命中 71%。 这是经典 &quot;credit leads equity&quot; 的 lead-lag, 高频量化策略广泛 使用的信号。
+    <strong>VIX &gt; 25 恐慌跳升 → SPY 30d 均值回归</strong> <span class="tf-daily">daily</span>
+    <div class="rationale">VIX 突破 25 是高度恐慌的明确标志,通常意味着:   (1) 跨资产 risk-off,系统性减仓压力释放   (2) put/call 比飙升,卖空力量已经表达   (3) 杠杆基金被强制减仓完成 125 次历史触发显示 SPY 30d 内反弹均值 +2.39%, 方向命中 71.2%. 与短期反弹剧本(VIX&gt;28 / 7d)互补:这条是中期均值回归, 关注 30d 修复幅度而非 7d 急反弹。可以叠加进场。
 
-失效条件: HYG 跌破 50dMA 或单日跌 &gt; 1.5% — 信用利差重新走阔, lead-lag 关系反向, 立即取消跟随。</div>
+失效条件: VIX 持续 25+ 超过 10 个交易日 — 可能进入熊市 regime,均值回归 假设失效。或 SPY 跌破 200dMA — 趋势性下行,反弹空间有限。</div>
     
 <div class="evidence">
-  <div class="summary">📖 过去 <b>93</b> 次 [高收益债 ETF (HYG)] 满足触发条件后,有 <b>67</b> 次 [标普 500 ETF (SPY)] 在 <b>14 天</b>内上涨——方向命中率 <b>72.0%</b>(比抛硬币高 +22.0pp),平均上涨幅度 <b>+1.24%</b>。系统每天监测 [高收益债 ETF (HYG)],再次出现 [高收益债 ETF (HYG) 高于自己的 50 日均线 且 高收益债 ETF (HYG) 5/20 日均线比 大于 1.01] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <div class="summary">📖 过去 <b>101</b> 次 [VIX 恐慌指数] 满足触发条件后,有 <b>76</b> 次 [标普 500 ETF (SPY)] 在 <b>30 天</b>内上涨——方向命中率 <b>75.2%</b>(比抛硬币高 +25.2pp),平均上涨幅度 <b>+3.00%</b>。系统每天监测 [VIX 恐慌指数],再次出现 [VIX 恐慌指数 高于 27.0] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
   <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
 </div>
 
     <details class="detail"><summary>rule_spec JSON</summary><pre>{
-  &quot;type&quot;: &quot;and&quot;,
-  &quot;conditions&quot;: [
-    {
-      &quot;type&quot;: &quot;above_ma&quot;,
-      &quot;window&quot;: 50
-    },
-    {
-      &quot;type&quot;: &quot;ma_ratio&quot;,
-      &quot;short&quot;: 5,
-      &quot;long&quot;: 20,
-      &quot;op&quot;: &quot;&gt;&quot;,
-      &quot;threshold&quot;: 1.01
-    }
-  ]
+  &quot;type&quot;: &quot;level&quot;,
+  &quot;op&quot;: &quot;&gt;&quot;,
+  &quot;threshold&quot;: 27.0
 }</pre></details>
   </td>
-  <td class="small">hyg</td>
+  <td class="small">vix</td>
   <td class="dir-up">SPY ↑</td>
-  <td class="num">14d</td>
-  <td class="num">72.0%</td>
-  <td class="num">93</td>
-  <td class="num">+1.24%</td>
-  <td class="num small">0.0003</td>
+  <td class="num">30d</td>
+  <td class="num">75.2%</td>
+  <td class="num">101</td>
+  <td class="num">+3.00%</td>
+  <td class="num small">0.0000</td>
 </tr><tr>
   <td>#79</td>
   <td>
@@ -1245,110 +1254,42 @@ _无_
   <td class="num">+3.26%</td>
   <td class="num small">0.0000</td>
 </tr><tr>
-  <td>#66</td>
+  <td>#59</td>
   <td>
-    <strong>黄金 50d 上穿 200d MA → 60d 续涨</strong> <span class="tf-daily">daily</span>
-    <div class="rationale">黄金 50d 均线上穿 200d 均线(经典金叉)是大宗商品趋势翻转 的最稳定信号之一。出现金叉通常意味着:   (1) 实际利率周期性见顶(黄金对冲属性激活)   (2) 央行储备增持(包括新兴市场央行)   (3) 通胀预期持续高位 历史上黄金金叉后 60 天内,中位数涨幅 +3-5%,胜率约 65%。 金叉是慢但稳的信号,对长期持仓友好。
+    <strong>HYG 站上 50dMA + 短期动量 → SPY 14d 跟随</strong> <span class="tf-daily">daily</span>
+    <div class="rationale">HYG (高收益债 ETF) 价格站上 50dMA 且 5/20 日均线比 &gt; 1.01: 信用市场对风险定价开始转向乐观,信用利差收窄。高收益债的风险 偏好属性 + 流动性高,通常领先股市 5-10 个交易日。62 次历史触发 SPY 14d 内跟随上行均值 +1.28%, 方向命中 71%。 这是经典 &quot;credit leads equity&quot; 的 lead-lag, 高频量化策略广泛 使用的信号。
 
-失效条件: 实际利率 (TIPS) 单月上行 &gt; 50bp — 黄金对冲价值被实际利率吃掉, 金叉信号被压制。或 DXY 单边突破 + 长期持续 — 美元强势压制 所有大宗商品。</div>
+失效条件: HYG 跌破 50dMA 或单日跌 &gt; 1.5% — 信用利差重新走阔, lead-lag 关系反向, 立即取消跟随。</div>
     
 <div class="evidence">
-  <div class="summary">📖 过去 <b>77</b> 次 [黄金期货] 满足触发条件后,有 <b>44</b> 次 [黄金期货] 在 <b>60 天</b>内上涨——方向命中率 <b>57.1%</b>(比抛硬币高 +7.1pp),平均上涨幅度 <b>+3.28%</b>。系统每天监测 [黄金期货],再次出现 [黄金期货 短期(50日)均线 上穿 长期(200日)均线] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <div class="summary">📖 过去 <b>62</b> 次 [高收益债 ETF (HYG)] 满足触发条件后,有 <b>44</b> 次 [标普 500 ETF (SPY)] 在 <b>14 天</b>内上涨——方向命中率 <b>71.0%</b>(比抛硬币高 +21.0pp),平均上涨幅度 <b>+1.28%</b>。系统每天监测 [高收益债 ETF (HYG)],再次出现 [高收益债 ETF (HYG) 高于自己的 50 日均线 且 高收益债 ETF (HYG) 5/20 日均线比 大于 1.01] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
   <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
 </div>
 
     <details class="detail"><summary>rule_spec JSON</summary><pre>{
-  &quot;type&quot;: &quot;ma_above&quot;,
-  &quot;short&quot;: 50,
-  &quot;long&quot;: 200
+  &quot;type&quot;: &quot;and&quot;,
+  &quot;conditions&quot;: [
+    {
+      &quot;type&quot;: &quot;above_ma&quot;,
+      &quot;window&quot;: 50
+    },
+    {
+      &quot;type&quot;: &quot;ma_ratio&quot;,
+      &quot;short&quot;: 5,
+      &quot;long&quot;: 20,
+      &quot;op&quot;: &quot;&gt;&quot;,
+      &quot;threshold&quot;: 1.01
+    }
+  ]
 }</pre></details>
   </td>
-  <td class="small">gold</td>
-  <td class="dir-up">GC=F ↑</td>
-  <td class="num">60d</td>
-  <td class="num">57.1%</td>
-  <td class="num">77</td>
-  <td class="num">+3.28%</td>
-  <td class="num small">0.0010</td>
-</tr><tr>
-  <td>#63</td>
-  <td>
-    <strong>VIX 突破 30(极度恐慌)→ SPY 60d 深度反弹</strong> <span class="tf-daily">daily</span>
-    <div class="rationale">VIX 突破 30 是经典的 &quot;全面恐慌&quot; 信号: 隐含波动率 50%+ 年化, put/call ratio 飙升,protective put 被疯抢。这种状态在历史上 短暂出现(每年 1-3 次),通常对应:   (1) 系统性杠杆基金被迫平仓(强制供给)   (2) 散户恐慌出逃(情绪买点)   (3) 央行流动性 backstop 启动(政策买点) 60 天回看视角下 SPY 均值反弹幅度 +6-10%(标普500 历次危机 后 2 个月的恢复速度)。 比 30d 视角(已有 PB)更长,对应&quot;危机后修复&quot;,不是&quot;短期反弹&quot;。
-
-失效条件: VIX 持续 &gt; 30 超过 15 个交易日 — 进入持续熊市,不只是恐慌 高峰。或 SPY 跌穿 200dMA 后又跌 &gt; 5% — 趋势性下行,反弹空间 会被结构性抛售压制。</div>
-    
-<div class="evidence">
-  <div class="summary">📖 过去 <b>73</b> 次 [VIX 恐慌指数] 满足触发条件后,有 <b>52</b> 次 [标普 500 ETF (SPY)] 在 <b>60 天</b>内上涨——方向命中率 <b>71.2%</b>(比抛硬币高 +21.2pp),平均上涨幅度 <b>+4.23%</b>。系统每天监测 [VIX 恐慌指数],再次出现 [VIX 恐慌指数 高于 25.5] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
-  <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
-</div>
-
-    <details class="detail"><summary>rule_spec JSON</summary><pre>{
-  &quot;type&quot;: &quot;level&quot;,
-  &quot;op&quot;: &quot;&gt;&quot;,
-  &quot;threshold&quot;: 25.5
-}</pre></details>
-  </td>
-  <td class="small">vix</td>
+  <td class="small">hyg</td>
   <td class="dir-up">SPY ↑</td>
-  <td class="num">60d</td>
-  <td class="num">71.2%</td>
-  <td class="num">73</td>
-  <td class="num">+4.23%</td>
-  <td class="num small">0.0001</td>
-</tr><tr>
-  <td>#73</td>
-  <td>
-    <strong>收益率曲线倒挂(10y - 2y &amp;lt; 0)→ SPY 90d 趋势承压</strong> <span class="tf-daily">daily</span>
-    <div class="rationale">10y - 2y 国债收益率差为负(曲线倒挂)是 1960 年以来每次衰退 前 6-18 个月都出现的最稳定信号。在曲线深度倒挂期(&lt; -0.5%), 衰退概率显著上升:   (1) Fed 货币政策&quot;过于紧缩&quot;被市场计入   (2) 银行净息差收缩 → 信贷条件收紧   (3) 企业资本开支放缓 SPY 在曲线倒挂后的 90 天内,虽然短期可能继续上涨,但中长期 累计回报显著低于历史均值,部分时期出现明显回撤。
-
-失效条件: Fed 突然鸽派转向 + 大幅降息 — 曲线倒挂逆转,衰退预期重置。 或非农就业 / GDP 数据连续超预期 — 经济韧性,衰退推迟。</div>
-    
-<div class="evidence">
-  <div class="summary">📖 过去 <b>69</b> 次 [YIELD_CURVE_10Y2Y] 满足触发条件后,有 <b>64</b> 次 [标普 500 ETF (SPY)] 在 <b>90 天</b>内上涨——方向命中率 <b>92.8%</b>(比抛硬币高 +42.8pp),平均上涨幅度 <b>+2.95%</b>。系统每天监测 [YIELD_CURVE_10Y2Y],再次出现 [YIELD_CURVE_10Y2Y 低于 0] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
-  <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
-</div>
-
-    <details class="detail"><summary>rule_spec JSON</summary><pre>{
-  &quot;type&quot;: &quot;level&quot;,
-  &quot;op&quot;: &quot;&lt;&quot;,
-  &quot;threshold&quot;: 0
-}</pre></details>
-  </td>
-  <td class="small">yield_curve_10y2y</td>
-  <td class="dir-up">SPY ↑</td>
-  <td class="num">90d</td>
-  <td class="num">92.8%</td>
-  <td class="num">69</td>
-  <td class="num">+2.95%</td>
-  <td class="num small">0.0000</td>
-</tr><tr>
-  <td>#80</td>
-  <td>
-    <strong>10y-2y 曲线 30d 陡峭化 &gt; 30bp → XLF 30d 顺风</strong> <span class="tf-daily">daily</span>
-    <div class="rationale">10y - 2y 曲线斜率 30 天内陡峭化超过 30bp(0.30 百分点), 意味着市场重新计入长期增长预期 + 通胀回升 + Fed 转鸽节奏:   (1) 银行净息差扩张(短端融资 + 长端放贷)   (2) 信贷活动恢复 + 减值率下降   (3) IPO / 并购市场活跃,投行收入提升 金融板块(XLF)是曲线陡峭化最直接受益的板块,30 天内倾向 跑赢大盘。 与 PB#6 (10y 高位回落) 互补:这条看变化率,那条看绝对水平。
-
-失效条件: Fed 突然鹰派加息加码 — 曲线再次平坦化甚至倒挂。或区域性 银行风险事件(类似 2023 SVB),金融板块 risk-off 主导。</div>
-    
-<div class="evidence">
-  <div class="summary">📖 过去 <b>46</b> 次 [YIELD_CURVE_10Y2Y] 满足触发条件后,有 <b>43</b> 次 [金融板块 ETF] 在 <b>30 天</b>内下跌——方向命中率 <b>93.5%</b>(比抛硬币高 +43.5pp),平均下跌幅度 <b>+2.82%</b>。系统每天监测 [YIELD_CURVE_10Y2Y],再次出现 [YIELD_CURVE_10Y2Y 过去 30 日累计变化 大于 0.3] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
-  <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
-</div>
-
-    <details class="detail"><summary>rule_spec JSON</summary><pre>{
-  &quot;type&quot;: &quot;change&quot;,
-  &quot;lookback&quot;: 30,
-  &quot;op&quot;: &quot;&gt;&quot;,
-  &quot;threshold&quot;: 0.3
-}</pre></details>
-  </td>
-  <td class="small">yield_curve_10y2y</td>
-  <td class="dir-down">XLF ↓</td>
-  <td class="num">30d</td>
-  <td class="num">93.5%</td>
-  <td class="num">46</td>
-  <td class="num">+2.82%</td>
-  <td class="num small">0.0001</td>
+  <td class="num">14d</td>
+  <td class="num">71.0%</td>
+  <td class="num">62</td>
+  <td class="num">+1.28%</td>
+  <td class="num small">0.0031</td>
 </tr>
 </tbody>
 </table>
@@ -1536,7 +1477,7 @@ _无_
     <div class="rationale">[AUTO-TUNED: threshold_tuned+direction_flipped] Fed FEDS Note(May 2024)2021/9-2024/4 DXY+13%中约一半来自Fed政策surprise,小盘对实际利率敏感度高;Stephen Jen估美元overvalued~20%,反向积累。</div>
     
 <div class="evidence">
-  <div class="summary">📖 过去 <b>201</b> 次 [美元指数 DXY] 满足触发条件后,有 <b>174</b> 次 [罗素 2000 ETF (IWM)] 在 <b>30 天</b>内上涨——方向命中率 <b>86.6%</b>(比抛硬币高 +36.6pp),平均上涨幅度 <b>+10.79%</b>。系统每天监测 [美元指数 DXY],再次出现 [美元指数 DXY 高于 98.44 且 美元指数 DXY 过去 30 日累计变化 大于 0.03] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <div class="summary">📖 过去 <b>202</b> 次 [美元指数 DXY] 满足触发条件后,有 <b>175</b> 次 [罗素 2000 ETF (IWM)] 在 <b>30 天</b>内上涨——方向命中率 <b>86.6%</b>(比抛硬币高 +36.6pp),平均上涨幅度 <b>+10.80%</b>。系统每天监测 [美元指数 DXY],再次出现 [美元指数 DXY 高于 98.44 且 美元指数 DXY 过去 30 日累计变化 大于 0.03] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
   <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
 </div>
 
@@ -1561,8 +1502,8 @@ _无_
   <td class="dir-up">IWM ↑</td>
   <td class="num">30d</td>
   <td class="num">86.6%</td>
-  <td class="num">201</td>
-  <td class="num">+10.79%</td>
+  <td class="num">202</td>
+  <td class="num">+10.80%</td>
   <td class="num small">0.0000</td>
 </tr><tr>
   <td>#29</td>

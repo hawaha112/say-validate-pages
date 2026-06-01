@@ -2,7 +2,7 @@
   "id": 233,
   "made_at": "2026-05-11T14:33:35.517438",
   "expire_at": "2026-05-18T14:33:35.517438",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "MSFT",
     "name": "微软",
@@ -13,14 +13,22 @@
   "horizon_days": 7,
   "baseline_price": 409.9100036621094,
   "baseline_source": "event_time",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
-  "current_price": 409.9800109863281,
-  "current_pct": 0.01707870595821256,
-  "current_at": "2026-05-11T00:00:00-04:00",
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": 16.148068037772575,
+    "mag_err_bucket": ">100%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": 12.346608987196255,
+  "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "参考链 #92（大型科技公司遭重大法律裁决不利→科技板块承压）的机制。当前新闻虽为诉讼提起而非裁决，但微软作为OpenAI最大股东（投资超130亿美元）会受负面情绪传导。差异点：仅诉讼阶段且产品责任诉讼胜诉门槛高于反垄断，影响幅度应远小于裁决场景。",
   "stop_loss_price": 420.5153,
   "take_profit": {
@@ -65,6 +73,8 @@
   ],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     92
   ],
@@ -77,7 +87,8 @@
       "horizon_days": 14,
       "magnitude_pct": 0.8,
       "grade": "C",
-      "retail_edge": "mid"
+      "retail_edge": "mid",
+      "macro_category": "regulation"
     }
   ],
   "event": {

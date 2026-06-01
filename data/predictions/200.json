@@ -2,7 +2,7 @@
   "id": 200,
   "made_at": "2026-04-28T14:14:23.727787",
   "expire_at": "2026-05-28T14:14:23.727787",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "603729",
     "name": "龙韵股份（ST龙韵）",
@@ -13,7 +13,7 @@
   "horizon_days": 30,
   "baseline_price": null,
   "baseline_source": "live_fallback",
-  "status": "pending",
+  "status": "expired_no_data",
   "hit": null,
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
@@ -33,6 +33,8 @@
   ],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [],
   "cited_chains": [],
   "event": {

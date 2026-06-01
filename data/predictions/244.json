@@ -2,7 +2,7 @@
   "id": 244,
   "made_at": "2026-05-11T14:42:45.034641",
   "expire_at": "2026-05-14T14:42:45.034641",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "BZ=F",
     "name": "布伦特原油期货",
@@ -13,14 +13,22 @@
   "horizon_days": 3,
   "baseline_price": 103.9800033569336,
   "baseline_source": "event_time",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
-  "current_price": 103.7699966430664,
-  "current_pct": -0.20196836611583338,
-  "current_at": "2026-05-11T00:00:00-04:00",
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": 4.075764080774059,
+    "mag_err_bucket": ">100%",
+    "tol_used": 0.95,
+    "asset_class": "commodity"
+  },
+  "actual_magnitude_pct": -8.222737810853976,
+  "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "参考链 #642（停火协议导致布伦特下跌）的反向机制：停火缓解航运担忧→油价下跌，则航运遇袭事件→风险溢价上升。布伦特作为国际基准对中东地缘事件更敏感，波斯湾货船遇袭直接影响该区域出口通道预期，幅度略高于WTI。",
   "stop_loss_price": 64.9484,
   "take_profit": {
@@ -72,6 +80,8 @@
   "tags": [],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     642,
     229
@@ -85,7 +95,8 @@
       "horizon_days": 3,
       "magnitude_pct": 1.7,
       "grade": "B",
-      "retail_edge": null
+      "retail_edge": null,
+      "macro_category": "politics_geo"
     },
     {
       "id": 229,
@@ -95,7 +106,8 @@
       "horizon_days": 30,
       "magnitude_pct": 2.04,
       "grade": "A",
-      "retail_edge": "high"
+      "retail_edge": "high",
+      "macro_category": "politics_geo"
     }
   ],
   "event": {

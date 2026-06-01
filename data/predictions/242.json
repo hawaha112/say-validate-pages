@@ -2,7 +2,7 @@
   "id": 242,
   "made_at": "2026-05-11T14:42:44.498392",
   "expire_at": "2026-05-14T14:42:44.498392",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "CL=F",
     "name": "WTI原油期货",
@@ -13,14 +13,22 @@
   "horizon_days": 3,
   "baseline_price": 97.68000030517578,
   "baseline_source": "event_time",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
-  "current_price": 97.44000244140625,
-  "current_pct": -0.24569805796449662,
-  "current_at": "2026-05-11T00:00:00-04:00",
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": 3.019172987532479,
+    "mag_err_bucket": ">100%",
+    "tol_used": 0.95,
+    "asset_class": "commodity"
+  },
+  "actual_magnitude_pct": -5.4258835331688475,
+  "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "参考链 #229（以色列与伊朗直接军事交火）的机制：中东军事冲突引发霍尔木兹海峡供给中断担忧，推升油价。本次卡塔尔附近海域（波斯湾）货船遭袭击，虽非国家间直接交火，但同样威胁波斯湾航运安全，触发类似的供给担忧逻辑。与链 #642/#643 停火协议导致风险溢价回吐的机制相反，本次是风险事件升级，应推升地缘溢价。",
   "stop_loss_price": 58.6484,
   "take_profit": {
@@ -81,6 +89,8 @@
   "tags": [],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     229,
     642,
@@ -95,7 +105,8 @@
       "horizon_days": 30,
       "magnitude_pct": 2.04,
       "grade": "A",
-      "retail_edge": "high"
+      "retail_edge": "high",
+      "macro_category": "politics_geo"
     },
     {
       "id": 642,
@@ -105,7 +116,8 @@
       "horizon_days": 3,
       "magnitude_pct": 1.7,
       "grade": "B",
-      "retail_edge": null
+      "retail_edge": null,
+      "macro_category": "politics_geo"
     },
     {
       "id": 643,
@@ -115,7 +127,8 @@
       "horizon_days": 3,
       "magnitude_pct": 2.0,
       "grade": "B",
-      "retail_edge": null
+      "retail_edge": null,
+      "macro_category": "politics_geo"
     }
   ],
   "event": {

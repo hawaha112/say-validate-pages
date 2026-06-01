@@ -2,7 +2,9 @@
   "summary": {
     "total_trades": 1897,
     "final_equity_1pct_risk": 546.2349,
-    "total_return_pct": 54523.49
+    "total_return_pct": 54523.49,
+    "filter_mode": "all",
+    "n_filter_dropped": 0
   },
   "overall": {
     "n": 1897,

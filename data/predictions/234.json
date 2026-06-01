@@ -2,7 +2,7 @@
   "id": 234,
   "made_at": "2026-05-11T14:37:03.659182",
   "expire_at": "2026-05-18T14:37:03.659182",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "GC=F",
     "name": "黄金期货",
@@ -13,14 +13,22 @@
   "horizon_days": 7,
   "baseline_price": 4737.89990234375,
   "baseline_source": "event_time",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
-  "current_price": 4737.10009765625,
-  "current_pct": -0.016880995883943255,
-  "current_at": "2026-05-11T00:00:00-04:00",
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": 12.138738346063873,
+    "mag_err_bucket": ">100%",
+    "tol_used": 0.95,
+    "asset_class": "commodity"
+  },
+  "actual_magnitude_pct": -4.729945804582995,
+  "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "参考链 #229 (以色列与伊朗直接军事交火) 的机制：中东地缘冲突引发避险需求支撑黄金。当前新闻显示伊朗冲突持续影响国际航空客流，表明地缘紧张局势仍在延续。但本新闻为滞后数据（4月客流量报告），非新升级消息，且未披露下降幅度，对黄金的边际推动非常有限。",
   "stop_loss_price": 4698.8683,
   "take_profit": {
@@ -63,6 +71,8 @@
   "tags": [],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     229
   ],
@@ -75,7 +85,8 @@
       "horizon_days": 30,
       "magnitude_pct": 2.04,
       "grade": "A",
-      "retail_edge": "high"
+      "retail_edge": "high",
+      "macro_category": "politics_geo"
     }
   ],
   "event": {

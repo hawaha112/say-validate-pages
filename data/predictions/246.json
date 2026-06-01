@@ -1,0 +1,108 @@
+{
+  "id": 246,
+  "made_at": "2026-05-12T14:48:35.397641",
+  "expire_at": "2026-05-19T14:48:35.397641",
+  "verified_at": "2026-06-01T22:22:51.715245",
+  "asset": {
+    "symbol": "XLE",
+    "name": "能源板块ETF",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 7.2,
+  "horizon_days": 7,
+  "baseline_price": 57.29499816894531,
+  "baseline_source": "event_time",
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": true,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": 0.9987876903464864,
+    "mag_err_bucket": "<=100%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": 0.008728629505297765,
+  "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "参考链 #636 (霍尔木兹海峡通航受阻或封锁威胁) 的机制：海峡承载全球20%石油供应，封锁推高油价利好能源股。当前新闻是「实际关闭」而非仅「威胁」，严重程度远超历史情景，magnitude 从链的 2% 上调至 4%；USD 弱势（DXY -2.1% MoM）进一步支撑以美元计价的能源资产。",
+  "stop_loss_price": 53.1698,
+  "take_profit": {
+    "prices": [
+      63.4829,
+      67.6081,
+      73.796
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 4.1252,
+    "atr": 2.0626
+  },
+  "kelly_fraction": 0.0,
+  "resonance_posterior": 0.3,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.3,
+    "log_odds": -0.847,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 1.0,
+    "signal_grade": "💤 D",
+    "evidence": [
+      {
+        "link_id": 636,
+        "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+        "asset": "XLE",
+        "dir_hit_rate": 0.5,
+        "n_samples": 4,
+        "log_lr": 0.0,
+        "grade": "C"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "low_grade_chain",
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-weak"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    636
+  ],
+  "cited_chains": [
+    {
+      "id": 636,
+      "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+      "asset_symbol": "XLE",
+      "direction": "up",
+      "horizon_days": 3,
+      "magnitude_pct": 2.0,
+      "grade": "C",
+      "retail_edge": null,
+      "macro_category": "politics_geo"
+    }
+  ],
+  "event": {
+    "id": 1209,
+    "summary": "伊朗战争导致霍尔木兹海峡实际关闭，严重扰乱全球能源和石化产品供应",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "Snack giant switches to black and white packaging as Iran war hits ink supplies",
+    "source": "bbc",
+    "lang": "en",
+    "url": "https://www.bbc.com/news/articles/c78k405j8pdo?at_medium=RSS&at_campaign=rss",
+    "published_at": "2026-05-12T07:46:47"
+  }
+}

@@ -2,7 +2,7 @@
   "id": 241,
   "made_at": "2026-05-11T14:42:14.388431",
   "expire_at": "2026-05-14T14:42:14.388431",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "BZ=F",
     "name": "布伦特原油期货",
@@ -13,14 +13,22 @@
   "horizon_days": 3,
   "baseline_price": 104.2300033569336,
   "baseline_source": "event_time",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
-  "current_price": 103.7699966430664,
-  "current_pct": -0.44133809752639414,
-  "current_at": "2026-05-11T00:00:00-04:00",
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": 8.380965992235435,
+    "mag_err_bucket": ">100%",
+    "tol_used": 0.95,
+    "asset_class": "commodity"
+  },
+  "actual_magnitude_pct": -8.442869393011891,
+  "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "参考链 #637 (霍尔木兹海峡通航受阻) 的机制：布伦特对中东地缘事件更敏感，波斯湾航运袭击直接影响其定价区域。与 #642 停火协议降低溢价的逻辑相反，本次袭击事件将重新注入地缘风险溢价，但因单一事件且无伤亡，幅度有限。",
   "stop_loss_price": 103.2919,
   "take_profit": {
@@ -72,6 +80,8 @@
   "tags": [],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     637,
     642
@@ -85,7 +95,8 @@
       "horizon_days": 3,
       "magnitude_pct": 1.0,
       "grade": "C",
-      "retail_edge": null
+      "retail_edge": null,
+      "macro_category": "politics_geo"
     },
     {
       "id": 642,
@@ -95,7 +106,8 @@
       "horizon_days": 3,
       "magnitude_pct": 1.7,
       "grade": "B",
-      "retail_edge": null
+      "retail_edge": null,
+      "macro_category": "politics_geo"
     }
   ],
   "event": {

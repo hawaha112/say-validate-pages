@@ -2,7 +2,7 @@
   "id": 236,
   "made_at": "2026-05-11T14:41:34.225927",
   "expire_at": "2026-05-14T14:41:34.225927",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "GC=F",
     "name": "黄金期货",
@@ -13,14 +13,22 @@
   "horizon_days": 3,
   "baseline_price": 4736.39990234375,
   "baseline_source": "event_time",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
-  "current_price": 4737.10009765625,
-  "current_pct": 0.014783281119347985,
-  "current_at": "2026-05-11T00:00:00-04:00",
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": true,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": 5.527464079782615,
+    "mag_err_bucket": ">100%",
+    "tol_used": 0.95,
+    "asset_class": "commodity"
+  },
+  "actual_magnitude_pct": -4.699774137443484,
+  "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "参考链 #635 (霍尔木兹海峡通航受阻→黄金上涨) 的反向机制。该链指出海峡封锁威胁触发避险买盘推升金价；当前新闻显示卡塔尔LNG船70天来首次顺利通过海峡且使用伊朗新航道，表明地缘紧张边际缓和，避险需求相应回落，黄金承压。但因仅为单艘船通航而非全面恢复，影响幅度有限。",
   "stop_loss_price": 4770.502,
   "take_profit": {
@@ -65,6 +73,8 @@
   ],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     635
   ],
@@ -77,7 +87,8 @@
       "horizon_days": 7,
       "magnitude_pct": 1.5,
       "grade": "C",
-      "retail_edge": null
+      "retail_edge": null,
+      "macro_category": "politics_geo"
     }
   ],
   "event": {

@@ -2,7 +2,7 @@
   "id": 230,
   "made_at": "2026-05-11T13:43:13.066215",
   "expire_at": "2026-05-14T13:43:13.066215",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "CL=F",
     "name": "WTI原油期货",
@@ -13,14 +13,22 @@
   "horizon_days": 3,
   "baseline_price": 96.87999725341797,
   "baseline_source": "event_time",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
-  "current_price": 97.44000244140625,
-  "current_pct": 0.5780400535349148,
-  "current_at": "2026-05-11T00:00:00-04:00",
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": 5.451280116834949,
+    "mag_err_bucket": ">100%",
+    "tol_used": 0.95,
+    "asset_class": "commodity"
+  },
+  "actual_magnitude_pct": -4.644921684121164,
+  "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "参考链 #637 (霍尔木兹海峡通航受阻威胁) 的机制：波斯湾海上安全事件→供应中断风险定价→原油上行。当前情况差异：本次是货船而非油轮，火灾可控且无伤亡，船只继续航行，严重程度远低于霍尔木兹封锁威胁，因此幅度大幅缩减至约0.8%。",
   "stop_loss_price": 96.1825,
   "take_profit": {
@@ -65,6 +73,8 @@
   ],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     637
   ],
@@ -77,7 +87,8 @@
       "horizon_days": 3,
       "magnitude_pct": 1.0,
       "grade": "C",
-      "retail_edge": null
+      "retail_edge": null,
+      "macro_category": "politics_geo"
     }
   ],
   "event": {

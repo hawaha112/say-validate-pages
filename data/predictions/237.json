@@ -2,7 +2,7 @@
   "id": 237,
   "made_at": "2026-05-11T14:41:34.498326",
   "expire_at": "2026-05-18T14:41:34.498326",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "CL=F",
     "name": "WTI原油期货",
@@ -13,14 +13,22 @@
   "horizon_days": 7,
   "baseline_price": 97.23999786376953,
   "baseline_source": "event_time",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
-  "current_price": 97.44000244140625,
-  "current_pct": 0.20568138834897906,
-  "current_at": "2026-05-11T00:00:00-04:00",
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": true,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": 3.6277258988062786,
+    "mag_err_bucket": ">100%",
+    "tol_used": 0.95,
+    "asset_class": "commodity"
+  },
+  "actual_magnitude_pct": -4.997943970710781,
+  "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "参考链 #636 (霍尔木兹海峡通航受阻→能源股上涨) 的底层机制：海峡承载全球约20%石油及LNG供应，封锁威胁导致Brent/WTI跳涨。当前LNG船成功通航并使用伊朗新航道，信号意义在于供应中断的尾部风险定价需要下修，原油风险溢价收窄。但70天封锁期市场已部分适应，预期幅度温和。",
   "stop_loss_price": 98.2902,
   "take_profit": {
@@ -74,6 +82,8 @@
   ],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     635,
     636
@@ -87,7 +97,8 @@
       "horizon_days": 7,
       "magnitude_pct": 1.5,
       "grade": "C",
-      "retail_edge": null
+      "retail_edge": null,
+      "macro_category": "politics_geo"
     },
     {
       "id": 636,
@@ -97,7 +108,8 @@
       "horizon_days": 3,
       "magnitude_pct": 2.0,
       "grade": "C",
-      "retail_edge": null
+      "retail_edge": null,
+      "macro_category": "politics_geo"
     }
   ],
   "event": {

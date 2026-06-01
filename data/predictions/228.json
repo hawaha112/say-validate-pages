@@ -2,7 +2,7 @@
   "id": 228,
   "made_at": "2026-05-05T17:42:10.608254",
   "expire_at": "2026-05-12T17:42:10.608254",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "EWU",
     "name": "iShares英国ETF",
@@ -13,14 +13,22 @@
   "horizon_days": 7,
   "baseline_price": 46.415000915527344,
   "baseline_source": "event_time",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
-  "current_price": 46.72999954223633,
-  "current_pct": 0.678656943866626,
-  "current_at": "2026-05-11T00:00:00-04:00",
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": true,
+    "strict_hit": false,
+    "mag_err_rel": 0.7257055851223848,
+    "mag_err_bucket": "<=100%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": 0.5924759361356489,
+  "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "参考链 #357 的政治不确定性冲击风险资产的逻辑。英国长端利率飙升将直接推高企业融资成本，压缩估值空间；大选前政策不确定性进一步抑制风险偏好。英国股市面临双重压力，外资可能阶段性减持。",
   "stop_loss_price": 47.1845,
   "take_profit": {
@@ -63,6 +71,8 @@
   "tags": [],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     357
   ],
@@ -75,7 +85,8 @@
       "horizon_days": 1,
       "magnitude_pct": 0.8,
       "grade": "B",
-      "retail_edge": "mid"
+      "retail_edge": "mid",
+      "macro_category": "politics_geo"
     }
   ],
   "event": {

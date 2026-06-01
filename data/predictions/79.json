@@ -73,6 +73,8 @@
   ],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     62
   ],
@@ -85,7 +87,8 @@
       "horizon_days": 3,
       "magnitude_pct": 1.2,
       "grade": "C",
-      "retail_edge": "mid"
+      "retail_edge": "mid",
+      "macro_category": "politics_geo"
     }
   ],
   "event": {

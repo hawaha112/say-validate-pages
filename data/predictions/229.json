@@ -2,7 +2,7 @@
   "id": 229,
   "made_at": "2026-05-07T21:34:43.155693",
   "expire_at": "2026-05-14T21:34:43.155693",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "510300.SS",
     "name": "沪深300ETF",
@@ -13,14 +13,14 @@
   "horizon_days": 7,
   "baseline_price": 4.912,
   "baseline_source": "event_time",
-  "status": "pending",
+  "status": "expired_no_data",
   "hit": null,
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 4.966,
-  "current_pct": 1.09934853420196,
-  "current_at": "2026-05-11T14:49:32.386663",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "参考链#88（中国财政刺激→沪深300受益）的机制，本次五一假期消费数据强劲——新能源汽车充电量同比+52.8%、消费销售收入+14.3%、银联支付笔数+23.45%——同样指向中国内需活力回暖。与链#88不同的是，本次是消费端需求实际表现而非政策supply-side刺激，市场敏感度较低，预期涨幅相应调减。",
   "stop_loss_price": 4.8276,
   "take_profit": {
@@ -63,6 +63,8 @@
   "tags": [],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     88
   ],
@@ -75,7 +77,8 @@
       "horizon_days": 7,
       "magnitude_pct": 1.5,
       "grade": "A",
-      "retail_edge": "mid"
+      "retail_edge": "mid",
+      "macro_category": "monetary_policy"
     }
   ],
   "event": {

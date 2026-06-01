@@ -2,7 +2,7 @@
   "id": 212,
   "made_at": "2026-04-28T14:15:47.368061",
   "expire_at": "2026-05-12T14:15:47.368061",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "2222.SR",
     "name": "沙特阿美",
@@ -13,14 +13,22 @@
   "horizon_days": 14,
   "baseline_price": 27.459999084472656,
   "baseline_source": "event_time",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": true,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": NaN,
+    "mag_err_bucket": ">100%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
   "actual_magnitude_pct": null,
-  "actual_direction": null,
-  "current_price": 27.639999389648438,
-  "current_pct": 0.6555000407030712,
-  "current_at": "2026-05-11T00:00:00+03:00",
+  "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "阿联酋退出欧佩克+对沙特阿美形成双重利空：一是油价下跌直接压缩收入；二是OPEC+联盟分裂削弱沙特对全球油市的定价权。这是检索链(id:206)中沙特减产逻辑的反面案例——当联盟成员增产破坏协议时，沙特主导的供给管理策略失效，对沙特石油资产构成负面冲击。",
   "stop_loss_price": 28.2532,
   "take_profit": {
@@ -65,6 +73,8 @@
   ],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     206
   ],
@@ -77,7 +87,8 @@
       "horizon_days": 7,
       "magnitude_pct": 1.448,
       "grade": "C",
-      "retail_edge": "mid"
+      "retail_edge": "mid",
+      "macro_category": "energy_commodity"
     }
   ],
   "event": {

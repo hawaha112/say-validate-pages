@@ -71,6 +71,8 @@
   "tags": [],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     291
   ],
@@ -83,7 +85,8 @@
       "horizon_days": 30,
       "magnitude_pct": 6.0,
       "grade": "B",
-      "retail_edge": "mid"
+      "retail_edge": "mid",
+      "macro_category": "financial_stress"
     }
   ],
   "event": {

@@ -73,6 +73,8 @@
   ],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     53
   ],
@@ -85,7 +87,8 @@
       "horizon_days": 5,
       "magnitude_pct": 3.0,
       "grade": null,
-      "retail_edge": null
+      "retail_edge": null,
+      "macro_category": "energy_commodity"
     }
   ],
   "event": {

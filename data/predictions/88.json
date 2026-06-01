@@ -45,6 +45,8 @@
   ],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [],
   "cited_chains": [],
   "event": {

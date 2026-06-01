@@ -1,0 +1,108 @@
+{
+  "id": 249,
+  "made_at": "2026-05-12T14:52:56.332340",
+  "expire_at": "2026-05-15T14:52:56.332340",
+  "verified_at": "2026-06-01T22:22:51.715245",
+  "asset": {
+    "symbol": "QQQ",
+    "name": "纳斯达克100ETF",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 1.8,
+  "horizon_days": 3,
+  "baseline_price": 711.22998046875,
+  "baseline_source": "event_time",
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": 1.4613080805965737,
+    "mag_err_bucket": ">100%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": 4.430354545073833,
+  "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "参考链 #31 (美国 CPI 同比超预期 >=0.2%) 的机制——紧缩预期压制成长股估值。高通胀(+0.9%MoM)叠加弱就业(11.5万低于预期)呈类滞胀信号，对高久期科技股尤为不利。但该链历史支撑率偏低(2:3)且当前SPX处上升趋势(+8.9% vs 200dMA)，下调幅度至1.0%以反映不确定性。",
+  "stop_loss_price": 717.9668,
+  "take_profit": {
+    "prices": [
+      701.1247,
+      694.3879,
+      684.2826
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 6.7368,
+    "atr": 3.3684
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.3636,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.3636,
+    "log_odds": -0.56,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 1.21,
+    "signal_grade": "💤 D",
+    "evidence": [
+      {
+        "link_id": 31,
+        "pattern": "美国 CPI 同比超预期 >=0.2%",
+        "asset": "QQQ",
+        "dir_hit_rate": 0.6,
+        "n_samples": 5,
+        "log_lr": 0.288,
+        "grade": "C"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "low_grade_chain",
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-weak"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    31
+  ],
+  "cited_chains": [
+    {
+      "id": 31,
+      "pattern": "美国 CPI 同比超预期 >=0.2%",
+      "asset_symbol": "QQQ",
+      "direction": "down",
+      "horizon_days": 3,
+      "magnitude_pct": 1.3,
+      "grade": "C",
+      "retail_edge": "mid",
+      "macro_category": "macro_data"
+    }
+  ],
+  "event": {
+    "id": 1204,
+    "summary": "美国4月失业率4.3%，新增非农就业11.5万人低于预期",
+    "category": "employment"
+  },
+  "news": {
+    "title": "Major Economic Indicators Latest Numbers",
+    "source": "bls_press",
+    "lang": "en",
+    "url": "https://www.bls.gov/bls/",
+    "published_at": "2026-05-08T14:00:13"
+  }
+}

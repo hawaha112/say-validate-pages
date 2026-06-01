@@ -1,0 +1,142 @@
+{
+  "id": 250,
+  "made_at": "2026-06-01T22:20:53.430614",
+  "expire_at": "2026-06-04T22:20:53.430614",
+  "verified_at": null,
+  "asset": {
+    "symbol": "CL=F",
+    "name": "WTI原油期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 7.2,
+  "horizon_days": 3,
+  "baseline_price": 92.56999969482422,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 92.37999725341797,
+  "current_pct": -0.20525271905869244,
+  "current_at": "2026-06-01T00:00:00-04:00",
+  "reasoning": "参考链 #635/636/637 (霍尔木兹海峡通航受阻或封锁威胁) 的机制：海峡承载全球约20%石油供应，封锁威胁→供应中断风险定价→油价跳涨。本次新闻是伊朗宣布「彻底封锁」而非仅威胁或议案，严重程度显著升级，原油作为直接受冲击标的应优先于能源股；考虑到事件烈度，magnitude 上调至 8%。",
+  "stop_loss_price": 85.905,
+  "take_profit": {
+    "prices": [
+      102.5676,
+      109.2326,
+      119.2302
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 6.665,
+    "atr": 3.3325
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.3506,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.3506,
+    "log_odds": -0.616,
+    "effective_n": 1.0,
+    "r_bar": 1.0,
+    "uplift": 1.17,
+    "signal_grade": "💤 D",
+    "evidence": [
+      {
+        "link_id": 635,
+        "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+        "asset": "GC=F",
+        "dir_hit_rate": 0.5,
+        "n_samples": 4,
+        "log_lr": 0.0,
+        "grade": "C"
+      },
+      {
+        "link_id": 636,
+        "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+        "asset": "XLE",
+        "dir_hit_rate": 0.5,
+        "n_samples": 4,
+        "log_lr": 0.0,
+        "grade": "C"
+      },
+      {
+        "link_id": 637,
+        "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+        "asset": "SPY",
+        "dir_hit_rate": 0.75,
+        "n_samples": 4,
+        "log_lr": 0.693,
+        "grade": "C"
+      }
+    ],
+    "note": "⚠ 证据同类别重叠 r̄=1.00，已折扣 (n=3 → n_eff=1.0)"
+  },
+  "tags": [
+    "low_grade_chain",
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-neutral"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    635,
+    636,
+    637
+  ],
+  "cited_chains": [
+    {
+      "id": 635,
+      "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+      "asset_symbol": "GC=F",
+      "direction": "up",
+      "horizon_days": 7,
+      "magnitude_pct": 1.5,
+      "grade": "C",
+      "retail_edge": null,
+      "macro_category": "politics_geo"
+    },
+    {
+      "id": 636,
+      "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+      "asset_symbol": "XLE",
+      "direction": "up",
+      "horizon_days": 3,
+      "magnitude_pct": 2.0,
+      "grade": "C",
+      "retail_edge": null,
+      "macro_category": "politics_geo"
+    },
+    {
+      "id": 637,
+      "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+      "asset_symbol": "SPY",
+      "direction": "down",
+      "horizon_days": 3,
+      "magnitude_pct": 1.0,
+      "grade": "C",
+      "retail_edge": null,
+      "macro_category": "politics_geo"
+    }
+  ],
+  "event": {
+    "id": 1607,
+    "summary": "伊朗宣布彻底封锁霍尔木兹海峡",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "伊朗：彻底封锁霍尔木兹海峡",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7646419297488604708/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%225%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227646419297488604708%22%2C%22hot_board_impr_id%22%3A%222026060206000222ECFA55545B72CA7209%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BC%8A%E6%9C%97%EF%BC%9A%E5%BD%BB%E5%BA%95%E5%B0%81%E9%94%81%E9%9C%8D%E5%B0%94%E6%9C%A8%E5%85%B9%E6%B5%B7%E5%B3%A1%22%7D&rank=&style_id=40132&topic_id=7646419297488604708",
+    "published_at": "2026-06-01T22:00:02.515327"
+  }
+}

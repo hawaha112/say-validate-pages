@@ -1,51 +1,51 @@
 {
   "n_buckets": 10,
-  "n_total": 7,
-  "n_bucketized": 7,
+  "n_total": 32,
+  "n_bucketized": 32,
   "buckets": [
     {
       "bucket_min": 0.3,
       "bucket_max": 0.4,
-      "n": 1,
-      "mean_predicted": 0.3,
+      "n": 7,
+      "mean_predicted": 0.318,
       "actual_hit_rate": 0.0,
-      "abs_error": 0.3
+      "abs_error": 0.318
     },
     {
       "bucket_min": 0.4,
       "bucket_max": 0.5,
-      "n": 1,
-      "mean_predicted": 0.462,
+      "n": 7,
+      "mean_predicted": 0.454,
       "actual_hit_rate": 0.0,
-      "abs_error": 0.462
+      "abs_error": 0.454
     },
     {
       "bucket_min": 0.5,
       "bucket_max": 0.6,
-      "n": 2,
-      "mean_predicted": 0.517,
-      "actual_hit_rate": 0.0,
-      "abs_error": 0.517
+      "n": 7,
+      "mean_predicted": 0.522,
+      "actual_hit_rate": 0.286,
+      "abs_error": 0.236
     },
     {
       "bucket_min": 0.6,
       "bucket_max": 0.7,
-      "n": 1,
-      "mean_predicted": 0.632,
-      "actual_hit_rate": 1.0,
-      "abs_error": 0.368
+      "n": 6,
+      "mean_predicted": 0.644,
+      "actual_hit_rate": 0.333,
+      "abs_error": 0.311
     },
     {
       "bucket_min": 0.7,
       "bucket_max": 0.8,
-      "n": 2,
+      "n": 5,
       "mean_predicted": 0.72,
       "actual_hit_rate": 0.0,
       "abs_error": 0.72
     }
   ],
-  "brier_score": 0.2872,
-  "ece": 0.5149,
+  "brier_score": 0.2674,
+  "ece": 0.3914,
   "is_well_calibrated": false,
   "note": "ECE = expected calibration error (avg |predicted - actual| weighted by bucket size). <0.10 = well calibrated. Brier = squared-error scoring rule (lower better)."
 }

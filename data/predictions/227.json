@@ -2,7 +2,7 @@
   "id": 227,
   "made_at": "2026-05-05T17:42:09.417990",
   "expire_at": "2026-05-12T17:42:09.417990",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "GBPUSD=X",
     "name": "英镑兑美元",
@@ -13,14 +13,22 @@
   "horizon_days": 7,
   "baseline_price": 1.3552706241607666,
   "baseline_source": "event_time",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
-  "current_price": 1.3623793125152588,
-  "current_pct": 0.5245216879760932,
-  "current_at": "2026-05-11T00:00:00+01:00",
+  "status": "verified",
+  "hit": true,
+  "hit_breakdown": {
+    "dir_hit": true,
+    "mag_hit": true,
+    "strict_hit": true,
+    "mag_err_rel": 0.11856616078658552,
+    "mag_err_bucket": "<=25%",
+    "tol_used": 0.92,
+    "asset_class": "fx"
+  },
+  "actual_magnitude_pct": -0.7051470713707316,
+  "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "参考链 #357 的政治事件→债市→资本流动机制，但传导方向相反。#357中美国关税威胁引发避险资金流入美债；当前英国债务成本28年高点叠加大选不确定性，投资者抛售英债而非买入，收益率飙升反映对英国财政可持续性的担忧，资本外流压力将传导至英镑。",
   "stop_loss_price": 2.1247,
   "take_profit": {
@@ -63,6 +71,8 @@
   "tags": [],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     357
   ],
@@ -75,7 +85,8 @@
       "horizon_days": 1,
       "magnitude_pct": 0.8,
       "grade": "B",
-      "retail_edge": "mid"
+      "retail_edge": "mid",
+      "macro_category": "politics_geo"
     }
   ],
   "event": {

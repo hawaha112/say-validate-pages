@@ -2,7 +2,7 @@
   "id": 235,
   "made_at": "2026-05-11T14:39:00.155875",
   "expire_at": "2026-05-14T14:39:00.155875",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "TLT",
     "name": "20+年期美债ETF",
@@ -13,14 +13,22 @@
   "horizon_days": 3,
   "baseline_price": 85.7249984741211,
   "baseline_source": "live_fallback",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
-  "current_price": 85.73500061035156,
-  "current_pct": 0.011667700680669272,
-  "current_at": "2026-05-11T00:00:00-04:00",
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": true,
+    "strict_hit": false,
+    "mag_err_rel": 0.8898297709269122,
+    "mag_err_bucket": "<=100%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": -0.2974596184973372,
+  "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "参考链 #83（银行挤兑→TLT上涨）的避险机制 → 伊朗对阿联酋发射弹道导弹升级中东军事冲突，虽触发因素不同（地缘政治风险 vs 金融系统风险），但核心传导相同：系统性风险预期推升避险资产需求，资金流向美国国债。霍尔木兹海峡附近直接军事交火近年罕见，风险溢价或迅速price in。",
   "stop_loss_price": 84.3745,
   "take_profit": {
@@ -65,6 +73,8 @@
   ],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     83
   ],
@@ -77,7 +87,8 @@
       "horizon_days": 1,
       "magnitude_pct": 3.0,
       "grade": "C",
-      "retail_edge": "mid"
+      "retail_edge": "mid",
+      "macro_category": "financial_stress"
     }
   ],
   "event": {

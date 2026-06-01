@@ -2,7 +2,7 @@
   "id": 232,
   "made_at": "2026-05-11T13:43:13.674513",
   "expire_at": "2026-05-12T13:43:13.674513",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "SPY",
     "name": "标普500ETF",
@@ -13,14 +13,22 @@
   "horizon_days": 1,
   "baseline_price": 737.9749755859375,
   "baseline_source": "event_time",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
-  "current_price": 738.7550048828125,
-  "current_pct": 0.10569861074973066,
-  "current_at": "2026-05-11T00:00:00-04:00",
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": 6.740778301639281,
+    "mag_err_bucket": ">100%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": 2.7866801885901413,
+  "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "参考链 #637 (霍尔木兹海峡通航受阻→SPY下挫) 的机制：中东海上安全事件触发地缘风险溢价。本次事件规模极小、损失可控、未涉及石油运输核心航道，对美股风险偏好冲击非常有限，预计仅边际承压0.2%左右。",
   "stop_loss_price": 740.6317,
   "take_profit": {
@@ -65,6 +73,8 @@
   ],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     637
   ],
@@ -77,7 +87,8 @@
       "horizon_days": 3,
       "magnitude_pct": 1.0,
       "grade": "C",
-      "retail_edge": null
+      "retail_edge": null,
+      "macro_category": "politics_geo"
     }
   ],
   "event": {

@@ -2,7 +2,7 @@
   "id": 231,
   "made_at": "2026-05-11T13:43:13.365555",
   "expire_at": "2026-05-14T13:43:13.365555",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "GC=F",
     "name": "黄金期货",
@@ -13,14 +13,22 @@
   "horizon_days": 3,
   "baseline_price": 4745.0,
   "baseline_source": "event_time",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
-  "current_price": 4737.10009765625,
-  "current_pct": -0.16648898511591148,
-  "current_at": "2026-05-11T00:00:00-04:00",
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": false,
+    "strict_hit": false,
+    "mag_err_rel": 12.53472633839714,
+    "mag_err_bucket": ">100%",
+    "tol_used": 0.95,
+    "asset_class": "commodity"
+  },
+  "actual_magnitude_pct": -4.8725014818229715,
+  "actual_direction": "down",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "参考链 #637 (霍尔木兹海峡通航威胁) 机制中提及'黄金抢避险'，同时参考链 #61 (地缘升级→黄金上行) 的避险逻辑。本次袭击事件较轻微（无伤亡、火势受控），避险情绪推升有限，预计小幅上涨0.4%左右。",
   "stop_loss_price": 4701.0315,
   "take_profit": {
@@ -74,6 +82,8 @@
   ],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     637,
     61
@@ -87,7 +97,8 @@
       "horizon_days": 3,
       "magnitude_pct": 1.0,
       "grade": "C",
-      "retail_edge": null
+      "retail_edge": null,
+      "macro_category": "politics_geo"
     },
     {
       "id": 61,
@@ -97,7 +108,8 @@
       "horizon_days": 3,
       "magnitude_pct": 1.5,
       "grade": "C",
-      "retail_edge": "high"
+      "retail_edge": "high",
+      "macro_category": "politics_geo"
     }
   ],
   "event": {

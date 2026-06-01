@@ -1,0 +1,100 @@
+{
+  "id": 252,
+  "made_at": "2026-06-01T22:21:03.367503",
+  "expire_at": "2026-06-04T22:21:03.367503",
+  "verified_at": null,
+  "asset": {
+    "symbol": "SPY",
+    "name": "标普500ETF",
+    "class": "us_stock"
+  },
+  "direction": "down",
+  "magnitude_pct": 4.5,
+  "horizon_days": 3,
+  "baseline_price": 758.5399780273438,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 758.5399780273438,
+  "current_pct": 0.0,
+  "current_at": "2026-06-01T00:00:00-04:00",
+  "reasoning": "参考链 #637 (霍尔木兹海峡通航受阻→SPY下跌) 的机制：油价飙升推高通胀预期、企业成本上升、风险偏好回落→美股承压。当前 SPX 较 200d MA 高出 11%，处于 uptrend 但估值偏高，地缘黑天鹅易触发获利回吐；链内 magnitude 1% 基于威胁，彻底封锁升级后上调至 2.5%。",
+  "stop_loss_price": 792.6743,
+  "take_profit": {
+    "prices": [
+      707.3385,
+      673.2042,
+      622.0028
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 34.1343,
+    "atr": 17.0671
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.4615,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.4615,
+    "log_odds": -0.154,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 1.54,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 637,
+        "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+        "asset": "SPY",
+        "dir_hit_rate": 0.75,
+        "n_samples": 4,
+        "log_lr": 0.693,
+        "grade": "C"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "low_grade_chain",
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-neutral"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    637
+  ],
+  "cited_chains": [
+    {
+      "id": 637,
+      "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
+      "asset_symbol": "SPY",
+      "direction": "down",
+      "horizon_days": 3,
+      "magnitude_pct": 1.0,
+      "grade": "C",
+      "retail_edge": null,
+      "macro_category": "politics_geo"
+    }
+  ],
+  "event": {
+    "id": 1607,
+    "summary": "伊朗宣布彻底封锁霍尔木兹海峡",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "伊朗：彻底封锁霍尔木兹海峡",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7646419297488604708/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%225%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227646419297488604708%22%2C%22hot_board_impr_id%22%3A%222026060206000222ECFA55545B72CA7209%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BC%8A%E6%9C%97%EF%BC%9A%E5%BD%BB%E5%BA%95%E5%B0%81%E9%94%81%E9%9C%8D%E5%B0%94%E6%9C%A8%E5%85%B9%E6%B5%B7%E5%B3%A1%22%7D&rank=&style_id=40132&topic_id=7646419297488604708",
+    "published_at": "2026-06-01T22:00:02.515327"
+  }
+}

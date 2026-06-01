@@ -2,7 +2,7 @@
   "id": 245,
   "made_at": "2026-05-11T14:44:03.099713",
   "expire_at": "2026-05-18T14:44:03.099713",
-  "verified_at": null,
+  "verified_at": "2026-06-01T22:22:51.715245",
   "asset": {
     "symbol": "DJT",
     "name": "特朗普媒体科技集团",
@@ -13,14 +13,22 @@
   "horizon_days": 7,
   "baseline_price": 8.944999694824219,
   "baseline_source": "event_time",
-  "status": "pending",
-  "hit": null,
-  "hit_breakdown": null,
-  "actual_magnitude_pct": null,
-  "actual_direction": null,
-  "current_price": 8.979999542236328,
-  "current_pct": 0.39127835222130963,
-  "current_at": "2026-05-11T00:00:00-04:00",
+  "status": "verified",
+  "hit": false,
+  "hit_breakdown": {
+    "dir_hit": false,
+    "mag_hit": true,
+    "strict_hit": false,
+    "mag_err_rel": 0.592416161949577,
+    "mag_err_bucket": "<=100%",
+    "tol_used": 0.95,
+    "asset_class": "us_stock"
+  },
+  "actual_magnitude_pct": 5.869207267926092,
+  "actual_direction": "up",
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
   "reasoning": "参考链 #135 (小市值投机股非核心业务曝险后回调) 的机制。DJT 同为 meme 股性质，此次 4.06 亿美元未实现亏损来自去年高点买入的 BTC 和 CRO 代币，暴露了公司在非核心加密资产上的激进配置和时机失误。与 #135 中 BIRD 转型后暴涨回调类似，meme 股投机者在负面基本面催化剂后倾向于快速获利了结，情绪降温将带来明显抛压。",
   "stop_loss_price": 9.3166,
   "take_profit": {
@@ -63,6 +71,8 @@
   "tags": [],
   "retired_at": null,
   "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
   "cited_link_ids": [
     135
   ],
@@ -75,7 +85,8 @@
       "horizon_days": 30,
       "magnitude_pct": 25.0,
       "grade": "B",
-      "retail_edge": "mid"
+      "retail_edge": "mid",
+      "macro_category": "corporate_sector"
     }
   ],
   "event": {

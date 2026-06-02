@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-02T12:31:52.771689",
+  "generated_at": "2026-06-02T14:24:09.877116",
   "stats": {
-    "generated_at": "2026-06-02T12:31:52.371348",
+    "generated_at": "2026-06-02T14:24:09.048418",
     "kb_summary": {
       "n_links_active": 312,
       "n_strong": 159,
@@ -38,9 +38,9 @@
         "other": 19
       }
     },
-    "total": 4,
+    "total": 9,
     "verified": 0,
-    "pending": 4,
+    "pending": 9,
     "pending_past_expire": 0,
     "expired_no_data": 0,
     "retired": 0,
@@ -90,14 +90,511 @@
       }
     },
     "by_class": {
-      "commodity": 3,
-      "us_stock": 1
+      "us_stock": 6,
+      "commodity": 3
     },
     "baseline_source_distribution": {
-      "event_time": 4
+      "event_time": 9
     }
   },
   "recent_predictions": [
+    {
+      "id": 258,
+      "made_at": "2026-06-02T14:22:46.424657",
+      "expire_at": "2026-06-05T14:22:46.424657",
+      "verified_at": null,
+      "asset": {
+        "symbol": "QQQ",
+        "name": "纳斯达克100ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.4400000000000002,
+      "horizon_days": 3,
+      "baseline_price": 743.6162109375,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 743.0599975585938,
+      "current_pct": -0.07479844719966695,
+      "current_at": "2026-06-02T00:00:00-04:00",
+      "reasoning": "参考链 #34 (通胀缓解强化降息预期→风险资产上涨) 的机制。劳动力市场降温数据与通胀缓解数据共享同一传导路径：均指向Fed政策转鸽→折现率预期下行→成长股估值扩张。当前SPX +11.1% vs 200d MA处于强势uptrend，顺势做多科技股胜率更高，但magnitude保守取0.8%因单一数据催化有限。",
+      "stop_loss_price": 733.5457,
+      "take_profit": {
+        "prices": [
+          758.722,
+          768.7925,
+          783.8983
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 10.0705,
+        "atr": 5.0353
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.72,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.72,
+        "log_odds": 0.944,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.4,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 34,
+            "pattern": "美国 CPI 同比低于预期 >=0.2%",
+            "asset": "QQQ",
+            "dir_hit_rate": 1.0,
+            "n_samples": 5,
+            "log_lr": 1.792,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        34
+      ],
+      "cited_chains": [
+        {
+          "id": 34,
+          "pattern": "美国 CPI 同比低于预期 >=0.2%",
+          "asset_symbol": "QQQ",
+          "direction": "up",
+          "horizon_days": 3,
+          "magnitude_pct": 1.5,
+          "grade": "A",
+          "retail_edge": "mid",
+          "macro_category": "macro_data"
+        }
+      ],
+      "event": {
+        "id": 1729,
+        "summary": "美国4月JOLTS职位空缺率4.6%，裁员和辞职数据均低于预期，劳动力市场显现降温迹象",
+        "category": "employment"
+      },
+      "news": {
+        "title": "美国4月JOLTS职位空缺率4.6%。\n\n4月裁员169.2万，预期184.2万。\n\n4月辞职率1.9%，预期2.0%。\n\n4月辞职人数297.7万，预期313.8万。",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3113132",
+        "published_at": "2026-06-02T14:02:29"
+      }
+    },
+    {
+      "id": 257,
+      "made_at": "2026-06-02T14:22:41.270273",
+      "expire_at": "2026-06-09T14:22:41.270273",
+      "verified_at": null,
+      "asset": {
+        "symbol": "TLT",
+        "name": "20+年期美债ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.16,
+      "horizon_days": 7,
+      "baseline_price": 85.69000244140625,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 85.69999694824219,
+      "current_pct": 0.011663562319036714,
+      "current_at": "2026-06-02T00:00:00-04:00",
+      "reasoning": "参考链 #34 (CPI低于预期→降息预期强化→长久期资产上涨) 的机制。JOLTS数据全面低于预期——职位空缺率、裁员、辞职率均显示劳动力市场降温，与通胀数据低于预期有相似的政策含义：劳动力市场松弛支持Fed更早降息。当前10y利率4.45%处于高位(+0.20pp MoM)，降息预期强化将推动长端利率回落、TLT上涨。",
+      "stop_loss_price": 75.6195,
+      "take_profit": {
+        "prices": [
+          100.7958,
+          110.8663,
+          125.9721
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 10.0705,
+        "atr": 5.0353
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.72,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.72,
+        "log_odds": 0.944,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.4,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 34,
+            "pattern": "美国 CPI 同比低于预期 >=0.2%",
+            "asset": "QQQ",
+            "dir_hit_rate": 1.0,
+            "n_samples": 5,
+            "log_lr": 1.792,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        34
+      ],
+      "cited_chains": [
+        {
+          "id": 34,
+          "pattern": "美国 CPI 同比低于预期 >=0.2%",
+          "asset_symbol": "QQQ",
+          "direction": "up",
+          "horizon_days": 3,
+          "magnitude_pct": 1.5,
+          "grade": "A",
+          "retail_edge": "mid",
+          "macro_category": "macro_data"
+        }
+      ],
+      "event": {
+        "id": 1729,
+        "summary": "美国4月JOLTS职位空缺率4.6%，裁员和辞职数据均低于预期，劳动力市场显现降温迹象",
+        "category": "employment"
+      },
+      "news": {
+        "title": "美国4月JOLTS职位空缺率4.6%。\n\n4月裁员169.2万，预期184.2万。\n\n4月辞职率1.9%，预期2.0%。\n\n4月辞职人数297.7万，预期313.8万。",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3113132",
+        "published_at": "2026-06-02T14:02:29"
+      }
+    },
+    {
+      "id": 256,
+      "made_at": "2026-06-02T14:21:48.138016",
+      "expire_at": "2026-06-05T14:21:48.138016",
+      "verified_at": null,
+      "asset": {
+        "symbol": "TLT",
+        "name": "20+年期美债ETF",
+        "class": "us_stock"
+      },
+      "direction": "down",
+      "magnitude_pct": 1.08,
+      "horizon_days": 3,
+      "baseline_price": 85.72940063476562,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 85.69999694824219,
+      "current_pct": -0.034298252764773794,
+      "current_at": "2026-06-02T00:00:00-04:00",
+      "reasoning": "参考链 #32 (CPI超预期→TLT下跌) 的机制：10年期收益率上涨至4.46%反映市场对通胀/紧缩预期的重新定价，与CPI超预期后长端利率上行压制长久期债券的逻辑一致。当前10y较月初上行20bp，momentum延续中，TLT承压。但本次仅是日内收益率波动而非CPI数据发布，magnitude较原链下调。",
+      "stop_loss_price": 87.4126,
+      "take_profit": {
+        "prices": [
+          83.2047,
+          81.5215,
+          78.9968
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.6832,
+        "atr": 0.8416
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.72,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.72,
+        "log_odds": 0.944,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.4,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 32,
+            "pattern": "美国 CPI 同比超预期 >=0.2%",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 5,
+            "log_lr": 1.792,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        32
+      ],
+      "cited_chains": [
+        {
+          "id": 32,
+          "pattern": "美国 CPI 同比超预期 >=0.2%",
+          "asset_symbol": "TLT",
+          "direction": "down",
+          "horizon_days": 3,
+          "magnitude_pct": 1.5,
+          "grade": "A",
+          "retail_edge": "mid",
+          "macro_category": "macro_data"
+        }
+      ],
+      "event": {
+        "id": 1736,
+        "summary": "美国10年期国债收益率上涨至4.46%附近，市场等待职位空缺数据",
+        "category": "employment"
+      },
+      "news": {
+        "title": "美国10年期国债收益率转涨，刷新日高、逼近4.46%，美国职位空缺数据发布前交投于4.4450%附近。",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-02T22:03:53"
+      }
+    },
+    {
+      "id": 255,
+      "made_at": "2026-06-02T14:20:51.421952",
+      "expire_at": "2026-06-09T14:20:51.421952",
+      "verified_at": null,
+      "asset": {
+        "symbol": "SOXX",
+        "name": "费城半导体ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.08,
+      "horizon_days": 7,
+      "baseline_price": 592.1900024414062,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 590.1799926757812,
+      "current_pct": -0.339419739836604,
+      "current_at": "2026-06-02T00:00:00-04:00",
+      "reasoning": "参考链 #605 (美国放松对华AI芯片出口管制) 的机制 — CHIPS Act持续拨款表明政府对本土芯片制造的长期承诺，利好半导体设备和制造相关标的。XLight作为光电子/先进封装领域公司获补贴，信号意义大于金额本身(1.5亿规模较小)。7天窗口允许市场消化政策信号并反映到更广泛半导体指数。",
+      "stop_loss_price": 585.7944,
+      "take_profit": {
+        "prices": [
+          601.7835,
+          608.1791,
+          617.7726
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 6.3957,
+        "atr": 3.1978
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.3913,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.3913,
+        "log_odds": -0.442,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.3,
+        "signal_grade": "💤 D",
+        "evidence": [
+          {
+            "link_id": 605,
+            "pattern": "美国放松对华AI芯片出口管制（贸易缓和）",
+            "asset": "QQQ",
+            "dir_hit_rate": 0.6666666666666666,
+            "n_samples": 3,
+            "log_lr": 0.405,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "low_grade_chain",
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        605
+      ],
+      "cited_chains": [
+        {
+          "id": 605,
+          "pattern": "美国放松对华AI芯片出口管制（贸易缓和）",
+          "asset_symbol": "QQQ",
+          "direction": "up",
+          "horizon_days": 3,
+          "magnitude_pct": 0.8,
+          "grade": "C",
+          "retail_edge": null,
+          "macro_category": "regulation"
+        }
+      ],
+      "event": {
+        "id": 1744,
+        "summary": "美国商务部向XLight授予1.5亿美元芯片法案激励资金",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "市场消息：美国商务部向XLight授予1.5亿美元芯片法案激励资金。",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-02T22:08:11"
+      }
+    },
+    {
+      "id": 254,
+      "made_at": "2026-06-02T14:20:46.471991",
+      "expire_at": "2026-06-05T14:20:46.471991",
+      "verified_at": null,
+      "asset": {
+        "symbol": "SMH",
+        "name": "半导体ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.4400000000000002,
+      "horizon_days": 3,
+      "baseline_price": 624.47998046875,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 622.5549926757812,
+      "current_pct": -0.3082545242721483,
+      "current_at": "2026-06-02T00:00:00-04:00",
+      "reasoning": "参考链 #605 (美国放松对华AI芯片出口管制) 的机制 — 该链核心逻辑是政府政策支持提振芯片板块情绪。当前XLight获得1.5亿美元CHIPS Act补贴属于同类政策利好，强化美国本土半导体产能投资预期。但本次为单一小型公司补贴而非行业性放开出口，影响范围有限，magnitude从0.8%下调。市场处于uptrend+mid-vol环境，利好顺势传导效率较高。",
+      "stop_loss_price": 615.4875,
+      "take_profit": {
+        "prices": [
+          637.9687,
+          646.9613,
+          660.45
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 8.9925,
+        "atr": 4.4963
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.3913,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.3913,
+        "log_odds": -0.442,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.3,
+        "signal_grade": "💤 D",
+        "evidence": [
+          {
+            "link_id": 605,
+            "pattern": "美国放松对华AI芯片出口管制（贸易缓和）",
+            "asset": "QQQ",
+            "dir_hit_rate": 0.6666666666666666,
+            "n_samples": 3,
+            "log_lr": 0.405,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "low_grade_chain",
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        605
+      ],
+      "cited_chains": [
+        {
+          "id": 605,
+          "pattern": "美国放松对华AI芯片出口管制（贸易缓和）",
+          "asset_symbol": "QQQ",
+          "direction": "up",
+          "horizon_days": 3,
+          "magnitude_pct": 0.8,
+          "grade": "C",
+          "retail_edge": null,
+          "macro_category": "regulation"
+        }
+      ],
+      "event": {
+        "id": 1744,
+        "summary": "美国商务部向XLight授予1.5亿美元芯片法案激励资金",
+        "category": "regulation"
+      },
+      "news": {
+        "title": "市场消息：美国商务部向XLight授予1.5亿美元芯片法案激励资金。",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-02T22:08:11"
+      }
+    },
     {
       "id": 253,
       "made_at": "2026-06-02T12:29:27.728401",
@@ -118,8 +615,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4561.39990234375,
-      "current_pct": 0.10533741352393082,
+      "current_price": 4534.5,
+      "current_pct": -0.4850128864197999,
       "current_at": "2026-06-02T00:00:00-04:00",
       "reasoning": "乌克兰遭导弹袭击属于典型地缘冲突升级事件，触发避险资金流向黄金。检索链中未覆盖俄乌冲突模式，但机制类似#357(突发关税威胁→避险资产受益)的避险逻辑——突发地缘风险→市场不确定性上升→黄金作为传统避险资产获资金流入。当前VIX处于中低位(16.15)，避险空间充足。",
       "stop_loss_price": 4555.8306,
@@ -217,9 +714,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 758.5399780273438,
-      "current_pct": 0.0,
-      "current_at": "2026-06-01T00:00:00-04:00",
+      "current_price": 757.9400024414062,
+      "current_pct": -0.07909610611398417,
+      "current_at": "2026-06-02T00:00:00-04:00",
       "reasoning": "参考链 #637 (霍尔木兹海峡通航受阻→SPY下跌) 的机制：油价飙升推高通胀预期、企业成本上升、风险偏好回落→美股承压。当前 SPX 较 200d MA 高出 11%，处于 uptrend 但估值偏高，地缘黑天鹅易触发获利回吐；链内 magnitude 1% 基于威胁，彻底封锁升级后上调至 2.5%。",
       "stop_loss_price": 792.6743,
       "take_profit": {
@@ -317,8 +814,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4561.39990234375,
-      "current_pct": 1.1083034331322332,
+      "current_price": 4534.5,
+      "current_pct": 0.5120383507622346,
       "current_at": "2026-06-02T00:00:00-04:00",
       "reasoning": "参考链 #635 (霍尔木兹海峡通航受阻) 的机制：地缘冲突升级→避险资金涌入黄金。彻底封锁声明意味着中东局势进入高危阶段，黄金作为传统避险资产受益；链内 magnitude 1.5% 基于威胁情景，实际封锁宣布后上调至 3%。当前 VIX 16 处于中低分位，避险需求尚未充分定价。",
       "stop_loss_price": 4389.5921,
@@ -417,8 +914,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 90.69999694824219,
-      "current_pct": -2.0200958763604566,
+      "current_price": 92.0199966430664,
+      "current_pct": -0.5941482700345783,
       "current_at": "2026-06-02T00:00:00-04:00",
       "reasoning": "参考链 #635/636/637 (霍尔木兹海峡通航受阻或封锁威胁) 的机制：海峡承载全球约20%石油供应，封锁威胁→供应中断风险定价→油价跳涨。本次新闻是伊朗宣布「彻底封锁」而非仅威胁或议案，严重程度显著升级，原油作为直接受冲击标的应优先于能源股；考虑到事件烈度，magnitude 上调至 8%。",
       "stop_loss_price": 85.905,
@@ -2875,462 +3372,6 @@
         "lang": "zh",
         "url": null,
         "published_at": "2026-05-07T07:10:16"
-      }
-    },
-    {
-      "id": 228,
-      "made_at": "2026-05-05T17:42:10.608254",
-      "expire_at": "2026-05-12T17:42:10.608254",
-      "verified_at": "2026-06-01T22:22:51.715245",
-      "asset": {
-        "symbol": "EWU",
-        "name": "iShares英国ETF",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 2.16,
-      "horizon_days": 7,
-      "baseline_price": 46.415000915527344,
-      "baseline_source": "event_time",
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": true,
-        "strict_hit": false,
-        "mag_err_rel": 0.7257055851223848,
-        "mag_err_bucket": "<=100%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": 0.5924759361356489,
-      "actual_direction": "up",
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "参考链 #357 的政治不确定性冲击风险资产的逻辑。英国长端利率飙升将直接推高企业融资成本，压缩估值空间；大选前政策不确定性进一步抑制风险偏好。英国股市面临双重压力，外资可能阶段性减持。",
-      "stop_loss_price": 47.1845,
-      "take_profit": {
-        "prices": [
-          45.2608,
-          44.4913,
-          43.3371
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 0.7695,
-        "atr": 0.3847
-      },
-      "kelly_fraction": 0.02,
-      "resonance_posterior": 0.6316,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.6316,
-        "log_odds": 0.539,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 2.11,
-        "signal_grade": "👀 C",
-        "evidence": [
-          {
-            "link_id": 357,
-            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
-            "asset": "TLT",
-            "dir_hit_rate": 1.0,
-            "n_samples": 3,
-            "log_lr": 1.386,
-            "grade": "B"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [
-        357
-      ],
-      "cited_chains": [
-        {
-          "id": 357,
-          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
-          "asset_symbol": "TLT",
-          "direction": "up",
-          "horizon_days": 1,
-          "magnitude_pct": 0.8,
-          "grade": "B",
-          "retail_edge": "mid",
-          "macro_category": "politics_geo"
-        }
-      ],
-      "event": {
-        "id": 587,
-        "summary": "英国长期借贷成本达到28年高点，大选前债市波动加剧",
-        "category": "macro"
-      },
-      "news": {
-        "title": "UK long-term borrowing costs reach 28-year high",
-        "source": "bbc",
-        "lang": "en",
-        "url": "https://www.bbc.com/news/articles/c936qn69016o?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-05-05T16:30:23"
-      }
-    },
-    {
-      "id": 227,
-      "made_at": "2026-05-05T17:42:09.417990",
-      "expire_at": "2026-05-12T17:42:09.417990",
-      "verified_at": "2026-06-01T22:22:51.715245",
-      "asset": {
-        "symbol": "GBPUSD=X",
-        "name": "英镑兑美元",
-        "class": "fx"
-      },
-      "direction": "down",
-      "magnitude_pct": 0.8,
-      "horizon_days": 7,
-      "baseline_price": 1.3552706241607666,
-      "baseline_source": "event_time",
-      "status": "verified",
-      "hit": true,
-      "hit_breakdown": {
-        "dir_hit": true,
-        "mag_hit": true,
-        "strict_hit": true,
-        "mag_err_rel": 0.11856616078658552,
-        "mag_err_bucket": "<=25%",
-        "tol_used": 0.92,
-        "asset_class": "fx"
-      },
-      "actual_magnitude_pct": -0.7051470713707316,
-      "actual_direction": "down",
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "参考链 #357 的政治事件→债市→资本流动机制，但传导方向相反。#357中美国关税威胁引发避险资金流入美债；当前英国债务成本28年高点叠加大选不确定性，投资者抛售英债而非买入，收益率飙升反映对英国财政可持续性的担忧，资本外流压力将传导至英镑。",
-      "stop_loss_price": 2.1247,
-      "take_profit": {
-        "prices": [
-          0.2011,
-          0.01,
-          0.01
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 0.7695,
-        "atr": 0.3847
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": 0.6316,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.6316,
-        "log_odds": 0.539,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 2.11,
-        "signal_grade": "👀 C",
-        "evidence": [
-          {
-            "link_id": 357,
-            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
-            "asset": "TLT",
-            "dir_hit_rate": 1.0,
-            "n_samples": 3,
-            "log_lr": 1.386,
-            "grade": "B"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [
-        357
-      ],
-      "cited_chains": [
-        {
-          "id": 357,
-          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
-          "asset_symbol": "TLT",
-          "direction": "up",
-          "horizon_days": 1,
-          "magnitude_pct": 0.8,
-          "grade": "B",
-          "retail_edge": "mid",
-          "macro_category": "politics_geo"
-        }
-      ],
-      "event": {
-        "id": 587,
-        "summary": "英国长期借贷成本达到28年高点，大选前债市波动加剧",
-        "category": "macro"
-      },
-      "news": {
-        "title": "UK long-term borrowing costs reach 28-year high",
-        "source": "bbc",
-        "lang": "en",
-        "url": "https://www.bbc.com/news/articles/c936qn69016o?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-05-05T16:30:23"
-      }
-    },
-    {
-      "id": 226,
-      "made_at": "2026-05-05T17:37:52.538519",
-      "expire_at": "2026-05-08T17:37:52.538519",
-      "verified_at": "2026-05-11T14:49:22.142636",
-      "asset": {
-        "symbol": "TLT",
-        "name": "20+年期美债ETF",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 0.9,
-      "horizon_days": 3,
-      "baseline_price": 85.3949966430664,
-      "baseline_source": "event_time",
-      "status": "verified",
-      "hit": true,
-      "hit_breakdown": {
-        "dir_hit": true,
-        "mag_hit": true,
-        "strict_hit": true,
-        "mag_err_rel": 0.5423881922216178,
-        "mag_err_bucket": "<=100%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": 0.411850627000544,
-      "actual_direction": "up",
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "参考链#357（风险事件→避险资金流向美债）的机制。英国借贷成本触及28年高点叠加大选不确定性构成欧洲市场风险事件，虽触发因素异于关税威胁，但「市场风险厌恶升温→资金流向美债避险」的传导路径相似。幅度相对温和因冲击主要集中于英国本土。",
-      "stop_loss_price": 84.6255,
-      "take_profit": {
-        "prices": [
-          86.5492,
-          87.3187,
-          88.4729
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 0.7695,
-        "atr": 0.3847
-      },
-      "kelly_fraction": 0.02,
-      "resonance_posterior": 0.6316,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.6316,
-        "log_odds": 0.539,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 2.11,
-        "signal_grade": "👀 C",
-        "evidence": [
-          {
-            "link_id": 357,
-            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
-            "asset": "TLT",
-            "dir_hit_rate": 1.0,
-            "n_samples": 3,
-            "log_lr": 1.386,
-            "grade": "B"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [
-        357
-      ],
-      "cited_chains": [
-        {
-          "id": 357,
-          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
-          "asset_symbol": "TLT",
-          "direction": "up",
-          "horizon_days": 1,
-          "magnitude_pct": 0.8,
-          "grade": "B",
-          "retail_edge": "mid",
-          "macro_category": "politics_geo"
-        }
-      ],
-      "event": {
-        "id": 587,
-        "summary": "英国长期借贷成本达到28年高点，大选前债市波动加剧",
-        "category": "macro"
-      },
-      "news": {
-        "title": "UK long-term borrowing costs reach 28-year high",
-        "source": "bbc",
-        "lang": "en",
-        "url": "https://www.bbc.com/news/articles/c936qn69016o?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-05-05T16:30:23"
-      }
-    },
-    {
-      "id": 225,
-      "made_at": "2026-04-28T14:17:16.038169",
-      "expire_at": "2026-05-12T14:17:16.038169",
-      "verified_at": "2026-06-01T22:22:51.715245",
-      "asset": {
-        "symbol": "ZAR=X",
-        "name": "美元兑南非兰特",
-        "class": "fx"
-      },
-      "direction": "up",
-      "magnitude_pct": 1.2,
-      "horizon_days": 14,
-      "baseline_price": 16.572349548339844,
-      "baseline_source": "event_time",
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": true,
-        "strict_hit": false,
-        "mag_err_rel": 0.34726962103812287,
-        "mag_err_bucket": "<=50%",
-        "tol_used": 0.92,
-        "asset_class": "fx"
-      },
-      "actual_magnitude_pct": -1.6167235452457474,
-      "actual_direction": "down",
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "燃油税减免将增加南非财政支出压力或减少财政收入，在当前南非财政状况本就紧张的背景下，可能引发市场对财政可持续性的担忧，导致兰特相对美元走弱（即USD/ZAR上涨）。这是财政刺激政策对新兴市场货币的典型负面影响。",
-      "stop_loss_price": 16.3735,
-      "take_profit": {
-        "prices": [
-          16.8707,
-          17.0695,
-          17.3678
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 0.1989,
-        "atr": 0.0994
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 550,
-        "summary": "南非延长柴油燃料税零税率至6月2日，汽油税6月起减半",
-        "category": "energy"
-      },
-      "news": {
-        "title": "南非政府表示，柴油燃料税将维持为零，直到6月2日。汽油税将从六月起减半。",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T22:00:01"
-      }
-    },
-    {
-      "id": 224,
-      "made_at": "2026-04-28T14:17:14.933569",
-      "expire_at": "2026-05-05T14:17:14.933569",
-      "verified_at": "2026-05-05T14:17:52.313683",
-      "asset": {
-        "symbol": "USO",
-        "name": "美国石油基金",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 0.8,
-      "horizon_days": 7,
-      "baseline_price": 139.7447052001953,
-      "baseline_source": "event_time",
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": false,
-        "strict_hit": false,
-        "mag_err_rel": 3.512951026221107,
-        "mag_err_bucket": ">100%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": 3.6103608209768856,
-      "actual_direction": "up",
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "南非降低燃油税实质上是政府补贴消费端，这会在短期内刺激当地燃油消费量，但对国际油价的影响有限。然而，此举反映出新兴市场国家为应对高油价而采取的干预措施正在增多，若形成示范效应，可能抑制全球燃料需求增长预期，对原油价格形成边际压力。",
-      "stop_loss_price": 140.8627,
-      "take_profit": {
-        "prices": [
-          138.0678,
-          136.9498,
-          135.2729
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 1.118,
-        "atr": 0.559
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": null,
-      "resonance": null,
-      "tags": [
-        "ungrounded"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [],
-      "cited_chains": [],
-      "event": {
-        "id": 550,
-        "summary": "南非延长柴油燃料税零税率至6月2日，汽油税6月起减半",
-        "category": "energy"
-      },
-      "news": {
-        "title": "南非政府表示，柴油燃料税将维持为零，直到6月2日。汽油税将从六月起减半。",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-04-28T22:00:01"
       }
     }
   ],

@@ -1,0 +1,99 @@
+{
+  "id": 257,
+  "made_at": "2026-06-02T14:22:41.270273",
+  "expire_at": "2026-06-09T14:22:41.270273",
+  "verified_at": null,
+  "asset": {
+    "symbol": "TLT",
+    "name": "20+年期美债ETF",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.16,
+  "horizon_days": 7,
+  "baseline_price": 85.69000244140625,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 85.69999694824219,
+  "current_pct": 0.011663562319036714,
+  "current_at": "2026-06-02T00:00:00-04:00",
+  "reasoning": "参考链 #34 (CPI低于预期→降息预期强化→长久期资产上涨) 的机制。JOLTS数据全面低于预期——职位空缺率、裁员、辞职率均显示劳动力市场降温，与通胀数据低于预期有相似的政策含义：劳动力市场松弛支持Fed更早降息。当前10y利率4.45%处于高位(+0.20pp MoM)，降息预期强化将推动长端利率回落、TLT上涨。",
+  "stop_loss_price": 75.6195,
+  "take_profit": {
+    "prices": [
+      100.7958,
+      110.8663,
+      125.9721
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 10.0705,
+    "atr": 5.0353
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.72,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.72,
+    "log_odds": 0.944,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.4,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 34,
+        "pattern": "美国 CPI 同比低于预期 >=0.2%",
+        "asset": "QQQ",
+        "dir_hit_rate": 1.0,
+        "n_samples": 5,
+        "log_lr": 1.792,
+        "grade": "A"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-neutral"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    34
+  ],
+  "cited_chains": [
+    {
+      "id": 34,
+      "pattern": "美国 CPI 同比低于预期 >=0.2%",
+      "asset_symbol": "QQQ",
+      "direction": "up",
+      "horizon_days": 3,
+      "magnitude_pct": 1.5,
+      "grade": "A",
+      "retail_edge": "mid",
+      "macro_category": "macro_data"
+    }
+  ],
+  "event": {
+    "id": 1729,
+    "summary": "美国4月JOLTS职位空缺率4.6%，裁员和辞职数据均低于预期，劳动力市场显现降温迹象",
+    "category": "employment"
+  },
+  "news": {
+    "title": "美国4月JOLTS职位空缺率4.6%。\n\n4月裁员169.2万，预期184.2万。\n\n4月辞职率1.9%，预期2.0%。\n\n4月辞职人数297.7万，预期313.8万。",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3113132",
+    "published_at": "2026-06-02T14:02:29"
+  }
+}

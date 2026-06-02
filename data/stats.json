@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-01T22:23:44.314776",
+  "generated_at": "2026-06-02T12:31:41.937875",
   "kb_summary": {
-    "n_links_active": 311,
+    "n_links_active": 312,
     "n_strong": 159,
     "n_strong_rigorous": 35,
     "rigor_thresholds": {
@@ -15,7 +15,7 @@
     "n_weak": 8,
     "n_retire_candidate": 0,
     "n_flip_candidate": 0,
-    "n_insufficient_data": 144,
+    "n_insufficient_data": 145,
     "strong_avg_dir_hit_rate": 0.8,
     "n_instances_total": 2238,
     "n_instances_with_price_path": 1903,
@@ -33,12 +33,12 @@
       "financial_stress": 23,
       "market_stress": 4,
       "crypto_market": 4,
-      "other": 18
+      "other": 19
     }
   },
-  "total": 3,
+  "total": 4,
   "verified": 0,
-  "pending": 3,
+  "pending": 4,
   "pending_past_expire": 0,
   "expired_no_data": 0,
   "retired": 0,
@@ -88,10 +88,10 @@
     }
   },
   "by_class": {
-    "us_stock": 1,
-    "commodity": 2
+    "commodity": 3,
+    "us_stock": 1
   },
   "baseline_source_distribution": {
-    "event_time": 3
+    "event_time": 4
   }
 }

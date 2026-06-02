@@ -192717,5 +192717,27 @@
     "explanation": null,
     "failure_conditions": null,
     "historical_instances": []
+  },
+  {
+    "id": 651,
+    "pattern": "俄乌冲突军事升级（导弹袭击/大规模攻击）",
+    "asset_symbol": "GC=F",
+    "asset_name": "黄金期货",
+    "asset_class": "commodity",
+    "macro_category": "other",
+    "direction": "up",
+    "magnitude_pct": 1.2,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.45,
+    "grade": null,
+    "retail_edge": null,
+    "support_count": 0,
+    "refute_count": 0,
+    "source": "online",
+    "rationale": "乌克兰遭导弹袭击属于典型地缘冲突升级事件，触发避险资金流向黄金。检索链中未覆盖俄乌冲突模式，但机制类似#357(突发关税威胁→避险资产受益)的避险逻辑——突发地缘风险→市场不确定性上升→黄金作为传统避险资产获资金流入。当前VIX处于中低位(16.15)，避险空间充足。",
+    "explanation": null,
+    "failure_conditions": null,
+    "historical_instances": []
   }
 ]

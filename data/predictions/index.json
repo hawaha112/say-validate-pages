@@ -1,6 +1,105 @@
 {
-  "count": 252,
+  "count": 253,
   "items": [
+    {
+      "id": 253,
+      "made_at": "2026-06-02T12:29:27.728401",
+      "expire_at": "2026-06-05T12:29:27.728401",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.08,
+      "horizon_days": 3,
+      "baseline_price": 4556.60009765625,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4560.7998046875,
+      "current_pct": 0.09216755785547599,
+      "current_at": "2026-06-02T00:00:00-04:00",
+      "reasoning": "乌克兰遭导弹袭击属于典型地缘冲突升级事件，触发避险资金流向黄金。检索链中未覆盖俄乌冲突模式，但机制类似#357(突发关税威胁→避险资产受益)的避险逻辑——突发地缘风险→市场不确定性上升→黄金作为传统避险资产获资金流入。当前VIX处于中低位(16.15)，避险空间充足。",
+      "stop_loss_price": 4555.8306,
+      "take_profit": {
+        "prices": [
+          4557.7543,
+          4558.5238,
+          4559.678
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7695,
+        "atr": 0.3847
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 357,
+            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        357
+      ],
+      "cited_chains": [
+        {
+          "id": 357,
+          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 1687,
+        "summary": "乌克兰遭遇导弹袭击引发安全担忧",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "乌克兰遭导弹“闪击”燃起巨大火球",
+        "source": "toutiao",
+        "lang": "zh",
+        "url": "https://www.toutiao.com/trending/7646493125921456164/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227646493125921456164%22%2C%22hot_board_impr_id%22%3A%222026060220065445068ED35CA638D18AFC%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B9%8C%E5%85%8B%E5%85%B0%E9%81%AD%E5%AF%BC%E5%BC%B9%E2%80%9C%E9%97%AA%E5%87%BB%E2%80%9D%E7%87%83%E8%B5%B7%E5%B7%A8%E5%A4%A7%E7%81%AB%E7%90%83%22%7D&rank=&style_id=40132&topic_id=7646493125921456164",
+        "published_at": "2026-06-02T12:06:54.794979"
+      }
+    },
     {
       "id": 252,
       "made_at": "2026-06-01T22:21:03.367503",
@@ -121,9 +220,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4514.0,
-      "current_pct": 0.05763394317801897,
-      "current_at": "2026-06-01T00:00:00-04:00",
+      "current_price": 4560.7998046875,
+      "current_pct": 1.0950016272795036,
+      "current_at": "2026-06-02T00:00:00-04:00",
       "reasoning": "参考链 #635 (霍尔木兹海峡通航受阻) 的机制：地缘冲突升级→避险资金涌入黄金。彻底封锁声明意味着中东局势进入高危阶段，黄金作为传统避险资产受益；链内 magnitude 1.5% 基于威胁情景，实际封锁宣布后上调至 3%。当前 VIX 16 处于中低分位，避险需求尚未充分定价。",
       "stop_loss_price": 4389.5921,
       "take_profit": {
@@ -221,9 +320,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 92.37999725341797,
-      "current_pct": -0.20525271905869244,
-      "current_at": "2026-06-01T00:00:00-04:00",
+      "current_price": 90.69999694824219,
+      "current_pct": -2.0200958763604566,
+      "current_at": "2026-06-02T00:00:00-04:00",
       "reasoning": "参考链 #635/636/637 (霍尔木兹海峡通航受阻或封锁威胁) 的机制：海峡承载全球约20%石油供应，封锁威胁→供应中断风险定价→油价跳涨。本次新闻是伊朗宣布「彻底封锁」而非仅威胁或议案，严重程度显著升级，原油作为直接受冲击标的应优先于能源股；考虑到事件烈度，magnitude 上调至 8%。",
       "stop_loss_price": 85.905,
       "take_profit": {

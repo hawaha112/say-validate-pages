@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-03T04:40:27.563736",
+  "generated_at": "2026-06-03T04:40:48.266791",
   "stats": {
-    "generated_at": "2026-06-03T04:40:26.795405",
+    "generated_at": "2026-06-03T04:40:47.416886",
     "kb_summary": {
       "n_links_active": 312,
       "n_strong": 159,
@@ -1224,8 +1224,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4504.89990234375,
-      "current_pct": -1.1346221789156503,
+      "current_price": 4505.2001953125,
+      "current_pct": -1.1280318931254962,
       "current_at": "2026-06-03T00:00:00-04:00",
       "reasoning": "乌克兰遭导弹袭击属于典型地缘冲突升级事件，触发避险资金流向黄金。检索链中未覆盖俄乌冲突模式，但机制类似#357(突发关税威胁→避险资产受益)的避险逻辑——突发地缘风险→市场不确定性上升→黄金作为传统避险资产获资金流入。当前VIX处于中低位(16.15)，避险空间充足。",
       "stop_loss_price": 4555.8306,
@@ -1423,8 +1423,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4504.89990234375,
-      "current_pct": -0.14407944630719033,
+      "current_price": 4505.2001953125,
+      "current_pct": -0.1374231317429684,
       "current_at": "2026-06-03T00:00:00-04:00",
       "reasoning": "参考链 #635 (霍尔木兹海峡通航受阻) 的机制：地缘冲突升级→避险资金涌入黄金。彻底封锁声明意味着中东局势进入高危阶段，黄金作为传统避险资产受益；链内 magnitude 1.5% 基于威胁情景，实际封锁宣布后上调至 3%。当前 VIX 16 处于中低分位，避险需求尚未充分定价。",
       "stop_loss_price": 4389.5921,

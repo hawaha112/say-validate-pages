@@ -1,0 +1,121 @@
+{
+  "id": 262,
+  "made_at": "2026-06-03T04:38:45.808001",
+  "expire_at": "2026-06-17T04:38:45.808001",
+  "verified_at": null,
+  "asset": {
+    "symbol": "SMH",
+    "name": "半导体ETF",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.6,
+  "horizon_days": 14,
+  "baseline_price": 632.2100219726562,
+  "baseline_source": "eod",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 632.2100219726562,
+  "current_pct": 0.0,
+  "current_at": "2026-06-02T00:00:00-04:00",
+  "reasoning": "参考链 #620 (TSMC上调AI需求指引) 与链 #66 (英伟达营收超预期带动半导体板块) 的共振机制：AI数据中心光互联芯片产能两倍扩张，印证科技巨头资本开支强劲，从芯片到光通信全链条受益。本次新闻虽非直接财报，但第三方机构TrendForce的产能预测具有前瞻指引性质，对整体半导体板块情绪正面。",
+  "stop_loss_price": 625.1469,
+  "take_profit": {
+    "prices": [
+      642.8048,
+      649.8679,
+      660.4627
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 7.0632,
+    "atr": 3.5316
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.4894,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.4894,
+    "log_odds": -0.043,
+    "effective_n": 1.0,
+    "r_bar": 1.0,
+    "uplift": 1.63,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 620,
+        "pattern": "TSMC上调全年资本开支与AI需求指引",
+        "asset": "SMH",
+        "dir_hit_rate": 0.75,
+        "n_samples": 4,
+        "log_lr": 0.693,
+        "grade": "C"
+      },
+      {
+        "link_id": 66,
+        "pattern": "英伟达或同量级 AI 芯片厂商营收/指引大超预期",
+        "asset": "SOXX",
+        "dir_hit_rate": 0.8,
+        "n_samples": 5,
+        "log_lr": 0.916,
+        "grade": "C"
+      }
+    ],
+    "note": "⚠ 证据同类别重叠 r̄=1.00，已折扣 (n=2 → n_eff=1.0)"
+  },
+  "tags": [
+    "low_grade_chain",
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-neutral"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    620,
+    66
+  ],
+  "cited_chains": [
+    {
+      "id": 620,
+      "pattern": "TSMC上调全年资本开支与AI需求指引",
+      "asset_symbol": "SMH",
+      "direction": "up",
+      "horizon_days": 3,
+      "magnitude_pct": 1.5,
+      "grade": "C",
+      "retail_edge": null,
+      "macro_category": "tech_breakthrough"
+    },
+    {
+      "id": 66,
+      "pattern": "英伟达或同量级 AI 芯片厂商营收/指引大超预期",
+      "asset_symbol": "SOXX",
+      "direction": "up",
+      "horizon_days": 30,
+      "magnitude_pct": 2.3,
+      "grade": "C",
+      "retail_edge": "mid",
+      "macro_category": "tech_breakthrough"
+    }
+  ],
+  "event": {
+    "id": 1836,
+    "summary": "AI数据中心扩张推动光通信芯片产能2026年增长两倍至5070万颗，英伟达、谷歌、Meta战略性锁定EML和CW-DFB LD芯片供应",
+    "category": "tech"
+  },
+  "news": {
+    "title": "【机构：预估2026年EML与CW-DFB LD总体月产能达5070万颗】TrendForce集邦咨询最新研究指出，随着AI数据中心规模扩张与算力军备竞赛，传输",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-06-03T12:12:12"
+  }
+}

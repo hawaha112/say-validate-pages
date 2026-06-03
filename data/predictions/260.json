@@ -1,0 +1,99 @@
+{
+  "id": 260,
+  "made_at": "2026-06-03T04:37:39.855185",
+  "expire_at": "2026-06-10T04:37:39.855185",
+  "verified_at": null,
+  "asset": {
+    "symbol": "ITA",
+    "name": "航空航天国防ETF",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.6,
+  "horizon_days": 7,
+  "baseline_price": 228.3300018310547,
+  "baseline_source": "eod",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 228.3300018310547,
+  "current_pct": 0.0,
+  "current_at": "2026-06-02T00:00:00-04:00",
+  "reasoning": "参考链 #357 的避险资产受益机制延伸 — 中东军事冲突升级历史上利好国防板块，市场预期军费支出增加和武器订单扩大。与贸易战避险不同，军事冲突直接提振国防股而非仅债券。当前市场处于uptrend且VIX低位，risk-on环境下国防股有额外beta支撑。",
+  "stop_loss_price": 227.5605,
+  "take_profit": {
+    "prices": [
+      229.4842,
+      230.2537,
+      231.4079
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.7695,
+    "atr": 0.3847
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.6316,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.6316,
+    "log_odds": 0.539,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.11,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 357,
+        "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+        "asset": "TLT",
+        "dir_hit_rate": 1.0,
+        "n_samples": 3,
+        "log_lr": 1.386,
+        "grade": "B"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-neutral"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    357
+  ],
+  "cited_chains": [
+    {
+      "id": 357,
+      "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+      "asset_symbol": "TLT",
+      "direction": "up",
+      "horizon_days": 1,
+      "magnitude_pct": 0.8,
+      "grade": "B",
+      "retail_edge": "mid",
+      "macro_category": "politics_geo"
+    }
+  ],
+  "event": {
+    "id": 1846,
+    "summary": "伊朗称袭击美军第五舰队总部，地缘政治紧张局势升级",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "伊朗称袭击美军第五舰队总部",
+    "source": "toutiao",
+    "lang": "zh",
+    "url": "https://www.toutiao.com/trending/7646223479754489897/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227646223479754489897%22%2C%22hot_board_impr_id%22%3A%22202606031213367EC1642F92DA08492A4B%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BC%8A%E6%9C%97%E7%A7%B0%E8%A2%AD%E5%87%BB%E7%BE%8E%E5%86%9B%E7%AC%AC%E4%BA%94%E8%88%B0%E9%98%9F%E6%80%BB%E9%83%A8%22%7D&rank=&style_id=40132&topic_id=7646223479754489897",
+    "published_at": "2026-06-03T04:13:35.288368"
+  }
+}

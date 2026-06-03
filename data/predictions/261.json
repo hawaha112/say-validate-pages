@@ -1,0 +1,100 @@
+{
+  "id": 261,
+  "made_at": "2026-06-03T04:38:41.124776",
+  "expire_at": "2026-06-17T04:38:41.124776",
+  "verified_at": null,
+  "asset": {
+    "symbol": "AVGO",
+    "name": "博通",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 6.3,
+  "horizon_days": 14,
+  "baseline_price": 481.57000732421875,
+  "baseline_source": "eod",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 481.57000732421875,
+  "current_pct": 0.0,
+  "current_at": "2026-06-02T00:00:00-04:00",
+  "reasoning": "参考链 #620 (TSMC上调全年资本开支与AI需求指引) 的机制：AI算力扩张带动上下游半导体链条联动上涨。本次新闻直接点名博通为EML/CW-DFB LD前三大厂商之首且市占率领先，2026年产能翻倍意味着英伟达、谷歌、Meta的战略锁定订单已落地，博通光通信业务将直接受益。当前市场处于uptrend+低VIX环境，AI产业链利好容易被放大。",
+  "stop_loss_price": 451.2311,
+  "take_profit": {
+    "prices": [
+      527.0784,
+      557.4173,
+      602.9256
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 30.3389,
+    "atr": 15.1695
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.4615,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.4615,
+    "log_odds": -0.154,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 1.54,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 620,
+        "pattern": "TSMC上调全年资本开支与AI需求指引",
+        "asset": "SMH",
+        "dir_hit_rate": 0.75,
+        "n_samples": 4,
+        "log_lr": 0.693,
+        "grade": "C"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "low_grade_chain",
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-neutral"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    620
+  ],
+  "cited_chains": [
+    {
+      "id": 620,
+      "pattern": "TSMC上调全年资本开支与AI需求指引",
+      "asset_symbol": "SMH",
+      "direction": "up",
+      "horizon_days": 3,
+      "magnitude_pct": 1.5,
+      "grade": "C",
+      "retail_edge": null,
+      "macro_category": "tech_breakthrough"
+    }
+  ],
+  "event": {
+    "id": 1836,
+    "summary": "AI数据中心扩张推动光通信芯片产能2026年增长两倍至5070万颗，英伟达、谷歌、Meta战略性锁定EML和CW-DFB LD芯片供应",
+    "category": "tech"
+  },
+  "news": {
+    "title": "【机构：预估2026年EML与CW-DFB LD总体月产能达5070万颗】TrendForce集邦咨询最新研究指出，随着AI数据中心规模扩张与算力军备竞赛，传输",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-06-03T12:12:12"
+  }
+}

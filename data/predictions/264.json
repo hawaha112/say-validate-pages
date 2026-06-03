@@ -1,0 +1,87 @@
+{
+  "id": 264,
+  "made_at": "2026-06-03T04:40:12.092213",
+  "expire_at": "2026-06-06T04:40:12.092213",
+  "verified_at": null,
+  "asset": {
+    "symbol": "512200.SS",
+    "name": "地产ETF",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.5,
+  "horizon_days": 3,
+  "baseline_price": null,
+  "baseline_source": "live_fallback",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "参考链#86(地产放松政策→房地产ETF上涨)的机制,土拍高溢价是政策传导链的下游验证信号。杭州4宗地全部溢价成交(最高61%)显示开发商拿地信心回暖,但这是单城市局部数据而非全国性拐点,且溢价拿地主体可能是央国企托底,信号强度弱于政策出台本身,预期涨幅从3%下调至1.5%。",
+  "stop_loss_price": null,
+  "take_profit": null,
+  "kelly_fraction": null,
+  "resonance_posterior": 0.5172,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.5172,
+    "log_odds": 0.069,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 1.72,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 86,
+        "pattern": "中国地产放松政策出台（限购/限售放开、首付下调）",
+        "asset": "512200.SS",
+        "dir_hit_rate": 0.8,
+        "n_samples": 5,
+        "log_lr": 0.916,
+        "grade": "C"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "low_grade_chain",
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-neutral"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    86
+  ],
+  "cited_chains": [
+    {
+      "id": 86,
+      "pattern": "中国地产放松政策出台（限购/限售放开、首付下调）",
+      "asset_symbol": "512200.SS",
+      "direction": "up",
+      "horizon_days": 1,
+      "magnitude_pct": 3.0,
+      "grade": "C",
+      "retail_edge": "mid",
+      "macro_category": "corporate_sector"
+    }
+  ],
+  "event": {
+    "id": 1827,
+    "summary": "杭州4宗涉宅用地溢价成交，最高溢价率超61%，总成交额46.23亿元",
+    "category": "other"
+  },
+  "news": {
+    "title": "杭州4宗涉宅用地46.23亿元成交 最高溢价率超61%",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3113496",
+    "published_at": "2026-06-03T04:12:13"
+  }
+}

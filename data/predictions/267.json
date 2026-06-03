@@ -1,0 +1,99 @@
+{
+  "id": 267,
+  "made_at": "2026-06-03T06:17:56.930097",
+  "expire_at": "2026-06-06T06:17:56.930097",
+  "verified_at": null,
+  "asset": {
+    "symbol": "CL=F",
+    "name": "WTI原油期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.15,
+  "horizon_days": 3,
+  "baseline_price": 95.3499984741211,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 95.22000122070312,
+  "current_pct": -0.13633692238941278,
+  "current_at": "2026-06-03T00:00:00-04:00",
+  "reasoning": "本次伊朗革命卫队声称打击美军第五舰队总部及中东航空基地，科威特机场遭无人机袭击，标志中东地缘紧张急剧升级。参考链 #640（美国对俄油气制裁→XLE上涨）的机制：地缘冲突升级→供应中断担忧→油价跳涨。当前事件更直接涉及波斯湾核心产油区，霍尔木兹海峡过境风险溢价将快速计入油价。mid-vol环境下预期反应幅度适中。",
+  "stop_loss_price": 92.3465,
+  "take_profit": {
+    "prices": [
+      99.8553,
+      102.8588,
+      107.3641
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 3.0035,
+    "atr": 1.5018
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.6818,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.6818,
+    "log_odds": 0.762,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.27,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 640,
+        "pattern": "美国对俄罗斯油气巨头实施一级SDN制裁",
+        "asset": "XLE",
+        "dir_hit_rate": 1.0,
+        "n_samples": 4,
+        "log_lr": 1.609,
+        "grade": "B"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-neutral"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    640
+  ],
+  "cited_chains": [
+    {
+      "id": 640,
+      "pattern": "美国对俄罗斯油气巨头实施一级SDN制裁",
+      "asset_symbol": "XLE",
+      "direction": "up",
+      "horizon_days": 7,
+      "magnitude_pct": 1.5,
+      "grade": "B",
+      "retail_edge": null,
+      "macro_category": "politics_geo"
+    }
+  ],
+  "event": {
+    "id": 1884,
+    "summary": "科威特国际机场遭无人机袭击致机场暂停运营，伊朗革命卫队声称打击美军基地",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "【科威特国际机场遭袭多人受伤 飞机暂停起降】当地时间6月3日，科威特民航总局发布消息称，科威特国际机场1号航站楼当天早间遭无人机袭击，被严重损毁，袭击还造成现场",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-06-03T14:07:01"
+  }
+}

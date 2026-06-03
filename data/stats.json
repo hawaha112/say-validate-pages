@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T04:40:47.416886",
+  "generated_at": "2026-06-03T06:20:39.154644",
   "kb_summary": {
     "n_links_active": 312,
     "n_strong": 159,
@@ -36,9 +36,9 @@
       "other": 19
     }
   },
-  "total": 15,
+  "total": 22,
   "verified": 0,
-  "pending": 15,
+  "pending": 22,
   "pending_past_expire": 0,
   "expired_no_data": 0,
   "retired": 0,
@@ -88,13 +88,13 @@
     }
   },
   "by_class": {
-    "a_stock": 1,
-    "us_stock": 10,
-    "commodity": 4
+    "commodity": 7,
+    "us_stock": 12,
+    "a_stock": 3
   },
   "baseline_source_distribution": {
-    "live_fallback": 1,
-    "eod": 4,
-    "event_time": 10
+    "event_time": 13,
+    "eod": 6,
+    "live_fallback": 3
   }
 }

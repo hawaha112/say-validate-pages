@@ -1,0 +1,99 @@
+{
+  "id": 270,
+  "made_at": "2026-06-03T06:19:01.448434",
+  "expire_at": "2026-06-10T06:19:01.448434",
+  "verified_at": null,
+  "asset": {
+    "symbol": "GLD",
+    "name": "黄金ETF",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.24,
+  "horizon_days": 7,
+  "baseline_price": 411.95001220703125,
+  "baseline_source": "eod",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 411.95001220703125,
+  "current_pct": 0.0,
+  "current_at": "2026-06-02T00:00:00-04:00",
+  "reasoning": "参考链 #80 (系统性风险推升避险资产) 的机制：地缘风险事件触发避险需求。伊朗对海湾国家发动袭击是重大地缘升级,历史上中东冲突(如2020年美伊紧张、2019年沙特设施袭击)均推升黄金避险溢价。当前DXY中性、10y利率虽有上行但避险情绪可对冲,黄金有上行空间。",
+  "stop_loss_price": 409.9658,
+  "take_profit": {
+    "prices": [
+      414.9263,
+      416.9105,
+      419.8869
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 1.9842,
+    "atr": 0.9921
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.72,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.72,
+    "log_odds": 0.944,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.4,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 80,
+        "pattern": "大型银行倒闭 / 挤兑 / 存款集中流出事件",
+        "asset": "KRE",
+        "dir_hit_rate": 1.0,
+        "n_samples": 5,
+        "log_lr": 1.792,
+        "grade": "A"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-neutral"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    80
+  ],
+  "cited_chains": [
+    {
+      "id": 80,
+      "pattern": "大型银行倒闭 / 挤兑 / 存款集中流出事件",
+      "asset_symbol": "KRE",
+      "direction": "down",
+      "horizon_days": 30,
+      "magnitude_pct": 6.0,
+      "grade": "A",
+      "retail_edge": "mid",
+      "macro_category": "financial_stress"
+    }
+  ],
+  "event": {
+    "id": 1872,
+    "summary": "伊朗袭击科威特机场大楼造成严重损毁",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "科威特：伊朗袭击严重损毁了机场大楼。",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3113531",
+    "published_at": "2026-06-03T05:50:54"
+  }
+}

@@ -1,6 +1,676 @@
 {
-  "count": 264,
+  "count": 271,
   "items": [
+    {
+      "id": 271,
+      "made_at": "2026-06-03T06:20:10.624565",
+      "expire_at": "2026-06-06T06:20:10.624565",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.08,
+      "horizon_days": 3,
+      "baseline_price": 4493.2001953125,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4494.39990234375,
+      "current_pct": 0.02670050251714994,
+      "current_at": "2026-06-03T00:00:00-04:00",
+      "reasoning": "参考链#55(美国对华加征关税或扩大科技出口管制)的机制→地缘政治紧张推动避险资产受益。当前新闻提及geopolitical fears作为BTC下跌原因,同一避险逻辑利好黄金。差异在于链#55针对贸易战而非广泛地缘风险,但避险资金流向黄金的机制一致。DXY中性不构成阻力。",
+      "stop_loss_price": 4493.1915,
+      "take_profit": {
+        "prices": [
+          4493.2132,
+          4493.2219,
+          4493.2349
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0087,
+        "atr": 0.0043
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.5172,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.5172,
+        "log_odds": 0.069,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.72,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 55,
+            "pattern": "美国对华加征关税或扩大科技出口管制",
+            "asset": "USDCNY=X",
+            "dir_hit_rate": 0.8,
+            "n_samples": 5,
+            "log_lr": 0.916,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "low_grade_chain",
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        55
+      ],
+      "cited_chains": [
+        {
+          "id": 55,
+          "pattern": "美国对华加征关税或扩大科技出口管制",
+          "asset_symbol": "USDCNY=X",
+          "direction": "up",
+          "horizon_days": 3,
+          "magnitude_pct": 0.5,
+          "grade": "C",
+          "retail_edge": "mid",
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 1864,
+        "summary": "比特币短暂跌破66000美元，受ETF资金流出和地缘政治担忧影响",
+        "category": "crypto"
+      },
+      "news": {
+        "title": "Bitcoin briefly dips below $66,000 as ETF outflows, geopolitical fears weigh on crypto",
+        "source": "the_block",
+        "lang": "en",
+        "url": "https://www.theblock.co/post/403454/bitcoin-dips-below-66000?utm_source=rss&utm_medium=rss",
+        "published_at": "2026-06-03T06:04:13"
+      }
+    },
+    {
+      "id": 270,
+      "made_at": "2026-06-03T06:19:01.448434",
+      "expire_at": "2026-06-10T06:19:01.448434",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GLD",
+        "name": "黄金ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.24,
+      "horizon_days": 7,
+      "baseline_price": 411.95001220703125,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 411.95001220703125,
+      "current_pct": 0.0,
+      "current_at": "2026-06-02T00:00:00-04:00",
+      "reasoning": "参考链 #80 (系统性风险推升避险资产) 的机制：地缘风险事件触发避险需求。伊朗对海湾国家发动袭击是重大地缘升级,历史上中东冲突(如2020年美伊紧张、2019年沙特设施袭击)均推升黄金避险溢价。当前DXY中性、10y利率虽有上行但避险情绪可对冲,黄金有上行空间。",
+      "stop_loss_price": 409.9658,
+      "take_profit": {
+        "prices": [
+          414.9263,
+          416.9105,
+          419.8869
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.9842,
+        "atr": 0.9921
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.72,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.72,
+        "log_odds": 0.944,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.4,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 80,
+            "pattern": "大型银行倒闭 / 挤兑 / 存款集中流出事件",
+            "asset": "KRE",
+            "dir_hit_rate": 1.0,
+            "n_samples": 5,
+            "log_lr": 1.792,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        80
+      ],
+      "cited_chains": [
+        {
+          "id": 80,
+          "pattern": "大型银行倒闭 / 挤兑 / 存款集中流出事件",
+          "asset_symbol": "KRE",
+          "direction": "down",
+          "horizon_days": 30,
+          "magnitude_pct": 6.0,
+          "grade": "A",
+          "retail_edge": "mid",
+          "macro_category": "financial_stress"
+        }
+      ],
+      "event": {
+        "id": 1872,
+        "summary": "伊朗袭击科威特机场大楼造成严重损毁",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "科威特：伊朗袭击严重损毁了机场大楼。",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3113531",
+        "published_at": "2026-06-03T05:50:54"
+      }
+    },
+    {
+      "id": 269,
+      "made_at": "2026-06-03T06:18:06.762207",
+      "expire_at": "2026-06-06T06:18:06.762207",
+      "verified_at": null,
+      "asset": {
+        "symbol": "TLT",
+        "name": "20+年期美债ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.16,
+      "horizon_days": 3,
+      "baseline_price": 85.6500015258789,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 85.6500015258789,
+      "current_pct": 0.0,
+      "current_at": "2026-06-02T00:00:00-04:00",
+      "reasoning": "参考链 #357（关税威胁→TLT上涨0.8%/1d）的避险机制：风险事件→资金流入长债。伊朗与美军直接冲突升级属于更高级别地缘风险，长端美债避险需求增加。但注意10y利率近期已上行20bp，上涨空间受限，故幅度保守估计。",
+      "stop_loss_price": 84.8805,
+      "take_profit": {
+        "prices": [
+          86.8042,
+          87.5737,
+          88.7279
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7695,
+        "atr": 0.3847
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 357,
+            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        357
+      ],
+      "cited_chains": [
+        {
+          "id": 357,
+          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 1884,
+        "summary": "科威特国际机场遭无人机袭击致机场暂停运营，伊朗革命卫队声称打击美军基地",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "【科威特国际机场遭袭多人受伤 飞机暂停起降】当地时间6月3日，科威特民航总局发布消息称，科威特国际机场1号航站楼当天早间遭无人机袭击，被严重损毁，袭击还造成现场",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-03T14:07:01"
+      }
+    },
+    {
+      "id": 268,
+      "made_at": "2026-06-03T06:18:01.289359",
+      "expire_at": "2026-06-06T06:18:01.289359",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.8,
+      "horizon_days": 3,
+      "baseline_price": 4492.10009765625,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4494.39990234375,
+      "current_pct": 0.05119664828261332,
+      "current_at": "2026-06-03T00:00:00-04:00",
+      "reasoning": "参考链 #357（关税威胁→TLT上涨）的机制：地缘/贸易冲击→避险资金涌入安全资产。本次伊朗-美国军事对峙属于更高烈度的地缘风险，黄金作为传统避险资产将受益。当前VIX处于低位（15.77），避险情绪一旦升温上行空间较大；DXY中性不构成压制。",
+      "stop_loss_price": 4491.3306,
+      "take_profit": {
+        "prices": [
+          4493.2543,
+          4494.0238,
+          4495.178
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7695,
+        "atr": 0.3847
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 357,
+            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        357
+      ],
+      "cited_chains": [
+        {
+          "id": 357,
+          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 1884,
+        "summary": "科威特国际机场遭无人机袭击致机场暂停运营，伊朗革命卫队声称打击美军基地",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "【科威特国际机场遭袭多人受伤 飞机暂停起降】当地时间6月3日，科威特民航总局发布消息称，科威特国际机场1号航站楼当天早间遭无人机袭击，被严重损毁，袭击还造成现场",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-03T14:07:01"
+      }
+    },
+    {
+      "id": 267,
+      "made_at": "2026-06-03T06:17:56.930097",
+      "expire_at": "2026-06-06T06:17:56.930097",
+      "verified_at": null,
+      "asset": {
+        "symbol": "CL=F",
+        "name": "WTI原油期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.15,
+      "horizon_days": 3,
+      "baseline_price": 95.3499984741211,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 95.22000122070312,
+      "current_pct": -0.13633692238941278,
+      "current_at": "2026-06-03T00:00:00-04:00",
+      "reasoning": "本次伊朗革命卫队声称打击美军第五舰队总部及中东航空基地，科威特机场遭无人机袭击，标志中东地缘紧张急剧升级。参考链 #640（美国对俄油气制裁→XLE上涨）的机制：地缘冲突升级→供应中断担忧→油价跳涨。当前事件更直接涉及波斯湾核心产油区，霍尔木兹海峡过境风险溢价将快速计入油价。mid-vol环境下预期反应幅度适中。",
+      "stop_loss_price": 92.3465,
+      "take_profit": {
+        "prices": [
+          99.8553,
+          102.8588,
+          107.3641
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 3.0035,
+        "atr": 1.5018
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6818,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6818,
+        "log_odds": 0.762,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.27,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 640,
+            "pattern": "美国对俄罗斯油气巨头实施一级SDN制裁",
+            "asset": "XLE",
+            "dir_hit_rate": 1.0,
+            "n_samples": 4,
+            "log_lr": 1.609,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        640
+      ],
+      "cited_chains": [
+        {
+          "id": 640,
+          "pattern": "美国对俄罗斯油气巨头实施一级SDN制裁",
+          "asset_symbol": "XLE",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.5,
+          "grade": "B",
+          "retail_edge": null,
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 1884,
+        "summary": "科威特国际机场遭无人机袭击致机场暂停运营，伊朗革命卫队声称打击美军基地",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "【科威特国际机场遭袭多人受伤 飞机暂停起降】当地时间6月3日，科威特民航总局发布消息称，科威特国际机场1号航站楼当天早间遭无人机袭击，被严重损毁，袭击还造成现场",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-03T14:07:01"
+      }
+    },
+    {
+      "id": 266,
+      "made_at": "2026-06-03T06:17:32.777279",
+      "expire_at": "2026-06-06T06:17:32.777279",
+      "verified_at": null,
+      "asset": {
+        "symbol": "512880",
+        "name": "证券ETF",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.5,
+      "horizon_days": 3,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "参考链#570（华尔街大行交易收入创纪录利好金融板块）的机制——交易量激增直接提升券商经纪与两融业务收入。A股2.5万亿成交额意味着券商佣金收入单日可达数十亿元，叠加当前uptrend环境，证券板块弹性更大，预计跑赢大盘。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": 0.3913,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.3913,
+        "log_odds": -0.442,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.3,
+        "signal_grade": "💤 D",
+        "evidence": [
+          {
+            "link_id": 570,
+            "pattern": "华尔街大行季报交易业务收入创历史纪录",
+            "asset": "GS",
+            "dir_hit_rate": 0.6666666666666666,
+            "n_samples": 3,
+            "log_lr": 0.405,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "low_grade_chain",
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        570
+      ],
+      "cited_chains": [
+        {
+          "id": 570,
+          "pattern": "华尔街大行季报交易业务收入创历史纪录",
+          "asset_symbol": "GS",
+          "direction": "up",
+          "horizon_days": 3,
+          "magnitude_pct": 1.5,
+          "grade": "C",
+          "retail_edge": null,
+          "macro_category": "other"
+        }
+      ],
+      "event": {
+        "id": 1886,
+        "summary": "A股市场成交额突破2.5万亿元，较前日大幅放量1435亿元",
+        "category": "macro"
+      },
+      "news": {
+        "title": "沪深两市成交额超2.5万亿元，较上日此时放量1435亿元。",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-03T14:07:39"
+      }
+    },
+    {
+      "id": 265,
+      "made_at": "2026-06-03T06:17:29.604864",
+      "expire_at": "2026-06-06T06:17:29.604864",
+      "verified_at": null,
+      "asset": {
+        "symbol": "510300",
+        "name": "沪深300ETF",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.5,
+      "horizon_days": 3,
+      "baseline_price": null,
+      "baseline_source": "live_fallback",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "A股成交额突破2.5万亿并较前日放量1435亿元，显示市场情绪与资金活跃度显著提升。参考链#570（华尔街大行交易业务收入创纪录）的机制——交易量/收入放大反映市场波动与参与度回暖，利好指数板块。当前市场处于mid-vol+uptrend环境，放量通常伴随趋势延续而非反转，预计沪深300指数短期继续上行。",
+      "stop_loss_price": null,
+      "take_profit": null,
+      "kelly_fraction": null,
+      "resonance_posterior": 0.3913,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.3913,
+        "log_odds": -0.442,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.3,
+        "signal_grade": "💤 D",
+        "evidence": [
+          {
+            "link_id": 570,
+            "pattern": "华尔街大行季报交易业务收入创历史纪录",
+            "asset": "GS",
+            "dir_hit_rate": 0.6666666666666666,
+            "n_samples": 3,
+            "log_lr": 0.405,
+            "grade": "C"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "low_grade_chain",
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        570
+      ],
+      "cited_chains": [
+        {
+          "id": 570,
+          "pattern": "华尔街大行季报交易业务收入创历史纪录",
+          "asset_symbol": "GS",
+          "direction": "up",
+          "horizon_days": 3,
+          "magnitude_pct": 1.5,
+          "grade": "C",
+          "retail_edge": null,
+          "macro_category": "other"
+        }
+      ],
+      "event": {
+        "id": 1886,
+        "summary": "A股市场成交额突破2.5万亿元，较前日大幅放量1435亿元",
+        "category": "macro"
+      },
+      "news": {
+        "title": "沪深两市成交额超2.5万亿元，较上日此时放量1435亿元。",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-03T14:07:39"
+      }
+    },
     {
       "id": 264,
       "made_at": "2026-06-03T04:40:12.092213",
@@ -528,8 +1198,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 94.88999938964844,
-      "current_pct": 0.010541880817885914,
+      "current_price": 95.22000122070312,
+      "current_pct": 0.35835157791692274,
       "current_at": "2026-06-03T00:00:00-04:00",
       "reasoning": "参考链 #357 的风险溢价机制类比 — 伊朗袭击美军第五舰队总部直接威胁波斯湾航运安全，该区域承载全球约20%原油运输。地缘风险溢价将推高油价，机制比贸易战更直接：供应中断预期而非需求担忧。当前原油处于相对低位，冲突升级提供3-5%的风险溢价空间。",
       "stop_loss_price": 94.1105,
@@ -1124,8 +1794,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4505.2001953125,
-      "current_pct": -1.1280318931254962,
+      "current_price": 4494.39990234375,
+      "current_pct": -1.3650571474221214,
       "current_at": "2026-06-03T00:00:00-04:00",
       "reasoning": "乌克兰遭导弹袭击属于典型地缘冲突升级事件，触发避险资金流向黄金。检索链中未覆盖俄乌冲突模式，但机制类似#357(突发关税威胁→避险资产受益)的避险逻辑——突发地缘风险→市场不确定性上升→黄金作为传统避险资产获资金流入。当前VIX处于中低位(16.15)，避险空间充足。",
       "stop_loss_price": 4555.8306,
@@ -1323,8 +1993,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4505.2001953125,
-      "current_pct": -0.1374231317429684,
+      "current_price": 4494.39990234375,
+      "current_pct": -0.3768231672649593,
       "current_at": "2026-06-03T00:00:00-04:00",
       "reasoning": "参考链 #635 (霍尔木兹海峡通航受阻) 的机制：地缘冲突升级→避险资金涌入黄金。彻底封锁声明意味着中东局势进入高危阶段，黄金作为传统避险资产受益；链内 magnitude 1.5% 基于威胁情景，实际封锁宣布后上调至 3%。当前 VIX 16 处于中低分位，避险需求尚未充分定价。",
       "stop_loss_price": 4389.5921,
@@ -1423,8 +2093,8 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 94.88999938964844,
-      "current_pct": 2.506211194201759,
+      "current_price": 95.22000122070312,
+      "current_pct": 2.8627001562225063,
       "current_at": "2026-06-03T00:00:00-04:00",
       "reasoning": "参考链 #635/636/637 (霍尔木兹海峡通航受阻或封锁威胁) 的机制：海峡承载全球约20%石油供应，封锁威胁→供应中断风险定价→油价跳涨。本次新闻是伊朗宣布「彻底封锁」而非仅威胁或议案，严重程度显著升级，原油作为直接受冲击标的应优先于能源股；考虑到事件烈度，magnitude 上调至 8%。",
       "stop_loss_price": 85.905,

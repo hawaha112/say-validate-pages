@@ -1,0 +1,100 @@
+{
+  "id": 271,
+  "made_at": "2026-06-03T06:20:10.624565",
+  "expire_at": "2026-06-06T06:20:10.624565",
+  "verified_at": null,
+  "asset": {
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.08,
+  "horizon_days": 3,
+  "baseline_price": 4493.2001953125,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 4494.39990234375,
+  "current_pct": 0.02670050251714994,
+  "current_at": "2026-06-03T00:00:00-04:00",
+  "reasoning": "参考链#55(美国对华加征关税或扩大科技出口管制)的机制→地缘政治紧张推动避险资产受益。当前新闻提及geopolitical fears作为BTC下跌原因,同一避险逻辑利好黄金。差异在于链#55针对贸易战而非广泛地缘风险,但避险资金流向黄金的机制一致。DXY中性不构成阻力。",
+  "stop_loss_price": 4493.1915,
+  "take_profit": {
+    "prices": [
+      4493.2132,
+      4493.2219,
+      4493.2349
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.0087,
+    "atr": 0.0043
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.5172,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.5172,
+    "log_odds": 0.069,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 1.72,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 55,
+        "pattern": "美国对华加征关税或扩大科技出口管制",
+        "asset": "USDCNY=X",
+        "dir_hit_rate": 0.8,
+        "n_samples": 5,
+        "log_lr": 0.916,
+        "grade": "C"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "low_grade_chain",
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-neutral"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    55
+  ],
+  "cited_chains": [
+    {
+      "id": 55,
+      "pattern": "美国对华加征关税或扩大科技出口管制",
+      "asset_symbol": "USDCNY=X",
+      "direction": "up",
+      "horizon_days": 3,
+      "magnitude_pct": 0.5,
+      "grade": "C",
+      "retail_edge": "mid",
+      "macro_category": "politics_geo"
+    }
+  ],
+  "event": {
+    "id": 1864,
+    "summary": "比特币短暂跌破66000美元，受ETF资金流出和地缘政治担忧影响",
+    "category": "crypto"
+  },
+  "news": {
+    "title": "Bitcoin briefly dips below $66,000 as ETF outflows, geopolitical fears weigh on crypto",
+    "source": "the_block",
+    "lang": "en",
+    "url": "https://www.theblock.co/post/403454/bitcoin-dips-below-66000?utm_source=rss&utm_medium=rss",
+    "published_at": "2026-06-03T06:04:13"
+  }
+}

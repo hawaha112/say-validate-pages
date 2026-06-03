@@ -1,0 +1,99 @@
+{
+  "id": 269,
+  "made_at": "2026-06-03T06:18:06.762207",
+  "expire_at": "2026-06-06T06:18:06.762207",
+  "verified_at": null,
+  "asset": {
+    "symbol": "TLT",
+    "name": "20+年期美债ETF",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.16,
+  "horizon_days": 3,
+  "baseline_price": 85.6500015258789,
+  "baseline_source": "eod",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 85.6500015258789,
+  "current_pct": 0.0,
+  "current_at": "2026-06-02T00:00:00-04:00",
+  "reasoning": "参考链 #357（关税威胁→TLT上涨0.8%/1d）的避险机制：风险事件→资金流入长债。伊朗与美军直接冲突升级属于更高级别地缘风险，长端美债避险需求增加。但注意10y利率近期已上行20bp，上涨空间受限，故幅度保守估计。",
+  "stop_loss_price": 84.8805,
+  "take_profit": {
+    "prices": [
+      86.8042,
+      87.5737,
+      88.7279
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.7695,
+    "atr": 0.3847
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.6316,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.6316,
+    "log_odds": 0.539,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.11,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 357,
+        "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+        "asset": "TLT",
+        "dir_hit_rate": 1.0,
+        "n_samples": 3,
+        "log_lr": 1.386,
+        "grade": "B"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-neutral"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    357
+  ],
+  "cited_chains": [
+    {
+      "id": 357,
+      "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+      "asset_symbol": "TLT",
+      "direction": "up",
+      "horizon_days": 1,
+      "magnitude_pct": 0.8,
+      "grade": "B",
+      "retail_edge": "mid",
+      "macro_category": "politics_geo"
+    }
+  ],
+  "event": {
+    "id": 1884,
+    "summary": "科威特国际机场遭无人机袭击致机场暂停运营，伊朗革命卫队声称打击美军基地",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "【科威特国际机场遭袭多人受伤 飞机暂停起降】当地时间6月3日，科威特民航总局发布消息称，科威特国际机场1号航站楼当天早间遭无人机袭击，被严重损毁，袭击还造成现场",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-06-03T14:07:01"
+  }
+}

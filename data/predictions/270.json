@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 411.95001220703125,
-  "current_pct": 0.0,
-  "current_at": "2026-06-02T00:00:00-04:00",
+  "current_price": 411.04998779296875,
+  "current_pct": -0.21847903565789437,
+  "current_at": "2026-06-04T00:00:00-04:00",
   "reasoning": "参考链 #80 (系统性风险推升避险资产) 的机制：地缘风险事件触发避险需求。伊朗对海湾国家发动袭击是重大地缘升级,历史上中东冲突(如2020年美伊紧张、2019年沙特设施袭击)均推升黄金避险溢价。当前DXY中性、10y利率虽有上行但避险情绪可对冲,黄金有上行空间。",
   "stop_loss_price": 409.9658,
   "take_profit": {

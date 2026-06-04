@@ -1,0 +1,99 @@
+{
+  "id": 272,
+  "made_at": "2026-06-04T14:39:37.113315",
+  "expire_at": "2026-06-07T14:39:37.113315",
+  "verified_at": null,
+  "asset": {
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.08,
+  "horizon_days": 3,
+  "baseline_price": 4513.10009765625,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 4510.7001953125,
+  "current_pct": -0.05317635974873061,
+  "current_at": "2026-06-04T00:00:00-04:00",
+  "reasoning": "参考链 #51 (中东/波斯湾/产油区爆发武装冲突或袭击) 的机制 → 以色列-黎巴嫩边境防空警报与空袭痕迹表明地区冲突升温，虽非直接波及产油区，但属于中东地缘风险扩散。链 #51 指向避险资产受益；当前 VIX 偏低(15.69)、市场处于上行趋势，避险需求释放空间较大，黄金作为传统避险标的短期受买盘支撑。",
+  "stop_loss_price": 4506.0022,
+  "take_profit": {
+    "prices": [
+      4523.7469,
+      4530.8448,
+      4541.4917
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 7.0979,
+    "atr": 3.5489
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.5172,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.5172,
+    "log_odds": 0.069,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 1.72,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 51,
+        "pattern": "中东 / 波斯湾 / 产油区爆发武装冲突或袭击",
+        "asset": "SPY",
+        "dir_hit_rate": 0.8,
+        "n_samples": 5,
+        "log_lr": 0.916,
+        "grade": "A"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-neutral"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    51
+  ],
+  "cited_chains": [
+    {
+      "id": 51,
+      "pattern": "中东 / 波斯湾 / 产油区爆发武装冲突或袭击",
+      "asset_symbol": "SPY",
+      "direction": "up",
+      "horizon_days": 3,
+      "magnitude_pct": 1.0,
+      "grade": "A",
+      "retail_edge": "low",
+      "macro_category": "politics_geo"
+    }
+  ],
+  "event": {
+    "id": 1987,
+    "summary": "以色列北部拉响防空警报，黎巴嫩南部发现疑似空中目标击中痕迹",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "以色列军方表示，以色列北部拉响防空警报，因以色列国防军士兵在黎巴嫩南部开展行动的区域发现疑似空中目标击中痕迹。",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-06-04T22:12:07"
+  }
+}

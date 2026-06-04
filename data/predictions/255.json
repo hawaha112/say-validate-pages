@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 605.02001953125,
-  "current_pct": 2.1665372662405264,
-  "current_at": "2026-06-02T00:00:00-04:00",
+  "current_price": 590.3825073242188,
+  "current_pct": -0.3052221600729136,
+  "current_at": "2026-06-04T00:00:00-04:00",
   "reasoning": "参考链 #605 (美国放松对华AI芯片出口管制) 的机制 — CHIPS Act持续拨款表明政府对本土芯片制造的长期承诺，利好半导体设备和制造相关标的。XLight作为光电子/先进封装领域公司获补贴，信号意义大于金额本身(1.5亿规模较小)。7天窗口允许市场消化政策信号并反映到更广泛半导体指数。",
   "stop_loss_price": 585.7944,
   "take_profit": {

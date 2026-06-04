@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T06:20:59.641693",
+  "generated_at": "2026-06-04T14:42:16.462606",
   "kb_summary": {
     "n_links_active": 312,
     "n_strong": 159,
@@ -36,9 +36,9 @@
       "other": 19
     }
   },
-  "total": 22,
+  "total": 28,
   "verified": 0,
-  "pending": 22,
+  "pending": 28,
   "pending_past_expire": 0,
   "expired_no_data": 0,
   "retired": 0,
@@ -59,11 +59,11 @@
   },
   "hit_rate_vs_random": {
     "lookback_days": 30,
-    "n_verified": 110,
-    "actual_dir_hit_rate": 0.43636363636363634,
-    "random_dir_hit_rate": 0.43636363636363634,
-    "actual_strict_hit_rate": 0.2636363636363636,
-    "random_strict_hit_rate": 0.2636363636363636
+    "n_verified": 53,
+    "actual_dir_hit_rate": 0.39622641509433965,
+    "random_dir_hit_rate": 0.5094339622641509,
+    "actual_strict_hit_rate": 0.22641509433962265,
+    "random_strict_hit_rate": 0.32075471698113206
   },
   "kb_vs_random": {
     "n_instances": 2213,
@@ -88,12 +88,12 @@
     }
   },
   "by_class": {
-    "commodity": 7,
-    "us_stock": 12,
+    "us_stock": 14,
+    "commodity": 11,
     "a_stock": 3
   },
   "baseline_source_distribution": {
-    "event_time": 13,
+    "event_time": 19,
     "eod": 6,
     "live_fallback": 3
   }

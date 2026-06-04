@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 228.3300018310547,
-  "current_pct": 0.0,
-  "current_at": "2026-06-02T00:00:00-04:00",
+  "current_price": 229.75,
+  "current_pct": 0.6219060822309254,
+  "current_at": "2026-06-04T00:00:00-04:00",
   "reasoning": "参考链 #357 的避险资产受益机制延伸 — 中东军事冲突升级历史上利好国防板块，市场预期军费支出增加和武器订单扩大。与贸易战避险不同，军事冲突直接提振国防股而非仅债券。当前市场处于uptrend且VIX低位，risk-on环境下国防股有额外beta支撑。",
   "stop_loss_price": 227.5605,
   "take_profit": {

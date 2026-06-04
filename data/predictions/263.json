@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 1029.1500244140625,
-  "current_pct": 0.0,
-  "current_at": "2026-06-02T00:00:00-04:00",
+  "current_price": 887.0001220703125,
+  "current_pct": -13.812359614399444,
+  "current_at": "2026-06-04T00:00:00-04:00",
   "reasoning": "参考链 #620 (TSMC capex指引带动半导体设备与下游设计联动) 的机制延伸：Lumentum被点名为EML/CW-DFB LD市场前三厂商，直接受益于英伟达、Meta等客户的产能锁定。光通信激光器是AI数据中心800G/1.6T升级的关键卡脖子环节，产能翻倍预期将重估其估值。Lumentum弹性高于博通，幅度相应更大。",
   "stop_loss_price": 945.7889,
   "take_profit": {

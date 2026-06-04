@@ -1,0 +1,99 @@
+{
+  "id": 274,
+  "made_at": "2026-06-04T14:40:07.911215",
+  "expire_at": "2026-06-11T14:40:07.911215",
+  "verified_at": null,
+  "asset": {
+    "symbol": "IONQ",
+    "name": "IonQ量子计算",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 14.4,
+  "horizon_days": 7,
+  "baseline_price": 67.47000122070312,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 67.5999984741211,
+  "current_pct": 0.19267415305467517,
+  "current_at": "2026-06-04T00:00:00-04:00",
+  "reasoning": "参考链 #135 (小市值公司转型概念暴涨后回调) 的机制反向应用 → Quantinuum作为全球领先量子计算纯正股成功IPO且开盘溢价，验证市场对量子计算赛道的认可度提升。IonQ作为目前唯一上市的纯量子计算公司，将直接受益于行业估值锚点上移。当前VIX处于低位且大盘处于上升趋势，成长股风险偏好较高，支撑题材炒作延续。",
+  "stop_loss_price": 67.0984,
+  "take_profit": {
+    "prices": [
+      68.0274,
+      68.3989,
+      68.9563
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.3716,
+    "atr": 0.1858
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.6316,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.6316,
+    "log_odds": 0.539,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.11,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 135,
+        "pattern": "小市值公司宣布剥离主业转型AI概念后单日暴涨>100%",
+        "asset": "BIRD",
+        "dir_hit_rate": 1.0,
+        "n_samples": 3,
+        "log_lr": 1.386,
+        "grade": "B"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-neutral"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    135
+  ],
+  "cited_chains": [
+    {
+      "id": 135,
+      "pattern": "小市值公司宣布剥离主业转型AI概念后单日暴涨>100%",
+      "asset_symbol": "BIRD",
+      "direction": "down",
+      "horizon_days": 30,
+      "magnitude_pct": 25.0,
+      "grade": "B",
+      "retail_edge": "mid",
+      "macro_category": "corporate_sector"
+    }
+  ],
+  "event": {
+    "id": 1985,
+    "summary": "量子计算公司Quantinuum纳斯达克IPO上市，开盘价61.50美元高于发行价60美元",
+    "category": "tech"
+  },
+  "news": {
+    "title": "Quantinuum纳斯达克上市开盘参考价为61.50美元，高于其60美元的IPO发行价。",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-06-04T22:10:43"
+  }
+}

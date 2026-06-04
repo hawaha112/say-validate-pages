@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 95.25,
-  "current_pct": 0.38996917927155844,
-  "current_at": "2026-06-03T00:00:00-04:00",
+  "current_price": 92.69999694824219,
+  "current_pct": -2.297639511258785,
+  "current_at": "2026-06-04T00:00:00-04:00",
   "reasoning": "参考链 #357 的风险溢价机制类比 — 伊朗袭击美军第五舰队总部直接威胁波斯湾航运安全，该区域承载全球约20%原油运输。地缘风险溢价将推高油价，机制比贸易战更直接：供应中断预期而非需求担忧。当前原油处于相对低位，冲突升级提供3-5%的风险溢价空间。",
   "stop_loss_price": 94.1105,
   "take_profit": {

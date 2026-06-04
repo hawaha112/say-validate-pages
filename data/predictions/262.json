@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 632.2100219726562,
-  "current_pct": 0.0,
-  "current_at": "2026-06-02T00:00:00-04:00",
+  "current_price": 616.3699951171875,
+  "current_pct": -2.5055007521145956,
+  "current_at": "2026-06-04T00:00:00-04:00",
   "reasoning": "参考链 #620 (TSMC上调AI需求指引) 与链 #66 (英伟达营收超预期带动半导体板块) 的共振机制：AI数据中心光互联芯片产能两倍扩张，印证科技巨头资本开支强劲，从芯片到光通信全链条受益。本次新闻虽非直接财报，但第三方机构TrendForce的产能预测具有前瞻指引性质，对整体半导体板块情绪正面。",
   "stop_loss_price": 625.1469,
   "take_profit": {

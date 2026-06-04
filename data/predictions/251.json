@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 4494.2001953125,
-  "current_pct": -0.38124988703205975,
-  "current_at": "2026-06-03T00:00:00-04:00",
+  "current_price": 4510.7001953125,
+  "current_pct": -0.015509754098422757,
+  "current_at": "2026-06-04T00:00:00-04:00",
   "reasoning": "参考链 #635 (霍尔木兹海峡通航受阻) 的机制：地缘冲突升级→避险资金涌入黄金。彻底封锁声明意味着中东局势进入高危阶段，黄金作为传统避险资产受益；链内 magnitude 1.5% 基于威胁情景，实际封锁宣布后上调至 3%。当前 VIX 16 处于中低分位，避险需求尚未充分定价。",
   "stop_loss_price": 4389.5921,
   "take_profit": {

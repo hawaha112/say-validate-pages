@@ -1,0 +1,99 @@
+{
+  "id": 277,
+  "made_at": "2026-06-04T14:41:25.340626",
+  "expire_at": "2026-06-11T14:41:25.340626",
+  "verified_at": null,
+  "asset": {
+    "symbol": "XLE",
+    "name": "能源板块ETF",
+    "class": "us_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 3.24,
+  "horizon_days": 7,
+  "baseline_price": 58.57500076293945,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 58.595001220703125,
+  "current_pct": 0.034145040551713,
+  "current_at": "2026-06-04T00:00:00-04:00",
+  "reasoning": "参考链 #638 (俄制裁→能源股走强) 的机制：油价上涨→能源股盈利预期上修。伊朗核危机推升原油，美国能源巨头(XOM/CVX)作为替代供应方受益。当前SPX处于uptrend (+10.2% vs 200d MA)，能源股beta较高，但与#638的即时制裁冲击不同，本次是预期性升温，故magnitude从4%相关性折算至1.8%。",
+  "stop_loss_price": 56.6772,
+  "take_profit": {
+    "prices": [
+      61.4217,
+      63.3196,
+      66.1663
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 1.8978,
+    "atr": 0.9489
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.6818,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.6818,
+    "log_odds": 0.762,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.27,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 638,
+        "pattern": "美国对俄罗斯油气巨头实施一级SDN制裁",
+        "asset": "BZ=F",
+        "dir_hit_rate": 1.0,
+        "n_samples": 4,
+        "log_lr": 1.609,
+        "grade": "B"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-neutral"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    638
+  ],
+  "cited_chains": [
+    {
+      "id": 638,
+      "pattern": "美国对俄罗斯油气巨头实施一级SDN制裁",
+      "asset_symbol": "BZ=F",
+      "direction": "up",
+      "horizon_days": 3,
+      "magnitude_pct": 4.0,
+      "grade": "B",
+      "retail_edge": null,
+      "macro_category": "politics_geo"
+    }
+  ],
+  "event": {
+    "id": 1975,
+    "summary": "国际原子能机构无法确认伊朗浓缩铀状况，核查活动受阻引发地缘政治担忧",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "国际原子能机构：无法确认伊朗浓缩铀的状况和位置",
+    "source": "wallstreetcn",
+    "lang": "zh",
+    "url": "https://wallstreetcn.com/livenews/3114491",
+    "published_at": "2026-06-04T14:03:17"
+  }
+}

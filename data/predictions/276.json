@@ -1,33 +1,33 @@
 {
-  "id": 269,
-  "made_at": "2026-06-03T06:18:06.762207",
-  "expire_at": "2026-06-06T06:18:06.762207",
+  "id": 276,
+  "made_at": "2026-06-04T14:41:19.897549",
+  "expire_at": "2026-06-11T14:41:19.897549",
   "verified_at": null,
   "asset": {
-    "symbol": "TLT",
-    "name": "20+年期美债ETF",
-    "class": "us_stock"
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
   },
   "direction": "up",
-  "magnitude_pct": 2.16,
-  "horizon_days": 3,
-  "baseline_price": 85.6500015258789,
-  "baseline_source": "eod",
+  "magnitude_pct": 1.35,
+  "horizon_days": 7,
+  "baseline_price": 4509.7001953125,
+  "baseline_source": "event_time",
   "status": "pending",
   "hit": null,
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 85.54499816894531,
-  "current_pct": -0.12259586113593621,
+  "current_price": 4510.7001953125,
+  "current_pct": 0.022174423058974654,
   "current_at": "2026-06-04T00:00:00-04:00",
-  "reasoning": "参考链 #357（关税威胁→TLT上涨0.8%/1d）的避险机制：风险事件→资金流入长债。伊朗与美军直接冲突升级属于更高级别地缘风险，长端美债避险需求增加。但注意10y利率近期已上行20bp，上涨空间受限，故幅度保守估计。",
-  "stop_loss_price": 84.8805,
+  "reasoning": "参考链 #357 (关税威胁→避险资产受益) 的避险逻辑：地缘政治不确定性上升→资金流向黄金。伊朗核查失控是典型的「尾部风险」催化剂，历史上中东紧张局势对黄金有明确提振。当前DXY中性、VIX低位，黄金上行阻力较小。与#357不同的是这是军事而非贸易风险，但避险传导机制一致，magnitude保守估计1.5%。",
+  "stop_loss_price": 4508.9307,
   "take_profit": {
     "prices": [
-      86.8042,
-      87.5737,
-      88.7279
+      4510.8544,
+      4511.6239,
+      4512.7781
     ],
     "r_multiples": [
       1.5,
@@ -85,15 +85,15 @@
     }
   ],
   "event": {
-    "id": 1884,
-    "summary": "科威特国际机场遭无人机袭击致机场暂停运营，伊朗革命卫队声称打击美军基地",
+    "id": 1975,
+    "summary": "国际原子能机构无法确认伊朗浓缩铀状况，核查活动受阻引发地缘政治担忧",
     "category": "geopolitics"
   },
   "news": {
-    "title": "【科威特国际机场遭袭多人受伤 飞机暂停起降】当地时间6月3日，科威特民航总局发布消息称，科威特国际机场1号航站楼当天早间遭无人机袭击，被严重损毁，袭击还造成现场",
-    "source": "sina_finance",
+    "title": "国际原子能机构：无法确认伊朗浓缩铀的状况和位置",
+    "source": "wallstreetcn",
     "lang": "zh",
-    "url": null,
-    "published_at": "2026-06-03T14:07:01"
+    "url": "https://wallstreetcn.com/livenews/3114491",
+    "published_at": "2026-06-04T14:03:17"
   }
 }

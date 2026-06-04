@@ -145,6 +145,51 @@
 <h2 id="supervised">🧠 LLM 监督观察 · 10 个 supervisor</h2>
 <p class="small">每个 LLM-driven supervisor 跑完后写入这里(不推 TG)。最近一次时间 + 状态 + 摘要 + 可展开详情。</p>
 
+<div class="sup-card ok">
+  <h4>📅 今日观察 (A 股开盘前)</h4>
+  <div class="sup-meta">06-04 22:15 北京 · status=ok  · active_count=8 · high_conviction_count=3</div>
+  <div class="sup-summary">今日激活 8 条机会信号，高把握(≥60%) 3 条(SPY 65.8%、QQQ 65.2%、SMH 60.1%)，全部偏多；收益率曲线陡峭化 XLF 规则胜率异常高(93.5%/N=46)需关注样本偏差。</div>
+  
+  <details class="detail">
+    <summary>展开详情</summary>
+    <div class="sup-details-md">## 今日激活 (bypass-filter, top 8)
+
+| 标的 | 方向 | 把握 | N | 触发逻辑 |
+|------|------|------|---|---------|
+| SPY  | 📈 30d | **65.8%** | 137 | 组合信号 #42×#125，历史均值 +1.02% |
+| QQQ  | 📈 30d | **65.2%** | 124 | 6m 涨幅&gt;8% + 站上 50dMA，均值 +2.25% |
+| SMH  | 📈 30d | 60.1%  | 126 | 铜价突破+趋势确认，均值 +2.65% |
+| IWM  | 📈 30d | 58.4%  | 243 | QQQ/IWM 比率下穿 50dMA + IWM 站上 50dMA |
+| 沪深300 | 📈 30d | 51.3% | 135 | 站上 200dMA + 30d 累计&gt;5% |
+
+## 高把握信号 (≥60%，过闸)
+
+### 1. SPY 多 · 65.8% · N=137
+- 入场 753.40 → 止盈 758.67(+0.7%) / 止损 738.33(-2.0%)
+- 触发:组合规则 #83(#42 × #125 同向合并)
+
+### 2. QQQ 多 · 65.2% · N=124
+- 入场 735.99 → 止盈 747.03(+1.5%) / 止损 721.28(-2.0%)
+- 触发:6m 动量 + 50dMA 支撑
+
+### 3. SMH 多 · 60.1% · N=126
+- 入场 611.53 → 止盈 622.54(+1.8%) / 止损 599.30(-2.0%)
+- 触发:铜价突破确认，半导体关联跟随
+
+## 今日重点
+
+**美股多头动能延续。** SPY+QQQ 双信号同向（均≥65%），SMH 铜价联动补充；A 股沪深300 也触发站上 200dMA 续涨，但把握仅 51.3% 偏低，仅供参考。
+
+整体偏多，无明显矛盾对冲。
+
+## 矛盾 / 注意
+
+⚠️ **XLF 收益率曲线陡峭化规则**：playbook 显示胜率 93.5% / N=46 / p=0.0001 ——胜率异常偏高，N 较小，需警惕曲线过拟合；未列入高把握推荐，建议观察后续样本积累。
+
+✅ **无同标的反向矛盾**：当前激活信号全部偏多方向，无对冲冲突。</div>
+  </details>
+</div>
+
 <div class="sup-card alert">
   <h4>🔬 研究产出审计 (24h)</h4>
   <div class="sup-meta">06-04 22:15 北京 · status=alert  · runs_24h=0 · total_candidates=0 · live_added=0 · yield_pct=0.0 · hung_runs=1</div>
@@ -193,48 +238,6 @@
 1. **立即 kill R-0064**: ,同时 kill 相应进程。
 2. **排查候选提取器**: 检查  中的候选评分/过滤逻辑,对比 R-0045(有候选)与 R-0046(零候选)之间的代码差异——很可能是阈值改动或 LLM 评分 prompt 变更导致。
 3. **添加 yield 告警**: research worker 连续 N 次 n_candidates=0 时主动发告警(目前静默失败 18 次无感知)。</div>
-  </details>
-</div>
-
-<div class="sup-card warn">
-  <h4>📅 今日观察 (A 股开盘前)</h4>
-  <div class="sup-meta">06-03 12:17 北京 · status=warn  · active_count=7 · high_conviction_count=5</div>
-  <div class="sup-summary">今日激活 7 条信号,高把握 5 条(≥60%);最强:中证500 做空 82.8%(6条合并)——但与沪深300 做多信号方向矛盾,重点关注该分歧。</div>
-  
-  <details class="detail">
-    <summary>展开详情</summary>
-    <div class="sup-details-md">## 今日激活 (bypass-filter, 共 7 条)
-
-| 标的 | 方向 | 周期 | 把握 | N | 触发规律 |
-|------|------|------|------|---|---------|
-| sh000905 (中证500) | 📉 做空 | 60d | **82.8%** | 131 | #41 强美元周期 (+6条合并) |
-| SPY | 📈 做多 | 30d | **65.8%** | 137 | #83 组合: #42×#125 (+2条合并) |
-| QQQ | 📈 做多 | 30d | **65.2%** | 124 | #57 QQQ 6m涨幅&gt;8%+50dMA |
-| GC=F (黄金) | 📈 做多 | 60d | **61.2%** | 139 | #58 组合: #43×#66 (+2条合并) |
-| SMH | 📈 做多 | 30d | 60.1% | 126 | #44 铜价突破趋势确认 |
-| IWM | 📈 做多 | 30d | 58.4% | 243 | #125 QQQ/IWM比率下穿50dMA |
-| sh000300 (沪深300) | 📈 做多 | 30d | 51.3% | 135 | #68 站上200dMA+30d累&gt;5% |
-
-## 高把握信号 (≥60%, 共 5 条)
-
-1. **sh000905 空 82.8%** — 历史均值 +5.56%，N=131，止盈 8013 / 入场 8321 / 止损 8488
-2. **SPY 多 65.8%** — 历史均值 +1.02%，入场 759.57，止盈 764.89，止损 744.38
-3. **QQQ 多 65.2%** — 历史均值 +2.25%，入场 746.16，止盈 757.35，止损 731.24
-4. **GC=F 多 61.2%** — 历史均值 +3.93%，入场 4513.80，止盈 4631.16，止损 4423.52
-5. **SMH 多 60.1%** — 历史均值 +2.65%，入场 632.21，止盈 643.59，止损 619.57
-
-## 矛盾 / 注意
-
-⚠️ **中国大盘方向分歧**：
-- sh000905(中证500) 📉 82.8%：强美元逻辑，6条规律共振做空
-- sh000300(沪深300) 📈 51.3%：技术突破逻辑做多
-- 两者高度相关，方向相反，**优先听把握更高的 82.8% 方向（看空）**；沪深300做多信号把握仅51%，接近随机，权重低。
-
-⚠️ Playbook table 中 `yield_curve_steepening_xlf_3d` 命中率 93.5% 但 N=46，样本过少，暂不采用。
-
-## 今日重点关注
-
-**今日最强信号:中证500 空(82.8%,6规律合并)**，美元强势周期驱动。与此同时美股 SPY/QQQ 多头信号持续 (65%+)，全球风险资产分化 — A股承压而美股续涨。A股开盘观察沪深300是否跟强美元方向走弱，若破位则 sh000905 空信号进一步验证。</div>
   </details>
 </div>
 
@@ -621,7 +624,7 @@ _无_
   <td><strong>VIX 持续低位 → SPY 14d 续涨</strong> <span class="tag tag-playbook">playbook</span><div class="rationale">VIX 低于 16 且跌破 30 日均线意味着波动率压制持续,机构 vol-targeting 策略会继续加仓,趋势跟随资金跟随,系统化做空 vol 的策略不平仓。 这种&quot;低波 → 漂移上行&quot;模式在历史 202 次触发中产生统计显著的正期望 (p=0.0002), 单次平均 +0.58% / 14d, 累计在持续低波环境里复利可观。 虽然单次幅度小,但触发频率高、命中率稳定,适合作为基准多头敞口。
 
 失效条件: VIX 单日跳升 &gt; 30% 或突破 20 — 波动率压制结束,系统化策略反转, 漂移信号失效。同时若信用利差(HYG/LQD ratio)开始走阔,提示 风险偏好真转向,提前止盈。</div></td>
-  <td>vix<br><span class="small">= 15.96</span></td>
+  <td>vix<br><span class="small">= 15.97</span></td>
   <td class="dir-up">SPY ↑</td>
   <td class="num">14d</td>
   <td class="num">58.4%</td>
@@ -643,7 +646,7 @@ _无_
   <td><span class="tag-active">触发</span></td>
   <td>#125</td>
   <td><strong>QQQ/IWM 比率下穿 50dMA + IWM 站上 50dMA → IWM 30d 续涨 / iwm</strong> <span class="tag tag-playbook">playbook</span><div class="rationale">小盘股(Russell 2000 / IWM)相对大盘成长(QQQ)的强弱转换通常 由两类宏观因子驱动:   (1) 利率拐点 — 当市场 price-in 降息周期时,小盘股(高杠杆 +       内需敏感)的融资负担减轻,EPS 弹性比 megacap 更大   (2) 风险偏好扩散 — risk-on 行情在 megacap 充分上涨后,资金       会向估值更低、beta 更高的小盘溢出,形成轮动 QQQ/IWM 比率下穿 50dMA 是&quot;轮动启动&quot;的趋势确认信号;叠加 IWM 自身站上 50dMA(防止 IWM 同步下跌只是因为 QQQ 跌更多)能过滤 掉伪 risk-on 场景。两重过滤后,IWM 在接下来 30 天内倾向延续 上行,捕捉小盘补涨的窗口。 与 #31 (大盘主导) 互为反面;与 #32 (IWM 深跌反弹) 互补 —— 本剧本抓&quot;趋势确立&quot;而非&quot;超卖反弹&quot;</div></td>
-  <td>iwm<br><span class="small">= 289.88</span></td>
+  <td>iwm<br><span class="small">= 290.04</span></td>
   <td class="dir-up">IWM ↑</td>
   <td class="num">30d</td>
   <td class="num">63.4%</td>
@@ -689,7 +692,7 @@ _无_
   <td><strong>SPY 12月动量延续 → 30d 续涨</strong> <span class="tag tag-playbook">playbook</span><div class="rationale">SPY 过去 252 个交易日累计涨幅 &gt; 15% 时,经典 12 月动量因子开启 正反馈循环:趋势跟随策略加仓、被动指数继续吸金、机构再平衡 推升估值。190 次历史触发中 30d 内继续上行均值 +1.3%, 方向命中 67.4%. 这是金融学最稳定的横截面 + 时序异象之一,在 1927-至今的几乎所有 子样本里都成立。
 
 失效条件: VIX 单日跳升 &gt; 50% 或突破 30 — 动量崩塌信号。或 SPY 跌破 50d MA 超过 2 天 — 趋势确认反转,动量假设失效。</div></td>
-  <td>spy<br><span class="small">= 753.45</span></td>
+  <td>spy<br><span class="small">= 753.42</span></td>
   <td class="dir-up">SPY ↑</td>
   <td class="num">30d</td>
   <td class="num">67.5%</td>
@@ -763,7 +766,7 @@ _无_
   <td><strong>QQQ 6m 涨幅 &gt; 8% + 站上 50dMA → 30d 续涨</strong> <span class="tag tag-playbook">playbook</span><div class="rationale">QQQ 过去 126 个交易日(6 个月)累计涨幅 &gt; 8%, 且当前价位于 50dMA 之上 —— 双重过滤排除&quot;短期反弹但中期未确立&quot;的噪音,只在中期 动量与短期趋势同时正向时入场。142 次历史触发 30d 均值 +2.35%, 方向命中 69.7%. QQQ 较 SPY 对动量信号更敏感(成长股 beta 高),所以同样规则 下的 alpha 比 SPY 大。
 
 失效条件: QQQ 跌破 50dMA 超过 2 个交易日 或 VIX 突破 25 — 动量崩盘的 早期信号,立即平仓避免动量股的 fat tail loss。</div></td>
-  <td>qqq<br><span class="small">= 735.88</span></td>
+  <td>qqq<br><span class="small">= 735.93</span></td>
   <td class="dir-up">QQQ ↑</td>
   <td class="num">30d</td>
   <td class="num">70.2%</td>
@@ -789,7 +792,7 @@ _无_
   <td><strong>黄金 50d 上穿 200d MA → 60d 续涨</strong> <span class="tag tag-playbook">playbook</span><div class="rationale">黄金 50d 均线上穿 200d 均线(经典金叉)是大宗商品趋势翻转 的最稳定信号之一。出现金叉通常意味着:   (1) 实际利率周期性见顶(黄金对冲属性激活)   (2) 央行储备增持(包括新兴市场央行)   (3) 通胀预期持续高位 历史上黄金金叉后 60 天内,中位数涨幅 +3-5%,胜率约 65%。 金叉是慢但稳的信号,对长期持仓友好。
 
 失效条件: 实际利率 (TIPS) 单月上行 &gt; 50bp — 黄金对冲价值被实际利率吃掉, 金叉信号被压制。或 DXY 单边突破 + 长期持续 — 美元强势压制 所有大宗商品。</div></td>
-  <td>gold<br><span class="small">= 4524.00</span></td>
+  <td>gold<br><span class="small">= 4524.40</span></td>
   <td class="dir-up">GC=F ↑</td>
   <td class="num">60d</td>
   <td class="num">56.4%</td>
@@ -807,22 +810,22 @@ _无_
 <tbody>
 <tr>
   <td><strong>dxy</strong></td>
-  <td class="num">99.268</td>
+  <td class="num">99.269</td>
   <td class="small">2026-06-04</td>
   <td class="num">23</td>
   <td> <span class="tag-active">7 激活</span></td>
 </tr><tr>
   <td><strong>vix</strong></td>
-  <td class="num">15.960</td>
+  <td class="num">15.970</td>
   <td class="small">2026-06-04</td>
   <td class="num">9</td>
   <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
-  <td><strong>yield_curve_10y2y</strong></td>
-  <td class="num">0.290</td>
+  <td><strong>iwm</strong></td>
+  <td class="num">290.040</td>
   <td class="small">2026-06-04</td>
   <td class="num">2</td>
-  <td></td>
+  <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
   <td><strong>hyg</strong></td>
   <td class="num">79.785</td>
@@ -830,56 +833,26 @@ _无_
   <td class="num">2</td>
   <td></td>
 </tr><tr>
-  <td><strong>iwm</strong></td>
-  <td class="num">289.880</td>
+  <td><strong>yield_curve_10y2y</strong></td>
+  <td class="num">0.291</td>
+  <td class="small">2026-06-04</td>
+  <td class="num">2</td>
+  <td></td>
+</tr><tr>
+  <td><strong>gold</strong></td>
+  <td class="num">4524.400</td>
   <td class="small">2026-06-04</td>
   <td class="num">2</td>
   <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
-  <td><strong>gold</strong></td>
-  <td class="num">4524.000</td>
+  <td><strong>hs300</strong></td>
+  <td class="num">4904.745</td>
   <td class="small">2026-06-04</td>
-  <td class="num">2</td>
+  <td class="num">1</td>
   <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
   <td><strong>us_10y_yield</strong></td>
   <td class="num">4.453</td>
-  <td class="small">2026-06-04</td>
-  <td class="num">1</td>
-  <td></td>
-</tr><tr>
-  <td><strong>chinext</strong></td>
-  <td class="num">4088.884</td>
-  <td class="small">2026-06-04</td>
-  <td class="num">1</td>
-  <td> <span class="tag-active">1 激活</span></td>
-</tr><tr>
-  <td><strong>qqq</strong></td>
-  <td class="num">735.880</td>
-  <td class="small">2026-06-04</td>
-  <td class="num">1</td>
-  <td> <span class="tag-active">1 激活</span></td>
-</tr><tr>
-  <td><strong>qqq_iwm_ratio</strong></td>
-  <td class="num">2.538</td>
-  <td class="small">2026-06-04</td>
-  <td class="num">1</td>
-  <td></td>
-</tr><tr>
-  <td><strong>oil</strong></td>
-  <td class="num">92.460</td>
-  <td class="small">2026-06-04</td>
-  <td class="num">1</td>
-  <td></td>
-</tr><tr>
-  <td><strong>spy</strong></td>
-  <td class="num">753.450</td>
-  <td class="small">2026-06-04</td>
-  <td class="num">1</td>
-  <td> <span class="tag-active">1 激活</span></td>
-</tr><tr>
-  <td><strong>gold_1h</strong></td>
-  <td class="num">4524.400</td>
   <td class="small">2026-06-04</td>
   <td class="num">1</td>
   <td></td>
@@ -890,11 +863,17 @@ _无_
   <td class="num">1</td>
   <td></td>
 </tr><tr>
-  <td><strong>btc</strong></td>
-  <td class="num">64267.879</td>
+  <td><strong>qqq_iwm_ratio</strong></td>
+  <td class="num">2.537</td>
   <td class="small">2026-06-04</td>
   <td class="num">1</td>
   <td></td>
+</tr><tr>
+  <td><strong>qqq</strong></td>
+  <td class="num">735.930</td>
+  <td class="small">2026-06-04</td>
+  <td class="num">1</td>
+  <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
   <td><strong>copper</strong></td>
   <td class="num">6.529</td>
@@ -902,13 +881,37 @@ _无_
   <td class="num">1</td>
   <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
-  <td><strong>hs300</strong></td>
-  <td class="num">4904.745</td>
+  <td><strong>chinext</strong></td>
+  <td class="num">4088.884</td>
   <td class="small">2026-06-04</td>
   <td class="num">1</td>
   <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
-  <td><strong>intraday::breakout_momentum::BTC::up</strong></td>
+  <td><strong>oil</strong></td>
+  <td class="num">92.360</td>
+  <td class="small">2026-06-04</td>
+  <td class="num">1</td>
+  <td></td>
+</tr><tr>
+  <td><strong>gold_1h</strong></td>
+  <td class="num">4524.800</td>
+  <td class="small">2026-06-04</td>
+  <td class="num">1</td>
+  <td></td>
+</tr><tr>
+  <td><strong>spy</strong></td>
+  <td class="num">753.420</td>
+  <td class="small">2026-06-04</td>
+  <td class="num">1</td>
+  <td> <span class="tag-active">1 激活</span></td>
+</tr><tr>
+  <td><strong>btc</strong></td>
+  <td class="num">64305.051</td>
+  <td class="small">2026-06-04</td>
+  <td class="num">1</td>
+  <td></td>
+</tr><tr>
+  <td><strong>intraday::trend_continuation::BTC::down</strong></td>
   <td class="num">—</td>
   <td class="small">—</td>
   <td class="num">0</td>
@@ -920,13 +923,13 @@ _无_
   <td class="num">0</td>
   <td></td>
 </tr><tr>
-  <td><strong>intraday::trend_continuation::BTC::down</strong></td>
+  <td><strong>intraday::trend_continuation::BTC::up</strong></td>
   <td class="num">—</td>
   <td class="small">—</td>
   <td class="num">0</td>
   <td></td>
 </tr><tr>
-  <td><strong>intraday::trend_continuation::BTC::up</strong></td>
+  <td><strong>intraday::breakout_momentum::BTC::up</strong></td>
   <td class="num">—</td>
   <td class="small">—</td>
   <td class="num">0</td>

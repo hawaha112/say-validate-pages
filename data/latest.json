@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-04T14:42:35.891923",
+  "generated_at": "2026-06-06T01:47:18.954562",
   "stats": {
-    "generated_at": "2026-06-04T14:42:35.453302",
+    "generated_at": "2026-06-06T01:47:18.402390",
     "kb_summary": {
-      "n_links_active": 312,
-      "n_strong": 159,
+      "n_links_active": 310,
+      "n_strong": 158,
       "n_strong_rigorous": 35,
       "rigor_thresholds": {
         "min_n_legacy": 5,
@@ -17,18 +17,18 @@
       "n_weak": 8,
       "n_retire_candidate": 0,
       "n_flip_candidate": 0,
-      "n_insufficient_data": 145,
-      "strong_avg_dir_hit_rate": 0.8,
+      "n_insufficient_data": 144,
+      "strong_avg_dir_hit_rate": 0.798,
       "n_instances_total": 2238,
       "n_instances_with_price_path": 1903,
       "n_instances_with_turning_points": 1903,
       "n_instances_classified": 2213,
-      "n_links_with_causal_chain": 199,
+      "n_links_with_causal_chain": 197,
       "by_macro_category": {
         "monetary_policy": 79,
-        "macro_data": 48,
+        "macro_data": 47,
         "energy_commodity": 24,
-        "politics_geo": 37,
+        "politics_geo": 36,
         "regulation": 20,
         "tech_breakthrough": 29,
         "corporate_sector": 25,
@@ -38,34 +38,38 @@
         "other": 19
       }
     },
-    "total": 28,
-    "verified": 0,
-    "pending": 28,
+    "total": 40,
+    "verified": 6,
+    "pending": 34,
     "pending_past_expire": 0,
     "expired_no_data": 0,
     "retired": 0,
-    "hit_rate": null,
-    "hit_rate_strict": null,
-    "hit_rate_honest": null,
+    "hit_rate": 0.3333333333333333,
+    "hit_rate_strict": 0.3333333333333333,
+    "hit_rate_honest": 0.3333333333333333,
     "hit_rate_denominator": {
-      "strict": 0,
-      "honest": 0,
+      "strict": 6,
+      "honest": 6,
       "note": "strict counts only verified predictions; honest treats expired_no_data and past-expire pending as misses (they're predictions the system couldn't score, not omissions)"
     },
     "hit_breakdown_summary": {
-      "n": 0,
-      "dir_hit_rate": null,
-      "mag_hit_rate": null,
-      "strict_hit_rate": null,
-      "mag_err_bucket_counts": {}
+      "n": 6,
+      "dir_hit_rate": 0.3333333333333333,
+      "mag_hit_rate": 0.5,
+      "strict_hit_rate": 0.3333333333333333,
+      "mag_err_bucket_counts": {
+        ">100%": 3,
+        "<=50%": 2,
+        "<=100%": 1
+      }
     },
     "hit_rate_vs_random": {
       "lookback_days": 30,
-      "n_verified": 53,
-      "actual_dir_hit_rate": 0.39622641509433965,
-      "random_dir_hit_rate": 0.5094339622641509,
-      "actual_strict_hit_rate": 0.22641509433962265,
-      "random_strict_hit_rate": 0.32075471698113206
+      "n_verified": 59,
+      "actual_dir_hit_rate": 0.3898305084745763,
+      "random_dir_hit_rate": 0.4915254237288136,
+      "actual_strict_hit_rate": 0.23728813559322035,
+      "random_strict_hit_rate": 0.3220338983050847
     },
     "kb_vs_random": {
       "n_instances": 2213,
@@ -84,23 +88,1213 @@
         "note": "built before KB freeze; treat as training/in-sample"
       },
       "post_freeze": {
-        "n_verified": 0,
-        "hit_rate_strict": null,
+        "n_verified": 6,
+        "hit_rate_strict": 0.3333333333333333,
         "note": "verified predictions made after KB freeze — this is the number you can actually trust. Grows as live predictions accumulate."
       }
     },
     "by_class": {
-      "us_stock": 14,
-      "commodity": 11,
-      "a_stock": 3
+      "commodity": 17,
+      "us_stock": 17,
+      "fx": 1,
+      "a_stock": 5
     },
     "baseline_source_distribution": {
-      "event_time": 19,
-      "eod": 6,
+      "eod": 15,
+      "event_time": 22,
       "live_fallback": 3
     }
   },
   "recent_predictions": [
+    {
+      "id": 289,
+      "made_at": "2026-06-06T01:46:01.361662",
+      "expire_at": "2026-06-09T01:46:01.361662",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.08,
+      "horizon_days": 3,
+      "baseline_price": 4353.89990234375,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4353.89990234375,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链#80（系统性风险预期推升避险资产）的机制——虽然该链针对银行危机，但核心逻辑是风险事件→避险资产需求上升。科威特遭袭意味着中东紧张局势可能外溢（伊朗/胡塞武装嫌疑），市场会短期涌入黄金避险。当前10y利率已+21bp MoM、黄金承压，但地缘冲击的避险需求可部分对冲利率逆风。",
+      "stop_loss_price": 4351.9157,
+      "take_profit": {
+        "prices": [
+          4356.8762,
+          4358.8604,
+          4361.8367
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.9842,
+        "atr": 0.9921
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.72,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.72,
+        "log_odds": 0.944,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.4,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 80,
+            "pattern": "大型银行倒闭 / 挤兑 / 存款集中流出事件",
+            "asset": "KRE",
+            "dir_hit_rate": 1.0,
+            "n_samples": 5,
+            "log_lr": 1.792,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "asset_repeat",
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        80
+      ],
+      "cited_chains": [
+        {
+          "id": 80,
+          "pattern": "大型银行倒闭 / 挤兑 / 存款集中流出事件",
+          "asset_symbol": "KRE",
+          "direction": "down",
+          "horizon_days": 30,
+          "magnitude_pct": 6.0,
+          "grade": "A",
+          "retail_edge": "mid",
+          "macro_category": "financial_stress"
+        }
+      ],
+      "event": {
+        "id": 2103,
+        "summary": "科威特遭遇导弹和无人机袭击，空中防御系统正在拦截",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "科威特军方在X上称，科威特空中防御系统正在拦截导弹和无人机袭击。",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3115396",
+        "published_at": "2026-06-06T01:02:35"
+      }
+    },
+    {
+      "id": 288,
+      "made_at": "2026-06-06T01:45:32.701101",
+      "expire_at": "2026-06-09T01:45:32.701101",
+      "verified_at": null,
+      "asset": {
+        "symbol": "USO",
+        "name": "美国石油基金",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.6,
+      "horizon_days": 3,
+      "baseline_price": 133.02000427246094,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 133.02000427246094,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链 #640 (美国对俄罗斯油气巨头制裁) 的供给冲击机制：该链显示能源地缘风险推升油价与XLE。巴林紧邻霍尔木兹海峡，防空警报暗示该区域航运可能受威胁，与俄油制裁同属石油供给中断预期逻辑。当前uptrend市场环境支持风险资产反弹，但中东局势若升级可同时抬高原油风险溢价。幅度略高于链值因海峡扼咽喉地位。",
+      "stop_loss_price": 128.2313,
+      "take_profit": {
+        "prices": [
+          140.2031,
+          144.9918,
+          152.1749
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 4.7887,
+        "atr": 2.3944
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6818,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6818,
+        "log_odds": 0.762,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.27,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 640,
+            "pattern": "美国对俄罗斯油气巨头实施一级SDN制裁",
+            "asset": "XLE",
+            "dir_hit_rate": 1.0,
+            "n_samples": 4,
+            "log_lr": 1.609,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        640
+      ],
+      "cited_chains": [
+        {
+          "id": 640,
+          "pattern": "美国对俄罗斯油气巨头实施一级SDN制裁",
+          "asset_symbol": "XLE",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.5,
+          "grade": "B",
+          "retail_edge": null,
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 2104,
+        "summary": "巴林全国拉响防空警报，中东地缘紧张局势升级",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "巴林全国拉响防空警报。（新华社）",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3115397",
+        "published_at": "2026-06-06T01:26:27"
+      }
+    },
+    {
+      "id": 287,
+      "made_at": "2026-06-06T01:45:28.651460",
+      "expire_at": "2026-06-09T01:45:28.651460",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.08,
+      "horizon_days": 3,
+      "baseline_price": 4353.89990234375,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4353.89990234375,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链 #357 (美国对盟友突袭式加征关税威胁) 的避险机制：该链显示地缘政治冲击触发避险资金流向黄金与美债。巴林防空警报意味着中东局势骤然升级（可能涉及伊朗-以色列对峙或胡塞武装袭击），与关税冲击同属突发地缘风险范畴，均激活黄金的避险溢价。当前VIX处于87%分位的mid-vol环境放大避险需求，但幅度较链所示温和，因巴林非核心产油国。",
+      "stop_loss_price": 4353.1304,
+      "take_profit": {
+        "prices": [
+          4355.0541,
+          4355.8236,
+          4356.9778
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7695,
+        "atr": 0.3847
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 357,
+            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        357
+      ],
+      "cited_chains": [
+        {
+          "id": 357,
+          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 2104,
+        "summary": "巴林全国拉响防空警报，中东地缘紧张局势升级",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "巴林全国拉响防空警报。（新华社）",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3115397",
+        "published_at": "2026-06-06T01:26:27"
+      }
+    },
+    {
+      "id": 286,
+      "made_at": "2026-06-06T01:44:59.286093",
+      "expire_at": "2026-06-09T01:44:59.286093",
+      "verified_at": null,
+      "asset": {
+        "symbol": "USDCNY=X",
+        "name": "美元兑人民币",
+        "class": "fx"
+      },
+      "direction": "down",
+      "magnitude_pct": 0.25,
+      "horizon_days": 3,
+      "baseline_price": 6.764999866485596,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 6.764999866485596,
+      "current_pct": 0.0,
+      "current_at": "2026-06-06T00:00:00+01:00",
+      "reasoning": "参考链 #90 (PMI低于50→USDCNY上涨) 的反向机制：当PMI回升至荣枯线上方时，人民币压力缓解。本次PMI 50.5+出口运价上涨显示外需复苏，支持人民币小幅走强。但DXY近期走强(+1.3% MoM)形成对冲，幅度保守。",
+      "stop_loss_price": 6.8585,
+      "take_profit": {
+        "prices": [
+          6.6247,
+          6.5312,
+          6.3909
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0935,
+        "atr": 0.0468
+      },
+      "kelly_fraction": 0.0168,
+      "resonance_posterior": 0.72,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.72,
+        "log_odds": 0.944,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.4,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 90,
+            "pattern": "中国 PMI 大幅低于 50 荣枯线",
+            "asset": "USDCNY=X",
+            "dir_hit_rate": 1.0,
+            "n_samples": 5,
+            "log_lr": 1.792,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        90
+      ],
+      "cited_chains": [
+        {
+          "id": 90,
+          "pattern": "中国 PMI 大幅低于 50 荣枯线",
+          "asset_symbol": "USDCNY=X",
+          "direction": "up",
+          "horizon_days": 3,
+          "magnitude_pct": 0.3,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "macro_data"
+        }
+      ],
+      "event": {
+        "id": 2106,
+        "summary": "上海航交所报告本周集装箱运价上涨6%，中国5月PMI升至50.5显示经济扩张",
+        "category": "macro"
+      },
+      "news": {
+        "title": "【上海航交所：本周运输市场继续向好 市场运价保持涨势】据上海航交所，本周， 本周，中国出口集装箱运输市场行情延续向好态势，远洋航线市场运价保持上涨，推动综合指数",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T08:42:12"
+      }
+    },
+    {
+      "id": 285,
+      "made_at": "2026-06-06T01:44:55.215369",
+      "expire_at": "2026-06-13T01:44:55.215369",
+      "verified_at": null,
+      "asset": {
+        "symbol": "510300.SS",
+        "name": "沪深300ETF",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.2,
+      "horizon_days": 7,
+      "baseline_price": 4.843,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "参考链 #88 (中国财政刺激→沪深300上涨) 的机制：经济扩张信号利好周期权重股。PMI综合升至50.5、非制造业回归扩张区间，叠加出口航运运价持续上涨，均为经济边际改善的领先指标。与#88机制部分相似但驱动力来自实体需求而非政策，magnitude下调。当前A股处于uptrend有利。",
+      "stop_loss_price": 4.7586,
+      "take_profit": {
+        "prices": [
+          4.9696,
+          5.0541,
+          5.1807
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0844,
+        "atr": 0.0422
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.5172,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.5172,
+        "log_odds": 0.069,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.72,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 88,
+            "pattern": "中国财政大规模刺激（特别国债/基建加码）",
+            "asset": "510300.SS",
+            "dir_hit_rate": 0.8,
+            "n_samples": 5,
+            "log_lr": 0.916,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        88
+      ],
+      "cited_chains": [
+        {
+          "id": 88,
+          "pattern": "中国财政大规模刺激（特别国债/基建加码）",
+          "asset_symbol": "510300.SS",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.5,
+          "grade": "A",
+          "retail_edge": "mid",
+          "macro_category": "monetary_policy"
+        }
+      ],
+      "event": {
+        "id": 2106,
+        "summary": "上海航交所报告本周集装箱运价上涨6%，中国5月PMI升至50.5显示经济扩张",
+        "category": "macro"
+      },
+      "news": {
+        "title": "【上海航交所：本周运输市场继续向好 市场运价保持涨势】据上海航交所，本周， 本周，中国出口集装箱运输市场行情延续向好态势，远洋航线市场运价保持上涨，推动综合指数",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T08:42:12"
+      }
+    },
+    {
+      "id": 284,
+      "made_at": "2026-06-06T01:44:47.890738",
+      "expire_at": "2026-06-13T01:44:47.890738",
+      "verified_at": null,
+      "asset": {
+        "symbol": "601919.SS",
+        "name": "中远海控",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.5,
+      "horizon_days": 7,
+      "baseline_price": 15.0,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 15.0,
+      "current_pct": 0.0,
+      "current_at": "2026-06-06T01:47:07.889615",
+      "reasoning": "参考链 #88 (中国财政大规模刺激) 的机制：经济活动扩张推动周期股受益。本次新闻虽非财政刺激，但PMI回升至50.5+运价上涨6%直接反映出口需求回暖，航运企业盈利预期改善。中远海控作为集运龙头直接受益于SCFI指数上行，机制传导更直接。当前uptrend环境支持顺周期交易。",
+      "stop_loss_price": 14.9156,
+      "take_profit": {
+        "prices": [
+          15.1266,
+          15.2111,
+          15.3377
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0844,
+        "atr": 0.0422
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.5172,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.5172,
+        "log_odds": 0.069,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.72,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 88,
+            "pattern": "中国财政大规模刺激（特别国债/基建加码）",
+            "asset": "510300.SS",
+            "dir_hit_rate": 0.8,
+            "n_samples": 5,
+            "log_lr": 0.916,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_confirm",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        88
+      ],
+      "cited_chains": [
+        {
+          "id": 88,
+          "pattern": "中国财政大规模刺激（特别国债/基建加码）",
+          "asset_symbol": "510300.SS",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.5,
+          "grade": "A",
+          "retail_edge": "mid",
+          "macro_category": "monetary_policy"
+        }
+      ],
+      "event": {
+        "id": 2106,
+        "summary": "上海航交所报告本周集装箱运价上涨6%，中国5月PMI升至50.5显示经济扩张",
+        "category": "macro"
+      },
+      "news": {
+        "title": "【上海航交所：本周运输市场继续向好 市场运价保持涨势】据上海航交所，本周， 本周，中国出口集装箱运输市场行情延续向好态势，远洋航线市场运价保持上涨，推动综合指数",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T08:42:12"
+      }
+    },
+    {
+      "id": 283,
+      "made_at": "2026-06-06T01:43:55.695957",
+      "expire_at": "2026-06-07T01:43:55.695957",
+      "verified_at": null,
+      "asset": {
+        "symbol": "TLT",
+        "name": "20+年期美债ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.08,
+      "horizon_days": 1,
+      "baseline_price": 85.05999755859375,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 85.05999755859375,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链 #357 (风险事件→避险资金流向美债) 的机制。科威特遭袭引发中东局势紧张，短期避险情绪推动资金流入长债。但当前10y利率月涨21bp处于上行通道，且冲突非大规模战争级别，美债上行空间受限，预计温和反弹。",
+      "stop_loss_price": 84.2905,
+      "take_profit": {
+        "prices": [
+          86.2142,
+          86.9837,
+          88.1379
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7695,
+        "atr": 0.3847
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 357,
+            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        357
+      ],
+      "cited_chains": [
+        {
+          "id": 357,
+          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 2113,
+        "summary": "科威特遭遇导弹和无人机攻击，防空系统正在拦截",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "【科威特：正应对“敌方”导弹和无人机攻击】科威特军方6日发表声明说，科威特防空部队正在应对“敌方”导弹和无人机攻击。如听到爆炸声，系科威特防空系统拦截攻击所致。",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T09:02:07"
+      }
+    },
+    {
+      "id": 282,
+      "made_at": "2026-06-06T01:43:51.716134",
+      "expire_at": "2026-06-09T01:43:51.716134",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.08,
+      "horizon_days": 3,
+      "baseline_price": 4353.89990234375,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4353.89990234375,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链 #357 (突袭式关税威胁→避险资金流向黄金) 的机制：地缘风险触发避险需求。科威特遇袭属于中东军事冲突而非贸易战，但避险机制相通——不确定性上升→资金流入黄金。当前DXY中性、VIX偏高环境下黄金避险属性凸显。幅度较温和因冲突规模待观察。",
+      "stop_loss_price": 4353.1304,
+      "take_profit": {
+        "prices": [
+          4355.0541,
+          4355.8236,
+          4356.9778
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7695,
+        "atr": 0.3847
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 357,
+            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_confirm",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        357
+      ],
+      "cited_chains": [
+        {
+          "id": 357,
+          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 2113,
+        "summary": "科威特遭遇导弹和无人机攻击，防空系统正在拦截",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "【科威特：正应对“敌方”导弹和无人机攻击】科威特军方6日发表声明说，科威特防空部队正在应对“敌方”导弹和无人机攻击。如听到爆炸声，系科威特防空系统拦截攻击所致。",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T09:02:07"
+      }
+    },
+    {
+      "id": 281,
+      "made_at": "2026-06-06T01:43:48.699346",
+      "expire_at": "2026-06-09T01:43:48.699346",
+      "verified_at": null,
+      "asset": {
+        "symbol": "CL=F",
+        "name": "WTI原油期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.25,
+      "horizon_days": 3,
+      "baseline_price": 90.25,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 90.25,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链 #216 (EIA库存意外大减) 的机制：供给收紧预期推升油价。当前科威特遭受导弹/无人机攻击属于中东地缘冲突升级，虽非库存数据而是供给端物理威胁，但机制相通——海湾产油国基础设施风险上升→原油供给溢价。当前VIX 87%分位偏高，波动放大效应存在，但中东冲突历史上对油价脉冲明显，预计3日内反应2-3%。",
+      "stop_loss_price": 87.4479,
+      "take_profit": {
+        "prices": [
+          94.4532,
+          97.2553,
+          101.4584
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.8021,
+        "atr": 1.4011
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6818,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6818,
+        "log_odds": 0.762,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.27,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 216,
+            "pattern": "EIA 原油库存意外大幅减少",
+            "asset": "USO",
+            "dir_hit_rate": 1.0,
+            "n_samples": 4,
+            "log_lr": 1.609,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        216
+      ],
+      "cited_chains": [
+        {
+          "id": 216,
+          "pattern": "EIA 原油库存意外大幅减少",
+          "asset_symbol": "USO",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 2.0,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "energy_commodity"
+        }
+      ],
+      "event": {
+        "id": 2113,
+        "summary": "科威特遭遇导弹和无人机攻击，防空系统正在拦截",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "【科威特：正应对“敌方”导弹和无人机攻击】科威特军方6日发表声明说，科威特防空部队正在应对“敌方”导弹和无人机攻击。如听到爆炸声，系科威特防空系统拦截攻击所致。",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T09:02:07"
+      }
+    },
+    {
+      "id": 280,
+      "made_at": "2026-06-06T01:43:13.013374",
+      "expire_at": "2026-06-07T01:43:13.013374",
+      "verified_at": null,
+      "asset": {
+        "symbol": "TLT",
+        "name": "20+年期美债ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.08,
+      "horizon_days": 1,
+      "baseline_price": 85.05999755859375,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 85.05999755859375,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链 #357 (关税威胁→避险资金流入美债) 的机制 → 中东地缘冲击同样触发 flight-to-quality，美债作为传统避险资产短期受益。当前 10y 利率已升 21bp MoM，但事件驱动的避险需求可短暂压低收益率。幅度保守因利率整体处于高位。",
+      "stop_loss_price": 84.2905,
+      "take_profit": {
+        "prices": [
+          86.2142,
+          86.9837,
+          88.1379
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7695,
+        "atr": 0.3847
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 357,
+            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        357
+      ],
+      "cited_chains": [
+        {
+          "id": 357,
+          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 2116,
+        "summary": "巴林全国拉响防空警报，中东地缘政治紧张局势升级",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "巴林全国拉响防空警报。（新华社）",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T09:23:01"
+      }
+    },
+    {
+      "id": 279,
+      "made_at": "2026-06-06T01:43:09.192006",
+      "expire_at": "2026-06-09T01:43:09.192006",
+      "verified_at": null,
+      "asset": {
+        "symbol": "BZ=F",
+        "name": "布伦特原油期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.25,
+      "horizon_days": 3,
+      "baseline_price": 92.87000274658203,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 92.87000274658203,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链 #638 (美国制裁俄罗斯油气) 的供应冲击→油价上涨机制 → 巴林紧邻霍尔木兹海峡，防空警报暗示伊朗-以色列或胡塞冲突可能升级，海湾航道风险溢价上升。链 #638 显示供应端冲击推动 Brent 短期跳涨；本次虽非制裁而是军事紧张，但同属「中东供应风险」机制，幅度略低于制裁场景。",
+      "stop_loss_price": 90.7804,
+      "take_profit": {
+        "prices": [
+          96.0044,
+          98.0939,
+          101.2283
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.0896,
+        "atr": 1.0448
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6818,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6818,
+        "log_odds": 0.762,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.27,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 638,
+            "pattern": "美国对俄罗斯油气巨头实施一级SDN制裁",
+            "asset": "BZ=F",
+            "dir_hit_rate": 1.0,
+            "n_samples": 4,
+            "log_lr": 1.609,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        638
+      ],
+      "cited_chains": [
+        {
+          "id": 638,
+          "pattern": "美国对俄罗斯油气巨头实施一级SDN制裁",
+          "asset_symbol": "BZ=F",
+          "direction": "up",
+          "horizon_days": 3,
+          "magnitude_pct": 4.0,
+          "grade": "B",
+          "retail_edge": null,
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 2116,
+        "summary": "巴林全国拉响防空警报，中东地缘政治紧张局势升级",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "巴林全国拉响防空警报。（新华社）",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T09:23:01"
+      }
+    },
+    {
+      "id": 278,
+      "made_at": "2026-06-06T01:43:05.152444",
+      "expire_at": "2026-06-09T01:43:05.152444",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.62,
+      "horizon_days": 3,
+      "baseline_price": 4353.89990234375,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4353.89990234375,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链 #357 (美国对盟友突袭式关税威胁) 的避险机制 → 当前巴林全国防空警报标志中东地缘局势急剧升级，胡塞武装或伊朗相关冲突风险外溢至海湾核心国家。链 #357 显示避险资金流向黄金与美债；本次地缘冲突比贸易战更直接触发传统避险需求。当前 VIX 87%分位已反映部分风险，但黄金对中东冲突敏感度更高。",
+      "stop_loss_price": 4353.1304,
+      "take_profit": {
+        "prices": [
+          4355.0541,
+          4355.8236,
+          4356.9778
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7695,
+        "atr": 0.3847
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 357,
+            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        357
+      ],
+      "cited_chains": [
+        {
+          "id": 357,
+          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 2116,
+        "summary": "巴林全国拉响防空警报，中东地缘政治紧张局势升级",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "巴林全国拉响防空警报。（新华社）",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T09:23:01"
+      }
+    },
     {
       "id": 277,
       "made_at": "2026-06-04T14:41:25.340626",
@@ -121,9 +1315,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 58.584999084472656,
-      "current_pct": 0.01706926402556547,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 57.66999816894531,
+      "current_pct": -1.5450321505872484,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #638 (俄制裁→能源股走强) 的机制：油价上涨→能源股盈利预期上修。伊朗核危机推升原油，美国能源巨头(XOM/CVX)作为替代供应方受益。当前SPX处于uptrend (+10.2% vs 200d MA)，能源股beta较高，但与#638的即时制裁冲击不同，本次是预期性升温，故magnitude从4%相关性折算至1.8%。",
       "stop_loss_price": 56.6772,
       "take_profit": {
@@ -220,9 +1414,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4510.5,
-      "current_pct": 0.01773520750517602,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 4353.89990234375,
+      "current_pct": -3.454781609001257,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #357 (关税威胁→避险资产受益) 的避险逻辑：地缘政治不确定性上升→资金流向黄金。伊朗核查失控是典型的「尾部风险」催化剂，历史上中东紧张局势对黄金有明确提振。当前DXY中性、VIX低位，黄金上行阻力较小。与#357不同的是这是军事而非贸易风险，但避险传导机制一致，magnitude保守估计1.5%。",
       "stop_loss_price": 4508.9307,
       "take_profit": {
@@ -319,9 +1513,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 95.26000213623047,
-      "current_pct": -0.05245559085503654,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 92.87000274658203,
+      "current_pct": -2.560061771601329,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #638 (美国对俄罗斯油气制裁) 的机制：地缘政治冲突升级→石油供应风险溢价→原油短期上涨。当前IAEA无法核查伊朗浓缩铀，意味着伊朗核武进展透明度归零，以色列/美国军事打击预期升温，霍尔木兹海峡通航风险上升。与俄制裁不同的是本次尚未触发实际供应中断，故magnitude从4%降至2.5%。VIX低位(15.69)下市场对地缘风险反应敏感。",
       "stop_loss_price": 93.1655,
       "take_profit": {
@@ -418,9 +1612,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 67.62000274658203,
-      "current_pct": 0.22232328911367855,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 56.779998779296875,
+      "current_pct": -15.844082181706007,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #135 (小市值公司转型概念暴涨后回调) 的机制反向应用 → Quantinuum作为全球领先量子计算纯正股成功IPO且开盘溢价，验证市场对量子计算赛道的认可度提升。IonQ作为目前唯一上市的纯量子计算公司，将直接受益于行业估值锚点上移。当前VIX处于低位且大盘处于上升趋势，成长股风险偏好较高，支撑题材炒作延续。",
       "stop_loss_price": 67.0984,
       "take_profit": {
@@ -517,9 +1711,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 92.69000244140625,
-      "current_pct": 0.06477943405754243,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 90.25,
+      "current_pct": -2.5693590888346365,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #51 (中东武装冲突) 的机制 → 以黎边境冲突升级增加中东供给中断风险溢价。虽然黎巴嫩非产油国，但冲突外溢至伊朗代理人网络的担忧会推升油价。当前 DXY 中性、VIX 低位，原油对地缘风险定价空间充足，预计短期供给担忧驱动上涨。",
       "stop_loss_price": 85.5321,
       "take_profit": {
@@ -616,9 +1810,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4510.5,
-      "current_pct": -0.05761223106042533,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 4353.89990234375,
+      "current_pct": -3.5275130590428536,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #51 (中东/波斯湾/产油区爆发武装冲突或袭击) 的机制 → 以色列-黎巴嫩边境防空警报与空袭痕迹表明地区冲突升温，虽非直接波及产油区，但属于中东地缘风险扩散。链 #51 指向避险资产受益；当前 VIX 偏低(15.69)、市场处于上行趋势，避险需求释放空间较大，黄金作为传统避险标的短期受买盘支撑。",
       "stop_loss_price": 4506.0022,
       "take_profit": {
@@ -715,9 +1909,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4510.5,
-      "current_pct": 0.3850218983242256,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 4353.89990234375,
+      "current_pct": -3.1002467487220815,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链#55(美国对华加征关税或扩大科技出口管制)的机制→地缘政治紧张推动避险资产受益。当前新闻提及geopolitical fears作为BTC下跌原因,同一避险逻辑利好黄金。差异在于链#55针对贸易战而非广泛地缘风险,但避险资金流向黄金的机制一致。DXY中性不构成阻力。",
       "stop_loss_price": 4493.1915,
       "take_profit": {
@@ -815,9 +2009,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 410.9700012207031,
-      "current_pct": -0.2378956080320752,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 396.239990234375,
+      "current_pct": -3.8135748287733895,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #80 (系统性风险推升避险资产) 的机制：地缘风险事件触发避险需求。伊朗对海湾国家发动袭击是重大地缘升级,历史上中东冲突(如2020年美伊紧张、2019年沙特设施袭击)均推升黄金避险溢价。当前DXY中性、10y利率虽有上行但避险情绪可对冲,黄金有上行空间。",
       "stop_loss_price": 409.9658,
       "take_profit": {
@@ -914,9 +2108,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 85.54000091552734,
-      "current_pct": -0.12843036589827278,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 85.05999755859375,
+      "current_pct": -0.6888545905126321,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #357（关税威胁→TLT上涨0.8%/1d）的避险机制：风险事件→资金流入长债。伊朗与美军直接冲突升级属于更高级别地缘风险，长端美债避险需求增加。但注意10y利率近期已上行20bp，上涨空间受限，故幅度保守估计。",
       "stop_loss_price": 84.8805,
       "take_profit": {
@@ -1013,9 +2207,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4510.5,
-      "current_pct": 0.4096057955910229,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 4353.89990234375,
+      "current_pct": -3.0765163800469595,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #357（关税威胁→TLT上涨）的机制：地缘/贸易冲击→避险资金涌入安全资产。本次伊朗-美国军事对峙属于更高烈度的地缘风险，黄金作为传统避险资产将受益。当前VIX处于低位（15.77），避险情绪一旦升温上行空间较大；DXY中性不构成压制。",
       "stop_loss_price": 4491.3306,
       "take_profit": {
@@ -1112,9 +2306,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 92.69000244140625,
-      "current_pct": -2.789717960443169,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 90.25,
+      "current_pct": -5.348713744872563,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "本次伊朗革命卫队声称打击美军第五舰队总部及中东航空基地，科威特机场遭无人机袭击，标志中东地缘紧张急剧升级。参考链 #640（美国对俄油气制裁→XLE上涨）的机制：地缘冲突升级→供应中断担忧→油价跳涨。当前事件更直接涉及波斯湾核心产油区，霍尔木兹海峡过境风险溢价将快速计入油价。mid-vol环境下预期反应幅度适中。",
       "stop_loss_price": 92.3465,
       "take_profit": {
@@ -1472,9 +2666,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 886.7224731445312,
-      "current_pct": -13.83933808393204,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 863.6599731445312,
+      "current_pct": -16.080265009346093,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #620 (TSMC capex指引带动半导体设备与下游设计联动) 的机制延伸：Lumentum被点名为EML/CW-DFB LD市场前三厂商，直接受益于英伟达、Meta等客户的产能锁定。光通信激光器是AI数据中心800G/1.6T升级的关键卡脖子环节，产能翻倍预期将重估其估值。Lumentum弹性高于博通，幅度相应更大。",
       "stop_loss_price": 945.7889,
       "take_profit": {
@@ -1572,9 +2766,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 615.7999877929688,
-      "current_pct": -2.5956618227094874,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 569.6900024414062,
+      "current_pct": -9.889121867472397,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #620 (TSMC上调AI需求指引) 与链 #66 (英伟达营收超预期带动半导体板块) 的共振机制：AI数据中心光互联芯片产能两倍扩张，印证科技巨头资本开支强劲，从芯片到光通信全链条受益。本次新闻虽非直接财报，但第三方机构TrendForce的产能预测具有前瞻指引性质，对整体半导体板块情绪正面。",
       "stop_loss_price": 625.1469,
       "take_profit": {
@@ -1693,9 +2887,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 410.3299865722656,
-      "current_pct": -14.793284396548916,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 385.7300109863281,
+      "current_pct": -19.9015708786378,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #620 (TSMC上调全年资本开支与AI需求指引) 的机制：AI算力扩张带动上下游半导体链条联动上涨。本次新闻直接点名博通为EML/CW-DFB LD前三大厂商之首且市占率领先，2026年产能翻倍意味着英伟达、谷歌、Meta的战略锁定订单已落地，博通光通信业务将直接受益。当前市场处于uptrend+低VIX环境，AI产业链利好容易被放大。",
       "stop_loss_price": 451.2311,
       "take_profit": {
@@ -1793,9 +2987,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 229.75,
-      "current_pct": 0.6219060822309254,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 229.4499969482422,
+      "current_pct": 0.49051596733056735,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #357 的避险资产受益机制延伸 — 中东军事冲突升级历史上利好国防板块，市场预期军费支出增加和武器订单扩大。与贸易战避险不同，军事冲突直接提振国防股而非仅债券。当前市场处于uptrend且VIX低位，risk-on环境下国防股有额外beta支撑。",
       "stop_loss_price": 227.5605,
       "take_profit": {
@@ -1870,1259 +3064,6 @@
         "lang": "zh",
         "url": "https://www.toutiao.com/trending/7646223479754489897/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227646223479754489897%22%2C%22hot_board_impr_id%22%3A%22202606031213367EC1642F92DA08492A4B%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BC%8A%E6%9C%97%E7%A7%B0%E8%A2%AD%E5%87%BB%E7%BE%8E%E5%86%9B%E7%AC%AC%E4%BA%94%E8%88%B0%E9%98%9F%E6%80%BB%E9%83%A8%22%7D&rank=&style_id=40132&topic_id=7646223479754489897",
         "published_at": "2026-06-03T04:13:35.288368"
-      }
-    },
-    {
-      "id": 259,
-      "made_at": "2026-06-03T04:37:34.924180",
-      "expire_at": "2026-06-06T04:37:34.924180",
-      "verified_at": null,
-      "asset": {
-        "symbol": "CL=F",
-        "name": "WTI原油期货",
-        "class": "commodity"
-      },
-      "direction": "up",
-      "magnitude_pct": 3.6,
-      "horizon_days": 3,
-      "baseline_price": 94.87999725341797,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 92.69000244140625,
-      "current_pct": -2.3081733509776488,
-      "current_at": "2026-06-04T00:00:00-04:00",
-      "reasoning": "参考链 #357 的风险溢价机制类比 — 伊朗袭击美军第五舰队总部直接威胁波斯湾航运安全，该区域承载全球约20%原油运输。地缘风险溢价将推高油价，机制比贸易战更直接：供应中断预期而非需求担忧。当前原油处于相对低位，冲突升级提供3-5%的风险溢价空间。",
-      "stop_loss_price": 94.1105,
-      "take_profit": {
-        "prices": [
-          96.0342,
-          96.8037,
-          97.9579
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 0.7695,
-        "atr": 0.3847
-      },
-      "kelly_fraction": 0.02,
-      "resonance_posterior": 0.6316,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.6316,
-        "log_odds": 0.539,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 2.11,
-        "signal_grade": "👀 C",
-        "evidence": [
-          {
-            "link_id": 357,
-            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
-            "asset": "TLT",
-            "dir_hit_rate": 1.0,
-            "n_samples": 3,
-            "log_lr": 1.386,
-            "grade": "B"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [
-        "dual_model_confirm",
-        "regime:mid-vol · uptrend · USD-neutral"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [
-        357
-      ],
-      "cited_chains": [
-        {
-          "id": 357,
-          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
-          "asset_symbol": "TLT",
-          "direction": "up",
-          "horizon_days": 1,
-          "magnitude_pct": 0.8,
-          "grade": "B",
-          "retail_edge": "mid",
-          "macro_category": "politics_geo"
-        }
-      ],
-      "event": {
-        "id": 1846,
-        "summary": "伊朗称袭击美军第五舰队总部，地缘政治紧张局势升级",
-        "category": "geopolitics"
-      },
-      "news": {
-        "title": "伊朗称袭击美军第五舰队总部",
-        "source": "toutiao",
-        "lang": "zh",
-        "url": "https://www.toutiao.com/trending/7646223479754489897/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227646223479754489897%22%2C%22hot_board_impr_id%22%3A%22202606031213367EC1642F92DA08492A4B%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BC%8A%E6%9C%97%E7%A7%B0%E8%A2%AD%E5%87%BB%E7%BE%8E%E5%86%9B%E7%AC%AC%E4%BA%94%E8%88%B0%E9%98%9F%E6%80%BB%E9%83%A8%22%7D&rank=&style_id=40132&topic_id=7646223479754489897",
-        "published_at": "2026-06-03T04:13:35.288368"
-      }
-    },
-    {
-      "id": 258,
-      "made_at": "2026-06-02T14:22:46.424657",
-      "expire_at": "2026-06-05T14:22:46.424657",
-      "verified_at": null,
-      "asset": {
-        "symbol": "QQQ",
-        "name": "纳斯达克100ETF",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 1.4400000000000002,
-      "horizon_days": 3,
-      "baseline_price": 743.6162109375,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 736.6900024414062,
-      "current_pct": -0.9314224722672013,
-      "current_at": "2026-06-04T00:00:00-04:00",
-      "reasoning": "参考链 #34 (通胀缓解强化降息预期→风险资产上涨) 的机制。劳动力市场降温数据与通胀缓解数据共享同一传导路径：均指向Fed政策转鸽→折现率预期下行→成长股估值扩张。当前SPX +11.1% vs 200d MA处于强势uptrend，顺势做多科技股胜率更高，但magnitude保守取0.8%因单一数据催化有限。",
-      "stop_loss_price": 733.5457,
-      "take_profit": {
-        "prices": [
-          758.722,
-          768.7925,
-          783.8983
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 10.0705,
-        "atr": 5.0353
-      },
-      "kelly_fraction": 0.02,
-      "resonance_posterior": 0.72,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.72,
-        "log_odds": 0.944,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 2.4,
-        "signal_grade": "👀 C",
-        "evidence": [
-          {
-            "link_id": 34,
-            "pattern": "美国 CPI 同比低于预期 >=0.2%",
-            "asset": "QQQ",
-            "dir_hit_rate": 1.0,
-            "n_samples": 5,
-            "log_lr": 1.792,
-            "grade": "A"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [
-        "dual_model_weak",
-        "regime:mid-vol · uptrend · USD-neutral"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [
-        34
-      ],
-      "cited_chains": [
-        {
-          "id": 34,
-          "pattern": "美国 CPI 同比低于预期 >=0.2%",
-          "asset_symbol": "QQQ",
-          "direction": "up",
-          "horizon_days": 3,
-          "magnitude_pct": 1.5,
-          "grade": "A",
-          "retail_edge": "mid",
-          "macro_category": "macro_data"
-        }
-      ],
-      "event": {
-        "id": 1729,
-        "summary": "美国4月JOLTS职位空缺率4.6%，裁员和辞职数据均低于预期，劳动力市场显现降温迹象",
-        "category": "employment"
-      },
-      "news": {
-        "title": "美国4月JOLTS职位空缺率4.6%。\n\n4月裁员169.2万，预期184.2万。\n\n4月辞职率1.9%，预期2.0%。\n\n4月辞职人数297.7万，预期313.8万。",
-        "source": "wallstreetcn",
-        "lang": "zh",
-        "url": "https://wallstreetcn.com/livenews/3113132",
-        "published_at": "2026-06-02T14:02:29"
-      }
-    },
-    {
-      "id": 257,
-      "made_at": "2026-06-02T14:22:41.270273",
-      "expire_at": "2026-06-09T14:22:41.270273",
-      "verified_at": null,
-      "asset": {
-        "symbol": "TLT",
-        "name": "20+年期美债ETF",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 2.16,
-      "horizon_days": 7,
-      "baseline_price": 85.69000244140625,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 85.54000091552734,
-      "current_pct": -0.17505137309509988,
-      "current_at": "2026-06-04T00:00:00-04:00",
-      "reasoning": "参考链 #34 (CPI低于预期→降息预期强化→长久期资产上涨) 的机制。JOLTS数据全面低于预期——职位空缺率、裁员、辞职率均显示劳动力市场降温，与通胀数据低于预期有相似的政策含义：劳动力市场松弛支持Fed更早降息。当前10y利率4.45%处于高位(+0.20pp MoM)，降息预期强化将推动长端利率回落、TLT上涨。",
-      "stop_loss_price": 75.6195,
-      "take_profit": {
-        "prices": [
-          100.7958,
-          110.8663,
-          125.9721
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 10.0705,
-        "atr": 5.0353
-      },
-      "kelly_fraction": 0.02,
-      "resonance_posterior": 0.72,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.72,
-        "log_odds": 0.944,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 2.4,
-        "signal_grade": "👀 C",
-        "evidence": [
-          {
-            "link_id": 34,
-            "pattern": "美国 CPI 同比低于预期 >=0.2%",
-            "asset": "QQQ",
-            "dir_hit_rate": 1.0,
-            "n_samples": 5,
-            "log_lr": 1.792,
-            "grade": "A"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [
-        "dual_model_weak",
-        "regime:mid-vol · uptrend · USD-neutral"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [
-        34
-      ],
-      "cited_chains": [
-        {
-          "id": 34,
-          "pattern": "美国 CPI 同比低于预期 >=0.2%",
-          "asset_symbol": "QQQ",
-          "direction": "up",
-          "horizon_days": 3,
-          "magnitude_pct": 1.5,
-          "grade": "A",
-          "retail_edge": "mid",
-          "macro_category": "macro_data"
-        }
-      ],
-      "event": {
-        "id": 1729,
-        "summary": "美国4月JOLTS职位空缺率4.6%，裁员和辞职数据均低于预期，劳动力市场显现降温迹象",
-        "category": "employment"
-      },
-      "news": {
-        "title": "美国4月JOLTS职位空缺率4.6%。\n\n4月裁员169.2万，预期184.2万。\n\n4月辞职率1.9%，预期2.0%。\n\n4月辞职人数297.7万，预期313.8万。",
-        "source": "wallstreetcn",
-        "lang": "zh",
-        "url": "https://wallstreetcn.com/livenews/3113132",
-        "published_at": "2026-06-02T14:02:29"
-      }
-    },
-    {
-      "id": 256,
-      "made_at": "2026-06-02T14:21:48.138016",
-      "expire_at": "2026-06-05T14:21:48.138016",
-      "verified_at": null,
-      "asset": {
-        "symbol": "TLT",
-        "name": "20+年期美债ETF",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 1.08,
-      "horizon_days": 3,
-      "baseline_price": 85.72940063476562,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 85.54000091552734,
-      "current_pct": -0.2209273806137803,
-      "current_at": "2026-06-04T00:00:00-04:00",
-      "reasoning": "参考链 #32 (CPI超预期→TLT下跌) 的机制：10年期收益率上涨至4.46%反映市场对通胀/紧缩预期的重新定价，与CPI超预期后长端利率上行压制长久期债券的逻辑一致。当前10y较月初上行20bp，momentum延续中，TLT承压。但本次仅是日内收益率波动而非CPI数据发布，magnitude较原链下调。",
-      "stop_loss_price": 87.4126,
-      "take_profit": {
-        "prices": [
-          83.2047,
-          81.5215,
-          78.9968
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 1.6832,
-        "atr": 0.8416
-      },
-      "kelly_fraction": 0.02,
-      "resonance_posterior": 0.72,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.72,
-        "log_odds": 0.944,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 2.4,
-        "signal_grade": "👀 C",
-        "evidence": [
-          {
-            "link_id": 32,
-            "pattern": "美国 CPI 同比超预期 >=0.2%",
-            "asset": "TLT",
-            "dir_hit_rate": 1.0,
-            "n_samples": 5,
-            "log_lr": 1.792,
-            "grade": "A"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [
-        "dual_model_weak",
-        "regime:mid-vol · uptrend · USD-neutral"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [
-        32
-      ],
-      "cited_chains": [
-        {
-          "id": 32,
-          "pattern": "美国 CPI 同比超预期 >=0.2%",
-          "asset_symbol": "TLT",
-          "direction": "down",
-          "horizon_days": 3,
-          "magnitude_pct": 1.5,
-          "grade": "A",
-          "retail_edge": "mid",
-          "macro_category": "macro_data"
-        }
-      ],
-      "event": {
-        "id": 1736,
-        "summary": "美国10年期国债收益率上涨至4.46%附近，市场等待职位空缺数据",
-        "category": "employment"
-      },
-      "news": {
-        "title": "美国10年期国债收益率转涨，刷新日高、逼近4.46%，美国职位空缺数据发布前交投于4.4450%附近。",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-06-02T22:03:53"
-      }
-    },
-    {
-      "id": 255,
-      "made_at": "2026-06-02T14:20:51.421952",
-      "expire_at": "2026-06-09T14:20:51.421952",
-      "verified_at": null,
-      "asset": {
-        "symbol": "SOXX",
-        "name": "费城半导体ETF",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 1.08,
-      "horizon_days": 7,
-      "baseline_price": 592.1900024414062,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 589.6400146484375,
-      "current_pct": -0.4306029791884331,
-      "current_at": "2026-06-04T00:00:00-04:00",
-      "reasoning": "参考链 #605 (美国放松对华AI芯片出口管制) 的机制 — CHIPS Act持续拨款表明政府对本土芯片制造的长期承诺，利好半导体设备和制造相关标的。XLight作为光电子/先进封装领域公司获补贴，信号意义大于金额本身(1.5亿规模较小)。7天窗口允许市场消化政策信号并反映到更广泛半导体指数。",
-      "stop_loss_price": 585.7944,
-      "take_profit": {
-        "prices": [
-          601.7835,
-          608.1791,
-          617.7726
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 6.3957,
-        "atr": 3.1978
-      },
-      "kelly_fraction": 0.02,
-      "resonance_posterior": 0.3913,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.3913,
-        "log_odds": -0.442,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 1.3,
-        "signal_grade": "💤 D",
-        "evidence": [
-          {
-            "link_id": 605,
-            "pattern": "美国放松对华AI芯片出口管制（贸易缓和）",
-            "asset": "QQQ",
-            "dir_hit_rate": 0.6666666666666666,
-            "n_samples": 3,
-            "log_lr": 0.405,
-            "grade": "C"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [
-        "low_grade_chain",
-        "dual_model_weak",
-        "regime:mid-vol · uptrend · USD-neutral"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [
-        605
-      ],
-      "cited_chains": [
-        {
-          "id": 605,
-          "pattern": "美国放松对华AI芯片出口管制（贸易缓和）",
-          "asset_symbol": "QQQ",
-          "direction": "up",
-          "horizon_days": 3,
-          "magnitude_pct": 0.8,
-          "grade": "C",
-          "retail_edge": null,
-          "macro_category": "regulation"
-        }
-      ],
-      "event": {
-        "id": 1744,
-        "summary": "美国商务部向XLight授予1.5亿美元芯片法案激励资金",
-        "category": "regulation"
-      },
-      "news": {
-        "title": "市场消息：美国商务部向XLight授予1.5亿美元芯片法案激励资金。",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-06-02T22:08:11"
-      }
-    },
-    {
-      "id": 254,
-      "made_at": "2026-06-02T14:20:46.471991",
-      "expire_at": "2026-06-05T14:20:46.471991",
-      "verified_at": null,
-      "asset": {
-        "symbol": "SMH",
-        "name": "半导体ETF",
-        "class": "us_stock"
-      },
-      "direction": "up",
-      "magnitude_pct": 1.4400000000000002,
-      "horizon_days": 3,
-      "baseline_price": 624.47998046875,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 615.7999877929688,
-      "current_pct": -1.38995531438267,
-      "current_at": "2026-06-04T00:00:00-04:00",
-      "reasoning": "参考链 #605 (美国放松对华AI芯片出口管制) 的机制 — 该链核心逻辑是政府政策支持提振芯片板块情绪。当前XLight获得1.5亿美元CHIPS Act补贴属于同类政策利好，强化美国本土半导体产能投资预期。但本次为单一小型公司补贴而非行业性放开出口，影响范围有限，magnitude从0.8%下调。市场处于uptrend+mid-vol环境，利好顺势传导效率较高。",
-      "stop_loss_price": 615.4875,
-      "take_profit": {
-        "prices": [
-          637.9687,
-          646.9613,
-          660.45
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 8.9925,
-        "atr": 4.4963
-      },
-      "kelly_fraction": 0.02,
-      "resonance_posterior": 0.3913,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.3913,
-        "log_odds": -0.442,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 1.3,
-        "signal_grade": "💤 D",
-        "evidence": [
-          {
-            "link_id": 605,
-            "pattern": "美国放松对华AI芯片出口管制（贸易缓和）",
-            "asset": "QQQ",
-            "dir_hit_rate": 0.6666666666666666,
-            "n_samples": 3,
-            "log_lr": 0.405,
-            "grade": "C"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [
-        "low_grade_chain",
-        "dual_model_weak",
-        "regime:mid-vol · uptrend · USD-neutral"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [
-        605
-      ],
-      "cited_chains": [
-        {
-          "id": 605,
-          "pattern": "美国放松对华AI芯片出口管制（贸易缓和）",
-          "asset_symbol": "QQQ",
-          "direction": "up",
-          "horizon_days": 3,
-          "magnitude_pct": 0.8,
-          "grade": "C",
-          "retail_edge": null,
-          "macro_category": "regulation"
-        }
-      ],
-      "event": {
-        "id": 1744,
-        "summary": "美国商务部向XLight授予1.5亿美元芯片法案激励资金",
-        "category": "regulation"
-      },
-      "news": {
-        "title": "市场消息：美国商务部向XLight授予1.5亿美元芯片法案激励资金。",
-        "source": "sina_finance",
-        "lang": "zh",
-        "url": null,
-        "published_at": "2026-06-02T22:08:11"
-      }
-    },
-    {
-      "id": 253,
-      "made_at": "2026-06-02T12:29:27.728401",
-      "expire_at": "2026-06-05T12:29:27.728401",
-      "verified_at": null,
-      "asset": {
-        "symbol": "GC=F",
-        "name": "黄金期货",
-        "class": "commodity"
-      },
-      "direction": "up",
-      "magnitude_pct": 1.08,
-      "horizon_days": 3,
-      "baseline_price": 4556.60009765625,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 4510.5,
-      "current_pct": -1.011721385863162,
-      "current_at": "2026-06-04T00:00:00-04:00",
-      "reasoning": "乌克兰遭导弹袭击属于典型地缘冲突升级事件，触发避险资金流向黄金。检索链中未覆盖俄乌冲突模式，但机制类似#357(突发关税威胁→避险资产受益)的避险逻辑——突发地缘风险→市场不确定性上升→黄金作为传统避险资产获资金流入。当前VIX处于中低位(16.15)，避险空间充足。",
-      "stop_loss_price": 4555.8306,
-      "take_profit": {
-        "prices": [
-          4557.7543,
-          4558.5238,
-          4559.678
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 0.7695,
-        "atr": 0.3847
-      },
-      "kelly_fraction": 0.02,
-      "resonance_posterior": 0.6316,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.6316,
-        "log_odds": 0.539,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 2.11,
-        "signal_grade": "👀 C",
-        "evidence": [
-          {
-            "link_id": 357,
-            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
-            "asset": "TLT",
-            "dir_hit_rate": 1.0,
-            "n_samples": 3,
-            "log_lr": 1.386,
-            "grade": "B"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [
-        "dual_model_weak",
-        "regime:mid-vol · uptrend · USD-neutral"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [
-        357
-      ],
-      "cited_chains": [
-        {
-          "id": 357,
-          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
-          "asset_symbol": "TLT",
-          "direction": "up",
-          "horizon_days": 1,
-          "magnitude_pct": 0.8,
-          "grade": "B",
-          "retail_edge": "mid",
-          "macro_category": "politics_geo"
-        }
-      ],
-      "event": {
-        "id": 1687,
-        "summary": "乌克兰遭遇导弹袭击引发安全担忧",
-        "category": "geopolitics"
-      },
-      "news": {
-        "title": "乌克兰遭导弹“闪击”燃起巨大火球",
-        "source": "toutiao",
-        "lang": "zh",
-        "url": "https://www.toutiao.com/trending/7646493125921456164/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227646493125921456164%22%2C%22hot_board_impr_id%22%3A%222026060220065445068ED35CA638D18AFC%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B9%8C%E5%85%8B%E5%85%B0%E9%81%AD%E5%AF%BC%E5%BC%B9%E2%80%9C%E9%97%AA%E5%87%BB%E2%80%9D%E7%87%83%E8%B5%B7%E5%B7%A8%E5%A4%A7%E7%81%AB%E7%90%83%22%7D&rank=&style_id=40132&topic_id=7646493125921456164",
-        "published_at": "2026-06-02T12:06:54.794979"
-      }
-    },
-    {
-      "id": 252,
-      "made_at": "2026-06-01T22:21:03.367503",
-      "expire_at": "2026-06-04T22:21:03.367503",
-      "verified_at": null,
-      "asset": {
-        "symbol": "SPY",
-        "name": "标普500ETF",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 4.5,
-      "horizon_days": 3,
-      "baseline_price": 758.5399780273438,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 754.0499877929688,
-      "current_pct": -0.591925325551285,
-      "current_at": "2026-06-04T00:00:00-04:00",
-      "reasoning": "参考链 #637 (霍尔木兹海峡通航受阻→SPY下跌) 的机制：油价飙升推高通胀预期、企业成本上升、风险偏好回落→美股承压。当前 SPX 较 200d MA 高出 11%，处于 uptrend 但估值偏高，地缘黑天鹅易触发获利回吐；链内 magnitude 1% 基于威胁，彻底封锁升级后上调至 2.5%。",
-      "stop_loss_price": 792.6743,
-      "take_profit": {
-        "prices": [
-          707.3385,
-          673.2042,
-          622.0028
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 34.1343,
-        "atr": 17.0671
-      },
-      "kelly_fraction": 0.02,
-      "resonance_posterior": 0.4615,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.4615,
-        "log_odds": -0.154,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 1.54,
-        "signal_grade": "👀 C",
-        "evidence": [
-          {
-            "link_id": 637,
-            "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
-            "asset": "SPY",
-            "dir_hit_rate": 0.75,
-            "n_samples": 4,
-            "log_lr": 0.693,
-            "grade": "C"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [
-        "low_grade_chain",
-        "dual_model_weak",
-        "regime:mid-vol · uptrend · USD-neutral"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [
-        637
-      ],
-      "cited_chains": [
-        {
-          "id": 637,
-          "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
-          "asset_symbol": "SPY",
-          "direction": "down",
-          "horizon_days": 3,
-          "magnitude_pct": 1.0,
-          "grade": "C",
-          "retail_edge": null,
-          "macro_category": "politics_geo"
-        }
-      ],
-      "event": {
-        "id": 1607,
-        "summary": "伊朗宣布彻底封锁霍尔木兹海峡",
-        "category": "geopolitics"
-      },
-      "news": {
-        "title": "伊朗：彻底封锁霍尔木兹海峡",
-        "source": "toutiao",
-        "lang": "zh",
-        "url": "https://www.toutiao.com/trending/7646419297488604708/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%225%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227646419297488604708%22%2C%22hot_board_impr_id%22%3A%222026060206000222ECFA55545B72CA7209%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BC%8A%E6%9C%97%EF%BC%9A%E5%BD%BB%E5%BA%95%E5%B0%81%E9%94%81%E9%9C%8D%E5%B0%94%E6%9C%A8%E5%85%B9%E6%B5%B7%E5%B3%A1%22%7D&rank=&style_id=40132&topic_id=7646419297488604708",
-        "published_at": "2026-06-01T22:00:02.515327"
-      }
-    },
-    {
-      "id": 251,
-      "made_at": "2026-06-01T22:20:57.456315",
-      "expire_at": "2026-06-08T22:20:57.456315",
-      "verified_at": null,
-      "asset": {
-        "symbol": "GC=F",
-        "name": "黄金期货",
-        "class": "commodity"
-      },
-      "direction": "up",
-      "magnitude_pct": 2.7,
-      "horizon_days": 7,
-      "baseline_price": 4511.39990234375,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 4510.5,
-      "current_pct": -0.01994729714123736,
-      "current_at": "2026-06-04T00:00:00-04:00",
-      "reasoning": "参考链 #635 (霍尔木兹海峡通航受阻) 的机制：地缘冲突升级→避险资金涌入黄金。彻底封锁声明意味着中东局势进入高危阶段，黄金作为传统避险资产受益；链内 magnitude 1.5% 基于威胁情景，实际封锁宣布后上调至 3%。当前 VIX 16 处于中低分位，避险需求尚未充分定价。",
-      "stop_loss_price": 4389.5921,
-      "take_profit": {
-        "prices": [
-          4694.1116,
-          4815.9194,
-          4998.6311
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 121.8078,
-        "atr": 60.9039
-      },
-      "kelly_fraction": 0.0,
-      "resonance_posterior": 0.3,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.3,
-        "log_odds": -0.847,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 1.0,
-        "signal_grade": "💤 D",
-        "evidence": [
-          {
-            "link_id": 635,
-            "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
-            "asset": "GC=F",
-            "dir_hit_rate": 0.5,
-            "n_samples": 4,
-            "log_lr": 0.0,
-            "grade": "C"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [
-        "low_grade_chain",
-        "dual_model_weak",
-        "regime:mid-vol · uptrend · USD-neutral"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [
-        635
-      ],
-      "cited_chains": [
-        {
-          "id": 635,
-          "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
-          "asset_symbol": "GC=F",
-          "direction": "up",
-          "horizon_days": 7,
-          "magnitude_pct": 1.5,
-          "grade": "C",
-          "retail_edge": null,
-          "macro_category": "politics_geo"
-        }
-      ],
-      "event": {
-        "id": 1607,
-        "summary": "伊朗宣布彻底封锁霍尔木兹海峡",
-        "category": "geopolitics"
-      },
-      "news": {
-        "title": "伊朗：彻底封锁霍尔木兹海峡",
-        "source": "toutiao",
-        "lang": "zh",
-        "url": "https://www.toutiao.com/trending/7646419297488604708/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%225%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227646419297488604708%22%2C%22hot_board_impr_id%22%3A%222026060206000222ECFA55545B72CA7209%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BC%8A%E6%9C%97%EF%BC%9A%E5%BD%BB%E5%BA%95%E5%B0%81%E9%94%81%E9%9C%8D%E5%B0%94%E6%9C%A8%E5%85%B9%E6%B5%B7%E5%B3%A1%22%7D&rank=&style_id=40132&topic_id=7646419297488604708",
-        "published_at": "2026-06-01T22:00:02.515327"
-      }
-    },
-    {
-      "id": 250,
-      "made_at": "2026-06-01T22:20:53.430614",
-      "expire_at": "2026-06-04T22:20:53.430614",
-      "verified_at": null,
-      "asset": {
-        "symbol": "CL=F",
-        "name": "WTI原油期货",
-        "class": "commodity"
-      },
-      "direction": "up",
-      "magnitude_pct": 7.2,
-      "horizon_days": 3,
-      "baseline_price": 92.56999969482422,
-      "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 92.69000244140625,
-      "current_pct": 0.12963459757766518,
-      "current_at": "2026-06-04T00:00:00-04:00",
-      "reasoning": "参考链 #635/636/637 (霍尔木兹海峡通航受阻或封锁威胁) 的机制：海峡承载全球约20%石油供应，封锁威胁→供应中断风险定价→油价跳涨。本次新闻是伊朗宣布「彻底封锁」而非仅威胁或议案，严重程度显著升级，原油作为直接受冲击标的应优先于能源股；考虑到事件烈度，magnitude 上调至 8%。",
-      "stop_loss_price": 85.905,
-      "take_profit": {
-        "prices": [
-          102.5676,
-          109.2326,
-          119.2302
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 6.665,
-        "atr": 3.3325
-      },
-      "kelly_fraction": 0.02,
-      "resonance_posterior": 0.3506,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.3506,
-        "log_odds": -0.616,
-        "effective_n": 1.0,
-        "r_bar": 1.0,
-        "uplift": 1.17,
-        "signal_grade": "💤 D",
-        "evidence": [
-          {
-            "link_id": 635,
-            "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
-            "asset": "GC=F",
-            "dir_hit_rate": 0.5,
-            "n_samples": 4,
-            "log_lr": 0.0,
-            "grade": "C"
-          },
-          {
-            "link_id": 636,
-            "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
-            "asset": "XLE",
-            "dir_hit_rate": 0.5,
-            "n_samples": 4,
-            "log_lr": 0.0,
-            "grade": "C"
-          },
-          {
-            "link_id": 637,
-            "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
-            "asset": "SPY",
-            "dir_hit_rate": 0.75,
-            "n_samples": 4,
-            "log_lr": 0.693,
-            "grade": "C"
-          }
-        ],
-        "note": "⚠ 证据同类别重叠 r̄=1.00，已折扣 (n=3 → n_eff=1.0)"
-      },
-      "tags": [
-        "low_grade_chain",
-        "dual_model_weak",
-        "regime:mid-vol · uptrend · USD-neutral"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [
-        635,
-        636,
-        637
-      ],
-      "cited_chains": [
-        {
-          "id": 635,
-          "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
-          "asset_symbol": "GC=F",
-          "direction": "up",
-          "horizon_days": 7,
-          "magnitude_pct": 1.5,
-          "grade": "C",
-          "retail_edge": null,
-          "macro_category": "politics_geo"
-        },
-        {
-          "id": 636,
-          "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
-          "asset_symbol": "XLE",
-          "direction": "up",
-          "horizon_days": 3,
-          "magnitude_pct": 2.0,
-          "grade": "C",
-          "retail_edge": null,
-          "macro_category": "politics_geo"
-        },
-        {
-          "id": 637,
-          "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
-          "asset_symbol": "SPY",
-          "direction": "down",
-          "horizon_days": 3,
-          "magnitude_pct": 1.0,
-          "grade": "C",
-          "retail_edge": null,
-          "macro_category": "politics_geo"
-        }
-      ],
-      "event": {
-        "id": 1607,
-        "summary": "伊朗宣布彻底封锁霍尔木兹海峡",
-        "category": "geopolitics"
-      },
-      "news": {
-        "title": "伊朗：彻底封锁霍尔木兹海峡",
-        "source": "toutiao",
-        "lang": "zh",
-        "url": "https://www.toutiao.com/trending/7646419297488604708/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%225%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227646419297488604708%22%2C%22hot_board_impr_id%22%3A%222026060206000222ECFA55545B72CA7209%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BC%8A%E6%9C%97%EF%BC%9A%E5%BD%BB%E5%BA%95%E5%B0%81%E9%94%81%E9%9C%8D%E5%B0%94%E6%9C%A8%E5%85%B9%E6%B5%B7%E5%B3%A1%22%7D&rank=&style_id=40132&topic_id=7646419297488604708",
-        "published_at": "2026-06-01T22:00:02.515327"
-      }
-    },
-    {
-      "id": 249,
-      "made_at": "2026-05-12T14:52:56.332340",
-      "expire_at": "2026-05-15T14:52:56.332340",
-      "verified_at": "2026-06-01T22:22:51.715245",
-      "asset": {
-        "symbol": "QQQ",
-        "name": "纳斯达克100ETF",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 1.8,
-      "horizon_days": 3,
-      "baseline_price": 711.22998046875,
-      "baseline_source": "event_time",
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": false,
-        "strict_hit": false,
-        "mag_err_rel": 1.4613080805965737,
-        "mag_err_bucket": ">100%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": 4.430354545073833,
-      "actual_direction": "up",
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "参考链 #31 (美国 CPI 同比超预期 >=0.2%) 的机制——紧缩预期压制成长股估值。高通胀(+0.9%MoM)叠加弱就业(11.5万低于预期)呈类滞胀信号，对高久期科技股尤为不利。但该链历史支撑率偏低(2:3)且当前SPX处上升趋势(+8.9% vs 200dMA)，下调幅度至1.0%以反映不确定性。",
-      "stop_loss_price": 717.9668,
-      "take_profit": {
-        "prices": [
-          701.1247,
-          694.3879,
-          684.2826
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 6.7368,
-        "atr": 3.3684
-      },
-      "kelly_fraction": 0.02,
-      "resonance_posterior": 0.3636,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.3636,
-        "log_odds": -0.56,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 1.21,
-        "signal_grade": "💤 D",
-        "evidence": [
-          {
-            "link_id": 31,
-            "pattern": "美国 CPI 同比超预期 >=0.2%",
-            "asset": "QQQ",
-            "dir_hit_rate": 0.6,
-            "n_samples": 5,
-            "log_lr": 0.288,
-            "grade": "C"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [
-        "low_grade_chain",
-        "dual_model_weak",
-        "regime:mid-vol · uptrend · USD-weak"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [
-        31
-      ],
-      "cited_chains": [
-        {
-          "id": 31,
-          "pattern": "美国 CPI 同比超预期 >=0.2%",
-          "asset_symbol": "QQQ",
-          "direction": "down",
-          "horizon_days": 3,
-          "magnitude_pct": 1.3,
-          "grade": "C",
-          "retail_edge": "mid",
-          "macro_category": "macro_data"
-        }
-      ],
-      "event": {
-        "id": 1204,
-        "summary": "美国4月失业率4.3%，新增非农就业11.5万人低于预期",
-        "category": "employment"
-      },
-      "news": {
-        "title": "Major Economic Indicators Latest Numbers",
-        "source": "bls_press",
-        "lang": "en",
-        "url": "https://www.bls.gov/bls/",
-        "published_at": "2026-05-08T14:00:13"
-      }
-    },
-    {
-      "id": 248,
-      "made_at": "2026-05-12T14:49:37.511324",
-      "expire_at": "2026-05-15T14:49:37.511324",
-      "verified_at": "2026-06-01T22:22:51.715245",
-      "asset": {
-        "symbol": "SPY",
-        "name": "标普500ETF",
-        "class": "us_stock"
-      },
-      "direction": "down",
-      "magnitude_pct": 2.7,
-      "horizon_days": 3,
-      "baseline_price": 734.0599975585938,
-      "baseline_source": "event_time",
-      "status": "verified",
-      "hit": false,
-      "hit_breakdown": {
-        "dir_hit": false,
-        "mag_hit": true,
-        "strict_hit": false,
-        "mag_err_rel": 0.2351387438390764,
-        "mag_err_bucket": "<=25%",
-        "tol_used": 0.95,
-        "asset_class": "us_stock"
-      },
-      "actual_magnitude_pct": 3.3348746083655065,
-      "actual_direction": "up",
-      "current_price": null,
-      "current_pct": null,
-      "current_at": null,
-      "reasoning": "参考链 #637 (霍尔木兹海峡通航受阻或封锁威胁) 的机制：能源供应中断推高通胀预期、压制风险偏好，标普承压。当前市场处于 uptrend（SPX +8.9% vs 200d MA），部分缓冲下行压力，但 VIX 69% 分位显示市场已偏紧张，magnitude 小幅上调至 1.5%。",
-      "stop_loss_price": 753.8796,
-      "take_profit": {
-        "prices": [
-          704.3306,
-          684.5109,
-          654.7815
-        ],
-        "r_multiples": [
-          1.5,
-          2.5,
-          4.0
-        ],
-        "R": 19.8196,
-        "atr": 9.9098
-      },
-      "kelly_fraction": 0.02,
-      "resonance_posterior": 0.4615,
-      "resonance": {
-        "prior": 0.3,
-        "posterior": 0.4615,
-        "log_odds": -0.154,
-        "effective_n": 1.0,
-        "r_bar": 0.0,
-        "uplift": 1.54,
-        "signal_grade": "👀 C",
-        "evidence": [
-          {
-            "link_id": 637,
-            "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
-            "asset": "SPY",
-            "dir_hit_rate": 0.75,
-            "n_samples": 4,
-            "log_lr": 0.693,
-            "grade": "C"
-          }
-        ],
-        "note": ""
-      },
-      "tags": [
-        "low_grade_chain",
-        "dual_model_weak",
-        "regime:mid-vol · uptrend · USD-weak"
-      ],
-      "retired_at": null,
-      "retired_reason": null,
-      "strategy_type": "spot",
-      "strategy_legs": null,
-      "cited_link_ids": [
-        637
-      ],
-      "cited_chains": [
-        {
-          "id": 637,
-          "pattern": "霍尔木兹海峡通航受阻或封锁威胁",
-          "asset_symbol": "SPY",
-          "direction": "down",
-          "horizon_days": 3,
-          "magnitude_pct": 1.0,
-          "grade": "C",
-          "retail_edge": null,
-          "macro_category": "politics_geo"
-        }
-      ],
-      "event": {
-        "id": 1209,
-        "summary": "伊朗战争导致霍尔木兹海峡实际关闭，严重扰乱全球能源和石化产品供应",
-        "category": "geopolitics"
-      },
-      "news": {
-        "title": "Snack giant switches to black and white packaging as Iran war hits ink supplies",
-        "source": "bbc",
-        "lang": "en",
-        "url": "https://www.bbc.com/news/articles/c78k405j8pdo?at_medium=RSS&at_campaign=rss",
-        "published_at": "2026-05-12T07:46:47"
       }
     }
   ],
@@ -20014,419 +19955,246 @@
       ]
     },
     {
-      "id": 357,
-      "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+      "id": 32,
+      "pattern": "美国 CPI 同比超预期 >=0.2%",
       "asset_symbol": "TLT",
       "asset_name": "20+年期美债ETF",
       "asset_class": "us_stock",
-      "macro_category": "politics_geo",
-      "direction": "up",
-      "magnitude_pct": 0.8,
+      "macro_category": "macro_data",
+      "direction": "down",
+      "magnitude_pct": 1.5,
       "magnitude_pct_stddev": 0.0,
-      "horizon_days": 1,
-      "confidence": 0.7237316897606563,
-      "grade": "B",
+      "horizon_days": 3,
+      "confidence": 0.5925975829607492,
+      "grade": "A",
       "retail_edge": "mid",
-      "support_count": 4,
-      "refute_count": 2,
-      "source": "researched",
-      "rationale": "总统推特/声明突发威胁对盟友（EU/加墨/英国）加征 10-25% 关税，触发贸易战担忧→跨国公司盈利预期下修、全球供应链承压→美股风险资产抛售、避险资金流向美债与黄金、美元短线走强。",
+      "support_count": 5,
+      "refute_count": 1,
+      "source": "seed",
+      "rationale": "通胀粘性强化紧缩预期，长久期资产与黄金承压，美元走强",
       "explanation": {
-        "tldr": "美国突然威胁对盟友加征关税 → 风险资产抛售 → 长期美债避险吸金",
+        "tldr": "CPI超预期0.2%→紧缩预期升温→长债收益率上行→TLT下跌1.5%",
         "preconditions": [
           {
-            "condition": "美股处于相对高位或估值未极度悲观",
-            "why_matters": "若市场已处于恐慌底部，关税新闻难以引发新一轮抛售，避险需求边际增量有限"
+            "condition": "Fed处于观望或紧缩周期，尚未明确转向宽松",
+            "why_matters": "若Fed已宣布降息周期，同样CPI数据市场会解读为'放缓降息'而非'重启加息'，债券反应会弱化甚至反向"
           },
           {
-            "condition": "美债收益率不在极端低位 (如 10Y > 1.5%)",
-            "why_matters": "若已处于零利率环境，避险 premium 已被 priced in，TLT 上行空间受限"
+            "condition": "长端收益率未处于极端高位（如10年期<5%）",
+            "why_matters": "收益率已在周期高位时，进一步上行空间受限，TLT下跌幅度会被压缩"
           },
           {
-            "condition": "Fed 政策立场中性或偏鸽，非处于激进加息周期",
-            "why_matters": "若 Fed 正快速加息，收益率上行压力会抵消甚至压倒避险买盘，TLT 可能反跌"
-          },
-          {
-            "condition": "不存在比关税更大的系统性危机 (疫情/战争/金融危机)",
-            "why_matters": "更大危机会主导资金流向，关税新闻被边缘化，甚至触发流动性挤兑导致美债也被抛售"
+            "condition": "市场对通胀预期处于敏感状态，而非已完全priced in高通胀",
+            "why_matters": "若市场已长期预期高通胀（如连续多月超预期），边际冲击会钝化"
           }
         ],
-        "regime_context": "适用于贸易摩擦主题尚未完全消化、美股波动率低于历史峰值 (VIX < 30) 的环境。若市场已处于贸易战高潮期或持续恐慌中，边际新闻效应减弱。零利率/QE 环境下避险流动减弱，紧缩周期中美债可能因利率预期反向走。",
+        "regime_context": "适用于Fed仍有紧缩空间且通胀是首要政策目标的环境。若经济已进入衰退或Fed明确转向宽松，CPI超预期可能被解读为'经济韧性'而利好风险资产，债券避险属性反而支撑价格。",
         "causal_chain": [
           {
             "step": 1,
-            "trigger": "总统通过推特/声明突发威胁对盟友 (EU/加墨/英国) 加征 10-25% 关税",
-            "mechanism": "政策不确定性冲击，tail risk 重估",
-            "assumption": "市场未提前完全 price in，新闻具备意外性 (surprise factor)",
+            "trigger": "CPI同比公布值比预期高>=0.2个百分点",
+            "mechanism": "市场重估通胀粘性，原有'通胀见顶'叙事受挑战",
+            "assumption": "超预期幅度足够大（0.2%约等于2-3个sigma），且非单一波动项驱动",
             "confidence": "high"
           },
           {
             "step": 2,
-            "trigger": "关税威胁公告后数小时内",
-            "mechanism": "跨国企业盈利预期下修 + 全球供应链成本预期上升，分析师下调 EPS 指引",
-            "assumption": "企业无法短期内完全转嫁成本给消费者，且供应链调整需时间",
+            "trigger": "通胀粘性预期上修",
+            "mechanism": "Fed政策路径重新定价：加息概率上升或降息预期后推",
+            "assumption": "Fed明确以通胀为首要目标（而非增长/就业），且市场信任Fed的reaction function",
             "confidence": "high"
           },
           {
             "step": 3,
-            "trigger": "盈利预期下修触发",
-            "mechanism": "美股风险资产抛售 (SPX/IXIC 承压)，P/E 压缩 + 情绪性卖出",
-            "assumption": "市场流动性充足，允许机构快速减仓，无流动性枯竭",
+            "trigger": "Fed紧缩预期升温",
+            "mechanism": "长端利率通过期限溢价和短期利率预期路径双重推升",
+            "assumption": "长端尚未完全priced in紧缩路径，存在重新定价空间",
             "confidence": "medium"
           },
           {
             "step": 4,
-            "trigger": "股市下跌开始",
-            "mechanism": "避险资金 flight to quality，机构再平衡 (stock → bonds)，股债负相关放大",
-            "assumption": "美债市场流动性正常，bid-ask spread 未异常扩大",
-            "confidence": "medium"
-          },
-          {
-            "step": 5,
-            "trigger": "避险买盘进入美债市场",
-            "mechanism": "TLT (20+年期美债) 久期长，对利率下行 (避险压低 yield) 更敏感，价格上涨",
-            "assumption": "实际利率预期未因通胀预期上升 (关税→输入型通胀) 而完全抵消",
-            "confidence": "medium"
+            "trigger": "10年期及以上收益率上行15-20bp",
+            "mechanism": "久期效应：TLT持有20+年期债券，修正久期约17-18，收益率每上行1bp价格下跌约0.17-0.18%",
+            "assumption": "无大规模避险买盘对冲（如地缘风险爆发），市场按正常利率敏感度定价",
+            "confidence": "high"
           }
         ],
-        "asset_logic": "选择 TLT 而非短债 (SHY/IEF) 是因为长久期对避险情绪和利率下行更敏感，若市场预期关税拖累增长 → Fed 潜在降息概率上升，20+年期美债受益最多。相比黄金，TLT 更直接受益于美国国内避险需求；黄金还受美元走强 (关税威胁→美元避险) 对冲，净效应更复杂。相比 SPY/QQQ 做空，TLT 多头更纯粹捕捉避险流。",
-        "horizon_logic": "1 天窗口捕捉的是即时避险反应 (intraday/T+1 收盘)，这是市场对'意外政策冲击'的膝跳反应期。超过 1 天后，变量增多：白宫可能澄清/软化立场、贸易对话启动、企业游说施压，方向可能反转 (威胁未兑现 → mean revert)。短于 1 天 (盘中) 噪音大，难以稳定观测。",
+        "asset_logic": "TLT是追踪20+年期美债的主流ETF，久期约17-18年，对长端利率敏感度最高。CPI超预期主要冲击长端（通胀预期+政策路径重定价），短端国债受影响较小。1.5%跌幅对应15-20bp收益率上行，符合历史久期弹性。相比黄金（受实际利率和避险情绪双重影响），TLT更纯粹地反映名义利率预期。",
+        "horizon_logic": "3天窗口涵盖CPI公布当日+后续2个交易日，足够市场消化数据并调整Fed政策预期曲线。更短（1天）只捕捉初始反应，可能受日内噪音干扰；更长（5天+）则混入下周其他数据（PPI、零售）和Fed官员讲话，归因困难。",
         "failure_conditions": [
-          "威胁发出后数小时内白宫/财政部澄清'不会立即执行'或'仅是谈判策略' → 市场迅速反转，TLT 回吐涨幅",
-          "同一窗口内 Fed 意外鹰派言论 (如 FOMC 委员发言强调通胀风险) 或加息信号 → 美债收益率上行主导，TLT 下跌",
-          "VIX 已 >35 或美元流动性危机 (如 repo 利率飙升) → 所有资产抛售 (cash is king)，包括美债，TLT 也跌",
-          "关税威胁已在此前一周内反复发布 (市场脱敏) → 边际反应钝化，避险流减弱",
-          "同一天出现更大新闻 (如地缘冲突升级/重大恐袭) → 关税新闻被淹没，主导资金流向由其他事件决定"
+          "同一窗口内Fed官员发表明确鸽派言论，如'容忍通胀超调'或'经济软着陆优先级更高'",
+          "同期公布的其他宏观数据（就业、GDP、ISM）大幅走弱，衰退预期压倒通胀担忧，避险买盘涌入长债",
+          "CPI超预期主要由单一波动项（如能源、二手车）驱动，核心CPI和超级核心CPI符合或低于预期",
+          "长债收益率已处于周期极端高位（如10年期>5.5%），技术性超卖或实际利率吸引力触发买盘",
+          "同一窗口内发生重大地缘事件（战争、金融系统风险），避险情绪主导市场"
         ],
         "evidence_quality": {
-          "sample_size_assessment": "2 支持 / 1 反驳，共 3 个历史实例，样本量远不足以建立统计显著性 (通常需 n≥20)。置信度 0.6 意味着'有初步迹象但未验证'，这是探索性假设而非已证实的规律。",
-          "selection_bias_risk": "medium - 可能因后视偏差选取'成功'案例 (TLT 涨的实例更容易被记住)，反驳案例 (TLT 未涨或下跌) 可能被遗漏或归因于'特殊情况'。需系统化搜索所有关税威胁事件，而非只看确认案例。",
-          "regime_diversity": "未知 3 个样本是否跨越不同宏观环境 (Fed QE vs 紧缩周期、牛市 vs 熊市、VIX 高低)。若样本集中在 2018-2019 贸易战初期，泛化能力存疑。"
+          "sample_size_assessment": "5次历史实例（4次支持，1次反驳）对统计显著性而言是边缘的。这是'有迹象'级别的假设，而非'已验证'的稳健规律。需至少15-20次跨周期样本才能达到统计置信。",
+          "selection_bias_risk": "medium — 需警惕样本是否由'符合直觉'的案例后视筛选而来。理想情况应包含所有CPI超预期>=0.2%的事件，而非只挑选TLT确实下跌的案例。",
+          "regime_diversity": "未知 — 需检查5次实例是否跨越不同政策周期（如2021-2022紧缩期 vs 2023-2024观望期）。若全部集中在某一阶段，泛化能力存疑。"
         },
         "related_chains": [],
         "historical_examples": []
       },
       "failure_conditions": [
-        "该预测会失败如果：(1)威胁发布后6小时内被白宫或财政部否认，市场视为'虚惊一场'",
-        "(2)同期美联储意外释放鹰派信号（如会议纪要显示加息倾向），压制国债需求",
-        "(3)美股在关税消息发布前已处于超卖状态，出现'利空出尽'式反弹，避险需求不足",
-        "(4)该事件与其他重大利空（如美国就业数据崩盘）重叠，市场转向流动性抛售而非避险配置。当前证据显示支持案例仅1次、反驳2次，暗示这条路径在实际市场中稳定性较低，可能因'推特威胁'的高频噪音导致市场脱敏。"
+        "失效场景包括：(1) 同期公布的其他数据强烈反向（如失业率暴增引发衰退恐慌，避险需求推升债券）",
+        "(2) 美联储官员迅速发声淡化数据重要性",
+        "(3) 金融系统出现流动性危机（如2023年3月银行业风波），TLT反而因避险需求上涨",
+        "(4) 市场此前已过度定价紧缩预期，超预期CPI反而触发'利空出尽'的技术性反弹。"
       ],
       "historical_instances": [
         {
-          "event_date": "2026-01-20",
-          "event_note": "Trump threatens 10% tariffs on 8 European countries (UK/Denmark/Norway/Sweden/France/Germany/Netherlands/Finland) over Greenland",
-          "baseline_price": 86.65,
-          "end_price": 87.31,
-          "actual_pct": 0.76,
-          "actual_direction": "up",
-          "dir_hit": true,
-          "strict_hit": true,
-          "mag_err_bucket": "<=10%",
-          "skipped_reason": null,
-          "price_path": [
-            {
-              "date": "2026-01-12",
-              "close": 87.67
-            },
-            {
-              "date": "2026-01-13",
-              "close": 87.82
-            },
-            {
-              "date": "2026-01-14",
-              "close": 88.33
-            },
-            {
-              "date": "2026-01-15",
-              "close": 88.31
-            },
-            {
-              "date": "2026-01-16",
-              "close": 87.8
-            },
-            {
-              "date": "2026-01-20",
-              "close": 86.65
-            },
-            {
-              "date": "2026-01-21",
-              "close": 87.31
-            },
-            {
-              "date": "2026-01-22",
-              "close": 87.69
-            },
-            {
-              "date": "2026-01-23",
-              "close": 87.93
-            },
-            {
-              "date": "2026-01-26",
-              "close": 88.35
-            },
-            {
-              "date": "2026-01-27",
-              "close": 87.8
-            },
-            {
-              "date": "2026-01-28",
-              "close": 87.6
-            },
-            {
-              "date": "2026-01-29",
-              "close": 87.62
-            },
-            {
-              "date": "2026-01-30",
-              "close": 87.13
-            },
-            {
-              "date": "2026-02-02",
-              "close": 86.55
-            },
-            {
-              "date": "2026-02-03",
-              "close": 86.76
-            },
-            {
-              "date": "2026-02-04",
-              "close": 86.54
-            },
-            {
-              "date": "2026-02-05",
-              "close": 87.48
-            },
-            {
-              "date": "2026-02-06",
-              "close": 87.54
-            },
-            {
-              "date": "2026-02-09",
-              "close": 87.52
-            },
-            {
-              "date": "2026-02-10",
-              "close": 88.53
-            },
-            {
-              "date": "2026-02-11",
-              "close": 88.06
-            },
-            {
-              "date": "2026-02-12",
-              "close": 89.23
-            },
-            {
-              "date": "2026-02-13",
-              "close": 89.72
-            },
-            {
-              "date": "2026-02-17",
-              "close": 89.87
-            },
-            {
-              "date": "2026-02-18",
-              "close": 89.53
-            },
-            {
-              "date": "2026-02-19",
-              "close": 89.62
-            },
-            {
-              "date": "2026-02-20",
-              "close": 89.41
-            },
-            {
-              "date": "2026-02-23",
-              "close": 89.74
-            },
-            {
-              "date": "2026-02-24",
-              "close": 89.9
-            },
-            {
-              "date": "2026-02-25",
-              "close": 89.91
-            },
-            {
-              "date": "2026-02-26",
-              "close": 90.27
-            }
-          ],
-          "turning_points": {
-            "turning_points": [
-              {
-                "date": "2026-02-26",
-                "type": "peak",
-                "description": "事件后第 37 天录得相对基准 +4.18%，为窗口内最大升幅；印证预测方向。",
-                "days_after_event": 37
-              }
-            ],
-            "time_to_peak_impact_days": 37,
-            "narrative": "事件后 1 天累计 +0.76%，峰值出现在事件后第 37 天 (+4.18%)，第 6 天起回吐。",
-            "method": "heuristic"
-          },
-          "data_source_name": null,
-          "data_source_url": null,
-          "user_provided": false
-        },
-        {
-          "event_date": "2025-04-02",
-          "event_note": "Liberation Day: Trump announces 10% baseline + reciprocal tariffs on 57 countries",
-          "baseline_price": 91.43,
-          "end_price": 91.85,
-          "actual_pct": 0.46,
-          "actual_direction": "up",
+          "event_date": "2024-01-11",
+          "event_note": "Dec 2023 CPI 3.4% vs 3.2% exp, core 3.9% vs 3.8% exp (+0.2pp surprise)",
+          "baseline_price": 96.71,
+          "end_price": 94.82,
+          "actual_pct": -1.95,
+          "actual_direction": "down",
           "dir_hit": true,
           "strict_hit": true,
           "mag_err_bucket": "<=50%",
           "skipped_reason": null,
           "price_path": [
             {
-              "date": "2025-03-25",
-              "close": 89.76
+              "date": "2024-01-03",
+              "close": 98.72
             },
             {
-              "date": "2025-03-26",
-              "close": 89.17
+              "date": "2024-01-04",
+              "close": 97.22
             },
             {
-              "date": "2025-03-27",
-              "close": 88.91
+              "date": "2024-01-05",
+              "close": 96.29
             },
             {
-              "date": "2025-03-28",
-              "close": 90.14
+              "date": "2024-01-08",
+              "close": 97.24
             },
             {
-              "date": "2025-03-31",
-              "close": 91.03
+              "date": "2024-01-09",
+              "close": 96.62
             },
             {
-              "date": "2025-04-01",
-              "close": 91.49
+              "date": "2024-01-10",
+              "close": 96.17
             },
             {
-              "date": "2025-04-02",
-              "close": 91.43
+              "date": "2024-01-11",
+              "close": 96.71
             },
             {
-              "date": "2025-04-03",
-              "close": 91.85
+              "date": "2024-01-12",
+              "close": 96.52
             },
             {
-              "date": "2025-04-04",
-              "close": 92.85
+              "date": "2024-01-16",
+              "close": 94.82
             },
             {
-              "date": "2025-04-07",
-              "close": 90.05
+              "date": "2024-01-17",
+              "close": 94.67
             },
             {
-              "date": "2025-04-08",
-              "close": 88.35
+              "date": "2024-01-18",
+              "close": 93.79
             },
             {
-              "date": "2025-04-09",
-              "close": 88.87
+              "date": "2024-01-19",
+              "close": 94.09
             },
             {
-              "date": "2025-04-10",
-              "close": 86.42
+              "date": "2024-01-22",
+              "close": 94.65
             },
             {
-              "date": "2025-04-11",
-              "close": 86.89
+              "date": "2024-01-23",
+              "close": 93.9
             },
             {
-              "date": "2025-04-14",
-              "close": 87.51
+              "date": "2024-01-24",
+              "close": 93.35
             },
             {
-              "date": "2025-04-15",
-              "close": 87.82
+              "date": "2024-01-25",
+              "close": 93.96
             },
             {
-              "date": "2025-04-16",
-              "close": 88.31
+              "date": "2024-01-26",
+              "close": 93.78
             },
             {
-              "date": "2025-04-17",
-              "close": 87.53
+              "date": "2024-01-29",
+              "close": 94.86
             },
             {
-              "date": "2025-04-21",
-              "close": 86.0
+              "date": "2024-01-30",
+              "close": 95.72
             },
             {
-              "date": "2025-04-22",
-              "close": 86.48
+              "date": "2024-01-31",
+              "close": 96.66
             },
             {
-              "date": "2025-04-23",
-              "close": 87.32
+              "date": "2024-02-01",
+              "close": 98.24
             },
             {
-              "date": "2025-04-24",
-              "close": 88.24
+              "date": "2024-02-02",
+              "close": 96.07
             },
             {
-              "date": "2025-04-25",
-              "close": 88.89
+              "date": "2024-02-05",
+              "close": 94.13
             },
             {
-              "date": "2025-04-28",
-              "close": 89.45
+              "date": "2024-02-06",
+              "close": 95.05
             },
             {
-              "date": "2025-04-29",
-              "close": 90.2
+              "date": "2024-02-07",
+              "close": 94.59
             },
             {
-              "date": "2025-04-30",
-              "close": 89.47
+              "date": "2024-02-08",
+              "close": 94.04
             },
             {
-              "date": "2025-05-01",
-              "close": 88.69
+              "date": "2024-02-09",
+              "close": 93.85
             },
             {
-              "date": "2025-05-02",
-              "close": 87.73
+              "date": "2024-02-12",
+              "close": 93.96
             },
             {
-              "date": "2025-05-05",
-              "close": 87.24
+              "date": "2024-02-13",
+              "close": 92.35
             },
             {
-              "date": "2025-05-06",
-              "close": 87.53
+              "date": "2024-02-14",
+              "close": 92.82
             },
             {
-              "date": "2025-05-07",
-              "close": 87.9
+              "date": "2024-02-15",
+              "close": 93.3
             },
             {
-              "date": "2025-05-08",
-              "close": 86.92
-            },
-            {
-              "date": "2025-05-09",
-              "close": 87.05
+              "date": "2024-02-16",
+              "close": 92.76
             }
           ],
           "turning_points": {
             "turning_points": [
               {
-                "date": "2025-04-21",
+                "date": "2024-02-13",
                 "type": "trough",
-                "description": "事件后第 19 天录得相对基准 -5.94%，为窗口内最大降幅；与预测方向相反。",
-                "days_after_event": 19
+                "description": "事件后第 33 天录得相对基准 -4.51%，为窗口内最大降幅；印证预测方向。",
+                "days_after_event": 33
               }
             ],
-            "time_to_peak_impact_days": 19,
-            "narrative": "事件后 1 天累计 +0.46%，峰值出现在事件后第 19 天 (-5.94%)，第 5 天起回吐。",
+            "time_to_peak_impact_days": 33,
+            "narrative": "事件后 3 天累计 -1.95%，峰值出现在事件后第 33 天 (-4.51%)，第 14 天起回吐。",
             "method": "heuristic"
           },
           "data_source_name": null,
@@ -20434,153 +20202,647 @@
           "user_provided": false
         },
         {
-          "event_date": "2025-02-01",
-          "event_note": "Trump signs executive orders imposing 25% tariffs on Canada/Mexico and 10% on China",
-          "baseline_price": 88.16,
-          "end_price": 88.16,
-          "actual_pct": 0.0,
-          "actual_direction": "up",
+          "event_date": "2023-02-14",
+          "event_note": "Jan 2023 CPI 6.4% vs 6.2% exp, core 5.6% vs 5.5% exp (+0.2pp surprise, sparked selloff)",
+          "baseline_price": 104.02,
+          "end_price": 102.38,
+          "actual_pct": -1.58,
+          "actual_direction": "down",
           "dir_hit": true,
-          "strict_hit": false,
-          "mag_err_bucket": "<=100%",
+          "strict_hit": true,
+          "mag_err_bucket": "<=10%",
           "skipped_reason": null,
           "price_path": [
             {
-              "date": "2025-01-24",
-              "close": 87.22
+              "date": "2023-02-06",
+              "close": 105.91
             },
             {
-              "date": "2025-01-27",
-              "close": 88.25
+              "date": "2023-02-07",
+              "close": 105.06
             },
             {
-              "date": "2025-01-28",
-              "close": 88.19
+              "date": "2023-02-08",
+              "close": 105.56
             },
             {
-              "date": "2025-01-29",
-              "close": 88.01
+              "date": "2023-02-09",
+              "close": 104.56
             },
             {
-              "date": "2025-01-30",
-              "close": 88.34
+              "date": "2023-02-10",
+              "close": 103.39
             },
             {
-              "date": "2025-01-31",
-              "close": 87.76
+              "date": "2023-02-13",
+              "close": 104.26
             },
             {
-              "date": "2025-02-03",
-              "close": 88.16
+              "date": "2023-02-14",
+              "close": 104.02
             },
             {
-              "date": "2025-02-04",
-              "close": 88.43
+              "date": "2023-02-15",
+              "close": 103.05
             },
             {
-              "date": "2025-02-05",
-              "close": 89.89
+              "date": "2023-02-16",
+              "close": 101.59
             },
             {
-              "date": "2025-02-06",
-              "close": 89.85
+              "date": "2023-02-17",
+              "close": 102.38
             },
             {
-              "date": "2025-02-07",
-              "close": 89.27
+              "date": "2023-02-21",
+              "close": 100.39
             },
             {
-              "date": "2025-02-10",
-              "close": 89.0
+              "date": "2023-02-22",
+              "close": 101.31
             },
             {
-              "date": "2025-02-11",
-              "close": 88.43
+              "date": "2023-02-23",
+              "close": 102.3
             },
             {
-              "date": "2025-02-12",
-              "close": 87.23
+              "date": "2023-02-24",
+              "close": 100.97
             },
             {
-              "date": "2025-02-13",
-              "close": 88.68
+              "date": "2023-02-27",
+              "close": 101.25
             },
             {
-              "date": "2025-02-14",
-              "close": 89.15
+              "date": "2023-02-28",
+              "close": 101.71
             },
             {
-              "date": "2025-02-18",
-              "close": 88.1
+              "date": "2023-03-01",
+              "close": 100.37
             },
             {
-              "date": "2025-02-19",
-              "close": 88.21
+              "date": "2023-03-02",
+              "close": 99.48
             },
             {
-              "date": "2025-02-20",
-              "close": 88.54
+              "date": "2023-03-03",
+              "close": 101.89
             },
             {
-              "date": "2025-02-21",
-              "close": 89.61
+              "date": "2023-03-06",
+              "close": 101.1
             },
             {
-              "date": "2025-02-24",
-              "close": 89.87
+              "date": "2023-03-07",
+              "close": 101.72
             },
             {
-              "date": "2025-02-25",
-              "close": 91.42
+              "date": "2023-03-08",
+              "close": 101.82
             },
             {
-              "date": "2025-02-26",
-              "close": 91.96
+              "date": "2023-03-09",
+              "close": 102.07
             },
             {
-              "date": "2025-02-27",
-              "close": 91.31
+              "date": "2023-03-10",
+              "close": 105.59
             },
             {
-              "date": "2025-02-28",
-              "close": 92.43
+              "date": "2023-03-13",
+              "close": 105.83
             },
             {
-              "date": "2025-03-03",
-              "close": 92.57
+              "date": "2023-03-14",
+              "close": 104.09
             },
             {
-              "date": "2025-03-04",
-              "close": 91.43
+              "date": "2023-03-15",
+              "close": 106.1
             },
             {
-              "date": "2025-03-05",
-              "close": 90.7
+              "date": "2023-03-16",
+              "close": 105.27
             },
             {
-              "date": "2025-03-06",
-              "close": 90.4
+              "date": "2023-03-17",
+              "close": 106.85
             },
             {
-              "date": "2025-03-07",
-              "close": 90.11
+              "date": "2023-03-20",
+              "close": 105.91
             },
             {
-              "date": "2025-03-10",
-              "close": 91.05
+              "date": "2023-03-21",
+              "close": 105.0
+            },
+            {
+              "date": "2023-03-22",
+              "close": 106.4
+            },
+            {
+              "date": "2023-03-23",
+              "close": 106.4
             }
           ],
           "turning_points": {
             "turning_points": [
               {
-                "date": "2025-03-03",
-                "type": "peak",
-                "description": "事件后第 30 天录得相对基准 +5.00%，为窗口内最大升幅；印证预测方向。",
-                "days_after_event": 30
+                "date": "2023-03-02",
+                "type": "trough",
+                "description": "事件后第 16 天录得相对基准 -4.36%，为窗口内最大降幅；印证预测方向。",
+                "days_after_event": 16
               }
             ],
-            "time_to_peak_impact_days": 30,
-            "narrative": "事件后 1 天累计 +0.00%，峰值出现在事件后第 30 天 (+5.00%)，第 5 天起回吐。",
+            "time_to_peak_impact_days": 16,
+            "narrative": "事件后 3 天累计 -1.58%，峰值出现在事件后第 16 天 (-4.36%)，第 8 天起回吐。",
+            "method": "heuristic"
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
+        },
+        {
+          "event_date": "2022-09-13",
+          "event_note": "Aug 2022 CPI 8.3% vs 8.1% exp, core 6.3% vs 6.1% exp (+0.2pp surprise, major equity drop)",
+          "baseline_price": 107.67,
+          "end_price": 107.07,
+          "actual_pct": -0.56,
+          "actual_direction": "down",
+          "dir_hit": true,
+          "strict_hit": true,
+          "mag_err_bucket": "<=100%",
+          "skipped_reason": null,
+          "price_path": [
+            {
+              "date": "2022-09-06",
+              "close": 107.49
+            },
+            {
+              "date": "2022-09-07",
+              "close": 109.19
+            },
+            {
+              "date": "2022-09-08",
+              "close": 108.07
+            },
+            {
+              "date": "2022-09-09",
+              "close": 108.31
+            },
+            {
+              "date": "2022-09-12",
+              "close": 107.42
+            },
+            {
+              "date": "2022-09-13",
+              "close": 107.67
+            },
+            {
+              "date": "2022-09-14",
+              "close": 108.04
+            },
+            {
+              "date": "2022-09-15",
+              "close": 107.97
+            },
+            {
+              "date": "2022-09-16",
+              "close": 107.07
+            },
+            {
+              "date": "2022-09-19",
+              "close": 107.32
+            },
+            {
+              "date": "2022-09-20",
+              "close": 106.25
+            },
+            {
+              "date": "2022-09-21",
+              "close": 108.03
+            },
+            {
+              "date": "2022-09-22",
+              "close": 105.27
+            },
+            {
+              "date": "2022-09-23",
+              "close": 105.7
+            },
+            {
+              "date": "2022-09-26",
+              "close": 103.68
+            },
+            {
+              "date": "2022-09-27",
+              "close": 100.95
+            },
+            {
+              "date": "2022-09-28",
+              "close": 104.33
+            },
+            {
+              "date": "2022-09-29",
+              "close": 103.79
+            },
+            {
+              "date": "2022-09-30",
+              "close": 102.45
+            },
+            {
+              "date": "2022-10-03",
+              "close": 103.83
+            },
+            {
+              "date": "2022-10-04",
+              "close": 103.54
+            },
+            {
+              "date": "2022-10-05",
+              "close": 102.55
+            },
+            {
+              "date": "2022-10-06",
+              "close": 101.98
+            },
+            {
+              "date": "2022-10-07",
+              "close": 100.99
+            },
+            {
+              "date": "2022-10-10",
+              "close": 99.42
+            },
+            {
+              "date": "2022-10-11",
+              "close": 99.86
+            },
+            {
+              "date": "2022-10-12",
+              "close": 100.35
+            },
+            {
+              "date": "2022-10-13",
+              "close": 99.39
+            },
+            {
+              "date": "2022-10-14",
+              "close": 98.57
+            },
+            {
+              "date": "2022-10-17",
+              "close": 98.09
+            },
+            {
+              "date": "2022-10-18",
+              "close": 98.32
+            },
+            {
+              "date": "2022-10-19",
+              "close": 96.53
+            },
+            {
+              "date": "2022-10-20",
+              "close": 94.88
+            }
+          ],
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2022-10-20",
+                "type": "trough",
+                "description": "事件后第 37 天录得相对基准 -11.88%，为窗口内最大降幅；印证预测方向。",
+                "days_after_event": 37
+              }
+            ],
+            "time_to_peak_impact_days": 37,
+            "narrative": "事件后 3 天累计 -0.56%，峰值出现在事件后第 37 天 (-11.88%)，第 3 天起回吐。",
+            "method": "heuristic"
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
+        },
+        {
+          "event_date": "2022-01-12",
+          "event_note": "Dec 2021 CPI 7.0% vs 6.8% exp (+0.2pp surprise, highest since 1982)",
+          "baseline_price": 143.01,
+          "end_price": 140.1,
+          "actual_pct": -2.03,
+          "actual_direction": "down",
+          "dir_hit": true,
+          "strict_hit": true,
+          "mag_err_bucket": "<=50%",
+          "skipped_reason": null,
+          "price_path": [
+            {
+              "date": "2022-01-04",
+              "close": 143.7
+            },
+            {
+              "date": "2022-01-05",
+              "close": 142.92
+            },
+            {
+              "date": "2022-01-06",
+              "close": 143.29
+            },
+            {
+              "date": "2022-01-07",
+              "close": 142.26
+            },
+            {
+              "date": "2022-01-10",
+              "close": 142.61
+            },
+            {
+              "date": "2022-01-11",
+              "close": 143.56
+            },
+            {
+              "date": "2022-01-12",
+              "close": 143.01
+            },
+            {
+              "date": "2022-01-13",
+              "close": 144.28
+            },
+            {
+              "date": "2022-01-14",
+              "close": 142.1
+            },
+            {
+              "date": "2022-01-18",
+              "close": 140.1
+            },
+            {
+              "date": "2022-01-19",
+              "close": 141.07
+            },
+            {
+              "date": "2022-01-20",
+              "close": 141.94
+            },
+            {
+              "date": "2022-01-21",
+              "close": 143.63
+            },
+            {
+              "date": "2022-01-24",
+              "close": 142.45
+            },
+            {
+              "date": "2022-01-25",
+              "close": 142.22
+            },
+            {
+              "date": "2022-01-26",
+              "close": 140.5
+            },
+            {
+              "date": "2022-01-27",
+              "close": 143.08
+            },
+            {
+              "date": "2022-01-28",
+              "close": 143.13
+            },
+            {
+              "date": "2022-01-31",
+              "close": 142.39
+            },
+            {
+              "date": "2022-02-01",
+              "close": 141.72
+            },
+            {
+              "date": "2022-02-02",
+              "close": 142.2
+            },
+            {
+              "date": "2022-02-03",
+              "close": 141.09
+            },
+            {
+              "date": "2022-02-04",
+              "close": 139.01
+            },
+            {
+              "date": "2022-02-07",
+              "close": 139.1
+            },
+            {
+              "date": "2022-02-08",
+              "close": 138.17
+            },
+            {
+              "date": "2022-02-09",
+              "close": 138.43
+            },
+            {
+              "date": "2022-02-10",
+              "close": 136.23
+            },
+            {
+              "date": "2022-02-11",
+              "close": 138.25
+            },
+            {
+              "date": "2022-02-14",
+              "close": 136.53
+            },
+            {
+              "date": "2022-02-15",
+              "close": 134.98
+            },
+            {
+              "date": "2022-02-16",
+              "close": 135.78
+            },
+            {
+              "date": "2022-02-17",
+              "close": 136.79
+            },
+            {
+              "date": "2022-02-18",
+              "close": 138.23
+            }
+          ],
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2022-02-15",
+                "type": "trough",
+                "description": "事件后第 34 天录得相对基准 -5.61%，为窗口内最大降幅；印证预测方向。",
+                "days_after_event": 34
+              }
+            ],
+            "time_to_peak_impact_days": 34,
+            "narrative": "事件后 3 天累计 -2.03%，峰值出现在事件后第 34 天 (-5.61%)，第 7 天起回吐。",
+            "method": "heuristic"
+          },
+          "data_source_name": null,
+          "data_source_url": null,
+          "user_provided": false
+        },
+        {
+          "event_date": "2021-11-10",
+          "event_note": "Oct 2021 CPI 6.2% vs 5.9% exp, core 4.6% vs 4.3% exp (+0.3pp surprise, taper talk intensified)",
+          "baseline_price": 148.2,
+          "end_price": 145.48,
+          "actual_pct": -1.84,
+          "actual_direction": "down",
+          "dir_hit": true,
+          "strict_hit": true,
+          "mag_err_bucket": "<=25%",
+          "skipped_reason": null,
+          "price_path": [
+            {
+              "date": "2021-11-02",
+              "close": 147.09
+            },
+            {
+              "date": "2021-11-03",
+              "close": 145.57
+            },
+            {
+              "date": "2021-11-04",
+              "close": 147.1
+            },
+            {
+              "date": "2021-11-05",
+              "close": 149.3
+            },
+            {
+              "date": "2021-11-08",
+              "close": 149.02
+            },
+            {
+              "date": "2021-11-09",
+              "close": 150.96
+            },
+            {
+              "date": "2021-11-10",
+              "close": 148.2
+            },
+            {
+              "date": "2021-11-11",
+              "close": 147.98
+            },
+            {
+              "date": "2021-11-12",
+              "close": 147.33
+            },
+            {
+              "date": "2021-11-15",
+              "close": 145.48
+            },
+            {
+              "date": "2021-11-16",
+              "close": 145.11
+            },
+            {
+              "date": "2021-11-17",
+              "close": 146.26
+            },
+            {
+              "date": "2021-11-18",
+              "close": 146.81
+            },
+            {
+              "date": "2021-11-19",
+              "close": 148.36
+            },
+            {
+              "date": "2021-11-22",
+              "close": 146.62
+            },
+            {
+              "date": "2021-11-23",
+              "close": 144.5
+            },
+            {
+              "date": "2021-11-24",
+              "close": 146.82
+            },
+            {
+              "date": "2021-11-26",
+              "close": 150.53
+            },
+            {
+              "date": "2021-11-29",
+              "close": 149.32
+            },
+            {
+              "date": "2021-11-30",
+              "close": 151.59
+            },
+            {
+              "date": "2021-12-01",
+              "close": 152.34
+            },
+            {
+              "date": "2021-12-02",
+              "close": 152.53
+            },
+            {
+              "date": "2021-12-03",
+              "close": 154.35
+            },
+            {
+              "date": "2021-12-06",
+              "close": 152.23
+            },
+            {
+              "date": "2021-12-07",
+              "close": 151.0
+            },
+            {
+              "date": "2021-12-08",
+              "close": 148.39
+            },
+            {
+              "date": "2021-12-09",
+              "close": 149.22
+            },
+            {
+              "date": "2021-12-10",
+              "close": 148.86
+            },
+            {
+              "date": "2021-12-13",
+              "close": 151.06
+            },
+            {
+              "date": "2021-12-14",
+              "close": 150.7
+            },
+            {
+              "date": "2021-12-15",
+              "close": 149.25
+            },
+            {
+              "date": "2021-12-16",
+              "close": 149.14
+            },
+            {
+              "date": "2021-12-17",
+              "close": 150.83
+            }
+          ],
+          "turning_points": {
+            "turning_points": [
+              {
+                "date": "2021-12-03",
+                "type": "peak",
+                "description": "事件后第 23 天录得相对基准 +4.15%，为窗口内最大升幅；与预测方向相反。",
+                "days_after_event": 23
+              }
+            ],
+            "time_to_peak_impact_days": 23,
+            "narrative": "事件后 3 天累计 -1.84%，峰值出现在事件后第 23 天 (+4.15%)，第 6 天起回吐。",
             "method": "heuristic"
           },
           "data_source_name": null,

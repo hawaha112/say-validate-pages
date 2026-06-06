@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 92.69000244140625,
-  "current_pct": 0.06477943405754243,
-  "current_at": "2026-06-04T00:00:00-04:00",
+  "current_price": 90.25,
+  "current_pct": -2.5693590888346365,
+  "current_at": "2026-06-05T00:00:00-04:00",
   "reasoning": "参考链 #51 (中东武装冲突) 的机制 → 以黎边境冲突升级增加中东供给中断风险溢价。虽然黎巴嫩非产油国，但冲突外溢至伊朗代理人网络的担忧会推升油价。当前 DXY 中性、VIX 低位，原油对地缘风险定价空间充足，预计短期供给担忧驱动上涨。",
   "stop_loss_price": 85.5321,
   "take_profit": {

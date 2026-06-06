@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 4510.5,
-  "current_pct": -0.05761223106042533,
-  "current_at": "2026-06-04T00:00:00-04:00",
+  "current_price": 4353.89990234375,
+  "current_pct": -3.5275130590428536,
+  "current_at": "2026-06-05T00:00:00-04:00",
   "reasoning": "参考链 #51 (中东/波斯湾/产油区爆发武装冲突或袭击) 的机制 → 以色列-黎巴嫩边境防空警报与空袭痕迹表明地区冲突升温，虽非直接波及产油区，但属于中东地缘风险扩散。链 #51 指向避险资产受益；当前 VIX 偏低(15.69)、市场处于上行趋势，避险需求释放空间较大，黄金作为传统避险标的短期受买盘支撑。",
   "stop_loss_price": 4506.0022,
   "take_profit": {

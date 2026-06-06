@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 95.26000213623047,
-  "current_pct": -0.05245559085503654,
-  "current_at": "2026-06-04T00:00:00-04:00",
+  "current_price": 92.87000274658203,
+  "current_pct": -2.560061771601329,
+  "current_at": "2026-06-05T00:00:00-04:00",
   "reasoning": "参考链 #638 (美国对俄罗斯油气制裁) 的机制：地缘政治冲突升级→石油供应风险溢价→原油短期上涨。当前IAEA无法核查伊朗浓缩铀，意味着伊朗核武进展透明度归零，以色列/美国军事打击预期升温，霍尔木兹海峡通航风险上升。与俄制裁不同的是本次尚未触发实际供应中断，故magnitude从4%降至2.5%。VIX低位(15.69)下市场对地缘风险反应敏感。",
   "stop_loss_price": 93.1655,
   "take_profit": {

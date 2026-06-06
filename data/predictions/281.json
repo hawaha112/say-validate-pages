@@ -1,0 +1,99 @@
+{
+  "id": 281,
+  "made_at": "2026-06-06T01:43:48.699346",
+  "expire_at": "2026-06-09T01:43:48.699346",
+  "verified_at": null,
+  "asset": {
+    "symbol": "CL=F",
+    "name": "WTI原油期货",
+    "class": "commodity"
+  },
+  "direction": "up",
+  "magnitude_pct": 2.25,
+  "horizon_days": 3,
+  "baseline_price": 90.25,
+  "baseline_source": "eod",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": 90.25,
+  "current_pct": 0.0,
+  "current_at": "2026-06-05T00:00:00-04:00",
+  "reasoning": "参考链 #216 (EIA库存意外大减) 的机制：供给收紧预期推升油价。当前科威特遭受导弹/无人机攻击属于中东地缘冲突升级，虽非库存数据而是供给端物理威胁，但机制相通——海湾产油国基础设施风险上升→原油供给溢价。当前VIX 87%分位偏高，波动放大效应存在，但中东冲突历史上对油价脉冲明显，预计3日内反应2-3%。",
+  "stop_loss_price": 87.4479,
+  "take_profit": {
+    "prices": [
+      94.4532,
+      97.2553,
+      101.4584
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 2.8021,
+    "atr": 1.4011
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.6818,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.6818,
+    "log_odds": 0.762,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 2.27,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 216,
+        "pattern": "EIA 原油库存意外大幅减少",
+        "asset": "USO",
+        "dir_hit_rate": 1.0,
+        "n_samples": 4,
+        "log_lr": 1.609,
+        "grade": "B"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-neutral"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    216
+  ],
+  "cited_chains": [
+    {
+      "id": 216,
+      "pattern": "EIA 原油库存意外大幅减少",
+      "asset_symbol": "USO",
+      "direction": "up",
+      "horizon_days": 1,
+      "magnitude_pct": 2.0,
+      "grade": "B",
+      "retail_edge": "mid",
+      "macro_category": "energy_commodity"
+    }
+  ],
+  "event": {
+    "id": 2113,
+    "summary": "科威特遭遇导弹和无人机攻击，防空系统正在拦截",
+    "category": "geopolitics"
+  },
+  "news": {
+    "title": "【科威特：正应对“敌方”导弹和无人机攻击】科威特军方6日发表声明说，科威特防空部队正在应对“敌方”导弹和无人机攻击。如听到爆炸声，系科威特防空系统拦截攻击所致。",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-06-06T09:02:07"
+  }
+}

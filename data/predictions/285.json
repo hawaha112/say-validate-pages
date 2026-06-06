@@ -1,0 +1,99 @@
+{
+  "id": 285,
+  "made_at": "2026-06-06T01:44:55.215369",
+  "expire_at": "2026-06-13T01:44:55.215369",
+  "verified_at": null,
+  "asset": {
+    "symbol": "510300.SS",
+    "name": "沪深300ETF",
+    "class": "a_stock"
+  },
+  "direction": "up",
+  "magnitude_pct": 1.2,
+  "horizon_days": 7,
+  "baseline_price": 4.843,
+  "baseline_source": "event_time",
+  "status": "pending",
+  "hit": null,
+  "hit_breakdown": null,
+  "actual_magnitude_pct": null,
+  "actual_direction": null,
+  "current_price": null,
+  "current_pct": null,
+  "current_at": null,
+  "reasoning": "参考链 #88 (中国财政刺激→沪深300上涨) 的机制：经济扩张信号利好周期权重股。PMI综合升至50.5、非制造业回归扩张区间，叠加出口航运运价持续上涨，均为经济边际改善的领先指标。与#88机制部分相似但驱动力来自实体需求而非政策，magnitude下调。当前A股处于uptrend有利。",
+  "stop_loss_price": 4.7586,
+  "take_profit": {
+    "prices": [
+      4.9696,
+      5.0541,
+      5.1807
+    ],
+    "r_multiples": [
+      1.5,
+      2.5,
+      4.0
+    ],
+    "R": 0.0844,
+    "atr": 0.0422
+  },
+  "kelly_fraction": 0.02,
+  "resonance_posterior": 0.5172,
+  "resonance": {
+    "prior": 0.3,
+    "posterior": 0.5172,
+    "log_odds": 0.069,
+    "effective_n": 1.0,
+    "r_bar": 0.0,
+    "uplift": 1.72,
+    "signal_grade": "👀 C",
+    "evidence": [
+      {
+        "link_id": 88,
+        "pattern": "中国财政大规模刺激（特别国债/基建加码）",
+        "asset": "510300.SS",
+        "dir_hit_rate": 0.8,
+        "n_samples": 5,
+        "log_lr": 0.916,
+        "grade": "A"
+      }
+    ],
+    "note": ""
+  },
+  "tags": [
+    "dual_model_weak",
+    "regime:mid-vol · uptrend · USD-neutral"
+  ],
+  "retired_at": null,
+  "retired_reason": null,
+  "strategy_type": "spot",
+  "strategy_legs": null,
+  "cited_link_ids": [
+    88
+  ],
+  "cited_chains": [
+    {
+      "id": 88,
+      "pattern": "中国财政大规模刺激（特别国债/基建加码）",
+      "asset_symbol": "510300.SS",
+      "direction": "up",
+      "horizon_days": 7,
+      "magnitude_pct": 1.5,
+      "grade": "A",
+      "retail_edge": "mid",
+      "macro_category": "monetary_policy"
+    }
+  ],
+  "event": {
+    "id": 2106,
+    "summary": "上海航交所报告本周集装箱运价上涨6%，中国5月PMI升至50.5显示经济扩张",
+    "category": "macro"
+  },
+  "news": {
+    "title": "【上海航交所：本周运输市场继续向好 市场运价保持涨势】据上海航交所，本周， 本周，中国出口集装箱运输市场行情延续向好态势，远洋航线市场运价保持上涨，推动综合指数",
+    "source": "sina_finance",
+    "lang": "zh",
+    "url": null,
+    "published_at": "2026-06-06T08:42:12"
+  }
+}

@@ -1,41 +1,41 @@
 {
-  "id": 277,
-  "made_at": "2026-06-04T14:41:25.340626",
-  "expire_at": "2026-06-11T14:41:25.340626",
+  "id": 288,
+  "made_at": "2026-06-06T01:45:32.701101",
+  "expire_at": "2026-06-09T01:45:32.701101",
   "verified_at": null,
   "asset": {
-    "symbol": "XLE",
-    "name": "能源板块ETF",
+    "symbol": "USO",
+    "name": "美国石油基金",
     "class": "us_stock"
   },
   "direction": "up",
-  "magnitude_pct": 3.24,
-  "horizon_days": 7,
-  "baseline_price": 58.57500076293945,
-  "baseline_source": "event_time",
+  "magnitude_pct": 3.6,
+  "horizon_days": 3,
+  "baseline_price": 133.02000427246094,
+  "baseline_source": "eod",
   "status": "pending",
   "hit": null,
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 57.66999816894531,
-  "current_pct": -1.5450321505872484,
+  "current_price": 133.02000427246094,
+  "current_pct": 0.0,
   "current_at": "2026-06-05T00:00:00-04:00",
-  "reasoning": "参考链 #638 (俄制裁→能源股走强) 的机制：油价上涨→能源股盈利预期上修。伊朗核危机推升原油，美国能源巨头(XOM/CVX)作为替代供应方受益。当前SPX处于uptrend (+10.2% vs 200d MA)，能源股beta较高，但与#638的即时制裁冲击不同，本次是预期性升温，故magnitude从4%相关性折算至1.8%。",
-  "stop_loss_price": 56.6772,
+  "reasoning": "参考链 #640 (美国对俄罗斯油气巨头制裁) 的供给冲击机制：该链显示能源地缘风险推升油价与XLE。巴林紧邻霍尔木兹海峡，防空警报暗示该区域航运可能受威胁，与俄油制裁同属石油供给中断预期逻辑。当前uptrend市场环境支持风险资产反弹，但中东局势若升级可同时抬高原油风险溢价。幅度略高于链值因海峡扼咽喉地位。",
+  "stop_loss_price": 128.2313,
   "take_profit": {
     "prices": [
-      61.4217,
-      63.3196,
-      66.1663
+      140.2031,
+      144.9918,
+      152.1749
     ],
     "r_multiples": [
       1.5,
       2.5,
       4.0
     ],
-    "R": 1.8978,
-    "atr": 0.9489
+    "R": 4.7887,
+    "atr": 2.3944
   },
   "kelly_fraction": 0.02,
   "resonance_posterior": 0.6818,
@@ -49,9 +49,9 @@
     "signal_grade": "👀 C",
     "evidence": [
       {
-        "link_id": 638,
+        "link_id": 640,
         "pattern": "美国对俄罗斯油气巨头实施一级SDN制裁",
-        "asset": "BZ=F",
+        "asset": "XLE",
         "dir_hit_rate": 1.0,
         "n_samples": 4,
         "log_lr": 1.609,
@@ -69,31 +69,31 @@
   "strategy_type": "spot",
   "strategy_legs": null,
   "cited_link_ids": [
-    638
+    640
   ],
   "cited_chains": [
     {
-      "id": 638,
+      "id": 640,
       "pattern": "美国对俄罗斯油气巨头实施一级SDN制裁",
-      "asset_symbol": "BZ=F",
+      "asset_symbol": "XLE",
       "direction": "up",
-      "horizon_days": 3,
-      "magnitude_pct": 4.0,
+      "horizon_days": 7,
+      "magnitude_pct": 1.5,
       "grade": "B",
       "retail_edge": null,
       "macro_category": "politics_geo"
     }
   ],
   "event": {
-    "id": 1975,
-    "summary": "国际原子能机构无法确认伊朗浓缩铀状况，核查活动受阻引发地缘政治担忧",
+    "id": 2104,
+    "summary": "巴林全国拉响防空警报，中东地缘紧张局势升级",
     "category": "geopolitics"
   },
   "news": {
-    "title": "国际原子能机构：无法确认伊朗浓缩铀的状况和位置",
+    "title": "巴林全国拉响防空警报。（新华社）",
     "source": "wallstreetcn",
     "lang": "zh",
-    "url": "https://wallstreetcn.com/livenews/3114491",
-    "published_at": "2026-06-04T14:03:17"
+    "url": "https://wallstreetcn.com/livenews/3115397",
+    "published_at": "2026-06-06T01:26:27"
   }
 }

@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 410.3299865722656,
-  "current_pct": -14.793284396548916,
-  "current_at": "2026-06-04T00:00:00-04:00",
+  "current_price": 385.7300109863281,
+  "current_pct": -19.9015708786378,
+  "current_at": "2026-06-05T00:00:00-04:00",
   "reasoning": "参考链 #620 (TSMC上调全年资本开支与AI需求指引) 的机制：AI算力扩张带动上下游半导体链条联动上涨。本次新闻直接点名博通为EML/CW-DFB LD前三大厂商之首且市占率领先，2026年产能翻倍意味着英伟达、谷歌、Meta的战略锁定订单已落地，博通光通信业务将直接受益。当前市场处于uptrend+低VIX环境，AI产业链利好容易被放大。",
   "stop_loss_price": 451.2311,
   "take_profit": {

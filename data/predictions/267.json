@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 92.69000244140625,
-  "current_pct": -2.789717960443169,
-  "current_at": "2026-06-04T00:00:00-04:00",
+  "current_price": 90.25,
+  "current_pct": -5.348713744872563,
+  "current_at": "2026-06-05T00:00:00-04:00",
   "reasoning": "本次伊朗革命卫队声称打击美军第五舰队总部及中东航空基地，科威特机场遭无人机袭击，标志中东地缘紧张急剧升级。参考链 #640（美国对俄油气制裁→XLE上涨）的机制：地缘冲突升级→供应中断担忧→油价跳涨。当前事件更直接涉及波斯湾核心产油区，霍尔木兹海峡过境风险溢价将快速计入油价。mid-vol环境下预期反应幅度适中。",
   "stop_loss_price": 92.3465,
   "take_profit": {

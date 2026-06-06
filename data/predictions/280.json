@@ -1,7 +1,7 @@
 {
-  "id": 269,
-  "made_at": "2026-06-03T06:18:06.762207",
-  "expire_at": "2026-06-06T06:18:06.762207",
+  "id": 280,
+  "made_at": "2026-06-06T01:43:13.013374",
+  "expire_at": "2026-06-07T01:43:13.013374",
   "verified_at": null,
   "asset": {
     "symbol": "TLT",
@@ -9,9 +9,9 @@
     "class": "us_stock"
   },
   "direction": "up",
-  "magnitude_pct": 2.16,
-  "horizon_days": 3,
-  "baseline_price": 85.6500015258789,
+  "magnitude_pct": 1.08,
+  "horizon_days": 1,
+  "baseline_price": 85.05999755859375,
   "baseline_source": "eod",
   "status": "pending",
   "hit": null,
@@ -19,15 +19,15 @@
   "actual_magnitude_pct": null,
   "actual_direction": null,
   "current_price": 85.05999755859375,
-  "current_pct": -0.6888545905126321,
+  "current_pct": 0.0,
   "current_at": "2026-06-05T00:00:00-04:00",
-  "reasoning": "参考链 #357（关税威胁→TLT上涨0.8%/1d）的避险机制：风险事件→资金流入长债。伊朗与美军直接冲突升级属于更高级别地缘风险，长端美债避险需求增加。但注意10y利率近期已上行20bp，上涨空间受限，故幅度保守估计。",
-  "stop_loss_price": 84.8805,
+  "reasoning": "参考链 #357 (关税威胁→避险资金流入美债) 的机制 → 中东地缘冲击同样触发 flight-to-quality，美债作为传统避险资产短期受益。当前 10y 利率已升 21bp MoM，但事件驱动的避险需求可短暂压低收益率。幅度保守因利率整体处于高位。",
+  "stop_loss_price": 84.2905,
   "take_profit": {
     "prices": [
-      86.8042,
-      87.5737,
-      88.7279
+      86.2142,
+      86.9837,
+      88.1379
     ],
     "r_multiples": [
       1.5,
@@ -85,15 +85,15 @@
     }
   ],
   "event": {
-    "id": 1884,
-    "summary": "科威特国际机场遭无人机袭击致机场暂停运营，伊朗革命卫队声称打击美军基地",
+    "id": 2116,
+    "summary": "巴林全国拉响防空警报，中东地缘政治紧张局势升级",
     "category": "geopolitics"
   },
   "news": {
-    "title": "【科威特国际机场遭袭多人受伤 飞机暂停起降】当地时间6月3日，科威特民航总局发布消息称，科威特国际机场1号航站楼当天早间遭无人机袭击，被严重损毁，袭击还造成现场",
+    "title": "巴林全国拉响防空警报。（新华社）",
     "source": "sina_finance",
     "lang": "zh",
     "url": null,
-    "published_at": "2026-06-03T14:07:01"
+    "published_at": "2026-06-06T09:23:01"
   }
 }

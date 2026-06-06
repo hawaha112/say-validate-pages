@@ -16886,419 +16886,246 @@
     ]
   },
   {
-    "id": 357,
-    "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+    "id": 32,
+    "pattern": "美国 CPI 同比超预期 >=0.2%",
     "asset_symbol": "TLT",
     "asset_name": "20+年期美债ETF",
     "asset_class": "us_stock",
-    "macro_category": "politics_geo",
-    "direction": "up",
-    "magnitude_pct": 0.8,
+    "macro_category": "macro_data",
+    "direction": "down",
+    "magnitude_pct": 1.5,
     "magnitude_pct_stddev": 0.0,
-    "horizon_days": 1,
-    "confidence": 0.7237316897606563,
-    "grade": "B",
+    "horizon_days": 3,
+    "confidence": 0.5925975829607492,
+    "grade": "A",
     "retail_edge": "mid",
-    "support_count": 4,
-    "refute_count": 2,
-    "source": "researched",
-    "rationale": "总统推特/声明突发威胁对盟友（EU/加墨/英国）加征 10-25% 关税，触发贸易战担忧→跨国公司盈利预期下修、全球供应链承压→美股风险资产抛售、避险资金流向美债与黄金、美元短线走强。",
+    "support_count": 5,
+    "refute_count": 1,
+    "source": "seed",
+    "rationale": "通胀粘性强化紧缩预期，长久期资产与黄金承压，美元走强",
     "explanation": {
-      "tldr": "美国突然威胁对盟友加征关税 → 风险资产抛售 → 长期美债避险吸金",
+      "tldr": "CPI超预期0.2%→紧缩预期升温→长债收益率上行→TLT下跌1.5%",
       "preconditions": [
         {
-          "condition": "美股处于相对高位或估值未极度悲观",
-          "why_matters": "若市场已处于恐慌底部，关税新闻难以引发新一轮抛售，避险需求边际增量有限"
+          "condition": "Fed处于观望或紧缩周期，尚未明确转向宽松",
+          "why_matters": "若Fed已宣布降息周期，同样CPI数据市场会解读为'放缓降息'而非'重启加息'，债券反应会弱化甚至反向"
         },
         {
-          "condition": "美债收益率不在极端低位 (如 10Y > 1.5%)",
-          "why_matters": "若已处于零利率环境，避险 premium 已被 priced in，TLT 上行空间受限"
+          "condition": "长端收益率未处于极端高位（如10年期<5%）",
+          "why_matters": "收益率已在周期高位时，进一步上行空间受限，TLT下跌幅度会被压缩"
         },
         {
-          "condition": "Fed 政策立场中性或偏鸽，非处于激进加息周期",
-          "why_matters": "若 Fed 正快速加息，收益率上行压力会抵消甚至压倒避险买盘，TLT 可能反跌"
-        },
-        {
-          "condition": "不存在比关税更大的系统性危机 (疫情/战争/金融危机)",
-          "why_matters": "更大危机会主导资金流向，关税新闻被边缘化，甚至触发流动性挤兑导致美债也被抛售"
+          "condition": "市场对通胀预期处于敏感状态，而非已完全priced in高通胀",
+          "why_matters": "若市场已长期预期高通胀（如连续多月超预期），边际冲击会钝化"
         }
       ],
-      "regime_context": "适用于贸易摩擦主题尚未完全消化、美股波动率低于历史峰值 (VIX < 30) 的环境。若市场已处于贸易战高潮期或持续恐慌中，边际新闻效应减弱。零利率/QE 环境下避险流动减弱，紧缩周期中美债可能因利率预期反向走。",
+      "regime_context": "适用于Fed仍有紧缩空间且通胀是首要政策目标的环境。若经济已进入衰退或Fed明确转向宽松，CPI超预期可能被解读为'经济韧性'而利好风险资产，债券避险属性反而支撑价格。",
       "causal_chain": [
         {
           "step": 1,
-          "trigger": "总统通过推特/声明突发威胁对盟友 (EU/加墨/英国) 加征 10-25% 关税",
-          "mechanism": "政策不确定性冲击，tail risk 重估",
-          "assumption": "市场未提前完全 price in，新闻具备意外性 (surprise factor)",
+          "trigger": "CPI同比公布值比预期高>=0.2个百分点",
+          "mechanism": "市场重估通胀粘性，原有'通胀见顶'叙事受挑战",
+          "assumption": "超预期幅度足够大（0.2%约等于2-3个sigma），且非单一波动项驱动",
           "confidence": "high"
         },
         {
           "step": 2,
-          "trigger": "关税威胁公告后数小时内",
-          "mechanism": "跨国企业盈利预期下修 + 全球供应链成本预期上升，分析师下调 EPS 指引",
-          "assumption": "企业无法短期内完全转嫁成本给消费者，且供应链调整需时间",
+          "trigger": "通胀粘性预期上修",
+          "mechanism": "Fed政策路径重新定价：加息概率上升或降息预期后推",
+          "assumption": "Fed明确以通胀为首要目标（而非增长/就业），且市场信任Fed的reaction function",
           "confidence": "high"
         },
         {
           "step": 3,
-          "trigger": "盈利预期下修触发",
-          "mechanism": "美股风险资产抛售 (SPX/IXIC 承压)，P/E 压缩 + 情绪性卖出",
-          "assumption": "市场流动性充足，允许机构快速减仓，无流动性枯竭",
+          "trigger": "Fed紧缩预期升温",
+          "mechanism": "长端利率通过期限溢价和短期利率预期路径双重推升",
+          "assumption": "长端尚未完全priced in紧缩路径，存在重新定价空间",
           "confidence": "medium"
         },
         {
           "step": 4,
-          "trigger": "股市下跌开始",
-          "mechanism": "避险资金 flight to quality，机构再平衡 (stock → bonds)，股债负相关放大",
-          "assumption": "美债市场流动性正常，bid-ask spread 未异常扩大",
-          "confidence": "medium"
-        },
-        {
-          "step": 5,
-          "trigger": "避险买盘进入美债市场",
-          "mechanism": "TLT (20+年期美债) 久期长，对利率下行 (避险压低 yield) 更敏感，价格上涨",
-          "assumption": "实际利率预期未因通胀预期上升 (关税→输入型通胀) 而完全抵消",
-          "confidence": "medium"
+          "trigger": "10年期及以上收益率上行15-20bp",
+          "mechanism": "久期效应：TLT持有20+年期债券，修正久期约17-18，收益率每上行1bp价格下跌约0.17-0.18%",
+          "assumption": "无大规模避险买盘对冲（如地缘风险爆发），市场按正常利率敏感度定价",
+          "confidence": "high"
         }
       ],
-      "asset_logic": "选择 TLT 而非短债 (SHY/IEF) 是因为长久期对避险情绪和利率下行更敏感，若市场预期关税拖累增长 → Fed 潜在降息概率上升，20+年期美债受益最多。相比黄金，TLT 更直接受益于美国国内避险需求；黄金还受美元走强 (关税威胁→美元避险) 对冲，净效应更复杂。相比 SPY/QQQ 做空，TLT 多头更纯粹捕捉避险流。",
-      "horizon_logic": "1 天窗口捕捉的是即时避险反应 (intraday/T+1 收盘)，这是市场对'意外政策冲击'的膝跳反应期。超过 1 天后，变量增多：白宫可能澄清/软化立场、贸易对话启动、企业游说施压，方向可能反转 (威胁未兑现 → mean revert)。短于 1 天 (盘中) 噪音大，难以稳定观测。",
+      "asset_logic": "TLT是追踪20+年期美债的主流ETF，久期约17-18年，对长端利率敏感度最高。CPI超预期主要冲击长端（通胀预期+政策路径重定价），短端国债受影响较小。1.5%跌幅对应15-20bp收益率上行，符合历史久期弹性。相比黄金（受实际利率和避险情绪双重影响），TLT更纯粹地反映名义利率预期。",
+      "horizon_logic": "3天窗口涵盖CPI公布当日+后续2个交易日，足够市场消化数据并调整Fed政策预期曲线。更短（1天）只捕捉初始反应，可能受日内噪音干扰；更长（5天+）则混入下周其他数据（PPI、零售）和Fed官员讲话，归因困难。",
       "failure_conditions": [
-        "威胁发出后数小时内白宫/财政部澄清'不会立即执行'或'仅是谈判策略' → 市场迅速反转，TLT 回吐涨幅",
-        "同一窗口内 Fed 意外鹰派言论 (如 FOMC 委员发言强调通胀风险) 或加息信号 → 美债收益率上行主导，TLT 下跌",
-        "VIX 已 >35 或美元流动性危机 (如 repo 利率飙升) → 所有资产抛售 (cash is king)，包括美债，TLT 也跌",
-        "关税威胁已在此前一周内反复发布 (市场脱敏) → 边际反应钝化，避险流减弱",
-        "同一天出现更大新闻 (如地缘冲突升级/重大恐袭) → 关税新闻被淹没，主导资金流向由其他事件决定"
+        "同一窗口内Fed官员发表明确鸽派言论，如'容忍通胀超调'或'经济软着陆优先级更高'",
+        "同期公布的其他宏观数据（就业、GDP、ISM）大幅走弱，衰退预期压倒通胀担忧，避险买盘涌入长债",
+        "CPI超预期主要由单一波动项（如能源、二手车）驱动，核心CPI和超级核心CPI符合或低于预期",
+        "长债收益率已处于周期极端高位（如10年期>5.5%），技术性超卖或实际利率吸引力触发买盘",
+        "同一窗口内发生重大地缘事件（战争、金融系统风险），避险情绪主导市场"
       ],
       "evidence_quality": {
-        "sample_size_assessment": "2 支持 / 1 反驳，共 3 个历史实例，样本量远不足以建立统计显著性 (通常需 n≥20)。置信度 0.6 意味着'有初步迹象但未验证'，这是探索性假设而非已证实的规律。",
-        "selection_bias_risk": "medium - 可能因后视偏差选取'成功'案例 (TLT 涨的实例更容易被记住)，反驳案例 (TLT 未涨或下跌) 可能被遗漏或归因于'特殊情况'。需系统化搜索所有关税威胁事件，而非只看确认案例。",
-        "regime_diversity": "未知 3 个样本是否跨越不同宏观环境 (Fed QE vs 紧缩周期、牛市 vs 熊市、VIX 高低)。若样本集中在 2018-2019 贸易战初期，泛化能力存疑。"
+        "sample_size_assessment": "5次历史实例（4次支持，1次反驳）对统计显著性而言是边缘的。这是'有迹象'级别的假设，而非'已验证'的稳健规律。需至少15-20次跨周期样本才能达到统计置信。",
+        "selection_bias_risk": "medium — 需警惕样本是否由'符合直觉'的案例后视筛选而来。理想情况应包含所有CPI超预期>=0.2%的事件，而非只挑选TLT确实下跌的案例。",
+        "regime_diversity": "未知 — 需检查5次实例是否跨越不同政策周期（如2021-2022紧缩期 vs 2023-2024观望期）。若全部集中在某一阶段，泛化能力存疑。"
       },
       "related_chains": [],
       "historical_examples": []
     },
     "failure_conditions": [
-      "该预测会失败如果：(1)威胁发布后6小时内被白宫或财政部否认，市场视为'虚惊一场'",
-      "(2)同期美联储意外释放鹰派信号（如会议纪要显示加息倾向），压制国债需求",
-      "(3)美股在关税消息发布前已处于超卖状态，出现'利空出尽'式反弹，避险需求不足",
-      "(4)该事件与其他重大利空（如美国就业数据崩盘）重叠，市场转向流动性抛售而非避险配置。当前证据显示支持案例仅1次、反驳2次，暗示这条路径在实际市场中稳定性较低，可能因'推特威胁'的高频噪音导致市场脱敏。"
+      "失效场景包括：(1) 同期公布的其他数据强烈反向（如失业率暴增引发衰退恐慌，避险需求推升债券）",
+      "(2) 美联储官员迅速发声淡化数据重要性",
+      "(3) 金融系统出现流动性危机（如2023年3月银行业风波），TLT反而因避险需求上涨",
+      "(4) 市场此前已过度定价紧缩预期，超预期CPI反而触发'利空出尽'的技术性反弹。"
     ],
     "historical_instances": [
       {
-        "event_date": "2026-01-20",
-        "event_note": "Trump threatens 10% tariffs on 8 European countries (UK/Denmark/Norway/Sweden/France/Germany/Netherlands/Finland) over Greenland",
-        "baseline_price": 86.65,
-        "end_price": 87.31,
-        "actual_pct": 0.76,
-        "actual_direction": "up",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=10%",
-        "skipped_reason": null,
-        "price_path": [
-          {
-            "date": "2026-01-12",
-            "close": 87.67
-          },
-          {
-            "date": "2026-01-13",
-            "close": 87.82
-          },
-          {
-            "date": "2026-01-14",
-            "close": 88.33
-          },
-          {
-            "date": "2026-01-15",
-            "close": 88.31
-          },
-          {
-            "date": "2026-01-16",
-            "close": 87.8
-          },
-          {
-            "date": "2026-01-20",
-            "close": 86.65
-          },
-          {
-            "date": "2026-01-21",
-            "close": 87.31
-          },
-          {
-            "date": "2026-01-22",
-            "close": 87.69
-          },
-          {
-            "date": "2026-01-23",
-            "close": 87.93
-          },
-          {
-            "date": "2026-01-26",
-            "close": 88.35
-          },
-          {
-            "date": "2026-01-27",
-            "close": 87.8
-          },
-          {
-            "date": "2026-01-28",
-            "close": 87.6
-          },
-          {
-            "date": "2026-01-29",
-            "close": 87.62
-          },
-          {
-            "date": "2026-01-30",
-            "close": 87.13
-          },
-          {
-            "date": "2026-02-02",
-            "close": 86.55
-          },
-          {
-            "date": "2026-02-03",
-            "close": 86.76
-          },
-          {
-            "date": "2026-02-04",
-            "close": 86.54
-          },
-          {
-            "date": "2026-02-05",
-            "close": 87.48
-          },
-          {
-            "date": "2026-02-06",
-            "close": 87.54
-          },
-          {
-            "date": "2026-02-09",
-            "close": 87.52
-          },
-          {
-            "date": "2026-02-10",
-            "close": 88.53
-          },
-          {
-            "date": "2026-02-11",
-            "close": 88.06
-          },
-          {
-            "date": "2026-02-12",
-            "close": 89.23
-          },
-          {
-            "date": "2026-02-13",
-            "close": 89.72
-          },
-          {
-            "date": "2026-02-17",
-            "close": 89.87
-          },
-          {
-            "date": "2026-02-18",
-            "close": 89.53
-          },
-          {
-            "date": "2026-02-19",
-            "close": 89.62
-          },
-          {
-            "date": "2026-02-20",
-            "close": 89.41
-          },
-          {
-            "date": "2026-02-23",
-            "close": 89.74
-          },
-          {
-            "date": "2026-02-24",
-            "close": 89.9
-          },
-          {
-            "date": "2026-02-25",
-            "close": 89.91
-          },
-          {
-            "date": "2026-02-26",
-            "close": 90.27
-          }
-        ],
-        "turning_points": {
-          "turning_points": [
-            {
-              "date": "2026-02-26",
-              "type": "peak",
-              "description": "事件后第 37 天录得相对基准 +4.18%，为窗口内最大升幅；印证预测方向。",
-              "days_after_event": 37
-            }
-          ],
-          "time_to_peak_impact_days": 37,
-          "narrative": "事件后 1 天累计 +0.76%，峰值出现在事件后第 37 天 (+4.18%)，第 6 天起回吐。",
-          "method": "heuristic"
-        },
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      },
-      {
-        "event_date": "2025-04-02",
-        "event_note": "Liberation Day: Trump announces 10% baseline + reciprocal tariffs on 57 countries",
-        "baseline_price": 91.43,
-        "end_price": 91.85,
-        "actual_pct": 0.46,
-        "actual_direction": "up",
+        "event_date": "2024-01-11",
+        "event_note": "Dec 2023 CPI 3.4% vs 3.2% exp, core 3.9% vs 3.8% exp (+0.2pp surprise)",
+        "baseline_price": 96.71,
+        "end_price": 94.82,
+        "actual_pct": -1.95,
+        "actual_direction": "down",
         "dir_hit": true,
         "strict_hit": true,
         "mag_err_bucket": "<=50%",
         "skipped_reason": null,
         "price_path": [
           {
-            "date": "2025-03-25",
-            "close": 89.76
+            "date": "2024-01-03",
+            "close": 98.72
           },
           {
-            "date": "2025-03-26",
-            "close": 89.17
+            "date": "2024-01-04",
+            "close": 97.22
           },
           {
-            "date": "2025-03-27",
-            "close": 88.91
+            "date": "2024-01-05",
+            "close": 96.29
           },
           {
-            "date": "2025-03-28",
-            "close": 90.14
+            "date": "2024-01-08",
+            "close": 97.24
           },
           {
-            "date": "2025-03-31",
-            "close": 91.03
+            "date": "2024-01-09",
+            "close": 96.62
           },
           {
-            "date": "2025-04-01",
-            "close": 91.49
+            "date": "2024-01-10",
+            "close": 96.17
           },
           {
-            "date": "2025-04-02",
-            "close": 91.43
+            "date": "2024-01-11",
+            "close": 96.71
           },
           {
-            "date": "2025-04-03",
-            "close": 91.85
+            "date": "2024-01-12",
+            "close": 96.52
           },
           {
-            "date": "2025-04-04",
-            "close": 92.85
+            "date": "2024-01-16",
+            "close": 94.82
           },
           {
-            "date": "2025-04-07",
-            "close": 90.05
+            "date": "2024-01-17",
+            "close": 94.67
           },
           {
-            "date": "2025-04-08",
-            "close": 88.35
+            "date": "2024-01-18",
+            "close": 93.79
           },
           {
-            "date": "2025-04-09",
-            "close": 88.87
+            "date": "2024-01-19",
+            "close": 94.09
           },
           {
-            "date": "2025-04-10",
-            "close": 86.42
+            "date": "2024-01-22",
+            "close": 94.65
           },
           {
-            "date": "2025-04-11",
-            "close": 86.89
+            "date": "2024-01-23",
+            "close": 93.9
           },
           {
-            "date": "2025-04-14",
-            "close": 87.51
+            "date": "2024-01-24",
+            "close": 93.35
           },
           {
-            "date": "2025-04-15",
-            "close": 87.82
+            "date": "2024-01-25",
+            "close": 93.96
           },
           {
-            "date": "2025-04-16",
-            "close": 88.31
+            "date": "2024-01-26",
+            "close": 93.78
           },
           {
-            "date": "2025-04-17",
-            "close": 87.53
+            "date": "2024-01-29",
+            "close": 94.86
           },
           {
-            "date": "2025-04-21",
-            "close": 86.0
+            "date": "2024-01-30",
+            "close": 95.72
           },
           {
-            "date": "2025-04-22",
-            "close": 86.48
+            "date": "2024-01-31",
+            "close": 96.66
           },
           {
-            "date": "2025-04-23",
-            "close": 87.32
+            "date": "2024-02-01",
+            "close": 98.24
           },
           {
-            "date": "2025-04-24",
-            "close": 88.24
+            "date": "2024-02-02",
+            "close": 96.07
           },
           {
-            "date": "2025-04-25",
-            "close": 88.89
+            "date": "2024-02-05",
+            "close": 94.13
           },
           {
-            "date": "2025-04-28",
-            "close": 89.45
+            "date": "2024-02-06",
+            "close": 95.05
           },
           {
-            "date": "2025-04-29",
-            "close": 90.2
+            "date": "2024-02-07",
+            "close": 94.59
           },
           {
-            "date": "2025-04-30",
-            "close": 89.47
+            "date": "2024-02-08",
+            "close": 94.04
           },
           {
-            "date": "2025-05-01",
-            "close": 88.69
+            "date": "2024-02-09",
+            "close": 93.85
           },
           {
-            "date": "2025-05-02",
-            "close": 87.73
+            "date": "2024-02-12",
+            "close": 93.96
           },
           {
-            "date": "2025-05-05",
-            "close": 87.24
+            "date": "2024-02-13",
+            "close": 92.35
           },
           {
-            "date": "2025-05-06",
-            "close": 87.53
+            "date": "2024-02-14",
+            "close": 92.82
           },
           {
-            "date": "2025-05-07",
-            "close": 87.9
+            "date": "2024-02-15",
+            "close": 93.3
           },
           {
-            "date": "2025-05-08",
-            "close": 86.92
-          },
-          {
-            "date": "2025-05-09",
-            "close": 87.05
+            "date": "2024-02-16",
+            "close": 92.76
           }
         ],
         "turning_points": {
           "turning_points": [
             {
-              "date": "2025-04-21",
+              "date": "2024-02-13",
               "type": "trough",
-              "description": "事件后第 19 天录得相对基准 -5.94%，为窗口内最大降幅；与预测方向相反。",
-              "days_after_event": 19
+              "description": "事件后第 33 天录得相对基准 -4.51%，为窗口内最大降幅；印证预测方向。",
+              "days_after_event": 33
             }
           ],
-          "time_to_peak_impact_days": 19,
-          "narrative": "事件后 1 天累计 +0.46%，峰值出现在事件后第 19 天 (-5.94%)，第 5 天起回吐。",
+          "time_to_peak_impact_days": 33,
+          "narrative": "事件后 3 天累计 -1.95%，峰值出现在事件后第 33 天 (-4.51%)，第 14 天起回吐。",
           "method": "heuristic"
         },
         "data_source_name": null,
@@ -17306,153 +17133,647 @@
         "user_provided": false
       },
       {
-        "event_date": "2025-02-01",
-        "event_note": "Trump signs executive orders imposing 25% tariffs on Canada/Mexico and 10% on China",
-        "baseline_price": 88.16,
-        "end_price": 88.16,
-        "actual_pct": 0.0,
-        "actual_direction": "up",
+        "event_date": "2023-02-14",
+        "event_note": "Jan 2023 CPI 6.4% vs 6.2% exp, core 5.6% vs 5.5% exp (+0.2pp surprise, sparked selloff)",
+        "baseline_price": 104.02,
+        "end_price": 102.38,
+        "actual_pct": -1.58,
+        "actual_direction": "down",
         "dir_hit": true,
-        "strict_hit": false,
-        "mag_err_bucket": "<=100%",
+        "strict_hit": true,
+        "mag_err_bucket": "<=10%",
         "skipped_reason": null,
         "price_path": [
           {
-            "date": "2025-01-24",
-            "close": 87.22
+            "date": "2023-02-06",
+            "close": 105.91
           },
           {
-            "date": "2025-01-27",
-            "close": 88.25
+            "date": "2023-02-07",
+            "close": 105.06
           },
           {
-            "date": "2025-01-28",
-            "close": 88.19
+            "date": "2023-02-08",
+            "close": 105.56
           },
           {
-            "date": "2025-01-29",
-            "close": 88.01
+            "date": "2023-02-09",
+            "close": 104.56
           },
           {
-            "date": "2025-01-30",
-            "close": 88.34
+            "date": "2023-02-10",
+            "close": 103.39
           },
           {
-            "date": "2025-01-31",
-            "close": 87.76
+            "date": "2023-02-13",
+            "close": 104.26
           },
           {
-            "date": "2025-02-03",
-            "close": 88.16
+            "date": "2023-02-14",
+            "close": 104.02
           },
           {
-            "date": "2025-02-04",
-            "close": 88.43
+            "date": "2023-02-15",
+            "close": 103.05
           },
           {
-            "date": "2025-02-05",
-            "close": 89.89
+            "date": "2023-02-16",
+            "close": 101.59
           },
           {
-            "date": "2025-02-06",
-            "close": 89.85
+            "date": "2023-02-17",
+            "close": 102.38
           },
           {
-            "date": "2025-02-07",
-            "close": 89.27
+            "date": "2023-02-21",
+            "close": 100.39
           },
           {
-            "date": "2025-02-10",
-            "close": 89.0
+            "date": "2023-02-22",
+            "close": 101.31
           },
           {
-            "date": "2025-02-11",
-            "close": 88.43
+            "date": "2023-02-23",
+            "close": 102.3
           },
           {
-            "date": "2025-02-12",
-            "close": 87.23
+            "date": "2023-02-24",
+            "close": 100.97
           },
           {
-            "date": "2025-02-13",
-            "close": 88.68
+            "date": "2023-02-27",
+            "close": 101.25
           },
           {
-            "date": "2025-02-14",
-            "close": 89.15
+            "date": "2023-02-28",
+            "close": 101.71
           },
           {
-            "date": "2025-02-18",
-            "close": 88.1
+            "date": "2023-03-01",
+            "close": 100.37
           },
           {
-            "date": "2025-02-19",
-            "close": 88.21
+            "date": "2023-03-02",
+            "close": 99.48
           },
           {
-            "date": "2025-02-20",
-            "close": 88.54
+            "date": "2023-03-03",
+            "close": 101.89
           },
           {
-            "date": "2025-02-21",
-            "close": 89.61
+            "date": "2023-03-06",
+            "close": 101.1
           },
           {
-            "date": "2025-02-24",
-            "close": 89.87
+            "date": "2023-03-07",
+            "close": 101.72
           },
           {
-            "date": "2025-02-25",
-            "close": 91.42
+            "date": "2023-03-08",
+            "close": 101.82
           },
           {
-            "date": "2025-02-26",
-            "close": 91.96
+            "date": "2023-03-09",
+            "close": 102.07
           },
           {
-            "date": "2025-02-27",
-            "close": 91.31
+            "date": "2023-03-10",
+            "close": 105.59
           },
           {
-            "date": "2025-02-28",
-            "close": 92.43
+            "date": "2023-03-13",
+            "close": 105.83
           },
           {
-            "date": "2025-03-03",
-            "close": 92.57
+            "date": "2023-03-14",
+            "close": 104.09
           },
           {
-            "date": "2025-03-04",
-            "close": 91.43
+            "date": "2023-03-15",
+            "close": 106.1
           },
           {
-            "date": "2025-03-05",
-            "close": 90.7
+            "date": "2023-03-16",
+            "close": 105.27
           },
           {
-            "date": "2025-03-06",
-            "close": 90.4
+            "date": "2023-03-17",
+            "close": 106.85
           },
           {
-            "date": "2025-03-07",
-            "close": 90.11
+            "date": "2023-03-20",
+            "close": 105.91
           },
           {
-            "date": "2025-03-10",
-            "close": 91.05
+            "date": "2023-03-21",
+            "close": 105.0
+          },
+          {
+            "date": "2023-03-22",
+            "close": 106.4
+          },
+          {
+            "date": "2023-03-23",
+            "close": 106.4
           }
         ],
         "turning_points": {
           "turning_points": [
             {
-              "date": "2025-03-03",
-              "type": "peak",
-              "description": "事件后第 30 天录得相对基准 +5.00%，为窗口内最大升幅；印证预测方向。",
-              "days_after_event": 30
+              "date": "2023-03-02",
+              "type": "trough",
+              "description": "事件后第 16 天录得相对基准 -4.36%，为窗口内最大降幅；印证预测方向。",
+              "days_after_event": 16
             }
           ],
-          "time_to_peak_impact_days": 30,
-          "narrative": "事件后 1 天累计 +0.00%，峰值出现在事件后第 30 天 (+5.00%)，第 5 天起回吐。",
+          "time_to_peak_impact_days": 16,
+          "narrative": "事件后 3 天累计 -1.58%，峰值出现在事件后第 16 天 (-4.36%)，第 8 天起回吐。",
+          "method": "heuristic"
+        },
+        "data_source_name": null,
+        "data_source_url": null,
+        "user_provided": false
+      },
+      {
+        "event_date": "2022-09-13",
+        "event_note": "Aug 2022 CPI 8.3% vs 8.1% exp, core 6.3% vs 6.1% exp (+0.2pp surprise, major equity drop)",
+        "baseline_price": 107.67,
+        "end_price": 107.07,
+        "actual_pct": -0.56,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null,
+        "price_path": [
+          {
+            "date": "2022-09-06",
+            "close": 107.49
+          },
+          {
+            "date": "2022-09-07",
+            "close": 109.19
+          },
+          {
+            "date": "2022-09-08",
+            "close": 108.07
+          },
+          {
+            "date": "2022-09-09",
+            "close": 108.31
+          },
+          {
+            "date": "2022-09-12",
+            "close": 107.42
+          },
+          {
+            "date": "2022-09-13",
+            "close": 107.67
+          },
+          {
+            "date": "2022-09-14",
+            "close": 108.04
+          },
+          {
+            "date": "2022-09-15",
+            "close": 107.97
+          },
+          {
+            "date": "2022-09-16",
+            "close": 107.07
+          },
+          {
+            "date": "2022-09-19",
+            "close": 107.32
+          },
+          {
+            "date": "2022-09-20",
+            "close": 106.25
+          },
+          {
+            "date": "2022-09-21",
+            "close": 108.03
+          },
+          {
+            "date": "2022-09-22",
+            "close": 105.27
+          },
+          {
+            "date": "2022-09-23",
+            "close": 105.7
+          },
+          {
+            "date": "2022-09-26",
+            "close": 103.68
+          },
+          {
+            "date": "2022-09-27",
+            "close": 100.95
+          },
+          {
+            "date": "2022-09-28",
+            "close": 104.33
+          },
+          {
+            "date": "2022-09-29",
+            "close": 103.79
+          },
+          {
+            "date": "2022-09-30",
+            "close": 102.45
+          },
+          {
+            "date": "2022-10-03",
+            "close": 103.83
+          },
+          {
+            "date": "2022-10-04",
+            "close": 103.54
+          },
+          {
+            "date": "2022-10-05",
+            "close": 102.55
+          },
+          {
+            "date": "2022-10-06",
+            "close": 101.98
+          },
+          {
+            "date": "2022-10-07",
+            "close": 100.99
+          },
+          {
+            "date": "2022-10-10",
+            "close": 99.42
+          },
+          {
+            "date": "2022-10-11",
+            "close": 99.86
+          },
+          {
+            "date": "2022-10-12",
+            "close": 100.35
+          },
+          {
+            "date": "2022-10-13",
+            "close": 99.39
+          },
+          {
+            "date": "2022-10-14",
+            "close": 98.57
+          },
+          {
+            "date": "2022-10-17",
+            "close": 98.09
+          },
+          {
+            "date": "2022-10-18",
+            "close": 98.32
+          },
+          {
+            "date": "2022-10-19",
+            "close": 96.53
+          },
+          {
+            "date": "2022-10-20",
+            "close": 94.88
+          }
+        ],
+        "turning_points": {
+          "turning_points": [
+            {
+              "date": "2022-10-20",
+              "type": "trough",
+              "description": "事件后第 37 天录得相对基准 -11.88%，为窗口内最大降幅；印证预测方向。",
+              "days_after_event": 37
+            }
+          ],
+          "time_to_peak_impact_days": 37,
+          "narrative": "事件后 3 天累计 -0.56%，峰值出现在事件后第 37 天 (-11.88%)，第 3 天起回吐。",
+          "method": "heuristic"
+        },
+        "data_source_name": null,
+        "data_source_url": null,
+        "user_provided": false
+      },
+      {
+        "event_date": "2022-01-12",
+        "event_note": "Dec 2021 CPI 7.0% vs 6.8% exp (+0.2pp surprise, highest since 1982)",
+        "baseline_price": 143.01,
+        "end_price": 140.1,
+        "actual_pct": -2.03,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=50%",
+        "skipped_reason": null,
+        "price_path": [
+          {
+            "date": "2022-01-04",
+            "close": 143.7
+          },
+          {
+            "date": "2022-01-05",
+            "close": 142.92
+          },
+          {
+            "date": "2022-01-06",
+            "close": 143.29
+          },
+          {
+            "date": "2022-01-07",
+            "close": 142.26
+          },
+          {
+            "date": "2022-01-10",
+            "close": 142.61
+          },
+          {
+            "date": "2022-01-11",
+            "close": 143.56
+          },
+          {
+            "date": "2022-01-12",
+            "close": 143.01
+          },
+          {
+            "date": "2022-01-13",
+            "close": 144.28
+          },
+          {
+            "date": "2022-01-14",
+            "close": 142.1
+          },
+          {
+            "date": "2022-01-18",
+            "close": 140.1
+          },
+          {
+            "date": "2022-01-19",
+            "close": 141.07
+          },
+          {
+            "date": "2022-01-20",
+            "close": 141.94
+          },
+          {
+            "date": "2022-01-21",
+            "close": 143.63
+          },
+          {
+            "date": "2022-01-24",
+            "close": 142.45
+          },
+          {
+            "date": "2022-01-25",
+            "close": 142.22
+          },
+          {
+            "date": "2022-01-26",
+            "close": 140.5
+          },
+          {
+            "date": "2022-01-27",
+            "close": 143.08
+          },
+          {
+            "date": "2022-01-28",
+            "close": 143.13
+          },
+          {
+            "date": "2022-01-31",
+            "close": 142.39
+          },
+          {
+            "date": "2022-02-01",
+            "close": 141.72
+          },
+          {
+            "date": "2022-02-02",
+            "close": 142.2
+          },
+          {
+            "date": "2022-02-03",
+            "close": 141.09
+          },
+          {
+            "date": "2022-02-04",
+            "close": 139.01
+          },
+          {
+            "date": "2022-02-07",
+            "close": 139.1
+          },
+          {
+            "date": "2022-02-08",
+            "close": 138.17
+          },
+          {
+            "date": "2022-02-09",
+            "close": 138.43
+          },
+          {
+            "date": "2022-02-10",
+            "close": 136.23
+          },
+          {
+            "date": "2022-02-11",
+            "close": 138.25
+          },
+          {
+            "date": "2022-02-14",
+            "close": 136.53
+          },
+          {
+            "date": "2022-02-15",
+            "close": 134.98
+          },
+          {
+            "date": "2022-02-16",
+            "close": 135.78
+          },
+          {
+            "date": "2022-02-17",
+            "close": 136.79
+          },
+          {
+            "date": "2022-02-18",
+            "close": 138.23
+          }
+        ],
+        "turning_points": {
+          "turning_points": [
+            {
+              "date": "2022-02-15",
+              "type": "trough",
+              "description": "事件后第 34 天录得相对基准 -5.61%，为窗口内最大降幅；印证预测方向。",
+              "days_after_event": 34
+            }
+          ],
+          "time_to_peak_impact_days": 34,
+          "narrative": "事件后 3 天累计 -2.03%，峰值出现在事件后第 34 天 (-5.61%)，第 7 天起回吐。",
+          "method": "heuristic"
+        },
+        "data_source_name": null,
+        "data_source_url": null,
+        "user_provided": false
+      },
+      {
+        "event_date": "2021-11-10",
+        "event_note": "Oct 2021 CPI 6.2% vs 5.9% exp, core 4.6% vs 4.3% exp (+0.3pp surprise, taper talk intensified)",
+        "baseline_price": 148.2,
+        "end_price": 145.48,
+        "actual_pct": -1.84,
+        "actual_direction": "down",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=25%",
+        "skipped_reason": null,
+        "price_path": [
+          {
+            "date": "2021-11-02",
+            "close": 147.09
+          },
+          {
+            "date": "2021-11-03",
+            "close": 145.57
+          },
+          {
+            "date": "2021-11-04",
+            "close": 147.1
+          },
+          {
+            "date": "2021-11-05",
+            "close": 149.3
+          },
+          {
+            "date": "2021-11-08",
+            "close": 149.02
+          },
+          {
+            "date": "2021-11-09",
+            "close": 150.96
+          },
+          {
+            "date": "2021-11-10",
+            "close": 148.2
+          },
+          {
+            "date": "2021-11-11",
+            "close": 147.98
+          },
+          {
+            "date": "2021-11-12",
+            "close": 147.33
+          },
+          {
+            "date": "2021-11-15",
+            "close": 145.48
+          },
+          {
+            "date": "2021-11-16",
+            "close": 145.11
+          },
+          {
+            "date": "2021-11-17",
+            "close": 146.26
+          },
+          {
+            "date": "2021-11-18",
+            "close": 146.81
+          },
+          {
+            "date": "2021-11-19",
+            "close": 148.36
+          },
+          {
+            "date": "2021-11-22",
+            "close": 146.62
+          },
+          {
+            "date": "2021-11-23",
+            "close": 144.5
+          },
+          {
+            "date": "2021-11-24",
+            "close": 146.82
+          },
+          {
+            "date": "2021-11-26",
+            "close": 150.53
+          },
+          {
+            "date": "2021-11-29",
+            "close": 149.32
+          },
+          {
+            "date": "2021-11-30",
+            "close": 151.59
+          },
+          {
+            "date": "2021-12-01",
+            "close": 152.34
+          },
+          {
+            "date": "2021-12-02",
+            "close": 152.53
+          },
+          {
+            "date": "2021-12-03",
+            "close": 154.35
+          },
+          {
+            "date": "2021-12-06",
+            "close": 152.23
+          },
+          {
+            "date": "2021-12-07",
+            "close": 151.0
+          },
+          {
+            "date": "2021-12-08",
+            "close": 148.39
+          },
+          {
+            "date": "2021-12-09",
+            "close": 149.22
+          },
+          {
+            "date": "2021-12-10",
+            "close": 148.86
+          },
+          {
+            "date": "2021-12-13",
+            "close": 151.06
+          },
+          {
+            "date": "2021-12-14",
+            "close": 150.7
+          },
+          {
+            "date": "2021-12-15",
+            "close": 149.25
+          },
+          {
+            "date": "2021-12-16",
+            "close": 149.14
+          },
+          {
+            "date": "2021-12-17",
+            "close": 150.83
+          }
+        ],
+        "turning_points": {
+          "turning_points": [
+            {
+              "date": "2021-12-03",
+              "type": "peak",
+              "description": "事件后第 23 天录得相对基准 +4.15%，为窗口内最大升幅；与预测方向相反。",
+              "days_after_event": 23
+            }
+          ],
+          "time_to_peak_impact_days": 23,
+          "narrative": "事件后 3 天累计 -1.84%，峰值出现在事件后第 23 天 (+4.15%)，第 6 天起回吐。",
           "method": "heuristic"
         },
         "data_source_name": null,
@@ -62392,903 +62713,6 @@
     ]
   },
   {
-    "id": 32,
-    "pattern": "美国 CPI 同比超预期 >=0.2%",
-    "asset_symbol": "TLT",
-    "asset_name": "20+年期美债ETF",
-    "asset_class": "us_stock",
-    "macro_category": "macro_data",
-    "direction": "down",
-    "magnitude_pct": 1.5,
-    "magnitude_pct_stddev": 0.0,
-    "horizon_days": 3,
-    "confidence": 0.7142857142857143,
-    "grade": "A",
-    "retail_edge": "mid",
-    "support_count": 4,
-    "refute_count": 1,
-    "source": "seed",
-    "rationale": "通胀粘性强化紧缩预期，长久期资产与黄金承压，美元走强",
-    "explanation": {
-      "tldr": "CPI超预期0.2%→紧缩预期升温→长债收益率上行→TLT下跌1.5%",
-      "preconditions": [
-        {
-          "condition": "Fed处于观望或紧缩周期，尚未明确转向宽松",
-          "why_matters": "若Fed已宣布降息周期，同样CPI数据市场会解读为'放缓降息'而非'重启加息'，债券反应会弱化甚至反向"
-        },
-        {
-          "condition": "长端收益率未处于极端高位（如10年期<5%）",
-          "why_matters": "收益率已在周期高位时，进一步上行空间受限，TLT下跌幅度会被压缩"
-        },
-        {
-          "condition": "市场对通胀预期处于敏感状态，而非已完全priced in高通胀",
-          "why_matters": "若市场已长期预期高通胀（如连续多月超预期），边际冲击会钝化"
-        }
-      ],
-      "regime_context": "适用于Fed仍有紧缩空间且通胀是首要政策目标的环境。若经济已进入衰退或Fed明确转向宽松，CPI超预期可能被解读为'经济韧性'而利好风险资产，债券避险属性反而支撑价格。",
-      "causal_chain": [
-        {
-          "step": 1,
-          "trigger": "CPI同比公布值比预期高>=0.2个百分点",
-          "mechanism": "市场重估通胀粘性，原有'通胀见顶'叙事受挑战",
-          "assumption": "超预期幅度足够大（0.2%约等于2-3个sigma），且非单一波动项驱动",
-          "confidence": "high"
-        },
-        {
-          "step": 2,
-          "trigger": "通胀粘性预期上修",
-          "mechanism": "Fed政策路径重新定价：加息概率上升或降息预期后推",
-          "assumption": "Fed明确以通胀为首要目标（而非增长/就业），且市场信任Fed的reaction function",
-          "confidence": "high"
-        },
-        {
-          "step": 3,
-          "trigger": "Fed紧缩预期升温",
-          "mechanism": "长端利率通过期限溢价和短期利率预期路径双重推升",
-          "assumption": "长端尚未完全priced in紧缩路径，存在重新定价空间",
-          "confidence": "medium"
-        },
-        {
-          "step": 4,
-          "trigger": "10年期及以上收益率上行15-20bp",
-          "mechanism": "久期效应：TLT持有20+年期债券，修正久期约17-18，收益率每上行1bp价格下跌约0.17-0.18%",
-          "assumption": "无大规模避险买盘对冲（如地缘风险爆发），市场按正常利率敏感度定价",
-          "confidence": "high"
-        }
-      ],
-      "asset_logic": "TLT是追踪20+年期美债的主流ETF，久期约17-18年，对长端利率敏感度最高。CPI超预期主要冲击长端（通胀预期+政策路径重定价），短端国债受影响较小。1.5%跌幅对应15-20bp收益率上行，符合历史久期弹性。相比黄金（受实际利率和避险情绪双重影响），TLT更纯粹地反映名义利率预期。",
-      "horizon_logic": "3天窗口涵盖CPI公布当日+后续2个交易日，足够市场消化数据并调整Fed政策预期曲线。更短（1天）只捕捉初始反应，可能受日内噪音干扰；更长（5天+）则混入下周其他数据（PPI、零售）和Fed官员讲话，归因困难。",
-      "failure_conditions": [
-        "同一窗口内Fed官员发表明确鸽派言论，如'容忍通胀超调'或'经济软着陆优先级更高'",
-        "同期公布的其他宏观数据（就业、GDP、ISM）大幅走弱，衰退预期压倒通胀担忧，避险买盘涌入长债",
-        "CPI超预期主要由单一波动项（如能源、二手车）驱动，核心CPI和超级核心CPI符合或低于预期",
-        "长债收益率已处于周期极端高位（如10年期>5.5%），技术性超卖或实际利率吸引力触发买盘",
-        "同一窗口内发生重大地缘事件（战争、金融系统风险），避险情绪主导市场"
-      ],
-      "evidence_quality": {
-        "sample_size_assessment": "5次历史实例（4次支持，1次反驳）对统计显著性而言是边缘的。这是'有迹象'级别的假设，而非'已验证'的稳健规律。需至少15-20次跨周期样本才能达到统计置信。",
-        "selection_bias_risk": "medium — 需警惕样本是否由'符合直觉'的案例后视筛选而来。理想情况应包含所有CPI超预期>=0.2%的事件，而非只挑选TLT确实下跌的案例。",
-        "regime_diversity": "未知 — 需检查5次实例是否跨越不同政策周期（如2021-2022紧缩期 vs 2023-2024观望期）。若全部集中在某一阶段，泛化能力存疑。"
-      },
-      "related_chains": [],
-      "historical_examples": []
-    },
-    "failure_conditions": [
-      "失效场景包括：(1) 同期公布的其他数据强烈反向（如失业率暴增引发衰退恐慌，避险需求推升债券）",
-      "(2) 美联储官员迅速发声淡化数据重要性",
-      "(3) 金融系统出现流动性危机（如2023年3月银行业风波），TLT反而因避险需求上涨",
-      "(4) 市场此前已过度定价紧缩预期，超预期CPI反而触发'利空出尽'的技术性反弹。"
-    ],
-    "historical_instances": [
-      {
-        "event_date": "2024-01-11",
-        "event_note": "Dec 2023 CPI 3.4% vs 3.2% exp, core 3.9% vs 3.8% exp (+0.2pp surprise)",
-        "baseline_price": 96.71,
-        "end_price": 94.82,
-        "actual_pct": -1.95,
-        "actual_direction": "down",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=50%",
-        "skipped_reason": null,
-        "price_path": [
-          {
-            "date": "2024-01-03",
-            "close": 98.72
-          },
-          {
-            "date": "2024-01-04",
-            "close": 97.22
-          },
-          {
-            "date": "2024-01-05",
-            "close": 96.29
-          },
-          {
-            "date": "2024-01-08",
-            "close": 97.24
-          },
-          {
-            "date": "2024-01-09",
-            "close": 96.62
-          },
-          {
-            "date": "2024-01-10",
-            "close": 96.17
-          },
-          {
-            "date": "2024-01-11",
-            "close": 96.71
-          },
-          {
-            "date": "2024-01-12",
-            "close": 96.52
-          },
-          {
-            "date": "2024-01-16",
-            "close": 94.82
-          },
-          {
-            "date": "2024-01-17",
-            "close": 94.67
-          },
-          {
-            "date": "2024-01-18",
-            "close": 93.79
-          },
-          {
-            "date": "2024-01-19",
-            "close": 94.09
-          },
-          {
-            "date": "2024-01-22",
-            "close": 94.65
-          },
-          {
-            "date": "2024-01-23",
-            "close": 93.9
-          },
-          {
-            "date": "2024-01-24",
-            "close": 93.35
-          },
-          {
-            "date": "2024-01-25",
-            "close": 93.96
-          },
-          {
-            "date": "2024-01-26",
-            "close": 93.78
-          },
-          {
-            "date": "2024-01-29",
-            "close": 94.86
-          },
-          {
-            "date": "2024-01-30",
-            "close": 95.72
-          },
-          {
-            "date": "2024-01-31",
-            "close": 96.66
-          },
-          {
-            "date": "2024-02-01",
-            "close": 98.24
-          },
-          {
-            "date": "2024-02-02",
-            "close": 96.07
-          },
-          {
-            "date": "2024-02-05",
-            "close": 94.13
-          },
-          {
-            "date": "2024-02-06",
-            "close": 95.05
-          },
-          {
-            "date": "2024-02-07",
-            "close": 94.59
-          },
-          {
-            "date": "2024-02-08",
-            "close": 94.04
-          },
-          {
-            "date": "2024-02-09",
-            "close": 93.85
-          },
-          {
-            "date": "2024-02-12",
-            "close": 93.96
-          },
-          {
-            "date": "2024-02-13",
-            "close": 92.35
-          },
-          {
-            "date": "2024-02-14",
-            "close": 92.82
-          },
-          {
-            "date": "2024-02-15",
-            "close": 93.3
-          },
-          {
-            "date": "2024-02-16",
-            "close": 92.76
-          }
-        ],
-        "turning_points": {
-          "turning_points": [
-            {
-              "date": "2024-02-13",
-              "type": "trough",
-              "description": "事件后第 33 天录得相对基准 -4.51%，为窗口内最大降幅；印证预测方向。",
-              "days_after_event": 33
-            }
-          ],
-          "time_to_peak_impact_days": 33,
-          "narrative": "事件后 3 天累计 -1.95%，峰值出现在事件后第 33 天 (-4.51%)，第 14 天起回吐。",
-          "method": "heuristic"
-        },
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      },
-      {
-        "event_date": "2023-02-14",
-        "event_note": "Jan 2023 CPI 6.4% vs 6.2% exp, core 5.6% vs 5.5% exp (+0.2pp surprise, sparked selloff)",
-        "baseline_price": 104.02,
-        "end_price": 102.38,
-        "actual_pct": -1.58,
-        "actual_direction": "down",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=10%",
-        "skipped_reason": null,
-        "price_path": [
-          {
-            "date": "2023-02-06",
-            "close": 105.91
-          },
-          {
-            "date": "2023-02-07",
-            "close": 105.06
-          },
-          {
-            "date": "2023-02-08",
-            "close": 105.56
-          },
-          {
-            "date": "2023-02-09",
-            "close": 104.56
-          },
-          {
-            "date": "2023-02-10",
-            "close": 103.39
-          },
-          {
-            "date": "2023-02-13",
-            "close": 104.26
-          },
-          {
-            "date": "2023-02-14",
-            "close": 104.02
-          },
-          {
-            "date": "2023-02-15",
-            "close": 103.05
-          },
-          {
-            "date": "2023-02-16",
-            "close": 101.59
-          },
-          {
-            "date": "2023-02-17",
-            "close": 102.38
-          },
-          {
-            "date": "2023-02-21",
-            "close": 100.39
-          },
-          {
-            "date": "2023-02-22",
-            "close": 101.31
-          },
-          {
-            "date": "2023-02-23",
-            "close": 102.3
-          },
-          {
-            "date": "2023-02-24",
-            "close": 100.97
-          },
-          {
-            "date": "2023-02-27",
-            "close": 101.25
-          },
-          {
-            "date": "2023-02-28",
-            "close": 101.71
-          },
-          {
-            "date": "2023-03-01",
-            "close": 100.37
-          },
-          {
-            "date": "2023-03-02",
-            "close": 99.48
-          },
-          {
-            "date": "2023-03-03",
-            "close": 101.89
-          },
-          {
-            "date": "2023-03-06",
-            "close": 101.1
-          },
-          {
-            "date": "2023-03-07",
-            "close": 101.72
-          },
-          {
-            "date": "2023-03-08",
-            "close": 101.82
-          },
-          {
-            "date": "2023-03-09",
-            "close": 102.07
-          },
-          {
-            "date": "2023-03-10",
-            "close": 105.59
-          },
-          {
-            "date": "2023-03-13",
-            "close": 105.83
-          },
-          {
-            "date": "2023-03-14",
-            "close": 104.09
-          },
-          {
-            "date": "2023-03-15",
-            "close": 106.1
-          },
-          {
-            "date": "2023-03-16",
-            "close": 105.27
-          },
-          {
-            "date": "2023-03-17",
-            "close": 106.85
-          },
-          {
-            "date": "2023-03-20",
-            "close": 105.91
-          },
-          {
-            "date": "2023-03-21",
-            "close": 105.0
-          },
-          {
-            "date": "2023-03-22",
-            "close": 106.4
-          },
-          {
-            "date": "2023-03-23",
-            "close": 106.4
-          }
-        ],
-        "turning_points": {
-          "turning_points": [
-            {
-              "date": "2023-03-02",
-              "type": "trough",
-              "description": "事件后第 16 天录得相对基准 -4.36%，为窗口内最大降幅；印证预测方向。",
-              "days_after_event": 16
-            }
-          ],
-          "time_to_peak_impact_days": 16,
-          "narrative": "事件后 3 天累计 -1.58%，峰值出现在事件后第 16 天 (-4.36%)，第 8 天起回吐。",
-          "method": "heuristic"
-        },
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      },
-      {
-        "event_date": "2022-09-13",
-        "event_note": "Aug 2022 CPI 8.3% vs 8.1% exp, core 6.3% vs 6.1% exp (+0.2pp surprise, major equity drop)",
-        "baseline_price": 107.67,
-        "end_price": 107.07,
-        "actual_pct": -0.56,
-        "actual_direction": "down",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=100%",
-        "skipped_reason": null,
-        "price_path": [
-          {
-            "date": "2022-09-06",
-            "close": 107.49
-          },
-          {
-            "date": "2022-09-07",
-            "close": 109.19
-          },
-          {
-            "date": "2022-09-08",
-            "close": 108.07
-          },
-          {
-            "date": "2022-09-09",
-            "close": 108.31
-          },
-          {
-            "date": "2022-09-12",
-            "close": 107.42
-          },
-          {
-            "date": "2022-09-13",
-            "close": 107.67
-          },
-          {
-            "date": "2022-09-14",
-            "close": 108.04
-          },
-          {
-            "date": "2022-09-15",
-            "close": 107.97
-          },
-          {
-            "date": "2022-09-16",
-            "close": 107.07
-          },
-          {
-            "date": "2022-09-19",
-            "close": 107.32
-          },
-          {
-            "date": "2022-09-20",
-            "close": 106.25
-          },
-          {
-            "date": "2022-09-21",
-            "close": 108.03
-          },
-          {
-            "date": "2022-09-22",
-            "close": 105.27
-          },
-          {
-            "date": "2022-09-23",
-            "close": 105.7
-          },
-          {
-            "date": "2022-09-26",
-            "close": 103.68
-          },
-          {
-            "date": "2022-09-27",
-            "close": 100.95
-          },
-          {
-            "date": "2022-09-28",
-            "close": 104.33
-          },
-          {
-            "date": "2022-09-29",
-            "close": 103.79
-          },
-          {
-            "date": "2022-09-30",
-            "close": 102.45
-          },
-          {
-            "date": "2022-10-03",
-            "close": 103.83
-          },
-          {
-            "date": "2022-10-04",
-            "close": 103.54
-          },
-          {
-            "date": "2022-10-05",
-            "close": 102.55
-          },
-          {
-            "date": "2022-10-06",
-            "close": 101.98
-          },
-          {
-            "date": "2022-10-07",
-            "close": 100.99
-          },
-          {
-            "date": "2022-10-10",
-            "close": 99.42
-          },
-          {
-            "date": "2022-10-11",
-            "close": 99.86
-          },
-          {
-            "date": "2022-10-12",
-            "close": 100.35
-          },
-          {
-            "date": "2022-10-13",
-            "close": 99.39
-          },
-          {
-            "date": "2022-10-14",
-            "close": 98.57
-          },
-          {
-            "date": "2022-10-17",
-            "close": 98.09
-          },
-          {
-            "date": "2022-10-18",
-            "close": 98.32
-          },
-          {
-            "date": "2022-10-19",
-            "close": 96.53
-          },
-          {
-            "date": "2022-10-20",
-            "close": 94.88
-          }
-        ],
-        "turning_points": {
-          "turning_points": [
-            {
-              "date": "2022-10-20",
-              "type": "trough",
-              "description": "事件后第 37 天录得相对基准 -11.88%，为窗口内最大降幅；印证预测方向。",
-              "days_after_event": 37
-            }
-          ],
-          "time_to_peak_impact_days": 37,
-          "narrative": "事件后 3 天累计 -0.56%，峰值出现在事件后第 37 天 (-11.88%)，第 3 天起回吐。",
-          "method": "heuristic"
-        },
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      },
-      {
-        "event_date": "2022-01-12",
-        "event_note": "Dec 2021 CPI 7.0% vs 6.8% exp (+0.2pp surprise, highest since 1982)",
-        "baseline_price": 143.01,
-        "end_price": 140.1,
-        "actual_pct": -2.03,
-        "actual_direction": "down",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=50%",
-        "skipped_reason": null,
-        "price_path": [
-          {
-            "date": "2022-01-04",
-            "close": 143.7
-          },
-          {
-            "date": "2022-01-05",
-            "close": 142.92
-          },
-          {
-            "date": "2022-01-06",
-            "close": 143.29
-          },
-          {
-            "date": "2022-01-07",
-            "close": 142.26
-          },
-          {
-            "date": "2022-01-10",
-            "close": 142.61
-          },
-          {
-            "date": "2022-01-11",
-            "close": 143.56
-          },
-          {
-            "date": "2022-01-12",
-            "close": 143.01
-          },
-          {
-            "date": "2022-01-13",
-            "close": 144.28
-          },
-          {
-            "date": "2022-01-14",
-            "close": 142.1
-          },
-          {
-            "date": "2022-01-18",
-            "close": 140.1
-          },
-          {
-            "date": "2022-01-19",
-            "close": 141.07
-          },
-          {
-            "date": "2022-01-20",
-            "close": 141.94
-          },
-          {
-            "date": "2022-01-21",
-            "close": 143.63
-          },
-          {
-            "date": "2022-01-24",
-            "close": 142.45
-          },
-          {
-            "date": "2022-01-25",
-            "close": 142.22
-          },
-          {
-            "date": "2022-01-26",
-            "close": 140.5
-          },
-          {
-            "date": "2022-01-27",
-            "close": 143.08
-          },
-          {
-            "date": "2022-01-28",
-            "close": 143.13
-          },
-          {
-            "date": "2022-01-31",
-            "close": 142.39
-          },
-          {
-            "date": "2022-02-01",
-            "close": 141.72
-          },
-          {
-            "date": "2022-02-02",
-            "close": 142.2
-          },
-          {
-            "date": "2022-02-03",
-            "close": 141.09
-          },
-          {
-            "date": "2022-02-04",
-            "close": 139.01
-          },
-          {
-            "date": "2022-02-07",
-            "close": 139.1
-          },
-          {
-            "date": "2022-02-08",
-            "close": 138.17
-          },
-          {
-            "date": "2022-02-09",
-            "close": 138.43
-          },
-          {
-            "date": "2022-02-10",
-            "close": 136.23
-          },
-          {
-            "date": "2022-02-11",
-            "close": 138.25
-          },
-          {
-            "date": "2022-02-14",
-            "close": 136.53
-          },
-          {
-            "date": "2022-02-15",
-            "close": 134.98
-          },
-          {
-            "date": "2022-02-16",
-            "close": 135.78
-          },
-          {
-            "date": "2022-02-17",
-            "close": 136.79
-          },
-          {
-            "date": "2022-02-18",
-            "close": 138.23
-          }
-        ],
-        "turning_points": {
-          "turning_points": [
-            {
-              "date": "2022-02-15",
-              "type": "trough",
-              "description": "事件后第 34 天录得相对基准 -5.61%，为窗口内最大降幅；印证预测方向。",
-              "days_after_event": 34
-            }
-          ],
-          "time_to_peak_impact_days": 34,
-          "narrative": "事件后 3 天累计 -2.03%，峰值出现在事件后第 34 天 (-5.61%)，第 7 天起回吐。",
-          "method": "heuristic"
-        },
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      },
-      {
-        "event_date": "2021-11-10",
-        "event_note": "Oct 2021 CPI 6.2% vs 5.9% exp, core 4.6% vs 4.3% exp (+0.3pp surprise, taper talk intensified)",
-        "baseline_price": 148.2,
-        "end_price": 145.48,
-        "actual_pct": -1.84,
-        "actual_direction": "down",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=25%",
-        "skipped_reason": null,
-        "price_path": [
-          {
-            "date": "2021-11-02",
-            "close": 147.09
-          },
-          {
-            "date": "2021-11-03",
-            "close": 145.57
-          },
-          {
-            "date": "2021-11-04",
-            "close": 147.1
-          },
-          {
-            "date": "2021-11-05",
-            "close": 149.3
-          },
-          {
-            "date": "2021-11-08",
-            "close": 149.02
-          },
-          {
-            "date": "2021-11-09",
-            "close": 150.96
-          },
-          {
-            "date": "2021-11-10",
-            "close": 148.2
-          },
-          {
-            "date": "2021-11-11",
-            "close": 147.98
-          },
-          {
-            "date": "2021-11-12",
-            "close": 147.33
-          },
-          {
-            "date": "2021-11-15",
-            "close": 145.48
-          },
-          {
-            "date": "2021-11-16",
-            "close": 145.11
-          },
-          {
-            "date": "2021-11-17",
-            "close": 146.26
-          },
-          {
-            "date": "2021-11-18",
-            "close": 146.81
-          },
-          {
-            "date": "2021-11-19",
-            "close": 148.36
-          },
-          {
-            "date": "2021-11-22",
-            "close": 146.62
-          },
-          {
-            "date": "2021-11-23",
-            "close": 144.5
-          },
-          {
-            "date": "2021-11-24",
-            "close": 146.82
-          },
-          {
-            "date": "2021-11-26",
-            "close": 150.53
-          },
-          {
-            "date": "2021-11-29",
-            "close": 149.32
-          },
-          {
-            "date": "2021-11-30",
-            "close": 151.59
-          },
-          {
-            "date": "2021-12-01",
-            "close": 152.34
-          },
-          {
-            "date": "2021-12-02",
-            "close": 152.53
-          },
-          {
-            "date": "2021-12-03",
-            "close": 154.35
-          },
-          {
-            "date": "2021-12-06",
-            "close": 152.23
-          },
-          {
-            "date": "2021-12-07",
-            "close": 151.0
-          },
-          {
-            "date": "2021-12-08",
-            "close": 148.39
-          },
-          {
-            "date": "2021-12-09",
-            "close": 149.22
-          },
-          {
-            "date": "2021-12-10",
-            "close": 148.86
-          },
-          {
-            "date": "2021-12-13",
-            "close": 151.06
-          },
-          {
-            "date": "2021-12-14",
-            "close": 150.7
-          },
-          {
-            "date": "2021-12-15",
-            "close": 149.25
-          },
-          {
-            "date": "2021-12-16",
-            "close": 149.14
-          },
-          {
-            "date": "2021-12-17",
-            "close": 150.83
-          }
-        ],
-        "turning_points": {
-          "turning_points": [
-            {
-              "date": "2021-12-03",
-              "type": "peak",
-              "description": "事件后第 23 天录得相对基准 +4.15%，为窗口内最大升幅；与预测方向相反。",
-              "days_after_event": 23
-            }
-          ],
-          "time_to_peak_impact_days": 23,
-          "narrative": "事件后 3 天累计 -1.84%，峰值出现在事件后第 23 天 (+4.15%)，第 6 天起回吐。",
-          "method": "heuristic"
-        },
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      }
-    ]
-  },
-  {
     "id": 126,
     "pattern": "必需消费品权重股利好财报带动板块 ETF 短期跟涨",
     "asset_symbol": "XLP",
@@ -75092,893 +74516,6 @@
           ],
           "time_to_peak_impact_days": 22,
           "narrative": "事件后 14 天累计 -3.44%，峰值出现在事件后第 22 天 (-4.70%)，第 8 天起回吐。",
-          "method": "heuristic"
-        },
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      }
-    ]
-  },
-  {
-    "id": 34,
-    "pattern": "美国 CPI 同比低于预期 >=0.2%",
-    "asset_symbol": "QQQ",
-    "asset_name": "纳斯达克100ETF",
-    "asset_class": "us_stock",
-    "macro_category": "macro_data",
-    "direction": "up",
-    "magnitude_pct": 1.5,
-    "magnitude_pct_stddev": 0.0,
-    "horizon_days": 3,
-    "confidence": 0.65,
-    "grade": "A",
-    "retail_edge": "mid",
-    "support_count": 2,
-    "refute_count": 3,
-    "source": "seed",
-    "rationale": "通胀缓解强化降息预期，风险资产和长久期资产共振上涨",
-    "explanation": {
-      "tldr": "CPI 大幅低预期 → 降息预期升温 → 长端利率下行 → 纳指成长股估值扩张",
-      "preconditions": [
-        {
-          "condition": "Fed 仍处于「数据依赖」模式，尚未明确 pivot 或给出降息指引",
-          "why_matters": "若 Fed 已明确 higher-for-longer 或已转向降息，同一 CPI 惊喜的边际影响大幅减弱"
-        },
-        {
-          "condition": "当前期货市场隐含的降息预期 < 3 次/年，即预期尚未饱和",
-          "why_matters": "若市场已定价 4+ 次降息，单次 CPI 利好难以进一步推升预期"
-        },
-        {
-          "condition": "核心 CPI、超级核心 CPI、服务通胀等其他通胀分项不出现反向信号",
-          "why_matters": "若标题 CPI 低但核心通胀黏性仍强，Fed 不会轻易转向，利率预期反应钝化"
-        }
-      ],
-      "regime_context": "适用于「通胀见顶后的观察期 + Fed 尚未 pivot」环境（如 2023H2）。在零利率/QE 环境或 Fed 已明确转向宽松后，同一事件的边际影响接近零；在滞胀环境下（高通胀+衰退预期），CPI 降温可能引发「衰退恐慌」反而压制风险资产。",
-      "causal_chain": [
-        {
-          "step": 1,
-          "trigger": "CPI 同比低于预期 ≥0.2%（统计显著的惊喜）",
-          "mechanism": "市场更新对通胀路径的贝叶斯预期，认为通胀降温速度快于 Fed 点阵图假设",
-          "assumption": "市场相信 CPI 是 Fed 决策的主要输入之一（而非单看 PCE 或就业）",
-          "confidence": "medium"
-        },
-        {
-          "step": 2,
-          "trigger": "通胀预期下修",
-          "mechanism": "期货市场重新定价首次降息时点和全年降息次数，联邦基金利率期货隐含概率上升",
-          "assumption": "Fed 的「2% 通胀目标」仍是核心约束，且 Fed 会对通胀惊喜作出对称反应",
-          "confidence": "medium"
-        },
-        {
-          "step": 3,
-          "trigger": "降息预期升温",
-          "mechanism": "名义长端利率（10Y UST）下行，实际利率同步回落",
-          "assumption": "债券市场流动性充足，不存在「降息预期 vs 财政担忧」的拉锯",
-          "confidence": "high"
-        },
-        {
-          "step": 4,
-          "trigger": "长端利率下行",
-          "mechanism": "成长股 DCF 估值模型的分母（贴现率）下降，理论公允价值上升",
-          "assumption": "纳指成分股以长久期成长股为主（现金流远期加权），对利率敏感度高",
-          "confidence": "high"
-        },
-        {
-          "step": 5,
-          "trigger": "估值重估启动",
-          "mechanism": "QQQ 作为纳指 100 成分 ETF，日内交易量放大，追涨资金涌入",
-          "assumption": "3 天窗口内不出现更强的反向信号（如 Fed 官员鹰派发言、地缘风险）",
-          "confidence": "low"
-        }
-      ],
-      "asset_logic": "选择 QQQ 而非 SPY/IWM：纳指 100 成分股久期长（科技/消费成长股占比高），对利率变化的凸性最强。相比之下，SPY 包含金融/能源等利率不敏感板块，IWM 小盘股受流动性和信用利差主导。1.5% 的幅度假设隐含「纯估值扩张」，未考虑盈利预期变化（3 天内盈利预期惯性强）。",
-      "horizon_logic": "3 天窗口对应「即时反应 + 短期动量延续」：T+0 日内消化 CPI 数据，T+1~2 算法交易和衍生品对冲放大趋势，T+3 前通常完成第一轮定价。更长窗口（如 5-10 天）会引入其他变量（财报季、Fed 官员发言、PMI 等），信噪比下降。更短窗口（如 1 天）可能因日内波动和流动性摩擦低估真实效应。",
-      "failure_conditions": [
-        "CPI 公布后 24 小时内，Fed 官员（尤其投票委员）发表鹰派言论强调「不会因单次数据转向」",
-        "同期公布的核心 CPI 环比 >0.3% 或超级核心 CPI（服务除住房）反弹，抵消标题 CPI 利好",
-        "VIX 在预测窗口内 >30（系统性恐慌主导，单一数据被淹没）",
-        "市场在 CPI 公布前已提前大幅定价降息（如 2 周内 10Y 利率已下行 >20bp），预期饱和",
-        "同一窗口内出现更强宏观信号：非农就业大幅低于预期（衰退担忧压倒降息利好）、地缘冲突升级、银行业风险事件"
-      ],
-      "evidence_quality": {
-        "sample_size_assessment": "仅 5 次历史实例，且支持 2 次 vs 驳斥 3 次，说明这条链在实际中**经常失效**。样本量远低于统计显著性门槛（通常需 20+ 次），当前状态是「假设待验证」而非「已证实规律」。",
-        "selection_bias_risk": "high — 样本可能由「记忆深刻的 CPI 日」事后筛选，忽略了大量「CPI 低预期但市场无反应」的案例。需补充：过去 3 年所有 CPI 低预期 ≥0.2% 的完整样本，而非挑选。",
-        "regime_diversity": "未知（缺少历史实例时间戳）。若 5 次样本都集中在 2023H2 某一轮降息预期升温期，则泛化性极弱；需验证样本是否跨越「加息周期末期」「观察期」「降息周期初期」等多种regime。"
-      },
-      "related_chains": [],
-      "historical_examples": []
-    },
-    "failure_conditions": null,
-    "historical_instances": [
-      {
-        "event_date": "2024-12-11",
-        "event_note": "US Nov 2024 CPI 2.7% YoY vs 2.9% expected, -0.2% beat supported soft landing narrative",
-        "baseline_price": 529.92,
-        "end_price": 538.17,
-        "actual_pct": 1.56,
-        "actual_direction": "up",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=10%",
-        "skipped_reason": null,
-        "price_path": [
-          {
-            "date": "2024-12-03",
-            "close": 516.87
-          },
-          {
-            "date": "2024-12-04",
-            "close": 523.26
-          },
-          {
-            "date": "2024-12-05",
-            "close": 521.81
-          },
-          {
-            "date": "2024-12-06",
-            "close": 526.48
-          },
-          {
-            "date": "2024-12-09",
-            "close": 522.38
-          },
-          {
-            "date": "2024-12-10",
-            "close": 520.6
-          },
-          {
-            "date": "2024-12-11",
-            "close": 529.92
-          },
-          {
-            "date": "2024-12-12",
-            "close": 526.5
-          },
-          {
-            "date": "2024-12-13",
-            "close": 530.53
-          },
-          {
-            "date": "2024-12-16",
-            "close": 538.17
-          },
-          {
-            "date": "2024-12-17",
-            "close": 535.8
-          },
-          {
-            "date": "2024-12-18",
-            "close": 516.47
-          },
-          {
-            "date": "2024-12-19",
-            "close": 514.17
-          },
-          {
-            "date": "2024-12-20",
-            "close": 518.66
-          },
-          {
-            "date": "2024-12-23",
-            "close": 522.87
-          },
-          {
-            "date": "2024-12-24",
-            "close": 529.96
-          },
-          {
-            "date": "2024-12-26",
-            "close": 529.6
-          },
-          {
-            "date": "2024-12-27",
-            "close": 522.56
-          },
-          {
-            "date": "2024-12-30",
-            "close": 515.61
-          },
-          {
-            "date": "2024-12-31",
-            "close": 511.23
-          },
-          {
-            "date": "2025-01-02",
-            "close": 510.23
-          },
-          {
-            "date": "2025-01-03",
-            "close": 518.58
-          },
-          {
-            "date": "2025-01-06",
-            "close": 524.54
-          },
-          {
-            "date": "2025-01-07",
-            "close": 515.18
-          },
-          {
-            "date": "2025-01-08",
-            "close": 515.27
-          },
-          {
-            "date": "2025-01-10",
-            "close": 507.19
-          },
-          {
-            "date": "2025-01-13",
-            "close": 505.56
-          },
-          {
-            "date": "2025-01-14",
-            "close": 505.08
-          },
-          {
-            "date": "2025-01-15",
-            "close": 516.7
-          },
-          {
-            "date": "2025-01-16",
-            "close": 513.08
-          },
-          {
-            "date": "2025-01-17",
-            "close": 521.74
-          }
-        ],
-        "turning_points": {
-          "turning_points": [
-            {
-              "date": "2025-01-14",
-              "type": "trough",
-              "description": "事件后第 34 天录得相对基准 -4.69%，为窗口内最大降幅；与预测方向相反。",
-              "days_after_event": 34
-            }
-          ],
-          "time_to_peak_impact_days": 34,
-          "narrative": "事件后 3 天累计 +1.56%，峰值出现在事件后第 34 天 (-4.69%)。",
-          "method": "heuristic"
-        },
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      },
-      {
-        "event_date": "2024-05-15",
-        "event_note": "US Apr 2024 CPI 3.4% YoY vs 3.6% expected, -0.2% miss reinforced June rate cut speculation",
-        "baseline_price": 452.9,
-        "end_price": 454.91,
-        "actual_pct": 0.44,
-        "actual_direction": "up",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=100%",
-        "skipped_reason": null,
-        "price_path": [
-          {
-            "date": "2024-05-07",
-            "close": 440.32
-          },
-          {
-            "date": "2024-05-08",
-            "close": 440.06
-          },
-          {
-            "date": "2024-05-09",
-            "close": 441.02
-          },
-          {
-            "date": "2024-05-10",
-            "close": 442.06
-          },
-          {
-            "date": "2024-05-13",
-            "close": 443.08
-          },
-          {
-            "date": "2024-05-14",
-            "close": 445.93
-          },
-          {
-            "date": "2024-05-15",
-            "close": 452.9
-          },
-          {
-            "date": "2024-05-16",
-            "close": 451.98
-          },
-          {
-            "date": "2024-05-17",
-            "close": 451.76
-          },
-          {
-            "date": "2024-05-20",
-            "close": 454.91
-          },
-          {
-            "date": "2024-05-21",
-            "close": 455.8
-          },
-          {
-            "date": "2024-05-22",
-            "close": 455.71
-          },
-          {
-            "date": "2024-05-23",
-            "close": 453.66
-          },
-          {
-            "date": "2024-05-24",
-            "close": 457.95
-          },
-          {
-            "date": "2024-05-28",
-            "close": 459.68
-          },
-          {
-            "date": "2024-05-29",
-            "close": 456.44
-          },
-          {
-            "date": "2024-05-30",
-            "close": 451.55
-          },
-          {
-            "date": "2024-05-31",
-            "close": 450.71
-          },
-          {
-            "date": "2024-06-03",
-            "close": 453.13
-          },
-          {
-            "date": "2024-06-04",
-            "close": 454.37
-          },
-          {
-            "date": "2024-06-05",
-            "close": 463.53
-          },
-          {
-            "date": "2024-06-06",
-            "close": 463.37
-          },
-          {
-            "date": "2024-06-07",
-            "close": 462.96
-          },
-          {
-            "date": "2024-06-10",
-            "close": 464.83
-          },
-          {
-            "date": "2024-06-11",
-            "close": 468.02
-          },
-          {
-            "date": "2024-06-12",
-            "close": 474.15
-          },
-          {
-            "date": "2024-06-13",
-            "close": 476.72
-          },
-          {
-            "date": "2024-06-14",
-            "close": 479.19
-          },
-          {
-            "date": "2024-06-17",
-            "close": 485.06
-          },
-          {
-            "date": "2024-06-18",
-            "close": 485.21
-          },
-          {
-            "date": "2024-06-20",
-            "close": 481.47
-          },
-          {
-            "date": "2024-06-21",
-            "close": 480.18
-          }
-        ],
-        "turning_points": {
-          "turning_points": [
-            {
-              "date": "2024-06-18",
-              "type": "peak",
-              "description": "事件后第 34 天录得相对基准 +7.13%，为窗口内最大升幅；印证预测方向。",
-              "days_after_event": 34
-            }
-          ],
-          "time_to_peak_impact_days": 34,
-          "narrative": "事件后 3 天累计 +0.44%，峰值出现在事件后第 34 天 (+7.13%)，第 5 天起回吐。",
-          "method": "heuristic"
-        },
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      },
-      {
-        "event_date": "2023-11-14",
-        "event_note": "US Oct 2023 CPI 3.2% YoY vs 3.3% expected, -0.5% miss, sparked rally in tech and bonds",
-        "baseline_price": 385.33,
-        "end_price": 386.04,
-        "actual_pct": 0.18,
-        "actual_direction": "up",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=100%",
-        "skipped_reason": null,
-        "price_path": [
-          {
-            "date": "2023-11-06",
-            "close": 369.21
-          },
-          {
-            "date": "2023-11-07",
-            "close": 372.7
-          },
-          {
-            "date": "2023-11-08",
-            "close": 372.94
-          },
-          {
-            "date": "2023-11-09",
-            "close": 370.07
-          },
-          {
-            "date": "2023-11-10",
-            "close": 378.39
-          },
-          {
-            "date": "2023-11-13",
-            "close": 377.21
-          },
-          {
-            "date": "2023-11-14",
-            "close": 385.33
-          },
-          {
-            "date": "2023-11-15",
-            "close": 385.62
-          },
-          {
-            "date": "2023-11-16",
-            "close": 385.95
-          },
-          {
-            "date": "2023-11-17",
-            "close": 386.04
-          },
-          {
-            "date": "2023-11-20",
-            "close": 390.74
-          },
-          {
-            "date": "2023-11-21",
-            "close": 388.47
-          },
-          {
-            "date": "2023-11-22",
-            "close": 390.06
-          },
-          {
-            "date": "2023-11-24",
-            "close": 389.51
-          },
-          {
-            "date": "2023-11-27",
-            "close": 389.17
-          },
-          {
-            "date": "2023-11-28",
-            "close": 390.19
-          },
-          {
-            "date": "2023-11-29",
-            "close": 389.81
-          },
-          {
-            "date": "2023-11-30",
-            "close": 388.83
-          },
-          {
-            "date": "2023-12-01",
-            "close": 389.94
-          },
-          {
-            "date": "2023-12-04",
-            "close": 386.32
-          },
-          {
-            "date": "2023-12-05",
-            "close": 387.29
-          },
-          {
-            "date": "2023-12-06",
-            "close": 385.05
-          },
-          {
-            "date": "2023-12-07",
-            "close": 390.43
-          },
-          {
-            "date": "2023-12-08",
-            "close": 392.17
-          },
-          {
-            "date": "2023-12-11",
-            "close": 395.52
-          },
-          {
-            "date": "2023-12-12",
-            "close": 398.67
-          },
-          {
-            "date": "2023-12-13",
-            "close": 403.74
-          },
-          {
-            "date": "2023-12-14",
-            "close": 403.39
-          },
-          {
-            "date": "2023-12-15",
-            "close": 405.34
-          },
-          {
-            "date": "2023-12-18",
-            "close": 407.08
-          },
-          {
-            "date": "2023-12-19",
-            "close": 409.16
-          },
-          {
-            "date": "2023-12-20",
-            "close": 403.08
-          },
-          {
-            "date": "2023-12-21",
-            "close": 407.77
-          }
-        ],
-        "turning_points": {
-          "turning_points": [
-            {
-              "date": "2023-12-19",
-              "type": "peak",
-              "description": "事件后第 35 天录得相对基准 +6.18%，为窗口内最大升幅；印证预测方向。",
-              "days_after_event": 35
-            }
-          ],
-          "time_to_peak_impact_days": 35,
-          "narrative": "事件后 3 天累计 +0.18%，峰值出现在事件后第 35 天 (+6.18%)。",
-          "method": "heuristic"
-        },
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      },
-      {
-        "event_date": "2023-07-12",
-        "event_note": "US June 2023 CPI 3.0% YoY vs 3.1% expected, cooling inflation strengthened dovish Fed pivot expectations",
-        "baseline_price": 372.82,
-        "end_price": 382.61,
-        "actual_pct": 2.63,
-        "actual_direction": "up",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=100%",
-        "skipped_reason": null,
-        "price_path": [
-          {
-            "date": "2023-07-05",
-            "close": 370.28
-          },
-          {
-            "date": "2023-07-06",
-            "close": 367.46
-          },
-          {
-            "date": "2023-07-07",
-            "close": 366.24
-          },
-          {
-            "date": "2023-07-10",
-            "close": 366.36
-          },
-          {
-            "date": "2023-07-11",
-            "close": 368.17
-          },
-          {
-            "date": "2023-07-12",
-            "close": 372.82
-          },
-          {
-            "date": "2023-07-13",
-            "close": 379.15
-          },
-          {
-            "date": "2023-07-14",
-            "close": 379.07
-          },
-          {
-            "date": "2023-07-17",
-            "close": 382.61
-          },
-          {
-            "date": "2023-07-18",
-            "close": 385.74
-          },
-          {
-            "date": "2023-07-19",
-            "close": 385.65
-          },
-          {
-            "date": "2023-07-20",
-            "close": 376.76
-          },
-          {
-            "date": "2023-07-21",
-            "close": 375.63
-          },
-          {
-            "date": "2023-07-24",
-            "close": 376.23
-          },
-          {
-            "date": "2023-07-25",
-            "close": 378.78
-          },
-          {
-            "date": "2023-07-26",
-            "close": 377.52
-          },
-          {
-            "date": "2023-07-27",
-            "close": 376.62
-          },
-          {
-            "date": "2023-07-28",
-            "close": 383.48
-          },
-          {
-            "date": "2023-07-31",
-            "close": 383.68
-          },
-          {
-            "date": "2023-08-01",
-            "close": 382.79
-          },
-          {
-            "date": "2023-08-02",
-            "close": 374.39
-          },
-          {
-            "date": "2023-08-03",
-            "close": 373.79
-          },
-          {
-            "date": "2023-08-04",
-            "close": 372.04
-          },
-          {
-            "date": "2023-08-07",
-            "close": 375.19
-          },
-          {
-            "date": "2023-08-08",
-            "close": 372.0
-          },
-          {
-            "date": "2023-08-09",
-            "close": 367.91
-          },
-          {
-            "date": "2023-08-10",
-            "close": 368.59
-          },
-          {
-            "date": "2023-08-11",
-            "close": 366.24
-          },
-          {
-            "date": "2023-08-14",
-            "close": 370.35
-          },
-          {
-            "date": "2023-08-15",
-            "close": 366.42
-          },
-          {
-            "date": "2023-08-16",
-            "close": 362.54
-          },
-          {
-            "date": "2023-08-17",
-            "close": 358.58
-          },
-          {
-            "date": "2023-08-18",
-            "close": 358.13
-          }
-        ],
-        "turning_points": {
-          "turning_points": [
-            {
-              "date": "2023-08-18",
-              "type": "trough",
-              "description": "事件后第 37 天录得相对基准 -3.94%，为窗口内最大降幅；与预测方向相反。",
-              "days_after_event": 37
-            }
-          ],
-          "time_to_peak_impact_days": 37,
-          "narrative": "事件后 3 天累计 +2.63%，峰值出现在事件后第 37 天 (-3.94%)，第 6 天起回吐。",
-          "method": "heuristic"
-        },
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      },
-      {
-        "event_date": "2022-11-10",
-        "event_note": "US Oct 2022 CPI 7.7% YoY vs 7.9% expected, -0.2% surprise triggered major risk-on rotation",
-        "baseline_price": 282.75,
-        "end_price": 285.44,
-        "actual_pct": 0.95,
-        "actual_direction": "up",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=50%",
-        "skipped_reason": null,
-        "price_path": [
-          {
-            "date": "2022-11-02",
-            "close": 265.68
-          },
-          {
-            "date": "2022-11-03",
-            "close": 260.49
-          },
-          {
-            "date": "2022-11-04",
-            "close": 264.68
-          },
-          {
-            "date": "2022-11-07",
-            "close": 267.59
-          },
-          {
-            "date": "2022-11-08",
-            "close": 269.54
-          },
-          {
-            "date": "2022-11-09",
-            "close": 263.32
-          },
-          {
-            "date": "2022-11-10",
-            "close": 282.75
-          },
-          {
-            "date": "2022-11-11",
-            "close": 287.96
-          },
-          {
-            "date": "2022-11-14",
-            "close": 285.44
-          },
-          {
-            "date": "2022-11-15",
-            "close": 289.39
-          },
-          {
-            "date": "2022-11-16",
-            "close": 285.44
-          },
-          {
-            "date": "2022-11-17",
-            "close": 284.81
-          },
-          {
-            "date": "2022-11-18",
-            "close": 284.82
-          },
-          {
-            "date": "2022-11-21",
-            "close": 281.89
-          },
-          {
-            "date": "2022-11-22",
-            "close": 285.95
-          },
-          {
-            "date": "2022-11-23",
-            "close": 288.82
-          },
-          {
-            "date": "2022-11-25",
-            "close": 286.92
-          },
-          {
-            "date": "2022-11-28",
-            "close": 282.71
-          },
-          {
-            "date": "2022-11-29",
-            "close": 280.57
-          },
-          {
-            "date": "2022-11-30",
-            "close": 293.36
-          },
-          {
-            "date": "2022-12-01",
-            "close": 293.72
-          },
-          {
-            "date": "2022-12-02",
-            "close": 292.55
-          },
-          {
-            "date": "2022-12-05",
-            "close": 287.64
-          },
-          {
-            "date": "2022-12-06",
-            "close": 281.68
-          },
-          {
-            "date": "2022-12-07",
-            "close": 280.53
-          },
-          {
-            "date": "2022-12-08",
-            "close": 283.85
-          },
-          {
-            "date": "2022-12-09",
-            "close": 282.04
-          },
-          {
-            "date": "2022-12-12",
-            "close": 285.58
-          },
-          {
-            "date": "2022-12-13",
-            "close": 288.65
-          },
-          {
-            "date": "2022-12-14",
-            "close": 286.51
-          },
-          {
-            "date": "2022-12-15",
-            "close": 276.89
-          },
-          {
-            "date": "2022-12-16",
-            "close": 274.25
-          }
-        ],
-        "turning_points": {
-          "turning_points": [
-            {
-              "date": "2022-12-01",
-              "type": "peak",
-              "description": "事件后第 21 天录得相对基准 +3.88%，为窗口内最大升幅；印证预测方向。",
-              "days_after_event": 21
-            }
-          ],
-          "time_to_peak_impact_days": 21,
-          "narrative": "事件后 3 天累计 +0.95%，峰值出现在事件后第 21 天 (+3.88%)，第 6 天起回吐。",
           "method": "heuristic"
         },
         "data_source_name": null,
@@ -166720,6 +165257,80 @@
     ]
   },
   {
+    "id": 605,
+    "pattern": "美国放松对华AI芯片出口管制（贸易缓和）",
+    "asset_symbol": "QQQ",
+    "asset_name": "纳斯达克100ETF",
+    "asset_class": "us_stock",
+    "macro_category": "regulation",
+    "direction": "up",
+    "magnitude_pct": 0.8,
+    "magnitude_pct_stddev": 0.0,
+    "horizon_days": 3,
+    "confidence": 0.5796984650771908,
+    "grade": "C",
+    "retail_edge": null,
+    "support_count": 2,
+    "refute_count": 2,
+    "source": "researched",
+    "rationale": "美国政府撤回或软化先前对华芯片限制（许可恢复、软件解禁、案例审批）→NVDA/AMD恢复对华出货预期，营收上修→芯片股大幅上涨；同时缓和中美科技脱钩担忧，提振整体风险资产，弱化避险需求",
+    "explanation": null,
+    "failure_conditions": null,
+    "historical_instances": [
+      {
+        "event_date": "2025-08-11",
+        "event_note": "Reports NVDA/AMD agree to give US government 15% revenue cut from China sales in exchange for export licenses",
+        "baseline_price": 572.8499755859375,
+        "end_price": 579.8900146484375,
+        "actual_pct": 1.23,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=100%",
+        "skipped_reason": null,
+        "price_path": null,
+        "turning_points": null,
+        "data_source_name": null,
+        "data_source_url": null,
+        "user_provided": false
+      },
+      {
+        "event_date": "2025-07-15",
+        "event_note": "Trump admin reverses H20 ban, allowing NVDA to resume H20 shipments to China",
+        "baseline_price": 556.719970703125,
+        "end_price": 561.260009765625,
+        "actual_pct": 0.82,
+        "actual_direction": "up",
+        "dir_hit": true,
+        "strict_hit": true,
+        "mag_err_bucket": "<=10%",
+        "skipped_reason": null,
+        "price_path": null,
+        "turning_points": null,
+        "data_source_name": null,
+        "data_source_url": null,
+        "user_provided": false
+      },
+      {
+        "event_date": "2025-07-03",
+        "event_note": "US lifts chip design software (Synopsys/Cadence) export curbs to China amid trade truce",
+        "baseline_price": 556.219970703125,
+        "end_price": 552.030029296875,
+        "actual_pct": -0.75,
+        "actual_direction": "down",
+        "dir_hit": false,
+        "strict_hit": false,
+        "mag_err_bucket": "<=10%",
+        "skipped_reason": null,
+        "price_path": null,
+        "turning_points": null,
+        "data_source_name": null,
+        "data_source_url": null,
+        "user_provided": false
+      }
+    ]
+  },
+  {
     "id": 216,
     "pattern": "EIA 原油库存意外大幅减少",
     "asset_symbol": "USO",
@@ -184529,80 +183140,6 @@
         "dir_hit": false,
         "strict_hit": false,
         "mag_err_bucket": "<=25%",
-        "skipped_reason": null,
-        "price_path": null,
-        "turning_points": null,
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      }
-    ]
-  },
-  {
-    "id": 605,
-    "pattern": "美国放松对华AI芯片出口管制（贸易缓和）",
-    "asset_symbol": "QQQ",
-    "asset_name": "纳斯达克100ETF",
-    "asset_class": "us_stock",
-    "macro_category": "regulation",
-    "direction": "up",
-    "magnitude_pct": 0.8,
-    "magnitude_pct_stddev": 0.0,
-    "horizon_days": 3,
-    "confidence": 0.6,
-    "grade": "C",
-    "retail_edge": null,
-    "support_count": 2,
-    "refute_count": 1,
-    "source": "researched",
-    "rationale": "美国政府撤回或软化先前对华芯片限制（许可恢复、软件解禁、案例审批）→NVDA/AMD恢复对华出货预期，营收上修→芯片股大幅上涨；同时缓和中美科技脱钩担忧，提振整体风险资产，弱化避险需求",
-    "explanation": null,
-    "failure_conditions": null,
-    "historical_instances": [
-      {
-        "event_date": "2025-08-11",
-        "event_note": "Reports NVDA/AMD agree to give US government 15% revenue cut from China sales in exchange for export licenses",
-        "baseline_price": 572.8499755859375,
-        "end_price": 579.8900146484375,
-        "actual_pct": 1.23,
-        "actual_direction": "up",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=100%",
-        "skipped_reason": null,
-        "price_path": null,
-        "turning_points": null,
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      },
-      {
-        "event_date": "2025-07-15",
-        "event_note": "Trump admin reverses H20 ban, allowing NVDA to resume H20 shipments to China",
-        "baseline_price": 556.719970703125,
-        "end_price": 561.260009765625,
-        "actual_pct": 0.82,
-        "actual_direction": "up",
-        "dir_hit": true,
-        "strict_hit": true,
-        "mag_err_bucket": "<=10%",
-        "skipped_reason": null,
-        "price_path": null,
-        "turning_points": null,
-        "data_source_name": null,
-        "data_source_url": null,
-        "user_provided": false
-      },
-      {
-        "event_date": "2025-07-03",
-        "event_note": "US lifts chip design software (Synopsys/Cadence) export curbs to China amid trade truce",
-        "baseline_price": 556.219970703125,
-        "end_price": 552.030029296875,
-        "actual_pct": -0.75,
-        "actual_direction": "down",
-        "dir_hit": false,
-        "strict_hit": false,
-        "mag_err_bucket": "<=10%",
         "skipped_reason": null,
         "price_path": null,
         "turning_points": null,

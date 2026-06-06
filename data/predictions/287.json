@@ -1,33 +1,33 @@
 {
-  "id": 269,
-  "made_at": "2026-06-03T06:18:06.762207",
-  "expire_at": "2026-06-06T06:18:06.762207",
+  "id": 287,
+  "made_at": "2026-06-06T01:45:28.651460",
+  "expire_at": "2026-06-09T01:45:28.651460",
   "verified_at": null,
   "asset": {
-    "symbol": "TLT",
-    "name": "20+年期美债ETF",
-    "class": "us_stock"
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
   },
   "direction": "up",
-  "magnitude_pct": 2.16,
+  "magnitude_pct": 1.08,
   "horizon_days": 3,
-  "baseline_price": 85.6500015258789,
+  "baseline_price": 4353.89990234375,
   "baseline_source": "eod",
   "status": "pending",
   "hit": null,
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 85.05999755859375,
-  "current_pct": -0.6888545905126321,
+  "current_price": 4353.89990234375,
+  "current_pct": 0.0,
   "current_at": "2026-06-05T00:00:00-04:00",
-  "reasoning": "参考链 #357（关税威胁→TLT上涨0.8%/1d）的避险机制：风险事件→资金流入长债。伊朗与美军直接冲突升级属于更高级别地缘风险，长端美债避险需求增加。但注意10y利率近期已上行20bp，上涨空间受限，故幅度保守估计。",
-  "stop_loss_price": 84.8805,
+  "reasoning": "参考链 #357 (美国对盟友突袭式加征关税威胁) 的避险机制：该链显示地缘政治冲击触发避险资金流向黄金与美债。巴林防空警报意味着中东局势骤然升级（可能涉及伊朗-以色列对峙或胡塞武装袭击），与关税冲击同属突发地缘风险范畴，均激活黄金的避险溢价。当前VIX处于87%分位的mid-vol环境放大避险需求，但幅度较链所示温和，因巴林非核心产油国。",
+  "stop_loss_price": 4353.1304,
   "take_profit": {
     "prices": [
-      86.8042,
-      87.5737,
-      88.7279
+      4355.0541,
+      4355.8236,
+      4356.9778
     ],
     "r_multiples": [
       1.5,
@@ -85,15 +85,15 @@
     }
   ],
   "event": {
-    "id": 1884,
-    "summary": "科威特国际机场遭无人机袭击致机场暂停运营，伊朗革命卫队声称打击美军基地",
+    "id": 2104,
+    "summary": "巴林全国拉响防空警报，中东地缘紧张局势升级",
     "category": "geopolitics"
   },
   "news": {
-    "title": "【科威特国际机场遭袭多人受伤 飞机暂停起降】当地时间6月3日，科威特民航总局发布消息称，科威特国际机场1号航站楼当天早间遭无人机袭击，被严重损毁，袭击还造成现场",
-    "source": "sina_finance",
+    "title": "巴林全国拉响防空警报。（新华社）",
+    "source": "wallstreetcn",
     "lang": "zh",
-    "url": null,
-    "published_at": "2026-06-03T14:07:01"
+    "url": "https://wallstreetcn.com/livenews/3115397",
+    "published_at": "2026-06-06T01:26:27"
   }
 }

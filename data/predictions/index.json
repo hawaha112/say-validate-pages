@@ -1,6 +1,1195 @@
 {
-  "count": 277,
+  "count": 289,
   "items": [
+    {
+      "id": 289,
+      "made_at": "2026-06-06T01:46:01.361662",
+      "expire_at": "2026-06-09T01:46:01.361662",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.08,
+      "horizon_days": 3,
+      "baseline_price": 4353.89990234375,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4353.89990234375,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链#80（系统性风险预期推升避险资产）的机制——虽然该链针对银行危机，但核心逻辑是风险事件→避险资产需求上升。科威特遭袭意味着中东紧张局势可能外溢（伊朗/胡塞武装嫌疑），市场会短期涌入黄金避险。当前10y利率已+21bp MoM、黄金承压，但地缘冲击的避险需求可部分对冲利率逆风。",
+      "stop_loss_price": 4351.9157,
+      "take_profit": {
+        "prices": [
+          4356.8762,
+          4358.8604,
+          4361.8367
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 1.9842,
+        "atr": 0.9921
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.72,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.72,
+        "log_odds": 0.944,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.4,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 80,
+            "pattern": "大型银行倒闭 / 挤兑 / 存款集中流出事件",
+            "asset": "KRE",
+            "dir_hit_rate": 1.0,
+            "n_samples": 5,
+            "log_lr": 1.792,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "asset_repeat",
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        80
+      ],
+      "cited_chains": [
+        {
+          "id": 80,
+          "pattern": "大型银行倒闭 / 挤兑 / 存款集中流出事件",
+          "asset_symbol": "KRE",
+          "direction": "down",
+          "horizon_days": 30,
+          "magnitude_pct": 6.0,
+          "grade": "A",
+          "retail_edge": "mid",
+          "macro_category": "financial_stress"
+        }
+      ],
+      "event": {
+        "id": 2103,
+        "summary": "科威特遭遇导弹和无人机袭击，空中防御系统正在拦截",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "科威特军方在X上称，科威特空中防御系统正在拦截导弹和无人机袭击。",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3115396",
+        "published_at": "2026-06-06T01:02:35"
+      }
+    },
+    {
+      "id": 288,
+      "made_at": "2026-06-06T01:45:32.701101",
+      "expire_at": "2026-06-09T01:45:32.701101",
+      "verified_at": null,
+      "asset": {
+        "symbol": "USO",
+        "name": "美国石油基金",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 3.6,
+      "horizon_days": 3,
+      "baseline_price": 133.02000427246094,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 133.02000427246094,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链 #640 (美国对俄罗斯油气巨头制裁) 的供给冲击机制：该链显示能源地缘风险推升油价与XLE。巴林紧邻霍尔木兹海峡，防空警报暗示该区域航运可能受威胁，与俄油制裁同属石油供给中断预期逻辑。当前uptrend市场环境支持风险资产反弹，但中东局势若升级可同时抬高原油风险溢价。幅度略高于链值因海峡扼咽喉地位。",
+      "stop_loss_price": 128.2313,
+      "take_profit": {
+        "prices": [
+          140.2031,
+          144.9918,
+          152.1749
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 4.7887,
+        "atr": 2.3944
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6818,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6818,
+        "log_odds": 0.762,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.27,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 640,
+            "pattern": "美国对俄罗斯油气巨头实施一级SDN制裁",
+            "asset": "XLE",
+            "dir_hit_rate": 1.0,
+            "n_samples": 4,
+            "log_lr": 1.609,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        640
+      ],
+      "cited_chains": [
+        {
+          "id": 640,
+          "pattern": "美国对俄罗斯油气巨头实施一级SDN制裁",
+          "asset_symbol": "XLE",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.5,
+          "grade": "B",
+          "retail_edge": null,
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 2104,
+        "summary": "巴林全国拉响防空警报，中东地缘紧张局势升级",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "巴林全国拉响防空警报。（新华社）",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3115397",
+        "published_at": "2026-06-06T01:26:27"
+      }
+    },
+    {
+      "id": 287,
+      "made_at": "2026-06-06T01:45:28.651460",
+      "expire_at": "2026-06-09T01:45:28.651460",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.08,
+      "horizon_days": 3,
+      "baseline_price": 4353.89990234375,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4353.89990234375,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链 #357 (美国对盟友突袭式加征关税威胁) 的避险机制：该链显示地缘政治冲击触发避险资金流向黄金与美债。巴林防空警报意味着中东局势骤然升级（可能涉及伊朗-以色列对峙或胡塞武装袭击），与关税冲击同属突发地缘风险范畴，均激活黄金的避险溢价。当前VIX处于87%分位的mid-vol环境放大避险需求，但幅度较链所示温和，因巴林非核心产油国。",
+      "stop_loss_price": 4353.1304,
+      "take_profit": {
+        "prices": [
+          4355.0541,
+          4355.8236,
+          4356.9778
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7695,
+        "atr": 0.3847
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 357,
+            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        357
+      ],
+      "cited_chains": [
+        {
+          "id": 357,
+          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 2104,
+        "summary": "巴林全国拉响防空警报，中东地缘紧张局势升级",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "巴林全国拉响防空警报。（新华社）",
+        "source": "wallstreetcn",
+        "lang": "zh",
+        "url": "https://wallstreetcn.com/livenews/3115397",
+        "published_at": "2026-06-06T01:26:27"
+      }
+    },
+    {
+      "id": 286,
+      "made_at": "2026-06-06T01:44:59.286093",
+      "expire_at": "2026-06-09T01:44:59.286093",
+      "verified_at": null,
+      "asset": {
+        "symbol": "USDCNY=X",
+        "name": "美元兑人民币",
+        "class": "fx"
+      },
+      "direction": "down",
+      "magnitude_pct": 0.25,
+      "horizon_days": 3,
+      "baseline_price": 6.764999866485596,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 6.764999866485596,
+      "current_pct": 0.0,
+      "current_at": "2026-06-06T00:00:00+01:00",
+      "reasoning": "参考链 #90 (PMI低于50→USDCNY上涨) 的反向机制：当PMI回升至荣枯线上方时，人民币压力缓解。本次PMI 50.5+出口运价上涨显示外需复苏，支持人民币小幅走强。但DXY近期走强(+1.3% MoM)形成对冲，幅度保守。",
+      "stop_loss_price": 6.8585,
+      "take_profit": {
+        "prices": [
+          6.6247,
+          6.5312,
+          6.3909
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0935,
+        "atr": 0.0468
+      },
+      "kelly_fraction": 0.0168,
+      "resonance_posterior": 0.72,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.72,
+        "log_odds": 0.944,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.4,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 90,
+            "pattern": "中国 PMI 大幅低于 50 荣枯线",
+            "asset": "USDCNY=X",
+            "dir_hit_rate": 1.0,
+            "n_samples": 5,
+            "log_lr": 1.792,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        90
+      ],
+      "cited_chains": [
+        {
+          "id": 90,
+          "pattern": "中国 PMI 大幅低于 50 荣枯线",
+          "asset_symbol": "USDCNY=X",
+          "direction": "up",
+          "horizon_days": 3,
+          "magnitude_pct": 0.3,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "macro_data"
+        }
+      ],
+      "event": {
+        "id": 2106,
+        "summary": "上海航交所报告本周集装箱运价上涨6%，中国5月PMI升至50.5显示经济扩张",
+        "category": "macro"
+      },
+      "news": {
+        "title": "【上海航交所：本周运输市场继续向好 市场运价保持涨势】据上海航交所，本周， 本周，中国出口集装箱运输市场行情延续向好态势，远洋航线市场运价保持上涨，推动综合指数",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T08:42:12"
+      }
+    },
+    {
+      "id": 285,
+      "made_at": "2026-06-06T01:44:55.215369",
+      "expire_at": "2026-06-13T01:44:55.215369",
+      "verified_at": null,
+      "asset": {
+        "symbol": "510300.SS",
+        "name": "沪深300ETF",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.2,
+      "horizon_days": 7,
+      "baseline_price": 4.843,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
+      "reasoning": "参考链 #88 (中国财政刺激→沪深300上涨) 的机制：经济扩张信号利好周期权重股。PMI综合升至50.5、非制造业回归扩张区间，叠加出口航运运价持续上涨，均为经济边际改善的领先指标。与#88机制部分相似但驱动力来自实体需求而非政策，magnitude下调。当前A股处于uptrend有利。",
+      "stop_loss_price": 4.7586,
+      "take_profit": {
+        "prices": [
+          4.9696,
+          5.0541,
+          5.1807
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0844,
+        "atr": 0.0422
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.5172,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.5172,
+        "log_odds": 0.069,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.72,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 88,
+            "pattern": "中国财政大规模刺激（特别国债/基建加码）",
+            "asset": "510300.SS",
+            "dir_hit_rate": 0.8,
+            "n_samples": 5,
+            "log_lr": 0.916,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        88
+      ],
+      "cited_chains": [
+        {
+          "id": 88,
+          "pattern": "中国财政大规模刺激（特别国债/基建加码）",
+          "asset_symbol": "510300.SS",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.5,
+          "grade": "A",
+          "retail_edge": "mid",
+          "macro_category": "monetary_policy"
+        }
+      ],
+      "event": {
+        "id": 2106,
+        "summary": "上海航交所报告本周集装箱运价上涨6%，中国5月PMI升至50.5显示经济扩张",
+        "category": "macro"
+      },
+      "news": {
+        "title": "【上海航交所：本周运输市场继续向好 市场运价保持涨势】据上海航交所，本周， 本周，中国出口集装箱运输市场行情延续向好态势，远洋航线市场运价保持上涨，推动综合指数",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T08:42:12"
+      }
+    },
+    {
+      "id": 284,
+      "made_at": "2026-06-06T01:44:47.890738",
+      "expire_at": "2026-06-13T01:44:47.890738",
+      "verified_at": null,
+      "asset": {
+        "symbol": "601919.SS",
+        "name": "中远海控",
+        "class": "a_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.5,
+      "horizon_days": 7,
+      "baseline_price": 15.0,
+      "baseline_source": "event_time",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 15.0,
+      "current_pct": 0.0,
+      "current_at": "2026-06-06T01:47:07.889615",
+      "reasoning": "参考链 #88 (中国财政大规模刺激) 的机制：经济活动扩张推动周期股受益。本次新闻虽非财政刺激，但PMI回升至50.5+运价上涨6%直接反映出口需求回暖，航运企业盈利预期改善。中远海控作为集运龙头直接受益于SCFI指数上行，机制传导更直接。当前uptrend环境支持顺周期交易。",
+      "stop_loss_price": 14.9156,
+      "take_profit": {
+        "prices": [
+          15.1266,
+          15.2111,
+          15.3377
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.0844,
+        "atr": 0.0422
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.5172,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.5172,
+        "log_odds": 0.069,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 1.72,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 88,
+            "pattern": "中国财政大规模刺激（特别国债/基建加码）",
+            "asset": "510300.SS",
+            "dir_hit_rate": 0.8,
+            "n_samples": 5,
+            "log_lr": 0.916,
+            "grade": "A"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_confirm",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        88
+      ],
+      "cited_chains": [
+        {
+          "id": 88,
+          "pattern": "中国财政大规模刺激（特别国债/基建加码）",
+          "asset_symbol": "510300.SS",
+          "direction": "up",
+          "horizon_days": 7,
+          "magnitude_pct": 1.5,
+          "grade": "A",
+          "retail_edge": "mid",
+          "macro_category": "monetary_policy"
+        }
+      ],
+      "event": {
+        "id": 2106,
+        "summary": "上海航交所报告本周集装箱运价上涨6%，中国5月PMI升至50.5显示经济扩张",
+        "category": "macro"
+      },
+      "news": {
+        "title": "【上海航交所：本周运输市场继续向好 市场运价保持涨势】据上海航交所，本周， 本周，中国出口集装箱运输市场行情延续向好态势，远洋航线市场运价保持上涨，推动综合指数",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T08:42:12"
+      }
+    },
+    {
+      "id": 283,
+      "made_at": "2026-06-06T01:43:55.695957",
+      "expire_at": "2026-06-07T01:43:55.695957",
+      "verified_at": null,
+      "asset": {
+        "symbol": "TLT",
+        "name": "20+年期美债ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.08,
+      "horizon_days": 1,
+      "baseline_price": 85.05999755859375,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 85.05999755859375,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链 #357 (风险事件→避险资金流向美债) 的机制。科威特遭袭引发中东局势紧张，短期避险情绪推动资金流入长债。但当前10y利率月涨21bp处于上行通道，且冲突非大规模战争级别，美债上行空间受限，预计温和反弹。",
+      "stop_loss_price": 84.2905,
+      "take_profit": {
+        "prices": [
+          86.2142,
+          86.9837,
+          88.1379
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7695,
+        "atr": 0.3847
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 357,
+            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        357
+      ],
+      "cited_chains": [
+        {
+          "id": 357,
+          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 2113,
+        "summary": "科威特遭遇导弹和无人机攻击，防空系统正在拦截",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "【科威特：正应对“敌方”导弹和无人机攻击】科威特军方6日发表声明说，科威特防空部队正在应对“敌方”导弹和无人机攻击。如听到爆炸声，系科威特防空系统拦截攻击所致。",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T09:02:07"
+      }
+    },
+    {
+      "id": 282,
+      "made_at": "2026-06-06T01:43:51.716134",
+      "expire_at": "2026-06-09T01:43:51.716134",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.08,
+      "horizon_days": 3,
+      "baseline_price": 4353.89990234375,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4353.89990234375,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链 #357 (突袭式关税威胁→避险资金流向黄金) 的机制：地缘风险触发避险需求。科威特遇袭属于中东军事冲突而非贸易战，但避险机制相通——不确定性上升→资金流入黄金。当前DXY中性、VIX偏高环境下黄金避险属性凸显。幅度较温和因冲突规模待观察。",
+      "stop_loss_price": 4353.1304,
+      "take_profit": {
+        "prices": [
+          4355.0541,
+          4355.8236,
+          4356.9778
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7695,
+        "atr": 0.3847
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 357,
+            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_confirm",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        357
+      ],
+      "cited_chains": [
+        {
+          "id": 357,
+          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 2113,
+        "summary": "科威特遭遇导弹和无人机攻击，防空系统正在拦截",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "【科威特：正应对“敌方”导弹和无人机攻击】科威特军方6日发表声明说，科威特防空部队正在应对“敌方”导弹和无人机攻击。如听到爆炸声，系科威特防空系统拦截攻击所致。",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T09:02:07"
+      }
+    },
+    {
+      "id": 281,
+      "made_at": "2026-06-06T01:43:48.699346",
+      "expire_at": "2026-06-09T01:43:48.699346",
+      "verified_at": null,
+      "asset": {
+        "symbol": "CL=F",
+        "name": "WTI原油期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.25,
+      "horizon_days": 3,
+      "baseline_price": 90.25,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 90.25,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链 #216 (EIA库存意外大减) 的机制：供给收紧预期推升油价。当前科威特遭受导弹/无人机攻击属于中东地缘冲突升级，虽非库存数据而是供给端物理威胁，但机制相通——海湾产油国基础设施风险上升→原油供给溢价。当前VIX 87%分位偏高，波动放大效应存在，但中东冲突历史上对油价脉冲明显，预计3日内反应2-3%。",
+      "stop_loss_price": 87.4479,
+      "take_profit": {
+        "prices": [
+          94.4532,
+          97.2553,
+          101.4584
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.8021,
+        "atr": 1.4011
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6818,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6818,
+        "log_odds": 0.762,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.27,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 216,
+            "pattern": "EIA 原油库存意外大幅减少",
+            "asset": "USO",
+            "dir_hit_rate": 1.0,
+            "n_samples": 4,
+            "log_lr": 1.609,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        216
+      ],
+      "cited_chains": [
+        {
+          "id": 216,
+          "pattern": "EIA 原油库存意外大幅减少",
+          "asset_symbol": "USO",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 2.0,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "energy_commodity"
+        }
+      ],
+      "event": {
+        "id": 2113,
+        "summary": "科威特遭遇导弹和无人机攻击，防空系统正在拦截",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "【科威特：正应对“敌方”导弹和无人机攻击】科威特军方6日发表声明说，科威特防空部队正在应对“敌方”导弹和无人机攻击。如听到爆炸声，系科威特防空系统拦截攻击所致。",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T09:02:07"
+      }
+    },
+    {
+      "id": 280,
+      "made_at": "2026-06-06T01:43:13.013374",
+      "expire_at": "2026-06-07T01:43:13.013374",
+      "verified_at": null,
+      "asset": {
+        "symbol": "TLT",
+        "name": "20+年期美债ETF",
+        "class": "us_stock"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.08,
+      "horizon_days": 1,
+      "baseline_price": 85.05999755859375,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 85.05999755859375,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链 #357 (关税威胁→避险资金流入美债) 的机制 → 中东地缘冲击同样触发 flight-to-quality，美债作为传统避险资产短期受益。当前 10y 利率已升 21bp MoM，但事件驱动的避险需求可短暂压低收益率。幅度保守因利率整体处于高位。",
+      "stop_loss_price": 84.2905,
+      "take_profit": {
+        "prices": [
+          86.2142,
+          86.9837,
+          88.1379
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7695,
+        "atr": 0.3847
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 357,
+            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        357
+      ],
+      "cited_chains": [
+        {
+          "id": 357,
+          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 2116,
+        "summary": "巴林全国拉响防空警报，中东地缘政治紧张局势升级",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "巴林全国拉响防空警报。（新华社）",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T09:23:01"
+      }
+    },
+    {
+      "id": 279,
+      "made_at": "2026-06-06T01:43:09.192006",
+      "expire_at": "2026-06-09T01:43:09.192006",
+      "verified_at": null,
+      "asset": {
+        "symbol": "BZ=F",
+        "name": "布伦特原油期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 2.25,
+      "horizon_days": 3,
+      "baseline_price": 92.87000274658203,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 92.87000274658203,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链 #638 (美国制裁俄罗斯油气) 的供应冲击→油价上涨机制 → 巴林紧邻霍尔木兹海峡，防空警报暗示伊朗-以色列或胡塞冲突可能升级，海湾航道风险溢价上升。链 #638 显示供应端冲击推动 Brent 短期跳涨；本次虽非制裁而是军事紧张，但同属「中东供应风险」机制，幅度略低于制裁场景。",
+      "stop_loss_price": 90.7804,
+      "take_profit": {
+        "prices": [
+          96.0044,
+          98.0939,
+          101.2283
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 2.0896,
+        "atr": 1.0448
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6818,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6818,
+        "log_odds": 0.762,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.27,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 638,
+            "pattern": "美国对俄罗斯油气巨头实施一级SDN制裁",
+            "asset": "BZ=F",
+            "dir_hit_rate": 1.0,
+            "n_samples": 4,
+            "log_lr": 1.609,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        638
+      ],
+      "cited_chains": [
+        {
+          "id": 638,
+          "pattern": "美国对俄罗斯油气巨头实施一级SDN制裁",
+          "asset_symbol": "BZ=F",
+          "direction": "up",
+          "horizon_days": 3,
+          "magnitude_pct": 4.0,
+          "grade": "B",
+          "retail_edge": null,
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 2116,
+        "summary": "巴林全国拉响防空警报，中东地缘政治紧张局势升级",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "巴林全国拉响防空警报。（新华社）",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T09:23:01"
+      }
+    },
+    {
+      "id": 278,
+      "made_at": "2026-06-06T01:43:05.152444",
+      "expire_at": "2026-06-09T01:43:05.152444",
+      "verified_at": null,
+      "asset": {
+        "symbol": "GC=F",
+        "name": "黄金期货",
+        "class": "commodity"
+      },
+      "direction": "up",
+      "magnitude_pct": 1.62,
+      "horizon_days": 3,
+      "baseline_price": 4353.89990234375,
+      "baseline_source": "eod",
+      "status": "pending",
+      "hit": null,
+      "hit_breakdown": null,
+      "actual_magnitude_pct": null,
+      "actual_direction": null,
+      "current_price": 4353.89990234375,
+      "current_pct": 0.0,
+      "current_at": "2026-06-05T00:00:00-04:00",
+      "reasoning": "参考链 #357 (美国对盟友突袭式关税威胁) 的避险机制 → 当前巴林全国防空警报标志中东地缘局势急剧升级，胡塞武装或伊朗相关冲突风险外溢至海湾核心国家。链 #357 显示避险资金流向黄金与美债；本次地缘冲突比贸易战更直接触发传统避险需求。当前 VIX 87%分位已反映部分风险，但黄金对中东冲突敏感度更高。",
+      "stop_loss_price": 4353.1304,
+      "take_profit": {
+        "prices": [
+          4355.0541,
+          4355.8236,
+          4356.9778
+        ],
+        "r_multiples": [
+          1.5,
+          2.5,
+          4.0
+        ],
+        "R": 0.7695,
+        "atr": 0.3847
+      },
+      "kelly_fraction": 0.02,
+      "resonance_posterior": 0.6316,
+      "resonance": {
+        "prior": 0.3,
+        "posterior": 0.6316,
+        "log_odds": 0.539,
+        "effective_n": 1.0,
+        "r_bar": 0.0,
+        "uplift": 2.11,
+        "signal_grade": "👀 C",
+        "evidence": [
+          {
+            "link_id": 357,
+            "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+            "asset": "TLT",
+            "dir_hit_rate": 1.0,
+            "n_samples": 3,
+            "log_lr": 1.386,
+            "grade": "B"
+          }
+        ],
+        "note": ""
+      },
+      "tags": [
+        "dual_model_weak",
+        "regime:mid-vol · uptrend · USD-neutral"
+      ],
+      "retired_at": null,
+      "retired_reason": null,
+      "strategy_type": "spot",
+      "strategy_legs": null,
+      "cited_link_ids": [
+        357
+      ],
+      "cited_chains": [
+        {
+          "id": 357,
+          "pattern": "美国对盟友/主要经济体突袭式加征关税威胁",
+          "asset_symbol": "TLT",
+          "direction": "up",
+          "horizon_days": 1,
+          "magnitude_pct": 0.8,
+          "grade": "B",
+          "retail_edge": "mid",
+          "macro_category": "politics_geo"
+        }
+      ],
+      "event": {
+        "id": 2116,
+        "summary": "巴林全国拉响防空警报，中东地缘政治紧张局势升级",
+        "category": "geopolitics"
+      },
+      "news": {
+        "title": "巴林全国拉响防空警报。（新华社）",
+        "source": "sina_finance",
+        "lang": "zh",
+        "url": null,
+        "published_at": "2026-06-06T09:23:01"
+      }
+    },
     {
       "id": 277,
       "made_at": "2026-06-04T14:41:25.340626",
@@ -21,9 +1210,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 58.584999084472656,
-      "current_pct": 0.01706926402556547,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 57.66999816894531,
+      "current_pct": -1.5450321505872484,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #638 (俄制裁→能源股走强) 的机制：油价上涨→能源股盈利预期上修。伊朗核危机推升原油，美国能源巨头(XOM/CVX)作为替代供应方受益。当前SPX处于uptrend (+10.2% vs 200d MA)，能源股beta较高，但与#638的即时制裁冲击不同，本次是预期性升温，故magnitude从4%相关性折算至1.8%。",
       "stop_loss_price": 56.6772,
       "take_profit": {
@@ -120,9 +1309,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4510.5,
-      "current_pct": 0.01773520750517602,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 4353.89990234375,
+      "current_pct": -3.454781609001257,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #357 (关税威胁→避险资产受益) 的避险逻辑：地缘政治不确定性上升→资金流向黄金。伊朗核查失控是典型的「尾部风险」催化剂，历史上中东紧张局势对黄金有明确提振。当前DXY中性、VIX低位，黄金上行阻力较小。与#357不同的是这是军事而非贸易风险，但避险传导机制一致，magnitude保守估计1.5%。",
       "stop_loss_price": 4508.9307,
       "take_profit": {
@@ -219,9 +1408,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 95.26000213623047,
-      "current_pct": -0.05245559085503654,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 92.87000274658203,
+      "current_pct": -2.560061771601329,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #638 (美国对俄罗斯油气制裁) 的机制：地缘政治冲突升级→石油供应风险溢价→原油短期上涨。当前IAEA无法核查伊朗浓缩铀，意味着伊朗核武进展透明度归零，以色列/美国军事打击预期升温，霍尔木兹海峡通航风险上升。与俄制裁不同的是本次尚未触发实际供应中断，故magnitude从4%降至2.5%。VIX低位(15.69)下市场对地缘风险反应敏感。",
       "stop_loss_price": 93.1655,
       "take_profit": {
@@ -318,9 +1507,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 67.62000274658203,
-      "current_pct": 0.22232328911367855,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 56.779998779296875,
+      "current_pct": -15.844082181706007,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #135 (小市值公司转型概念暴涨后回调) 的机制反向应用 → Quantinuum作为全球领先量子计算纯正股成功IPO且开盘溢价，验证市场对量子计算赛道的认可度提升。IonQ作为目前唯一上市的纯量子计算公司，将直接受益于行业估值锚点上移。当前VIX处于低位且大盘处于上升趋势，成长股风险偏好较高，支撑题材炒作延续。",
       "stop_loss_price": 67.0984,
       "take_profit": {
@@ -417,9 +1606,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 92.69000244140625,
-      "current_pct": 0.06477943405754243,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 90.25,
+      "current_pct": -2.5693590888346365,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #51 (中东武装冲突) 的机制 → 以黎边境冲突升级增加中东供给中断风险溢价。虽然黎巴嫩非产油国，但冲突外溢至伊朗代理人网络的担忧会推升油价。当前 DXY 中性、VIX 低位，原油对地缘风险定价空间充足，预计短期供给担忧驱动上涨。",
       "stop_loss_price": 85.5321,
       "take_profit": {
@@ -516,9 +1705,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4510.5,
-      "current_pct": -0.05761223106042533,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 4353.89990234375,
+      "current_pct": -3.5275130590428536,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #51 (中东/波斯湾/产油区爆发武装冲突或袭击) 的机制 → 以色列-黎巴嫩边境防空警报与空袭痕迹表明地区冲突升温，虽非直接波及产油区，但属于中东地缘风险扩散。链 #51 指向避险资产受益；当前 VIX 偏低(15.69)、市场处于上行趋势，避险需求释放空间较大，黄金作为传统避险标的短期受买盘支撑。",
       "stop_loss_price": 4506.0022,
       "take_profit": {
@@ -615,9 +1804,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4510.5,
-      "current_pct": 0.3850218983242256,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 4353.89990234375,
+      "current_pct": -3.1002467487220815,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链#55(美国对华加征关税或扩大科技出口管制)的机制→地缘政治紧张推动避险资产受益。当前新闻提及geopolitical fears作为BTC下跌原因,同一避险逻辑利好黄金。差异在于链#55针对贸易战而非广泛地缘风险,但避险资金流向黄金的机制一致。DXY中性不构成阻力。",
       "stop_loss_price": 4493.1915,
       "take_profit": {
@@ -715,9 +1904,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 410.9700012207031,
-      "current_pct": -0.2378956080320752,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 396.239990234375,
+      "current_pct": -3.8135748287733895,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #80 (系统性风险推升避险资产) 的机制：地缘风险事件触发避险需求。伊朗对海湾国家发动袭击是重大地缘升级,历史上中东冲突(如2020年美伊紧张、2019年沙特设施袭击)均推升黄金避险溢价。当前DXY中性、10y利率虽有上行但避险情绪可对冲,黄金有上行空间。",
       "stop_loss_price": 409.9658,
       "take_profit": {
@@ -814,9 +2003,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 85.54000091552734,
-      "current_pct": -0.12843036589827278,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 85.05999755859375,
+      "current_pct": -0.6888545905126321,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #357（关税威胁→TLT上涨0.8%/1d）的避险机制：风险事件→资金流入长债。伊朗与美军直接冲突升级属于更高级别地缘风险，长端美债避险需求增加。但注意10y利率近期已上行20bp，上涨空间受限，故幅度保守估计。",
       "stop_loss_price": 84.8805,
       "take_profit": {
@@ -913,9 +2102,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4510.5,
-      "current_pct": 0.4096057955910229,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 4353.89990234375,
+      "current_pct": -3.0765163800469595,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #357（关税威胁→TLT上涨）的机制：地缘/贸易冲击→避险资金涌入安全资产。本次伊朗-美国军事对峙属于更高烈度的地缘风险，黄金作为传统避险资产将受益。当前VIX处于低位（15.77），避险情绪一旦升温上行空间较大；DXY中性不构成压制。",
       "stop_loss_price": 4491.3306,
       "take_profit": {
@@ -1012,9 +2201,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 92.69000244140625,
-      "current_pct": -2.789717960443169,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 90.25,
+      "current_pct": -5.348713744872563,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "本次伊朗革命卫队声称打击美军第五舰队总部及中东航空基地，科威特机场遭无人机袭击，标志中东地缘紧张急剧升级。参考链 #640（美国对俄油气制裁→XLE上涨）的机制：地缘冲突升级→供应中断担忧→油价跳涨。当前事件更直接涉及波斯湾核心产油区，霍尔木兹海峡过境风险溢价将快速计入油价。mid-vol环境下预期反应幅度适中。",
       "stop_loss_price": 92.3465,
       "take_profit": {
@@ -1372,9 +2561,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 886.7224731445312,
-      "current_pct": -13.83933808393204,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 863.6599731445312,
+      "current_pct": -16.080265009346093,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #620 (TSMC capex指引带动半导体设备与下游设计联动) 的机制延伸：Lumentum被点名为EML/CW-DFB LD市场前三厂商，直接受益于英伟达、Meta等客户的产能锁定。光通信激光器是AI数据中心800G/1.6T升级的关键卡脖子环节，产能翻倍预期将重估其估值。Lumentum弹性高于博通，幅度相应更大。",
       "stop_loss_price": 945.7889,
       "take_profit": {
@@ -1472,9 +2661,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 615.7999877929688,
-      "current_pct": -2.5956618227094874,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 569.6900024414062,
+      "current_pct": -9.889121867472397,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #620 (TSMC上调AI需求指引) 与链 #66 (英伟达营收超预期带动半导体板块) 的共振机制：AI数据中心光互联芯片产能两倍扩张，印证科技巨头资本开支强劲，从芯片到光通信全链条受益。本次新闻虽非直接财报，但第三方机构TrendForce的产能预测具有前瞻指引性质，对整体半导体板块情绪正面。",
       "stop_loss_price": 625.1469,
       "take_profit": {
@@ -1593,9 +2782,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 410.3299865722656,
-      "current_pct": -14.793284396548916,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 385.7300109863281,
+      "current_pct": -19.9015708786378,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #620 (TSMC上调全年资本开支与AI需求指引) 的机制：AI算力扩张带动上下游半导体链条联动上涨。本次新闻直接点名博通为EML/CW-DFB LD前三大厂商之首且市占率领先，2026年产能翻倍意味着英伟达、谷歌、Meta的战略锁定订单已落地，博通光通信业务将直接受益。当前市场处于uptrend+低VIX环境，AI产业链利好容易被放大。",
       "stop_loss_price": 451.2311,
       "take_profit": {
@@ -1693,9 +2882,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 229.75,
-      "current_pct": 0.6219060822309254,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 229.4499969482422,
+      "current_pct": 0.49051596733056735,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #357 的避险资产受益机制延伸 — 中东军事冲突升级历史上利好国防板块，市场预期军费支出增加和武器订单扩大。与贸易战避险不同，军事冲突直接提振国防股而非仅债券。当前市场处于uptrend且VIX低位，risk-on环境下国防股有额外beta支撑。",
       "stop_loss_price": 227.5605,
       "take_profit": {
@@ -1792,9 +2981,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 92.69000244140625,
-      "current_pct": -2.3081733509776488,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 90.25,
+      "current_pct": -4.879845475808313,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #357 的风险溢价机制类比 — 伊朗袭击美军第五舰队总部直接威胁波斯湾航运安全，该区域承载全球约20%原油运输。地缘风险溢价将推高油价，机制比贸易战更直接：供应中断预期而非需求担忧。当前原油处于相对低位，冲突升级提供3-5%的风险溢价空间。",
       "stop_loss_price": 94.1105,
       "take_profit": {
@@ -1875,7 +3064,7 @@
       "id": 258,
       "made_at": "2026-06-02T14:22:46.424657",
       "expire_at": "2026-06-05T14:22:46.424657",
-      "verified_at": null,
+      "verified_at": "2026-06-06T01:47:01.152111",
       "asset": {
         "symbol": "QQQ",
         "name": "纳斯达克100ETF",
@@ -1886,14 +3075,22 @@
       "horizon_days": 3,
       "baseline_price": 743.6162109375,
       "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 736.6900024414062,
-      "current_pct": -0.9314224722672013,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": false,
+        "strict_hit": false,
+        "mag_err_rel": 2.600667627463331,
+        "mag_err_bucket": ">100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -5.184961383547198,
+      "actual_direction": "down",
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
       "reasoning": "参考链 #34 (通胀缓解强化降息预期→风险资产上涨) 的机制。劳动力市场降温数据与通胀缓解数据共享同一传导路径：均指向Fed政策转鸽→折现率预期下行→成长股估值扩张。当前SPX +11.1% vs 200d MA处于强势uptrend，顺势做多科技股胜率更高，但magnitude保守取0.8%因单一数据催化有限。",
       "stop_loss_price": 733.5457,
       "take_profit": {
@@ -1990,9 +3187,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 85.54000091552734,
-      "current_pct": -0.17505137309509988,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 85.05999755859375,
+      "current_pct": -0.7352139863028823,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #34 (CPI低于预期→降息预期强化→长久期资产上涨) 的机制。JOLTS数据全面低于预期——职位空缺率、裁员、辞职率均显示劳动力市场降温，与通胀数据低于预期有相似的政策含义：劳动力市场松弛支持Fed更早降息。当前10y利率4.45%处于高位(+0.20pp MoM)，降息预期强化将推动长端利率回落、TLT上涨。",
       "stop_loss_price": 75.6195,
       "take_profit": {
@@ -2073,7 +3270,7 @@
       "id": 256,
       "made_at": "2026-06-02T14:21:48.138016",
       "expire_at": "2026-06-05T14:21:48.138016",
-      "verified_at": null,
+      "verified_at": "2026-06-06T01:47:01.152111",
       "asset": {
         "symbol": "TLT",
         "name": "20+年期美债ETF",
@@ -2084,14 +3281,22 @@
       "horizon_days": 3,
       "baseline_price": 85.72940063476562,
       "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 85.54000091552734,
-      "current_pct": -0.2209273806137803,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.277006886164146,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -0.7808325629427224,
+      "actual_direction": "down",
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
       "reasoning": "参考链 #32 (CPI超预期→TLT下跌) 的机制：10年期收益率上涨至4.46%反映市场对通胀/紧缩预期的重新定价，与CPI超预期后长端利率上行压制长久期债券的逻辑一致。当前10y较月初上行20bp，momentum延续中，TLT承压。但本次仅是日内收益率波动而非CPI数据发布，magnitude较原链下调。",
       "stop_loss_price": 87.4126,
       "take_profit": {
@@ -2188,9 +3393,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 589.6400146484375,
-      "current_pct": -0.4306029791884331,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 539.77001953125,
+      "current_pct": -8.851885829555675,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #605 (美国放松对华AI芯片出口管制) 的机制 — CHIPS Act持续拨款表明政府对本土芯片制造的长期承诺，利好半导体设备和制造相关标的。XLight作为光电子/先进封装领域公司获补贴，信号意义大于金额本身(1.5亿规模较小)。7天窗口允许市场消化政策信号并反映到更广泛半导体指数。",
       "stop_loss_price": 585.7944,
       "take_profit": {
@@ -2272,7 +3477,7 @@
       "id": 254,
       "made_at": "2026-06-02T14:20:46.471991",
       "expire_at": "2026-06-05T14:20:46.471991",
-      "verified_at": null,
+      "verified_at": "2026-06-06T01:47:01.152111",
       "asset": {
         "symbol": "SMH",
         "name": "半导体ETF",
@@ -2283,14 +3488,22 @@
       "horizon_days": 3,
       "baseline_price": 624.47998046875,
       "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 615.7999877929688,
-      "current_pct": -1.38995531438267,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": false,
+        "strict_hit": false,
+        "mag_err_rel": 5.092844773624582,
+        "mag_err_bucket": ">100%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -8.773696474019399,
+      "actual_direction": "down",
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
       "reasoning": "参考链 #605 (美国放松对华AI芯片出口管制) 的机制 — 该链核心逻辑是政府政策支持提振芯片板块情绪。当前XLight获得1.5亿美元CHIPS Act补贴属于同类政策利好，强化美国本土半导体产能投资预期。但本次为单一小型公司补贴而非行业性放开出口，影响范围有限，magnitude从0.8%下调。市场处于uptrend+mid-vol环境，利好顺势传导效率较高。",
       "stop_loss_price": 615.4875,
       "take_profit": {
@@ -2372,7 +3585,7 @@
       "id": 253,
       "made_at": "2026-06-02T12:29:27.728401",
       "expire_at": "2026-06-05T12:29:27.728401",
-      "verified_at": null,
+      "verified_at": "2026-06-06T01:47:01.152111",
       "asset": {
         "symbol": "GC=F",
         "name": "黄金期货",
@@ -2383,14 +3596,22 @@
       "horizon_days": 3,
       "baseline_price": 4556.60009765625,
       "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 4510.5,
-      "current_pct": -1.011721385863162,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": false,
+        "strict_hit": false,
+        "mag_err_rel": 3.118978229549509,
+        "mag_err_bucket": ">100%",
+        "tol_used": 0.95,
+        "asset_class": "commodity"
+      },
+      "actual_magnitude_pct": -4.44849648791347,
+      "actual_direction": "down",
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
       "reasoning": "乌克兰遭导弹袭击属于典型地缘冲突升级事件，触发避险资金流向黄金。检索链中未覆盖俄乌冲突模式，但机制类似#357(突发关税威胁→避险资产受益)的避险逻辑——突发地缘风险→市场不确定性上升→黄金作为传统避险资产获资金流入。当前VIX处于中低位(16.15)，避险空间充足。",
       "stop_loss_price": 4555.8306,
       "take_profit": {
@@ -2471,7 +3692,7 @@
       "id": 252,
       "made_at": "2026-06-01T22:21:03.367503",
       "expire_at": "2026-06-04T22:21:03.367503",
-      "verified_at": null,
+      "verified_at": "2026-06-06T01:47:01.152111",
       "asset": {
         "symbol": "SPY",
         "name": "标普500ETF",
@@ -2482,14 +3703,22 @@
       "horizon_days": 3,
       "baseline_price": 758.5399780273438,
       "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 754.0499877929688,
-      "current_pct": -0.591925325551285,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "status": "verified",
+      "hit": true,
+      "hit_breakdown": {
+        "dir_hit": true,
+        "mag_hit": true,
+        "strict_hit": true,
+        "mag_err_rel": 0.3850762768712749,
+        "mag_err_bucket": "<=50%",
+        "tol_used": 0.95,
+        "asset_class": "us_stock"
+      },
+      "actual_magnitude_pct": -2.767156754079263,
+      "actual_direction": "down",
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
       "reasoning": "参考链 #637 (霍尔木兹海峡通航受阻→SPY下跌) 的机制：油价飙升推高通胀预期、企业成本上升、风险偏好回落→美股承压。当前 SPX 较 200d MA 高出 11%，处于 uptrend 但估值偏高，地缘黑天鹅易触发获利回吐；链内 magnitude 1% 基于威胁，彻底封锁升级后上调至 2.5%。",
       "stop_loss_price": 792.6743,
       "take_profit": {
@@ -2587,9 +3816,9 @@
       "hit_breakdown": null,
       "actual_magnitude_pct": null,
       "actual_direction": null,
-      "current_price": 4510.5,
-      "current_pct": -0.01994729714123736,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "current_price": 4353.89990234375,
+      "current_pct": -3.4911558143665347,
+      "current_at": "2026-06-05T00:00:00-04:00",
       "reasoning": "参考链 #635 (霍尔木兹海峡通航受阻) 的机制：地缘冲突升级→避险资金涌入黄金。彻底封锁声明意味着中东局势进入高危阶段，黄金作为传统避险资产受益；链内 magnitude 1.5% 基于威胁情景，实际封锁宣布后上调至 3%。当前 VIX 16 处于中低分位，避险需求尚未充分定价。",
       "stop_loss_price": 4389.5921,
       "take_profit": {
@@ -2671,7 +3900,7 @@
       "id": 250,
       "made_at": "2026-06-01T22:20:53.430614",
       "expire_at": "2026-06-04T22:20:53.430614",
-      "verified_at": null,
+      "verified_at": "2026-06-06T01:47:01.152111",
       "asset": {
         "symbol": "CL=F",
         "name": "WTI原油期货",
@@ -2682,14 +3911,22 @@
       "horizon_days": 3,
       "baseline_price": 92.56999969482422,
       "baseline_source": "event_time",
-      "status": "pending",
-      "hit": null,
-      "hit_breakdown": null,
-      "actual_magnitude_pct": null,
-      "actual_direction": null,
-      "current_price": 92.69000244140625,
-      "current_pct": 0.12963459757766518,
-      "current_at": "2026-06-04T00:00:00-04:00",
+      "status": "verified",
+      "hit": false,
+      "hit_breakdown": {
+        "dir_hit": false,
+        "mag_hit": true,
+        "strict_hit": false,
+        "mag_err_rel": 0.6519151119164224,
+        "mag_err_bucket": "<=100%",
+        "tol_used": 0.95,
+        "asset_class": "commodity"
+      },
+      "actual_magnitude_pct": -2.506211194201759,
+      "actual_direction": "down",
+      "current_price": null,
+      "current_pct": null,
+      "current_at": null,
       "reasoning": "参考链 #635/636/637 (霍尔木兹海峡通航受阻或封锁威胁) 的机制：海峡承载全球约20%石油供应，封锁威胁→供应中断风险定价→油价跳涨。本次新闻是伊朗宣布「彻底封锁」而非仅威胁或议案，严重程度显著升级，原油作为直接受冲击标的应优先于能源股；考虑到事件烈度，magnitude 上调至 8%。",
       "stop_loss_price": 85.905,
       "take_profit": {

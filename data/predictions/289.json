@@ -1,33 +1,33 @@
 {
-  "id": 270,
-  "made_at": "2026-06-03T06:19:01.448434",
-  "expire_at": "2026-06-10T06:19:01.448434",
+  "id": 289,
+  "made_at": "2026-06-06T01:46:01.361662",
+  "expire_at": "2026-06-09T01:46:01.361662",
   "verified_at": null,
   "asset": {
-    "symbol": "GLD",
-    "name": "黄金ETF",
-    "class": "us_stock"
+    "symbol": "GC=F",
+    "name": "黄金期货",
+    "class": "commodity"
   },
   "direction": "up",
-  "magnitude_pct": 3.24,
-  "horizon_days": 7,
-  "baseline_price": 411.95001220703125,
+  "magnitude_pct": 1.08,
+  "horizon_days": 3,
+  "baseline_price": 4353.89990234375,
   "baseline_source": "eod",
   "status": "pending",
   "hit": null,
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 396.239990234375,
-  "current_pct": -3.8135748287733895,
+  "current_price": 4353.89990234375,
+  "current_pct": 0.0,
   "current_at": "2026-06-05T00:00:00-04:00",
-  "reasoning": "参考链 #80 (系统性风险推升避险资产) 的机制：地缘风险事件触发避险需求。伊朗对海湾国家发动袭击是重大地缘升级,历史上中东冲突(如2020年美伊紧张、2019年沙特设施袭击)均推升黄金避险溢价。当前DXY中性、10y利率虽有上行但避险情绪可对冲,黄金有上行空间。",
-  "stop_loss_price": 409.9658,
+  "reasoning": "参考链#80（系统性风险预期推升避险资产）的机制——虽然该链针对银行危机，但核心逻辑是风险事件→避险资产需求上升。科威特遭袭意味着中东紧张局势可能外溢（伊朗/胡塞武装嫌疑），市场会短期涌入黄金避险。当前10y利率已+21bp MoM、黄金承压，但地缘冲击的避险需求可部分对冲利率逆风。",
+  "stop_loss_price": 4351.9157,
   "take_profit": {
     "prices": [
-      414.9263,
-      416.9105,
-      419.8869
+      4356.8762,
+      4358.8604,
+      4361.8367
     ],
     "r_multiples": [
       1.5,
@@ -61,6 +61,7 @@
     "note": ""
   },
   "tags": [
+    "asset_repeat",
     "dual_model_weak",
     "regime:mid-vol · uptrend · USD-neutral"
   ],
@@ -85,15 +86,15 @@
     }
   ],
   "event": {
-    "id": 1872,
-    "summary": "伊朗袭击科威特机场大楼造成严重损毁",
+    "id": 2103,
+    "summary": "科威特遭遇导弹和无人机袭击，空中防御系统正在拦截",
     "category": "geopolitics"
   },
   "news": {
-    "title": "科威特：伊朗袭击严重损毁了机场大楼。",
+    "title": "科威特军方在X上称，科威特空中防御系统正在拦截导弹和无人机袭击。",
     "source": "wallstreetcn",
     "lang": "zh",
-    "url": "https://wallstreetcn.com/livenews/3113531",
-    "published_at": "2026-06-03T05:50:54"
+    "url": "https://wallstreetcn.com/livenews/3115396",
+    "published_at": "2026-06-06T01:02:35"
   }
 }

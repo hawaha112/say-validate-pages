@@ -18,9 +18,9 @@
   "hit_breakdown": null,
   "actual_magnitude_pct": null,
   "actual_direction": null,
-  "current_price": 4510.5,
-  "current_pct": 0.01773520750517602,
-  "current_at": "2026-06-04T00:00:00-04:00",
+  "current_price": 4353.89990234375,
+  "current_pct": -3.454781609001257,
+  "current_at": "2026-06-05T00:00:00-04:00",
   "reasoning": "参考链 #357 (关税威胁→避险资产受益) 的避险逻辑：地缘政治不确定性上升→资金流向黄金。伊朗核查失控是典型的「尾部风险」催化剂，历史上中东紧张局势对黄金有明确提振。当前DXY中性、VIX低位，黄金上行阻力较小。与#357不同的是这是军事而非贸易风险，但避险传导机制一致，magnitude保守估计1.5%。",
   "stop_loss_price": 4508.9307,
   "take_profit": {

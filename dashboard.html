@@ -111,7 +111,7 @@
 </head>
 <body>
 <h1>📡 say_validate · 知识与监测看板</h1>
-<div class="small">最后刷新: <strong>2026-06-06 09:50 北京</strong> · 由 4h launchd 流水线自动更新。高把握信号触发时直接 Telegram 推送。</div>
+<div class="small">最后刷新: <strong>2026-06-06 09:57 北京</strong> · 由 4h launchd 流水线自动更新。高把握信号触发时直接 Telegram 推送。</div>
 
 <nav>
   <a href="#summary">📊 总览</a>
@@ -935,17 +935,17 @@ _无_
   <td class="num">3</td>
   <td></td>
 </tr><tr>
-  <td><strong>iwm</strong></td>
-  <td class="num">281.650</td>
-  <td class="small">2026-06-05</td>
-  <td class="num">2</td>
-  <td> <span class="tag-active">1 激活</span></td>
-</tr><tr>
   <td><strong>qqq</strong></td>
   <td class="num">705.060</td>
   <td class="small">2026-06-05</td>
   <td class="num">2</td>
   <td> <span class="tag-active">2 激活</span></td>
+</tr><tr>
+  <td><strong>iwm</strong></td>
+  <td class="num">281.650</td>
+  <td class="small">2026-06-05</td>
+  <td class="num">2</td>
+  <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
   <td><strong>yield_curve_10y2y</strong></td>
   <td class="num">0.256</td>
@@ -959,11 +959,11 @@ _无_
   <td class="num">2</td>
   <td> <span class="tag-active">2 激活</span></td>
 </tr><tr>
-  <td><strong>us_10y_yield</strong></td>
-  <td class="num">4.536</td>
+  <td><strong>chinext</strong></td>
+  <td class="num">3957.935</td>
   <td class="small">2026-06-05</td>
   <td class="num">1</td>
-  <td></td>
+  <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
   <td><strong>us_3m_yield</strong></td>
   <td class="num">3.625</td>
@@ -972,8 +972,14 @@ _无_
   <td></td>
 </tr><tr>
   <td><strong>btc</strong></td>
-  <td class="num">60992.578</td>
+  <td class="num">61120.340</td>
   <td class="small">2026-06-06</td>
+  <td class="num">1</td>
+  <td></td>
+</tr><tr>
+  <td><strong>us_10y_yield</strong></td>
+  <td class="num">4.536</td>
+  <td class="small">2026-06-05</td>
   <td class="num">1</td>
   <td></td>
 </tr><tr>
@@ -983,17 +989,11 @@ _无_
   <td class="num">1</td>
   <td></td>
 </tr><tr>
-  <td><strong>chinext</strong></td>
-  <td class="num">3957.935</td>
+  <td><strong>qqq_iwm_ratio</strong></td>
+  <td class="num">2.503</td>
   <td class="small">2026-06-05</td>
   <td class="num">1</td>
-  <td> <span class="tag-active">1 激活</span></td>
-</tr><tr>
-  <td><strong>copper</strong></td>
-  <td class="num">6.275</td>
-  <td class="small">2026-06-05</td>
-  <td class="num">1</td>
-  <td> <span class="tag-active">1 激活</span></td>
+  <td></td>
 </tr><tr>
   <td><strong>hs300</strong></td>
   <td class="num">4816.920</td>
@@ -1001,19 +1001,25 @@ _无_
   <td class="num">1</td>
   <td> <span class="tag-active">1 激活</span></td>
 </tr><tr>
-  <td><strong>qqq_iwm_ratio</strong></td>
-  <td class="num">2.503</td>
-  <td class="small">2026-06-05</td>
-  <td class="num">1</td>
-  <td></td>
-</tr><tr>
   <td><strong>oil</strong></td>
   <td class="num">90.250</td>
   <td class="small">2026-06-05</td>
   <td class="num">1</td>
   <td></td>
 </tr><tr>
-  <td><strong>intraday::breakout_momentum::BTC::up</strong></td>
+  <td><strong>copper</strong></td>
+  <td class="num">6.275</td>
+  <td class="small">2026-06-05</td>
+  <td class="num">1</td>
+  <td> <span class="tag-active">1 激活</span></td>
+</tr><tr>
+  <td><strong>intraday::trend_continuation::BTC::down</strong></td>
+  <td class="num">—</td>
+  <td class="small">—</td>
+  <td class="num">0</td>
+  <td></td>
+</tr><tr>
+  <td><strong>intraday::breakout_momentum::BTC::down</strong></td>
   <td class="num">—</td>
   <td class="small">—</td>
   <td class="num">0</td>
@@ -1025,13 +1031,7 @@ _无_
   <td class="num">0</td>
   <td></td>
 </tr><tr>
-  <td><strong>intraday::trend_continuation::BTC::down</strong></td>
-  <td class="num">—</td>
-  <td class="small">—</td>
-  <td class="num">0</td>
-  <td></td>
-</tr><tr>
-  <td><strong>intraday::breakout_momentum::BTC::down</strong></td>
+  <td><strong>intraday::breakout_momentum::BTC::up</strong></td>
   <td class="num">—</td>
   <td class="small">—</td>
   <td class="num">0</td>
@@ -6213,72 +6213,8 @@ _无_
     <div class="rationale">[AUTO-TUNED: threshold_tuned+direction_flipped] 浙商证券2026年春季躁动研报显示：央行流动性投放+政策预期偏强+低波动环境是创业板上涨的核心驱动，春季躁动平均持续70天、上证平均涨20%，成长风格占优。VIX低位且持续下降反映风险偏好回升。</div>
     
 <div class="evidence">
-  <div class="summary">📖 <b>怎么读这条规则:</b> 过去 <b>96</b> 次 [VIX 恐慌指数] 满足触发条件后,有 <b>76</b> 次 [创业板指] 在 <b>30 天</b>内下跌——方向命中率 <b>79.2%</b>(比抛硬币高 +29.2pp),平均下跌幅度 <b>+4.56%</b>。系统每天监测 [VIX 恐慌指数],再次出现 [VIX 恐慌指数 低于 12.6 且 VIX 恐慌指数 过去 30 日累计变化 小于 -0.05] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
-  <details class="detail" open>
-    <summary>📅 最近 8 次触发明细(共 96 次历史触发)</summary>
-    <table class="triggers">
-      <thead><tr><th>触发日</th><th class="num">VIX 恐慌指数 当时值</th><th class="num">创业板指 触发当日</th><th class="num">30d 后</th><th class="num">变化</th><th>结果</th></tr></thead>
-      <tbody>
-<tr>
-  <td>2024-07-12</td>
-  <td class="num">12.46</td>
-  <td class="num">1673.01</td>
-  <td class="num">1541.40</td>
-  <td class="num win">-7.87%</td>
-  <td><span class="win">✓ 应验</span></td>
-</tr><tr>
-  <td>2024-06-12</td>
-  <td class="num">12.04</td>
-  <td class="num">1777.79</td>
-  <td class="num">1635.67</td>
-  <td class="num win">-7.99%</td>
-  <td><span class="win">✓ 应验</span></td>
-</tr><tr>
-  <td>2024-05-10</td>
-  <td class="num">12.55</td>
-  <td class="num">1860.37</td>
-  <td class="num">1703.20</td>
-  <td class="num win">-8.45%</td>
-  <td><span class="win">✓ 应验</span></td>
-</tr><tr>
-  <td>2023-12-27</td>
-  <td class="num">12.43</td>
-  <td class="num">1879.50</td>
-  <td class="num">1746.42</td>
-  <td class="num win">-7.08%</td>
-  <td><span class="win">✓ 应验</span></td>
-</tr><tr>
-  <td>2023-11-24</td>
-  <td class="num">12.46</td>
-  <td class="num">1926.20</td>
-  <td class="num">1777.27</td>
-  <td class="num win">-7.73%</td>
-  <td><span class="win">✓ 应验</span></td>
-</tr><tr>
-  <td>2020-01-15</td>
-  <td class="num">12.42</td>
-  <td class="num">1929.96</td>
-  <td class="num">2135.41</td>
-  <td class="num loss">+10.65%</td>
-  <td><span class="loss">✗ 落空</span></td>
-</tr><tr>
-  <td>2019-12-16</td>
-  <td class="num">12.14</td>
-  <td class="num">1801.62</td>
-  <td class="num">1795.77</td>
-  <td class="num win">-0.32%</td>
-  <td><span class="win">✓ 应验</span></td>
-</tr><tr>
-  <td>2019-10-30</td>
-  <td class="num">12.33</td>
-  <td class="num">1671.31</td>
-  <td class="num">1780.33</td>
-  <td class="num loss">+6.52%</td>
-  <td><span class="loss">✗ 落空</span></td>
-</tr>
-      </tbody>
-    </table>
-  </details>
+  <div class="summary">📖 过去 <b>96</b> 次 [VIX 恐慌指数] 满足触发条件后,有 <b>76</b> 次 [创业板指] 在 <b>30 天</b>内下跌——方向命中率 <b>79.2%</b>(比抛硬币高 +29.2pp),平均下跌幅度 <b>+4.56%</b>。系统每天监测 [VIX 恐慌指数],再次出现 [VIX 恐慌指数 低于 12.6 且 VIX 恐慌指数 过去 30 日累计变化 小于 -0.05] 就立刻 TG 推送 action card,附入场/止损/止盈/仓位建议。</div>
+  <div class="small">(无历史触发明细可显示 — event_study 跑失败或样本太少)</div>
 </div>
 
     <details class="detail"><summary>rule_spec JSON</summary><pre>{
